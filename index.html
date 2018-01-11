@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,24 +19,11 @@
       </div>
       <nav>
         <ul class="nav justify-content-center">
+          {% for category in site.data.categories %}
           <li class="nav-item">
-            <a class="nav-link active" href="#editors">Editors</a>
+            <a class="nav-link" href="#{{ category.slug }}">{{ category.name }}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Linters</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Parsers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Code Generators</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Documentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testing </a>
-          </li>
+          {%  endfor %}
         </ul>
       </nav>
       <hr>
@@ -60,30 +49,35 @@
         </div>
       </div>
       <div class="row justify-content-md-center">
-        <div class="col-8" id="editors">
-          <h2 class="display-4">Editors</h2>
+
+        {% for category in site.data.categories %}
+        <div class="col-8" id="{{ category.slug }}">
+          <h2 class="display-4">{{ category.name }}</h2>
           <table class="table table-striped">
             <thead>
               <tr>
                 <th>Name</th>
                 <th>Language</th>
-                <th>Link</th>
+                <th>v2</th>
+                <th>v3</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>KaiZen-OpenAPI-Editor</td>
-                <td>Java</td>
-                <td><a href="https://github.com/RepreZen/KaiZen-OpenAPI-Editor">https://github.com/RepreZen/KaiZen-OpenAPI-Editor</a></td>
-              </tr>
-              <tr>
-                <td>Swagger</td>
-                <td>YAML</td>
-                <td><a href="https://swagger.io/swagger-editor/">https://swagger.io/swagger-editor/</a></td>
-              </tr>
+              {% for tool in site.data.tools %}
+                {% if tool.category == category.slug %}
+                <tr>
+                  <td><a href="{{ tool.link }}">{{ tool.name }}</a></td>
+                  <td>{{ tool.language }}</td>
+                  <td>{% if tool.v2 %}✅{% else %}❌{% endif %}</a></td>
+                  <td>{% if tool.v3 %}✅{% else %}❌{% endif %}</a></td>
+                </tr>
+                {% endif %}
+              {% endfor %}
+
             </tbody>
           </table>
         </div>
+        {% endfor %}
       </div>
     </div>
   </body>
