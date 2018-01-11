@@ -1,0 +1,20 @@
+- name: Converters
+  slug: converters
+
+- name: Editors
+  slug: editors
+
+- name: Linters
+  slug: linters
+
+- name: Parsers
+  slug: parsers
+
+- name: Code Generators
+  slug: code-generators
+
+- name: Documentation
+  slug: documentation
+
+- name: Testing
+  slug: testing
