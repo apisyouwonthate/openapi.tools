@@ -39,6 +39,51 @@
   language: Python
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
+
+#  Documentation Viewers/Consoles
+
+- name: openapi-viewer
+  category: documentation
+  link: https://koumoul.com/openapi-viewer/
+  github: https://github.com/koumoul-dev/openapi-viewer
+  language: Vue.js
+  description: Browse and test a REST API described with the OpenAPI 3.0 Specification
+  v3: true
+
+- name: openapi-ui
+  category: documentation
+  github: https://github.com/contentjet/openapi-ui
+  language: React.js
+  description: React based OpenAPI 3.0+ documentation generator
+  v3: true
+
+- name: Spectacle
+  category: documentation
+  language: JavaScript
+  description: Spectacle generates beautiful static HTML5 documentation from OpenAPI/Swagger 2.0 API specifications
+  link: https://sourcey.com/spectacle/
+  github: https://github.com/sourcey/spectacle
+  v2: true
+
+- name: ReDoc
+  category: documentation
+  language: JavaScript
+  github: https://github.com/Rebilly/ReDoc/
+  link: https://rebilly.github.io/ReDoc/
+  description: OpenAPI/Swagger-generated API Reference Documentation
+  v2: true
+
+- name: widdershins
+  category: documentation
+  link: https://mermade.github.io/shins
+  github: https://github.com/mermade/widdershins
+  language: Node.js
+  description: Generate Slate/Shins markdown from OpenAPI 3.0.x
+  v3: true
+
+# [io-docs](https://github.com/mikeralphson/iodocs)|Node.js|fork of Mashery IO-docs with OpenAPI 2/3 support|http://io-docs.herokuapp.com/
+# [lincoln](https://github.com/temando/open-api-renderer)|React.js|A React renderer for Open API v3|https://temando.github.io/open-api-renderer/demo/?url=https://temando.github.io/open-api-renderer/petstore-open-api-v3.0.0-RC2.json
+
 # Editors
 
 - name: KaiZen-OpenAPI-Editor
@@ -141,17 +186,6 @@
 # [OpenAPI.net](https://github.com/Microsoft/OpenAPI.NET) | C# | The OpenAPI.NET SDK contains a useful object model for OpenAPI documents in .NET along with common serializers to extract raw OpenAPI JSON and YAML documents from the model. |
 # | [swagger-models](https://github.com/swagger-api/swagger-core/tree/feature/3.0.0-rc0/modules/swagger-models) | Java | Open API 3.0 Java Pojos |
 
-
-##  Documentation Viewers/Consoles
-
-# Tool|Language|Description|Website
-# ---|---|---|---|
-# [openapi-viewer](https://github.com/koumoul-dev/openapi-viewer)|Vue.js|uses [vue-openapi component](https://github.com/koumoul-dev/vue-openapi)<br/>Docker image `docker run -p 8080:8080 koumoul/openapi-viewer`|https://koumoul.com/openapi-viewer/<br/>https://koumoul.com/s/geocoder/api-doc
-# [openapi-ui](https://github.com/contentjet/openapi-ui)|React.js|React based OpenAPI 3.0+ documentation generator
-# [io-docs](https://github.com/mikeralphson/iodocs)|Node.js|fork of Mashery IO-docs with OpenAPI 2/3 support|http://io-docs.herokuapp.com/
-# [lincoln](https://github.com/temando/open-api-renderer)|React.js|A React renderer for Open API v3|https://temando.github.io/open-api-renderer/demo/?url=https://temando.github.io/open-api-renderer/petstore-open-api-v3.0.0-RC2.json
-# [widdershins](https://github.com/mermade/widdershins)|Node.js|Generate Slate/Shins markdown from OpenAPI 3.0.x|https://mermade.github.io/shins
-#
 # ## Generators
 #
 # Tool|Language|Description|Website
