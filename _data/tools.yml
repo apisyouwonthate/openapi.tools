@@ -1,16 +1,4 @@
-- name: KaiZen-OpenAPI-Editor
-  category: editors
-  language: Java
-  github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
-  v2: true
-  v3: true
-
-- name: Swagger Editor
-  category: editors
-  language: Node.js
-  github: https://github.com/swagger-api/swagger-editor
-  v2: true
-  v3: true
+# Converters
 
 - name: OpenAPI Converter
   category: converters
@@ -39,18 +27,64 @@
 
 
 - name: OData.OpenAPI
+  category: converters
   github: https://github.com/xuzhg/OData.OpenAPI
   language: .NET
   description: Convert an Edm (Entity Data Model) to OpenApi 3.0
   v3: true
 
 - name: pyswagger
+  category: converters
   github: https://github.com/mission-liao/pyswagger
   language: Python
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
+# Editors
+
+- name: KaiZen-OpenAPI-Editor
+  category: editors
+  language: Java
+  github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
+  v2: true
+  v3: true
+
+- name: Swagger Editor
+  category: editors
+  language: Node.js
+  github: https://github.com/swagger-api/swagger-editor
+  v2: true
+  v3: true
+
+- name: RepreZen API Studio
+  category: editors
+  language: Java
+  link: https://www.reprezen.com/
+  github: https://www.reprezen.com/swagger-tools
+  description: |
+    RepreZen API Studio is an integrated workbench that brings API-first design into focus for your whole team, harmonizes your API designs, and
+    generates APIs that click into client apps.
+  v2: true
+  v3: true
+
+- name: Apicurio Studio
+  category: editors
+  language: TypeScript
+  link: http://www.apicur.io/
+  github: https://github.com/apicurio/apicurio-studio
+  description: |
+    A standalone API design studio that can be used to create new or edit existing API designs.
+  v2: true
+
+- name: Rápido
+  category: editors
+  language: Node.js
+  link: https://rapidodesigner.com/
+  github: https://github.com/apiacademy/rapido-web
+  description: An API design tool that facilitates the sketching phase of design.
+  v3: true
+
 ##  Documentation Viewers/Consoles
-#
+
 # Tool|Language|Description|Website
 # ---|---|---|---|
 # [openapi-viewer](https://github.com/koumoul-dev/openapi-viewer)|Vue.js|uses [vue-openapi component](https://github.com/koumoul-dev/vue-openapi)<br/>Docker image `docker run -p 8080:8080 koumoul/openapi-viewer`|https://koumoul.com/openapi-viewer/<br/>https://koumoul.com/s/geocoder/api-doc
@@ -58,16 +92,6 @@
 # [io-docs](https://github.com/mikeralphson/iodocs)|Node.js|fork of Mashery IO-docs with OpenAPI 2/3 support|http://io-docs.herokuapp.com/
 # [lincoln](https://github.com/temando/open-api-renderer)|React.js|A React renderer for Open API v3|https://temando.github.io/open-api-renderer/demo/?url=https://temando.github.io/open-api-renderer/petstore-open-api-v3.0.0-RC2.json
 # [widdershins](https://github.com/mermade/widdershins)|Node.js|Generate Slate/Shins markdown from OpenAPI 3.0.x|https://mermade.github.io/shins
-#
-# ## Editors
-#
-# Tool|Language|Description|Website
-# ---|---|---|---|
-# [KaiZen OpenAPI Editor](https://github.com/RepreZen/KaiZen-OpenAPI-Editor)|Java|Eclipse Editor for the Swagger-OpenAPI Description Language|https://github.com/RepreZen/KaiZen-OpenAPI-Editor
-# [openapi-gui](https://github.com/Mermade/openapi-gui/tree/buefy)|Vue.js|Visual creator/editor for OpenAPI definitions|https://openapi-gui.herokuapp.com/
-# [RepreZen API Studio](https://www.reprezen.com/swagger-tools)|Java|API Design Just Got Real.|https://www.reprezen.com/
-# [Apicurio-Studio](https://github.com/Apicurio/apicurio-studio)|TypeScript|Open Source API Design|http://www.apicur.io
-# [Rápido](https://github.com/apiacademy/rapido-web)|Javascript|Discover your best API design faster.|https://rapidodesigner.com/
 #
 # ## Generators
 #
