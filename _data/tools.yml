@@ -1,9 +1,9 @@
 # Converters
 
-- name: OpenAPI Converter
+- name: swagger2openapi
   category: converters
   language: Node.js
-  link: https://openapi-converter.herokuapp.com
+  link: https://mermade.org.uk/openapi-converter
   github: https://github.com/mermade/swagger2openapi
   description: An OpenAPI / Swagger 2.0 to OpenAPI 3.0.x converter and validator
   v2: true
