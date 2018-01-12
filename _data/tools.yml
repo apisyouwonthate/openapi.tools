@@ -83,6 +83,65 @@
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
 
+# Parsers / Validators
+
+- name: swagger-parser
+  owner: Smartbear
+  category: parsers
+  github: https://github.com/swagger-api/swagger-parser
+  language: Java
+  description: Swagger 1.0, 1.1, 1.2, 2.0 to OpenAPI Specification parser
+  v2: true
+
+- name: KaiZen OpenAPI Parser
+  github: https://github.com/RepreZen/KaiZen-OpenApi-Parser
+  owner: RepreZen
+  category: parsers
+  language: Java
+  description: High-performance Parser, Validator, and Java Object Model for OpenAPI 3.x
+  v3: true
+
+- name: OpenAPI-TS
+  category: parsers
+  github: https://github.com/metadevpro/openapi3-ts
+  language: TypeScript
+  description: TS Model & utils for OpenAPI 3.0.x contracts
+  v3: true
+
+- name: kin-openapi
+  category: parsers
+  github: https://github.com/jban332/kin-openapi
+  language: Go
+  description: A Go library for handling OpenAPI 3.0 specifications
+  v3: true
+
+- name: OpenAPI3-Rust
+  category: parsers
+  github: https://github.com/adwhit/openapi3-rust
+  language: Rust
+  description: Rust serialization library for OpenAPI v3
+  v3: true
+
+- name: psx-api
+  category: parsers
+  link: http://phpsx.org
+  github: https://github.com/apioo/psx-api
+  language: PHP
+  description: Parse and generate API specification formats
+  v2: true
+  v3: true
+
+
+# [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
+# [](https://github.com/tavis-software/Tavis.OpenApi/)|dotnet|C# based parser with definition validation and migration support from V2 | http://openapiconverter.azurewebsites.net/
+# [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
+# [openapi-spec-validator](https://github.com/p1c2u/openapi-spec-validator) | Python | OpenAPI Spec validator | [Docker image](https://hub.docker.com/r/usabillabv/openapi3-validator/)
+# [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
+# [openapi3_parser](https://github.com/kevindew/openapi3_parser) | Ruby | A Ruby implementation of parsing and validating the OpenAPI 3 Specification |
+# [OpenAPI.net](https://github.com/Microsoft/OpenAPI.NET) | C# | The OpenAPI.NET SDK contains a useful object model for OpenAPI documents in .NET along with common serializers to extract raw OpenAPI JSON and YAML documents from the model. |
+# | [swagger-models](https://github.com/swagger-api/swagger-core/tree/feature/3.0.0-rc0/modules/swagger-models) | Java | Open API 3.0 Java Pojos |
+
+
 ##  Documentation Viewers/Consoles
 
 # Tool|Language|Description|Website
@@ -113,25 +172,7 @@
 # [light-rest-4j](https://github.com/networknt/light-rest-4j) | Java | Generate and validate based on OpenAPI 3.0 specification | https://doc.networknt.com/tutorial/rest/openapi/petstore/
 # | [Fusio](https://github.com/apioo/fusio) | PHP, JavaScript | Build API endpoints based on OpenAPI 3 | http://fusio-project.org/ |
 #
-# ## Parsers/Models/Validators
-#
-# Tool|Language|Description|Website
-# ---|---|---|---|
-# | [swagger-parser](https://github.com/swagger-api/swagger-parser/tree/feature/3.0.0-rc0) | Java | Swagger 1.0, 1.1, 1.2, 2.0 to Open API Specification converter |
-# | [swagger-models](https://github.com/swagger-api/swagger-core/tree/feature/3.0.0-rc0/modules/swagger-models) | Java | Open API 3.0 Java Pojos |
-# | [KaiZen OpenAPI Parser](https://github.com/RepreZen/KaiZen-OpenApi-Parser) | Java | High-performance Parser, Validator, and Java Object Model for OpenAPI 3.x |
-# [openapi3-ts](https://github.com/metadevpro/openapi3-ts)|typescript|TS Model & utils for OpenAPI 3.0.x contracts|
-# [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
-# [Tavis.OpenApi](https://github.com/tavis-software/Tavis.OpenApi/)|dotnet|C# based parser with definition validation and migration support from V2 | http://openapiconverter.azurewebsites.net/
-# [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
-# [kin-openapi](https://github.com/jban332/kin-openapi)|Go|A Go library for handling OpenAPI 3.0 specifications|
-# [openapi3-rust](https://github.com/adwhit/openapi3-rust)|Rust|Rust serialization library for OpenAPIv3|
-# [psx-api](https://github.com/apioo/psx-api) | PHP | Parse and generate API specification formats | http://phpsx.org
-# [openapi-spec-validator](https://github.com/p1c2u/openapi-spec-validator) | Python | OpenAPI Spec validator | [Docker image](https://hub.docker.com/r/usabillabv/openapi3-validator/)
-# [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
-# [openapi3_parser](https://github.com/kevindew/openapi3_parser) | Ruby | A Ruby implementation of parsing and validating the OpenAPI 3 Specification |
-# [OpenAPI.net](https://github.com/Microsoft/OpenAPI.NET) | C# | The OpenAPI.NET SDK contains a useful object model for OpenAPI documents in .NET along with common serializers to extract raw OpenAPI JSON and YAML documents from the model. |
-#
+
 # ## Tools
 #
 # Tool|Language|Description|Website

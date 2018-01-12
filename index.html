@@ -67,18 +67,19 @@
               {% for tool in site.data.tools %}
                 {% if tool.category == category.slug %}
                   <tr>
-                    <td><a href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">{{ tool.name }}</a></td>
+                    <td>
+                      <a href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">
+                        {{ tool.name }}
+                      </a>
+                      {% if tool.description %}
+                      - {{ tool.description }}
+                      {% endif %}
+                    </td>
                     <td>{{ tool.language }}</td>
                     <td>{% if tool.v2 %}✅{% else %}❌{% endif %}</a></td>
                     <td>{% if tool.v3 %}✅{% else %}❌{% endif %}</a></td>
                     <td>{% if tool.github %}<a href="{{ tool.github }}"><img src="/img/octocat.png"></a>{% else %}{% endif %}</td>
                   </tr>
-                  {% if tool.description %}
-                  <tr colspan="5">
-                    {{ tool.description }}
-                  </tr>
-                  {% endif %}
-
                 {% endif %}
               {% endfor %}
 
