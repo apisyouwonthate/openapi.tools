@@ -37,6 +37,7 @@
   category: converters
   github: https://github.com/mission-liao/pyswagger
   language: Python
+  v2: true
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
 
