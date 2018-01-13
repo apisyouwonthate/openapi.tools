@@ -73,6 +73,7 @@
   link: https://rebilly.github.io/ReDoc/
   description: OpenAPI/Swagger-generated API Reference Documentation
   v2: true
+  v3_progress_link: https://github.com/Rebilly/ReDoc/issues/327
 
 - name: widdershins
   category: documentation
@@ -89,6 +90,7 @@
   language: Java
   description: Design, Build, and Document APIs in the Cloud with SwaggerHub
   v2: true
+  v3_progress_link: https://github.com/swagger-api/swagger-codegen/issues/6598
 
 - name: generator-openapi-repo
   category: code-generators
