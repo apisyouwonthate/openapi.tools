@@ -5,16 +5,16 @@
   <head>
     <title>OpenAPI Tools | Editors, Linters, Parsers, Code Generators, Documentation, Testing for APIs </title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <div class="container-fluid" id="header">
+    <div class="container mx-auto" id="header">
       <div class="row">
         <div class="col-lg">
-          <h2 class="text-center display-2">OpenAPI Tools</h2>
+          <h2 class="text-center font-sans font-light">OpenAPI Tools</h2>
         </div>
       </div>
       <nav>
@@ -29,22 +29,22 @@
       <hr>
       <div class="row justify-content-md-center">
         <div class="col-8">
-          <h2 class="display-4">Why?</h2>
-          <p>This project is aimed at getting API developers the best tools and knowledge possible. As OpenAPI v3 rolls out, we want to push developers towards that standard and leave OpenAPI v2 behind.</p>
-          <p>This project will describe what linters, documentation tools, code generators and more are already on OpenAPI 3.x</p>
+          <h2 class="font-sans font-light">Why?</h2>
+          <p class="font-serif">This project is aimed at getting API developers the best tools and knowledge possible. As OpenAPI v3 rolls out, we want to push developers towards that standard and leave OpenAPI v2 behind.</p>
+          <p class="font-serif">This project will describe what linters, documentation tools, code generators and more are already on OpenAPI 3.x</p>
         </div>
       </div>
       <div class="row justify-content-md-center">
         <div class="col-8">
-          <h2 class="display-4">Contribute</h2>
-          <p>This project was created by Matthew Trask and Phil Sturgeon with <a href="https://github.com/apisyouwonthate/openapi.tools/graphs/contributors">contributions</a> from the community. If you need help, hit <a href="https://twitter.com/matthewtrask">Matt</a> or <a href="https://twitter.com/philsturgeon">Phil</a> up on twitter.</p>
+          <h2 class="font-sans font-light">Contribute</h2>
+          <p class="font-serif">This project was created by Matthew Trask and Phil Sturgeon with <a href="https://github.com/apisyouwonthate/openapi.tools/graphs/contributors">contributions</a> from the community. If you need help, hit <a href="https://twitter.com/matthewtrask">Matt</a> or <a href="https://twitter.com/philsturgeon">Phil</a> up on twitter.</p>
         </div>
       </div>
       <div class="row justify-content-md-center">
         <div class="col-8">
-          <h2 class="display-4">Current OpenAPI Version</h2>
+          <h2 class="font-sans font-light">Current OpenAPI Version</h2>
           <blockquote class="blockquote">
-            <p class="lead">3.0.1 - <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md">Link to the specification</a></p>
+            <p class="lead font-serif">3.0.1 - <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.1.md">Link to the specification</a></p>
             </blockquote>
         </div>
       </div>
@@ -52,7 +52,7 @@
 
         {% for category in site.data.categories %}
         <div class="col-8" id="{{ category.slug }}">
-          <h2 class="display-4">{{ category.name }}</h2>
+          <h2 class="font-sans font-light">{{ category.name }}</h2>
           <table class="table table-striped">
             <thead>
               <tr>
@@ -67,7 +67,7 @@
               {% for tool in site.data.tools %}
                 {% if tool.category == category.slug %}
                   <tr>
-                    <td>
+                    <td class="font-serif">
                       <a href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">
                         {{ tool.name }}
                       </a>
@@ -75,9 +75,9 @@
                       - {{ tool.description }}
                       {% endif %}
                     </td>
-                    <td>{{ tool.language }}</td>
-                    <td>{% if tool.v2 %}✅{% else %}❌{% endif %}</td>
-                    <td>{% if tool.v3 %}✅{% elsif tool.v3_progress_link %}<a href="{{ tool.v3_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
+                    <td class="font-serif">{{ tool.language }}</td>
+                    <td class="font-serif">{% if tool.v2 %}✅{% else %}❌{% endif %}</td>
+                    <td class="font-serif">{% if tool.v3 %}✅{% elsif tool.v3_progress_link %}<a href="{{ tool.v3_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
                     <td>{% if tool.github %}<a href="{{ tool.github }}"><img src="/img/octocat.png"></a>{% else %}{% endif %}</td>
                   </tr>
                 {% endif %}
@@ -85,7 +85,7 @@
 
             </tbody>
           </table>
-	  <p><a href="#header">Back to top</a></p>
+	  <p class="font-serif"><a href="#header">Back to top</a></p>
         </div>
         {% endfor %}
       </div>
