@@ -18,10 +18,11 @@
         </div>
       </div>
       <nav>
-        <ul class="nav justify-content-center">
+
+        <ul class="list-reset flex">
           {% for category in site.data.categories %}
-          <li class="nav-item">
-            <a class="nav-link" href="#{{ category.slug }}">{{ category.name }}</a>
+          <li class="mr-6">
+            <a class="text-blue hover:text-blue-darker" href="#{{ category.slug }}">{{ category.name }}</a>
           </li>
           {%  endfor %}
         </ul>
@@ -53,7 +54,7 @@
         {% for category in site.data.categories %}
         <div class="col-8" id="{{ category.slug }}">
           <h2 class="font-sans font-light">{{ category.name }}</h2>
-          <table class="table table-striped">
+          <table class="table">
             <thead>
               <tr>
                 <th>Name</th>
@@ -66,7 +67,7 @@
             <tbody>
               {% for tool in site.data.tools %}
                 {% if tool.category == category.slug %}
-                  <tr>
+                  <tr class="table-row">
                     <td class="font-serif">
                       <a href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">
                         {{ tool.name }}
