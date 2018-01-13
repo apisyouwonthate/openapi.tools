@@ -31,7 +31,7 @@
         <div class="col-8">
           <h2 class="display-4">Why?</h2>
           <p>This project is aimed at getting API developers the best tools and knowledge possible. As OpenAPI v3 rolls out, we want to push developers towards that standard and leave OpenAPI v2 behind.</p>
-          <p>This project will describe what linters, documentations, code generators and more are already on OpenAPI 3.x</p>
+          <p>This project will describe what linters, documentation tools, code generators and more are already on OpenAPI 3.x</p>
         </div>
       </div>
       <div class="row justify-content-md-center">
@@ -76,8 +76,8 @@
                       {% endif %}
                     </td>
                     <td>{{ tool.language }}</td>
-                    <td>{% if tool.v2 %}✅{% else %}❌{% endif %}</a></td>
-                    <td>{% if tool.v3 %}✅{% else %}❌{% endif %}</a></td>
+                    <td>{% if tool.v2 %}✅{% else %}❌{% endif %}</td>
+                    <td>{% if tool.v3 %}✅{% elsif tool.v3_progress_link %}<a href="{{ tool.v3_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
                     <td>{% if tool.github %}<a href="{{ tool.github }}"><img src="/img/octocat.png"></a>{% else %}{% endif %}</td>
                   </tr>
                 {% endif %}
