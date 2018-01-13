@@ -14,12 +14,12 @@
     <div class="container mx-auto" id="header">
       <div class="row">
         <div class="col-lg">
-          <h2 class="text-center font-sans font-light">OpenAPI Tools</h2>
+          <h2 class="text-center font-sans font-light text-5xl">OpenAPI Tools</h2>
         </div>
       </div>
       <nav>
 
-        <ul class="list-reset flex">
+        <ul class="list-reset flex text-center">
           {% for category in site.data.categories %}
           <li class="mr-6">
             <a class="text-blue hover:text-blue-darker" href="#{{ category.slug }}">{{ category.name }}</a>
