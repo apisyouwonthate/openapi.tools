@@ -1,17 +1,17 @@
+# - name: Code Generators
+#   slug: code-generators
+
 - name: Converters
   slug: converters
+
+- name: Documentation
+  slug: documentation
 
 - name: Editors
   slug: editors
 
-- name: Linters
-  slug: linters
+- name: Miscellaneous
+  slug: miscellaneous
 
-- name: Parsers
+- name: Parsers / Validators
   slug: parsers
-
-- name: Code Generators
-  slug: code-generators
-
-- name: Documentation
-  slug: documentation

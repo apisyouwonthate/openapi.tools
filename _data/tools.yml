@@ -195,11 +195,24 @@
   v2: true
   v3: true
 
+- name: openapi-spec-validator
+  category: parsers
+  github: https://github.com/p1c2u/openapi-spec-validator
+  language: Python
+  description: OpenAPI Spec validator
+  v3: true
+
+- name: Tavis.OpenApi
+  category: parsers
+  github: https://github.com/tavis-software/Tavis.OpenApi/
+  link: http://openapiconverter.azurewebsites.net/
+  language: .NET
+  description: C# based parser with definition validation and migration support from V2
+  v2: true
+  v3: true
 
 # [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
-# [](https://github.com/tavis-software/Tavis.OpenApi/)|dotnet|C# based parser with definition validation and migration support from V2 | http://openapiconverter.azurewebsites.net/
 # [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
-# [openapi-spec-validator](https://github.com/p1c2u/openapi-spec-validator) | Python | OpenAPI Spec validator | [Docker image](https://hub.docker.com/r/usabillabv/openapi3-validator/)
 # [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
 # [openapi3_parser](https://github.com/kevindew/openapi3_parser) | Ruby | A Ruby implementation of parsing and validating the OpenAPI 3 Specification |
 # [OpenAPI.net](https://github.com/Microsoft/OpenAPI.NET) | C# | The OpenAPI.NET SDK contains a useful object model for OpenAPI documents in .NET along with common serializers to extract raw OpenAPI JSON and YAML documents from the model. |
@@ -226,15 +239,9 @@
 # | [Fusio](https://github.com/apioo/fusio) | PHP, JavaScript | Build API endpoints based on OpenAPI 3 | http://fusio-project.org/ |
 #
 
-# ## Tools
-#
-# Tool|Language|Description|Website
-# ---|---|---|---|
-# | [openapi-diff](https://github.com/quen2404/openapi-diff) | Java | Utility for comparing two OpenAPI specifications. |
-#
-# ## Transition Guidelines/Documentation
-#
-# * [swaggerplusplus](https://github.com/mermade/swaggerplusplus)
-# * [OpenAPI Visual Documentation](http://apihandyman.io/openapi-visual-documentation-updated-with-3.0.0-rc0/)
-# * [Comparing OpenAPI 2.0 and 3.0.x definitions (blog posting)](https://dev.to/mikeralphson/comparing-openapiswagger-20-and-300-rc1)
-# * [Converting OpenAPI 2.0 to 3.0.0 (blog posting)](https://blog.runscope.com/posts/tutorial-upgrading-swagger-2-api-definition-to-openapi-3)
+# Miscellaneous
+- name: openapi-diff
+  category: miscellaneous
+  github: https://github.com/quen2404/openapi-diff
+  language: Java
+  description: Utility for comparing two OpenAPI specifications.
