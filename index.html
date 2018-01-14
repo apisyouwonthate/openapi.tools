@@ -19,7 +19,7 @@
       </div>
       <nav>
 
-        <ul class="list-reset flex text-center">
+        <ul class="list-reset flex text-center justify-center">
           {% for category in site.data.categories %}
           <li class="mr-6">
             <a class="text-blue hover:text-blue-darker" href="#{{ category.slug }}">{{ category.name }}</a>
@@ -68,7 +68,7 @@
               {% for tool in site.data.tools %}
                 {% if tool.category == category.slug %}
                   <tr class="table-row">
-                    <td class="font-serif">
+                    <td class="font-serif w-3/5">
                       <a href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">
                         {{ tool.name }}
                       </a>
@@ -76,9 +76,9 @@
                       - {{ tool.description }}
                       {% endif %}
                     </td>
-                    <td class="font-serif">{{ tool.language }}</td>
-                    <td class="font-serif">{% if tool.v2 %}✅{% else %}❌{% endif %}</td>
-                    <td class="font-serif">{% if tool.v3 %}✅{% elsif tool.v3_progress_link %}<a href="{{ tool.v3_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
+                    <td class="font-serif w-1/5">{{ tool.language }}</td>
+                    <td class="font-serif w-1/5">{% if tool.v2 %}✅{% else %}❌{% endif %}</td>
+                    <td class="font-serif w-1/5">{% if tool.v3 %}✅{% elsif tool.v3_progress_link %}<a href="{{ tool.v3_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
                     <td>{% if tool.github %}<a href="{{ tool.github }}"><img src="/img/octocat.png"></a>{% else %}{% endif %}</td>
                   </tr>
                 {% endif %}
@@ -91,6 +91,6 @@
         {% endfor %}
       </div>
     </div>
-<footer><p class="font-sans text-center">Copyright 2018 - Apis You Wont Hate</p></footer>
+<footer><p class="font-sans text-center">Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> - Apis You Wont Hate</p></footer>
   </body>
 </html>
