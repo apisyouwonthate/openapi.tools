@@ -79,7 +79,7 @@
                     <td class="font-serif w-1/5 text-center">{{ tool.language }}</td>
                     <td class="font-serif w-1/3 text-center">{% if tool.v2 %}✅{% else %}❌{% endif %}</td>
                     <td class="font-serif w-1/3 text-center">{% if tool.v3 %}✅{% elsif tool.v3_progress_link %}<a href="{{ tool.v3_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
-                    <td>{% if tool.github %}<a href="{{ tool.github }}"><img src="/img/octocat.png"></a>{% else %}{% endif %}</td>
+                    <td class="w-1/3 text-center">{% if tool.github %}<a href="{{ tool.github }}"><img src="/img/octocat.png"></a>{% else %}{% endif %}</td>
                   </tr>
                 {% endif %}
               {% endfor %}
