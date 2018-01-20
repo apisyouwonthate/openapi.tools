@@ -4,8 +4,8 @@
   category: converters
   language: Node.js
   link: https://mermade.org.uk/openapi-converter
-  github: https://github.com/mermade/swagger2openapi
-  description: An OpenAPI / Swagger 2.0 to OpenAPI 3.0.x converter and validator
+  github: https://github.com/Mermade/swagger2openapi
+  description: Upgrade specs from OpenAPI v2.0 to v3.0, bundling into one mega file or respecting $refs
   v2: true
   v3: true
 
@@ -39,7 +39,6 @@
   language: Python
   v2: true
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
-
 
 #  Documentation Viewers/Consoles
 
@@ -82,7 +81,7 @@
   language: Node.js
   description: Generate Slate/Shins markdown from OpenAPI 3.0.x
   v3: true
-  
+
 - name: Swagger-Codegen
   category: code-generators
   link: https://swagger.io/swagger-codegen/
@@ -242,6 +241,7 @@
 # Miscellaneous
 - name: openapi-diff
   category: miscellaneous
-  github: https://github.com/quen2404/openapi-diff
   language: Java
+  github: https://github.com/quen2404/openapi-diff
   description: Utility for comparing two OpenAPI specifications.
+  v3: true
