@@ -201,12 +201,11 @@
   description: OpenAPI Spec validator
   v3: true
 
-- name: Tavis.OpenApi
+- name: Microsoft/OpenAPI.NET
   category: parsers
-  github: https://github.com/tavis-software/Tavis.OpenApi/
-  link: http://openapiconverter.azurewebsites.net/
+  github: https://github.com/Microsoft/OpenAPI.NET
   language: .NET
-  description: C# based parser with definition validation and migration support from V2
+  description: "C# based parser with definition validation and migration support from V2"
   v2: true
   v3: true
 
