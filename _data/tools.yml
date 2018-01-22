@@ -198,7 +198,7 @@
   category: parsers
   github: https://github.com/p1c2u/openapi-spec-validator
   language: Python
-  description: OpenAPI Spec validator
+  description: OpenAPI aSpec validator
   v3: true
 
 - name: Microsoft/OpenAPI.NET
@@ -236,6 +236,14 @@
 # [light-rest-4j](https://github.com/networknt/light-rest-4j) | Java | Generate and validate based on OpenAPI 3.0 specification | https://doc.networknt.com/tutorial/rest/openapi/petstore/
 # | [Fusio](https://github.com/apioo/fusio) | PHP, JavaScript | Build API endpoints based on OpenAPI 3 | http://fusio-project.org/ |
 #
+
+# SDK Generators
+- name: janephp/openapi
+  category: sdk
+  language: PHP
+  github: https://github.com/janephp/openapi
+  description:  Generate a PHP Client API (PSR7 compatible) given a OpenAPI (Swagger) specification.
+  v2: true
 
 # Miscellaneous
 - name: openapi-diff

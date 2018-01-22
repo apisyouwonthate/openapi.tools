@@ -15,3 +15,6 @@
 
 - name: Parsers / Validators
   slug: parsers
+
+- name: SDK Generators
+  slug: sdk
