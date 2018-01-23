@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #89709B;
+  color: #fff;
+}
+
+.jumbotron a {
+  color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-family: "Arvo",serif;
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.content {
+  background-color: #f7f7f7;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:hover {
+  background-color: #4c844e;
+  border: 0;
+  color: #fff;
+}
+
+.btn-secondary, .btn-secondary:active, .btn-secondary:hover {
+  background-color: #80b682;
+  border: 0;
+  color: #fff;
+}
+
+footer {
+  background-color: #80b682;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+footer p {
+  color: #fff;
+  margin-bottom: .25rem;
+}
+
+header a, footer a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+header a:hover, header a:visited, footer a:hover, footer a:visited {
+  color: #ddd;
+}
