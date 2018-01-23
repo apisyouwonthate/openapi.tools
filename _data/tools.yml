@@ -37,6 +37,7 @@
   category: converters
   github: https://github.com/mission-liao/pyswagger
   language: Python
+  description: Client & converter in Python, which is type-safe, dynamic, spec-compliant. 
   v2: true
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
@@ -253,6 +254,18 @@
   github: https://github.com/janephp/openapi
   description:  Generate a PHP Client API (PSR7 compatible) given a OpenAPI (Swagger) specification.
   v2: true
+
+- name: go-swagger
+  category:
+    - parser
+    - sdk
+    - converters
+  link: https://goswagger.io/
+  github: https://github.com/go-swagger/go-swagger/issues/1122
+  language: Go
+  description: Everything all in one. Parser, validator, generates spec from code, or code from spec!
+  v2: true
+  v3_progress_link: https://github.com/go-swagger/go-swagger/issues/1122
 
 # Miscellaneous
 - name: openapi-diff

@@ -66,7 +66,7 @@
             </thead>
             <tbody>
               {% for tool in site.data.tools %}
-                {% if tool.category == category.slug %}
+                {% if tool.category == category.slug or tool.category contains category.slug %}
                   <tr class="table-row">
                     <td class="font-serif w-3/5">
                       <a href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">
