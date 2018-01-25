@@ -37,7 +37,7 @@
   category: converters
   github: https://github.com/mission-liao/pyswagger
   language: Python
-  description: Client & converter in Python, which is type-safe, dynamic, spec-compliant. 
+  description: Client & converter in Python, which is type-safe, dynamic, spec-compliant.
   v2: true
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
@@ -164,6 +164,13 @@
   github: https://github.com/swagger-api/swagger-parser
   language: Java
   description: Swagger 1.0, 1.1, 1.2, 2.0 to OpenAPI Specification parser
+  v2: true
+
+- name: BigstickCarpet/swagger-cli
+  category: parsers
+  github: https://github.com/BigstickCarpet/swagger-cli
+  language: Node.js / CLI
+  description: A handy cli tool for validating JSON or YAML files schema files that respects $ref
   v2: true
 
 - name: KaiZen OpenAPI Parser
