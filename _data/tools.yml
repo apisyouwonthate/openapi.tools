@@ -1,5 +1,21 @@
 # Converters
 
+- name: Apimatic Transformer
+  category: converters
+  language: SaaS
+  description: Transform API Descriptions to formats to and from RAML, API Blueprint, OAI v2/v3, WSDL, etc.
+  link: https://apimatic.io/transformer
+  v2: true
+  v3: true
+
+- name: API Flow
+  category: converters
+  github: https://github.com/philsturgeon/API-Flow
+  description: Convert from and too multiple formats. Linking to Phil's fork because the original is completely broken
+  language: JavaScript
+  v2: true
+  v3_progress_link: https://github.com/JonathanMontane/API-Flow/pull/4
+
 - name: swagger2openapi
   category: converters
   language: Node.js
