@@ -10,6 +10,9 @@
 - name: Editors
   slug: editors
 
+- name: Mock Generators
+  slug: mock
+
 - name: Miscellaneous
   slug: miscellaneous
 

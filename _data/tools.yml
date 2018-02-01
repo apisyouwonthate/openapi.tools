@@ -172,6 +172,15 @@
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
 
+# Mock Generators
+- name: Prism
+  category: mock
+  language: cli
+  link: http://stoplight.io/platform/prism/
+  github: https://github.com/stoplightio/prism
+  description: Turn any OAI file into an API server with mocking, transformations, validations, and more.
+  v2: true
+
 # Parsers / Validators
 
 - name: swagger-parser
