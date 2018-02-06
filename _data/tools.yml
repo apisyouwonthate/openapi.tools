@@ -11,10 +11,17 @@
 - name: API Flow
   category: converters
   github: https://github.com/philsturgeon/API-Flow
-  description: Convert from and too multiple formats. Linking to Phil's fork because the original is completely broken
+  description: Convert from and to multiple formats. Linking to Phil's fork because the original is completely broken
   language: JavaScript
   v2: true
   v3_progress_link: https://github.com/JonathanMontane/API-Flow/pull/4
+
+- name: Google Gnostic
+  category: converters
+  github: https://github.com/googleapis/gnostic
+  language: Go
+  description: Compile OpenAPI descriptions into equivalent Protocol Buffer representations
+  v3: true
 
 - name: swagger2openapi
   category: converters
@@ -40,7 +47,6 @@
   github: https://github.com/Mermade/openapi-filter
   v2: true
   v3: true
-
 
 - name: OData.OpenAPI
   category: converters
@@ -183,8 +189,14 @@
 
 # Parsers / Validators
 
+- name: speccy
+  category: parsers
+  github: https://github.com/wework/speccy
+  language: CLI
+  description: Lint to enforce quality rules on your OpenAPI specifications
+  v3: true
+
 - name: swagger-parser
-  owner: Smartbear
   category: parsers
   github: https://github.com/swagger-api/swagger-parser
   language: Java
@@ -259,11 +271,7 @@
 # | [swagger-models](https://github.com/swagger-api/swagger-core/tree/feature/3.0.0-rc0/modules/swagger-models) | Java | Open API 3.0 Java Pojos |
 
 # ## Generators
-#
-# Tool|Language|Description|Website
-# ---|---|---|---|
 # [baucis-openapi3](https://github.com/metadevpro/baucis-openapi3)|Node.js|plugin for [baucis.js](https://github.com/wprl/baucis)|
-# [Google Gnostic](https://github.com/googleapis/gnostic)|Go|Compile OpenAPI descriptions into equivalent Protocol Buffer representations
 # [serverless-openapi-documentation](https://github.com/temando/serverless-openapi-documentation)|Typescript|Serverless 1.0 plugin to generate OpenAPI V3 documentation from serverless configuration|
 # [zero-rails_openapi](https://github.com/zhandao/zero-rails_openapi)|Ruby|Provide concise DSL for generating the OpenAPI Specification 3 (OAS3) documentation JSON file for Rails application, then you can use Swagger UI 3.2.0+ to show the documentation.
 # [slush-vertx](https://www.npmjs.com/package/slush-vertx) | Java, Kotlin & Groovy | Generate server skeleton for [Vert.x Web API Contract](http://vertx.io/docs/#web) and API Client based on [Vert.x 3 Web Client](http://vertx.io/docs/#web) | [NPM Package](https://www.npmjs.com/package/slush-vertx) [Github Repo](https://github.com/pmlopes/slush-vertx)
