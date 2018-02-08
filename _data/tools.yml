@@ -131,7 +131,9 @@
 - name: KaiZen-OpenAPI-Editor
   category: editors
   language: Java
+  license: EPL
   github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
+  description: Full-featured Eclipse editor for OpenAPI 2.0 and 3.0, also available on Eclipse Marketplace.
   v2: true
   v3: true
 
