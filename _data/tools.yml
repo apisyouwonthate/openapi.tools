@@ -290,10 +290,10 @@
 #
 
 # SDK Generators
-- name: janephp/openapi
+- name: janephp/open-api
   category: sdk
   language: PHP
-  github: https://github.com/janephp/openapi
+  github: https://github.com/janephp/open-api
   description:  Generate a PHP Client API (PSR7 compatible) given a OpenAPI (Swagger) specification.
   v2: true
 
