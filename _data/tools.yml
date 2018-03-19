@@ -171,6 +171,7 @@
   description: |
     A standalone API design studio that can be used to create new or edit existing API designs.
   v2: true
+  v3: true
 
 - name: Rápido
   category: editors
