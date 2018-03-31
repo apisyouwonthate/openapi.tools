@@ -13,6 +13,9 @@
 - name: Mock Generators
   slug: mock
 
+- name: Server implementations
+  slug: server
+
 - name: Miscellaneous
   slug: miscellaneous
 
