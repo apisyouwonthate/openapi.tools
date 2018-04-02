@@ -190,6 +190,17 @@
   description: Turn any OAI file into an API server with mocking, transformations, validations, and more.
   v2: true
 
+# Server implementations
+
+- name: Vert.x Web Api Contract
+  category: server
+  language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon & Scala
+  link: https://vertx.io/docs/#web
+  github: https://github.com/vert-x3/vertx-web/tree/master/vertx-web-api-contract
+  description: Create API endpoints with Vert.x 3 and OpenAPI 3 with automatic requests validation
+  v2: false
+  v3: true
+
 # Parsers / Validators
 
 - name: speccy
