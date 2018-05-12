@@ -122,6 +122,14 @@
   language: JavaScript
   description: Generate the repository structure for a scalable OpenAPI definition
   v2: true
+  
+- name: OpenAPI Generator
+  category: code-generators
+  language: Java
+  github: https://github.com/OpenAPITools/openapi-generator
+  description: A template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI definition (community-driven fork of swagger-codegen)
+  v2: true
+  v3: true
 
 # [io-docs](https://github.com/mikeralphson/iodocs)|Node.js|fork of Mashery IO-docs with OpenAPI 2/3 support|http://io-docs.herokuapp.com/
 # [lincoln](https://github.com/temando/open-api-renderer)|React.js|A React renderer for Open API v3|https://temando.github.io/open-api-renderer/demo/?url=https://temando.github.io/open-api-renderer/petstore-open-api-v3.0.0-RC2.json
