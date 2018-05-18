@@ -10,7 +10,7 @@
 - name: Editors
   slug: editors
 
-- name: Mock Generators
+- name: Mock Servers
   slug: mock
 
 - name: Server implementations

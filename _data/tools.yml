@@ -122,7 +122,7 @@
   language: JavaScript
   description: Generate the repository structure for a scalable OpenAPI definition
   v2: true
-  
+
 - name: OpenAPI Generator
   category: code-generators
   language: Java
@@ -189,7 +189,7 @@
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
 
-# Mock Generators
+# Mock Servers
 - name: Prism
   category: mock
   language: cli
@@ -197,6 +197,15 @@
   github: https://github.com/stoplightio/prism
   description: Turn any OAI file into an API server with mocking, transformations, validations, and more.
   v2: true
+
+- name: Sandbox
+  category: mock
+  language: SaaS / Java
+  link: https://getsandbox.com/
+  github: https://github.com/getsandbox/sandbox
+  description: SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) definitions into a mock server, where you can modify behaviour, simulate downtime, and any other nonsnese you can think of thanks to a built-in code editor!
+  v2: true
+  v3: true
 
 # Server implementations
 
