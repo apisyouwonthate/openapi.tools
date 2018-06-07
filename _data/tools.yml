@@ -124,7 +124,11 @@
   v2: true
 
 - name: OpenAPI Generator
-  category: code-generators
+  category:
+    - code-generators
+    - sdk
+    - converters
+  link: https://openapi-generator.tech
   language: Java
   github: https://github.com/OpenAPITools/openapi-generator
   description: A template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI definition (community-driven fork of swagger-codegen)
