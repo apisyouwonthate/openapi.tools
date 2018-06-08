@@ -65,6 +65,14 @@
 
 #  Documentation Viewers/Consoles
 
+- name: Kong Enterprise Edition
+  category: documentation
+  link: https://konghq.com/kong-enterprise-edition/
+  language: Lua
+  description: Highly customizable developer portal with developer onboarding, integrated with the Kong API Gateway
+  v2: true
+  v3: true
+  
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
