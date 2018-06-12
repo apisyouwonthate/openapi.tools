@@ -218,6 +218,15 @@
   description: SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) definitions into a mock server, where you can modify behaviour, simulate downtime, and any other nonsnese you can think of thanks to a built-in code editor!
   v2: true
   v3_progress_link: https://github.com/getsandbox/sandbox/issues/31
+  
+- name: Microcks
+  category: mock
+  language: Self-hosted / SaaS
+  link: https://microcks.github.io
+  github: https://github.com/microcks/microcks
+  description: Mocking and testing platform for API and microservices. Turn your OAI contract examples into ready to use mocks. Use examples to test and validate implementations according schema elements.
+  v2: true
+  v3: true
 
 # Server implementations
 
