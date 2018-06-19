@@ -90,7 +90,7 @@
 
 - name: Spectacle
   category: documentation
-  language: JavaScript
+  language: Node.js
   description: Spectacle generates beautiful static HTML5 documentation from OpenAPI/Swagger 2.0 API specifications
   link: https://sourcey.com/spectacle/
   github: https://github.com/sourcey/spectacle
@@ -98,7 +98,7 @@
 
 - name: ReDoc
   category: documentation
-  language: JavaScript
+  language: React.js
   github: https://github.com/Rebilly/ReDoc/
   link: https://rebilly.github.io/ReDoc/
   description: OpenAPI/Swagger-generated API Reference Documentation
