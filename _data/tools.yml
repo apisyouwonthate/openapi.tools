@@ -169,6 +169,7 @@
   category: editors
   language: Node.js
   github: https://github.com/swagger-api/swagger-editor
+  description: Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs. 
   v2: true
   v3: true
 
