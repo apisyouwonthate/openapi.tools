@@ -193,6 +193,15 @@
   github: https://github.com/apiacademy/rapido-web
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
+  
+- name: SwaggerHub
+  category: editors
+  language: SaaS/On-Premise NodeJS
+  github: 
+  link:https://swagger.io/tools/swaggerhub/ 
+  description: API design and documentation platform to improve collaboration, standardize development workflow and centralize their API discovery and consumption. 
+  v2: true
+  v3: true
 
 # Mock Servers
 - name: Prism
