@@ -238,6 +238,24 @@
   description: Create API endpoints with Vert.x 3 and OpenAPI 3 with automatic requests validation
   v2: false
   v3: true
+  
+- name: BaucisJS + baucis-openapi3
+  category: server
+  language: JavaScript
+  link: https://www.npmjs.com/package/baucis-openapi3
+  github: https://github.com/metadevpro/baucis-openapi3
+  description: Create REST resources with persistence on MongoDB and expose OpenAPI v.3 contracts
+  v2: false
+  v3: true
+
+- name: BaucisJS + baucis-swagger2
+  category: server
+  language: JavaScript
+  link: https://www.npmjs.com/package/baucis-swagger2
+  github: https://github.com/icinetic/baucis-swagger2
+  description: Create REST resources with persistence on MongoDB and expose OpenAPI v.2 contracts
+  v2: true
+  v3: false
 
 # Parsers / Validators
 
