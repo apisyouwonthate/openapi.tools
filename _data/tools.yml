@@ -375,3 +375,14 @@
   description: Generate OAS files from code comments and easily host them ($ npm install oas -g)
   v2: true
   v3: true
+  
+# Testing
+- name: Swagger Inspector
+  category: Testing
+  language: Self-hosted/SaaS
+  link: inspector.swagger.io
+  github: 
+  description: Swagger Inspector is a free online tool to quickly execute any API request, validate its responses and generate a corresponding OpenAPI definition. 
+  v2: true
+  v3: true
+  
