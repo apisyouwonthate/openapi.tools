@@ -200,6 +200,14 @@
   github: https://github.com/apiacademy/rapido-web
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
+  
+- name: Senya Editor
+  category: editors
+  language: Java
+  link: https://senya.io
+  description: Design API specifications fast and effectively​ in your favorite JetBrains IDE.
+  v2: true
+  v3: true
 
 # Mock Servers
 - name: Prism
