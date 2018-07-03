@@ -72,7 +72,7 @@
   description: Highly customizable developer portal with developer onboarding, integrated with the Kong API Gateway
   v2: true
   v3: true
-  
+
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
@@ -87,14 +87,6 @@
   language: React.js
   description: React based OpenAPI 3.0+ documentation generator
   v3: true
-
-- name: Spectacle
-  category: documentation
-  language: Node.js
-  description: Spectacle generates beautiful static HTML5 documentation from OpenAPI/Swagger 2.0 API specifications
-  link: https://sourcey.com/spectacle/
-  github: https://github.com/sourcey/spectacle
-  v2: true
 
 - name: ReDoc
   category: documentation
@@ -200,7 +192,7 @@
   github: https://github.com/apiacademy/rapido-web
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
-  
+
 - name: Senya Editor
   category: editors
   language: Java
@@ -226,7 +218,7 @@
   description: SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) definitions into a mock server, where you can modify behaviour, simulate downtime, and any other nonsnese you can think of thanks to a built-in code editor!
   v2: true
   v3_progress_link: https://github.com/getsandbox/sandbox/issues/31
-  
+
 - name: Microcks
   category: mock
   language: Self-hosted / SaaS
@@ -246,7 +238,7 @@
   description: Create API endpoints with Vert.x 3 and OpenAPI 3 with automatic requests validation
   v2: false
   v3: true
-  
+
 - name: BaucisJS + baucis-openapi3
   category: server
   language: JavaScript
