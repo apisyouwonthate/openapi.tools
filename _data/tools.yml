@@ -200,6 +200,15 @@
   description: Design API specifications fast and effectively​ in your favorite JetBrains IDE.
   v2: true
   v3: true
+  
+- name: VSCode/openapi-lint
+  category: editors
+  language: Node.js
+  link: https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint
+  github: https://github.com/mermade/openapi-lint-vscode
+  description: OpenAPI (Swagger) 2.0/3.0.x intellisense, validator and linter for Visual Studio Code
+  v2: true
+  v3: true
 
 # Mock Servers
 - name: Prism
