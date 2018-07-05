@@ -190,7 +190,7 @@
   category: editors
   language: SaaS/On-Premise NodeJS
   github: 
-  link:https://swagger.io/tools/swaggerhub/ 
+  link: https://swagger.io/tools/swaggerhub/ 
   description: API design and documentation platform to improve collaboration, standardize development workflow and centralize their API discovery and consumption. 
   v2: true
   v3: true
@@ -270,8 +270,9 @@
 
 # Parsers / Validators
 
-- name: speccy
+- name: Speccy
   category: parsers
+  link: https://speccy.io/
   github: https://github.com/wework/speccy
   language: CLI
   description: Lint to enforce quality rules on your OpenAPI specifications
