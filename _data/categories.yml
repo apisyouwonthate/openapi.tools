@@ -21,6 +21,9 @@
 
 - name: Parsers / Validators
   slug: parsers
+  
+ - name: Testing
+  slug: testing
 
 - name: SDK Generators
   slug: sdk

@@ -106,14 +106,6 @@
   v2: true
   v3: true
 
-- name: Swagger-Codegen
-  category: code-generators
-  link: https://swagger.io/swagger-codegen/
-  github: https://github.com/swagger-api/swagger-codegen
-  language: Java
-  description: Design, Build, and Document APIs in the Cloud with SwaggerHub
-  v2: true
-  v3_progress_link: https://github.com/swagger-api/swagger-codegen/issues/6598
 
 - name: generator-openapi-repo
   category: code-generators
@@ -161,6 +153,7 @@
   category: editors
   language: Node.js
   github: https://github.com/swagger-api/swagger-editor
+  description: Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs. 
   v2: true
   v3: true
 
@@ -191,6 +184,15 @@
   link: https://rapidodesigner.com/
   github: https://github.com/apiacademy/rapido-web
   description: An API design tool that facilitates the sketching phase of design.
+  v3: true
+  
+- name: SwaggerHub
+  category: editors
+  language: SaaS/On-Premise NodeJS
+  github: 
+  link:https://swagger.io/tools/swaggerhub/ 
+  description: API design and documentation platform to improve collaboration, standardize development workflow and centralize their API discovery and consumption. 
+  v2: true
   v3: true
 
 - name: Senya Editor
@@ -394,6 +396,15 @@
   description: Everything all in one. Parser, validator, generates spec from code, or code from spec!
   v2: true
   v3_progress_link: https://github.com/go-swagger/go-swagger/issues/1122
+  
+- name: Swagger-Codegen
+  category: code-generators
+  link: https://swagger.io/swagger-codegen/
+  github: https://github.com/swagger-api/swagger-codegen
+  language: Java
+  description: Swagger Codegen enables generating server stubs and client SDKs for APIs defined in OpenAPI
+  v2: true
+  v3: true
 
 # Miscellaneous
 - name: openapi-diff
@@ -411,3 +422,14 @@
   description: Generate OAS files from code comments and easily host them ($ npm install oas -g)
   v2: true
   v3: true
+  
+# Testing
+- name: Swagger Inspector
+  category: Testing
+  language: Self-hosted/SaaS
+  link: inspector.swagger.io
+  github: 
+  description: Swagger Inspector is a free online tool to quickly execute any API request, validate its responses and generate a corresponding OpenAPI definition. 
+  v2: true
+  v3: true
+  
