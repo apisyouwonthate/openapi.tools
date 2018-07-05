@@ -426,7 +426,7 @@
   
 # Testing
 - name: Swagger Inspector
-  category: Testing
+  category: testing
   language: Self-hosted/SaaS
   link: inspector.swagger.io
   github: 
