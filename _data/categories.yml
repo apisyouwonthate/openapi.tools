@@ -22,7 +22,7 @@
 - name: Parsers / Validators
   slug: parsers
   
- - name: Testing
+- name: Testing
   slug: testing
 
 - name: SDK Generators
