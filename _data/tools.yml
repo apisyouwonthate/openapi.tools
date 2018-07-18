@@ -228,6 +228,7 @@
   github: https://github.com/stoplightio/prism
   description: Turn any OAI file into an API server with mocking, transformations, validations, and more.
   v2: true
+  v3_progress_link: https://github.com/stoplightio/prism/issues/130
 
 - name: Sandbox
   category: mock
