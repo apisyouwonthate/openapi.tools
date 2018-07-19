@@ -161,7 +161,7 @@
   category: editors
   language: Node.js
   github: https://github.com/swagger-api/swagger-editor
-  description: Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs. 
+  description: Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs.
   v2: true
   v3: true
 
@@ -193,13 +193,13 @@
   github: https://github.com/apiacademy/rapido-web
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
-  
+
 - name: SwaggerHub
   category: editors
   language: SaaS/On-Premise NodeJS
-  github: 
-  link: https://swagger.io/tools/swaggerhub/ 
-  description: API design and documentation platform to improve collaboration, standardize development workflow and centralize their API discovery and consumption. 
+  github:
+  link: https://swagger.io/tools/swaggerhub/
+  description: API design and documentation platform to improve collaboration, standardize development workflow and centralize their API discovery and consumption.
   v2: true
   v3: true
 
@@ -210,7 +210,7 @@
   description: Design API specifications fast and effectively​ in your favorite JetBrains IDE.
   v2: true
   v3: true
-  
+
 - name: VSCode/openapi-lint
   category: editors
   language: Node.js
@@ -393,7 +393,7 @@
   category: sdk
   language: SaaS
   link: https://apimatic.io/code-generation-as-a-service
-  description:  Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL, etc.) to generate fully functional SDKs in over 10 languages. 
+  description:  Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL, etc.) to generate fully functional SDKs in over 10 languages.
   v2: true
   v3: true
 
@@ -415,7 +415,7 @@
   description: Everything all in one. Parser, validator, generates spec from code, or code from spec!
   v2: true
   v3_progress_link: https://github.com/go-swagger/go-swagger/issues/1122
-  
+
 - name: Swagger-Codegen
   category: code-generators
   link: https://swagger.io/swagger-codegen/
@@ -441,14 +441,13 @@
   description: Generate OAS files from code comments and easily host them ($ npm install oas -g)
   v2: true
   v3: true
-  
+
 # Testing
 - name: Swagger Inspector
   category: testing
   language: Self-hosted/SaaS
-  link: inspector.swagger.io
-  github: 
-  description: Swagger Inspector is a free online tool to quickly execute any API request, validate its responses and generate a corresponding OpenAPI definition. 
+  link: https://inspector.swagger.io
+  github:
+  description: Swagger Inspector is a free online tool to quickly execute any API request, validate its responses and generate a corresponding OpenAPI definition.
   v2: true
   v3: true
-  
