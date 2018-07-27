@@ -248,6 +248,15 @@
   v2: true
   v3: true
 
+- name: API Sprout
+  category: mock
+  language: cli / Docker
+  link: https://github.com/danielgtaylor/apisprout
+  github: https://github.com/danielgtaylor/apisprout
+  description: Lightweight, blazing fast, cross-platform OpenAPI 3 mock server with validation
+  v2: false
+  v3: true
+
 # Server implementations
 
 - name: Vert.x Web Api Contract
