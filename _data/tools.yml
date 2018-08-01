@@ -154,8 +154,9 @@
   language: JavaScript
   github: https://atom.io/packages/linter-swagger
   license: MIT
-  description: This plugin for Atom Linter will lint Swagger 2.0 specifications, both JSON and YAML using swagger-parser node package.
+  description: This plugin for Atom Linter will lint Swagger 2.0 specifications or OpenAPI 3.0, both JSON and YAML using swagger-parser node package.
   v2: true
+  v3: true
 
 - name: Swagger Editor
   category: editors
