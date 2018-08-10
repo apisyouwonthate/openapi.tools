@@ -63,6 +63,13 @@
   v2: true
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
+- name: odata2openapi
+  category: converters
+  github: https://github.com/elasticio/odata2openapi
+  language: Node.js
+  description: OData 4.0 to OpenAPI 2 converter
+  v2: true
+
 #  Documentation Viewers/Consoles
 
 - name: APIMatic Developer Experience Portal
