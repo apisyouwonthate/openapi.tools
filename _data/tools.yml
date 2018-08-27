@@ -32,6 +32,15 @@
   v2: true
   v3: true
 
+- name: 
+  category: converters
+  language: Node.js
+  link: https://mulesoft.github.io/oas-raml-converter/
+  github: https://github.com/mulesoft/oas-raml-converter
+  description: Converts between OAS and RAML API specifications
+  v2: true
+  v3: true
+
 - name: OData OpenAPI
   category: converters
   language: XSLT
