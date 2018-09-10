@@ -32,7 +32,7 @@
   v2: true
   v3: true
 
-- name: 
+- name: OAS RAML Converter
   category: converters
   language: Node.js
   link: https://mulesoft.github.io/oas-raml-converter/
@@ -129,7 +129,7 @@
   description: Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x
   v2: true
   v3: true
-  
+
 - name: openapi3-generator
   category:
     - documentation
@@ -140,7 +140,7 @@
   description: Use your API OpenAPI 3 definition to generate code, documentation, and literally anything you need.
   v2: false
   v3: true
-  
+
 
 - name: generator-openapi-repo
   category: code-generators
