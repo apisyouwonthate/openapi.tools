@@ -248,6 +248,17 @@
   v2: true
   v3: true
 
+- name: Apiary
+  category: editors
+  language: SaaS
+  github: https://github.com/apiaryio
+  link: https://apiary.io/
+  description: |
+    API design, documentation and test platform to improve collaboration, standardize development workflow and centralize their
+    API discovery and consumption.
+  v2: true
+  v3_progress_link: https://github.com/apiaryio/fury-adapter-swagger/issues/131
+
 # Mock Servers
 - name: Prism
   category: mock
