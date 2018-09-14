@@ -400,6 +400,18 @@
   v2: true
   v3: true
 
+- name: Dredd
+  category:
+    - parsers
+    - testing
+  link: http://dredd.io/
+  github: https://github.com/apiaryio/dredd
+  language: Javascript
+  description: |
+    Language-agnostic command-line tool for validating API description document against backend implementation of the API
+  v2: true
+  v3_progress_link: https://github.com/apiaryio/dredd/issues/894
+
 # [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
 # [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
 # [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
