@@ -412,6 +412,16 @@
   v2: true
   v3_progress_link: https://github.com/apiaryio/dredd/issues/894
 
+- name: Sway
+  category:
+    - miscellaneous
+    - parsers
+  github: https://github.com/apigee-127/sway
+  language: JavaScript
+  description: A library that simplifies OpenAPI integrations/tooling.
+  v2: true
+  v3_progress_link: https://github.com/apigee-127/sway/issues/128
+
 # [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
 # [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
 # [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
