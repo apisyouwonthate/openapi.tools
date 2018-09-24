@@ -419,6 +419,12 @@
   github: https://github.com/apigee-127/sway
   language: JavaScript
   description: A library that simplifies OpenAPI integrations/tooling.
+
+- name: oval
+  category: parsers
+  github: https://github.com/whitlockjc/oval
+  language: JavaScript
+  description: CLI for (O)penAPI Specification document (val)idation.
   v2: true
   v3_progress_link: https://github.com/apigee-127/sway/issues/128
 
