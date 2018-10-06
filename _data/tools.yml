@@ -222,6 +222,14 @@
   description: An API design tool that facilitates the sketching phase of design.
   v3: true
 
+- name: Stoplight
+  category: editors
+  language: SaaS
+  link: https://stoplight.io/
+  description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI documents to drive the entire API development process
+  v2: true
+  v3: true
+
 - name: SwaggerHub
   category: editors
   language: SaaS/On-Premise NodeJS
