@@ -321,6 +321,17 @@
   description: Create REST resources with persistence on MongoDB and expose OpenAPI v.2 contracts
   v2: true
   v3: false
+  
+- name: @smartrecruiters/openapi-first
+  category: server
+  language: Node.js
+  link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
+  github: https://github.com/smartrecruiters/openapi-first
+  description: |
+    Initializes your API express application with specification in OpenAPI Specification 3.0 format using 
+    provided middlewares (parsers, validators, controller, defaults setting) or custom ones
+  v2: false
+  v3: true
 
 # Parsers / Validators
 
