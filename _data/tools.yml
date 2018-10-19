@@ -119,7 +119,7 @@
   link: https://rebilly.github.io/ReDoc/
   description: OpenAPI/Swagger-generated API Reference Documentation
   v2: true
-  v3_progress_link: https://github.com/Rebilly/ReDoc/issues/327
+  v3: true
 
 - name: widdershins
   category: documentation
