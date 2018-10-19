@@ -322,7 +322,7 @@
   v2: true
   v3: false
   
-- name: @smartrecruiters/openapi-first
+- name: "@smartrecruiters/openapi-first"
   category: server
   language: Node.js
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
