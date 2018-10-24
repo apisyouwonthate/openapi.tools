@@ -536,3 +536,12 @@
   description: Swagger Inspector is a free online tool to quickly execute any API request, validate its responses and generate a corresponding OpenAPI definition.
   v2: true
   v3: true
+
+- name: Assertible
+  category: testing
+  language: SaaS
+  link: https://assertible.com
+  github:
+  description: Import an OpenAPI specification into Assertible to generate tests that validate JSONSchema responses and status codes on every endpoint. 
+  v2: true
+  v3: true
