@@ -21,6 +21,7 @@
   github: https://github.com/googleapis/gnostic
   language: Go
   description: Compile OpenAPI descriptions into equivalent Protocol Buffer representations
+  v2: true
   v3: true
 
 - name: swagger2openapi
