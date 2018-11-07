@@ -166,10 +166,10 @@
 # [io-docs](https://github.com/mikeralphson/iodocs)|Node.js|fork of Mashery IO-docs with OpenAPI 2/3 support|http://io-docs.herokuapp.com/
 # [lincoln](https://github.com/temando/open-api-renderer)|React.js|A React renderer for Open API v3|https://temando.github.io/open-api-renderer/demo/?url=https://temando.github.io/open-api-renderer/petstore-open-api-v3.0.0-RC2.json
 
-# Editors
+# Text Editors
 
 - name: KaiZen-OpenAPI-Editor
-  category: editors
+  category: text-editors
   language: Java
   license: EPL
   github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
@@ -178,7 +178,7 @@
   v3: true
 
 - name: Atom/linter-swagger
-  category: editors
+  category: text-editors
   language: JavaScript
   github: https://atom.io/packages/linter-swagger
   license: MIT
@@ -187,15 +187,43 @@
   v3: true
 
 - name: Swagger Editor
-  category: editors
+  category: text-editors
   language: Node.js
   github: https://github.com/swagger-api/swagger-editor
   description: Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs.
   v2: true
   v3: true
 
+- name: SwaggerHub
+  category: text-editors
+  language: SaaS/On-Premise NodeJS
+  github:
+  link: https://swagger.io/tools/swaggerhub/
+  description: API design and documentation platform to improve collaboration, standardize development workflow and centralize their API discovery and consumption.
+  v2: true
+  v3: true
+
+- name: Senya Editor
+  category: text-editors
+  language: Java
+  link: https://senya.io
+  description: Design API specifications fast and effectively​ in your favorite JetBrains IDE.
+  v2: true
+  v3: true
+
+- name: VSCode/openapi-lint
+  category: text-editors
+  language: Node.js
+  link: https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint
+  github: https://github.com/mermade/openapi-lint-vscode
+  description: OpenAPI (Swagger) 2.0/3.0.x intellisense, validator and linter for Visual Studio Code
+  v2: true
+  v3: true
+
+# GUI Editors
+
 - name: RepreZen API Studio
-  category: editors
+  category: gui-editors
   language: Java
   link: https://www.reprezen.com/
   github: https://www.reprezen.com/swagger-tools
@@ -206,7 +234,7 @@
   v3: true
 
 - name: Apicurio Studio
-  category: editors
+  category: gui-editors
   language: TypeScript
   link: http://www.apicur.io/
   github: https://github.com/apicurio/apicurio-studio
@@ -216,7 +244,7 @@
   v3: true
 
 - name: Rápido
-  category: editors
+  category: gui-editors
   language: Node.js
   link: https://rapidodesigner.com/
   github: https://github.com/apiacademy/rapido-web
@@ -224,36 +252,10 @@
   v3: true
 
 - name: Stoplight
-  category: editors
+  category: gui-editors
   language: SaaS
   link: https://stoplight.io/
   description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI documents to drive the entire API development process
-  v2: true
-  v3: true
-
-- name: SwaggerHub
-  category: editors
-  language: SaaS/On-Premise NodeJS
-  github:
-  link: https://swagger.io/tools/swaggerhub/
-  description: API design and documentation platform to improve collaboration, standardize development workflow and centralize their API discovery and consumption.
-  v2: true
-  v3: true
-
-- name: Senya Editor
-  category: editors
-  language: Java
-  link: https://senya.io
-  description: Design API specifications fast and effectively​ in your favorite JetBrains IDE.
-  v2: true
-  v3: true
-
-- name: VSCode/openapi-lint
-  category: editors
-  language: Node.js
-  link: https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint
-  github: https://github.com/mermade/openapi-lint-vscode
-  description: OpenAPI (Swagger) 2.0/3.0.x intellisense, validator and linter for Visual Studio Code
   v2: true
   v3: true
 
