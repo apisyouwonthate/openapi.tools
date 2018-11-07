@@ -334,15 +334,61 @@
   v2: false
   v3: true
 
-# Parsers / Validators
+# Schema Validators
 
 - name: Speccy
-  category: parsers
+  category: schema-validators
   link: https://speccy.io/
   github: https://github.com/wework/speccy
   language: CLI
   description: Lint to enforce quality rules on your OpenAPI specifications
   v3: true
+
+- name: BigstickCarpet/swagger-cli
+  category: schema-validators
+  github: https://github.com/BigstickCarpet/swagger-cli
+  language: Node.js / CLI
+  description: A handy cli tool for validating JSON or YAML files schema files that respects $ref
+  v2: true
+  v3: true
+
+- name: openapi-spec-validator
+  category: schema-validators
+  github: https://github.com/p1c2u/openapi-spec-validator
+  language: Python
+  description: OpenAPI aSpec validator
+  v3: true
+
+- name: Dredd
+  category:
+    - schema-validators
+    - testing
+  link: http://dredd.io/
+  github: https://github.com/apiaryio/dredd
+  language: Javascript
+  description: |
+    Language-agnostic command-line tool for validating API description document against backend implementation of the API
+  v2: true
+  v3_progress_link: https://github.com/apiaryio/dredd/issues/894
+
+- name: Sway
+  category:
+    - miscellaneous
+    - schema-validators
+    - data-validators
+  github: https://github.com/apigee-127/sway
+  language: JavaScript
+  description: A library that simplifies OpenAPI integrations/tooling.
+
+- name: oval
+  category: schema-validators
+  github: https://github.com/whitlockjc/oval
+  language: JavaScript
+  description: CLI for (O)penAPI Specification document (val)idation.
+  v2: true
+  v3_progress_link: https://github.com/apigee-127/sway/issues/128
+
+# Parsers
 
 - name: swagger-parser
   category: parsers
@@ -356,14 +402,6 @@
   github: https://github.com/BigstickCarpet/swagger-parser
   language: Node.js
   description: Swagger/OpenAPI 2.0 and 3.0 parser and validator. Can also bundle multiple files into one via `$ref`.
-  v2: true
-  v3: true
-
-- name: BigstickCarpet/swagger-cli
-  category: parsers
-  github: https://github.com/BigstickCarpet/swagger-cli
-  language: Node.js / CLI
-  description: A handy cli tool for validating JSON or YAML files schema files that respects $ref
   v2: true
   v3: true
 
@@ -383,7 +421,9 @@
   v3: true
 
 - name: kin-openapi
-  category: parsers
+  category: 
+    - parsers
+    - data-validators
   github: https://github.com/jban332/kin-openapi
   language: Go
   description: A Go library for handling OpenAPI 3.0 specifications
@@ -405,13 +445,6 @@
   v2: true
   v3: true
 
-- name: openapi-spec-validator
-  category: parsers
-  github: https://github.com/p1c2u/openapi-spec-validator
-  language: Python
-  description: OpenAPI aSpec validator
-  v3: true
-
 - name: Microsoft/OpenAPI.NET
   category: parsers
   github: https://github.com/Microsoft/OpenAPI.NET
@@ -419,34 +452,6 @@
   description: "C# based parser with definition validation and migration support from V2"
   v2: true
   v3: true
-
-- name: Dredd
-  category:
-    - parsers
-    - testing
-  link: http://dredd.io/
-  github: https://github.com/apiaryio/dredd
-  language: Javascript
-  description: |
-    Language-agnostic command-line tool for validating API description document against backend implementation of the API
-  v2: true
-  v3_progress_link: https://github.com/apiaryio/dredd/issues/894
-
-- name: Sway
-  category:
-    - miscellaneous
-    - parsers
-  github: https://github.com/apigee-127/sway
-  language: JavaScript
-  description: A library that simplifies OpenAPI integrations/tooling.
-
-- name: oval
-  category: parsers
-  github: https://github.com/whitlockjc/oval
-  language: JavaScript
-  description: CLI for (O)penAPI Specification document (val)idation.
-  v2: true
-  v3_progress_link: https://github.com/apigee-127/sway/issues/128
 
 # [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
 # [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
