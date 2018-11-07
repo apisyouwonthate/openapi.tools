@@ -7,8 +7,11 @@
 - name: Documentation
   slug: documentation
 
-- name: Editors
-  slug: editors
+- name: Text Editors
+  slug: text-editors
+
+- name: GUI Editors
+  slug: gui-editors
 
 - name: Mock Servers
   slug: mock
