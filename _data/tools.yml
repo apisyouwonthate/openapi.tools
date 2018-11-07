@@ -361,7 +361,7 @@
 
 - name: Dredd
   category:
-    - schema-validators
+    - data-validators
     - testing
   link: http://dredd.io/
   github: https://github.com/apiaryio/dredd
