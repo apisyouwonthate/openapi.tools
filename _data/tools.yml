@@ -381,6 +381,8 @@
   github: https://github.com/apigee-127/sway
   language: JavaScript
   description: A library that simplifies OpenAPI integrations/tooling.
+  v2: true
+  v3_progress_link: https://github.com/apigee-127/sway/issues/128
 
 - name: oval
   category: schema-validators
