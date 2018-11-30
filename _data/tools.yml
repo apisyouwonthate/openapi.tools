@@ -336,6 +336,15 @@
   v2: false
   v3: true
 
+- name: openapi-backend
+  category: server
+  language: Node.js
+  link: https://www.npmjs.com/package/openapi-backend
+  github: https://github.com/anttiviljami/openapi-backend
+  description: Build, Validate, Route, and Mock using OpenAPI specification. Framework-agnostic
+  v2: false
+  v3: true
+
 # Schema Validators
 
 - name: Speccy
