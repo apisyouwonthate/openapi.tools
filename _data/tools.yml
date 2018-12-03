@@ -1,9 +1,17 @@
 # Converters
 
+- name: api-spec-converter
+  category: converters
+  language: JavaScript
+  description: Convert API descriptions between popular formats such as OpenAPI v2/v3, RAML, API Blueprint, WADL, etc.
+  link: https://github.com/LucyBot-Inc/api-spec-converter
+  v2: true
+  v3: true
+
 - name: Apimatic Transformer
   category: converters
   language: SaaS
-  description: Transform API Descriptions to formats to and from RAML, API Blueprint, OAI v2/v3, WSDL, etc.
+  description: Transform API Descriptions to and from RAML, API Blueprint, OAI v2/v3, WSDL, etc.
   link: https://apimatic.io/transformer
   v2: true
   v3: true
