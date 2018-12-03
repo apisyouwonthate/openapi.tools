@@ -105,6 +105,14 @@
   description: Highly customizable developer portal with developer onboarding, integrated with the Kong API Gateway
   v2: true
   v3: true
+  
+- name: LucyBot DocGen
+  category: documentation
+  link: https://lucybot.com/docgen
+  language: JavaScript
+  description: Generate a customizable website, with API documentation, console, and interactive workflows, from an OpenAPI spec
+  v2: true
+  v3: true
 
 - name: openapi-viewer
   category: documentation
