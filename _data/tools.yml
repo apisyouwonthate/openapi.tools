@@ -165,7 +165,7 @@
 
 - name: swagger-php
   category: documentation
-  link: https://github.com/zircote/swagger-php
+  link: http://zircote.com/swagger-php/
   language: PHP
   github: https://github.com/zircote/swagger-php
   description: Generate OpenAPI documentation for your API using annotations
