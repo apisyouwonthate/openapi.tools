@@ -163,6 +163,15 @@
   v2: true
   v3: true
 
+- name: swagger-php
+  category: documentation
+  link: https://github.com/zircote/swagger-php
+  language: PHP
+  github: https://github.com/zircote/swagger-php
+  description: Generate OpenAPI documentation for your API using annotations
+  v2: true
+  v3: true
+
 # [io-docs](https://github.com/mikeralphson/iodocs)|Node.js|fork of Mashery IO-docs with OpenAPI 2/3 support|http://io-docs.herokuapp.com/
 # [lincoln](https://github.com/temando/open-api-renderer)|React.js|A React renderer for Open API v3|https://temando.github.io/open-api-renderer/demo/?url=https://temando.github.io/open-api-renderer/petstore-open-api-v3.0.0-RC2.json
 
