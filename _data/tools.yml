@@ -1,9 +1,17 @@
 # Converters
 
+- name: api-spec-converter
+  category: converters
+  language: JavaScript
+  description: Convert API descriptions between popular formats such as OpenAPI v2/v3, RAML, API Blueprint, WADL, etc.
+  link: https://github.com/LucyBot-Inc/api-spec-converter
+  v2: true
+  v3: true
+
 - name: Apimatic Transformer
   category: converters
   language: SaaS
-  description: Transform API Descriptions to formats to and from RAML, API Blueprint, OAI v2/v3, WSDL, etc.
+  description: Transform API Descriptions to and from RAML, API Blueprint, OAI v2/v3, WSDL, etc.
   link: https://apimatic.io/transformer
   v2: true
   v3: true
@@ -95,6 +103,14 @@
   link: https://konghq.com/kong-enterprise-edition/
   language: Lua
   description: Highly customizable developer portal with developer onboarding, integrated with the Kong API Gateway
+  v2: true
+  v3: true
+  
+- name: LucyBot DocGen
+  category: documentation
+  link: https://lucybot.com/docgen
+  language: JavaScript
+  description: Generate a customizable website, with API documentation, console, and interactive workflows, from an OpenAPI spec
   v2: true
   v3: true
 
