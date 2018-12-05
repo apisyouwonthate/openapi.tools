@@ -283,7 +283,7 @@
   github: https://github.com/zalando/connexion
   description: OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support
   v2: true
-  v3_progress_link: true
+  v3: true
 
 - name: Prism
   category: mock
