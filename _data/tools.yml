@@ -2,6 +2,7 @@
 
 - name: api-spec-converter
   category: converters
+  github: https://github.com/LucyBot-Inc/api-spec-converter
   language: JavaScript
   description: Convert API descriptions between popular formats such as OpenAPI v2/v3, RAML, API Blueprint, WADL, etc.
   link: https://github.com/LucyBot-Inc/api-spec-converter
@@ -108,6 +109,7 @@
   
 - name: LucyBot DocGen
   category: documentation
+  github: https://github.com/LucyBot-Inc/documentation-starter
   link: https://lucybot.com/docgen
   language: JavaScript
   description: Generate a customizable website, with API documentation, console, and interactive workflows, from an OpenAPI spec
