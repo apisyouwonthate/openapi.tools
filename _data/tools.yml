@@ -276,6 +276,15 @@
   v3: true
 
 # Mock Servers
+- name: Connexion
+  category: mock
+  language: Python
+  link: https://connexion.readthedocs.io/en/latest/
+  github: https://github.com/zalando/connexion
+  description: OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support
+  v2: true
+  v3_progress_link: true
+
 - name: Prism
   category: mock
   language: cli
