@@ -541,7 +541,7 @@
     - sdk
     - converters
   link: https://goswagger.io/
-  github: https://github.com/go-swagger/go-swagger/issues/1122
+  github: https://github.com/go-swagger/go-swagger
   language: Go
   description: Everything all in one. Parser, validator, generates spec from code, or code from spec!
   v2: true
