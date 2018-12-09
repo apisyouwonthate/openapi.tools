@@ -4,7 +4,7 @@ description: A site to find the right tools for developers to build with the Ope
 collections_dir: /reviews
 collections:
   reviews:
-    slug: format
-    name: OAT Tools
+    name: OAI Tools
     output: true
-    permalink: /reviews/:slug
+    permalink: /reviews/:tool
+    relative_directory: /reviews
