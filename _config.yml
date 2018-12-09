@@ -1,10 +1,8 @@
 site:
   url: https://openapi.tools
 description: A site to find the right tools for developers to build with the OpenAPI  
-collections_dir: /reviews
+collections_dir: /content
 collections:
-  reviews:
-    name: OAI Tools
+  content:
+    name: reviews
     output: true
-    permalink: /reviews/:tool
-    relative_directory: /reviews
