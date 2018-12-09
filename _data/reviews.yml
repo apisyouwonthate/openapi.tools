@@ -1,0 +1,9 @@
+# - name: Dredd
+#   slug: dredd
+
+- name: dredd
+  category: testing
+  github: https://github.com/apiaryio/dredd
+  language: JavaScript
+  review: I just need test date to test that this thing will work.
+  link: https://github.com/apiaryio/dredd

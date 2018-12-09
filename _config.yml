@@ -1,10 +1,10 @@
 site:
   url: https://openapi.tools
 description: A site to find the right tools for developers to build with the OpenAPI  
-collections_dir: /tools
+collections_dir: /reviews
 collections:
-  tools:
+  reviews:
     slug: format
     name: OAT Tools
     output: true
-    permalink: /tools/:title
+    permalink: /reviews/:slug
