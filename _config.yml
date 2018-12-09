@@ -3,10 +3,8 @@ site:
 description: A site to find the right tools for developers to build with the OpenAPI  
 collections_dir: /tools
 collections:
-  posts:
-    hidden: true
   tools:
     slug: format
     name: OAT Tools
     output: true
-    permalink: /tools/:collection/:title
+    permalink: /tools/:title
