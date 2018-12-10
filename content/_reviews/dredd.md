@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Dredd
-content: Something something wicked this way comes.
 ---
+Dredd
 
-Content from the review page.
+
+Blah blah blah
