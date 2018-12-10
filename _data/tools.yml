@@ -493,6 +493,14 @@
   v2: true
   v3: true
 
+- name: oas_parser
+  category: parsers
+  github: https://github.com/Nexmo/oas_parser
+  language: Ruby
+  description: A Ruby parser for Open API Spec 3.0+ definitions.
+  v2: false
+  v3: true
+
 # [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
 # [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
 # [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
