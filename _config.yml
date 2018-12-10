@@ -3,6 +3,11 @@ site:
 description: A site to find the right tools for developers to build with the OpenAPI  
 collections_dir: /content
 collections:
-  content:
-    name: reviews
-    output: true
+  posts:
+    hidden: true
+  reviews: 
+      name: Reviews
+      output: true
+      permalink: /reviews/:slug
+    
+
