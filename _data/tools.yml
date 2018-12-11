@@ -394,7 +394,8 @@
   category: schema-validators
   github: https://github.com/p1c2u/openapi-spec-validator
   language: Python
-  description: OpenAPI aSpec validator
+  description: OpenAPI Spec validator
+  v2: true
   v3: true
 
 - name: Dredd
