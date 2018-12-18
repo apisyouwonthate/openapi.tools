@@ -160,6 +160,14 @@
   v2: false
   v3: true
 
+name: MrinDoc
+  category: documentation
+  description: Open API spec viewer.
+  link: https://mrin9.github.io/OpenAPI-Viewer/
+  github: https://github.com/mrin9/OpenAPI-Viewer
+  language: Vue.JS
+  v2: true
+  v3: true
 
 - name: generator-openapi-repo
   category: code-generators
