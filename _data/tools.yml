@@ -91,14 +91,6 @@
 
 #  Documentation Viewers/Consoles
 
-- name: api2html
-  category: documentation
-  github: https://github.com/tobilg/api2html
-  language: Node.js
-  description: A CLI tool to transform Swagger/OpenAPI/AsyncAPI docs to beautiful HTML pages
-  v2: true
-  v3: true
-  
 - name: APIMatic Developer Experience Portal
   category: documentation
   link: https://apimatic.io/developer-experience-portal
