@@ -9,8 +9,12 @@
   description: Generators to help build API documentation based off a variety of formats and standards.
   slug: documentation
 
-- name: Editors
-  description: Text and visual editors to help build API docs.
+- name: Text Editors
+  description: Text editors to help build API docs.
+  slug: editors
+
+- name: GUI Editors
+  description: Visual editors to help build API docs.
   slug: editors
 
 - name: Mock Servers
@@ -25,9 +29,13 @@
   description: Tools to load documents and resolve references.
   slug: miscellaneous
 
-- name: Parsers / Validators
+- name: Parsers
   description: Serialize and migrate API docs between versions while validating specs and docs.
   slug: parsers
+
+- name: Schema Validators
+  description: Validate your API schema quickly and easily with these tools.
+  slug: schema-validators
   
 - name: Testing
   description: Quickly execute API request and validate responses on the fly through command line or GUI interfaces.
