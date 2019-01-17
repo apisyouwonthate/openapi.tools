@@ -169,6 +169,14 @@
   v2: true
   v3: true
 
+- name: Stoplight
+  category: documentation
+  link: https://stoplight.io/documentation/
+  language: SaaS
+  description: Create beautiful, customizable, interactive API documentation generated from your OpenAPI Specification, integrated with the Stoplight platform
+  v2: true
+  v3: true 
+
 - name: generator-openapi-repo
   category: code-generators
   link: https://github.com/Rebilly/generator-openapi-repo
