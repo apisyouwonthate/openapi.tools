@@ -169,6 +169,15 @@
   v2: true
   v3: true
 
+- name: RapiDoc
+  category: documentation
+  description: Custom Element to view OpenAPI spec.
+  link: https://mrin9.github.io/RapiDoc
+  github: https://github.com/mrin9/RapiDoc
+  language: Custom Element
+  v2: true
+  v3: true
+
 - name: Stoplight
   category: documentation
   link: https://stoplight.io/documentation/
