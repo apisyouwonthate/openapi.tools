@@ -580,6 +580,16 @@
   v2: true
   v3_progress_link: https://github.com/go-swagger/go-swagger/issues/1122
 
+- name: guardrail
+  category:
+    - sdk
+  link: https://github.com/twilio/guardrail
+  github: https://github.com/twilio/guardrail
+  language: Scala
+  description: Principled code generation for Scala services
+  v2: true
+  v3_progress_link: https://github.com/twilio/guardrail/pull/177
+
 - name: Swagger-Codegen
   category: code-generators
   link: https://swagger.io/swagger-codegen/
