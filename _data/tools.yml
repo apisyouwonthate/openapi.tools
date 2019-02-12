@@ -643,3 +643,13 @@
   description: Import an OpenAPI specification into Assertible to generate tests that validate JSONSchema responses and status codes on every endpoint. 
   v2: true
   v3: true
+
+# Security
+
+- name: API Contract Security Audit
+  category: security
+  language: SaaS
+  description: Upload OpenAPI file, get detailed report with located vulnerabilities, possible attack scenarios, ways to remediate.
+  link: https://apisecurity.io/tools/audit/
+  v2: true
+  v3: false
