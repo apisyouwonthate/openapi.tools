@@ -1,6 +1,9 @@
 # - name: Code Generators
 #   slug: code-generators
 
+- name: Security
+  slug: security
+
 - name: Converters
   slug: converters
 
