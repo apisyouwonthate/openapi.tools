@@ -535,6 +535,14 @@
   v2: false
   v3: true
 
+- name: openapi3
+  category: parsers
+  github: https://github.com/Dorthu/openapi3
+  language: Python
+  description: "An OpenAPI 3 Specification client, and validator, covering both schema validation and limited data validation for Python 3."
+  v2: false
+  v3: true
+
 # [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
 # [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
 # [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
