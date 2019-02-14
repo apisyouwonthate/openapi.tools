@@ -539,7 +539,7 @@
   category: parsers
   github: https://github.com/Dorthu/openapi3
   language: Python
-  description: "A Python OpenAPI 3 Specification client and validator for Python 3."
+  description: "An OpenAPI 3 Specification client, and validator, covering both schema validation and limited data validation for Python 3."
   v2: false
   v3: true
 
