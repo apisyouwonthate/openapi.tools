@@ -106,7 +106,7 @@
   description: Highly customizable developer portal with developer onboarding, integrated with the Kong API Gateway
   v2: true
   v3: true
-  
+
 - name: LucyBot DocGen
   category: documentation
   github: https://github.com/LucyBot-Inc/documentation-starter
@@ -184,7 +184,7 @@
   language: SaaS
   description: Create beautiful, customizable, interactive API documentation generated from your OpenAPI Specification, integrated with the Stoplight platform
   v2: true
-  v3: true 
+  v3: true
 
 - name: generator-openapi-repo
   category: code-generators
@@ -203,6 +203,14 @@
   language: Java
   github: https://github.com/OpenAPITools/openapi-generator
   description: A template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI definition (community-driven fork of swagger-codegen)
+  v2: true
+  v3: true
+
+- name: Bump
+  category: documentation
+  link: https://bump.sh
+  language: SaaS
+  description: Bump generates elegant documentations and changelogs from your OpenAPI specifications. Git diff, for your API.
   v2: true
   v3: true
 
@@ -376,14 +384,14 @@
   description: Create REST resources with persistence on MongoDB and expose OpenAPI v.2 contracts
   v2: true
   v3: false
-  
+
 - name: "@smartrecruiters/openapi-first"
   category: server
   language: Node.js
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
   github: https://github.com/smartrecruiters/openapi-first
   description: |
-    Initializes your API express application with specification in OpenAPI Specification 3.0 format using 
+    Initializes your API express application with specification in OpenAPI Specification 3.0 format using
     provided middlewares (parsers, validators, controller, defaults setting) or custom ones
   v2: false
   v3: true
@@ -453,14 +461,14 @@
   description: CLI for (O)penAPI Specification document (val)idation.
   v2: true
   v3_progress_link: https://github.com/apigee-127/sway/issues/128
-  
+
 - name: Spectral
   category: schema-validators
   github: https://github.com/stoplightio/spectral
   language: TypeScript/JavaScript
   description: A flexible JSON object linter with out of the box support for OpenAPI Specification
   v2: true
-  v3: true  
+  v3: true
 
 # Parsers
 
@@ -495,7 +503,7 @@
   v3: true
 
 - name: kin-openapi
-  category: 
+  category:
     - parsers
     - data-validators
   github: https://github.com/jban332/kin-openapi
@@ -648,7 +656,7 @@
   language: SaaS
   link: https://assertible.com
   github:
-  description: Import an OpenAPI specification into Assertible to generate tests that validate JSONSchema responses and status codes on every endpoint. 
+  description: Import an OpenAPI specification into Assertible to generate tests that validate JSONSchema responses and status codes on every endpoint.
   v2: true
   v3: true
 
