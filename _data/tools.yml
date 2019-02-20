@@ -356,6 +356,15 @@
   v2: false
   v3: true
 
+- name: Swagger Mock
+  category: mock
+  language: PHP / Docker
+  link: https://github.com/swagger-mock/swagger-mock
+  github: https://github.com/swagger-mock/swagger-mock
+  description: Swagger mock server with fake data generation for OpenAPI 3
+  v2: false
+  v3: true
+
 # Server implementations
 
 - name: Vert.x Web Api Contract
