@@ -642,6 +642,14 @@
   v3: true
 
 # Testing
+- name: hikaku
+  category: testing
+  language: Kotlin
+  github: https://github.com/codecentric/hikaku
+  description: A library that tests if the implementation of a REST-API meets its specification.
+  v2: false
+  v3: true
+
 - name: Swagger Inspector
   category: testing
   language: Self-hosted/SaaS
