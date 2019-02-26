@@ -184,7 +184,7 @@
   language: SaaS
   description: Create beautiful, customizable, interactive API documentation generated from your OpenAPI Specification, integrated with the Stoplight platform
   v2: true
-  v3_progress_link: https://stoplight.io/blog/
+  v3: true
 
 - name: generator-openapi-repo
   category: code-generators
@@ -308,7 +308,7 @@
   link: https://stoplight.io/
   description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI documents to drive the entire API development process
   v2: true
-  v3: true
+  v3_progress_link: https://stoplight.io/blog/
 
 # Mock Servers
 - name: Connexion
