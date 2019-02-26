@@ -5,37 +5,49 @@
   slug: security
 
 - name: Converters
+  description: Various tools to convert to and from OpenAPI standards. Useful for working with various API formats.
   slug: converters
 
 - name: Documentation
+  description: Generators to help build API documentation based off a variety of formats and standards.
   slug: documentation
 
 - name: Text Editors
+  description: Text editors to help build API docs.
   slug: text-editors
 
 - name: GUI Editors
+  description: Visual editors to help build API docs.
   slug: gui-editors
 
 - name: Mock Servers
+  description: Services and platforms to speed up the testing and development of your APIs.
   slug: mock
 
 - name: Server implementations
+  description: Easily create and implement resources and routes for your APIs. 
   slug: server
 
 - name: Miscellaneous
+  description: Tools to load documents and resolve references.
   slug: miscellaneous
 
 - name: Parsers
+  description: Serialize and migrate API docs between versions while validating specs and docs.
   slug: parsers
 
 - name: Schema Validators
+  description: Validate your API schema quickly and easily with these tools.
   slug: schema-validators
-
+  
 - name: Data Validators
+  description: Tools to help you validate your API data.
   slug: data-validators
-
+  
 - name: Testing
+  description: Quickly execute API request and validate responses on the fly through command line or GUI interfaces.
   slug: testing
 
 - name: SDK Generators
+  description: Quickly generate documentation, descriptions, and clients by creating a SDK.
   slug: sdk
