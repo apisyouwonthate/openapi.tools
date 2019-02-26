@@ -468,8 +468,9 @@
   category: parsers
   github: https://github.com/swagger-api/swagger-parser
   language: Java
-  description: Swagger 1.0, 1.1, 1.2, 2.0 to OpenAPI Specification parser
+  description: OpenAPI Specification parser which is still using the name "Swagger' because they're stubborn. New versions are v3 only, older versions support v1.x/v2.
   v2: true
+  v3: true
 
 - name: BigstickCarpet/swagger-parser
   category: parsers
