@@ -2,6 +2,7 @@
 #   slug: code-generators
 
 - name: Security
+  description: By poking around your OpenAPI specification, some tools can look out for attack vectors you might not have noticed.
   slug: security
 
 - name: Converters
@@ -25,7 +26,7 @@
   slug: mock
 
 - name: Server implementations
-  description: Easily create and implement resources and routes for your APIs. 
+  description: Easily create and implement resources and routes for your APIs.
   slug: server
 
 - name: Miscellaneous
@@ -39,11 +40,11 @@
 - name: Schema Validators
   description: Validate your API schema quickly and easily with these tools.
   slug: schema-validators
-  
+
 - name: Data Validators
   description: Tools to help you validate your API data.
   slug: data-validators
-  
+
 - name: Testing
   description: Quickly execute API request and validate responses on the fly through command line or GUI interfaces.
   slug: testing
