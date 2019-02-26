@@ -294,14 +294,6 @@
   v2: true
   v3: true
 
-- name: Rápido
-  category: gui-editors
-  language: Node.js
-  link: https://rapidodesigner.com/
-  github: https://github.com/apiacademy/rapido-web
-  description: An API design tool that facilitates the sketching phase of design.
-  v3: true
-
 - name: Stoplight
   category: gui-editors
   language: SaaS
