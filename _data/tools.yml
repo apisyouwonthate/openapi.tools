@@ -89,6 +89,16 @@
   description: OData 4.0 to OpenAPI 2 converter
   v2: true
 
+- name: avantation
+  category: converters
+  language: TypeScript
+  link: https://www.avantation.in/
+  github: https://github.com/anbuksv/avantation
+  description: |
+    Generate OpenAPI 3.x specification from HAR.
+  v2: false
+  v3: true
+
 #  Documentation Viewers/Consoles
 
 - name: APIMatic Developer Experience Portal
