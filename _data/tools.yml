@@ -99,6 +99,14 @@
   v2: false
   v3: true
 
+- name: Swagger Inflector
+  category: converters
+  language: java
+  github: https://github.com/swagger-api/swagger-inflector
+  description: |
+    A project from the Swagger team for writing APIs on the JVM.
+  v2: true
+
 #  Documentation Viewers/Consoles
 
 - name: APIMatic Developer Experience Portal
