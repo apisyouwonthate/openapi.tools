@@ -465,6 +465,18 @@
   v2: true
   v3_progress_link: https://github.com/apigee-127/sway/issues/128
 
+- name: Openapi validator
+  category:
+    - data-validators
+    - testing
+  link: https://gitlab.com/mmalawski/openapi-validator
+  github: https://gitlab.com/mmalawski/openapi-validator
+  language: PHP
+  description: |
+    Library that checks response against Openapi schema, based on request path and method
+  v2: false
+  v3: true
+
 - name: oval
   category: schema-validators
   github: https://github.com/whitlockjc/oval
