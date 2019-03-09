@@ -469,7 +469,7 @@
   category:
     - data-validators
     - testing
-  link: https://packagist.org/packages/mmal/openapi-validator
+  link: https://gitlab.com/mmalawski/openapi-validator
   github: https://gitlab.com/mmalawski/openapi-validator
   language: PHP
   description: |
