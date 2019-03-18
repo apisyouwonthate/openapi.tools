@@ -367,6 +367,15 @@
   v2: true
   v3: true  
 
+- name: Midway-Swagger
+  category: mock
+  language: JavaScript
+  link: http://testarmada.io/documentation/Mocking/
+  github: https://github.com/TestArmada/midway-swagger
+  description: Module for TestArmada's Midway to generate mocks from a OpenAPI 2.0 file
+  v2: true
+  v3: false
+  
 # Server implementations
 
 - name: Vert.x Web Api Contract
