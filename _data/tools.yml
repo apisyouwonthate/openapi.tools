@@ -492,6 +492,15 @@
   description: A flexible JSON object linter with out of the box support for OpenAPI Specification
   v2: true
   v3: true
+  
+- name: express-ajv-swagger-validation
+  category: schema-validators
+  link: https://www.npmjs.com/package/express-ajv-swagger-validation
+  github: https://github.com/Zooz/express-ajv-swagger-validation
+  language: Node.js
+  description: Express middleware which validates request body, headers, path parameters and query parameters according to the OpenAPI Specification
+  v2: true
+  v3: true
 
 # Parsers
 
