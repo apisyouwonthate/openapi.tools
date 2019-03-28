@@ -357,7 +357,7 @@
   description: Lightweight, blazing fast, cross-platform OpenAPI 3 mock server with validation
   v2: false
   v3: true
-  
+
 - name: MockLab
   category: mock
   language: SaaS
@@ -365,7 +365,7 @@
   github: https://www.mocklab.io/docs/getting-started/
   description: SaaS platform to upload your spec to create a mock server
   v2: true
-  v3: true  
+  v3: true
 
 # Server implementations
 
@@ -444,7 +444,6 @@
 
 - name: Dredd
   category:
-    - data-validators
     - testing
   link: http://dredd.io/
   github: https://github.com/apiaryio/dredd
@@ -492,9 +491,9 @@
   description: A flexible JSON object linter with out of the box support for OpenAPI Specification
   v2: true
   v3: true
-  
+
 - name: express-ajv-swagger-validation
-  category: schema-validators
+  category: data-validators
   link: https://www.npmjs.com/package/express-ajv-swagger-validation
   github: https://github.com/Zooz/express-ajv-swagger-validation
   language: Node.js
