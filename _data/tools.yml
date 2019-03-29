@@ -416,6 +416,15 @@
   v2: false
   v3: true
 
+- name: OpenAPI Enforcer Middleware
+  category: server
+  language: Node.js
+  link: https://www.npmjs.com/package/openapi-enforcer-middleware
+  github: https://github.com/byu-oit/openapi-enforcer-middleware
+  description: An express middleware that makes it easy to write web services that follow an Open API specification by leveraging the tools provided in the openapi-enforcer package.
+  v2: true
+  v3: true
+
 # Schema Validators
 
 - name: Speccy
@@ -506,6 +515,18 @@
   github: https://github.com/interagent/committee
   language: Ruby
   description: Validation middleware for Rack server. This gem validates request and response using OpenAPI Specification. And convert parameter string to specific Ruby object (e.g. convert datetime string to DateTime class).
+  v2: true
+  v3: true
+
+- name: OpenAPI Enforcer
+  category:
+    - data-validators
+    - schema-validators
+    - testing
+  language: Node.js
+  link: https://www.npmjs.com/package/openapi-enforcer
+  github: https://github.com/byu-oit/openapi-enforcer
+  description: Tool to 1) Validate your OAS document, 2) serialize, deserialize, and validate incoming requests and outgoing responses, 3) simplify response building, and 4) producing mock data. Exensible via plugins.
   v2: true
   v3: true
 
