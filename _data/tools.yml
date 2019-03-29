@@ -501,6 +501,14 @@
   v2: true
   v3: true
 
+- name: committee
+  category: data-validators
+  github: https://github.com/interagent/committee
+  language: Ruby
+  description: Validation middleware for Rack server. This gem validates request and response using OpenAPI Specification. And convert parameter string to specific Ruby object (e.g. convert datetime string to DateTime class).
+  v2: true
+  v3: true
+
 # Parsers
 
 - name: swagger-parser
