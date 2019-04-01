@@ -571,6 +571,15 @@
   language: Go
   description: A Go library for handling OpenAPI 3.0 specifications
   v3: true
+  
+- name: php-openapi
+  category:
+    - parsers
+    - data-validators
+  github: https://github.com/cebe/php-openapi
+  language: PHP
+  description: A PHP library for handling OpenAPI 3.0 specifications
+  v3: true  
 
 - name: OpenAPI3-Rust
   category: parsers
