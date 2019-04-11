@@ -425,6 +425,15 @@
   v2: true
   v3: true
 
+- name: Api Platform
+  category: server
+  language: PHP
+  link: https://api-platform.com
+  github: https://github.com/api-platform/api-platform
+  description: REST and GraphQL framework to build modern API-driven projects
+  v2: true
+  v3: true
+
 # Schema Validators
 
 - name: Speccy
@@ -571,7 +580,7 @@
   language: Go
   description: A Go library for handling OpenAPI 3.0 specifications
   v3: true
-  
+
 - name: php-openapi
   category:
     - parsers
@@ -579,7 +588,7 @@
   github: https://github.com/cebe/php-openapi
   language: PHP
   description: A PHP library for handling OpenAPI 3.0 specifications
-  v3: true  
+  v3: true
 
 - name: OpenAPI3-Rust
   category: parsers
