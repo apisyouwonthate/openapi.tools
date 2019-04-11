@@ -1,14 +1,5 @@
 # Converters
 
-- name: api-spec-converter
-  category: converters
-  github: https://github.com/LucyBot-Inc/api-spec-converter
-  language: JavaScript
-  description: Convert API descriptions between popular formats such as OpenAPI v2/v3, RAML, API Blueprint, WADL, etc.
-  link: https://github.com/LucyBot-Inc/api-spec-converter
-  v2: true
-  v3: true
-
 - name: Apimatic Transformer
   category: converters
   language: SaaS
@@ -425,7 +416,7 @@
   v2: true
   v3: true
 
-- name: Api Platform
+- name: API Platform
   category: server
   language: PHP
   link: https://api-platform.com
