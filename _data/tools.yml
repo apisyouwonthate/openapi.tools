@@ -625,7 +625,7 @@
   category: parsers
   github: https://github.com/airtasker/spot
   language: TypeScript
-  description: "Aconcise, developer-friendly way to describe your API contract."
+  description: "A concise, developer-friendly way to describe your API contract."
   v2: true
   v3: true  
 
