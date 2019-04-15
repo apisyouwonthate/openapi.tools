@@ -693,6 +693,16 @@
   v2: true
   v3_progress_link: https://github.com/twilio/guardrail/pull/177
 
+- name: NSwag
+  catgeory:
+    - sdk
+  link: http://NSwag.org
+  github: https://github.com/RicoSuter/NSwag
+  language: .NET
+  description: Swagger/OpenAPI toolchain for .NET, Web API and TypeScript
+  v2: true
+  v3: true
+
 - name: Swagger-Codegen
   category: code-generators
   link: https://swagger.io/swagger-codegen/
