@@ -195,6 +195,16 @@
   description: Generate the repository structure for a scalable OpenAPI definition
   v2: true
 
+- name: OpenAPI Server Code Generator (oapi-codegen)
+  category:
+    - code-generators
+    - miscellaneous
+  link: https://github.com/deepmap/oapi-codegen
+  github: https://github.com/deepmap/oapi-codegen
+  language: Go
+  description: Generate a web service using the [Echo](https://github.com/labstack/echo) framework from an Open API v3 specification
+  v3: true
+
 - name: OpenAPI Generator
   category:
     - code-generators
