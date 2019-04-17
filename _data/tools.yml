@@ -747,6 +747,15 @@
   description: Generate OAS files from code comments and easily host them ($ npm install oas -g)
   v2: true
   v3: true
+  
+- name: Generate OAS
+  category: miscellaneous
+  language: JavaScript, Java, Python, Ruby, Go, Typescript
+  link: https://generateoas.com/
+  github: https://github.com/opticdev/optic
+  description: Generate accurate OAS Specs from your API tests
+  v2: false
+  v3: true
 
 # Testing
 - name: hikaku
