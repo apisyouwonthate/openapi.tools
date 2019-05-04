@@ -444,6 +444,17 @@
   v2: true
   v3: true
 
+- name: Mojolicious::Plugin::OpenApi
+  category: server
+  language: Perl
+  link: https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI
+  github: https://github.com/jhthorsen/mojolicious-plugin-openapi
+  description: |
+    Mojolicious::Plugin::OpenAPI is a plugin for Mojolicious framework that add routes and input/output validation to your Mojolicious application based on a OpenAPI (Swagger) specification.
+    Currently v2 is very well supported, while v3 should be considered EXPERIMENTAL.
+  v2: true
+  v3: true
+
 # Schema Validators
 
 - name: Speccy
