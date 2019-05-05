@@ -611,6 +611,13 @@
   description: A Go library for handling OpenAPI 3.0 specifications
   v3: true
 
+- name: openapi-psr7-validator
+  category: data-validators
+  github: https://github.com/lezhnev74/openapi-psr7-validator
+  language: PHP
+  description: It validates PSR-7 messages against OpenAPI specifications
+  v3: true
+
 - name: php-openapi
   category:
     - parsers
