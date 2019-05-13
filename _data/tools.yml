@@ -321,6 +321,15 @@
   description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI documents to drive the entire API development process
   v2: true
   v3_progress_link: https://stoplight.io/blog/
+  
+- name: OpenAPI-GUI
+  category: gui-editors
+  language: JavaScript
+  link: https://mermade.github.io/openapi-gui/
+  github: https://github.com/Mermade/openapi-gui
+  description: OpenAPI-GUI is a GUI for creating and editing OpenAPI version 3.0.x JSON/YAML definitions.
+  v2: false
+  v3_progress_link: https://github.com/Mermade/openapi-gui/blob/master/docs/openapi3-support.md
 
 # Mock Servers
 - name: Connexion
