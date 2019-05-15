@@ -577,6 +577,14 @@
   description: Tool to 1) Validate your OAS document, 2) serialize, deserialize, and validate incoming requests and outgoing responses, 3) simplify response building, and 4) producing mock data. Exensible via plugins.
   v2: true
   v3: true
+  
+- name: OpenAPI Validation Middleware
+  category: data-validators
+  github: https://github.com/hkarlstrom/openapi-validation-middleware
+  language: PHP
+  description: a PSR-7 and PSR-15 middleware to validate requests and responses against your OpenAPI spec
+  v2: false
+  v3: true
 
 # Parsers
 
