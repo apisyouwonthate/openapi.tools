@@ -643,6 +643,14 @@
   language: PHP
   description: A PHP library for handling OpenAPI 3.0 specifications
   v3: true
+  
+- name: Object Oriented OpenAPI Specification
+  category:
+    - parsers
+  github: https://github.com/goldspecdigital/oooas
+  language: PHP
+  description: An object oriented approach to generating OpenAPI specs, implemented in PHP
+  v3: true
 
 - name: OpenAPI3-Rust
   category: parsers
