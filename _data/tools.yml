@@ -750,7 +750,7 @@
   
 - name: Generate OAS
   category: miscellaneous
-  language: JavaScript, Java, Python, Ruby, Go, Typescript
+  language: Self-hosted/SaaS
   link: https://generateoas.com/
   github: https://github.com/opticdev/optic
   description: Generate accurate OAS Specs from your API tests
