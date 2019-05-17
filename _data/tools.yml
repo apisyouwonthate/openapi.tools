@@ -775,6 +775,15 @@
   v2: true
   v3: true
 
+- name: SwagGen
+  category: code-generators
+  link: https://github.com/yonaskolb/SwagGen
+  github: https://github.com/yonaskolb/SwagGen
+  language: Swift
+  description: SwagGen is a library and command line tool for parsing and generating code for OpenAPI/Swagger 3.0 specs, completely written in Swift
+  v2: true
+  v3: true
+
 # Miscellaneous
 - name: openapi-diff
   category: miscellaneous
