@@ -473,6 +473,15 @@
   v2: true
   v3: true
 
+- name: Fusio
+  category: server
+  language: PHP
+  link: https://www.fusio-project.org/
+  github: https://github.com/apioo/fusio
+  description: Open source API management platform
+  v2: false
+  v3: true
+
 # Schema Validators
 
 - name: Speccy
