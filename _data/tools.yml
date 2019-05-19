@@ -759,10 +759,10 @@
     - sdk
   link: https://github.com/twilio/guardrail
   github: https://github.com/twilio/guardrail
-  language: Scala
-  description: Principled code generation for Scala services
+  language: Scala, Java, ...
+  description: Principled code generation from OpenAPI Specifications
   v2: true
-  v3_progress_link: https://github.com/twilio/guardrail/pull/177
+  v3: true
 
 - name: NSwag
   catgeory:
