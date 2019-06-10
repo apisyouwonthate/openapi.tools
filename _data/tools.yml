@@ -239,7 +239,7 @@
 
 # Text Editors
 
-- name: VSCode/openapi-lint
+- name: VSCode/OpenAPI (Swagger) editor
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
