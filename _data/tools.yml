@@ -244,7 +244,7 @@
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
   github: https://github.com/42Crunch/vscode-openapi
-  description: OpenAPI (Swagger) 2.0/3.0.x plugin for Visual Studio Code: new file templates, navigation, intellisense, code snippets
+  description: OpenAPI (Swagger) 2.0/3.0.x plugin for Visual Studio Code - new file templates, navigation, intellisense, code snippets
   v2: true
   v3: true
 
