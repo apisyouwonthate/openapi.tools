@@ -810,6 +810,14 @@
   v2: true
   v3: true
 
+- name: oas-generator
+  catgeory:
+    - sdk
+  github: https://github.com/isa-group/oas-generator
+  language: Node.js
+  description: NodeJS RESTful APIs scaffolding based OpenAPI 3.x specs using oas-tools and express
+  v3: true
+
 # Miscellaneous
 - name: openapi-diff
   category: miscellaneous
