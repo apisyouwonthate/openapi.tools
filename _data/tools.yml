@@ -834,6 +834,15 @@
   description: Generate OAS files from code comments and easily host them ($ npm install oas -g)
   v2: true
   v3: true
+  
+- name: openapi-cli-tool
+  category: miscellaneous
+  link: https://pypi.org/project/openapi-cli-tool/
+  github: https://github.com/hakopako/openapi-cli-tool
+  language: Python
+  description: Can list up defined API paths and bundle multi-file into one. Supports multiple file extensions.
+  v2: false
+  v3: true
 
 # Testing
 - name: hikaku
