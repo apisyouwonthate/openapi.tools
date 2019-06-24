@@ -339,6 +339,17 @@
   description: OpenAPI-GUI is a GUI for creating and editing OpenAPI version 3.0.x JSON/YAML definitions.
   v2: false
   v3_progress_link: https://github.com/Mermade/openapi-gui/blob/master/docs/openapi3-support.md
+  
+- name: Hackolade
+  category: gui-editors
+  language: ReactJS
+  link: https://hackolade.com
+  github: https://github.com/hackolade/OpenAPI
+  description: |
+    A schema-centric visual editor for Swagger and OpenAPI, from the pioneer in data modeling for NoSQL databases.
+  v2: true
+  v3: true
+
 
 # Mock Servers
 - name: Connexion
