@@ -22,11 +22,11 @@
         <h1 class="jumbotron-heading">OpenAPI.Tools</h1>
           <p class="lead">
             We want to keep API developers up to date with the best OpenAPI tooling around, with the goal of
-            <a href="https://blog.runscope.com/posts/tutorial-upgrading-swagger-2-api-definition-to-openapi-3">upgrading to OpenAPI v3</a>
+            <a target="_blank" href="https://blog.runscope.com/posts/tutorial-upgrading-swagger-2-api-definition-to-openapi-3">upgrading to OpenAPI v3</a>
             as soon as possible. Tooling stuck on v2? You might need to send a pull request!
           </p>
-          <a href="https://github.com/apisyouwonthate/openapi.tools" class="btn btn-primary">Contribute</a>
-          <a href="https://apisyouwonthate.com/" class="btn btn-secondary">Main Website</a>
+          <a target="_blank" href="https://github.com/apisyouwonthate/openapi.tools" class="btn btn-primary">Contribute</a>
+          <a target="_blank" href="https://apisyouwonthate.com/" class="btn btn-secondary">Main Website</a>
         </p>
       </div>
     </header>
@@ -65,7 +65,7 @@
                 {% if tool.category == category.slug or tool.category contains category.slug %}
                   <tr class="table-row">
                     <td class="font-serif w-3/5">
-                      <a href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">
+                      <a target="_blank" href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}">
                         {{ tool.name }}
                       </a>
                       {% if tool.description %}
