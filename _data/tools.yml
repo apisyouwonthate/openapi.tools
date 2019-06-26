@@ -623,6 +623,19 @@
   description: a PSR-7 and PSR-15 middleware to validate requests and responses against your OpenAPI spec
   v2: false
   v3: true
+  
+- name: oas-tools
+  category:
+    - security
+    - documentation
+    - server
+    - parsers
+    - data-validators
+    - schema-validators
+  github: https://github.com/isa-group/oas-tools
+  language: Node.js
+  description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Specs over express servers, including security validations
+  v3: true
 
 # Parsers
 
