@@ -62,7 +62,7 @@
   category: converters
   github: https://github.com/xuzhg/OData.OpenAPI
   language: .NET
-  description: Convert an Edm (Entity Data Model) to OpenApi 3.0
+  description: Convert an Edm (Entity Data Model) to OpenAPI 3.0
   v3: true
 
 - name: pyswagger
@@ -469,7 +469,7 @@
   language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer-middleware
   github: https://github.com/byu-oit/openapi-enforcer-middleware
-  description: An express middleware that makes it easy to write web services that follow an Open API specification by leveraging the tools provided in the openapi-enforcer package.
+  description: An express middleware that makes it easy to write web services that follow an OpenAPI specification by leveraging the tools provided in the openapi-enforcer package.
   v2: true
   v3: true
 
@@ -559,7 +559,7 @@
   v2: true
   v3_progress_link: https://github.com/apigee-127/sway/issues/128
 
-- name: Openapi validator
+- name: OpenAPI validator
   category:
     - data-validators
     - testing
@@ -567,7 +567,7 @@
   github: https://gitlab.com/mmalawski/openapi-validator
   language: PHP
   description: |
-    Library that checks response against Openapi schema, based on request path and method
+    Library that checks response against OpenAPI schema, based on request path and method
   v2: false
   v3: true
 
