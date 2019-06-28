@@ -53,7 +53,7 @@
 - name: OpenAPI Filter
   category: converters
   language: Node.js
-  description: Filter internal components from OpenAPI definitions
+  description: Filter internal components from OpenAPI Descriptions
   github: https://github.com/Mermade/openapi-filter
   v2: true
   v3: true
@@ -157,7 +157,7 @@
   link: https://github.com/fmvilas/openapi3-generator
   github: https://github.com/fmvilas/openapi3-generator
   language: Node.js
-  description: Use your API OpenAPI 3 definition to generate code, documentation, and literally anything you need.
+  description: Use your API OpenAPI 3 Description to generate code, documentation, and literally anything you need.
   v2: false
   v3: true
 
@@ -192,7 +192,7 @@
   category: documentation
   link: https://stoplight.io/documentation/
   language: SaaS
-  description: Create beautiful, customizable, interactive API documentation generated from your OpenAPI Specification, integrated with the Stoplight platform
+  description: Create beautiful, customizable, interactive API documentation generated from your OpenAPI Description, integrated with the Stoplight platform
   v2: true
   v3: true
 
@@ -201,7 +201,7 @@
   link: https://github.com/Rebilly/generator-openapi-repo
   github: https://github.com/Rebilly/generator-openapi-repo
   language: JavaScript
-  description: Generate the repository structure for a scalable OpenAPI definition
+  description: Generate the repository structure for a scalable OpenAPI Description
   v2: true
 
 - name: OpenAPI Server Code Generator (oapi-codegen)
@@ -222,7 +222,7 @@
   link: https://openapi-generator.tech
   language: Java
   github: https://github.com/OpenAPITools/openapi-generator
-  description: A template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI definition (community-driven fork of swagger-codegen)
+  description: A template-driven engine to generate documentation, API clients and server stubs in different languages by parsing your OpenAPI Description (community-driven fork of swagger-codegen)
   v2: true
   v3: true
 
@@ -327,7 +327,7 @@
   category: gui-editors
   language: SaaS
   link: https://stoplight.io/
-  description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI documents to drive the entire API development process
+  description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI Description documents to drive the entire API development process
   v2: true
   v3_progress_link: https://stoplight.io/blog/
   
@@ -336,7 +336,7 @@
   language: JavaScript
   link: https://mermade.github.io/openapi-gui/
   github: https://github.com/Mermade/openapi-gui
-  description: OpenAPI-GUI is a GUI for creating and editing OpenAPI version 3.0.x JSON/YAML definitions.
+  description: OpenAPI-GUI is a GUI for creating and editing OpenAPI version 3.0.x JSON/YAML descriptions.
   v2: false
   v3_progress_link: https://github.com/Mermade/openapi-gui/blob/master/docs/openapi3-support.md
   
@@ -375,7 +375,7 @@
   language: SaaS / Java
   link: https://getsandbox.com/
   github: https://github.com/getsandbox/sandbox
-  description: SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) definitions into a mock server, where you can modify behaviour, simulate downtime, and any other nonsnese you can think of thanks to a built-in code editor!
+  description: SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) descriptions into a mock server, where you can modify behaviour, simulate downtime, and any other nonsense you can think of thanks to a built-in code editor!
   v2: true
   v3_progress_link: https://github.com/getsandbox/sandbox/issues/31
 
@@ -450,7 +450,7 @@
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
   github: https://github.com/smartrecruiters/openapi-first
   description: |
-    Initializes your API express application with specification in OpenAPI Specification 3.0 format using
+    Initializes your API express application with description in OpenAPI 3.0 format using
     provided middlewares (parsers, validators, controller, defaults setting) or custom ones
   v2: false
   v3: true
@@ -543,7 +543,7 @@
   category: schema-validators
   github: https://github.com/p1c2u/openapi-spec-validator
   language: Python
-  description: OpenAPI Spec validator
+  description: OpenAPI Description validator
   v2: true
   v3: true
 
@@ -593,7 +593,7 @@
   category: schema-validators
   github: https://github.com/stoplightio/spectral
   language: TypeScript/JavaScript
-  description: A flexible JSON object linter with out of the box support for OpenAPI Specification
+  description: A flexible JSON object linter with out of the box support for OpenAPI Descriptions
   v2: true
   v3: true
 
@@ -602,7 +602,7 @@
   link: https://www.npmjs.com/package/express-ajv-swagger-validation
   github: https://github.com/Zooz/express-ajv-swagger-validation
   language: Node.js
-  description: Express middleware which validates request body, headers, path parameters and query parameters according to the OpenAPI Specification
+  description: Express middleware which validates request body, headers, path parameters and query parameters according to an OpenAPI Description
   v2: true
   v3: true
 
@@ -610,7 +610,7 @@
   category: data-validators
   github: https://github.com/interagent/committee
   language: Ruby
-  description: Validation middleware for Rack server. This gem validates request and response using OpenAPI Specification. And convert parameter string to specific Ruby object (e.g. convert datetime string to DateTime class).
+  description: Validation middleware for Rack server. This gem validates request and response using an OpenAPI Description. And convert parameter string to specific Ruby object (e.g. convert datetime string to DateTime class).
   v2: true
   v3: true
 
@@ -644,7 +644,7 @@
     - schema-validators
   github: https://github.com/isa-group/oas-tools
   language: Node.js
-  description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Specs over express servers, including security validations
+  description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description over express servers, including security validations
   v3: true
 
 # Parsers
@@ -653,7 +653,7 @@
   category: parsers
   github: https://github.com/swagger-api/swagger-parser
   language: Java
-  description: OpenAPI Specification parser which is still using the name "Swagger' because they're stubborn. New versions are v3 only, older versions support v1.x/v2.
+  description: OpenAPI Description parser which is still using the name "Swagger" because they're stubborn. New versions are v3 only, older versions support v1.x/v2.
   v2: true
   v3: true
 
@@ -702,7 +702,7 @@
     - schema-validators
   github: https://github.com/cebe/php-openapi
   language: PHP
-  description: A PHP library for handling OpenAPI 3.0 specifications
+  description: A PHP library for manipulating and validating OpenAPI 3.0 Descriptions
   v3: true
   
 - name: Object Oriented OpenAPI Specification
@@ -710,7 +710,7 @@
     - parsers
   github: https://github.com/goldspecdigital/oooas
   language: PHP
-  description: An object oriented approach to generating OpenAPI specs, implemented in PHP
+  description: An object oriented approach to generating OpenAPI Descriptions, implemented in PHP
   v3: true
 
 - name: OpenAPI3-Rust
@@ -733,7 +733,7 @@
   category: parsers
   github: https://github.com/Microsoft/OpenAPI.NET
   language: .NET
-  description: "C# based parser with definition validation and migration support from V2"
+  description: "C# based parser with OpenAPI Description validation and migration support from V2"
   v2: true
   v3: true
 
@@ -741,7 +741,7 @@
   category: parsers
   github: https://github.com/Nexmo/oas_parser
   language: Ruby
-  description: A Ruby parser for Open API Spec 3.0+ definitions.
+  description: A Ruby parser for Open API 3.0+ descriptions.
   v2: false
   v3: true
 
@@ -821,7 +821,7 @@
   link: https://github.com/twilio/guardrail
   github: https://github.com/twilio/guardrail
   language: Scala, Java, ...
-  description: Principled code generation from OpenAPI Specifications
+  description: Principled code generation from OpenAPI Descriptions
   v2: true
   v3: true
 
@@ -840,7 +840,7 @@
   link: https://swagger.io/swagger-codegen/
   github: https://github.com/swagger-api/swagger-codegen
   language: Java
-  description: Swagger Codegen enables generating server stubs and client SDKs for APIs defined in OpenAPI
+  description: Swagger Codegen enables generating server stubs and client SDKs for APIs described in OpenAPI
   v2: true
   v3: true
 
@@ -892,7 +892,7 @@
   language: Self-hosted/SaaS
   link: https://inspector.swagger.io
   github:
-  description: Swagger Inspector is a free online tool to quickly execute any API request, validate its responses and generate a corresponding OpenAPI definition.
+  description: Swagger Inspector is a free online tool to quickly execute any API request, validate its responses and generate a corresponding OpenAPI Description.
   v2: true
   v3: true
 
