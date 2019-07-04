@@ -434,6 +434,15 @@
   v2: false
   v3: true
 
+- name: Vert.x Web API Service
+  category: server
+  language: Java
+  link: https://vertx.io/docs/vertx-web-api-service/java/
+  github: https://github.com/vert-x3/vertx-web/
+  description: Create API service proxies using event bus with request/response validation
+  v2: false
+  v3: true
+
 - name: BaucisJS + baucis-openapi3
   category: server
   language: JavaScript
