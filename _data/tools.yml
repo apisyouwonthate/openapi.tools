@@ -372,7 +372,7 @@
 - name: Prism
   category: mock
   language: cli
-  link: http://stoplight.io/platform/prism/
+  link: https://stoplight.io/prism/
   github: https://github.com/stoplightio/prism
   description: Turn any OAI file into an API server with mocking, transformations, validations, and more.
   v2: true
@@ -385,7 +385,7 @@
   github: https://github.com/getsandbox/sandbox
   description: SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) descriptions into a mock server, where you can modify behaviour, simulate downtime, and any other nonsense you can think of thanks to a built-in code editor!
   v2: true
-  v3_progress_link: https://github.com/getsandbox/sandbox/issues/31
+  v3: true
 
 - name: Microcks
   category: mock
@@ -777,30 +777,6 @@
   description: "A concise, developer-friendly way to describe your API contract."
   v2: true
   v3: true  
-
-# [oai-ts-core](https://github.com/Apicurio/oai-ts-core)|typescript|Core typescript library to read and manipulate OpenAPI specification definitions|
-# [openapi4j](https://github.com/gskorupa/openapi4j)|Java|
-# [openapi-parser](https://github.com/networknt/openapi-parser) | Java | Based on KaiZen generated code but removed Javaparser-core, guava, commons-cli, commons-io, javax.mail and guice for microservices | https://doc.networknt.com/getting-started/light-rest-4j/
-# [openapi3_parser](https://github.com/kevindew/openapi3_parser) | Ruby | A Ruby implementation of parsing and validating the OpenAPI 3 Specification |
-# [OpenAPI.net](https://github.com/Microsoft/OpenAPI.NET) | C# | The OpenAPI.NET SDK contains a useful object model for OpenAPI documents in .NET along with common serializers to extract raw OpenAPI JSON and YAML documents from the model. |
-# | [swagger-models](https://github.com/swagger-api/swagger-core/tree/feature/3.0.0-rc0/modules/swagger-models) | Java | Open API 3.0 Java Pojos |
-
-# ## Generators
-# [baucis-openapi3](https://github.com/metadevpro/baucis-openapi3)|Node.js|plugin for [baucis.js](https://github.com/wprl/baucis)|
-# [serverless-openapi-documentation](https://github.com/temando/serverless-openapi-documentation)|Typescript|Serverless 1.0 plugin to generate OpenAPI V3 documentation from serverless configuration|
-# [zero-rails_openapi](https://github.com/zhandao/zero-rails_openapi)|Ruby|Provide concise DSL for generating the OpenAPI Specification 3 (OAS3) documentation JSON file for Rails application, then you can use Swagger UI 3.2.0+ to show the documentation.
-# [slush-vertx](https://www.npmjs.com/package/slush-vertx) | Java, Kotlin & Groovy | Generate server skeleton for [Vert.x Web API Contract](http://vertx.io/docs/#web) and API Client based on [Vert.x 3 Web Client](http://vertx.io/docs/#web) | [NPM Package](https://www.npmjs.com/package/slush-vertx) [Github Repo](https://github.com/pmlopes/slush-vertx)
-# [openapi-codegen](https://github.com/mermade/openapi-codegen)|Node.js|Port of swagger-codegen templates, with OpenAPI 3.0 support|https://mermade.github.io/openapi-codegen
-# [light-codegen](https://github.com/networknt/light-codegen) | Java | Generate both Swagger 2.0 and OpenAPI 3.0 projects | https://doc.networknt.com/tutorial/generator/openapi/
-# [swagger-node-codegen](https://github.com/fmvilas/swagger-node-codegen) | Node.js | An OpenAPI 3.x/Swagger 2 code generator for Node.js |
-#
-# ## Server Implementations
-# Tool|Language|Description|Website
-# ---|---|---|---|
-# [Vert.x Web API Contract](http://vertx.io/docs/#web) | Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon & Scala | Create an API endpoint with Vert.x 3 and OpenAPI 3 with automatic requests validation | [Vert.x Web API Contract documentation](http://vertx.io/docs/#web)
-# [light-rest-4j](https://github.com/networknt/light-rest-4j) | Java | Generate and validate based on OpenAPI 3.0 specification | https://doc.networknt.com/tutorial/rest/openapi/petstore/
-# | [Fusio](https://github.com/apioo/fusio) | PHP, JavaScript | Build API endpoints based on OpenAPI 3 | http://fusio-project.org/ |
-#
 
 # SDK Generators
 
