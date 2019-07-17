@@ -608,6 +608,7 @@
 
 - name: Spectral
   category: schema-validators
+  link: https://stoplight.io/spectral
   github: https://github.com/stoplightio/spectral
   language: TypeScript/JavaScript
   description: A flexible JSON object linter with out of the box support for OpenAPI Descriptions
