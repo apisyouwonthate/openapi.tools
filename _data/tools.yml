@@ -357,7 +357,16 @@
     A schema-centric visual editor for Swagger and OpenAPI, from the pioneer in data modeling for NoSQL databases.
   v2: true
   v3: true
-
+  
+- name: Remain OpenAPI Studio
+  category: gui-editors
+  language: Java
+  link: https://remainsoftware.com/extranet/download-type/openapi-studio-download
+  github:
+  description: |
+    A user-friendly, visually rich studio supporting all features defined by the OpenAPI 3. Easy but powerful UI-based components creation, API testing, import, export, code generation and much more. Also available via Eclipse Marketplace: https://marketplace.eclipse.org/content/openapi-studio-rich-oas3-editor.
+  v2: false
+  v3: true
 
 # Mock Servers
 - name: Connexion
