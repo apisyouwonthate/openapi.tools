@@ -194,7 +194,7 @@
   github: https://github.com/mrin9/RapiPdf
   language: Custom Element
   v2: true
-  v3: true 
+  v3: true
 
 - name: Stoplight
   category: documentation
@@ -241,7 +241,7 @@
   description: Bump generates elegant documentations and changelogs from your OpenAPI specifications. Git diff, for your API.
   v2: true
   v3: true
-  
+
 - name: Python OpenAPI Generator
   category: code-generators
   link: https://github.com/wael34218/python_openapi_generator
@@ -347,7 +347,7 @@
   description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI Description documents to drive the entire API development process
   v2: true
   v3_progress_link: https://stoplight.io/blog/
-  
+
 - name: OpenAPI-GUI
   category: gui-editors
   language: JavaScript
@@ -356,7 +356,7 @@
   description: OpenAPI-GUI is a GUI for creating and editing OpenAPI version 3.0.x JSON/YAML descriptions.
   v2: false
   v3_progress_link: https://github.com/Mermade/openapi-gui/blob/master/docs/openapi3-support.md
-  
+
 - name: Hackolade
   category: gui-editors
   language: ReactJS
@@ -366,7 +366,6 @@
     A schema-centric visual editor for Swagger and OpenAPI, from the pioneer in data modeling for NoSQL databases.
   v2: true
   v3: true
-
 
 # Mock Servers
 - name: Connexion
@@ -470,7 +469,7 @@
   v2: true
   v3: false
 
-- name: "@smartrecruiters/openapi-first"
+- name: '@smartrecruiters/openapi-first'
   category: server
   language: Node.js
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
@@ -652,7 +651,7 @@
   description: Tool to 1) Validate your OAS document, 2) serialize, deserialize, and validate incoming requests and outgoing responses, 3) simplify response building, and 4) producing mock data. Exensible via plugins.
   v2: true
   v3: true
-  
+
 - name: OpenAPI Validation Middleware
   category: data-validators
   github: https://github.com/hkarlstrom/openapi-validation-middleware
@@ -660,7 +659,7 @@
   description: a PSR-7 and PSR-15 middleware to validate requests and responses against your OpenAPI spec
   v2: false
   v3: true
-  
+
 - name: oas-tools
   category:
     - security
@@ -731,7 +730,7 @@
   language: PHP
   description: A PHP library for manipulating and validating OpenAPI 3.0 Descriptions
   v3: true
-  
+
 - name: Object Oriented OpenAPI Specification
   category:
     - parsers
@@ -760,7 +759,7 @@
   category: parsers
   github: https://github.com/Microsoft/OpenAPI.NET
   language: .NET
-  description: "C# based parser with OpenAPI Description validation and migration support from V2"
+  description: 'C# based parser with OpenAPI Description validation and migration support from V2'
   v2: true
   v3: true
 
@@ -776,17 +775,17 @@
   category: parsers
   github: https://github.com/Dorthu/openapi3
   language: Python
-  description: "An OpenAPI 3 Specification client, and validator, covering both schema validation and limited data validation for Python 3."
+  description: 'An OpenAPI 3 Specification client, and validator, covering both schema validation and limited data validation for Python 3.'
   v2: false
   v3: true
-  
+
 - name: Spot
   category: parsers
   github: https://github.com/airtasker/spot
   language: TypeScript
-  description: "A concise, developer-friendly way to describe your API contract."
+  description: 'A concise, developer-friendly way to describe your API contract.'
   v2: true
-  v3: true  
+  v3: true
 
 # SDK Generators
 
@@ -794,7 +793,7 @@
   category: sdk
   language: SaaS
   link: https://apimatic.io/code-generation-as-a-service
-  description:  Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL, etc.) to generate fully functional SDKs in over 10 languages.
+  description: Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL, etc.) to generate fully functional SDKs in over 10 languages.
   v2: true
   v3: true
 
@@ -802,7 +801,7 @@
   category: sdk
   language: PHP
   github: https://github.com/janephp/open-api
-  description:  Generate a PHP Client API (PSR7 compatible) given a OpenAPI specification.
+  description: Generate a PHP Client API (PSR7 compatible) given a OpenAPI specification.
   v2: true
   v3: true
 
@@ -835,6 +834,17 @@
   github: https://github.com/RicoSuter/NSwag
   language: .NET
   description: Swagger/OpenAPI toolchain for .NET, Web API and TypeScript
+  v2: true
+  v3: true
+
+- name: api-codegen-ts
+  catgeory:
+    - sdk
+    - data-validators
+  link: https://www.npmjs.com/package/@nll/api-codegen-ts
+  github: https://github.com/nullpub/api-codegen-ts
+  language: TypeScript
+  description: Generates TypeScript models, response validators, and operation controllers from swagger / openapi specs
   v2: true
   v3: true
 
@@ -871,7 +881,7 @@
   description: Generate OAS files from code comments and easily host them ($ npm install oas -g)
   v2: true
   v3: true
-  
+
 - name: openapi-cli-tool
   category: miscellaneous
   link: https://pypi.org/project/openapi-cli-tool/
