@@ -930,7 +930,7 @@
   category: testing
   language: Java
   github: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
-  description: Generates test cases directly from an OpenAPI v3 spec. Bonus: Semantic linter -- reports spec elements that are inconsistent, superfluous, or dubious.
+  description: Generates test cases directly from an OpenAPI v3 spec. Bonus: Semantic linter reports spec elements that are inconsistent, superfluous, or dubious.
   v2: false
   v3: true
 
