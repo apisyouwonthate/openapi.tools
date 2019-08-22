@@ -256,7 +256,7 @@
 
 # Text Editors
 
-- name: VSCode/OpenAPI (Swagger) editor
+- name: VSCode/OpenAPI editor
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
@@ -279,7 +279,7 @@
   language: JavaScript
   github: https://atom.io/packages/linter-swagger
   license: MIT
-  description: This plugin for Atom Linter will lint Swagger 2.0 specifications or OpenAPI 3.0, both JSON and YAML using swagger-parser node package.
+  description: This plugin for Atom Linter will lint OpenAPI v2/v3, both JSON and YAML using swagger-parser node package.
   v2: true
   v3: true
 
@@ -304,7 +304,7 @@
   category: text-editors
   language: Java
   link: https://senya.io
-  description: Design API specifications fast and effectively​ in your favorite JetBrains IDE.
+  description: JetBrains IDE plugin to show Swagger UI as a preview, for visual feedback as you edit.
   v2: true
   v3: true
 
@@ -340,22 +340,16 @@
   v2: true
   v3: true
 
-- name: Stoplight
-  category: gui-editors
-  language: SaaS
-  link: https://stoplight.io/
-  description: Stoplight is the Complete OpenAPI Specification Toolkit that leverages your OpenAPI Description documents to drive the entire API development process
+- name: Stoplight Studio
+  category: 
+  - gui-editors
+  - text-editor
+  language: Desktop / SaaS
+  link: https://stoplight.io/studio
+  github: https://github.com/stoplightio/studio
+  description: Stoplight Studio is a GUI/text editor with linting and mocking built right in, thanks to Spectral and Prism.
   v2: true
-  v3_progress_link: https://stoplight.io/blog/
-
-- name: OpenAPI-GUI
-  category: gui-editors
-  language: JavaScript
-  link: https://mermade.github.io/openapi-gui/
-  github: https://github.com/Mermade/openapi-gui
-  description: OpenAPI-GUI is a GUI for creating and editing OpenAPI version 3.0.x JSON/YAML descriptions.
-  v2: false
-  v3_progress_link: https://github.com/Mermade/openapi-gui/blob/master/docs/openapi3-support.md
+  v3: true
 
 - name: Hackolade
   category: gui-editors
@@ -363,7 +357,7 @@
   link: https://hackolade.com
   github: https://github.com/hackolade/OpenAPI
   description: |
-    A schema-centric visual editor for Swagger and OpenAPI, from the pioneer in data modeling for NoSQL databases.
+    A schema-centric visual editor for OpenAPI v2/v3, from the pioneer in data modeling for NoSQL databases.
   v2: true
   v3: true
 
@@ -380,7 +374,7 @@
 - name: Prism
   category: mock
   language: cli
-  link: https://stoplight.io/prism/
+  link: https://stoplight.io/prism
   github: https://github.com/stoplightio/prism
   description: Turn any OAI file into an API server with mocking, transformations, validations, and more.
   v2: true
@@ -410,7 +404,6 @@
   link: https://github.com/danielgtaylor/apisprout
   github: https://github.com/danielgtaylor/apisprout
   description: Lightweight, blazing fast, cross-platform OpenAPI 3 mock server with validation
-  v2: false
   v3: true
 
 - name: MockLab
@@ -428,7 +421,6 @@
   link: https://github.com/justinfeng/fakeit
   github: https://github.com/justinfeng/fakeit
   description: Create mock server from OpenAPI 3 specification with random response generation and request validation.
-  v2: false
   v3: true
 
 # Server implementations
@@ -619,7 +611,7 @@
   link: https://stoplight.io/spectral
   github: https://github.com/stoplightio/spectral
   language: TypeScript/JavaScript
-  description: A flexible JSON object linter with out of the box support for OpenAPI Descriptions
+  description: A flexible JSON/YAML object linter with portable "rulesets" and custom functions.
   v2: true
   v3: true
 
@@ -648,7 +640,7 @@
   language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer
   github: https://github.com/byu-oit/openapi-enforcer
-  description: Tool to 1) Validate your OAS document, 2) serialize, deserialize, and validate incoming requests and outgoing responses, 3) simplify response building, and 4) producing mock data. Exensible via plugins.
+  description: Validate your OpenAPI document, serialize, deserialize, and validate incoming requests and outgoing responses, and simplify response building. You can even produce mock data.
   v2: true
   v3: true
 
