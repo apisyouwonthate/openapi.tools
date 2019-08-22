@@ -196,11 +196,11 @@
   v2: true
   v3: true
 
-- name: Stoplight
+- name: Stoplight Docs
   category: documentation
-  link: https://stoplight.io/documentation/
+  link: https://stoplight.io/docs/
   language: SaaS
-  description: Create beautiful, customizable, interactive API documentation generated from your OpenAPI Description, integrated with the Stoplight platform
+  description: Create beautiful, customizable, interactive API documentation generated from OpenAPI, integrated with Stoplight Studio
   v2: true
   v3: true
 
@@ -918,7 +918,7 @@
   category: testing
   language: Java
   github: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
-  description: Generates test cases directly from an OpenAPI v3 spec. Bonus: Semantic linter reports spec elements that are inconsistent, superfluous, or dubious.
+  description: "Generates test cases directly from an OpenAPI v3 spec. Bonus: Semantic linter reports elements that are inconsistent, superfluous, or dubious."
   v2: false
   v3: true
 
