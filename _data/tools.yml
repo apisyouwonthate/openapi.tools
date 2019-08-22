@@ -8,13 +8,13 @@
   v2: true
   v3: true
 
-- name: API Flow
-  category: converters
-  github: https://github.com/philsturgeon/API-Flow
-  description: Convert from and to multiple formats. Linking to Phil's fork because the original is completely broken
-  language: JavaScript
-  v2: true
-  v3_progress_link: https://github.com/JonathanMontane/API-Flow/pull/4
+# - name: API Flow
+#   category: converters
+#   github: https://github.com/philsturgeon/API-Flow
+#   description: Convert from and to multiple formats. Linking to Phil's fork because the original is completely broken
+#   language: JavaScript
+#   v2: true
+#   v3_progress_link: https://github.com/JonathanMontane/API-Flow/pull/4
 
 - name: Google Gnostic
   category: converters
@@ -158,16 +158,16 @@
   v2: true
   v3: true
 
-- name: openapi3-generator
-  category:
-    - documentation
-    - code-generators
-  link: https://github.com/fmvilas/openapi3-generator
-  github: https://github.com/fmvilas/openapi3-generator
-  language: Node.js
-  description: Use your API OpenAPI 3 Description to generate code, documentation, and literally anything you need.
-  v2: false
-  v3: true
+# - name: openapi3-generator
+#   category:
+#     - documentation
+#     - code-generators
+#   link: https://github.com/fmvilas/openapi3-generator
+#   github: https://github.com/fmvilas/openapi3-generator
+#   language: Node.js
+#   description: Use your API OpenAPI 3 Description to generate code, documentation, and literally anything you need.
+#   v2: false
+#   v3: true
 
 - name: MrinDoc
   category: documentation
@@ -226,7 +226,6 @@
   category:
     - code-generators
     - sdk
-    - converters
   link: https://openapi-generator.tech
   language: Java
   github: https://github.com/OpenAPITools/openapi-generator
@@ -250,9 +249,6 @@
   description: This library facilitates creating OpenAPI (Swagger) document for Python projects.
   v2: false
   v3: true
-
-# [io-docs](https://github.com/mikeralphson/iodocs)|Node.js|fork of Mashery IO-docs with OpenAPI 2/3 support|http://io-docs.herokuapp.com/
-# [lincoln](https://github.com/temando/open-api-renderer)|React.js|A React renderer for Open API v3|https://temando.github.io/open-api-renderer/demo/?url=https://temando.github.io/open-api-renderer/petstore-open-api-v3.0.0-RC2.json
 
 # Text Editors
 
