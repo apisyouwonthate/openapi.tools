@@ -1,13 +1,13 @@
 # - name: Code Generators
 #   slug: code-generators
 
-- name: Security
-  description: By poking around your OpenAPI specification, some tools can look out for attack vectors you might not have noticed.
-  slug: security
-
 - name: Converters
   description: Various tools to convert to and from OpenAPI standards. Useful for working with various API formats.
   slug: converters
+
+- name: Data Validators
+  description: Tools to help you validate your API data.
+  slug: data-validators
 
 - name: Documentation
   description: Generators to help build API documentation based off a variety of formats and standards.
@@ -25,7 +25,19 @@
   description: Services and platforms to speed up the testing and development of your APIs.
   slug: mock
 
-- name: Server implementations
+- name: Schema Validators
+  description: Validate your API schema quickly and easily with these tools.
+  slug: schema-validators
+
+- name: Security
+  description: By poking around your OpenAPI specification, some tools can look out for attack vectors you might not have noticed.
+  slug: security
+
+- name: SDK Generators
+  description: Quickly generate documentation, descriptions, and clients by creating a SDK.
+  slug: sdk
+
+- name: Server Implementations
   description: Easily create and implement resources and routes for your APIs.
   slug: server
 
@@ -36,19 +48,7 @@
 - name: Parsers
   description: Serialize and migrate API docs between versions while validating specs and docs.
   slug: parsers
-
-- name: Schema Validators
-  description: Validate your API schema quickly and easily with these tools.
-  slug: schema-validators
-
-- name: Data Validators
-  description: Tools to help you validate your API data.
-  slug: data-validators
-
+  
 - name: Testing
   description: Quickly execute API request and validate responses on the fly through command line or GUI interfaces.
   slug: testing
-
-- name: SDK Generators
-  description: Quickly generate documentation, descriptions, and clients by creating a SDK.
-  slug: sdk
