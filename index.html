@@ -45,9 +45,22 @@
           </blockquote>
         </div>
 
+        <div>
+          <h2>Tool Types</h2>
+          <p class="lead">We've organised everything into categories so you can jump to the section you're interested in.</p>
+          <ul>
+          {% for category in site.data.categories %}
+            <li><strong><a href="#{{ category.slug }}">{{ category.name }}:</a></strong>
+              {{
+            category.description
+            }}</li>
+          {% endfor %}
+          </ul>
+        </div>
+
         {% for category in site.data.categories %}
         <div id="{{ category.slug }}">
-          <h2>{{ category.name }}</h2>
+          <h2><a name="{{ category.slug }}">{{ category.name }}</a></h2>
           <p class="lead">{{ category.description }}</p>
           <table class="table table-striped">
             <thead class="thead-inverse">
