@@ -337,7 +337,7 @@
   v3: true
 
 - name: Stoplight Studio
-  category: 
+  category:
   - gui-editors
   - text-editor
   language: Desktop / SaaS
@@ -420,6 +420,15 @@
   v3: true
 
 # Server implementations
+
+- name: tsoa
+  category: server
+  language: TypeScript
+  link: https://github.com/lukeautry/tsoa
+  github: https://github.com/lukeautry/tsoa
+  description: Create swagger/OpenAPI docs and get free runtime validation for your Koa, Express, Hapi (and more) services
+  v2: true
+  v3: true
 
 - name: Vert.x Web Api Contract
   category: server
