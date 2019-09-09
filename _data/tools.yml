@@ -422,11 +422,13 @@
 # Server implementations
 
 - name: tsoa
-  category: server
+  category:
+    - server
+    - data-validation
   language: TypeScript
   link: https://github.com/lukeautry/tsoa
   github: https://github.com/lukeautry/tsoa
-  description: Create swagger/OpenAPI docs and get free runtime validation for your Koa, Express, Hapi (and more) services
+  description: Creates OpenAPI docs and provides free runtime validation for your Koa, Express, Hapi (and more) services
   v2: true
   v3: true
 
