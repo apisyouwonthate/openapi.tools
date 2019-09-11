@@ -933,6 +933,14 @@
   v2: false
   v3: true
 
+- name: Schemathesis
+  category: testing
+  language: Python
+  github: https://github.com/kiwicom/schemathesis
+  description: "Reads the application schema and generates test cases which will ensure that your application is compliant with its schema."
+  v2: true
+  v3: true
+
 # Security
 
 - name: API Contract Security Audit
