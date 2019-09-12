@@ -671,6 +671,19 @@
   language: Node.js
   description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description over express servers, including security validations
   v3: true
+  
+- name: openVALIDATION
+  category:
+    - miscellaneous
+    - schema-validators
+    - data-validators
+  github: https://github.com/openvalidation/openvalidation-openapi
+  link: https://docs.openvalidation.io/openapi/openapi-specification
+  language: Java
+  description: Allows complex validation rules to be specified in openAPI spec files using natural language.
+  v3: true
+  
+  
 
 # Parsers
 
