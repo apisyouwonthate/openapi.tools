@@ -74,3 +74,8 @@ header a, footer a {
 header a:hover, header a:visited, footer a:hover, footer a:visited {
   color: #ddd;
 }
+
+.gitlab-icon {
+  height: 50px;
+  width: 42px;
+}
