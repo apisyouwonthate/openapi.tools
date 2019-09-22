@@ -158,6 +158,17 @@
   v2: true
   v3: true
 
+- name: BOATS
+  category: documentation
+  link: https://www.npmjs.com/package/boats
+  github: https://github.com/johndcarmichael/boats
+  language: Node.js
+  description: |
+    BOATS allows for larger teams to contribute to multi-file swagger/openapi files by writing in Nunjucks giving access
+    to a few helpers to ensure consistency, eg operationId: <$ uniqueOpId() $>
+  v2: true
+  v3: true
+
 # - name: openapi3-generator
 #   category:
 #     - documentation
@@ -671,7 +682,7 @@
   language: Node.js
   description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description over express servers, including security validations
   v3: true
-  
+
 - name: openVALIDATION
   category:
     - miscellaneous
@@ -682,8 +693,8 @@
   language: Java
   description: Allows complex validation rules to be specified in openAPI spec files using natural language.
   v3: true
-  
-  
+
+
 
 # Parsers
 
