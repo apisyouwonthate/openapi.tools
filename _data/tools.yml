@@ -164,8 +164,8 @@
   github: https://github.com/johndcarmichael/boats
   language: Node.js
   description: |
-    BOATS allows for larger teams to contribute to multi-file swagger/openapi files by writing in Nunjucks giving access
-    to a few helpers to ensure consistency, eg operationId: <$ uniqueOpId() $>
+    BOATS allows for larger teams to contribute to multi-file OpenAPI defintions by writing Nunjucks tpl syntax in yaml with a few
+    important helpers to ensure stricter consistency, eg operationId: <$ uniqueOpId() $>.
   v2: true
   v3: true
 
