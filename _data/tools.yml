@@ -204,6 +204,17 @@
   v2: true
   v3: true
 
+- name: BOATS
+  category: DSL
+  link: https://www.npmjs.com/package/boats
+  github: https://github.com/johndcarmichael/boats
+  language: Node.js
+  description: |
+    BOATS allows for larger teams to contribute to multi-file OpenAPI defintions by writing Nunjucks tpl syntax in yaml with a few
+    important helpers to ensure stricter consistency, eg operationId: <$ uniqueOpId() $>.
+  v2: true
+  v3: true
+
 - name: generator-openapi-repo
   category: code-generators
   link: https://github.com/Rebilly/generator-openapi-repo
