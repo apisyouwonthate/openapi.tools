@@ -349,8 +349,8 @@
 
 - name: Stoplight Studio
   category:
-  - gui-editors
-  - text-editor
+    - gui-editors
+    - text-editor
   language: Desktop / SaaS
   link: https://stoplight.io/studio
   github: https://github.com/stoplightio/studio
@@ -428,6 +428,17 @@
   link: https://github.com/justinfeng/fakeit
   github: https://github.com/justinfeng/fakeit
   description: Create mock server from OpenAPI 3 specification with random response generation and request validation.
+  v3: true
+
+- name: Unmock
+  category:
+    - mock
+    - testing
+  link: https://unmock.io
+  language: Node.js
+  github: https://github.com/unmock/unmock-js
+  description: API integration testing library that intercepts outgoing requests and serves back mock data based on the OpenAPI schema.
+  v2: false
   v3: true
 
 # Server implementations
@@ -593,6 +604,17 @@
   v2: true
   v3: true
 
+- name: express-openapi-validator
+  category:
+    - miscellaneous
+    - schema-validators
+    - data-validators
+  github: https://github.com/cdimascio/express-openapi-validator
+  language: JavaScript
+  description: 🦋 Auto-validate api requests and responses using ExpressJS and OpenAPI 3.x
+  v2: false
+  v3: true
+
 - name: Sway
   category:
     - miscellaneous
@@ -693,8 +715,6 @@
   language: Java
   description: Allows complex validation rules to be specified in openAPI spec files using natural language.
   v3: true
-
-
 
 # Parsers
 
@@ -953,7 +973,7 @@
   category: testing
   language: Java
   github: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
-  description: "Generates test cases directly from an OpenAPI v3 spec. Bonus: Semantic linter reports elements that are inconsistent, superfluous, or dubious."
+  description: 'Generates test cases directly from an OpenAPI v3 spec. Bonus: Semantic linter reports elements that are inconsistent, superfluous, or dubious.'
   v2: false
   v3: true
 
@@ -961,7 +981,7 @@
   category: testing
   language: Python
   github: https://github.com/kiwicom/schemathesis
-  description: "Reads the application schema and generates test cases which will ensure that your application is compliant with its schema."
+  description: 'Reads the application schema and generates test cases which will ensure that your application is compliant with its schema.'
   v2: true
   v3: true
 
