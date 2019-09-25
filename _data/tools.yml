@@ -158,17 +158,6 @@
   v2: true
   v3: true
 
-- name: BOATS
-  category: documentation
-  link: https://www.npmjs.com/package/boats
-  github: https://github.com/johndcarmichael/boats
-  language: Node.js
-  description: |
-    BOATS allows for larger teams to contribute to multi-file OpenAPI defintions by writing Nunjucks tpl syntax in yaml with a few
-    important helpers to ensure stricter consistency, eg operationId: <$ uniqueOpId() $>.
-  v2: true
-  v3: true
-
 # - name: openapi3-generator
 #   category:
 #     - documentation
@@ -212,6 +201,17 @@
   link: https://stoplight.io/docs/
   language: SaaS
   description: Create beautiful, customizable, interactive API documentation generated from OpenAPI, integrated with Stoplight Studio
+  v2: true
+  v3: true
+
+- name: BOATS
+  category: DSL
+  link: https://www.npmjs.com/package/boats
+  github: https://github.com/johndcarmichael/boats
+  language: Node.js
+  description: |
+    BOATS allows for larger teams to contribute to multi-file OpenAPI defintions by writing Nunjucks tpl syntax in yaml with a few
+    important helpers to ensure stricter consistency, eg operationId: <$ uniqueOpId() $>.
   v2: true
   v3: true
 
