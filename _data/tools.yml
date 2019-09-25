@@ -205,7 +205,7 @@
   v3: true
 
 - name: BOATS
-  category: DSL
+  category: dsl
   link: https://www.npmjs.com/package/boats
   github: https://github.com/johndcarmichael/boats
   language: Node.js
