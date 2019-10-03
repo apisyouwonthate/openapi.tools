@@ -566,6 +566,16 @@
   description: Generate Server side API code with routing, models, data validation and database schema from an OpenAPI description file. Based on Yii Framework.
   v2: false
   v3: true
+  
+- name: @eropple/nestjs-openapi3
+  category:
+    - server
+  language: Node.js
+  link: https://github.com/eropple/nestjs-openapi3
+  github: https://github.com/eropple/nestjs-openapi3
+  description: Integrates tightly with a NestJS application to provide OpenAPI3 functionality. Infers complex schemas and expresses them in its generated OAS3 document, presents that document via Swagger UI, and validates inputs for conformance to spec.
+  v2: false
+  v3: true
 
 # Schema Validators
 
