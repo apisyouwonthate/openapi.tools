@@ -145,7 +145,7 @@
   language: React.js
   github: https://github.com/Rebilly/ReDoc/
   link: https://rebilly.github.io/ReDoc/
-  description: OpenAPI/Swagger-generated API Reference Documentation
+  description: OpenAPI-generated API Reference Documentation
   v2: true
   v3: true
 
@@ -257,7 +257,7 @@
   link: https://github.com/wael34218/python_openapi_generator
   language: Python
   github: https://github.com/wael34218/python_openapi_generator
-  description: This library facilitates creating OpenAPI (Swagger) document for Python projects.
+  description: This library facilitates creating OpenAPI document for Python projects.
   v2: false
   v3: true
 
@@ -268,7 +268,7 @@
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
   github: https://github.com/42Crunch/vscode-openapi
-  description: OpenAPI (Swagger) 2.0/3.0.x plugin for Visual Studio Code - new file templates, navigation, intellisense, code snippets
+  description: OpenAPI 2.0/3.0.x plugin for Visual Studio Code - new file templates, navigation, intellisense, code snippets
   v2: true
   v3: true
 
@@ -320,7 +320,7 @@
   language: Node.js
   link: https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint
   github: https://github.com/mermade/openapi-lint-vscode
-  description: OpenAPI (Swagger) 2.0/3.0.x intellisense, validator and linter for Visual Studio Code
+  description: OpenAPI 2.0/3.0.x intellisense, validator and linter for Visual Studio Code
   v2: true
   v3: true
 
@@ -543,8 +543,7 @@
   link: https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI
   github: https://github.com/jhthorsen/mojolicious-plugin-openapi
   description: |
-    Mojolicious::Plugin::OpenAPI is a plugin for Mojolicious framework that add routes and input/output validation to your Mojolicious application based on a OpenAPI (Swagger) specification.
-    Currently v2 is very well supported, while v3 should be considered EXPERIMENTAL.
+    Mojolicious::Plugin::OpenAPI is a plugin for Mojolicious framework that add routes and input/output validation to your Mojolicious application based on OpenAPI description documents.
   v2: true
   v3: true
 
@@ -568,14 +567,6 @@
   v3: true
 
 # Schema Validators
-
-- name: Speccy
-  category: schema-validators
-  link: https://speccy.io/
-  github: https://github.com/wework/speccy
-  language: CLI
-  description: Lint to enforce quality rules on your OpenAPI specifications
-  v3: true
 
 - name: BigstickCarpet/swagger-cli
   category: schema-validators
@@ -638,13 +629,13 @@
   v2: false
   v3: true
 
-- name: oval
+- name: Speccy
   category: schema-validators
-  github: https://github.com/whitlockjc/oval
-  language: JavaScript
-  description: CLI for (O)penAPI Specification document (val)idation.
-  v2: true
-  v3_progress_link: https://github.com/apigee-127/sway/issues/128
+  link: https://speccy.io/
+  github: https://github.com/wework/speccy
+  language: CLI
+  description: Lint to enforce quality rules on your OpenAPI specifications
+  v3: true
 
 - name: Spectral
   category: schema-validators
@@ -722,7 +713,7 @@
   category: parsers
   github: https://github.com/swagger-api/swagger-parser
   language: Java
-  description: OpenAPI Description parser which is still using the name "Swagger" because they're stubborn. New versions are v3 only, older versions support v1.x/v2.
+  description: Swagger Parser reads OpenAPI definitions into current Java POJOs.
   v2: true
   v3: true
 
