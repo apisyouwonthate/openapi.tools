@@ -29,7 +29,7 @@
   language: Node.js
   link: https://mermade.org.uk/openapi-converter
   github: https://github.com/Mermade/swagger2openapi
-  description: Upgrade specs from OpenAPI v2.0 to v3.0, bundling into one mega file or respecting $refs
+  description: Upgrade files from OpenAPI v2.0 to v3.0, bundling into one mega file or respecting $refs
   v2: true
   v3: true
 
@@ -38,7 +38,7 @@
   language: Node.js
   link: https://mulesoft.github.io/oas-raml-converter/
   github: https://github.com/mulesoft/oas-raml-converter
-  description: Converts between OAS and RAML API specifications
+  description: Converts between OpenAPI and RAML API specifications
   v2: true
   v3: true
 
