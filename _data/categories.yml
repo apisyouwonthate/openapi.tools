@@ -13,6 +13,10 @@
   description: Generators to help build API documentation based off a variety of formats and standards.
   slug: documentation
 
+- name: DSL
+  description: Domain Specific Language (DSL) for Open API
+  slug: dsl
+
 - name: Text Editors
   description: Text editors to help build API docs.
   slug: text-editors
@@ -48,7 +52,7 @@
 - name: Parsers
   description: Serialize and migrate API docs between versions while validating specs and docs.
   slug: parsers
-  
+
 - name: Testing
   description: Quickly execute API request and validate responses on the fly through command line or GUI interfaces.
   slug: testing
