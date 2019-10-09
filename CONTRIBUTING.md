@@ -1,7 +1,18 @@
 # Contributing
 
-This is a Jekyll site and is hosted on GitHub Pages, so some restrictions apply to what 
-can be done featurewise. Sending us links to tools should not be too much trouble though.
+We use [jekyll](https://jekyllrb.com/) so you should use ruby and install it using bundler.
+
+```
+$ bundle install
+```
+
+If you want to check changes, execute jekyll server and open browser.
+
+```
+$ bundle exec jekyll serve
+```
+
+## Adding Links
 
 1. Edit `_data/tools.yml` and copy/paste/tweak another tool.
 2. Try and avoid using the word "Swagger" unless you work for SmartBear and are literally talking about the Swagger toolsuite. It's been called OpenAPI for years now.
