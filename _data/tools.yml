@@ -603,7 +603,7 @@
   description: |
     Language-agnostic command-line tool for validating API description document against backend implementation of the API
   v2: true
-  v3: true
+  v3_progress_link: https://github.com/apiaryio/api-elements.js/blob/master/packages/fury-adapter-oas3-parser/STATUS.md
 
 - name: express-openapi-validator
   category:
