@@ -997,6 +997,14 @@
 
 # Security
 
+- name: 42crunch
+  category: security
+  language: SaaS
+  description: A unique set of integrated API security tools which allow discovery, remediation of OpenAPI vulnerabilities and runtime protection against API attacks.
+  link: https://42crunch.com/
+  v2: true
+  v3: true
+
 - name: API Contract Security Audit
   category: security
   language: SaaS
