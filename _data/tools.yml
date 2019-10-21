@@ -261,6 +261,15 @@
   v2: false
   v3: true
 
+- name: Apitive Studio
+  category: documentation
+  language: Angular 7.0, Java / Saas
+  link: https://studio.apitive.com
+  description: |
+     A platform for Digital Product Managers and API Consultants to design REST APIs with in-built mock and documentation.
+  v2: true
+  v3: true
+
 # Text Editors
 
 - name: VSCode/OpenAPI editor
@@ -368,6 +377,15 @@
   v2: true
   v3: true
 
+- name: Apitive Studio
+  category: gui-editors
+  language: Angular 7.0, Java / Saas
+  link: https://studio.apitive.com
+  description: |
+     A platform for Digital Product Managers and API Consultants to design REST APIs with in-built mock and documentation.
+  v2: true
+  v3: true
+
 # Mock Servers
 - name: Connexion
   category: mock
@@ -439,6 +457,15 @@
   github: https://github.com/unmock/unmock-js
   description: API integration testing library that intercepts outgoing requests and serves back mock data based on the OpenAPI schema.
   v2: false
+  v3: true
+
+- name: Apitive Studio
+  category: mock 
+  language: Angular 7.0, Java / Saas
+  link: https://studio.apitive.com
+  description: |
+     A platform for Digital Product Managers and API Consultants to design REST APIs with in-built mock and documentation.
+  v2: true
   v3: true
 
 # Server implementations
