@@ -616,6 +616,17 @@
   v2: false
   v3: true
 
+- name: openapi-spring-webflux-validator
+  category:
+    - miscellaneous
+    - schema-validators
+    - data-validators
+  github: https://github.com/cdimascio/openapi-spring-webflux-validator
+  language: Java/Kotlin
+  description: 🌱 A friendly kotlin library to validate API endpoints using an OpenApi 3.0 and Swagger 2.0 specification
+  v2: true
+  v3: true
+
 - name: Sway
   category:
     - miscellaneous
