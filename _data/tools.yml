@@ -623,7 +623,7 @@
     - data-validators
   github: https://github.com/cdimascio/openapi-spring-webflux-validator
   language: Java/Kotlin
-  description: 🌱 A friendly kotlin library to validate API endpoints using an OpenApi 3.0 and Swagger 2.0 specification
+  description: 🌱 A friendly kotlin library to validate API endpoints using an OpenAPI 3.0 or OpenAPI 2.0 specification
   v2: true
   v3: true
 
