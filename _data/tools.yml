@@ -1008,6 +1008,14 @@
 
 # Security
 
+- name: StackHawk HawkScan
+  category: security
+  language: SaaS
+  description: StackHawk is an application vulnerability scanner purpose built for developers to use in the DevOps pipeline. It leverages a provided OpenAPI v2 spec file for route discovery and enhanced scanning.
+  link: https://stackhawk.com/
+  v2: true
+  v3: false
+
 - name: 42crunch
   category: security
   language: SaaS
