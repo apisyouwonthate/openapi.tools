@@ -638,18 +638,6 @@
   v2: true
   v3_progress_link: https://github.com/apigee-127/sway/issues/128
 
-- name: OpenAPI validator
-  category:
-    - data-validators
-    - testing
-  link: https://gitlab.com/mmalawski/openapi-validator
-  github: https://gitlab.com/mmalawski/openapi-validator
-  language: PHP
-  description: |
-    Library that checks response against OpenAPI schema, based on request path and method
-  v2: false
-  v3: true
-
 - name: Speccy
   category: schema-validators
   link: https://speccy.io/
@@ -694,14 +682,6 @@
   github: https://github.com/byu-oit/openapi-enforcer
   description: Validate your OpenAPI document, serialize, deserialize, and validate incoming requests and outgoing responses, and simplify response building. You can even produce mock data.
   v2: true
-  v3: true
-
-- name: OpenAPI Validation Middleware
-  category: data-validators
-  github: https://github.com/hkarlstrom/openapi-validation-middleware
-  language: PHP
-  description: a PSR-7 and PSR-15 middleware to validate requests and responses against your OpenAPI spec
-  v2: false
   v3: true
 
 - name: oas-tools
@@ -772,9 +752,9 @@
 
 - name: openapi-psr7-validator
   category: data-validators
-  github: https://github.com/lezhnev74/openapi-psr7-validator
+  github: https://github.com/thephpleague/openapi-psr7-validator
   language: PHP
-  description: It validates PSR-7 messages against OpenAPI specifications
+  description: Using a PHP framework that supports PSR-7? Get free validation without writing a bunch of code, by registering this middleware and pointing it at your API description document.
   v3: true
 
 - name: php-openapi
@@ -856,7 +836,7 @@
   category: sdk
   language: PHP
   github: https://github.com/janephp/open-api
-  description: Generate a PHP Client API (PSR7 compatible) given a OpenAPI specification.
+  description: Generate a PHP Client API (PSR-7 compatible) given a OpenAPI specification.
   v2: true
   v3: true
 
