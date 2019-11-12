@@ -154,7 +154,7 @@
   language: JavaScript
   github: https://github.com/cdwv/oas3-api-snippet-enricher/
   link: https://github.com/cdwv/oas3-api-snippet-enricher/
-  description: Enrich your OpenAPI 3.0 JSON with code samples
+  description: Enrich your existing description documents with generated code samples
   v3: true
   
 - name: widdershins
