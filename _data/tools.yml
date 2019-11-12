@@ -935,6 +935,16 @@
   v2: false
   v3: true
 
+- name: laravel-openapi
+  category:
+    - converters
+    - miscellaneous
+  language: PHP
+  github: https://github.com/vyuldashev/laravel-openapi
+  description: Generate OpenAPI 3 specification for Laravel Applications.
+  v2: false
+  v3: true
+
 # Testing
 - name: Chai OpenAPI Response Validator
   category: testing
