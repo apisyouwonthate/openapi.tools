@@ -264,7 +264,7 @@
 - name: Apitive Studio
   category: documentation
   language: Angular 7.0, Java / Saas
-  link: https://studio.apitive.com
+  link: https://www.apitive.com
   description: |
      A platform for Digital Product Managers and API Consultants to design REST APIs with in-built mock and documentation.
   v2: true
@@ -380,7 +380,7 @@
 - name: Apitive Studio
   category: gui-editors
   language: Angular 7.0, Java / Saas
-  link: https://studio.apitive.com
+  link: https://www.apitive.com
   description: |
      A platform for Digital Product Managers and API Consultants to design REST APIs with in-built mock and documentation.
   v2: true
@@ -462,7 +462,7 @@
 - name: Apitive Studio
   category: mock 
   language: Angular 7.0, Java / Saas
-  link: https://studio.apitive.com
+  link: https://www.apitive.com
   description: |
      A platform for Digital Product Managers and API Consultants to design REST APIs with in-built mock and documentation.
   v2: true
