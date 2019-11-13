@@ -272,12 +272,12 @@
 
 # Text Editors
 
-- name: VSCode/OpenAPI editor
+- name: VSCode OpenAPI Extension
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
   github: https://github.com/42Crunch/vscode-openapi
-  description: OpenAPI 2.0/3.0.x plugin for Visual Studio Code - new file templates, navigation, intellisense, code snippets
+  description: OpenAPI extension for Visual Studio Code - new file templates, navigation, intellisense, code snippets.
   v2: true
   v3: true
 
@@ -286,7 +286,7 @@
   language: Java
   license: EPL
   github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
-  description: Full-featured Eclipse editor for OpenAPI 2.0 and 3.0, also available on Eclipse Marketplace.
+  description: Full-featured Eclipse editor for OpenAPI, also available on Eclipse Marketplace.
   v2: true
   v3: true
 
@@ -295,7 +295,7 @@
   language: JavaScript
   github: https://atom.io/packages/linter-swagger
   license: MIT
-  description: This plugin for Atom Linter will lint OpenAPI v2/v3, both JSON and YAML using swagger-parser node package.
+  description: This plugin for Atom Linter will lint OpenAPI, both JSON and YAML using swagger-parser node package.
   v2: true
   v3: true
 
@@ -346,16 +346,6 @@
   v2: true
   v3: true
 
-- name: Apicurio Studio
-  category: gui-editors
-  language: TypeScript
-  link: http://www.apicur.io/
-  github: https://github.com/apicurio/apicurio-studio
-  description: |
-    A standalone API design studio that can be used to create new or edit existing API designs.
-  v2: true
-  v3: true
-
 - name: Stoplight Studio
   category:
     - gui-editors
@@ -363,7 +353,10 @@
   language: Desktop / SaaS
   link: https://stoplight.io/studio
   github: https://github.com/stoplightio/studio
-  description: Stoplight Studio is a GUI/text editor with linting and mocking built right in, thanks to Spectral and Prism.
+  description: >
+    Stoplight Studio is a GUI/text editor with linting and mocking built right in. 
+    It can run on the desktop with local files, and in the browser powered by your 
+    existing GitHub, GitLab, or BitBucket repos.
   v2: true
   v3: true
 
