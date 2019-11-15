@@ -704,6 +704,17 @@
   v2: true
   v3: true
 
+- name: openapi4j
+  category:
+    - data-validators
+    - schema-validators
+    - parsers
+  github: https://github.com/openapi4j/openapi4j
+  language: Java
+  description: Parse Description Document, validate api requests and responses using OpenAPI 3.x.
+  v2: false
+  v3: true
+
 - name: oas-tools
   category:
     - security
