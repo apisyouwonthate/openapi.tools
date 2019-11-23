@@ -125,6 +125,13 @@
   v2: true
   v3: true
 
+- name: Nexmo OAS Renderer
+  category: documentation
+  github: https://github.com/Nexmo/nexmo-oas-renderer
+  language: Ruby
+  description: Ruby OpenAPI docs rendering, use standalone or add to your Rails app
+  v3: true
+
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
