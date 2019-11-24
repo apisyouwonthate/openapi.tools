@@ -908,6 +908,16 @@
   v2: true
   v3: true
 
+- name: restful-react
+  category:
+    - sdk
+  link: https://github.com/contiamo/restful-react
+  github: https://github.com/contiamo/restful-react
+  language: React (Typescript)
+  description: Generate React hooks with appropriate type-signatures from OpenAPI descriptions
+  v2: true
+  v3: true
+
 - name: NSwag
   catgeory:
     - sdk
