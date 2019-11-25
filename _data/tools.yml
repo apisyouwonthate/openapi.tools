@@ -476,6 +476,18 @@
   v2: true
   v3: true
 
+- name: SwagmanMock
+  category:
+    - mock
+    - converters
+  language: Python,
+  link: https://github.com/codeasashu/swagmanmock
+  github: https://github.com/codeasashu/swagmanmock
+  description: |
+     A Postman to openapi spec converter with mocking facilities.
+  v2: false
+  v3: true
+
 # Server implementations
 
 - name: tsoa
