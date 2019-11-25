@@ -476,13 +476,13 @@
   v2: true
   v3: true
 
-- name: SwagmanMock
+- name: Openman
   category:
     - mock
     - converters
   language: Python
-  link: https://github.com/codeasashu/swagmanmock
-  github: https://github.com/codeasashu/swagmanmock
+  link: https://github.com/codeasashu/openman
+  github: https://github.com/codeasashu/openman
   description: |
      A Postman to openapi spec converter with mocking facilities.
   v2: false
