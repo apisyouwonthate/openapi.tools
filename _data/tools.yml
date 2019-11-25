@@ -480,7 +480,7 @@
   category:
     - mock
     - converters
-  language: Python,
+  language: Python
   link: https://github.com/codeasashu/swagmanmock
   github: https://github.com/codeasashu/swagmanmock
   description: |
