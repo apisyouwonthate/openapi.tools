@@ -956,6 +956,14 @@
   description: NodeJS RESTful APIs scaffolding based OpenAPI 3.x specs using oas-tools and express
   v3: true
 
+- name: spring-openapi
+  catgeory:
+    - sdk
+  github: https://github.com/jrcodeza/spring-openapi
+  language: Java
+  description: OpenAPI v3 generator for Java Spring. Includes also client generation. Supports inheritance with discriminators, Jackson annotations and custom interceptors.
+  v3: true
+
 # Miscellaneous
 - name: openapi-diff
   category: miscellaneous
