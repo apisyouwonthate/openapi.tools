@@ -230,6 +230,14 @@
   v2: true
   v3: true
 
+- name: Spot
+  category: dsl
+  github: https://github.com/airtasker/spot
+  language: TypeScript
+  description: 'A concise, developer-friendly way to describe your API contract.'
+  v2: true
+  v3: true
+
 - name: generator-openapi-repo
   category: code-generators
   link: https://github.com/Rebilly/generator-openapi-repo
@@ -381,7 +389,7 @@
   link: https://hackolade.com
   github: https://github.com/hackolade/OpenAPI
   description: |
-    A schema-centric visual editor for OpenAPI v2/v3, from the pioneer in data modeling for NoSQL databases.
+    A visual editor for OpenAPI v2/v3, from the pioneer in data modeling for NoSQL databases.
   v2: true
   v3: true
 
@@ -463,7 +471,7 @@
   link: https://unmock.io
   language: Node.js
   github: https://github.com/unmock/unmock-js
-  description: API integration testing library that intercepts outgoing requests and serves back mock data based on the OpenAPI schema.
+  description: API integration testing library that intercepts outgoing requests and serves back mock data based on the OpenAPI descriptions.
   v2: false
   v3: true
 
@@ -597,7 +605,7 @@
     - mock
   language: PHP
   github: https://github.com/cebe/yii2-app-api
-  description: Generate Server side API code with routing, models, data validation and database schema from an OpenAPI description file. Based on Yii Framework.
+  description: Generate Server side API code with routing, models, data validation and database schema from an OpenAPI description. Based on Yii Framework.
   v2: false
   v3: true
   
@@ -607,7 +615,7 @@
   language: Node.js
   link: https://github.com/eropple/nestjs-openapi3
   github: https://github.com/eropple/nestjs-openapi3
-  description: Integrates tightly with a NestJS application to provide OpenAPI3 functionality. Infers complex schemas and expresses them in its generated OpenAPI document, presents that document via ReDoc, and validates inputs for conformance to spec.
+  description: Integrates tightly with a NestJS application to provide OpenAPI3 functionality. Infers complex descriptions and expresses them in its generated OpenAPI document, presents that document via ReDoc, and validates inputs for conformance to spec.
   v2: false
   v3: true
   
@@ -621,18 +629,18 @@
   description: The framework for building app backends and microservices by specification-first API design approach based on the OpenAPI Specification 3.
   v3: true
 
-# Schema Validators
+# Description Validators
 
 - name: BigstickCarpet/swagger-cli
-  category: schema-validators
+  category: description-validators
   github: https://github.com/BigstickCarpet/swagger-cli
   language: Node.js / CLI
-  description: A handy cli tool for validating JSON or YAML files schema files that respects $ref
+  description: Simple validation for OpenAPI files, supporting JSON/YAML and v2/v3 description documents.
   v2: true
   v3: true
 
 - name: openapi-spec-validator
-  category: schema-validators
+  category: description-validators
   github: https://github.com/p1c2u/openapi-spec-validator
   language: Python
   description: OpenAPI Description validator
@@ -653,7 +661,7 @@
 - name: express-openapi-validator
   category:
     - miscellaneous
-    - schema-validators
+    - description-validators
     - data-validators
   github: https://github.com/cdimascio/express-openapi-validator
   language: JavaScript
@@ -664,7 +672,7 @@
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
-    - schema-validators
+    - description-validators
     - data-validators
   github: https://github.com/cdimascio/openapi-spring-webflux-validator
   language: Java/Kotlin
@@ -675,7 +683,7 @@
 - name: Sway
   category:
     - miscellaneous
-    - schema-validators
+    - description-validators
     - data-validators
   github: https://github.com/apigee-127/sway
   language: JavaScript
@@ -684,7 +692,7 @@
   v3_progress_link: https://github.com/apigee-127/sway/issues/128
 
 - name: Speccy
-  category: schema-validators
+  category: description-validators
   link: https://speccy.io/
   github: https://github.com/wework/speccy
   language: CLI
@@ -692,7 +700,7 @@
   v3: true
 
 - name: Spectral
-  category: schema-validators
+  category: description-validators
   link: https://stoplight.io/spectral
   github: https://github.com/stoplightio/spectral
   language: TypeScript/JavaScript
@@ -720,7 +728,7 @@
 - name: OpenAPI Enforcer
   category:
     - data-validators
-    - schema-validators
+    - description-validators
     - testing
   language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer
@@ -747,7 +755,7 @@
     - server
     - parsers
     - data-validators
-    - schema-validators
+    - description-validators
   github: https://github.com/isa-group/oas-tools
   language: Node.js
   description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description over express servers, including security validations
@@ -756,7 +764,7 @@
 - name: openVALIDATION
   category:
     - miscellaneous
-    - schema-validators
+    - description-validators
     - data-validators
   github: https://github.com/openvalidation/openvalidation-openapi
   link: https://docs.openvalidation.io/openapi/openapi-specification
@@ -816,7 +824,7 @@
 - name: php-openapi
   category:
     - parsers
-    - schema-validators
+    - description-validators
   github: https://github.com/cebe/php-openapi
   language: PHP
   description: A PHP library for manipulating and validating OpenAPI 3.0 Descriptions
@@ -866,16 +874,8 @@
   category: parsers
   github: https://github.com/Dorthu/openapi3
   language: Python
-  description: 'An OpenAPI 3 Specification client, and validator, covering both schema validation and limited data validation for Python 3.'
+  description: 'An OpenAPI 3 Specification client, and validator, covering both description validation and limited data validation for Python 3.'
   v2: false
-  v3: true
-
-- name: Spot
-  category: parsers
-  github: https://github.com/airtasker/spot
-  language: TypeScript
-  description: 'A concise, developer-friendly way to describe your API contract.'
-  v2: true
   v3: true
 
 # SDK Generators
@@ -1050,7 +1050,7 @@
   language: SaaS
   link: https://assertible.com
   github:
-  description: Import an OpenAPI specification into Assertible to generate tests that validate JSONSchema responses and status codes on every endpoint.
+  description: Import an OpenAPI specification into Assertible to generate tests that validate JSON Schema responses and status codes on every endpoint.
   v2: true
   v3: true
 
@@ -1066,7 +1066,7 @@
   category: testing
   language: Python
   github: https://github.com/kiwicom/schemathesis
-  description: 'Reads the application schema and generates test cases which will ensure that your application is compliant with its schema.'
+  description: 'Reads the description document and generates test cases which will ensure that your application is compliant with its description.'
   v2: true
   v3: true
 
