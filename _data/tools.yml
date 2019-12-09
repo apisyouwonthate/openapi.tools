@@ -610,6 +610,16 @@
   description: Integrates tightly with a NestJS application to provide OpenAPI3 functionality. Infers complex schemas and expresses them in its generated OpenAPI document, presents that document via ReDoc, and validates inputs for conformance to spec.
   v2: false
   v3: true
+  
+- name: Falcon Heavy
+  category:
+    - server
+    - mock
+  language: Python
+  link: https://github.com/NotJustAToy/falcon-heavy
+  github: https://github.com/NotJustAToy/falcon-heavy
+  description: The framework for building app backends and microservices by specification-first API design approach based on the OpenAPI Specification 3.
+  v3: true
 
 # Schema Validators
 
