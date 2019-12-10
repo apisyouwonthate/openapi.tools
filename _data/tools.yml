@@ -413,7 +413,7 @@
   v3: true
 - name: Swagger Inspector
   category: learning
-  language: cli
+  language: SaaS
   link: https://swagger.io/tools/swagger-inspector/
   description: Run mock requests in a webapp and Swagger Inspector infers your OpenAPI description. 
   v2: true
