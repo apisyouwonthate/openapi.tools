@@ -22,6 +22,10 @@
   description: Visual editors help you design APIs without needing to memorize the entire OpenAPI specification.
   slug: gui-editors
 
+- name: Learning
+  description: Tools that make it easy to learn an OpenAPI description by inspecting real traffic.  
+  slug: learning
+
 - name: Mock Servers
   description: Fake servers that take description document as input, then route incoming HTTP requests to example responses or dynamically generates examples. 
   slug: mock
