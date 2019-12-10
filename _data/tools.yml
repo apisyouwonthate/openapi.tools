@@ -402,6 +402,23 @@
   v2: true
   v3: true
 
+# Learning 
+- name: Optic
+  category: learning
+  language: cli
+  link: https://useoptic.om
+  github: https://github.com/opticdev/optic
+  description: A proxy server that watches an API and helps you build an OpenAPI description interactively. 
+  v2: false
+  v3: true
+- name: Swagger Inspector
+  category: learning
+  language: cli
+  link: https://swagger.io/tools/swagger-inspector/
+  description: Run mock requests in a webapp and Swagger Inspector infers your OpenAPI description. 
+  v2: true
+  v3: true
+
 # Mock Servers
 - name: Connexion
   category: mock
