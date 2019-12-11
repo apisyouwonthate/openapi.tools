@@ -406,7 +406,7 @@
 - name: Optic
   category: learning
   language: cli
-  link: https://useoptic.om
+  link: https://useoptic.com
   github: https://github.com/opticdev/optic
   description: A proxy server that watches an API and helps you build an OpenAPI description interactively. 
   v2: false
