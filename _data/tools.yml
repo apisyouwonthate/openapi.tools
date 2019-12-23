@@ -725,6 +725,14 @@
   v2: true
   v3: true
 
+- name: OpenAPI Style Validator
+  category: description-validators
+  github: https://github.com/OpenAPITools/openapi-style-validator
+  language: Java, CLI
+  description: A customizable style validator to make sure your OpenAPI description follows your organization's standards.
+  v2: true
+  v3: true
+
 - name: express-ajv-swagger-validation
   category: data-validators
   link: https://www.npmjs.com/package/express-ajv-swagger-validation
