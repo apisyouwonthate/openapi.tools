@@ -1034,6 +1034,24 @@
   description: Generate OpenAPI 3 specification for Laravel Applications.
   v2: false
   v3: true
+  
+- name: json-schema-spell-checker
+  category:
+    - miscellaneous
+  language: Node.js
+  github: https://github.com/mheap/json-schema-spell-checker
+  description: Check OpenAPI specification for spelling mistakes using mdspell
+  v2: true
+  v3: true
+  
+- name: json-schema-sensitivity-checker
+  category:
+    - miscellaneous
+  language: Node.js
+  github: https://github.com/cbetta/json-schema-sensitivity-checker
+  description: Check OpenAPI specification for sensitive language using AlexJS
+  v2: true
+  v3: true
 
 # Testing
 - name: Chai OpenAPI Response Validator
