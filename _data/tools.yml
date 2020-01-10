@@ -295,7 +295,7 @@
 
 # Text Editors
 
-- name: VSCode OpenAPI Extension
+- name: VSCode OpenAPI
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
@@ -931,7 +931,6 @@
   language: Go
   description: Everything all in one. Parser, validator, generates spec from code, or code from spec!
   v2: true
-  v3_progress_link: https://github.com/go-swagger/go-swagger/issues/1122
 
 - name: guardrail
   category:
@@ -939,7 +938,7 @@
   link: https://github.com/twilio/guardrail
   github: https://github.com/twilio/guardrail
   language: Scala, Java, ...
-  description: Principled code generation from OpenAPI Descriptions
+  description: Principled code generation from OpenAPI descriptions
   v2: true
   v3: true
 
@@ -959,7 +958,7 @@
   link: http://NSwag.org
   github: https://github.com/RicoSuter/NSwag
   language: .NET
-  description: Swagger/OpenAPI toolchain for .NET, Web API and TypeScript
+  description: OpenAPI toolchain for .NET, Web API and TypeScript
   v2: true
   v3: true
 
@@ -970,7 +969,7 @@
   link: https://www.npmjs.com/package/@nll/api-codegen-ts
   github: https://github.com/nullpub/api-codegen-ts
   language: TypeScript
-  description: Generates TypeScript models, response validators, and operation controllers from swagger / openapi specs
+  description: Generates TypeScript models, response validators, and operation controllers from OpenAPI descriptions
   v2: true
   v3: true
 
