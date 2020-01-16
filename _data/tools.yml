@@ -716,17 +716,6 @@
   v2: true
   v3: true
 
-- name: Sway
-  category:
-  - miscellaneous
-  - description-validators
-  - data-validators
-  github: https://github.com/apigee-127/sway
-  language: JavaScript
-  description: A library that simplifies OpenAPI integrations/tooling.
-  v2: true
-  v3_progress_link: https://github.com/apigee-127/sway/issues/128
-
 - name: Speccy
   category: description-validators
   link: https://speccy.io/
