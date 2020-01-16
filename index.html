@@ -73,7 +73,7 @@
               </tr>
             </thead>
             <tbody>
-              {% assign sorted_tools = site.data.tools | sort:'key' %}
+              {% assign sorted_tools = site.data.tools | sort_natural:'name' %}
               {% for tool in sorted_tools %}
                 {% if tool.category == category.slug or tool.category contains category.slug %}
                   <tr class="table-row">
