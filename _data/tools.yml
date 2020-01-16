@@ -716,19 +716,11 @@
   v2: true
   v3: true
 
-- name: Speccy
-  category: description-validators
-  link: https://speccy.io/
-  github: https://github.com/wework/speccy
-  language: CLI
-  description: Lint to enforce quality rules on your OpenAPI specifications
-  v3: true
-
 - name: Spectral
   category: description-validators
   link: https://stoplight.io/spectral
   github: https://github.com/stoplightio/spectral
-  language: TypeScript/JavaScript
+  language: CLI & TypeScript/JavaScript
   description: A flexible JSON/YAML object linter with portable "rulesets" and custom
     functions.
   v2: true
