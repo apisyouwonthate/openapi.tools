@@ -592,8 +592,7 @@
   language: Node.js
   link: https://www.npmjs.com/package/microts
   github: https://github.com/tomi-vanek/microts
-  description: Code generator - from OpenAPI specification generates TypeScript project
-    with Docker.
+  description: Take an OpenAPI description and generate TypeScript projects via Docker.
   v2: true
   v3: true
 
@@ -611,11 +610,10 @@
   language: Perl
   link: https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI
   github: https://github.com/jhthorsen/mojolicious-plugin-openapi
-  description: 'Mojolicious::Plugin::OpenAPI is a plugin for Mojolicious framework
-    that add routes and input/output validation to your Mojolicious application based
-    on OpenAPI description documents.
-
-    '
+  description: >
+    Mojolicious::Plugin::OpenAPI is a plugin for Mojolicious framework that add
+    routes and input/output validation to your Mojolicious application based on
+    OpenAPI description documents.'
   v2: true
   v3: true
 
@@ -634,8 +632,9 @@
   - mock
   language: PHP
   github: https://github.com/cebe/yii2-app-api
-  description: Generate Server side API code with routing, models, data validation
-    and database schema from an OpenAPI description. Based on Yii Framework.
+  description: >
+    Generate Server side API code with routing, models, data validation and
+    database schema from an OpenAPI description. Based on Yii Framework.
   v2: false
   v3: true
 
@@ -645,9 +644,10 @@
   language: Node.js
   link: https://github.com/eropple/nestjs-openapi3
   github: https://github.com/eropple/nestjs-openapi3
-  description: Integrates tightly with a NestJS application to provide OpenAPI3 functionality.
-    Infers complex descriptions and expresses them in its generated OpenAPI document,
-    presents that document via ReDoc, and validates inputs for conformance to spec.
+  description: >
+    Integrates tightly with a NestJS application to infers complex descriptions
+    and expresses them in its generated OpenAPI document. It then presents that document
+    via ReDoc, and validates inputs for conformance to spec.
   v2: false
   v3: true
 
@@ -658,8 +658,9 @@
   language: Python
   link: https://github.com/NotJustAToy/falcon-heavy
   github: https://github.com/NotJustAToy/falcon-heavy
-  description: The framework for building app backends and microservices by specification-first
-    API design approach based on the OpenAPI Specification 3.
+  description: >
+    The framework for building app backends and microservices via the API
+    design-first workflow.
   v3: true
 
 - name: BigstickCarpet/swagger-cli
@@ -686,9 +687,7 @@
   github: https://github.com/apiaryio/dredd
   language: Javascript
   description: 'Language-agnostic command-line tool for validating API description
-    document against backend implementation of the API
-
-    '
+    document against backend implementation of the API'
   v2: true
   v3: true
 
@@ -699,8 +698,7 @@
   - data-validators
   github: https://github.com/cdimascio/express-openapi-validator
   language: JavaScript
-  description: "\U0001F98B Auto-validate api requests and responses using ExpressJS
-    and OpenAPI 3.x"
+  description: "\U0001F98B Auto-validate API requests and responses in ExpressJS."
   v2: false
   v3: true
 
