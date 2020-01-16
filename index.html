@@ -48,7 +48,8 @@
           <h2>Tool Types</h2>
           <p class="lead">We've organised everything into categories so you can jump to the section you're interested in.</p>
           <ul>
-          {% for category in site.data.categories %}
+          {% assign sorted_categories = site.data.categories | sort:'slug' %}
+          {% for category in sorted_categories %}
             <li><strong><a href="#{{ category.slug }}">{{ category.name }}:</a></strong>
               {{
             category.description
