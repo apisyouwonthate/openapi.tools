@@ -1151,3 +1151,12 @@
   link: https://www.npmjs.com/package/@openapi-contrib/json-schema-to-openapi-schema
   github: https://github.com/openapi-contrib/json-schema-to-openapi-schema
   v3: true
+
+- name: Simple OpenAPI Definition Designer
+  category: gui-editors
+  language: SaaS
+  link: https://interaction-design.co.za/openapidesigner/
+  github: 
+  description: Visually create OpenAPI 3 definitions in JSON format. Supports a subset of 
+    the OpenAPI 3 specification only. 
+  v3: true
