@@ -394,6 +394,16 @@
   v2: true
   v3: true
 
+- name: Apicurio Studio
+  category: gui-editors
+  language: Angular 7.0, Java / Saas
+  link: https://www.apicur.io/
+  description: |
+     Web-Based Open Source API Design via the OpenAPI specification.
+  v2: true
+  v3: true
+
+# Learning 
 - name: Optic
   category: learning
   language: cli
