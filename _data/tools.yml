@@ -1156,7 +1156,7 @@
   category: gui-editors
   language: SaaS
   link: https://interaction-design.co.za/openapidesigner/
-  github: 
+  github: https://github.com/rodenacker/OpenAPIDefinitionDesigner
   description: Visually create OpenAPI 3 definitions in JSON format. Supports a subset of 
     the OpenAPI 3 specification only. 
   v3: true
