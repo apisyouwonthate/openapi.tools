@@ -925,6 +925,14 @@
     validation and limited data validation for Python 3.
   v2: false
   v3: true
+  
+- name: openapi3_parser
+  category: parsers
+  github: https://github.com/kevindew/openapi3_parser
+  language: Ruby
+  description: A Ruby implementation of parser and validator for the OpenAPI 3 Specification.
+  v2: false
+  v3: true
 
 - name: APIMatic CodeGen
   category: sdk
