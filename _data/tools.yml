@@ -474,6 +474,14 @@
     validation
   v3: true
 
+- name: Open API Mocker
+  category: mock
+  language: nodejs
+  link: https://www.npmjs.com/package/open-api-mocker
+  github: https://github.com/jormaechea/open-api-mocker
+  description: Standalone nodejs based OpenAPI 3 mock server, docker-friendly with request validation and autoreload.
+  v3: true
+
 - name: MockLab
   category: mock
   language: SaaS
