@@ -18,11 +18,11 @@
 
 - name: swagger2openapi
   category: converters
-  language: Node.js
+  language: Node.js / CLI
   link: https://mermade.org.uk/openapi-converter
   github: https://github.com/Mermade/swagger2openapi
   description: Upgrade files from OpenAPI v2.0 to v3.0, bundling into one mega file
-    or respecting $refs
+    or respecting $refs. Part of oas-kit.
   v2: true
   v3: true
 
