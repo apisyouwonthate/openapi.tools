@@ -232,7 +232,7 @@
   github: https://github.com/deepmap/oapi-codegen
   language: Go
   description: Generate a web service using the [Echo](https://github.com/labstack/echo)
-    framework from an Open API v3 specification
+    framework from an OpenAPI v3 specification
   v3: true
 
 - name: OpenAPI Generator
@@ -474,7 +474,7 @@
     validation
   v3: true
 
-- name: Open API Mocker
+- name: OpenAPI Mocker
   category: mock
   language: nodejs
   link: https://www.npmjs.com/package/open-api-mocker
@@ -921,7 +921,7 @@
   category: parsers
   github: https://github.com/Nexmo/oas_parser
   language: Ruby
-  description: A Ruby parser for Open API 3.0+ descriptions.
+  description: A Ruby parser for OpenAPI 3.0+ descriptions.
   v2: false
   v3: true
 
