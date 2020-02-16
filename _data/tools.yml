@@ -1194,3 +1194,13 @@
   link: https://www.npmjs.com/package/@openapi-contrib/json-schema-to-openapi-schema
   github: https://github.com/openapi-contrib/json-schema-to-openapi-schema
   v3: true
+  
+- name: Unchase.OpenAPI.Connectedservice
+  category:
+  - sdk
+  link: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
+  github: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
+  language: ".NET"
+  description: Visual Studio extension to generate C# (TypeScript) HttpClient (or C# Controllers) code for OpenAPI web service with NSwag.
+  v2: true
+  v3: true
