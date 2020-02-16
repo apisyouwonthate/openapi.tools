@@ -1198,6 +1198,7 @@
 - name: Unchase.OpenAPI.Connectedservice
   category:
   - sdk
+  - code-generators
   link: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
   github: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
   language: ".NET"
