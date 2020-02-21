@@ -415,6 +415,7 @@
   category: gui-editors
   language: Angular 7.0, Java / Saas
   link: https://www.apicur.io/
+  github: https://github.com/apicurio/apicurio-studio
   description: |
      Web-Based Open Source API Design via the OpenAPI specification.
   v2: true
