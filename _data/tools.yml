@@ -1206,3 +1206,11 @@
   description: Visual Studio extension to generate C# (TypeScript) HttpClient (or C# Controllers) code for OpenAPI web service with NSwag.
   v2: true
   v3: true
+
+- name: openapi-cop
+  category: data-validators
+  link: https://github.com/EXXETA/openapi-cop
+  language: JavaScript
+  description: A proxy that validates responses and requests against an OpenAPI document.
+  v2: true
+  v3: true
