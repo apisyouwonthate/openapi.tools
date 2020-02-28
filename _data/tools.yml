@@ -1097,6 +1097,15 @@
   v2: false
   v3: true
 
+- name: Flotiq - headless CMS with OpenAPI support
+  category:
+  - sdk
+  - gui-editors
+  - miscellaneous
+  link: https://flotiq.com
+  description: Visually define your Content Types, Flotiq automatically generates your own OpenAPI v3 compatible endpoints, SDKs and Postman collections.
+  v3: true
+  
 - name: Chai OpenAPI Response Validator
   category: testing
   language: Node.js
