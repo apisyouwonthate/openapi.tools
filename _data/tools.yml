@@ -1215,3 +1215,11 @@
   description: Visual Studio extension to generate C# (TypeScript) HttpClient (or C# Controllers) code for OpenAPI web service with NSwag.
   v2: true
   v3: true
+  
+- name: oazapfts!
+  category: sdk
+  language: TypeScript
+  github: https://github.com/cellular/oazapfts
+  description: Generate TypeScript clients from a given OpenAPI description document.
+  v2: true
+  v3: true
