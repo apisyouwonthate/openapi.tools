@@ -432,6 +432,17 @@
   v2: false
   v3: true
 
+- name: Meeshkan
+  category:
+    - learning
+    - mock
+  language: Python
+  link: https://github.com/meeshkan/meeshkan
+  github: https://github.com/meeshkan/meeshkan
+  description: Mock HTTP APIs through a combination of API definitions, recorded traffic and code. Used for sandboxes, as well as automated and exploratory testing.
+  v2: false
+  v3: true
+
 - name: Swagger Inspector
   category: learning
   language: SaaS
