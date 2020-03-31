@@ -421,6 +421,16 @@
   v2: true
   v3: true
 
+- name: OAIE Sketch
+  category: gui-editors
+  language: Vue.js
+  link: https://www.github.com/OAIE/oaie-sketch
+  github: https://github.com/OAIE/oaie-sketch
+  description: |
+     Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
+  v2: false
+  v3: true
+
 # Learning 
 - name: Optic
   category: learning
