@@ -1334,7 +1334,7 @@
   link: https://hauner.github.io/openapi-processor/spring/current/index.html
   github: https://github.com/hauner/openapi-processor-spring
   description:
-    Generates java interface & model code for Spring Boot (annotation based, MVC & WebFlux) from an
-    openapi.yaml. Provides type mapping capabilities to adjust the generated code. Gradle support.
+    Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) from
+    an openapi.yaml. Provides type mapping capabilities to adjust the generated code. Gradle support.
   v2: false
   v3: true
