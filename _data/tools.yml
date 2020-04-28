@@ -1213,7 +1213,7 @@
 - name: Chai OpenAPI Response Validator
   category: testing
   language: Node.js
-  github: https://github.com/RuntimeTools/chai-openapi-response-validator
+  github: https://github.com/RuntimeTools/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator
   description:
     Simple Chai support for asserting that HTTP responses satisfy an OpenAPI
     spec.
