@@ -452,7 +452,7 @@
   v2: false
   v3: true
 
-# Learning 
+# Learning
 - name: Optic
   category: learning
   language: cli
@@ -1346,5 +1346,14 @@
   description:
     Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) from
     an openapi.yaml. Provides type mapping capabilities to adjust the generated code. Gradle support.
+  v2: false
+  v3: true
+
+- name: har2openapi
+  category: converters
+  language: TypeScript
+  link: https://github.com/dcarr178/har2openapi
+  github: https://github.com/dcarr178/har2openapi
+  description: Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files
   v2: false
   v3: true
