@@ -1228,6 +1228,16 @@
   v2: true
   v3: true
 
+- name: jest-openapi
+  category: testing
+  language: Node.js
+  github: https://github.com/RuntimeTools/OpenAPIValidators/tree/master/packages/jest-openapi
+  description:
+    Additional Jest matchers for asserting that HTTP responses satisfy an OpenAPI
+    spec.
+  v2: true
+  v3: true
+
 - name: hikaku
   category: testing
   language: Kotlin
