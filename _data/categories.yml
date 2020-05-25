@@ -23,7 +23,7 @@
   slug: gui-editors
 
 - name: Learning
-  description: Tools that make it easy to learn an OpenAPI description by inspecting real traffic.  
+  description:  Whether you're trying to get documentation for a third party API based on traffic, or are trying to switch to design-first at an organization with no OpenAPI at all, learning can help you move your API spec forward and keep it up to date. 
   slug: learning
 
 - name: Mock Servers
