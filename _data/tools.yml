@@ -1,3 +1,11 @@
+- name: CUE
+  category: dsl
+  language: CUE
+  description: CUE is an open source language, with a rich set of APIs and tooling, for defining, generating, and validating all kinds of data configuration, APIs, database schemas, code, etc. CUE currently supports generating OpenAPI through its API. 
+  link: https://cuelang.org/docs/integrations/openapi/
+  v2: false
+  v3: true
+
 - name: Supermodel
   category: dsl
   language: SaaS
@@ -461,7 +469,7 @@
   v2: true
   v3: true
 
-# Learning 
+# Learning
 - name: Optic
   category: learning
   language: cli
@@ -492,6 +500,15 @@
     Run mock requests in a webapp and Swagger Inspector infers your OpenAPI
     description.
   v2: true
+  v3: true
+
+- name: Response2Schema
+  category: learning
+  language: PHP
+  link: https://github.com/dsuurlant/response2schema
+  description:
+    Takes any JSON response and generates an OpenAPI definition document with the component schema and a default endpoint.
+  v2: false
   v3: true
 
 - name: Connexion
@@ -1222,9 +1239,19 @@
 - name: Chai OpenAPI Response Validator
   category: testing
   language: Node.js
-  github: https://github.com/RuntimeTools/chai-openapi-response-validator
+  github: https://github.com/RuntimeTools/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator
   description:
     Simple Chai support for asserting that HTTP responses satisfy an OpenAPI
+    spec.
+  v2: true
+  v3: true
+
+- name: jest-openapi
+  category: testing
+  language: Node.js
+  github: https://github.com/RuntimeTools/OpenAPIValidators/tree/master/packages/jest-openapi
+  description:
+    Additional Jest matchers for asserting that HTTP responses satisfy an OpenAPI
     spec.
   v2: true
   v3: true
@@ -1266,8 +1293,10 @@
   language: Java
   github: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
   description:
-    "Generates test cases directly from an OpenAPI v3 spec. Bonus: Semantic
-    linter reports elements that are inconsistent, superfluous, or dubious."
+    "Generates test cases directly from an OpenAPI v3 description of your
+    API. Creates tests executable using various test frameworks. Bonus:
+    Semantic linter reports elements that are inconsistent, superfluous,
+    or dubious."
   v2: false
   v3: true
 
@@ -1355,5 +1384,25 @@
   description:
     Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) from
     an openapi.yaml. Provides type mapping capabilities to adjust the generated code. Gradle support.
+  v2: false
+  v3: true
+
+- name: har2openapi
+  category: converters
+  language: TypeScript
+  link: https://github.com/dcarr178/har2openapi
+  github: https://github.com/dcarr178/har2openapi
+  description: Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files
+  v2: false
+  v3: true
+
+- name: oa-client
+  category:
+    - miscellaneous
+    - sdk
+  language: TypeScript
+  link: https://github.com/ninofiliu/oa-client
+  github: https://github.com/ninofiliu/oa-client
+  description: Flexible client helper for making and validating calls to OpenAPI backends. For Node and the browser. Runtime lib - no need for code generation!
   v2: false
   v3: true
