@@ -493,6 +493,15 @@
   v2: true
   v3: true
 
+- name: Response2Schema
+  category: learning
+  language: PHP
+  link: https://github.com/dsuurlant/response2schema
+  description:
+    Takes any JSON response and generates an OpenAPI definition document with the component schema and a default endpoint.
+  v2: false
+  v3: true
+
 - name: Connexion
   category: mock
   language: Python
