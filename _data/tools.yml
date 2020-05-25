@@ -1386,3 +1386,14 @@
   description: Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files
   v2: false
   v3: true
+
+- name: oa-client
+  category:
+    - miscellaneous
+    - sdk
+  language: TypeScript
+  link: https://github.com/ninofiliu/oa-client
+  github: https://github.com/ninofiliu/oa-client
+  description: Flexible client helper for making and validating calls to OpenAPI backends. For Node and the browser. Runtime lib - no need for code generation!
+  v2: false
+  v3: true
