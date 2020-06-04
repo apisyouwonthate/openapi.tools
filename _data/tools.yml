@@ -1406,3 +1406,14 @@
   description: Flexible client helper for making and validating calls to OpenAPI backends. For Node and the browser. Runtime lib - no need for code generation!
   v2: false
   v3: true
+
+- name: Restish
+  category:
+    - documentation
+    - miscellaneous
+    - testing
+  language: CLI / Go
+  link: https://rest.sh/
+  github: https://github.com/danielgtaylor/restish
+  description: A CLI for REST-ish APIs with HTTP/2, built-in auth, content negotiation, caching, and more that understands and can discover OpenAPI descriptions.
+  v3: true
