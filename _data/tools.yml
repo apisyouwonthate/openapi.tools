@@ -1417,3 +1417,22 @@
   github: https://github.com/danielgtaylor/restish
   description: A CLI for REST-ish APIs with HTTP/2, built-in auth, content negotiation, caching, and more that understands and can discover OpenAPI descriptions.
   v3: true
+  
+- name: openapi-examples-validator
+  category:
+    - miscellaneous
+    - description-validators
+    - data-validators
+  github: https://github.com/codekie/openapi-examples-validator
+  language: JavaScript
+  description: "Validates embedded JSON-examples in OpenAPI-specs"
+  v2: true
+  v3: true
+  
+- name: openapi-to-postman
+  category: converters
+  github: https://github.com/postmanlabs/openapi-to-postman
+  language: JavaScript
+  description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
+  v2: false
+  v3: true
