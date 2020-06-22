@@ -1436,3 +1436,10 @@
   description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
   v2: false
   v3: true
+
+- name: JSON Designer
+  category: gui-editors
+  link: http://jsondesigner.com
+  language: iOS/Swift
+  description: Visually edit JSON models and export them as components schemas yaml.
+  v3: true
