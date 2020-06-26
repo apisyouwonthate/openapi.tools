@@ -126,7 +126,7 @@
   language: SaaS
   description:
     HUB for managing and sharing APIs. Converts OpenAPI v2 / v3 files into
-    beautiful API documentations.
+    beautiful API documentation.
   v2: true
   v3: true
 
@@ -235,7 +235,7 @@
   github: https://github.com/johndcarmichael/boats
   language: Node.js
   description: |
-    BOATS allows for larger teams to contribute to multi-file OpenAPI defintions by writing Nunjucks tpl syntax in yaml with a few
+    BOATS allows for larger teams to contribute to multi-file OpenAPI definitions by writing Nunjucks tpl syntax in yaml with a few
     important helpers to ensure stricter consistency, eg operationId: <$ uniqueOpId() $>.
   v2: true
   v3: true
@@ -287,7 +287,7 @@
   link: https://bump.sh
   language: SaaS
   description:
-    Bump generates elegant documentations and changelogs from your OpenAPI
+    Bump generates elegant documentation and changelogs from your OpenAPI
     specifications. Git diff, for your API.
   v2: true
   v3: true
@@ -680,7 +680,7 @@
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
   github: https://github.com/smartrecruiters/openapi-first
   description: |
-    Initializes your API express application with description in OpenAPI 3.0 format using
+    Initializes your API express application with the description in OpenAPI 3.0 format using
     provided middlewares (parsers, validators, controller, defaults setting) or custom ones
   v2: false
   v3: true
@@ -923,7 +923,7 @@
   github: https://github.com/openapi4j/openapi4j
   language: Java
   description:
-    Parse Description Document, validate api requests and responses using
+    Parse Description Document, validate API requests and responses using
     OpenAPI 3.x.
   v2: false
   v3: true
@@ -1305,7 +1305,7 @@
   language: Python
   github: https://github.com/kiwicom/schemathesis
   description:
-    Reads the description document and generates test cases which will
+    Reads the description document and generates test cases that will
     ensure that your application is compliant with its description.
   v2: true
   v3: true
@@ -1324,7 +1324,7 @@
   category: security
   language: SaaS
   description:
-    A unique set of integrated API security tools which allow discovery,
+    A unique set of integrated API security tools that allow discovery,
     remediation of OpenAPI vulnerabilities and runtime protection against API attacks.
   link: https://42crunch.com/
   v2: true
@@ -1334,7 +1334,7 @@
   category: security
   language: SaaS
   description:
-    Upload OpenAPI file, get detailed report with located vulnerabilities,
+    Upload OpenAPI file, get a detailed report with located vulnerabilities,
     possible attack scenarios, ways to remediate.
   link: https://apisecurity.io/tools/audit/
   v2: true
