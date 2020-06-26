@@ -1436,3 +1436,11 @@
   description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
   v2: false
   v3: true
+
+- name: super-linter
+  category: description-validators
+  github: https://github.com/github/super-linter
+  language: CLI / Docker
+  description: "GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral."
+  v2: true
+  v3: true
