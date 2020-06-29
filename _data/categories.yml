@@ -55,5 +55,5 @@
   slug: parsers
 
 - name: Testing
-  description: Quickly execute API request and validate responses on the fly through command line or GUI interfaces.
+  description: Quickly execute API requests and validate responses on the fly through command line or GUI interfaces.
   slug: testing
