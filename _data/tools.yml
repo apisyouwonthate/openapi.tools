@@ -1,7 +1,7 @@
 - name: CUE
   category: dsl
   language: CUE
-  description: CUE is an open source language, with a rich set of APIs and tooling, for defining, generating, and validating all kinds of data configuration, APIs, database schemas, code, etc. CUE currently supports generating OpenAPI through its API. 
+  description: CUE is an open source language, with a rich set of APIs and tooling, for defining, generating, and validating all kinds of data configuration, APIs, database schemas, code, etc. CUE currently supports generating OpenAPI through its API.
   link: https://cuelang.org/docs/integrations/openapi/
   v2: false
   v3: true
@@ -1379,8 +1379,8 @@
   category:
    - server
   language: Java
-  link: https://hauner.github.io/openapi-processor/spring/current/index.html
-  github: https://github.com/hauner/openapi-processor-spring
+  link: https://docs.openapiprocessor.io/spring
+  github: https://github.com/openapi-processor/openapi-processor-spring
   description:
     Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) from
     an openapi.yaml. Provides type mapping capabilities to adjust the generated code. Gradle support.
@@ -1417,7 +1417,7 @@
   github: https://github.com/danielgtaylor/restish
   description: A CLI for REST-ish APIs with HTTP/2, built-in auth, content negotiation, caching, and more that understands and can discover OpenAPI descriptions.
   v3: true
-  
+
 - name: openapi-examples-validator
   category:
     - miscellaneous
@@ -1428,7 +1428,7 @@
   description: "Validates embedded JSON-examples in OpenAPI-specs"
   v2: true
   v3: true
-  
+
 - name: openapi-to-postman
   category: converters
   github: https://github.com/postmanlabs/openapi-to-postman
