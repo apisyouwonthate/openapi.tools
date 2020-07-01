@@ -1324,10 +1324,10 @@
   category: security
   language: SaaS
   github: https://github.com/stackhawk
-  description: StackHawk is an application vulnerability scanner purpose built for developers to use in the DevOps pipeline. It leverages a provided OpenAPI v2 spec file for route discovery and enhanced scanning.
+  description: StackHawk is an application vulnerability scanner purpose built for developers to use in the DevOps pipeline. It leverages a provided OpenAPI v2 or v3 spec file for route discovery and enhanced scanning.
   link: https://stackhawk.com/
   v2: true
-  v3: false
+  v3: true
 
 - name: 42crunch
   category: security
