@@ -220,7 +220,6 @@
   v3: true
 
 - name: Stoplight Docs
-
   category: documentation
   link: https://stoplight.io/docs/
   language: SaaS
@@ -1181,14 +1180,16 @@
   v2: true
   v3: true
 
-- name: oas-generator
+- name: Azure AutoRest
   catgeory:
     - sdk
-  github: https://github.com/isa-group/oas-generator
-  language: Node.js
+  github: https://github.com/Azure/autorest/
+  language: TypeScript
   description:
-    NodeJS RESTful APIs scaffolding based OpenAPI 3.x specs using oas-tools
-    and express
+    Generates client libraries for accessing RESTful web services from an
+    OpenAPI document. Supports C#, PowerShell, Go, Java, Node.js, TypeScript,
+    Python, and Ruby.
+  v2: true
   v3: true
 
 - name: spring-openapi
