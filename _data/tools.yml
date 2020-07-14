@@ -1467,3 +1467,11 @@
   description: "GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral."
   v2: true
   v3: true
+
+- name: php-openapi-faker
+  category: miscellaneous
+  language: PHP
+  github: https://github.com/canvural/php-openapi-faker
+  description: "Library to generate fake data for OpenAPI 3.x requests, responses and schemas."
+  v2: false
+  v3: true
