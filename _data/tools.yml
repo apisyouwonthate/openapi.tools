@@ -220,7 +220,6 @@
   v3: true
 
 - name: Stoplight Docs
-
   category: documentation
   link: https://stoplight.io/docs/
   language: SaaS
@@ -266,6 +265,19 @@
   description:
     Generate a web service using the [Echo](https://github.com/labstack/echo)
     framework from an OpenAPI v3 specification
+  v3: true
+
+- name: OpenAPI Client Generators
+  category:
+    - code-generators
+    - sdk
+  link: https://github.com/zijianhuang/openapiclientgen
+  language: C#
+  github: https://github.com/zijianhuang/openapiclientgen
+  description:
+    .NET Core command line program to generate strongly typed client API codes in C# on .NET Frameworks and .NET Core, and in TypeScript
+    for Angular 5+, Aurelia, jQuery, AXIOS and Fetch API.
+  v2: true
   v3: true
 
 - name: OpenAPI Generator
@@ -1168,14 +1180,16 @@
   v2: true
   v3: true
 
-- name: oas-generator
+- name: Azure AutoRest
   catgeory:
     - sdk
-  github: https://github.com/isa-group/oas-generator
-  language: Node.js
+  github: https://github.com/Azure/autorest/
+  language: TypeScript
   description:
-    NodeJS RESTful APIs scaffolding based OpenAPI 3.x specs using oas-tools
-    and express
+    Generates client libraries for accessing RESTful web services from an
+    OpenAPI document. Supports C#, PowerShell, Go, Java, Node.js, TypeScript,
+    Python, and Ruby.
+  v2: true
   v3: true
 
 - name: spring-openapi
@@ -1320,6 +1334,15 @@
   v2: true
   v3: true
 
+- name: StackHawk HawkScan
+  category: security
+  language: SaaS
+  github: https://github.com/stackhawk
+  description: StackHawk is an application vulnerability scanner purpose built for developers to use in the DevOps pipeline. It leverages a provided OpenAPI v2 or v3 spec file for route discovery and enhanced scanning.
+  link: https://stackhawk.com/
+  v2: true
+  v3: true
+
 - name: 42crunch
   category: security
   language: SaaS
@@ -1445,6 +1468,13 @@
   v2: true
   v3: true
 
+- name: php-openapi-faker
+  category: miscellaneous
+  language: PHP
+  github: https://github.com/canvural/php-openapi-faker
+  description: "Library to generate fake data for OpenAPI 3.x requests, responses and schemas."
+  v2: false
+  
 - name: JSON Designer
   category: gui-editors
   link: http://jsondesigner.com
