@@ -1475,3 +1475,12 @@
   description: "Library to generate fake data for OpenAPI 3.x requests, responses and schemas."
   v2: false
   v3: true
+
+- name: OWASP ZAP
+  category: security
+  language: Java
+  github: https://github.com/zaproxy/zaproxy
+  description: OWASP ZAP is a free and open source web security tool that can be used manually or completely automated. It supports importing OpenAPI v2 and v3 definitions to allow an API to be thoroughly security tested.
+  link: https://www.zaproxy.org/
+  v2: true
+  v3: true
