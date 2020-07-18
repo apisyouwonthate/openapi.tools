@@ -1474,6 +1474,7 @@
   github: https://github.com/canvural/php-openapi-faker
   description: "Library to generate fake data for OpenAPI 3.x requests, responses and schemas."
   v2: false
+  v3: true
   
 - name: JSON Designer
   category: gui-editors
