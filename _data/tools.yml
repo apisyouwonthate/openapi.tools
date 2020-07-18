@@ -1479,5 +1479,5 @@
   category: gui-editors
   link: http://jsondesigner.com
   language: iOS/Swift
-  description: Visually edit JSON models and export them as components schemas yaml.
+  description: Visually edit JSON models and export them as OpenAPI yaml.
   v3: true
