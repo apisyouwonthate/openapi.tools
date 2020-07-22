@@ -1475,3 +1475,10 @@
   description: "Library to generate fake data for OpenAPI 3.x requests, responses and schemas."
   v2: false
   v3: true
+  
+- name: JSON Designer
+  category: gui-editors
+  link: http://jsondesigner.com
+  language: iOS/Swift
+  description: Visualize JSON models from imported OpenAPI YAML. Edit models and export OpenAPI YAML.
+  v3: true
