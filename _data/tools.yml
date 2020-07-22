@@ -1480,5 +1480,5 @@
   category: gui-editors
   link: http://jsondesigner.com
   language: iOS/Swift
-  description: Visually edit JSON models and export them as OpenAPI yaml.
+  description: Visualize JSON models from imported OpenAPI YAML. Edit models and export OpenAPI YAML.
   v3: true
