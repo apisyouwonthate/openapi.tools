@@ -103,7 +103,7 @@
 
 - name: OpenDocumenter
   category: documentation
-  link: http
+  link: https://github.com/ouropencode/OpenDocumenter
   language: Node.js / Vue.js
   description:
     OpenDocumenter is a automatic documentation generator for OpenAPI v3 schemas.
