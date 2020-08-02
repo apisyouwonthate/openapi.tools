@@ -140,6 +140,16 @@
   v2: true
   v3: true
 
+- name: RestCase Docs
+  category: documentation
+  link: https://www.restcase.com/platform/docs
+  language: SaaS
+  description:
+    An API-first and security-first management platform. Design visually and we will create a 
+    beautiful API documentation for your APIs.
+  v2: true
+  v3: true
+  
 - name: LucyBot DocGen
   category: documentation
   github: https://github.com/LucyBot-Inc/documentation-starter
@@ -481,6 +491,15 @@
   v2: true
   v3: true
 
+- name: RestCase Designer
+  category: gui-editors
+  language: Angular 9.0 / Saas
+  link: https://www.restcase.com/platform/design
+  description: |
+    A design-first API managment platform with WYSIWYG API Designer for OpenAPI and AsyncAPI specifications.
+  v2: true
+  v3: true
+  
 # Learning
 - name: Optic
   category: learning
