@@ -1505,3 +1505,11 @@
     existing OpenAPI specs.
   v2: true
   v3: true
+
+- name: openapi-validator-bundle
+  category: data-validators
+  github: https://github.com/cydrickn/openapi-validator-bundle
+  language: PHP
+  description:
+    Validates Request and Response using Symfony Framework
+  v3: true
