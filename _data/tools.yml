@@ -1505,3 +1505,15 @@
     existing OpenAPI specs.
   v2: true
   v3: true
+
+- name: CakePHP Swagger Bake
+  category: converters
+  language: PHP
+  link: https://cakephpswaggerbake.cnizz.com/
+  github: https://github.com/cnizzardini/cakephp-swagger-bake
+  description: >
+    A CakePHP Swagger Generator. Automatically generate OpenAPI documentation from your code. No annotations 
+    required. A delightfully tasty tool for generating Swagger documentation with OpenApi 3.0.0 schema. This 
+    plugin automatically builds your Swagger UI and ReDoc from your existing cake models and routes.
+  v2: false
+  v3: true
