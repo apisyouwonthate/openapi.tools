@@ -785,7 +785,7 @@
   link: https://beeceptor.com/
   github: 
   description: >
-     An HTTP interceptor and rule based mocking service for Rest APIs. No coding reuiqred to create a mock endpoint. No sign-up required.
+     "\U0001F41D An HTTP interceptor and rule based mocking service for Rest APIs. No coding reuiqred to create a mock endpoint. No sign-up required."
   v2: false
   v3: true
 
