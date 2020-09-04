@@ -779,6 +779,16 @@
   v2: false
   v3: true
 
+- name: Beeceptor
+  category: mock
+  language: SaaS
+  link: https://beeceptor.com/
+  github: 
+  description: >
+     An HTTP interceptor and rule based mocking service for Rest APIs. No coding reuiqred to create a mock endpoint. No sign-up required.
+  v2: false
+  v3: true
+
 - name: "@eropple/nestjs-openapi3"
   category:
     - server
