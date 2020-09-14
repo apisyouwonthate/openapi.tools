@@ -1505,3 +1505,14 @@
     existing OpenAPI specs.
   v2: true
   v3: true
+
+- name: Django REST Framework
+  category: server
+  language: Python
+  link: https://www.django-rest-framework.org/api-guide/schemas/
+  github: https://github.com/encode/django-rest-framework
+  description: >
+    Automates generation of OpenAPI 3 description documents either as a static file (via CLI command)
+    or a dynamic view within the Django REST Framework (DRF) application.
+  v2: false
+  v3: true
