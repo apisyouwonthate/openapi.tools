@@ -1505,3 +1505,11 @@
     existing OpenAPI specs.
   v2: true
   v3: true
+  
+- name: OpenAPI3 Fuzzer
+  category: data-validators
+  link: https://pypi.org/project/openapi3-fuzzer/
+  github: https://github.com/vwt-digital/openapi3-fuzzer/tree/master
+  language: Python
+  description: Simple fuzzer for OpenAPI 3 specification based APIs. Verifies responses and sends various attack patterns.
+  v3: true
