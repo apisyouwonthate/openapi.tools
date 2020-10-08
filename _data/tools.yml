@@ -1533,3 +1533,11 @@
     microservices with tight OpenAPI 3 integration. Serves Swagger UI and OpenAPI 3 spec out of the box.
     Generate code to interact with other OpenAPI-compliant APIs, or generate new API endpoints based on
     existing OpenAPI specs.
+    
+- name: OpenAPI3 Fuzzer
+  category: data-validators
+  link: https://pypi.org/project/openapi3-fuzzer/
+  github: https://github.com/vwt-digital/openapi3-fuzzer/tree/master
+  language: Python
+  description: Simple fuzzer for OpenAPI 3 specification based APIs. Verifies responses and sends various attack patterns.
+  v3: true
