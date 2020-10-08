@@ -533,6 +533,16 @@
   v2: false
   v3: true
 
+- name: InducOapi
+  category: learning
+  language: Python
+  link: https://pypi.org/project/inducoapi
+  github: https://github.com/TheWall89/inducoapi
+  description:
+    A simple python module to generate OpenAPI Description Documents by supplying request/response bodies.
+  v2: false
+  v3: true
+
 - name: Connexion
   category: mock
   language: Python
