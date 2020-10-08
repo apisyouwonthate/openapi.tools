@@ -1477,6 +1477,17 @@
   description: "GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral."
   v2: true
   v3: true
+  
+- name: SpringFox
+  category: server
+  language: Java, Kotlin, Groovy, Ruby
+  link: https://springfox.io
+  github: https://github.com/springfox/springfox
+  description:
+    Automated JSON API documentation for API's built with Spring and SpringBoot
+  v1: true   
+  v2: true
+  v3: true
 
 - name: php-openapi-faker
   category: miscellaneous
@@ -1512,4 +1523,3 @@
     microservices with tight OpenAPI 3 integration. Serves Swagger UI and OpenAPI 3 spec out of the box.
     Generate code to interact with other OpenAPI-compliant APIs, or generate new API endpoints based on
     existing OpenAPI specs.
-
