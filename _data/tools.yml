@@ -1533,8 +1533,6 @@
     microservices with tight OpenAPI 3 integration. Serves Swagger UI and OpenAPI 3 spec out of the box.
     Generate code to interact with other OpenAPI-compliant APIs, or generate new API endpoints based on
     existing OpenAPI specs.
-  v2: true
-  v3: true
 
 - name: vREST NG
   category: testing
