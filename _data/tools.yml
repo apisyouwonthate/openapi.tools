@@ -1545,3 +1545,14 @@
     JSON Schema and also provides powerful response validation capabilities. 
   v2: true
   v3: true
+
+- name: Rusty API Modeler
+  category: code-generators
+  language: Rust
+  github: https://github.com/alamminsalo/ram
+  description: >
+    Language-agnostic openapi code generator.
+    Requires developer to write handlebars template files for API generation.
+    Comes with a few built-in templates for testing and demonstration purposes in different languages.
+  v2: false
+  v3: true
