@@ -868,6 +868,17 @@
   v2: false
   v3: true
 
+- name: openapi-dev-tool
+  category:
+    - miscellaneous
+    - testing
+    - documentation
+  github: https://github.com/lyra/openapi-dev-tool
+  language: JavaScript
+  description: "OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!"
+  v2: false
+  v3: true
+
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
