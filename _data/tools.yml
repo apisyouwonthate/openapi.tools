@@ -1523,6 +1523,17 @@
   description: Visualize JSON models from imported OpenAPI YAML. Edit models and export OpenAPI YAML.
   v3: true
 
+- name: openapi-core
+  category: data-validators
+  language: Python
+  github: https://github.com/p1c2u/openapi-core
+  description:
+    Validate your requests and responses against an OpenAPI 3 specification and get very verbose
+    and human-readable descriptions of errors. You will receive a deserialized object along with
+    validation result, so you won't need to deserialize it twice.
+  v2: false
+  v3: true
+
 - name: LoopBack 4
   category: server
   language: TypeScript
