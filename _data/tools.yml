@@ -367,6 +367,17 @@
     swagger-parser node package.
   v2: true
   v3: true
+  
+- name: Atom/linter-openapi
+  category: text-editors
+  language: JavaScript
+  github: https://atom.io/packages/linter-openapi
+  license: MIT
+  description:
+    This plugin for Atom Linter will lint OpenAPI YAML files using
+    openapi-enforcer node package.
+  v2: false
+  v3: true
 
 - name: Swagger Editor
   category: text-editors
