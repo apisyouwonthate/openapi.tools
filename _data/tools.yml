@@ -1597,7 +1597,7 @@
 
 - name: Goa
   category: dsl
-  language: go
+  language: Go
   description:
     Goa provides a holistic approach for developing remote APIs and microservices in Go. 
     implementers don't have to worry about the documentation getting out of sync 
