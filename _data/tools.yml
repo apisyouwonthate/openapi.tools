@@ -1594,3 +1594,11 @@
   description:
     Validates Request and Response using Symfony Framework
   v3: true
+
+- name: OpenAPI HttpFoundation Testing
+  category: data-validators
+  language: PHP
+  description: Strengthen your API tests by validating HttpFoundation responses against OpenAPI definitions
+  github: https://github.com/osteel/openapi-httpfoundation-testing
+  v2: false
+  v3: true
