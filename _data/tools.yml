@@ -1594,3 +1594,11 @@
   description:
     Validates Request and Response using Symfony Framework
   v3: true
+
+- name: Goa
+  category: dsl
+  language: go
+  description: Goa provides a holistic approach for developing remote APIs and microservices in Go.
+  link: https://goa.design
+  v2: true
+  v3: true
