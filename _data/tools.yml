@@ -1594,3 +1594,15 @@
   description:
     Validates Request and Response using Symfony Framework
   v3: true
+
+- name: oas-gen
+  category:
+    - sdk
+    - server
+  github: https://github.com/fomin/oas-gen
+  language: Java, TypeScript
+  description:
+    An engine to generate clients and server stubs in different languages by OpenAPI.
+    It's simple and extendable by design. Currently contains generators for Srping Web,
+    Reactor Netty and JavaScript standard library.
+  v3: true
