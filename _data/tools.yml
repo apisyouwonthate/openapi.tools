@@ -1602,3 +1602,11 @@
   github: https://github.com/osteel/openapi-httpfoundation-testing
   v2: false
   v3: true
+
+- name: VSCode OpenAPI Snippets
+  category: text-editors
+  language: Any
+  description: OpenAPI Snippets for Visual Studio Code editor, includes split file validation
+  v3: true
+  link: https://marketplace.visualstudio.com/items?itemName=proohit.openapi-snippets
+  github: https://github.com/proohit/openapi-snippets
