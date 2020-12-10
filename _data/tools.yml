@@ -1629,3 +1629,12 @@
   v3: true
   link: https://marketplace.visualstudio.com/items?itemName=proohit.openapi-snippets
   github: https://github.com/proohit/openapi-snippets
+
+- name: Spectator
+  category: testing
+  language: PHP
+  description: Spectator provides light-weight OpenAPI testing tools you can use within your existing Laravel test suite.
+  v2: false
+  v3: true
+  link: https://github.com/hotmeteor/spectator
+  github: https://github.com/hotmeteor/spectator
