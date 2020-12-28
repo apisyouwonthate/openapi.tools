@@ -1163,6 +1163,15 @@
     etc.) to generate fully functional SDKs in over 10 languages.
   v2: true
   v3: true
+  
+- name: docler-labs/api-client-generator
+  category: sdk
+  language: PHP
+  github: https://github.com/DoclerLabs/api-client-generator
+  description:
+    API client generator is a console application capable of auto-generating a PSR18/PSR7 API client based on OpenAPI
+    specification according to PHP best practices and your code style standards.
+  v3: true
 
 - name: janephp/open-api
   category: sdk
