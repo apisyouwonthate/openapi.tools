@@ -95,9 +95,7 @@
   language: TypeScript
   link: https://www.avantation.in/
   github: https://github.com/anbuksv/avantation
-  description: "Generate OpenAPI 3.x specification from HAR.
-
-    "
+  description: "Generate OpenAPI 3.x specification from HAR."
   v2: false
   v3: true
 
@@ -248,6 +246,15 @@
     from OpenAPI, integrated with Stoplight Studio
   v2: true
   v3: true
+
+- name: jekyll-openapi
+  category: documentation
+  link: https://github.com/robertlove/jekyll-openapi
+  language: Jekyll
+  description:
+    An OpenAPI 3 documentation website generator built with Jekyll for use on GitHub Pages.
+  v3: true
+
 - name: BOATS
   category: dsl
   link: https://www.npmjs.com/package/boats
