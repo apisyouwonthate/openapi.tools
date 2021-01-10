@@ -1436,3 +1436,13 @@
   description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
   v2: false
   v3: true
+  
+- name: openapi-filter
+  category: parsers
+  github: https://github.com/Mermade/openapi-filter
+  language: Node.js
+  description:
+    Swagger/OpenAPI 2.0 and 3.0 filter utility. A CLI/module to filter out internal/private paths, operations, parameters, schemas etc from OpenAPI/Swagger/AsyncAPI definitions.
+    Simply flag any OpenAPI object within the definition with an `x-internal` specification extension or target a OpenAPI property (tags, methods, OperationId), and it will be removed from the output.
+  v2: true
+  v3: true
