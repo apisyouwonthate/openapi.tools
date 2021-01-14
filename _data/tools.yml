@@ -153,11 +153,11 @@
   link: https://www.restcase.com/platform/docs
   language: SaaS
   description:
-    An API-first and security-first management platform. Design visually and we will create a 
+    An API-first and security-first management platform. Design visually and we will create a
     beautiful API documentation for your APIs.
   v2: true
   v3: true
-  
+
 - name: LucyBot DocGen
   category: documentation
   github: https://github.com/LucyBot-Inc/documentation-starter
@@ -384,7 +384,7 @@
     swagger-parser node package.
   v2: true
   v3: true
-  
+
 - name: Atom/linter-openapi
   category: text-editors
   language: JavaScript
@@ -506,7 +506,7 @@
   link: https://www.github.com/OAIE/oaie-sketch
   github: https://github.com/OAIE/oaie-sketch
   description: |
-     Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
+    Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
   v2: false
   v3: true
 
@@ -527,7 +527,7 @@
     A design-first API managment platform with WYSIWYG API Designer for OpenAPI and AsyncAPI specifications.
   v2: true
   v3: true
-  
+
 # Learning
 - name: Optic
   category: learning
@@ -1468,7 +1468,7 @@
 
 - name: openapi-processor-spring
   category:
-   - server
+    - server
   language: Java
   link: https://docs.openapiprocessor.io/spring
   github: https://github.com/openapi-processor/openapi-processor-spring
@@ -1535,7 +1535,7 @@
   description: "GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral."
   v2: true
   v3: true
-  
+
 - name: SpringFox
   category: server
   language: Java, Kotlin, Groovy, Ruby
@@ -1543,7 +1543,7 @@
   github: https://github.com/springfox/springfox
   description:
     Automated JSON API documentation for API's built with Spring and SpringBoot
-  v1: true   
+  v1: true
   v2: true
   v3: true
 
@@ -1607,9 +1607,9 @@
   link: https://ng.vrest.io
   github:
   description:
-    vREST NG is a simple and powerful application for API Automation. It Allows to use OpenAPI 
-    specification into vREST NG to drive your API testing that validates the API responses against 
-    JSON Schema and also provides powerful response validation capabilities. 
+    vREST NG is a simple and powerful application for API Automation. It Allows to use OpenAPI
+    specification into vREST NG to drive your API testing that validates the API responses against
+    JSON Schema and also provides powerful response validation capabilities.
   v2: true
   v3: true
 
@@ -1645,3 +1645,13 @@
   v3: true
   link: https://github.com/hotmeteor/spectator
   github: https://github.com/hotmeteor/spectator
+
+- name: APIFuzzer
+  category: data-validators
+  language: Python
+  description: Fuzz test your application using your OpenAPI definition without coding. Integrate into CI/CD, get Junit XML test result and
+  JSON report of failures
+  v2: true
+  v3: true
+  link: https://github.com/KissPeter/APIFuzzer
+  github: https://github.com/KissPeter/APIFuzzer
