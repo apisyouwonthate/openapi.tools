@@ -1649,8 +1649,7 @@
 - name: APIFuzzer
   category: data-validators
   language: Python
-  description: Fuzz test your application using your OpenAPI definition without coding. Integrate into CI/CD, get Junit XML test result and
-  JSON report of failures
+  description: Fuzz test your application using your OpenAPI definition without coding. Integrate into CI/CD, get Junit XML test result and JSON report of failures
   v2: true
   v3: true
   link: https://github.com/KissPeter/APIFuzzer
