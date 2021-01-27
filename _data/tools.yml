@@ -7,8 +7,6 @@
   v2: false
   v3: true
 
-- name: Google Gnostic
-
 - name: CUE
   category: dsl
   language: CUE
