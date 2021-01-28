@@ -1064,6 +1064,24 @@
   v2: true
   v3: true
 
+- name: openapi-snippet
+  category: parsers
+  github: https://github.com/ErikWittern/openapi-snippet
+  language: Node.js
+  description:
+    Generates code snippets in various languages & tools (cURL, Node, Python, Ruby, Java, Go, C#...), from OpenAPI documents.
+  v2: true
+  v3: true
+
+- name: openapi-snippet-cli
+  category: parsers
+  github: https://github.com/richardkabiling/openapi-snippet-cli
+  language: Node.js
+  description:
+    Adds code snippets in redoc style (x-codeSamples) to OpenAPI documents. This is a CLI wrapper for the "openapi-snippet".
+  v2: true
+  v3: true
+
 - name: KaiZen OpenAPI Parser
   github: https://github.com/RepreZen/KaiZen-OpenApi-Parser
   owner: RepreZen
