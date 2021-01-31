@@ -1664,3 +1664,16 @@
   v3: true
   link: https://github.com/KissPeter/APIFuzzer
   github: https://github.com/KissPeter/APIFuzzer
+  
+- name: QuickMocker
+  category: 
+    - mock
+    - testing
+  language: SaaS
+  link: https://quickmocker.com
+  description: 
+    Online API Mocking Tool for creating and managing fake API endpoints, live capturing / intercepting requests, 
+    robust response body templating using shortcodes, bulk adding of endpoints using OpenAPI specifications, 
+    webhooks testings and debugging by forwarding requests to the local environment directrly from the browser.
+  v2: true
+  v3: true
