@@ -1664,3 +1664,10 @@
   v3: true
   link: https://github.com/KissPeter/APIFuzzer
   github: https://github.com/KissPeter/APIFuzzer
+ - name: Grizzly Editor
+  category: gui-editors
+  language: Saas
+  description: Grizzly Editor, an open source microservice editor, created for developers and enterprises for optimal microservice design using OpenAPI Standard
+  v2: true
+  v3: true
+  link: https://grizzlyeditor.codeonce.fr/
