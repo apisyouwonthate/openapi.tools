@@ -57,8 +57,9 @@
               <tr>
                 <th>Name</th>
                 <th>Language</th>
-                <th>v2</th>
-                <th>v3</th>
+                <th>v3.1</th>
+                <th>v3.0</th>
+                <th>v2.0</th>
                 <th>GitHub</th>
               </tr>
             </thead>
@@ -76,8 +77,9 @@
                       {% endif %}
                     </td>
                     <td class="font-serif w-1/5 text-center">{{ tool.language }}</td>
+                    <td class="font-serif w-1/3 text-center">{% if tool.v3_1 %}✅{% elsif tool.v3_1_progress_link %}<a target="_blank" href="{{ tool.v3_1_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
+                    <td class="font-serif w-1/3 text-center">{% if tool.v3 %}✅{% else %}❌{% endif %}</td>
                     <td class="font-serif w-1/3 text-center">{% if tool.v2 %}✅{% else %}❌{% endif %}</td>
-                    <td class="font-serif w-1/3 text-center">{% if tool.v3 %}✅{% elsif tool.v3_progress_link %}<a target="_blank" href="{{ tool.v3_progress_link }}">👷</a>{% else %}❌{% endif %}</td>
                     <td class="w-2/3 text-center">{% if tool.github %}<a target="_blank" href="{{ tool.github }}"><img src="/img/octocat.png"></a>{% else %}{% endif %}</td>
                   </tr>
                 {% endif %}
@@ -101,12 +103,3 @@
     </footer>
   </body>
 </html>
-
-<!--
-        <ul class="list-reset flex text-center justify-center">
-          {% for category in site.data.categories %}
-          <li class="mr-6">
-            <a class="text-blue hover:text-blue-darker" href="#{{ category.slug }}">{{ category.name }}</a>
-          </li>
-          {%  endfor %}
-        </ul> -->

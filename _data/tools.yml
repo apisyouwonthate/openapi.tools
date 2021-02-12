@@ -95,9 +95,7 @@
   language: TypeScript
   link: https://www.avantation.in/
   github: https://github.com/anbuksv/avantation
-  description: "Generate OpenAPI 3.x specification from HAR.
-
-    "
+  description: "Generate OpenAPI 3.x specification from HAR."
   v2: false
   v3: true
 
@@ -147,6 +145,16 @@
   description:
     Highly customizable developer portal with developer onboarding, integrated
     with the Kong API Gateway
+  v2: true
+  v3: true
+
+- name: RestCase Docs
+  category: documentation
+  link: https://www.restcase.com/platform/docs
+  language: SaaS
+  description:
+    An API-first and security-first management platform. Design visually and we will create a
+    beautiful API documentation for your APIs.
   v2: true
   v3: true
 
@@ -238,6 +246,15 @@
     from OpenAPI, integrated with Stoplight Studio
   v2: true
   v3: true
+
+- name: jekyll-openapi
+  category: documentation
+  link: https://github.com/robertlove/jekyll-openapi
+  language: Jekyll
+  description:
+    An OpenAPI 3 documentation website generator built with Jekyll for use on GitHub Pages.
+  v3: true
+
 - name: BOATS
   category: dsl
   link: https://www.npmjs.com/package/boats
@@ -367,7 +384,7 @@
     swagger-parser node package.
   v2: true
   v3: true
-  
+
 - name: Atom/linter-openapi
   category: text-editors
   language: JavaScript
@@ -489,7 +506,7 @@
   link: https://www.github.com/OAIE/oaie-sketch
   github: https://github.com/OAIE/oaie-sketch
   description: |
-     Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
+    Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
   v2: false
   v3: true
 
@@ -499,6 +516,15 @@
   link: https://www.apibldr.com/
   description: |
     Web-Based API Designer for OpenAPI (swagger) and AsyncAPI specifications.
+  v2: true
+  v3: true
+
+- name: RestCase Designer
+  category: gui-editors
+  language: Angular 9.0 / Saas
+  link: https://www.restcase.com/platform/design
+  description: |
+    A design-first API managment platform with WYSIWYG API Designer for OpenAPI and AsyncAPI specifications.
   v2: true
   v3: true
 
@@ -1028,6 +1054,16 @@
   v2: true
   v3: true
 
+- name: openapi-filter
+  category: parsers
+  github: https://github.com/Mermade/openapi-filter
+  language: Node.js
+  description:
+    OpenAPI 2.0 and 3.0 filter utility. A CLI/module to filter out internal/private paths, operations, parameters, schemas etc from OpenAPI v1/OpenAPI v2/AsyncAPI definitions.
+    Simply flag any OpenAPI object within the definition with an `x-internal` specification extension or target a OpenAPI property (tags, methods, OperationId), and it will be removed from the output.
+  v2: true
+  v3: true
+
 - name: KaiZen OpenAPI Parser
   github: https://github.com/RepreZen/KaiZen-OpenApi-Parser
   owner: RepreZen
@@ -1442,7 +1478,7 @@
 
 - name: openapi-processor-spring
   category:
-   - server
+    - server
   language: Java
   link: https://docs.openapiprocessor.io/spring
   github: https://github.com/openapi-processor/openapi-processor-spring
@@ -1509,7 +1545,7 @@
   description: "GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral."
   v2: true
   v3: true
-  
+
 - name: SpringFox
   category: server
   language: Java, Kotlin, Groovy, Ruby
@@ -1517,7 +1553,7 @@
   github: https://github.com/springfox/springfox
   description:
     Automated JSON API documentation for API's built with Spring and SpringBoot
-  v1: true   
+  v1: true
   v2: true
   v3: true
 
@@ -1581,9 +1617,9 @@
   link: https://ng.vrest.io
   github:
   description:
-    vREST NG is a simple and powerful application for API Automation. It Allows to use OpenAPI 
-    specification into vREST NG to drive your API testing that validates the API responses against 
-    JSON Schema and also provides powerful response validation capabilities. 
+    vREST NG is a simple and powerful application for API Automation. It Allows to use OpenAPI
+    specification into vREST NG to drive your API testing that validates the API responses against
+    JSON Schema and also provides powerful response validation capabilities.
   v2: true
   v3: true
 
@@ -1605,3 +1641,50 @@
   link: https://goa.design
   v2: true
   v3: true
+
+- name: OpenAPI HttpFoundation Testing
+  category: data-validators
+  language: PHP
+  description: Strengthen your API tests by validating HttpFoundation responses against OpenAPI definitions
+  github: https://github.com/osteel/openapi-httpfoundation-testing
+  v2: false
+  v3: true
+
+- name: VSCode OpenAPI Snippets
+  category: text-editors
+  language: Any
+  description: OpenAPI Snippets for Visual Studio Code editor, includes split file validation
+  v3: true
+  link: https://marketplace.visualstudio.com/items?itemName=proohit.openapi-snippets
+  github: https://github.com/proohit/openapi-snippets
+
+- name: Spectator
+  category: testing
+  language: PHP
+  description: Spectator provides light-weight OpenAPI testing tools you can use within your existing Laravel test suite.
+  v2: false
+  v3: true
+  link: https://github.com/hotmeteor/spectator
+  github: https://github.com/hotmeteor/spectator
+
+- name: APIFuzzer
+  category: data-validators
+  language: Python
+  description: Fuzz test your application using your OpenAPI definition without coding. Integrate into CI/CD, get Junit XML test result and JSON report of failures
+  v2: true
+  v3: true
+  link: https://github.com/KissPeter/APIFuzzer
+  github: https://github.com/KissPeter/APIFuzzer
+
+- name: Django REST Framework
+  category: miscellaneous
+  language: Python
+  link: https://www.django-rest-framework.org/api-guide/schemas/
+  github: https://github.com/encode/django-rest-framework
+  description: >
+    Automates generation of OpenAPI 3 description documents either as a static file (via CLI command)
+    or a dynamic view within the Django REST Framework (DRF) application.
+  v2: false
+  v3: true
+
+
