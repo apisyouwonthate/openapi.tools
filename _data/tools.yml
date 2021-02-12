@@ -1664,3 +1664,15 @@
   v3: true
   link: https://github.com/KissPeter/APIFuzzer
   github: https://github.com/KissPeter/APIFuzzer
+
+- name: Django REST Framework
+  category: miscellaneous
+  language: Python
+  link: https://www.django-rest-framework.org/api-guide/schemas/
+  github: https://github.com/encode/django-rest-framework
+  description: >
+    Automates generation of OpenAPI 3 description documents either as a static file (via CLI command)
+    or a dynamic view within the Django REST Framework (DRF) application.
+  v2: false
+  v3: true
+
