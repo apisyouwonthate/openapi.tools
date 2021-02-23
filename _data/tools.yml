@@ -1696,4 +1696,18 @@
   v2: false
   v3: true
 
+- name: RESTest
+  category: testing
+  language: Java
+  description: >
+    RESTest is a framework for automated black-box testing of RESTful web APIs. It follows a model-based
+    approach, where test cases are automatically derived from the OpenAPI description document (OAS)
+    of the API under test.
+  v2: true
+  v3: true
+  v3_1: false
+  link: https://github.com/isa-group/RESTest
+  github: https://github.com/isa-group/RESTest
+
+
 
