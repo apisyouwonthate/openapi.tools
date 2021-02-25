@@ -1713,9 +1713,8 @@
   category: testing
   language: Java
   description: >
-    ReadyAPI is an end to end API functional testing, security testing, performance testing and virtualization 
-    tool where OAS can help you build your end to end test and followed through all the way to automation
-    pipelines
+    an end to end API functional, security, performance and virtualization tool where OAS description documents can be utilized to automate the creation and validation of end to end tests, running them manually or at any point in your CI/CD pipeline.
+    pipelines.
   v2: true
   v3: true
   v3_1: false
