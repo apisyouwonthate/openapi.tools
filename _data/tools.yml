@@ -1340,7 +1340,7 @@
 - name: Chai OpenAPI Response Validator
   category: testing
   language: Node.js
-  github: https://github.com/RuntimeTools/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator
+  github: https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator
   description:
     Simple Chai support for asserting that HTTP responses satisfy an OpenAPI
     spec.
@@ -1350,7 +1350,7 @@
 - name: jest-openapi
   category: testing
   language: Node.js
-  github: https://github.com/RuntimeTools/OpenAPIValidators/tree/master/packages/jest-openapi
+  github: https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/jest-openapi
   description:
     Additional Jest matchers for asserting that HTTP responses satisfy an OpenAPI
     spec.
