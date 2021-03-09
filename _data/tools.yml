@@ -1720,3 +1720,10 @@
   v3_1: false
   link: https://smartbear.com/product/ready-api/overview/
 
+- name: DeveloperHub
+  category: documentation
+  link: https://developerhub.io
+  language: SaaS
+  description: Collaboration platform for product and API documentation
+  v2: true
+  v3: true
