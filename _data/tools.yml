@@ -1547,6 +1547,18 @@
   v2: false
   v3: true
 
+- name: openapi-format
+  category:
+    - miscellaneous
+    - parsers
+  github: https://github.com/thim81/openapi-format
+  link: https://www.npmjs.com/package/openapi-format
+  language: Node.js
+  description: A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
+  out flags, tags, methods, operationID's.
+  v2: false
+  v3: true
+
 - name: super-linter
   category: description-validators
   github: https://github.com/github/super-linter
