@@ -697,6 +697,17 @@
   v2: true
   v3: true
 
+- name: openapi-data-mocker
+  category: mock
+  language: PHP
+  github: https://github.com/ybelenko/openapi-data-mocker
+  description: >
+    Tiny library to generate basic OpenAPI Data Types. Consider it as extended Faker
+    package. First version able to mock most of the data formats. It doesn't support
+    polymorphism yet, but work in progress. May be useful for writing custom unit tests.
+  v2: false
+  v3: true
+
 - name: tsoa
   category:
     - server
