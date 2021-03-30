@@ -1566,8 +1566,8 @@
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
-  description: A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
-  out flags, tags, methods, operationID's.
+  description: "A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
+  out flags, tags, methods, operationIDs"
   v2: false
   v3: true
 
