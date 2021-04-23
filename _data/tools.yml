@@ -622,6 +622,7 @@
     validations, and more.
   v2: true
   v3: true
+  v3_1: true
 
 - name: Sandbox
   category: mock
@@ -764,17 +765,6 @@
     v.3 contracts
   v2: false
   v3: true
-
-- name: BaucisJS + baucis-swagger2
-  category: server
-  language: JavaScript
-  link: https://www.npmjs.com/package/baucis-swagger2
-  github: https://github.com/icinetic/baucis-swagger2
-  description:
-    Create REST resources with persistence on MongoDB and expose OpenAPI
-    v.2 contracts
-  v2: true
-  v3: false
 
 - name: "@smartrecruiters/openapi-first"
   category: server
@@ -1481,16 +1471,6 @@
   link: https://42crunch.com/
   v2: true
   v3: true
-
-- name: API Contract Security Audit
-  category: security
-  language: SaaS
-  description:
-    Upload OpenAPI file, get a detailed report with located vulnerabilities,
-    possible attack scenarios, ways to remediate.
-  link: https://apisecurity.io/tools/audit/
-  v2: true
-  v3: false
 
 - name: OpenAPI Schema to JSON Schema
   category: converters
