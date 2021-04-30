@@ -264,7 +264,7 @@
   language: SaaS
   description:
     Create beautiful, customizable, interactive API documentation generated
-    from OpenAPI, integrated with Stoplight Studio
+    from OpenAPI, integrated with Stoplight Studio.
   v2: true
   v3: true
 
@@ -485,6 +485,7 @@
     "
   v2: true
   v3: true
+  v3_1: true
 
 - name: Hackolade
   category: gui-editors
@@ -962,6 +963,7 @@
     functions.
   v2: true
   v3: true
+  v3_1: true
 
 - name: OpenAPI Style Validator
   category: description-validators
