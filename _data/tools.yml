@@ -727,7 +727,7 @@
   category:
     - server
     - data-validation
-  language: TypeScript
+  language: Node.js + Koa, Express or Hapi + TypeScript
   link: https://github.com/lukeautry/tsoa
   github: https://github.com/lukeautry/tsoa
   description:
@@ -738,7 +738,7 @@
 
 - name: Vert.x Web Api Contract
   category: server
-  language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon & Scala
+  language: Vert.x + Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon or Scala
   link: https://vertx.io/docs/#web
   github: https://github.com/vert-x3/vertx-web/tree/master/vertx-web-api-contract
   description:
@@ -747,18 +747,18 @@
   v2: false
   v3: true
 
-- name: Vert.x Web API Service
+- name: express-openapi
   category: server
-  language: Java
-  link: https://vertx.io/docs/vertx-web-api-service/java/
-  github: https://github.com/vert-x3/vertx-web/
-  description: Create API service proxies using event bus with request/response validation
-  v2: false
+  language: Node.js + Express (optionally + Typescript)
+  link: https://www.npmjs.com/package/express-openapi
+  github: https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi
+  description: An unopinionated OpenAPI framework for Express, which supports Promise based middleware, response handlers and Security Filtering.
+  v2: true
   v3: true
 
 - name: BaucisJS + baucis-openapi3
   category: server
-  language: JavaScript
+  language: Node.js + Express + Baucis
   link: https://www.npmjs.com/package/baucis-openapi3
   github: https://github.com/metadevpro/baucis-openapi3
   description:
@@ -769,7 +769,7 @@
 
 - name: "@smartrecruiters/openapi-first"
   category: server
-  language: Node.js
+  language: Node.js + Express
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
   github: https://github.com/smartrecruiters/openapi-first
   description: |
@@ -780,7 +780,7 @@
 
 - name: openapi-backend
   category: server
-  language: Node.js
+  language: Node.js + Typescript
   link: https://www.npmjs.com/package/openapi-backend
   github: https://github.com/anttiviljami/openapi-backend
   description: Build, Validate, Route, and Mock using OpenAPI specification. Framework-agnostic
@@ -789,7 +789,7 @@
 
 - name: OpenAPI Enforcer Middleware
   category: server
-  language: Node.js
+  language: Node.js + Express (or Connect?)
   link: https://www.npmjs.com/package/openapi-enforcer-middleware
   github: https://github.com/byu-oit/openapi-enforcer-middleware
   description:
@@ -806,11 +806,11 @@
   github: https://github.com/tomi-vanek/microts
   description: Take an OpenAPI description and generate TypeScript projects via Docker.
   v2: true
-  v3: true
+  v3: false
 
 - name: API Platform
   category: server
-  language: PHP
+  language: PHP (reccommended + Symfony)
   link: https://api-platform.com
   github: https://github.com/api-platform/api-platform
   description: REST and GraphQL framework to build modern API-driven projects
@@ -819,7 +819,7 @@
 
 - name: Mojolicious::Plugin::OpenApi
   category: server
-  language: Perl
+  language: Perl + Mojolicious
   link: https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI
   github: https://github.com/jhthorsen/mojolicious-plugin-openapi
   description: >
@@ -853,7 +853,7 @@
 - name: "@eropple/nestjs-openapi3"
   category:
     - server
-  language: Node.js
+  language: Node.js + NestJS
   link: https://github.com/eropple/nestjs-openapi3
   github: https://github.com/eropple/nestjs-openapi3
   description: >
@@ -866,7 +866,7 @@
 - name: "@nestjs/swagger"
   category:
     - server
-  language: TypeScript
+  language: Node.js + NestJS + TypeScript
   link: https://docs.nestjs.com/recipes/swagger
   github: https://github.com/nestjs/swagger
   description: >
@@ -880,7 +880,7 @@
   category:
     - server
     - mock
-  language: Python
+  language: Python + Django, Falcon or Flask
   link: https://github.com/NotJustAToy/falcon-heavy
   github: https://github.com/NotJustAToy/falcon-heavy
   description: >
@@ -984,10 +984,12 @@
   v3: true
 
 - name: express-ajv-swagger-validation
-  category: data-validators
+  category: 
+    - data-validators
+    - server
   link: https://www.npmjs.com/package/express-ajv-swagger-validation
   github: https://github.com/Zooz/express-ajv-swagger-validation
-  language: Node.js
+  language: Node.js + Express
   description:
     Express middleware which validates request body, headers, path parameters
     and query parameters according to an OpenAPI Description
@@ -1009,6 +1011,7 @@
   category:
     - data-validators
     - description-validators
+    - server
     - testing
   language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer
@@ -1042,10 +1045,10 @@
     - data-validators
     - description-validators
   github: https://github.com/isa-group/oas-tools
-  language: Node.js
+  language: Node.js + Express
   description:
     NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description
-    over express servers, including security validations
+    over Express servers, including security validations
   v3: true
 
 - name: openVALIDATION
@@ -1268,7 +1271,7 @@
   v3: true
 
 - name: NSwag
-  catgeory:
+  category:
     - sdk
   link: http://NSwag.org
   github: https://github.com/RicoSuter/NSwag
@@ -1278,7 +1281,7 @@
   v3: true
 
 - name: api-codegen-ts
-  catgeory:
+  category:
     - sdk
     - data-validators
   link: https://www.npmjs.com/package/@nll/api-codegen-ts
@@ -1302,7 +1305,7 @@
   v3: true
 
 - name: Azure AutoRest
-  catgeory:
+  category:
     - sdk
   github: https://github.com/Azure/autorest/
   language: TypeScript
@@ -1314,7 +1317,7 @@
   v3: true
 
 - name: spring-openapi
-  catgeory:
+  category:
     - sdk
   github: https://github.com/jrcodeza/spring-openapi
   language: Java
@@ -1322,6 +1325,16 @@
     OpenAPI v3 generator for Java Spring. Includes also client generation.
     Supports inheritance with discriminators, Jackson annotations and custom interceptors.
   v3: true
+
+- name: fetch-openapi
+  category:
+    - sdk
+    - code-generators
+  language: JavaScript
+  link: https://github.com/kogosoftwarellc/open-api/tree/master/packages/fetch-openapi
+  github: https://github.com/kogosoftwarellc/open-api
+  description: Outputs javascript that is optimized for ES6 using the new Fetch API.
+  v2: true
 
 - name: openapi-diff
   category: miscellaneous
@@ -1512,7 +1525,7 @@
 - name: openapi-processor-spring
   category:
     - server
-  language: Java
+  language: Java + Spring Boot
   link: https://docs.openapiprocessor.io/spring
   github: https://github.com/openapi-processor/openapi-processor-spring
   description:
@@ -1593,11 +1606,11 @@
 
 - name: SpringFox
   category: server
-  language: Java, Kotlin, Groovy, Ruby
+  language: Java, Kotlin, Groovy, or Ruby + Spring Boot
   link: https://springfox.io
   github: https://github.com/springfox/springfox
   description:
-    Automated JSON API documentation for API's built with Spring and SpringBoot
+    Automated JSON API documentation for APIs built with Spring and SpringBoot
   v1: true
   v2: true
   v3: true
@@ -1639,7 +1652,7 @@
 
 - name: LoopBack 4
   category: server
-  language: TypeScript
+  language: Node.js + TypeScript
   link: https://loopback.io/
   github: https://github.com/strongloop/loopback-next
   description: >
@@ -1647,6 +1660,7 @@
     microservices with tight OpenAPI 3 integration. Serves Swagger UI and OpenAPI 3 spec out of the box.
     Generate code to interact with other OpenAPI-compliant APIs, or generate new API endpoints based on
     existing OpenAPI specs.
+  v3: true
 
 - name: OpenAPI3 Fuzzer
   category: data-validators
