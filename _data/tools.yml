@@ -749,7 +749,7 @@
 
 - name: express-openapi
   category: server
-  language: Node.js + Express (optionally + Typescript)
+  language: Node.js / Typescript
   link: https://www.npmjs.com/package/express-openapi
   github: https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi
   description: An unopinionated OpenAPI framework for Express, which supports Promise based middleware, response handlers and Security Filtering.
