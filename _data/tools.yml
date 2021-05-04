@@ -727,7 +727,7 @@
   category:
     - server
     - data-validation
-  language: Node.js + Koa, Express or Hapi + TypeScript
+  language: Node.js / TypeScript
   link: https://github.com/lukeautry/tsoa
   github: https://github.com/lukeautry/tsoa
   description:
