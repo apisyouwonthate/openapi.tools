@@ -738,7 +738,7 @@
 
 - name: Vert.x Web Api Contract
   category: server
-  language: Vert.x + Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon or Scala
+  language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon or Scala
   link: https://vertx.io/docs/#web
   github: https://github.com/vert-x3/vertx-web/tree/master/vertx-web-api-contract
   description:
