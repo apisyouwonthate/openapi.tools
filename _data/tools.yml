@@ -1325,16 +1325,6 @@
     Supports inheritance with discriminators, Jackson annotations and custom interceptors.
   v3: true
 
-- name: fetch-openapi
-  category:
-    - sdk
-    - code-generators
-  language: JavaScript
-  link: https://github.com/kogosoftwarellc/open-api/tree/master/packages/fetch-openapi
-  github: https://github.com/kogosoftwarellc/open-api
-  description: Outputs javascript that is optimized for ES6 using the new Fetch API.
-  v2: true
-
 - name: openapi-diff
   category: miscellaneous
   language: Java
