@@ -757,7 +757,7 @@
 
 - name: BaucisJS + baucis-openapi3
   category: server
-  language: Node.js + Express + Baucis
+  language: Node.js (Express)
   link: https://www.npmjs.com/package/baucis-openapi3
   github: https://github.com/metadevpro/baucis-openapi3
   description:
