@@ -196,7 +196,7 @@
   v2: true
   v3: true
   v3_1: true
- 
+
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
@@ -564,12 +564,11 @@
 
 - name: Meeshkan
   category:
-    - learning
+    - testing
     - mock
-  language: Python
-  link: https://github.com/meeshkan/meeshkan
-  github: https://github.com/meeshkan/meeshkan
-  description: Mock HTTP APIs through a combination of API definitions, recorded traffic and code. Used for sandboxes, as well as automated and exploratory testing.
+  language: SaaS
+  link: https://meeshkan.com/
+  description: Meeshkan is an automated testing and mocking tool. It offers first-class support for GraphQL APIs, but Meeshkan is also built to handle REST APIs and third-party dependencies.
   v2: false
   v3: true
 
@@ -984,7 +983,7 @@
   v3: true
 
 - name: openapi-validator-middleware
-  category: 
+  category:
     - data-validators
     - server
   link: https://github.com/PayU/openapi-validator-middleware
@@ -1683,8 +1682,8 @@
   category: dsl
   language: Go
   description:
-    Goa provides a holistic approach for developing remote APIs and microservices in Go. 
-    implementers don't have to worry about the documentation getting out of sync 
+    Goa provides a holistic approach for developing remote APIs and microservices in Go.
+    implementers don't have to worry about the documentation getting out of sync
     as Goa takes care of generating OpenAPI specifications for HTTP based services and gRPC protocol buffer files for gRPC based services
   link: https://goa.design
   v2: true
