@@ -108,6 +108,15 @@
   v2: false
   v3: true
 
+- name: LucyBot api-spec-converter
+  category: converters
+  language: Node.js
+  link: https://www.npmjs.com/package/api-spec-converter
+  github: https://github.com/LucyBot-Inc/api-spec-converter
+  description: "Convert between API description formats such as OpenAPI and RAML."
+  v2: true
+  v3: true
+
 - name: OpenDocumenter
   category: documentation
   link: https://github.com/ouropencode/OpenDocumenter
