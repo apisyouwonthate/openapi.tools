@@ -213,6 +213,7 @@
   description: OpenAPI-generated API Reference Documentation
   v2: true
   v3: true
+  v3_1: true
 
 - name: oas3-api-snippet-enricher
   category: documentation
@@ -982,6 +983,20 @@
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
+  
+- name: @redocly/openapi-cli
+  category:
+    - description-validators
+    - miscellaneous
+  link: https://redoc.ly/openapi-cli
+  github: https://github.com/Redocly/openapi-cli
+  language: CLI & TypeScript/JavaScript
+  description:
+    OpenAPI 3 CLI toolbox with rich validation and bundling features.
+  v2: true
+  v3: true
+  v3_1: true
+
 
 - name: express-ajv-swagger-validation
   category: data-validators
