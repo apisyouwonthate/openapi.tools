@@ -1787,3 +1787,11 @@
     OAuth2 token endpoint described with OAS3 schema. All grants documented. Can be installed as NPM or Composer package.
   v2: false
   v3: true
+  
+- name: Mayhem for API
+  category: testing
+  link: https://forallsecure.com/mayhem-for-api
+  language: Any
+  description: Probe your REST API with an infinite stream of test cases generated automatically from your OpenAPI specification.
+  v2: true
+  v3: true
