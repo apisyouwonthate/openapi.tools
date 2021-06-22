@@ -995,7 +995,7 @@
   v2: true
   v3: true
   
-- name: @redocly/openapi-cli
+- name: "@redocly/openapi-cli"
   category:
     - description-validators
     - miscellaneous
