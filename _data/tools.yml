@@ -941,6 +941,17 @@
   v2: false
   v3: true
 
+- name: portman
+  category:
+    - testing
+    - converters
+  link: http://getportman.com/
+  github: https://github.com/apideck-libraries/portman
+  language: Node.js
+  description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
+  v2: false
+  v3: true
+  
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
