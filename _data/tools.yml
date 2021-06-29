@@ -268,6 +268,7 @@
     from OpenAPI, integrated with Stoplight Studio.
   v2: true
   v3: true
+  v3_1: true
 
 - name: jekyll-openapi
   category: documentation
@@ -477,7 +478,6 @@
     - text-editor
   language: Desktop / SaaS
   link: https://stoplight.io/studio
-  github: https://github.com/stoplightio/studio
   description:
     "Stoplight Studio is a GUI/text editor with linting and mocking built
     right in.  It can run on the desktop with local files, and in the browser powered
