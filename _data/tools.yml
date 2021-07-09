@@ -1548,7 +1548,7 @@
   v3: true
 
 - name: har2openapi
-  category: converters
+  category: auto-generators
   language: TypeScript
   link: https://github.com/dcarr178/har2openapi
   github: https://github.com/dcarr178/har2openapi
