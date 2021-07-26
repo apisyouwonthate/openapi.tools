@@ -1500,6 +1500,16 @@
   v2: true
   v3: true
 
+- name: API Insights 
+  category: security
+  language: SaaS
+  description:
+    RestCase executes hundrends of security and quality checks against the API definition,
+    the API insights report provides detailed security scoring for prioritization, and remediation advice to help developers define the best API definition possible.
+  link: https://restcase.com/platform/security
+  v2: true
+  v3: true
+  
 - name: OpenAPI Schema to JSON Schema
   category: converters
   language: JavaScript
