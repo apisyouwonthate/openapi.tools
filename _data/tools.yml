@@ -1806,3 +1806,12 @@
   description: Probe your REST API with an infinite stream of test cases generated automatically from your OpenAPI specification.
   v2: true
   v3: true
+
+- name: JSONSchema::Validator
+  category: data-validators
+  language: Perl
+  link: https://metacpan.org/pod/JSONSchema::Validator
+  github: https://github.com/skbkontur/perl-jsonschema-validator
+  description:
+    A Perl library which validates request/response according to an OpenAPI specification
+  v3: true
