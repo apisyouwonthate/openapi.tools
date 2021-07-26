@@ -63,8 +63,8 @@
 
 - name: OData OpenAPI
   category: converters
-  language: XSLT
-  description: OData 4.0 to OpenAPI v3.0 converter
+  language: Node.js / XSLT
+  description: OData 4.0, 3.0, and 2.0 to OpenAPI v3.0 and v2.0 converter
   github: https://github.com/oasis-tcs/odata-openapi
   v2: true
   v3: true
