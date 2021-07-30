@@ -919,6 +919,17 @@
   v2: true
   v3: true
 
+- name: openapi-data-validator
+  category:
+    - data-validators
+  github: https://github.com/Rhosys/openapi-data-validator.js
+  language: Node.js/ Javascript
+  description: "Validate API requests against an OpenAPI schema. Lightweight, focused, and integrates with any framework"
+  link: https://github.com/Rhosys/openapi-data-validator.js/blob/main/README.md
+  github: https://github.com/Rhosys/openapi-data-validator.js
+  v2: false
+  v3: true
+
 - name: express-openapi-validator
   category:
     - miscellaneous
