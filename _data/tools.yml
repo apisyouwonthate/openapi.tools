@@ -1836,3 +1836,15 @@
   description:
     A Perl library which validates request/response according to an OpenAPI specification
   v3: true
+  
+- name: openapi2postman
+  category: data-validators
+  language: nodejs
+  link: https://github.com/apiaddicts/openapi2postman
+  github: https://github.com/apiaddicts/openapi2postman
+  description:
+    A postman collection generator to test:
+    - create one collection for environment and one file enviroment
+    - tests responses format
+    - test all http response codes
+  v3: true
