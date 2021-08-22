@@ -787,6 +787,7 @@
   description: Build, Validate, Route, and Mock using OpenAPI specification. Framework-agnostic
   v2: false
   v3: true
+  v3_1: true
 
 - name: OpenAPI Enforcer Middleware
   category: server
