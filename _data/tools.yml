@@ -1843,6 +1843,6 @@
   link: https://github.com/openapi-generators/openapi-python-client
   github: https://github.com/openapi-generators/openapi-python-client
   language: Python
-  description: Generate modern Python clients from OpenAPI 3.x documents.
+  description: Generate modern Python clients from OpenAPI 3.0 documents.
   v2: false
   v3: true
