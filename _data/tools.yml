@@ -1837,3 +1837,12 @@
   description:
     A Perl library which validates request/response according to an OpenAPI specification
   v3: true
+  
+- name: openapi-python-client
+  category: converters
+  link: https://github.com/openapi-generators/openapi-python-client
+  github: https://github.com/openapi-generators/openapi-python-client
+  language: Python
+  description: Generate modern Python clients from OpenAPI 3.0 documents.
+  v2: false
+  v3: true
