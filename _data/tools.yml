@@ -249,6 +249,7 @@
   language: Custom Element
   v2: true
   v3: true
+  v3_1: true
 
 - name: RapiPdf
   category: documentation
