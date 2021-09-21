@@ -1847,3 +1847,14 @@
   description: Generate modern Python clients from OpenAPI 3.0 documents.
   v2: false
   v3: true
+  
+- name: Elements
+  category: documentation
+  link: https://stoplight.io/open-source/elements
+  github: https://github.com/stoplightio/elements
+  language: Javascript / Custom Element
+  description:
+    Build beautiful, interactive API Docs with embeddable React or Web Components, powered by OpenAPI and Markdown
+  v2: true
+  v3: true
+  v3_1: true
