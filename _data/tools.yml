@@ -1858,3 +1858,14 @@
   v2: true
   v3: true
   v3_1: true
+  
+- name: Typoas
+  category: sdk
+  link: https://github.com/Embraser01/typoas
+  github: https://github.com/Embraser01/typoas
+  language: Typescript
+  description:
+    Fully typed OpenAPI Typescript generator 
+  v2: false
+  v3: true
+  v3_1: true
