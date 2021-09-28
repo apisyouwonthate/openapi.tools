@@ -32,6 +32,7 @@
   link: https://apimatic.io/transformer
   v2: true
   v3: true
+  v3_1: true
 
 - name: Google Gnostic
   category: converters
@@ -135,6 +136,7 @@
     client libraries, code samples, an API console and much more.
   v2: true
   v3: true
+  v3_1: true
 
 - name: APITree
   category: documentation
@@ -1262,6 +1264,7 @@
     etc.) to generate fully functional SDKs in over 10 languages.
   v2: true
   v3: true
+  v3_1: true
 
 - name: janephp/open-api
   category: sdk
