@@ -285,10 +285,12 @@
   github: https://github.com/johndcarmichael/boats
   language: Node.js
   description: |
-    BOATS allows for larger teams to contribute to multi-file OpenAPI definitions by writing Nunjucks tpl syntax in yaml with a few
-    important helpers to ensure stricter consistency, eg operationId: <$ uniqueOpId() $>.
+   Write regular .yml files in small chunks and use a collection of helpers to automate much of the donkey work from a single point. 
+   BOATS runs all .yml or .yml.njk files through the Nunjucks template engine; combining JSON refs and a templating engine has allowed for many tools, helpers and custom scripts to speed up many projects since the project was created back in 2019.
+   As well as OpenAPI, BOATS also plays nice with AsyncAPI for event based architecture. 
   v2: true
   v3: true
+  v3_1: true
 
 - name: Spot
   category: dsl
