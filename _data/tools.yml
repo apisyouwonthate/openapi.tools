@@ -564,6 +564,17 @@
   v2: false
   v3: true
 
+- name: APIClarity
+  category: learning
+  language: Golang, JavaScript
+  link: https://apiclarity.io/
+  github: https://github.com/apiclarity/apiclarity
+  description:
+    Reconstruct Open API Specifications from real-time workload traffic seamlessly.
+  v2: true
+  v3: false
+v3_link: https://github.com/apiclarity/apiclarity/issues/39
+
 - name: Meeshkan
   category:
     - learning
