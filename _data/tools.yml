@@ -573,6 +573,7 @@
     Reconstruct Open API Specifications from real-time workload traffic seamlessly.
   v2: true
   v3: false
+v3_link: https://github.com/apiclarity/apiclarity/issues/39
 
 - name: Meeshkan
   category:
