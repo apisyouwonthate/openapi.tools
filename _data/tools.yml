@@ -196,7 +196,7 @@
   v2: true
   v3: true
   v3_1: true
- 
+
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
@@ -939,7 +939,6 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   language: Node.js/ Javascript
   description: "Validate API requests against an OpenAPI schema. Lightweight, focused, and integrates with any framework"
   link: https://github.com/Rhosys/openapi-data-validator.js/blob/main/README.md
-  github: https://github.com/Rhosys/openapi-data-validator.js
   v2: false
   v3: true
 
@@ -975,7 +974,7 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
   v2: false
   v3: true
-  
+
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
@@ -1018,7 +1017,7 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
-  
+
 - name: "@redocly/openapi-cli"
   category:
     - description-validators
@@ -1524,7 +1523,7 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   v2: true
   v3: true
 
-- name: API Insights 
+- name: API Insights
   category: security
   language: SaaS
   description:
@@ -1533,7 +1532,7 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   link: https://restcase.com/platform/security
   v2: true
   v3: true
-  
+
 - name: OpenAPI Schema to JSON Schema
   category: converters
   language: JavaScript
@@ -1740,8 +1739,8 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   category: dsl
   language: Go
   description:
-    Goa provides a holistic approach for developing remote APIs and microservices in Go. 
-    implementers don't have to worry about the documentation getting out of sync 
+    Goa provides a holistic approach for developing remote APIs and microservices in Go.
+    implementers don't have to worry about the documentation getting out of sync
     as Goa takes care of generating OpenAPI specifications for HTTP based services and gRPC protocol buffer files for gRPC based services
   link: https://goa.design
   v2: true
@@ -1832,7 +1831,7 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
     OAuth2 token endpoint described with OAS3 schema. All grants documented. Can be installed as NPM or Composer package.
   v2: false
   v3: true
-  
+
 - name: Mayhem for API
   category: testing
   link: https://forallsecure.com/mayhem-for-api
@@ -1849,7 +1848,7 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   description:
     A Perl library which validates request/response according to an OpenAPI specification
   v3: true
-  
+
 - name: openapi-python-client
   category: converters
   link: https://github.com/openapi-generators/openapi-python-client
@@ -1858,7 +1857,7 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   description: Generate modern Python clients from OpenAPI 3.0 documents.
   v2: false
   v3: true
-  
+
 - name: Elements
   category: documentation
   link: https://stoplight.io/open-source/elements
@@ -1869,3 +1868,12 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   v2: true
   v3: true
   v3_1: true
+
+- name: Kusk
+  category: miscellaneous
+  link: https://kubeshop.github.io/kusk/
+  github: https://github.com/kubeshop/kusk
+  language: Go
+  description: Generate Kubernetes Ingress controller configurations from your OpenAPI description
+  v2: true
+  v3: true
