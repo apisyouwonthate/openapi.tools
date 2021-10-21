@@ -1872,3 +1872,16 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: Karate-IDE
+  category: 
+    - converters
+    - testing
+    - mock
+  link: https://marketplace.visualstudio.com/items?itemName=KarateIDE.karate-ide
+  github: https://github.com/ivangsa/karate-ide
+  language: VSCode Extension
+  description:
+    Generate [Karate](https://github.com/karatelabs/karate) Tests and Mocks from OpenAPI 3.0 documents and so you can quickly test/explore your API.
+  v3: true
+  v3_1: false
