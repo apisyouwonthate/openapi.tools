@@ -2454,3 +2454,13 @@
   v2: true
   v3: true
   v3_1: true
+  
+- name: rswag
+  category: dsl
+  language: ruby
+  github: https://github.com/rswag/rswag
+  description: Rswag extends rspec-rails request specs with a Swagger-based DSL for describing and testing API operations.
+  link: https://github.com/rswag/rswag
+  v2: false
+  v3: true
+  v3_1: false
