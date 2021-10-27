@@ -1944,3 +1944,12 @@
     Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
   v3: true
   v3_1: true
+
+- name: Meta-API
+  category: miscellaneous
+  link: https://www.meta-api.io
+  language: SaaS
+  description: A SaaS platform to integrate and transform Open APIs with online code editor and automating configuration, authentication, deployment and monitoring.
+  v2: true
+  v3: true
+  v3_1: true
