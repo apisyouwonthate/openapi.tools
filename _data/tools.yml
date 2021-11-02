@@ -729,7 +729,7 @@
 
 - name: Mockintosh
   category: mock
-  language: Python
+  language: CLI / Docker
   link: https://mockintosh.io
   description:
     "Mocks for CloudNative Environments - Converts OpenAPI files to Mocks and use them
