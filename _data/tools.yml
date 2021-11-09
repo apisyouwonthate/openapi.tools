@@ -1882,6 +1882,6 @@
   github: https://github.com/ivangsa/karate-ide
   language: VSCode Extension
   description:
-    Generate [Karate](https://github.com/karatelabs/karate) Tests and Mocks from OpenAPI 3.0 documents and so you can quickly test/explore your API.
+    Generates KarateDSL Tests and Mocks from OpenAPI 3.0 documents and so you can quickly test/explore your API.
   v3: true
   v3_1: false
