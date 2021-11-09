@@ -1877,7 +1877,7 @@
   category: miscellaneous
   link: https://www.meta-api.io
   language: SaaS
-  description: A SaaS platform to integrate and transform Open APIs with online code editor and automating configuration, authentication, deployment and monitoring.
+  description: A SaaS platform to integrate APIs using OpenAPI specification files and manipulate data with online code editor and automating configuration, authentication, deployment and monitoring.
   v2: true
   v3: true
   v3_1: true
