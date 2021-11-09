@@ -1826,6 +1826,7 @@
   description: Collaboration platform for product and API documentation
   v2: true
   v3: true
+  v3_1: true
 
 - name: OAuth2 as OpenAPI Spec 3.0 components
   category: miscellaneous
