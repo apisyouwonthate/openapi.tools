@@ -727,6 +727,18 @@
   v2: true
   v3: true
 
+- name: Mockintosh
+  category: mock
+  language: CLI / Docker
+  link: https://mockintosh.io
+  description:
+    "Mocks for CloudNative Environments - Converts OpenAPI files to Mocks and use them
+     to develop in isolated environments and test edge cases, Async call to queues such as Kafka or RabbitMQ
+     or simulate performance & chaos testing"
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: openapi-data-mocker
   category: mock
   language: PHP
