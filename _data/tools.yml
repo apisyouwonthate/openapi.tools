@@ -1047,10 +1047,10 @@
   v3_1: true
 
 
-- name: express-ajv-swagger-validation
+- name: openapi-validator-middleware
   category: data-validators
-  link: https://www.npmjs.com/package/express-ajv-swagger-validation
-  github: https://github.com/Zooz/express-ajv-swagger-validation
+  link: https://www.npmjs.com/package/openapi-validator-middleware
+  github: https://github.com/PayU/openapi-validator-middleware
   language: Node.js
   description:
     Express middleware which validates request body, headers, path parameters
