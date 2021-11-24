@@ -121,11 +121,12 @@
 
 - name: ReadMe
   category: documentation
-  link: https://readme.io
+  link: https://readme.com
   language: SaaS
-  description: Build beautiful, personalized, interactive developer hubs
+  description: Build beautiful, personalized, interactive developer hubs. 🦉
   v2: true
   v3: true
+  v3_1: true
 
 - name: APIMatic Developer Experience Portal
   category: documentation
