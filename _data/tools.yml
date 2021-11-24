@@ -1538,6 +1538,15 @@
   link: https://42crunch.com/
   v2: true
   v3: true
+  
+- name: openapi-fuzzer
+  category: security
+  language: Rust
+  description:
+    Black-box fuzzer that fuzzes APIs based on OpenAPI specification. All you need to do is to supply URL of the API and its specification. 
+  link: https://github.com/matusf/openapi-fuzzer
+  v2: false
+  v3: true 
 
 - name: API Insights 
   category: security
