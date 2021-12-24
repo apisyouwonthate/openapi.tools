@@ -1724,7 +1724,7 @@
     existing OpenAPI specs.
 
 - name: OpenAPI3 Fuzzer
-  category: data-validators
+  category: security
   link: https://pypi.org/project/openapi3-fuzzer/
   github: https://github.com/vwt-digital/openapi3-fuzzer/tree/master
   language: Python
