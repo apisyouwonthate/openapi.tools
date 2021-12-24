@@ -1896,6 +1896,6 @@
   github: http://github.com/ignatandrei/BlocklyAutomation
   language: Javascript / .NET
   description:
-    Input any OPEN API definition file in order to have generated  Blocks in Blockly form to test and generate documentation    
+    Input any OpenAPI definition file in order to have generated Blocks in Blockly form to test and generate documentation    
   v3: true
   v3_1: true
