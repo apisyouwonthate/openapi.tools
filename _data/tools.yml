@@ -1539,6 +1539,15 @@
   link: https://42crunch.com/
   v2: true
   v3: true
+  
+- name: openapi-fuzzer
+  category: security
+  language: Rust
+  description:
+    Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoins in order to find bugs.
+  link: https://github.com/matusf/openapi-fuzzer
+  v2: false
+  v3: true 
 
 - name: API Insights 
   category: security
