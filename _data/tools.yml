@@ -1543,7 +1543,7 @@
   category: security
   language: Rust
   description:
-    Black-box fuzzer that fuzzes APIs based on OpenAPI specification.
+    Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoins in order to find bugs.
   link: https://github.com/matusf/openapi-fuzzer
   v2: false
   v3: true 
