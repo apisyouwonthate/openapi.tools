@@ -1895,3 +1895,12 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: openapi-generator
+  category: parsers
+  language: Php
+  github: https://github.com/wapmorgan/OpenApiGenerator
+  description: Library that generates OpenApi configuration directly from actual PHP code (PhpDoc and php type hints) of a large monolithic backend
+  v2: false
+  v3: true
+  v3_1: false
