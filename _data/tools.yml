@@ -1904,3 +1904,21 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: openapi2postman
+  category: testing
+  language: nodejs
+  link: https://github.com/apiaddicts/openapi2postman
+  github: https://github.com/apiaddicts/openapi2postman
+  description: A postman collection generator to test responses format, test all http response codes and create one collection for environment and one file enviroment.
+  v2: false
+  v3: true
+
+- name: apigen
+  category: Auto Generators
+  language: springboot
+  link: https://github.com/apiaddicts/apigen
+  github: https://github.com/apiaddicts/apigen
+  description: Apigen allow generate springboot archetipe using openapi file as mapping tool between the openapi definition and the database.
+  v2: false
+  v3: true
