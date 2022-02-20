@@ -1904,3 +1904,13 @@
   v2: true
   v3: true
   v3_1: true
+  
+  - name: API HTML
+  category: documentation
+  link: https://github.com/asfand-dev/api-html
+  language: JavaScript
+  description:
+    Convert any API Specification into an awesome HTML documentation website.
+  v2: true
+  v3: true
+
