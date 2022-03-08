@@ -1904,3 +1904,24 @@
   v2: true
   v3: true
   v3_1: true
+  
+- name: OpenAPI Documentation generator tool
+  category: documentation
+  link: http://oxygenxml.com/xml_editor/openapi.html#openapi-documentation-generator
+  language: Java
+  description:
+     OpenAPI Documentation generator tool is available to help you to easily generate full documentation for OpenAPI components in HTML format, including comprehensive annotations and cross references.
+     The documentation is presented in a visual diagram style with various sections, hyperlinks, and filtering options.
+  v2: false
+  v3: true
+  v3_1: false
+  
+- name: OpenAPI Tester Tool
+  category: testing
+  link: http://oxygenxml.com/xml_editor/openapi.html#openapi-tester-tool
+  language: Java
+  description:
+     OpenAPI Tester tool is available to help you to easily inspect OpenAPI request responses and to ensure they work as expected. It can be used for OpenAPI 3.0 / 3.1 in JSON or YAML format.
+  v2: false
+  v3: true
+  v3_1: true
