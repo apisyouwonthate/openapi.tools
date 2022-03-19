@@ -1904,3 +1904,14 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: Cherrybomb
+  category: security
+  language: Rust
+  link: https://www.blstsecurity.com/cherrybomb
+  github: https://github.com/blst-security/cherrybomb
+  description:
+    Stop half-done API specifications! Cherrybomb is a CLI tool that helps you avoid undefined user behaviour by validating your API specifications.
+  v2: false
+  v3: true
+  v3_1: true
