@@ -1192,18 +1192,18 @@
 - name: kin-openapi
   category:
     - parsers
-  github: &kin-openapi_URL https://github.com/getkin/kin-openapi
-  language: &kin-openapi_language Go
-  description: &kin-openapi_description OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
+  github: https://github.com/getkin/kin-openapi
+  language: Go
+  description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
   v3: true
   v2: true
 
 - name: kin-openapi
   category:
     - data-validators
-  github: *kin-openapi_URL
-  language: *kin-openapi_language
-  description: *kin-openapi_description
+  github: https://github.com/getkin/kin-openapi
+  language: Go
+  description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
   v3: true
 
 - name: Kusk
