@@ -92,7 +92,7 @@
   language: Python
   description: Client & converter in Python, which is type-safe, dynamic, spec-compliant.
   v2: true
-  v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
+  v3_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
 - name: avantation
   category: converters
@@ -769,6 +769,7 @@
     validation
   v2: false
   v3: true
+  v3_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: Vert.x Web API Service
   category: server
@@ -778,6 +779,7 @@
   description: Create API service proxies using event bus with request/response validation
   v2: false
   v3: true
+  v3_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: BaucisJS + baucis-openapi3
   category: server
