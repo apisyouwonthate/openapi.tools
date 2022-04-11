@@ -94,13 +94,6 @@
   v2: true
   v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
-- name: odata2openapi
-  category: converters
-  github: https://github.com/elasticio/odata2openapi
-  language: Node.js
-  description: OData 4.0 to OpenAPI v2.0 converter
-  v2: true
-
 - name: avantation
   category: converters
   language: TypeScript
@@ -1681,8 +1674,9 @@
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
-  description: "A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
-  out flags, tags, methods, operationIDs"
+  description: > 
+    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
+    out flags, tags, methods, operationIDs.
   v2: false
   v3: true
 
@@ -1812,6 +1806,7 @@
   description: Spectator provides light-weight OpenAPI testing tools you can use within your existing Laravel test suite.
   v2: false
   v3: true
+  v3_1_link: https://github.com/hotmeteor/spectator/issues/100
   link: https://github.com/hotmeteor/spectator
   github: https://github.com/hotmeteor/spectator
 
