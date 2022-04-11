@@ -1910,3 +1910,17 @@
   v2: true
   v3: true
   v3_1: true
+   
+- name: BlocklyAutomation
+  category: 
+    - code-generators
+    - sdk
+    - documentation
+    - testing
+  link: https://ignatandrei.github.io/BlocklyAutomation/
+  github: http://github.com/ignatandrei/BlocklyAutomation
+  language: Javascript / .NET
+  description:
+    Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
+  v3: true
+  v3_1: true
