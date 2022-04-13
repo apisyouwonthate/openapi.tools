@@ -62,6 +62,29 @@
   v2: true
   v3: true
 
+- name: Kiota
+  category: sdk
+  language: ".NET TypeScript Java Go Python PHP Ruby Swift"
+  link: https://microsoft.github.io/kiota
+  github: https://github.com/microsoft/kiota
+  description:
+    OpenAPI based HTTP Client SDK code generator
+  v2: true
+  v3: true
+  v3_1: false
+
+- name: Hidi
+  category:
+    - converters
+    - description-validators
+  language: ".NET"
+  link: https://www.nuget.org/packages/Microsoft.OpenApi.Hidi
+  github: https://github.com/microsoft/OpenAPI.NET
+  description: "Convert, validate and slice your OpenAPI descriptions."
+  v2: true
+  v3: true
+  v3_1: false
+
 - name: OData OpenAPI
   category: converters
   language: Node.js / XSLT
