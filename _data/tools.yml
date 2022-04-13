@@ -1906,7 +1906,7 @@
   v3_1: true
 
 - name: Cherrybomb
-  category: security
+  category: description-validators
   language: Rust
   link: https://www.blstsecurity.com/cherrybomb
   github: https://github.com/blst-security/cherrybomb
