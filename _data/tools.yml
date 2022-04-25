@@ -65,10 +65,11 @@
 - name: OData OpenAPI
   category: converters
   language: Node.js / XSLT
-  description: OData 4.0, 3.0, and 2.0 to OpenAPI v3.0 and v2.0 converter
+  description: OData 4.0, 3.0, and 2.0 to OpenAPI v3.1, v3.0, and v2.0 converter
   github: https://github.com/oasis-tcs/odata-openapi
   v2: true
   v3: true
+  v3_1: true
 
 - name: OpenAPI Filter
   category: converters
@@ -91,14 +92,7 @@
   language: Python
   description: Client & converter in Python, which is type-safe, dynamic, spec-compliant.
   v2: true
-  v3_progress_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
-
-- name: odata2openapi
-  category: converters
-  github: https://github.com/elasticio/odata2openapi
-  language: Node.js
-  description: OData 4.0 to OpenAPI v2.0 converter
-  v2: true
+  v3_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
 
 - name: avantation
   category: converters
@@ -107,6 +101,15 @@
   github: https://github.com/anbuksv/avantation
   description: "Generate OpenAPI 3.x specification from HAR."
   v2: false
+  v3: true
+
+- name: LucyBot api-spec-converter
+  category: converters
+  language: Node.js
+  link: https://www.npmjs.com/package/api-spec-converter
+  github: https://github.com/LucyBot-Inc/api-spec-converter
+  description: "Convert between API description formats such as OpenAPI and RAML."
+  v2: true
   v3: true
 
 - name: OpenDocumenter
@@ -775,6 +778,7 @@
     validation
   v2: false
   v3: true
+  v3_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: Vert.x Web API Service
   category: server
@@ -784,6 +788,7 @@
   description: Create API service proxies using event bus with request/response validation
   v2: false
   v3: true
+  v3_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: BaucisJS + baucis-openapi3
   category: server
@@ -1192,10 +1197,18 @@
 - name: kin-openapi
   category:
     - parsers
-    - data-validators
-  github: https://github.com/jban332/kin-openapi
+  github: https://github.com/getkin/kin-openapi
   language: Go
-  description: A Go library for handling OpenAPI 3.0 specifications
+  description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
+  v3: true
+  v2: true
+
+- name: kin-openapi
+  category:
+    - data-validators
+  github: https://github.com/getkin/kin-openapi
+  language: Go
+  description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
   v3: true
 
 - name: Kusk
@@ -1672,8 +1685,9 @@
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
-  description: "A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
-  out flags, tags, methods, operationIDs"
+  description: > 
+    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
+    out flags, tags, methods, operationIDs.
   v2: false
   v3: true
 
@@ -1743,7 +1757,7 @@
     existing OpenAPI specs.
 
 - name: OpenAPI3 Fuzzer
-  category: data-validators
+  category: security
   link: https://pypi.org/project/openapi3-fuzzer/
   github: https://github.com/vwt-digital/openapi3-fuzzer/tree/master
   language: Python
@@ -1803,6 +1817,7 @@
   description: Spectator provides light-weight OpenAPI testing tools you can use within your existing Laravel test suite.
   v2: false
   v3: true
+  v3_1_link: https://github.com/hotmeteor/spectator/issues/100
   link: https://github.com/hotmeteor/spectator
   github: https://github.com/hotmeteor/spectator
 
@@ -1922,3 +1937,38 @@
   description: Apigen allow generate springboot archetipe using openapi file as mapping tool between the openapi definition and the database.
   v2: false
   v3: true
+
+- name: Cherrybomb
+  category: description-validators
+  language: Rust
+  link: https://www.blstsecurity.com/cherrybomb
+  github: https://github.com/blst-security/cherrybomb
+  description:
+    A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
+  v2: false
+  v3: true
+  v3_1: true
+   
+- name: BlocklyAutomation
+  category: 
+    - code-generators
+    - sdk
+    - documentation
+    - testing
+  link: https://ignatandrei.github.io/BlocklyAutomation/
+  github: http://github.com/ignatandrei/BlocklyAutomation
+  language: Javascript / .NET
+  description:
+    Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
+  v3: true
+  v3_1: true
+
+- name: Meta-API
+  category: miscellaneous
+  link: https://www.meta-api.io
+  language: SaaS
+  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
+  v2: true
+  v3: true
+  v3_1: true
+
