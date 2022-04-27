@@ -268,7 +268,7 @@
 
 - name: Stoplight Docs
   category: documentation
-  link: https://stoplight.io/docs/
+  link: https://stoplight.io/api-documentation
   language: SaaS
   description:
     Create beautiful, customizable, interactive API documentation generated
