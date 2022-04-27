@@ -1229,6 +1229,7 @@
     writing a bunch of code, by registering this middleware and pointing it at your
     API description document.
   v3: true
+  v3_1_link: https://github.com/thephpleague/openapi-psr7-validator/issues/163
 
 - name: php-openapi
   category:
@@ -1238,6 +1239,7 @@
   language: PHP
   description: A PHP library for manipulating and validating OpenAPI 3.0 Descriptions
   v3: true
+  v3_1_link: https://github.com/cebe/php-openapi/pull/128
 
 - name: Object Oriented OpenAPI Specification
   category:
