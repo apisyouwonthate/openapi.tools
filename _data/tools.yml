@@ -86,14 +86,6 @@
   description: Convert an Edm (Entity Data Model) to OpenAPI 3.0
   v3: true
 
-- name: pyswagger
-  category: converters
-  github: https://github.com/mission-liao/pyswagger
-  language: Python
-  description: Client & converter in Python, which is type-safe, dynamic, spec-compliant.
-  v2: true
-  v3_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
-
 - name: avantation
   category: converters
   language: TypeScript
@@ -121,6 +113,7 @@
     Simply provide your schema file in JSON or YAML, then sit back and enjoy the documentation.
   v2: true
   v3: true
+  v3_1_link: https://github.com/ouropencode/OpenDocumenter/issues/2
 
 - name: ReadMe
   category: documentation
@@ -162,6 +155,7 @@
     with the Kong API Gateway
   v2: true
   v3: true
+  v3_1_link: https://github.com/Kong/insomnia/issues/4732
 
 - name: RestCase Docs
   category: documentation
@@ -801,7 +795,7 @@
   description: Create API service proxies using event bus with request/response validation
   v2: false
   v3: true
-  v3_link: https://github.com/vert-x3/vertx-web/issues/1872
+  v3_1_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: BaucisJS + baucis-openapi3
   category: server
