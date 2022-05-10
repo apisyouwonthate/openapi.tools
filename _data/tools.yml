@@ -351,6 +351,19 @@
   v2: true
   v3: true
 
+- name: FabriKt 
+  category:
+    - code-generators
+    - sdk
+  link: https://github.com/cjbooms/fabrikt
+  language: Kotlin
+  github: https://github.com/cjbooms/fabrikt
+  description:
+    A sophisticated Kotlin code generation library capable of generating Jackson-annotated data classes, Spring Controller interfaces, and fault-tolerant OkHttp clients. Written in Kotlin, this library programatically generates code and is capable of handling advanced OpenApi3 specification features such as polymorphism.
+  v2: false
+  v3: true  
+  v3_1: false
+
 - name: Bump
   category: documentation
   link: https://bump.sh
