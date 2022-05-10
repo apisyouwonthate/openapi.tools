@@ -1736,13 +1736,6 @@
   v2: true
   v3: true
 
-- name: JSON Designer
-  category: gui-editors
-  link: http://jsondesigner.com
-  language: iOS/Swift
-  description: Visualize JSON models from imported OpenAPI YAML. Edit models and export OpenAPI YAML.
-  v3: true
-
 - name: openapi-core
   category: data-validators
   language: Python
