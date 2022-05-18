@@ -109,14 +109,6 @@
   description: Convert an Edm (Entity Data Model) to OpenAPI 3.0
   v3: true
 
-- name: pyswagger
-  category: converters
-  github: https://github.com/mission-liao/pyswagger
-  language: Python
-  description: Client & converter in Python, which is type-safe, dynamic, spec-compliant.
-  v2: true
-  v3_link: https://github.com/mission-liao/pyswagger/blob/develop/docs/md/news.md
-
 - name: avantation
   category: converters
   language: TypeScript
@@ -144,6 +136,7 @@
     Simply provide your schema file in JSON or YAML, then sit back and enjoy the documentation.
   v2: true
   v3: true
+  v3_1_link: https://github.com/ouropencode/OpenDocumenter/issues/2
 
 - name: ReadMe
   category: documentation
@@ -185,6 +178,7 @@
     with the Kong API Gateway
   v2: true
   v3: true
+  v3_1_link: https://github.com/Kong/insomnia/issues/4732
 
 - name: RestCase Docs
   category: documentation
@@ -291,7 +285,7 @@
 
 - name: Stoplight Docs
   category: documentation
-  link: https://stoplight.io/docs/
+  link: https://stoplight.io/api-documentation
   language: SaaS
   description:
     Create beautiful, customizable, interactive API documentation generated
@@ -373,6 +367,19 @@
     fork of swagger-codegen)
   v2: true
   v3: true
+
+- name: FabriKt 
+  category:
+    - code-generators
+    - sdk
+  link: https://github.com/cjbooms/fabrikt
+  language: Kotlin
+  github: https://github.com/cjbooms/fabrikt
+  description:
+    A sophisticated Kotlin code generation library capable of generating Jackson-annotated data classes, Spring Controller interfaces, and fault-tolerant OkHttp clients. Written in Kotlin, this library programatically generates code and is capable of handling advanced OpenApi3 specification features such as polymorphism.
+  v2: false
+  v3: true  
+  v3_1: false
 
 - name: Bump
   category: documentation
@@ -811,7 +818,7 @@
   description: Create API service proxies using event bus with request/response validation
   v2: false
   v3: true
-  v3_link: https://github.com/vert-x3/vertx-web/issues/1872
+  v3_1_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: BaucisJS + baucis-openapi3
   category: server
@@ -1252,6 +1259,7 @@
     writing a bunch of code, by registering this middleware and pointing it at your
     API description document.
   v3: true
+  v3_1_link: https://github.com/thephpleague/openapi-psr7-validator/issues/163
 
 - name: php-openapi
   category:
@@ -1261,6 +1269,7 @@
   language: PHP
   description: A PHP library for manipulating and validating OpenAPI 3.0 Descriptions
   v3: true
+  v3_1_link: https://github.com/cebe/php-openapi/pull/128
 
 - name: Object Oriented OpenAPI Specification
   category:
@@ -1750,13 +1759,6 @@
   v2: true
   v3: true
 
-- name: JSON Designer
-  category: gui-editors
-  link: http://jsondesigner.com
-  language: iOS/Swift
-  description: Visualize JSON models from imported OpenAPI YAML. Edit models and export OpenAPI YAML.
-  v3: true
-
 - name: openapi-core
   category: data-validators
   language: Python
@@ -1942,6 +1944,26 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: Cherrybomb
+  category: description-validators
+  language: Rust
+  link: https://www.blstsecurity.com/cherrybomb
+  github: https://github.com/blst-security/cherrybomb
+  description:
+    A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
+  v2: false
+  v3: true
+  v3_1: true
+
+- name: Meta-API
+  category: miscellaneous
+  link: https://www.meta-api.io
+  language: SaaS
+  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
+  v2: true
+  v3: true
+  v3_1: true
    
 - name: BlocklyAutomation
   category: 
@@ -1954,5 +1976,14 @@
   language: Javascript / .NET
   description:
     Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
+  v3: true
+  v3_1: true
+
+- name: Meta-API
+  category: miscellaneous
+  link: https://www.meta-api.io
+  language: SaaS
+  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
+  v2: true
   v3: true
   v3_1: true
