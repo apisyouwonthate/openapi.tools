@@ -1832,6 +1832,16 @@
   link: https://github.com/KissPeter/APIFuzzer
   github: https://github.com/KissPeter/APIFuzzer
 
+- name: Frontend Zero to One
+  category: miscellaneous
+  language: TypeScript
+  link: https://www.fezto.xyz/
+  github: https://github.com/burgalon/fezto
+  description: >
+    FEZTO creates an APP on the fly: It parses the OpenAPI spec and tries to determine which resources are available to present, and creates CRUD screen for creating, reading and updating entities. It also tries to resolve foreign keys to create dropdowns and add linkable resources.
+  v2: true
+  v3: true
+
 - name: Django REST Framework
   category: miscellaneous
   language: Python
