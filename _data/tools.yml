@@ -1304,6 +1304,14 @@
   description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
   v3: true
 
+- name: openapi.tanna.dev/go/validator
+  category:
+    - data-validators
+  github: https://gitlab.com/jamietanna/httptest-openapi/
+  language: Go
+  description: A Go library for making it easier to validate that your OpenAPI contracts match your HTTP request/responses used in your tests. Based on kin-openapi.
+  v3: true
+
 - name: openapi-psr7-validator
   category: data-validators
   github: https://github.com/thephpleague/openapi-psr7-validator
