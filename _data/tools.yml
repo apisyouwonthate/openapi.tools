@@ -314,8 +314,8 @@
   github: https://github.com/deepmap/oapi-codegen
   language: Go
   description:
-    Generate a web service using the [Echo](https://github.com/labstack/echo)
-    framework from an OpenAPI v3 specification
+    Generate a client, server, and HTTP types for various Go HTTP servers, 
+    from an OpenAPI v3 specification
   v3: true
 
 - name: OpenAPI Client Generators
