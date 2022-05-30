@@ -314,8 +314,8 @@
   github: https://github.com/deepmap/oapi-codegen
   language: Go
   description:
-    Generate a web service using the [Echo](https://github.com/labstack/echo)
-    framework from an OpenAPI v3 specification
+    Generate a client, server, and HTTP types for various Go HTTP servers, 
+    from an OpenAPI v3 specification
   v3: true
 
 - name: OpenAPI Client Generators
@@ -1975,4 +1975,29 @@
   description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
   v2: true
   v3: true
+  v3_1: true
+
+- name: Zuplo (Web Portal)
+  category: gui-editors
+  language: Web / SaaS
+  link: https://www.zuplo.com 
+  description:
+    Zuplo is an API gateway designed for developers. The web portal includes
+    a route designer that allows you to design your API surface and supports export to
+    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1 
+    documents to create your gateway. 
+  v2: false
+  v3: false
+  v3_1: true
+
+- name: Zuplo (Docs)
+  category: documentation 
+  language: TypeScript / JavaScript
+  link: https://www.zuplo.com
+  description:
+    Zuplo is an API gateway designed for developers and includes a hosted developer portal
+    that includes Stripe-like documentation and integrated API-key management. You can design 
+    your API using the built-in route designer or import your OpenAPI v3.1 descriptions. 
+  v2: false
+  v3: false
   v3_1: true
