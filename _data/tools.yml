@@ -1972,7 +1972,7 @@
   description:
     Zuplo is an API gateway designed for developers. The web portal includes
     a route designer that allows you to design your API surface and supports export to
-    Open API v3.1, and integrates with GitHub. You can also import Open API v3.1 
+    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1 
     documents to create your gateway. 
   v2: false
   v3: false
