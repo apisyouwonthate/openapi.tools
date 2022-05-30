@@ -464,6 +464,7 @@
     as you edit.
   v2: true
   v3: true
+  v3_1_link: https://youtrack.jetbrains.com/issue/IDEA-294782/Add-support-for-OpenAPI-31-in-OpenAPI-Specifications-plugin
 
 - name: VSCode/openapi-lint
   category: text-editors
