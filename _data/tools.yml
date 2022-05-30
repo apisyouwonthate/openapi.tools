@@ -1985,7 +1985,7 @@
   description:
     Zuplo is an API gateway designed for developers and includes a hosted developer portal
     that includes Stripe-like documentation and integrated API-key management. You can design 
-    your API using the built-in route designer or import your Open API v3.1 specification. 
+    your API using the built-in route designer or import your OpenAPI v3.1 descriptions. 
   v2: false
   v3: false
   v3_1: true
