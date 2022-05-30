@@ -244,9 +244,9 @@
 - name: RapiDoc
   category: documentation
   description: Custom Element to view OpenAPI descriptions.
-  link: https://mrin9.github.io/RapiDoc
+  link: https://rapidocweb.com/
   github: https://github.com/mrin9/RapiDoc
-  language: Custom Element
+  language: Web Component
   v2: true
   v3: true
   v3_1: true
@@ -256,7 +256,7 @@
   description: Custom Element to generate PDF from OpenAPI descriptions.
   link: https://mrin9.github.io/RapiPdf
   github: https://github.com/mrin9/RapiPdf
-  language: Custom Element
+  language: Web Component
   v2: true
   v3: true
 
