@@ -2002,3 +2002,12 @@
   v2: false
   v3: false
   v3_1: true
+- name: SCS MultiApi Converter
+  category: testing 
+  language: Java
+  link: https://www.https://github.com/corunet/scc-multiapi-converter.com
+  description:
+    This plugin allows developers to automatize the creation of code classes for REST and Kafka connections, based on YML files under the AsyncApi and OpenApi specifications. It allows us to generate code from multiple files in just one maven execution.
+  v2: true
+  v3: true
+  v3_1: false
