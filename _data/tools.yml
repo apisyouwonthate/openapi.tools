@@ -244,9 +244,9 @@
 - name: RapiDoc
   category: documentation
   description: Custom Element to view OpenAPI descriptions.
-  link: https://mrin9.github.io/RapiDoc
+  link: https://rapidocweb.com/
   github: https://github.com/mrin9/RapiDoc
-  language: Custom Element
+  language: Web Component
   v2: true
   v3: true
   v3_1: true
@@ -256,7 +256,7 @@
   description: Custom Element to generate PDF from OpenAPI descriptions.
   link: https://mrin9.github.io/RapiPdf
   github: https://github.com/mrin9/RapiPdf
-  language: Custom Element
+  language: Web Component
   v2: true
   v3: true
 
@@ -314,8 +314,8 @@
   github: https://github.com/deepmap/oapi-codegen
   language: Go
   description:
-    Generate a web service using the [Echo](https://github.com/labstack/echo)
-    framework from an OpenAPI v3 specification
+    Generate a client, server, and HTTP types for various Go HTTP servers, 
+    from an OpenAPI v3 specification
   v3: true
 
 - name: OpenAPI Client Generators
@@ -464,6 +464,7 @@
     as you edit.
   v2: true
   v3: true
+  v3_1_link: https://youtrack.jetbrains.com/issue/IDEA-294782/Add-support-for-OpenAPI-31-in-OpenAPI-Specifications-plugin
 
 - name: VSCode/openapi-lint
   category: text-editors
@@ -484,6 +485,18 @@
   description: |
     RepreZen API Studio is an integrated workbench that brings API-first design into focus for your whole team, harmonizes your API designs, and
     generates APIs that click into client apps.
+  v2: true
+  v3: true
+
+- name: JetBrains tools (IntelliJ IDEA, PyCharm etc.)
+  category: gui-editors
+  language: Java, Python
+  link: https://plugins.jetbrains.com/plugin/14394-openapi-specifications
+  github:
+  description: |
+    JetBrains development tools like IntelliJ IDEA, PyCharm and others come with a bundled *OpenAPI Specifications* plugin.
+    The plugin allows you to write the OpenAPI specifications and supports you with validations, formatting, code-completion etc.
+    It supports a *text view* as well as a rendered SwaggerUI-like *graphical interface*.
   v2: true
   v3: true
 
@@ -1974,4 +1987,29 @@
   description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
   v2: true
   v3: true
+  v3_1: true
+
+- name: Zuplo (Web Portal)
+  category: gui-editors
+  language: Web / SaaS
+  link: https://www.zuplo.com 
+  description:
+    Zuplo is an API gateway designed for developers. The web portal includes
+    a route designer that allows you to design your API surface and supports export to
+    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1 
+    documents to create your gateway. 
+  v2: false
+  v3: false
+  v3_1: true
+
+- name: Zuplo (Docs)
+  category: documentation 
+  language: TypeScript / JavaScript
+  link: https://www.zuplo.com
+  description:
+    Zuplo is an API gateway designed for developers and includes a hosted developer portal
+    that includes Stripe-like documentation and integrated API-key management. You can design 
+    your API using the built-in route designer or import your OpenAPI v3.1 descriptions. 
+  v2: false
+  v3: false
   v3_1: true
