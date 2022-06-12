@@ -2009,6 +2009,7 @@
     - sdk
   language: Node.js / CLI
   link: https://www.npmjs.com/package/openapi-commander
+  github: https://github.com/bcoughlan/openapi-commander
   description: Generate a Node.js command line tool from an OpenAPI definition.
   v2: false
   v3: true
