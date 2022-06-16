@@ -196,7 +196,7 @@
   v2: true
   v3: true
   v3_1: true
- 
+
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
@@ -604,12 +604,11 @@
 
 - name: Meeshkan
   category:
-    - learning
+    - testing
     - mock
-  language: Python
-  link: https://github.com/meeshkan/meeshkan
-  github: https://github.com/meeshkan/meeshkan
-  description: Mock HTTP APIs through a combination of API definitions, recorded traffic and code. Used for sandboxes, as well as automated and exploratory testing.
+  language: SaaS
+  link: https://meeshkan.com/
+  description: Meeshkan is an automated testing and mocking tool. It offers first-class support for GraphQL APIs, but Meeshkan is also built to handle REST APIs and third-party dependencies.
   v2: false
   v3: true
 
@@ -779,7 +778,7 @@
   category:
     - server
     - data-validation
-  language: TypeScript
+  language: Node.js / TypeScript
   link: https://github.com/lukeautry/tsoa
   github: https://github.com/lukeautry/tsoa
   description:
@@ -790,7 +789,7 @@
 
 - name: Vert.x Web Api Contract
   category: server
-  language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon & Scala
+  language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon or Scala
   link: https://vertx.io/docs/#web
   github: https://github.com/vert-x3/vertx-web/tree/master/vertx-web-api-contract
   description:
@@ -800,19 +799,19 @@
   v3: true
   v3_link: https://github.com/vert-x3/vertx-web/issues/1872
 
-- name: Vert.x Web API Service
+- name: express-openapi
   category: server
-  language: Java
-  link: https://vertx.io/docs/vertx-web-api-service/java/
-  github: https://github.com/vert-x3/vertx-web/
-  description: Create API service proxies using event bus with request/response validation
-  v2: false
+  language: Node.js / Typescript
+  link: https://www.npmjs.com/package/express-openapi
+  github: https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi
+  description: An unopinionated OpenAPI framework for Express, which supports Promise based middleware, response handlers and Security Filtering.
+  v2: true
   v3: true
   v3_1_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: BaucisJS + baucis-openapi3
   category: server
-  language: JavaScript
+  language: Node.js
   link: https://www.npmjs.com/package/baucis-openapi3
   github: https://github.com/metadevpro/baucis-openapi3
   description:
@@ -834,7 +833,7 @@
 
 - name: openapi-backend
   category: server
-  language: Node.js
+  language: Node.js + Typescript
   link: https://www.npmjs.com/package/openapi-backend
   github: https://github.com/anttiviljami/openapi-backend
   description: Build, Validate, Route, and Mock using OpenAPI specification. Framework-agnostic
@@ -861,7 +860,7 @@
   github: https://github.com/tomi-vanek/microts
   description: Take an OpenAPI description and generate TypeScript projects via Docker.
   v2: true
-  v3: true
+  v3: false
 
 - name: API Platform
   category: server
@@ -921,7 +920,7 @@
 - name: "@nestjs/swagger"
   category:
     - server
-  language: TypeScript
+  language: Node.js
   link: https://docs.nestjs.com/recipes/swagger
   github: https://github.com/nestjs/swagger
   description: >
@@ -1072,15 +1071,15 @@
   v3: true
   v3_1: true
 
-
 - name: openapi-validator-middleware
-  category: data-validators
+  category:
+    - data-validators
+    - server
   link: https://www.npmjs.com/package/openapi-validator-middleware
   github: https://github.com/PayU/openapi-validator-middleware
   language: Node.js
   description:
-    Express middleware which validates request body, headers, path parameters
-    and query parameters according to an OpenAPI Description
+    Provides data validation within an Express, Koa or Fastify app according to a OpenAPI definition. It uses Ajv under the hood for validation.
   v2: true
   v3: true
 
@@ -1099,6 +1098,7 @@
   category:
     - data-validators
     - description-validators
+    - server
     - testing
   language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer
@@ -1135,7 +1135,7 @@
   language: Node.js
   description:
     NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description
-    over express servers, including security validations
+    over Express servers, including security validations
   v3: true
 
 - name: openVALIDATION
@@ -1378,7 +1378,7 @@
   v3: true
 
 - name: NSwag
-  catgeory:
+  category:
     - sdk
   link: http://NSwag.org
   github: https://github.com/RicoSuter/NSwag
@@ -1388,7 +1388,7 @@
   v3: true
 
 - name: api-codegen-ts
-  catgeory:
+  category:
     - sdk
     - data-validators
   link: https://www.npmjs.com/package/@nll/api-codegen-ts
@@ -1412,7 +1412,7 @@
   v3: true
 
 - name: Azure AutoRest
-  catgeory:
+  category:
     - sdk
   github: https://github.com/Azure/autorest/
   language: TypeScript
@@ -1424,7 +1424,7 @@
   v3: true
 
 - name: spring-openapi
-  catgeory:
+  category:
     - sdk
   github: https://github.com/jrcodeza/spring-openapi
   language: Java
@@ -1723,11 +1723,11 @@
 
 - name: SpringFox
   category: server
-  language: Java, Kotlin, Groovy, Ruby
+  language: Java, Kotlin, Groovy, or Ruby
   link: https://springfox.io
   github: https://github.com/springfox/springfox
   description:
-    Automated JSON API documentation for API's built with Spring and SpringBoot
+    Automated JSON API documentation for APIs built with Spring and SpringBoot
   v1: true
   v2: true
   v3: true
@@ -1762,7 +1762,7 @@
 
 - name: LoopBack 4
   category: server
-  language: TypeScript
+  language: Node.js + TypeScript
   link: https://loopback.io/
   github: https://github.com/strongloop/loopback-next
   description: >
@@ -1770,6 +1770,7 @@
     microservices with tight OpenAPI 3 integration. Serves Swagger UI and OpenAPI 3 spec out of the box.
     Generate code to interact with other OpenAPI-compliant APIs, or generate new API endpoints based on
     existing OpenAPI specs.
+  v3: true
 
 - name: OpenAPI3 Fuzzer
   category: security
@@ -1803,8 +1804,8 @@
   category: dsl
   language: Go
   description:
-    Goa provides a holistic approach for developing remote APIs and microservices in Go. 
-    implementers don't have to worry about the documentation getting out of sync 
+    Goa provides a holistic approach for developing remote APIs and microservices in Go.
+    implementers don't have to worry about the documentation getting out of sync
     as Goa takes care of generating OpenAPI specifications for HTTP based services and gRPC protocol buffer files for gRPC based services
   link: https://goa.design
   v2: true
