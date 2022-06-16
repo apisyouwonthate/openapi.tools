@@ -1891,7 +1891,7 @@
     - data-validators
     - security
   link: https://forallsecure.com/mayhem-for-api
-  github: "https://github.com/ForAllSecure/mapi-action#mayhem-for-api-github-action"
+  github: "https://github.com/ForAllSecure/mapi-action"
   language: Any
   description: Probe your REST API with an infinite stream of test cases generated automatically from your OpenAPI specification.
   v2: true
