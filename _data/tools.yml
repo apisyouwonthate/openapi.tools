@@ -811,7 +811,7 @@
 
 - name: BaucisJS + baucis-openapi3
   category: server
-  language: Node.js (Express)
+  language: Node.js
   link: https://www.npmjs.com/package/baucis-openapi3
   github: https://github.com/metadevpro/baucis-openapi3
   description:
@@ -822,7 +822,7 @@
 
 - name: "@smartrecruiters/openapi-first"
   category: server
-  language: Node.js + Express
+  language: Node.js
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
   github: https://github.com/smartrecruiters/openapi-first
   description: |
@@ -843,7 +843,7 @@
 
 - name: OpenAPI Enforcer Middleware
   category: server
-  language: Node.js + Express (or Connect?)
+  language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer-middleware
   github: https://github.com/byu-oit/openapi-enforcer-middleware
   description:
@@ -864,7 +864,7 @@
 
 - name: API Platform
   category: server
-  language: PHP (reccommended + Symfony)
+  language: PHP
   link: https://api-platform.com
   github: https://github.com/api-platform/api-platform
   description: REST and GraphQL framework to build modern API-driven projects
@@ -873,7 +873,7 @@
 
 - name: Mojolicious::Plugin::OpenApi
   category: server
-  language: Perl + Mojolicious
+  language: Perl
   link: https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI
   github: https://github.com/jhthorsen/mojolicious-plugin-openapi
   description: >
@@ -907,7 +907,7 @@
 - name: "@eropple/nestjs-openapi3"
   category:
     - server
-  language: Node.js + NestJS
+  language: Node.js
   link: https://github.com/eropple/nestjs-openapi3
   github: https://github.com/eropple/nestjs-openapi3
   description: >
@@ -920,7 +920,7 @@
 - name: "@nestjs/swagger"
   category:
     - server
-  language: Node.js + NestJS + TypeScript
+  language: Node.js
   link: https://docs.nestjs.com/recipes/swagger
   github: https://github.com/nestjs/swagger
   description: >
@@ -934,7 +934,7 @@
   category:
     - server
     - mock
-  language: Python + Django, Falcon or Flask
+  language: Python
   link: https://github.com/NotJustAToy/falcon-heavy
   github: https://github.com/NotJustAToy/falcon-heavy
   description: >
@@ -1132,7 +1132,7 @@
     - data-validators
     - description-validators
   github: https://github.com/isa-group/oas-tools
-  language: Node.js + Express
+  language: Node.js
   description:
     NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description
     over Express servers, including security validations
@@ -1641,7 +1641,7 @@
 - name: openapi-processor-spring
   category:
     - server
-  language: Java + Spring Boot
+  language: Java
   link: https://docs.openapiprocessor.io/spring
   github: https://github.com/openapi-processor/openapi-processor-spring
   description:
@@ -1723,7 +1723,7 @@
 
 - name: SpringFox
   category: server
-  language: Java, Kotlin, Groovy, or Ruby + Spring Boot
+  language: Java, Kotlin, Groovy, or Ruby
   link: https://springfox.io
   github: https://github.com/springfox/springfox
   description:
