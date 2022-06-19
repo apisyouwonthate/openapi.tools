@@ -2007,3 +2007,11 @@
   v2: false
   v3: false
   v3_1: true
+
+- name: kotlin-openapi3-dsl
+  category: dsl
+  language: Kotlin
+  description: kotlin-openapi3-dsl is a DSL written in Kotlin to write OpenAPI descriptions in plain Kotlin.
+  link: https://github.com/derveloper/kotlin-openapi3-dsl
+  v2: false
+  v3: true
