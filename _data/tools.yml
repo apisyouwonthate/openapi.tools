@@ -1950,3 +1950,14 @@
     your API using the built-in route designer or import your OpenAPI v3.1 descriptions. 
   v3: false
   v3_1: true
+
+- name: MkDocs Swagger UI Tag
+  category: documentation 
+  language: Python
+  link: https://blueswen.github.io/mkdocs-swagger-ui-tag/
+  github: https://github.com/blueswen/mkdocs-swagger-ui-tag
+  description:
+    A MkDocs plugin supports for add Swagger UI in page.
+  v2: true
+  v3: true
+  v3_1: true
