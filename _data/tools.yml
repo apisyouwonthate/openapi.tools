@@ -1857,6 +1857,7 @@
   description: Probe your REST API with an infinite stream of test cases generated automatically from your OpenAPI specification.
   v2: true
   v3: true
+  v3_1: true
 
 - name: JSONSchema::Validator
   category: data-validators
@@ -1951,6 +1952,14 @@
   v3: false
   v3_1: true
 
+- name: kotlin-openapi3-dsl
+  category: dsl
+  language: Kotlin
+  description: kotlin-openapi3-dsl is a DSL written in Kotlin to write OpenAPI descriptions in plain Kotlin.
+  link: https://github.com/derveloper/kotlin-openapi3-dsl
+  v2: false
+  v3: true
+
 - name: MkDocs Swagger UI Tag
   category: documentation 
   language: Python
@@ -1960,7 +1969,6 @@
     A MkDocs plugin supports for add Swagger UI in page.
   v2: true
   v3: true
-  v3_1: true
 
 - name: OpenAPI Commander
   category:
@@ -1973,3 +1981,5 @@
   v2: false
   v3: true
   v3_1: true
+
+
