@@ -1857,6 +1857,7 @@
   description: Probe your REST API with an infinite stream of test cases generated automatically from your OpenAPI specification.
   v2: true
   v3: true
+  v3_1: true
 
 - name: JSONSchema::Validator
   category: data-validators
