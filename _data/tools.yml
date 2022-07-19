@@ -1982,4 +1982,15 @@
   v3: true
   v3_1: true
 
-
+- name: GEFEG.FX
+  category:
+    - gui-editors
+    - documentation
+    - miscellaneous
+  language: SaaS
+  link: https://news.gefeg.com/en/2021/09/easily-transform-edi-to-apis-reuse-your-data-models-in-apis-now-model-first-with-gefeg-fx/
+  description: Create OpenAPI specifications with a Model-First-Approach. Use existing international Standards, your own XML Schemas or data models in OpenAPI specifications when generating JSON and YAML. Easy maintenance of data models.
+  v2: true
+  v3: true
+  v3_1: true
+  
