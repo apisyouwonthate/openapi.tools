@@ -1979,5 +1979,24 @@
   v2: false
   v3: true
   v3_1: true
+  
+  
+- name: Counterfact
+  category:
+    - parser
+    - sdk
+    - converters
+    - testing
+  link: https://goswagger.io/
+  github: https://github.com/pmcelhaney/counterfact
+  language: TypeScript / Node
+  description:
+    A new (July 2022) project that converts an Open API spec to a full implementation that runs on ts-node. The idea 
+    is to replace the auto-generated code that returns random values with realistic code, one path at a time. If the 
+    spec is updated, you can regenerate the types and let the type checker show you which parts of the implementation
+    needs to be updated. The types can also be used in client-side code. 
+  v3: true
+  v3_1: true
+
 
 
