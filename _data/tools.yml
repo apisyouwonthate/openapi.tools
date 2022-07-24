@@ -192,7 +192,7 @@
   language: Javascript/Custom Element
   v2: true
   v3: true
-  v3_1: false
+  v3_1: true
 
 - name: openapi-viewer
   category: documentation
