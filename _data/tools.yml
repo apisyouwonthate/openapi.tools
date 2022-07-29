@@ -1979,5 +1979,16 @@
   v2: false
   v3: true
   v3_1: true
+  
+  - name: Perseid Modeler
+  category:
+    - gui-editors
+    - documentation
+  language: Desktop 
+  link: https://www.datensen.com
+  description: Data modeling tool for OpenAPI and JSON schema. Key features: visual OpenAPI creation using tree and ERD-like diagrams, importing from files, HTML reports generation, export to PDF, script generation and more.
+  v2: true
+  v3: true
+  v3_1: true
 
 
