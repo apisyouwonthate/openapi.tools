@@ -6,6 +6,15 @@
   v3: true
   v3_1: false
 
+- name: optic diff
+  category: miscellaneous
+  language: Go
+  github: https://github.com/opticdev/optic
+  link: https://www.useoptic.com/docs/openapi-diff
+  description: Diff the effective API contract between any two versions of your OpenAPI spec. Exit 1 on breaking changes.  
+  v3: true
+  v3_1: true
+
 - name: CUE
   category: dsl
   language: CUE
@@ -579,9 +588,9 @@
   link: https://useoptic.com
   github: https://github.com/opticdev/optic
   description:
-    A proxy server that watches an API and helps you build an OpenAPI description
-    interactively.
+    Build your first OpenAPI Spec from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior. 
   v3: true
+  v3_1: true
 
 - name: APIClarity
   category: learning
