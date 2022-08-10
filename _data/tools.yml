@@ -11,7 +11,7 @@
   language: Go
   github: https://github.com/opticdev/optic
   link: https://www.useoptic.com/docs/openapi-diff
-  description: Diff the effective API contract between any two versions of your OpenAPI spec. Exit 1 on breaking changes.  
+  description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.  
   v3: true
   v3_1: true
 
@@ -588,7 +588,7 @@
   link: https://useoptic.com
   github: https://github.com/opticdev/optic
   description:
-    Build your first OpenAPI Spec from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior. 
+    Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior. 
   v3: true
   v3_1: true
 
