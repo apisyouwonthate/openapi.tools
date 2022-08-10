@@ -582,7 +582,7 @@
   v3: true
 
 # Learning
-- name: Optic
+- name: optic
   category: learning
   language: cli
   link: https://useoptic.com
