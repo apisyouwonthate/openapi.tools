@@ -1198,7 +1198,7 @@
 - name: Kusk
   category:
     - miscellaneous
-  link: https://kubeshop.github.io/kusk/
+  link: https://kusk.io
   github: https://github.com/kubeshop/kusk
   language: Kubernetes
   description: "Kusk makes your OpenAPI definition the source of truth for API resources in your cluster."
