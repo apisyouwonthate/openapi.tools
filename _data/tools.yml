@@ -1997,3 +1997,15 @@
   v2: false
   v3: true
   v3_1: true
+
+- name: thiyagu06/openapi-validator-action
+  category:
+    - miscellaneous
+    - testing
+    - description-validators
+  github: https://github.com/thiyagu06/openapi-validator-action
+  language: Node.js / JavaScript
+  description: Github action that validates whether the OpenAPI/Swagger schema file is valid or not.
+  v2: true
+  v3: true
+  v3_1: true
