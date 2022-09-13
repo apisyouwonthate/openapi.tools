@@ -1,3 +1,13 @@
+- name: readmeio/swagger-inline
+  category: dsl
+  language: Javascript / CLI
+  description:
+    A language-agnostic tool for documenting your API right from your code, generating an OpenAPI Definition.
+  link: https://github.com/readmeio/swagger-inline
+  v2: true
+  v3: true
+  v3_1: false
+
 - name: oasdiff
   category: miscellaneous
   language: Go
