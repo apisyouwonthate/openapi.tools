@@ -1997,3 +1997,19 @@
   v2: false
   v3: true
   v3_1: true
+
+- name: vacuum
+  category:
+    - miscellaneous
+    - description-validators
+    - data-validators
+  link: https://quobix.com/vacuum
+  language: go
+  github: https://github.com/daveshanley/vacuum
+  description:
+    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and 
+    designed for enterprise-grade speed and scale.
+  v2: true
+  v3: true
+  v3_1: true
+
