@@ -1,9 +1,9 @@
-- name: readmeio/swagger-inline
+- name: readmeio/oas
   category: dsl
-  language: Javascript / CLI
+  language: TypeScript / CLI
   description:
     A language-agnostic tool for documenting your API right from your code, generating an OpenAPI Definition.
-  link: https://github.com/readmeio/swagger-inline
+  link: https://github.com/readmeio/oas
   v2: true
   v3: true
   v3_1: false
