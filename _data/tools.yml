@@ -11,7 +11,7 @@
   language: Go
   github: https://github.com/opticdev/optic
   link: https://www.useoptic.com/docs/openapi-diff
-  description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.  
+  description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.
   v3: true
   v3_1: true
 
@@ -90,7 +90,7 @@
 - name: OData.OpenAPI
   category: converters
   github: https://github.com/xuzhg/OData.OpenAPI
-  language: ".NET"
+  language: '.NET'
   description: Convert an Edm (Entity Data Model) to OpenAPI 3.0
   v3: true
 
@@ -99,7 +99,7 @@
   language: TypeScript
   link: https://www.avantation.in/
   github: https://github.com/anbuksv/avantation
-  description: "Generate OpenAPI 3.x specification from HAR."
+  description: 'Generate OpenAPI 3.x specification from HAR.'
   v3: true
 
 - name: LucyBot api-spec-converter
@@ -107,7 +107,7 @@
   language: Node.js
   link: https://www.npmjs.com/package/api-spec-converter
   github: https://github.com/LucyBot-Inc/api-spec-converter
-  description: "Convert between API description formats such as OpenAPI and RAML."
+  description: 'Convert between API description formats such as OpenAPI and RAML.'
   v2: true
   v3: true
 
@@ -282,8 +282,7 @@
   category: documentation
   link: https://github.com/robertlove/jekyll-openapi
   language: Jekyll
-  description:
-    An OpenAPI 3 documentation website generator built with Jekyll for use on GitHub Pages.
+  description: An OpenAPI 3 documentation website generator built with Jekyll for use on GitHub Pages.
   v3: true
 
 - name: BOATS
@@ -321,7 +320,7 @@
   github: https://github.com/deepmap/oapi-codegen
   language: Go
   description:
-    Generate a client, server, and HTTP types for various Go HTTP servers, 
+    Generate a client, server, and HTTP types for various Go HTTP servers,
     from an OpenAPI v3 specification
   v3: true
 
@@ -352,16 +351,15 @@
   v2: true
   v3: true
 
-- name: FabriKt 
+- name: FabriKt
   category:
     - code-generators
     - sdk
   link: https://github.com/cjbooms/fabrikt
   language: Kotlin
   github: https://github.com/cjbooms/fabrikt
-  description:
-    A sophisticated Kotlin code generation library capable of generating Jackson-annotated data classes, Spring Controller interfaces, and fault-tolerant OkHttp clients. Written in Kotlin, this library programatically generates code and is capable of handling advanced OpenApi3 specification features such as polymorphism.
-  v3: true  
+  description: A sophisticated Kotlin code generation library capable of generating Jackson-annotated data classes, Spring Controller interfaces, and fault-tolerant OkHttp clients. Written in Kotlin, this library programatically generates code and is capable of handling advanced OpenApi3 specification features such as polymorphism.
+  v3: true
   v3_1: false
 
 - name: Bump
@@ -388,10 +386,10 @@
   language: Angular 7.0, Java / Saas
   link: https://www.apitive.com
   description:
-    "A platform for Digital Product Managers and API Consultants to design
+    'A platform for Digital Product Managers and API Consultants to design
     REST APIs with in-built mock and documentation.
 
-    "
+    '
   v2: true
   v3: true
 
@@ -433,8 +431,7 @@
   language: JavaScript
   github: https://atom.io/packages/linter-openapi
   license: MIT
-  description:
-    This plugin for Atom Linter will lint OpenAPI YAML files using
+  description: This plugin for Atom Linter will lint OpenAPI YAML files using
     openapi-enforcer node package.
   v3: true
 
@@ -511,11 +508,11 @@
   language: Desktop / SaaS
   link: https://stoplight.io/studio
   description:
-    "Stoplight Studio is a GUI/text editor with linting and mocking built
+    'Stoplight Studio is a GUI/text editor with linting and mocking built
     right in.  It can run on the desktop with local files, and in the browser powered
     by your  existing GitHub, GitLab, or BitBucket repos.
 
-    "
+    '
   v2: true
   v3: true
   v3_1: true
@@ -526,10 +523,10 @@
   link: https://hackolade.com
   github: https://github.com/hackolade/OpenAPI
   description:
-    "A visual editor for OpenAPI v2/v3, from the pioneer in data modeling
+    'A visual editor for OpenAPI v2/v3, from the pioneer in data modeling
     for NoSQL databases.
 
-    "
+    '
   v2: true
   v3: true
 
@@ -538,10 +535,10 @@
   language: Angular 7.0, Java / Saas
   link: https://www.apitive.com
   description:
-    "A platform for Digital Product Managers and API Consultants to design
+    'A platform for Digital Product Managers and API Consultants to design
     REST APIs with in-built mock and documentation.
 
-    "
+    '
   v2: true
   v3: true
 
@@ -588,8 +585,7 @@
   language: cli
   link: https://useoptic.com
   github: https://github.com/opticdev/optic
-  description:
-    Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior. 
+  description: Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior.
   v3: true
   v3_1: true
 
@@ -598,8 +594,7 @@
   language: Golang, JavaScript
   link: https://apiclarity.io/
   github: https://github.com/apiclarity/apiclarity
-  description:
-    Reconstruct Open API Specifications from real-time workload traffic seamlessly.
+  description: Reconstruct Open API Specifications from real-time workload traffic seamlessly.
   v2: true
   v3: true
 
@@ -626,8 +621,7 @@
   category: learning
   language: PHP
   link: https://github.com/dsuurlant/response2schema
-  description:
-    Takes any JSON response and generates an OpenAPI definition document with the component schema and a default endpoint.
+  description: Takes any JSON response and generates an OpenAPI definition document with the component schema and a default endpoint.
   v3: true
 
 - name: InducOapi
@@ -635,8 +629,7 @@
   language: Python
   link: https://pypi.org/project/inducoapi
   github: https://github.com/TheWall89/inducoapi
-  description:
-    A simple python module to generate OpenAPI Description Documents by supplying request/response bodies.
+  description: A simple python module to generate OpenAPI Description Documents by supplying request/response bodies.
   v3: true
 
 - name: Connexion
@@ -741,10 +734,10 @@
   language: Angular 7.0, Java / Saas
   link: https://www.apitive.com
   description:
-    "A platform for Digital Product Managers and API Consultants to design
+    'A platform for Digital Product Managers and API Consultants to design
     REST APIs with in-built mock and documentation.
 
-    "
+    '
   v2: true
   v3: true
 
@@ -753,9 +746,9 @@
   language: CLI / Docker
   link: https://mockintosh.io
   description:
-    "Mocks for CloudNative Environments - Converts OpenAPI files to Mocks and use them
-     to develop in isolated environments and test edge cases, Async call to queues such as Kafka or RabbitMQ
-     or simulate performance & chaos testing"
+    'Mocks for CloudNative Environments - Converts OpenAPI files to Mocks and use them
+    to develop in isolated environments and test edge cases, Async call to queues such as Kafka or RabbitMQ
+    or simulate performance & chaos testing'
   v2: true
   v3: true
   v3_1: true
@@ -814,7 +807,7 @@
     v.3 contracts
   v3: true
 
-- name: "@smartrecruiters/openapi-first"
+- name: '@smartrecruiters/openapi-first'
   category: server
   language: Node.js
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
@@ -885,7 +878,7 @@
     database schema from an OpenAPI description. Based on Yii Framework.
   v3: true
 
-- name: "@eropple/nestjs-openapi3"
+- name: '@eropple/nestjs-openapi3'
   category:
     - server
   language: Node.js
@@ -897,7 +890,7 @@
     via ReDoc, and validates inputs for conformance to spec.
   v3: true
 
-- name: "@nestjs/swagger"
+- name: '@nestjs/swagger'
   category:
     - server
   language: Node.js
@@ -947,8 +940,8 @@
   github: https://github.com/apiaryio/dredd
   language: Javascript
   description:
-    "Language-agnostic command-line tool for validating API description
-    document against backend implementation of the API"
+    'Language-agnostic command-line tool for validating API description
+    document against backend implementation of the API'
   v2: true
   v3: true
 
@@ -957,7 +950,7 @@
     - data-validators
   github: https://github.com/Rhosys/openapi-data-validator.js
   language: Node.js/ Javascript
-  description: "Validate API requests against an OpenAPI schema. Lightweight, focused, and integrates with any framework"
+  description: 'Validate API requests against an OpenAPI schema. Lightweight, focused, and integrates with any framework'
   link: https://github.com/Rhosys/openapi-data-validator.js/blob/main/README.md
   v3: true
 
@@ -978,7 +971,7 @@
     - documentation
   github: https://github.com/lyra/openapi-dev-tool
   language: JavaScript
-  description: "OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!"
+  description: 'OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!'
   v3: true
 
 - name: portman
@@ -988,9 +981,9 @@
   link: http://getportman.com/
   github: https://github.com/apideck-libraries/portman
   language: Node.js
-  description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
+  description: 'Port OpenAPI Spec to Postman Collection, with contract & variation tests included!'
   v3: true
-  
+
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
@@ -1033,16 +1026,15 @@
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
-  
-- name: "@redocly/openapi-cli"
+
+- name: '@redocly/openapi-cli'
   category:
     - description-validators
     - miscellaneous
   link: https://redoc.ly/openapi-cli
   github: https://github.com/Redocly/openapi-cli
   language: CLI & TypeScript/JavaScript
-  description:
-    OpenAPI 3 CLI toolbox with rich validation and bundling features.
+  description: OpenAPI 3 CLI toolbox with rich validation and bundling features.
   v2: true
   v3: true
   v3_1: true
@@ -1054,8 +1046,7 @@
   link: https://www.npmjs.com/package/openapi-validator-middleware
   github: https://github.com/PayU/openapi-validator-middleware
   language: Node.js
-  description:
-    Provides data validation within an Express, Koa or Fastify app according to a OpenAPI definition. It uses Ajv under the hood for validation.
+  description: Provides data validation within an Express, Koa or Fastify app according to a OpenAPI definition. It uses Ajv under the hood for validation.
   v2: true
   v3: true
 
@@ -1158,8 +1149,7 @@
   category: parsers
   github: https://github.com/ErikWittern/openapi-snippet
   language: Node.js
-  description:
-    Generates code snippets in various languages & tools (cURL, Node, Python, Ruby, Java, Go, C#...), from OpenAPI documents.
+  description: Generates code snippets in various languages & tools (cURL, Node, Python, Ruby, Java, Go, C#...), from OpenAPI documents.
   v2: true
   v3: true
 
@@ -1167,8 +1157,7 @@
   category: parsers
   github: https://github.com/richardkabiling/openapi-snippet-cli
   language: Node.js
-  description:
-    Adds code snippets in redoc style (x-codeSamples) to OpenAPI documents. This is a CLI wrapper for the "openapi-snippet".
+  description: Adds code snippets in redoc style (x-codeSamples) to OpenAPI documents. This is a CLI wrapper for the "openapi-snippet".
   v2: true
   v3: true
 
@@ -1212,7 +1201,7 @@
   link: https://kusk.io
   github: https://github.com/kubeshop/kusk
   language: Kubernetes
-  description: "Kusk makes your OpenAPI definition the source of truth for API resources in your cluster."
+  description: 'Kusk makes your OpenAPI definition the source of truth for API resources in your cluster.'
   v3: true
 
 - name: openapi-psr7-validator
@@ -1265,7 +1254,7 @@
 - name: Microsoft/OpenAPI.NET
   category: parsers
   github: https://github.com/Microsoft/OpenAPI.NET
-  language: ".NET"
+  language: '.NET'
   description:
     C# based parser with OpenAPI Description validation and migration support
     from V2
@@ -1354,7 +1343,7 @@
     - sdk
   link: http://NSwag.org
   github: https://github.com/RicoSuter/NSwag
-  language: ".NET"
+  language: '.NET'
   description: OpenAPI toolchain for .NET, Web API and TypeScript
   v2: true
   v3: true
@@ -1412,7 +1401,7 @@
   description: Utility for comparing two OpenAPI specifications.
   v3: true
 
-- name: "$ oas (CLI)"
+- name: '$ oas (CLI)'
   category: miscellaneous
   language: JavaScript
   link: https://openap.is
@@ -1507,18 +1496,17 @@
   language: Java
   github: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
   description:
-    "Generates test cases directly from an OpenAPI v3 description of your
+    'Generates test cases directly from an OpenAPI v3 description of your
     API. Creates tests executable using various test frameworks. Bonus:
     Semantic linter reports elements that are inconsistent, superfluous,
-    or dubious."
+    or dubious.'
   v3: true
 
 - name: Schemathesis
   category: testing
   language: Python
   github: https://github.com/kiwicom/schemathesis
-  description:
-    Reads the description document and generates test cases that will
+  description: Reads the description document and generates test cases that will
     ensure that your application is compliant with its description.
   v2: true
   v3: true
@@ -1551,16 +1539,15 @@
   link: https://42crunch.com/
   v2: true
   v3: true
-  
+
 - name: openapi-fuzzer
   category: security
   language: Rust
-  description:
-    Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
+  description: Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
   link: https://github.com/matusf/openapi-fuzzer
-  v3: true 
+  v3: true
 
-- name: API Insights 
+- name: API Insights
   category: security
   language: SaaS
   description:
@@ -1569,7 +1556,7 @@
   link: https://restcase.com/platform/security
   v2: true
   v3: true
-  
+
 - name: OpenAPI Schema to JSON Schema
   category: converters
   language: TypeScript
@@ -1592,7 +1579,7 @@
     - code-generators
   link: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
   github: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
-  language: ".NET"
+  language: '.NET'
   description: Visual Studio extension to generate C# (TypeScript) HttpClient (or C# Controllers) code for OpenAPI web service with NSwag.
   v2: true
   v3: true
@@ -1660,7 +1647,7 @@
     - data-validators
   github: https://github.com/codekie/openapi-examples-validator
   language: JavaScript
-  description: "Validates embedded JSON-examples in OpenAPI-specs"
+  description: 'Validates embedded JSON-examples in OpenAPI-specs'
   v2: true
   v3: true
 
@@ -1668,7 +1655,7 @@
   category: converters
   github: https://github.com/postmanlabs/openapi-to-postman
   language: JavaScript
-  description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
+  description: 'Convert OpenAPI 3.0 specs to the Postman Collection (v2) format'
   v3: true
   v3_link: true
 
@@ -1679,7 +1666,7 @@
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
-  description: > 
+  description: >
     A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
     out flags, tags, methods, operationIDs.
   v3: true
@@ -1688,7 +1675,7 @@
   category: description-validators
   github: https://github.com/github/super-linter
   language: CLI / Docker
-  description: "GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral."
+  description: 'GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral.'
   v2: true
   v3: true
 
@@ -1697,8 +1684,7 @@
   language: Java, Kotlin, Groovy, or Ruby
   link: https://springfox.io
   github: https://github.com/springfox/springfox
-  description:
-    Automated JSON API documentation for APIs built with Spring and SpringBoot
+  description: Automated JSON API documentation for APIs built with Spring and SpringBoot
   v1: true
   v2: true
   v3: true
@@ -1707,7 +1693,7 @@
   category: miscellaneous
   language: PHP
   github: https://github.com/canvural/php-openapi-faker
-  description: "Library to generate fake data for OpenAPI 3.x requests, responses and schemas."
+  description: 'Library to generate fake data for OpenAPI 3.x requests, responses and schemas.'
   v3: true
 
 - name: OWASP ZAP
@@ -1766,8 +1752,7 @@
   category: data-validators
   github: https://github.com/cydrickn/openapi-validator-bundle
   language: PHP
-  description:
-    Validates Request and Response using Symfony Framework
+  description: Validates Request and Response using Symfony Framework
   v3: true
 
 - name: Goa
@@ -1861,17 +1846,16 @@
   category: miscellaneous
   language: Any
   github: https://github.com/ybelenko/oauth2_as_oas3_components
-  description:
-    OAuth2 token endpoint described with OAS3 schema. All grants documented. Can be installed as NPM or Composer package.
+  description: OAuth2 token endpoint described with OAS3 schema. All grants documented. Can be installed as NPM or Composer package.
   v3: true
-  
+
 - name: Mayhem for API
   category:
     - testing
     - data-validators
     - security
   link: https://forallsecure.com/mayhem-for-api
-  github: "https://github.com/ForAllSecure/mapi-action"
+  github: 'https://github.com/ForAllSecure/mapi-action'
   language: Any
   description: Probe your REST API with an infinite stream of test cases generated automatically from your OpenAPI specification.
   v2: true
@@ -1883,10 +1867,9 @@
   language: Perl
   link: https://metacpan.org/pod/JSONSchema::Validator
   github: https://github.com/skbkontur/perl-jsonschema-validator
-  description:
-    A Perl library which validates request/response according to an OpenAPI specification
+  description: A Perl library which validates request/response according to an OpenAPI specification
   v3: true
-  
+
 - name: openapi-python-client
   category: converters
   link: https://github.com/openapi-generators/openapi-python-client
@@ -1894,14 +1877,13 @@
   language: Python
   description: Generate modern Python clients from OpenAPI 3.0 documents.
   v3: true
-  
+
 - name: Elements
   category: documentation
   link: https://stoplight.io/open-source/elements
   github: https://github.com/stoplightio/elements
   language: Javascript / Custom Element
-  description:
-    Build beautiful, interactive API Docs with embeddable React or Web Components, powered by OpenAPI and Markdown
+  description: Build beautiful, interactive API Docs with embeddable React or Web Components, powered by OpenAPI and Markdown
   v2: true
   v3: true
   v3_1: true
@@ -1911,8 +1893,7 @@
   language: Rust
   link: https://www.blstsecurity.com/cherrybomb
   github: https://github.com/blst-security/cherrybomb
-  description:
-    A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
+  description: A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
   v3: true
   v3_1: true
 
@@ -1924,9 +1905,9 @@
   v2: true
   v3: true
   v3_1: true
-   
+
 - name: BlocklyAutomation
-  category: 
+  category:
     - code-generators
     - sdk
     - documentation
@@ -1934,8 +1915,7 @@
   link: https://ignatandrei.github.io/BlocklyAutomation/
   github: http://github.com/ignatandrei/BlocklyAutomation
   language: Javascript / .NET
-  description:
-    Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
+  description: Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
   v3: true
   v3_1: true
 
@@ -1951,23 +1931,23 @@
 - name: Zuplo (Web Portal)
   category: gui-editors
   language: Web / SaaS
-  link: https://www.zuplo.com 
+  link: https://www.zuplo.com
   description:
     Zuplo is an API gateway designed for developers. The web portal includes
     a route designer that allows you to design your API surface and supports export to
-    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1 
-    documents to create your gateway. 
+    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1
+    documents to create your gateway.
   v3: false
   v3_1: true
 
 - name: Zuplo (Docs)
-  category: documentation 
+  category: documentation
   language: TypeScript / JavaScript
   link: https://www.zuplo.com
   description:
     Zuplo is an API gateway designed for developers and includes a hosted developer portal
-    that includes Stripe-like documentation and integrated API-key management. You can design 
-    your API using the built-in route designer or import your OpenAPI v3.1 descriptions. 
+    that includes Stripe-like documentation and integrated API-key management. You can design
+    your API using the built-in route designer or import your OpenAPI v3.1 descriptions.
   v3: false
   v3_1: true
 
@@ -1991,12 +1971,11 @@
   v3: true
 
 - name: MkDocs Swagger UI Tag
-  category: documentation 
+  category: documentation
   language: Python
   link: https://blueswen.github.io/mkdocs-swagger-ui-tag/
   github: https://github.com/blueswen/mkdocs-swagger-ui-tag
-  description:
-    A MkDocs plugin supports for add Swagger UI in page.
+  description: A MkDocs plugin supports for add Swagger UI in page.
   v2: true
   v3: true
 
@@ -2009,40 +1988,5 @@
   github: https://github.com/bcoughlan/openapi-commander
   description: Generate a Node.js command line tool from an OpenAPI definition.
   v2: false
-  v3: true
-  v3_1: true
-
-- name: Atlassian OpenAPI Request Validators
-  category: testing
-  language: Java
-  link: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
-  github: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
-  v2: true
-  v3: true
-  description: A set of Java libraries which allow you to integrate OpenAPI Description Document validation into your testing or clients with tools like WireMock/RestAssured/MockMVC/etc...
-
-- name: vacuum
-  category:
-    - miscellaneous
-    - description-validators
-    - data-validators
-  link: https://quobix.com/vacuum
-  language: go
-  github: https://github.com/daveshanley/vacuum
-  description:
-    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and 
-    designed for enterprise-grade speed and scale.
-  v2: true
-  v3: true
-  v3_1: true
-
-- name: APIGit
-  category:
-    - documentation
-    - mock
-  language: SaaS
-  link: https://apigit.com
-  description: native Git based collaboration platform for API document, Design, Mock and Sharing!
-  v2: true
   v3: true
   v3_1: true
