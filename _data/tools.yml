@@ -2004,7 +2004,7 @@
     - mock
   language: SaaS
   link: https://apigit.com
-  description: native Git based collaboration platform for API document, Design, mocked and sharing!
+  description: native Git based collaboration platform for API document, Design, Mock and Sharing!
   v2: true
   v3: true
   v3_1: true
