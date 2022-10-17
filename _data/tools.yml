@@ -1997,3 +1997,14 @@
   v2: false
   v3: true
   v3_1: true
+  
+- name: APIGit
+  category:
+    - documentation
+    - mock
+  language: SaaS
+  link: https://apigit.com
+  description: native Git based collaboration platform for API document, Design, mocked and sharing!
+  v2: true
+  v3: true
+  v3_1: true
