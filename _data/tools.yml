@@ -2006,3 +2006,18 @@
   v2: true
   v3: true
   description: A set of Java libraries which allow you to integrate OpenAPI Description Document validation into your testing or clients with tools like WireMock/RestAssured/MockMVC/etc...
+
+- name: vacuum
+  category:
+    - miscellaneous
+    - description-validators
+    - data-validators
+  link: https://quobix.com/vacuum
+  language: go
+  github: https://github.com/daveshanley/vacuum
+  description:
+    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and 
+    designed for enterprise-grade speed and scale.
+  v2: true
+  v3: true
+  v3_1: true
