@@ -1998,6 +1998,15 @@
   v3: true
   v3_1: true
 
+- name: Atlassian OpenAPI Request Validators
+  category: testing
+  language: Java
+  link: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
+  github: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
+  v2: true
+  v3: true
+  description: A set of Java libraries which allow you to integrate OpenAPI Description Document validation into your testing or clients with tools like WireMock/RestAssured/MockMVC/etc...
+
 - name: vacuum
   category:
     - miscellaneous
@@ -2012,4 +2021,3 @@
   v2: true
   v3: true
   v3_1: true
-
