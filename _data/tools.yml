@@ -938,6 +938,7 @@
   description: OpenAPI Description validator
   v2: true
   v3: true
+  v3_1: true
 
 - name: Dredd
   category:
@@ -1726,6 +1727,7 @@
     and human-readable descriptions of errors. You will receive a deserialized object along with
     validation result, so you won't need to deserialize it twice.
   v3: true
+  v3_1: true
 
 - name: LoopBack 4
   category: server
