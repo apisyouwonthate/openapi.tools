@@ -1670,6 +1670,7 @@
   language: JavaScript
   description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
   v3: true
+  v3_link: true
 
 - name: openapi-format
   category:
