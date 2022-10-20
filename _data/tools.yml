@@ -2040,9 +2040,11 @@
   category:
     - documentation
     - mock
+    - gui-editors
   language: SaaS
+  github: https://github.com/apigitlabs 
   link: https://apigit.com
-  description: native Git based collaboration platform for API document, Design, Mock and Sharing!
+  description: native Git based collaboration platform for API design, document, mock and share.
   v2: true
   v3: true
   v3_1: true
