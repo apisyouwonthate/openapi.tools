@@ -938,6 +938,7 @@
   description: OpenAPI Description validator
   v2: true
   v3: true
+  v3_1: true
 
 - name: Dredd
   category:
@@ -1555,7 +1556,7 @@
   category: security
   language: Rust
   description:
-    Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoins in order to find bugs.
+    Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
   link: https://github.com/matusf/openapi-fuzzer
   v3: true 
 
@@ -1669,6 +1670,7 @@
   language: JavaScript
   description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
   v3: true
+  v3_link: true
 
 - name: openapi-format
   category:
@@ -1726,6 +1728,7 @@
     and human-readable descriptions of errors. You will receive a deserialized object along with
     validation result, so you won't need to deserialize it twice.
   v3: true
+  v3_1: true
 
 - name: LoopBack 4
   category: server
@@ -1976,6 +1979,17 @@
   v2: false
   v3: true
 
+- name: orval
+  category:
+    - code-generators
+    - mock
+  language: Typescript, React, Vue, Svelte, Angular
+  description: orval is able to generate client with appropriate type-signatures (TypeScript) from any valid OpenAPI v3 or Swagger v2 specification, either in yaml or json formats. Generate, valid, cache and mock in your frontend applications all with your OpenAPI specification. 🍺
+  link: https://orval.dev
+  github: https://github.com/anymaniax/orval
+  v2: true
+  v3: true
+
 - name: MkDocs Swagger UI Tag
   category: documentation 
   language: Python
@@ -1997,7 +2011,31 @@
   v2: false
   v3: true
   v3_1: true
-  
+
+- name: Atlassian OpenAPI Request Validators
+  category: testing
+  language: Java
+  link: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
+  github: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
+  v2: true
+  v3: true
+  description: A set of Java libraries which allow you to integrate OpenAPI Description Document validation into your testing or clients with tools like WireMock/RestAssured/MockMVC/etc...
+
+- name: vacuum
+  category:
+    - miscellaneous
+    - description-validators
+    - data-validators
+  link: https://quobix.com/vacuum
+  language: go
+  github: https://github.com/daveshanley/vacuum
+  description:
+    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and 
+    designed for enterprise-grade speed and scale.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: APIGit
   category:
     - documentation
