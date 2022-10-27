@@ -1990,3 +1990,16 @@
   v2: false
   v3: true
   v3_1: true
+
+- name: Api Studio
+  category:
+    - code-generators
+    - gui-editors
+    - dsl
+  language: '.NET'
+  link: https://marketplace.visualstudio.com/items?itemName=AndrewButson.ApiStudio
+  github: https://github.com/arbs-io/api-studio-visualstudio
+  description: Api Studio is a productivity extension for Microsoft Visual Studio. The extension bridges the role of architect and developer, providing rapid prototyping and promoting industry best practices.
+  v2: false
+  v3: true
+  v3_1: true
