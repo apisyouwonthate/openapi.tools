@@ -11,7 +11,7 @@
   language: Go
   github: https://github.com/opticdev/optic
   link: https://www.useoptic.com/docs/openapi-diff
-  description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.  
+  description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.
   v3: true
   v3_1: true
 
@@ -321,7 +321,7 @@
   github: https://github.com/deepmap/oapi-codegen
   language: Go
   description:
-    Generate a client, server, and HTTP types for various Go HTTP servers, 
+    Generate a client, server, and HTTP types for various Go HTTP servers,
     from an OpenAPI v3 specification
   v3: true
 
@@ -352,7 +352,7 @@
   v2: true
   v3: true
 
-- name: FabriKt 
+- name: FabriKt
   category:
     - code-generators
     - sdk
@@ -361,7 +361,7 @@
   github: https://github.com/cjbooms/fabrikt
   description:
     A sophisticated Kotlin code generation library capable of generating Jackson-annotated data classes, Spring Controller interfaces, and fault-tolerant OkHttp clients. Written in Kotlin, this library programatically generates code and is capable of handling advanced OpenApi3 specification features such as polymorphism.
-  v3: true  
+  v3: true
   v3_1: false
 
 - name: Bump
@@ -589,7 +589,7 @@
   link: https://useoptic.com
   github: https://github.com/opticdev/optic
   description:
-    Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior. 
+    Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior.
   v3: true
   v3_1: true
 
@@ -990,7 +990,7 @@
   language: Node.js
   description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
   v3: true
-  
+
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
@@ -1033,7 +1033,7 @@
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
-  
+
 - name: "@redocly/openapi-cli"
   category:
     - description-validators
@@ -1551,16 +1551,16 @@
   link: https://42crunch.com/
   v2: true
   v3: true
-  
+
 - name: openapi-fuzzer
   category: security
   language: Rust
   description:
     Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
   link: https://github.com/matusf/openapi-fuzzer
-  v3: true 
+  v3: true
 
-- name: API Insights 
+- name: API Insights
   category: security
   language: SaaS
   description:
@@ -1569,7 +1569,7 @@
   link: https://restcase.com/platform/security
   v2: true
   v3: true
-  
+
 - name: OpenAPI Schema to JSON Schema
   category: converters
   language: TypeScript
@@ -1679,7 +1679,7 @@
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
-  description: > 
+  description: >
     A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
     out flags, tags, methods, operationIDs.
   v3: true
@@ -1864,7 +1864,7 @@
   description:
     OAuth2 token endpoint described with OAS3 schema. All grants documented. Can be installed as NPM or Composer package.
   v3: true
-  
+
 - name: Mayhem for API
   category:
     - testing
@@ -1886,7 +1886,7 @@
   description:
     A Perl library which validates request/response according to an OpenAPI specification
   v3: true
-  
+
 - name: openapi-python-client
   category: converters
   link: https://github.com/openapi-generators/openapi-python-client
@@ -1894,7 +1894,7 @@
   language: Python
   description: Generate modern Python clients from OpenAPI 3.0 documents.
   v3: true
-  
+
 - name: Elements
   category: documentation
   link: https://stoplight.io/open-source/elements
@@ -1924,9 +1924,9 @@
   v2: true
   v3: true
   v3_1: true
-   
+
 - name: BlocklyAutomation
-  category: 
+  category:
     - code-generators
     - sdk
     - documentation
@@ -1951,23 +1951,23 @@
 - name: Zuplo (Web Portal)
   category: gui-editors
   language: Web / SaaS
-  link: https://www.zuplo.com 
+  link: https://www.zuplo.com
   description:
     Zuplo is an API gateway designed for developers. The web portal includes
     a route designer that allows you to design your API surface and supports export to
-    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1 
-    documents to create your gateway. 
+    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1
+    documents to create your gateway.
   v3: false
   v3_1: true
 
 - name: Zuplo (Docs)
-  category: documentation 
+  category: documentation
   language: TypeScript / JavaScript
   link: https://www.zuplo.com
   description:
     Zuplo is an API gateway designed for developers and includes a hosted developer portal
-    that includes Stripe-like documentation and integrated API-key management. You can design 
-    your API using the built-in route designer or import your OpenAPI v3.1 descriptions. 
+    that includes Stripe-like documentation and integrated API-key management. You can design
+    your API using the built-in route designer or import your OpenAPI v3.1 descriptions.
   v3: false
   v3_1: true
 
@@ -1991,7 +1991,7 @@
   v3: true
 
 - name: MkDocs Swagger UI Tag
-  category: documentation 
+  category: documentation
   language: Python
   link: https://blueswen.github.io/mkdocs-swagger-ui-tag/
   github: https://github.com/blueswen/mkdocs-swagger-ui-tag
@@ -2030,7 +2030,7 @@
   language: go
   github: https://github.com/daveshanley/vacuum
   description:
-    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and 
+    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and
     designed for enterprise-grade speed and scale.
   v2: true
   v3: true
@@ -2044,5 +2044,18 @@
   link: https://apigit.com
   description: native Git based collaboration platform for API document, Design, Mock and Sharing!
   v2: true
+  v3: true
+  v3_1: true
+
+- name: Api Studio
+  category:
+    - code-generators
+    - gui-editors
+    - dsl
+  language: '.NET'
+  link: https://marketplace.visualstudio.com/items?itemName=AndrewButson.ApiStudio
+  github: https://github.com/arbs-io/api-studio-visualstudio
+  description: Api Studio is a productivity extension for Microsoft Visual Studio. The extension bridges the role of architect and developer, providing rapid prototyping and promoting industry best practices.
+  v2: false
   v3: true
   v3_1: true
