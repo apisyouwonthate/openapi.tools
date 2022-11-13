@@ -2177,6 +2177,19 @@
   v3: true
   v3_1: true
 
+- name: ABAP OpenAPI Client & Server Generator
+  category:
+    - sdk
+    - server
+  language: ABAP
+  github: https://github.com/abap-openapi/abap-openapi 
+  link: https://abap-openapi.github.io/web-openapi-client/
+  description: 
+    ABAP OpenAPI Client & Server Generator written in ABAP. 
+    Code generation runs also in the Browser and on command line using NodeJS.
+  v3: true
+
+
 - name: Kusk Gateway
   category:
   - documentation
