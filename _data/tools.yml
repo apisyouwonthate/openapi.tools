@@ -364,13 +364,14 @@
   v3: true  
   v3_1: false
 
-- name: Bump
+- name: Bump.sh
   category: documentation
   link: https://bump.sh
   language: SaaS
+  github: https://github.com/bump-sh/cli
   description:
-    Bump generates elegant documentation and changelogs from your OpenAPI
-    specifications. Git diff, for your API.
+    Bump.sh generates elegant documentation and changelogs from your OpenAPI
+    specifications. Git diff, for your API. Integrates with CI and Slack.
   v2: true
   v3: true
   v3_1: true
