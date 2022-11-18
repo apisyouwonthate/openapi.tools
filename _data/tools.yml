@@ -366,7 +366,7 @@
 
 - name: Bump.sh
   category: documentation
-  link: https://bump.sh
+  link: https://bump.sh?utm_source=openapi_tools&utm_medium=referral&utm_campaign=openapi
   language: SaaS
   github: https://github.com/bump-sh/cli
   description:
