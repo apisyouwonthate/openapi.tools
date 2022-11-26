@@ -162,7 +162,7 @@
     with the Kong API Gateway
   v2: true
   v3: true
-  v3_1_link: https://github.com/Kong/insomnia/issues/4732
+  v3_1: true
 
 - name: RestCase Docs
   category: documentation
@@ -351,6 +351,7 @@
     fork of swagger-codegen)
   v2: true
   v3: true
+  v3_1_link: https://github.com/OpenAPITools/openapi-generator/issues/9083
 
 - name: FabriKt 
   category:
@@ -1133,14 +1134,14 @@
   description: Swagger Parser reads OpenAPI definitions into current Java POJOs.
   v2: true
   v3: true
+  v3_1_link: https://github.com/swagger-api/swagger-parser/pull/1730
 
-- name: BigstickCarpet/swagger-parser
+- name: APIDevTools/swagger-parser
   category: parsers
-  github: https://github.com/BigstickCarpet/swagger-parser
+  github: https://github.com/APIDevTools/swagger-parser
   language: Node.js
   description:
-    Swagger/OpenAPI 2.0 and 3.0 parser and validator. Can also bundle multiple
-    files into one via `$ref`.
+    OpenAPI 2.0 and 3.0 parser and validator. Can also bundle multiple documents into one via `$ref`.
   v2: true
   v3: true
 
@@ -1676,13 +1677,15 @@
   category:
     - miscellaneous
     - parsers
+    - converters
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
   description: > 
-    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
-    out flags, tags, methods, operationIDs.
+    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter 
+    out flags, tags, methods, operationIDs; including the option to convert an OpenAPI 3.0 document to an OpenAPI version 3.1.
   v3: true
+  v3_1: true
 
 - name: super-linter
   category: description-validators
