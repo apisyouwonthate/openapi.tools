@@ -162,7 +162,7 @@
     with the Kong API Gateway
   v2: true
   v3: true
-  v3_1_link: https://github.com/Kong/insomnia/issues/4732
+  v3_1: true
 
 - name: RestCase Docs
   category: documentation
