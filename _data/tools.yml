@@ -162,7 +162,7 @@
     with the Kong API Gateway
   v2: true
   v3: true
-  v3_1_link: https://github.com/Kong/insomnia/issues/4732
+  v3_1: true
 
 - name: RestCase Docs
   category: documentation
@@ -351,6 +351,7 @@
     fork of swagger-codegen)
   v2: true
   v3: true
+  v3_1_link: https://github.com/OpenAPITools/openapi-generator/issues/9083
 
 - name: FabriKt 
   category:
@@ -479,17 +480,6 @@
   description:
     OpenAPI 2.0/3.0.x intellisense, validator and linter for Visual Studio
     Code
-  v2: true
-  v3: true
-
-- name: RepreZen API Studio
-  category: gui-editors
-  language: Java
-  link: https://www.reprezen.com/
-  github:
-  description: |
-    RepreZen API Studio is an integrated workbench that brings API-first design into focus for your whole team, harmonizes your API designs, and
-    generates APIs that click into client apps.
   v2: true
   v3: true
 
@@ -1134,14 +1124,14 @@
   description: Swagger Parser reads OpenAPI definitions into current Java POJOs.
   v2: true
   v3: true
+  v3_1_link: https://github.com/swagger-api/swagger-parser/pull/1730
 
-- name: BigstickCarpet/swagger-parser
+- name: APIDevTools/swagger-parser
   category: parsers
-  github: https://github.com/BigstickCarpet/swagger-parser
+  github: https://github.com/APIDevTools/swagger-parser
   language: Node.js
   description:
-    Swagger/OpenAPI 2.0 and 3.0 parser and validator. Can also bundle multiple
-    files into one via `$ref`.
+    OpenAPI 2.0 and 3.0 parser and validator. Can also bundle multiple documents into one via `$ref`.
   v2: true
   v3: true
 
@@ -1677,13 +1667,15 @@
   category:
     - miscellaneous
     - parsers
+    - converters
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
   description: > 
-    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
-    out flags, tags, methods, operationIDs.
+    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter 
+    out flags, tags, methods, operationIDs; including the option to convert an OpenAPI 3.0 document to an OpenAPI version 3.1.
   v3: true
+  v3_1: true
 
 - name: super-linter
   category: description-validators
@@ -2049,3 +2041,18 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: libopenapi
+  category:
+    - parsers
+  link: https://github.com/pb33f/libopenapi
+  language: go
+  github: https://github.com/pb33f/libopenapi
+  description:
+    Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser for go. A complete toolset
+    for reading and parsing OpenAPI and Swagger specifications. 
+    Comes complete with high and low-level APIs, diff engine, index and resolver.
+  v2: true
+  v3: true
+  v3_1: true
+
