@@ -482,17 +482,6 @@
   v2: true
   v3: true
 
-- name: RepreZen API Studio
-  category: gui-editors
-  language: Java
-  link: https://www.reprezen.com/
-  github:
-  description: |
-    RepreZen API Studio is an integrated workbench that brings API-first design into focus for your whole team, harmonizes your API designs, and
-    generates APIs that click into client apps.
-  v2: true
-  v3: true
-
 - name: JetBrains tools (IntelliJ IDEA, PyCharm etc.)
   category: gui-editors
   language: Java, Python
