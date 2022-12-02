@@ -2040,3 +2040,18 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: libopenapi
+  category:
+    - parsers
+  link: https://github.com/pb33f/libopenapi
+  language: go
+  github: https://github.com/pb33f/libopenapi
+  description:
+    Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser for go. A complete toolset
+    for reading and parsing OpenAPI and Swagger specifications. 
+    Comes complete with high and low-level APIs, diff engine, index and resolver.
+  v2: true
+  v3: true
+  v3_1: true
+
