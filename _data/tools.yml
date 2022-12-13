@@ -499,6 +499,17 @@
   v2: true
   v3: true
 
+- name: VSCode/Redocly OpenAPI
+  category: text-editors
+  language: Node.js
+  link: https://marketplace.visualstudio.com/items?itemName=Redocly.openapi-vs-code
+  github: https://github.com/Redocly/redocly-vs-code
+  description:
+    Redocly OpenAPI is a Visual Studio Code extension that helps you write, validate, preview, and maintain your OpenAPI documents.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: JetBrains tools (IntelliJ IDEA, PyCharm etc.)
   category: gui-editors
   language: Java, Python
@@ -2138,4 +2149,3 @@
   v2: true
   v3: true
   v3_1: true
-
