@@ -2154,10 +2154,9 @@
 
 - name: Kusk Gateway
   category:
-  - miscellaneous
   - documentation
   - mock
-  - server
+  - gateway
   link: https://docs.kusk.io/
   github: https://github.com/kubeshop/kusk-gateway
   language: Kubernetes
