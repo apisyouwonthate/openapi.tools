@@ -1224,15 +1224,6 @@
   description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
   v3: true
 
-- name: Kusk
-  category:
-    - miscellaneous
-  link: https://kusk.io
-  github: https://github.com/kubeshop/kusk
-  language: Kubernetes
-  description: "Kusk makes your OpenAPI definition the source of truth for API resources in your cluster."
-  v3: true
-
 - name: openapi-psr7-validator
   category: data-validators
   github: https://github.com/thephpleague/openapi-psr7-validator
@@ -2169,7 +2160,7 @@
   - server
   link: https://docs.kusk.io/
   github: https://github.com/kubeshop/kusk-gateway
-  language: Go
+  language: Kubernetes
   description:
     Kusk-Gateway is an OpenAPI-driven API Gateway for Kubernetes. It empowers you to 
     develop, validate, mock and deploy your APIs in a matter of minutes using both 
