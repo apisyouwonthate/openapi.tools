@@ -573,7 +573,7 @@
     Reconstruct Open API Specifications from real-time workload traffic seamlessly.
   v2: true
   v3: false
-v3_link: https://github.com/apiclarity/apiclarity/issues/39
+  v3_link: https://github.com/apiclarity/apiclarity/issues/39
 
 - name: Meeshkan
   category:
@@ -1869,11 +1869,11 @@ v3_link: https://github.com/apiclarity/apiclarity/issues/39
   v3: true
   v3_1: true
 
-- name: Kusk
+- name: Kusk Gateway
   category: miscellaneous
   link: https://kubeshop.github.io/kusk/
-  github: https://github.com/kubeshop/kusk
+  github: https://github.com/kubeshop/kusk-gateway
   language: Go
-  description: Generate Kubernetes Ingress controller configurations from your OpenAPI description
+  description: Kusk-Gateway is an OpenAPI-driven API Gateway for Kubernetes
   v2: true
   v3: true
