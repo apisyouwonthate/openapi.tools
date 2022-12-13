@@ -1987,7 +1987,7 @@
     - sdk
     - converters
     - testing
-  link: https://goswagger.io/
+  link: https://counterfact.dev
   github: https://github.com/pmcelhaney/counterfact
   language: TypeScript / Node
   description:
