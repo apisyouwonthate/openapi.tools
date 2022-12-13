@@ -1914,6 +1914,38 @@
   v2: true
   v3: true
   v3_1: true
+  
+- name: Whook
+  category: server
+  link: https://github.com/nfroidure/whook
+  github: https://github.com/nfroidure/whook
+  language: Javascript / TypeScript
+  description:
+    OpenAPI 3 based NodeJS server.
+  v2: false
+  v3: true
+  v3_1: true
+  
+- name: openapi-ts-sdk-builder
+  category: sdk
+  link: https://github.com/nfroidure/openapi-ts-sdk-builder
+  github: https://github.com/nfroidure/openapi-ts-sdk-builder
+  language: Javascript / TypeScript
+  description:
+    Generate a TypeScript SDK from OpenAPI 3 definitions.
+  v2: false
+  v3: true
+  v3_1: true
+  
+- name: schema2dts
+  category: miscellaneous
+  link: https://github.com/nfroidure/schema2dts
+  github: https://github.com/nfroidure/schema2dts
+  language: Javascript / TypeScript
+  description:
+    Create types definitions from an OpenAPI schema.
+  v2: false
+  v3: true
 
 - name: Cherrybomb
   category: description-validators
