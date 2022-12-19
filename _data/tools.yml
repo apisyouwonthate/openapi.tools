@@ -154,7 +154,9 @@
   v3: true
 
 - name: Kong Enterprise Edition
-  category: documentation
+  category:
+    - documentation
+    - gateway
   link: https://konghq.com/kong-enterprise-edition/
   language: Lua
   description:
@@ -885,7 +887,9 @@
   v3: true
 
 - name: Fusio
-  category: server
+  category:
+    - server
+    - gateway
   language: PHP
   link: https://www.fusio-project.org/
   github: https://github.com/apioo/fusio
@@ -2026,7 +2030,9 @@
   v3_1: false
 
 - name: Zuplo (Web Portal)
-  category: gui-editors
+  category:
+    - gui-editors
+    - gateway
   language: Web / SaaS
   link: https://www.zuplo.com
   description:
