@@ -1697,7 +1697,7 @@
   category: converters
   github: https://github.com/postmanlabs/openapi-to-postman
   language: JavaScript
-  description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
+  description: "Convert OpenAPI and Swagger specs to the Postman Collection (v2) format"
   v2: true
   v3: true
   v3_1: true
