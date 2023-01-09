@@ -353,6 +353,22 @@
   v3: true
   v3_1_link: https://github.com/OpenAPITools/openapi-generator/issues/9083
 
+- name: Kiota Api Client Generator
+  category:
+    - code-generators
+    - sdk
+  link: https://microsoft.github.io/kiota/
+  language: C#
+  github: https://github.com/microsoft/kiota
+  description:
+    Kiota is a cross platform API Client code generator that is small, fast, 
+    and optimized for API consumers to find APIs and generate client code for just the
+    parts of the API that they need. One tool, for any OpenAPI described API, that delivers a consistent client
+    experience in multiple languages. 
+  v2: true
+  v3: true
+  v3_1: false
+
 - name: FabriKt 
   category:
     - code-generators
@@ -365,13 +381,14 @@
   v3: true  
   v3_1: false
 
-- name: Bump
+- name: Bump.sh
   category: documentation
-  link: https://bump.sh
+  link: https://bump.sh?utm_source=openapi_tools&utm_medium=referral&utm_campaign=openapi
   language: SaaS
+  github: https://github.com/bump-sh/cli
   description:
-    Bump generates elegant documentation and changelogs from your OpenAPI
-    specifications. Git diff, for your API.
+    Bump.sh generates elegant documentation and changelogs from your OpenAPI
+    specifications. Git diff, for your API. Integrates with CI and Slack.
   v2: true
   v3: true
   v3_1: true
@@ -482,16 +499,16 @@
   v2: true
   v3: true
 
-- name: RepreZen API Studio
-  category: gui-editors
-  language: Java
-  link: https://www.reprezen.com/
-  github:
-  description: |
-    RepreZen API Studio is an integrated workbench that brings API-first design into focus for your whole team, harmonizes your API designs, and
-    generates APIs that click into client apps.
+- name: VSCode/Redocly OpenAPI
+  category: text-editors
+  language: Node.js
+  link: https://marketplace.visualstudio.com/items?itemName=Redocly.openapi-vs-code
+  github: https://github.com/Redocly/redocly-vs-code
+  description:
+    Redocly OpenAPI is a Visual Studio Code extension that helps you write, validate, preview, and maintain your OpenAPI documents.
   v2: true
   v3: true
+  v3_1: true
 
 - name: JetBrains tools (IntelliJ IDEA, PyCharm etc.)
   category: gui-editors
@@ -1560,6 +1577,17 @@
     Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
   link: https://github.com/matusf/openapi-fuzzer
   v3: true 
+  
+- name: cats
+  category: security
+  language: Java
+  description:
+    CATS is a REST API Fuzzer and negative testing tool for OpenAPI endpoints. CATS automatically generates, 
+    runs and reports tests with minimum configuration and no coding effort. Tests are self-healing and do not require maintenance.
+  link: https://github.com/Endava/cats
+  v2: true
+  v3: true
+  v3_1: true
 
 - name: API Insights 
   category: security
@@ -1908,6 +1936,38 @@
   v2: true
   v3: true
   v3_1: true
+  
+- name: Whook
+  category: server
+  link: https://github.com/nfroidure/whook
+  github: https://github.com/nfroidure/whook
+  language: Javascript / TypeScript
+  description:
+    OpenAPI 3 based NodeJS server.
+  v2: false
+  v3: true
+  v3_1: true
+  
+- name: openapi-ts-sdk-builder
+  category: sdk
+  link: https://github.com/nfroidure/openapi-ts-sdk-builder
+  github: https://github.com/nfroidure/openapi-ts-sdk-builder
+  language: Javascript / TypeScript
+  description:
+    Generate a TypeScript SDK from OpenAPI 3 definitions.
+  v2: false
+  v3: true
+  v3_1: true
+  
+- name: schema2dts
+  category: miscellaneous
+  link: https://github.com/nfroidure/schema2dts
+  github: https://github.com/nfroidure/schema2dts
+  language: Javascript / TypeScript
+  description:
+    Create types definitions from an OpenAPI schema.
+  v2: false
+  v3: true
 
 - name: Cherrybomb
   category: description-validators
@@ -1942,6 +2002,16 @@
   v3: true
   v3_1: true
 
+- name: Typoas
+  category: sdk
+  link: https://github.com/Embraser01/typoas
+  github: https://github.com/Embraser01/typoas
+  language: Typescript
+  description:
+    Fully typed OpenAPI Typescript generator 
+  v2: false
+  v3: true
+  
 - name: Meta-API
   category: miscellaneous
   link: https://www.meta-api.io
@@ -1950,6 +2020,19 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: Karate-IDE
+  category: 
+    - converters
+    - testing
+    - mock
+  link: https://marketplace.visualstudio.com/items?itemName=KarateIDE.karate-ide
+  github: https://github.com/ivangsa/karate-ide
+  language: VSCode Extension
+  description:
+    Generates KarateDSL Tests and Mocks from OpenAPI 3.0 documents and so you can quickly test/explore your API.
+  v3: true
+  v3_1: false
 
 - name: Zuplo (Web Portal)
   category: gui-editors
@@ -2014,6 +2097,25 @@
   v2: false
   v3: true
   v3_1: true
+  
+  
+- name: Counterfact
+  category:
+    - parser
+    - sdk
+    - converters
+    - testing
+  link: https://counterfact.dev
+  github: https://github.com/pmcelhaney/counterfact
+  language: TypeScript / Node
+  description:
+    A new (July 2022) project that converts an OpenAPI document to a full implementation that runs on ts-node. The idea 
+    is to replace the auto-generated code that returns random values with realistic code, one path at a time. If the 
+    spec is updated, you can regenerate the types and let the type checker show you which parts of the implementation
+    need to be updated. The types can also be used in client-side code. 
+  v3: true
+  v3_1: true
+
 
 - name: Atlassian OpenAPI Request Validators
   category: testing
@@ -2061,3 +2163,29 @@
   link: https://specmatic.in/
   description: Specmatic enables teams to practice Contract-Driven Development by leveraging OpenAPI specifications as Executable Contracts to reduce time-to-market by allowing teams to build, test and deploy their MicroServices and MicroFrontends independently and Shift-Left the identification of compatibility issues between Components / Services in complex interdependent systems such as those built with MicroServices architecture. In the process it reduces / removes the need for Integration Testing.
   v3: true
+  
+- name: OpenAPI TypeScript
+  category: converters
+  language: TypeScript
+  description:
+    Convert static OpenAPI schemas to TypeScript types quickly using pure Node.js. Fast,
+    lightweight, (almost) dependency-free, and no Java/node-gyp/running OpenAPI servers
+    necessary.
+  link: https://github.com/drwpow/openapi-typescript
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: libopenapi
+  category:
+    - parsers
+  link: https://github.com/pb33f/libopenapi
+  language: go
+  github: https://github.com/pb33f/libopenapi
+  description:
+    Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser for go. A complete toolset
+    for reading and parsing OpenAPI and Swagger specifications. 
+    Comes complete with high and low-level APIs, diff engine, index and resolver.
+  v2: true
+  v3: true
+  v3_1: true
