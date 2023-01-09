@@ -2179,3 +2179,38 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: draig
+  category:
+    - sdk
+  link: https://gitlab.com/robarago/draig
+  language: Java
+  github: https://gitlab.com/robarago/draig
+  description:
+    DRAIG is an OpenAPI3 generator that creates NodeJS fully functional ExpressJS microservices
+    from an OAS API description document. DRAIG supports simple user-customizable templates for commands
+    (CRUD) and custom queries (parametric search) operations against a DB backend (MySQL, Oracle,
+    PostgresQL, Sqlite3) using Knex/Objection.js. Custom (extension) annotations provide implementation
+    details providing fully functional DB-backend microservices.
+  v2: false
+  v3: true
+  v3_1: false
+
+- name: draig-car
+  category:
+    - learning
+    - mock
+    - miscellaneous
+    - server
+    - testing
+  link: https://gitlab.com/robarago/draig-car
+  language: TypeScript
+  github: https://gitlab.com/robarago/draig-car
+  description:
+    CLI and REPL frontend of DRAIG: Provides both a CLI and an interactive Knex/Objection.js enabled
+    REPL to test your queries, create, modify and annotate your API description document, start and stop
+    database (containers), generate fake data automatically and start and test your microservice
+    without exiting your REPL.
+  v2: false
+  v3: true
+  v3_1: false
