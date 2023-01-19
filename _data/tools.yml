@@ -2207,7 +2207,7 @@
   language: TypeScript
   github: https://gitlab.com/robarago/draig-car
   description:
-    CLI and REPL frontend of DRAIG: Provides both a CLI and an interactive Knex/Objection.js enabled
+    CLI and REPL frontend of DRAIG. Provides both a CLI and an interactive Knex/Objection.js enabled
     REPL to test your queries, create, modify and annotate your API description document, start and stop
     database (containers), generate fake data automatically and start and test your microservice
     without exiting your REPL.
