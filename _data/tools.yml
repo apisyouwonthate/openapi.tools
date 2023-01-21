@@ -2189,7 +2189,6 @@
     Code generation runs also in the Browser and on command line using NodeJS.
   v3: true
 
-
 - name: Kusk Gateway
   category:
   - documentation
