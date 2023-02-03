@@ -27,11 +27,11 @@
   slug: gui-editors
 
 - name: Learning
-  description: Whether you're trying to get documentation for a third party API based on traffic, or are trying to switch to design-first at an organization with no OpenAPI at all, learning can help you move your API spec forward and keep it up to date. 
+  description: Whether you're trying to get documentation for a third party API based on traffic, or are trying to switch to design-first at an organization with no OpenAPI at all, learning can help you move your API spec forward and keep it up to date.
   slug: learning
 
 - name: Mock Servers
-  description: Fake servers that take description document as input, then route incoming HTTP requests to example responses or dynamically generates examples. 
+  description: Fake servers that take description document as input, then route incoming HTTP requests to example responses or dynamically generates examples.
   slug: mock
 
 - name: Description Validators
@@ -61,3 +61,7 @@
 - name: Testing
   description: Quickly execute API requests and validate responses on the fly through command line or GUI interfaces.
   slug: testing
+
+- name: Gateways
+  description: API Gateways and related tools that have integrated support for OpenAPI.
+  slug: gateway
