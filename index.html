@@ -10,10 +10,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta
+      name="description"
+      content="OpenAPI.tools is a comprehensive and open
+    source list of resources for developers working with Open API."
+    />
+    <meta name="author" content="APIs You Won't Hate" />
+    <link rel="canonical" href="https://openapi.tools" />
     <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico" />
-    <title>OpenAPI.Tools</title>
+    <title>
+      OpenAPI.Tools - an Open Source list of great tools for Open API
+    </title>
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
     <link
@@ -97,8 +104,12 @@
         </div>
 
         {% for category in site.data.categories %}
-        <div id="{{ category.slug }}">
-          <h2><a name="{{ category.slug }}">{{ category.name }}</a></h2>
+        <div>
+          <h2 id="{{ category.slug }}">
+            <a href="#{{ category.slug }}" name="{{ category.slug }}"
+              >{{ category.name }}</a
+            >
+          </h2>
           <p class="lead">{{ category.description }}</p>
           <table class="table table-striped">
             <thead class="thead-inverse">
