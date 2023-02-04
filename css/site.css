@@ -37,6 +37,10 @@ body {
   max-width: 40rem;
 }
 
+.jumbotron .btn-primary {
+  font-size: larger;
+}
+
 .content {
   background-color: #f7f7f7;
   padding-bottom: 3rem;
@@ -49,6 +53,7 @@ body {
   background-color: #4c844e;
   border: 0;
   color: #fff;
+  text-decoration: none;
 }
 
 .btn-secondary,
