@@ -359,9 +359,9 @@
   category:
     - code-generators
     - sdk
-  link: https://github.com/openapi-json-schema-tools/
+  link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
   language: Python
-  github: https://github.com/openapi-json-schema-tools/
+  github: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
   description:
     A template-driven engine to generate API client code + documentation
     by parsing your OpenAPI Description
