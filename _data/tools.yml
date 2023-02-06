@@ -2007,15 +2007,6 @@
   v2: false
   v3: true
 
-- name: Meta-API
-  category: miscellaneous
-  link: https://www.meta-api.io
-  language: SaaS
-  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
-  v2: true
-  v3: true
-  v3_1: true
-
 - name: Karate-IDE
   category:
     - converters
