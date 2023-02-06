@@ -16,7 +16,7 @@ body {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 0;
-  background-color: #89709B;
+  background-color: #89709b;
   color: #fff;
 }
 
@@ -29,12 +29,16 @@ body {
 }
 
 .jumbotron-heading {
-  font-family: "Arvo",serif;
+  font-family: 'Arvo', serif;
   font-weight: 300;
 }
 
 .jumbotron .container {
   max-width: 40rem;
+}
+
+.jumbotron .btn-primary {
+  font-size: larger;
 }
 
 .content {
@@ -43,13 +47,18 @@ body {
   padding-top: 3rem;
 }
 
-.btn-primary, .btn-primary:active, .btn-primary:hover {
+.btn-primary,
+.btn-primary:active,
+.btn-primary:hover {
   background-color: #4c844e;
   border: 0;
   color: #fff;
+  text-decoration: none;
 }
 
-.btn-secondary, .btn-secondary:active, .btn-secondary:hover {
+.btn-secondary,
+.btn-secondary:active,
+.btn-secondary:hover {
   background-color: #80b682;
   border: 0;
   color: #fff;
@@ -63,15 +72,19 @@ footer {
 
 footer p {
   color: #fff;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
-header a, footer a {
+header a,
+footer a {
   color: #fff;
   font-weight: bold;
   text-decoration: underline dotted;
 }
-header a:hover, header a:visited, footer a:hover, footer a:visited {
+header a:hover,
+header a:visited,
+footer a:hover,
+footer a:visited {
   color: #ddd;
 }
 
@@ -81,15 +94,16 @@ header a:hover, header a:visited, footer a:hover, footer a:visited {
 }
 
 #carbonads {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
-  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
 }
 
 #carbonads {
   display: flex;
   max-width: 330px;
   background-color: hsl(0, 0%, 98%);
-  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, .1);
+  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
   margin-left: auto;
   margin-right: auto;
 }
@@ -133,11 +147,33 @@ header a:hover, header a:visited, footer a:hover, footer a:visited {
 .carbon-poweredby {
   display: block;
   padding: 8px 10px;
-  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 5px,
+      hsla(0, 0%, 0%, 0.025) 5px,
+      hsla(0, 0%, 0%, 0.025) 10px
+    )
+    hsla(203, 11%, 95%, 0.4);
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   font-weight: 600;
   font-size: 9px;
   line-height: 1;
+}
+
+.btn-pink {
+  background-color: #ff00bd;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+a.pink {
+  color: #ff00bd;
+}
+
+.sponsor {
+  margin-bottom: 2rem;
 }
