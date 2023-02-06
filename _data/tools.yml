@@ -360,15 +360,13 @@
     - code-generators
     - sdk
   link: https://github.com/openapi-json-schema-tools/
-  language: Java
+  language: Python
   github: https://github.com/openapi-json-schema-tools/
   description:
-    A template-driven engine to generate documentation, API clients and
-    in different languages by parsing your OpenAPI Description (community-driven
-    fork of openapi-generator)
+    A template-driven engine to generate API client code + documentation
+    by parsing your OpenAPI Description
   v2: false
   v3: true
-  v3_1: false
   v3_1_link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator/issues/131
 
 - name: Kiota Api Client Generator
