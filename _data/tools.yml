@@ -11,7 +11,7 @@
   language: Go
   github: https://github.com/opticdev/optic
   link: https://www.useoptic.com/docs/openapi-diff
-  description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.  
+  description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.
   v3: true
   v3_1: true
 
@@ -154,7 +154,9 @@
   v3: true
 
 - name: Kong Enterprise Edition
-  category: documentation
+  category:
+    - documentation
+    - gateway
   link: https://konghq.com/kong-enterprise-edition/
   language: Lua
   description:
@@ -364,12 +366,12 @@
     Kiota is a cross platform API Client code generator that is small, fast, 
     and optimized for API consumers to find APIs and generate client code for just the
     parts of the API that they need. One tool, for any OpenAPI described API, that delivers a consistent client
-    experience in multiple languages. 
+    experience in multiple languages.
   v2: true
   v3: true
   v3_1: false
 
-- name: FabriKt 
+- name: FabriKt
   category:
     - code-generators
     - sdk
@@ -378,7 +380,7 @@
   github: https://github.com/cjbooms/fabrikt
   description:
     A sophisticated Kotlin code generation library capable of generating Jackson-annotated data classes, Spring Controller interfaces, and fault-tolerant OkHttp clients. Written in Kotlin, this library programatically generates code and is capable of handling advanced OpenApi3 specification features such as polymorphism.
-  v3: true  
+  v3: true
   v3_1: false
 
 - name: Bump.sh
@@ -607,7 +609,7 @@
   link: https://useoptic.com
   github: https://github.com/opticdev/optic
   description:
-    Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior. 
+    Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior.
   v3: true
   v3_1: true
 
@@ -885,7 +887,9 @@
   v3: true
 
 - name: Fusio
-  category: server
+  category:
+    - server
+    - gateway
   language: PHP
   link: https://www.fusio-project.org/
   github: https://github.com/apioo/fusio
@@ -1008,7 +1012,7 @@
   language: Node.js
   description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
   v3: true
-  
+
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
@@ -1051,7 +1055,7 @@
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
-  
+
 - name: "@redocly/openapi-cli"
   category:
     - description-validators
@@ -1222,15 +1226,6 @@
   github: https://github.com/getkin/kin-openapi
   language: Go
   description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
-  v3: true
-
-- name: Kusk
-  category:
-    - miscellaneous
-  link: https://kusk.io
-  github: https://github.com/kubeshop/kusk
-  language: Kubernetes
-  description: "Kusk makes your OpenAPI definition the source of truth for API resources in your cluster."
   v3: true
 
 - name: openapi-psr7-validator
@@ -1569,15 +1564,15 @@
   link: https://42crunch.com/
   v2: true
   v3: true
-  
+
 - name: openapi-fuzzer
   category: security
   language: Rust
   description:
     Based on OpenAPI specification, openapi-fuzzer provides random data as inputs to the API endpoints in order to find bugs.
   link: https://github.com/matusf/openapi-fuzzer
-  v3: true 
-  
+  v3: true
+
 - name: cats
   category: security
   language: Java
@@ -1589,7 +1584,7 @@
   v3: true
   v3_1: true
 
-- name: API Insights 
+- name: API Insights
   category: security
   language: SaaS
   description:
@@ -1598,7 +1593,7 @@
   link: https://restcase.com/platform/security
   v2: true
   v3: true
-  
+
 - name: OpenAPI Schema to JSON Schema
   category: converters
   language: TypeScript
@@ -1895,7 +1890,7 @@
   description:
     OAuth2 token endpoint described with OAS3 schema. All grants documented. Can be installed as NPM or Composer package.
   v3: true
-  
+
 - name: Mayhem for API
   category:
     - testing
@@ -1917,7 +1912,7 @@
   description:
     A Perl library which validates request/response according to an OpenAPI specification
   v3: true
-  
+
 - name: openapi-python-client
   category: converters
   link: https://github.com/openapi-generators/openapi-python-client
@@ -1925,7 +1920,7 @@
   language: Python
   description: Generate modern Python clients from OpenAPI 3.0 documents.
   v3: true
-  
+
 - name: Elements
   category: documentation
   link: https://stoplight.io/open-source/elements
@@ -1936,7 +1931,7 @@
   v2: true
   v3: true
   v3_1: true
-  
+
 - name: Whook
   category: server
   link: https://github.com/nfroidure/whook
@@ -1947,7 +1942,7 @@
   v2: false
   v3: true
   v3_1: true
-  
+
 - name: openapi-ts-sdk-builder
   category: sdk
   link: https://github.com/nfroidure/openapi-ts-sdk-builder
@@ -1958,7 +1953,7 @@
   v2: false
   v3: true
   v3_1: true
-  
+
 - name: schema2dts
   category: miscellaneous
   link: https://github.com/nfroidure/schema2dts
@@ -1987,9 +1982,9 @@
   v2: true
   v3: true
   v3_1: true
-   
+
 - name: BlocklyAutomation
-  category: 
+  category:
     - code-generators
     - sdk
     - documentation
@@ -2008,21 +2003,12 @@
   github: https://github.com/Embraser01/typoas
   language: Typescript
   description:
-    Fully typed OpenAPI Typescript generator 
+    Fully typed OpenAPI Typescript generator
   v2: false
   v3: true
-  
-- name: Meta-API
-  category: miscellaneous
-  link: https://www.meta-api.io
-  language: SaaS
-  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
-  v2: true
-  v3: true
-  v3_1: true
 
 - name: Karate-IDE
-  category: 
+  category:
     - converters
     - testing
     - mock
@@ -2035,25 +2021,27 @@
   v3_1: false
 
 - name: Zuplo (Web Portal)
-  category: gui-editors
+  category:
+    - gui-editors
+    - gateway
   language: Web / SaaS
-  link: https://www.zuplo.com 
+  link: https://www.zuplo.com
   description:
     Zuplo is an API gateway designed for developers. The web portal includes
     a route designer that allows you to design your API surface and supports export to
     OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1 
-    documents to create your gateway. 
+    documents to create your gateway.
   v3: false
   v3_1: true
 
 - name: Zuplo (Docs)
-  category: documentation 
+  category: documentation
   language: TypeScript / JavaScript
   link: https://www.zuplo.com
   description:
     Zuplo is an API gateway designed for developers and includes a hosted developer portal
     that includes Stripe-like documentation and integrated API-key management. You can design 
-    your API using the built-in route designer or import your OpenAPI v3.1 descriptions. 
+    your API using the built-in route designer or import your OpenAPI v3.1 descriptions.
   v3: false
   v3_1: true
 
@@ -2077,7 +2065,7 @@
   v3: true
 
 - name: MkDocs Swagger UI Tag
-  category: documentation 
+  category: documentation
   language: Python
   link: https://blueswen.github.io/mkdocs-swagger-ui-tag/
   github: https://github.com/blueswen/mkdocs-swagger-ui-tag
@@ -2147,12 +2135,22 @@
     - mock
     - gui-editors
   language: SaaS
-  github: https://github.com/apigitlabs 
+  github: https://github.com/apigitlabs
   link: https://apigit.com
   description: native Git based collaboration platform for API design, document, mock and share.
   v2: true
   v3: true
   v3_1: true
+
+- name: RESTler
+  category:
+    - security
+    - testing
+  language: Any
+  github: https://github.com/microsoft/restler
+  description: RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. RESTler analyzes the OpenAPI description of a cloud service, and then generates and executes tests that exercise the service through its REST API.  During testing, it checks for specific classes of bugs and dynamically learns how the service behaves from prior service responses.
+  v2: true
+  v3: true
   
 - name: OpenAPI TypeScript
   category: converters
@@ -2214,3 +2212,27 @@
   v2: false
   v3: true
   v3_1: false
+
+- name: Kusk Gateway
+  category:
+  - documentation
+  - mock
+  - gateway
+  link: https://docs.kusk.io/
+  github: https://github.com/kubeshop/kusk-gateway
+  language: Kubernetes
+  description:
+    Kusk-Gateway is an OpenAPI-driven API Gateway for Kubernetes. It empowers you to 
+    develop, validate, mock and deploy your APIs in a matter of minutes using both 
+    manual and automated GitOps/APIOps workflows.
+  v2: true
+  v3: true
+  v3_1: false
+
+- name: openapi-comparator
+  category: miscellaneous
+  language: C#
+  github: https://github.com/criteo/openapi-comparator
+  link: https://github.com/criteo/openapi-comparator
+  description: C# library for comparing two OpenAPI specifications.
+  v3: true
