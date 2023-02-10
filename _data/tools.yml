@@ -1069,6 +1069,18 @@
   v3: true
   v3_1: true
 
+- name: "at-your-service"
+  category:
+    - miscellaneous
+  link: https://atyourservice.awalsh.io/
+  github: https://github.com/AndrewWalsh/at-your-service
+  language: TypeScript
+  description:
+    A developer tool for API observability on the browser. Generate OpenAPI specifications and code from network traffic
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: openapi-validator-middleware
   category:
     - data-validators
