@@ -6,6 +6,14 @@
   v3: true
   v3_1: false
 
+- name: openapi.security
+  category: security
+  language: SaaS
+  link: https://openapi.security
+  description: Quickly check the security of any OpenAPI-based API. No signup or email required.
+  v3: true
+  v3_1: true
+
 - name: optic diff
   category: miscellaneous
   language: Go
