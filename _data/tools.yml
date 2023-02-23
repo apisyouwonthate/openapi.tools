@@ -2576,3 +2576,22 @@
     Configuration is driven by Kubernetes CRDs, labels, and selectors for effective GitOps.
   v2: true
   v3: true
+
+- name: OpenAPI::Modern
+  category:
+    - description-validators
+    - data-validators
+  github: https://github.com/karenetheridge/OpenAPI-Modern
+  link: https://metacpan.org/dist/OpenAPI-Modern
+  language: Perl
+  description: OpenAPI v3.1 validator and JSON Schema validator (draft7, draft2019-09, draft2020-12)
+  v3_1: true
+
+- name: Mojolicious::Plugin::OpenAPI::Modern
+  category:
+    - server
+  github: https://github.com/karenetheridge/Mojolicious-Plugin-OpenAPI-Modern
+  link: https://metacpan.org/dist/Mojolicious-Plugin-OpenAPI-Modern
+  language: Perl
+  description: Mojolicious plugin for OpenAPI::Modern
+  v3_1: true
