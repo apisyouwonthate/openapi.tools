@@ -2201,3 +2201,13 @@
   link: https://github.com/criteo/openapi-comparator
   description: C# library for comparing two OpenAPI specifications.
   v3: true
+  
+  - name: Theneo
+  category: documentation
+  link: https://theneo.io/
+  language: SaaS
+  description: Stripe-like API Docs in just a few clicks, leverage generative AI to generate API docs.
+  v2: true
+  v3: true
+  v3_1: true
+  
