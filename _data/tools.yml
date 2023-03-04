@@ -2007,15 +2007,6 @@
   v2: false
   v3: true
 
-- name: Meta-API
-  category: miscellaneous
-  link: https://www.meta-api.io
-  language: SaaS
-  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
-  v2: true
-  v3: true
-  v3_1: true
-
 - name: Karate-IDE
   category:
     - converters
@@ -2151,6 +2142,16 @@
   v3: true
   v3_1: true
 
+- name: RESTler
+  category:
+    - security
+    - testing
+  language: Any
+  github: https://github.com/microsoft/restler
+  description: RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. RESTler analyzes the OpenAPI description of a cloud service, and then generates and executes tests that exercise the service through its REST API.  During testing, it checks for specific classes of bugs and dynamically learns how the service behaves from prior service responses.
+  v2: true
+  v3: true
+  
 - name: OpenAPI TypeScript
   category: converters
   language: TypeScript
@@ -2192,6 +2193,14 @@
   v2: true
   v3: true
   v3_1: false
+
+- name: openapi-comparator
+  category: miscellaneous
+  language: C#
+  github: https://github.com/criteo/openapi-comparator
+  link: https://github.com/criteo/openapi-comparator
+  description: C# library for comparing two OpenAPI specifications.
+  v3: true
 
 - name: Specmatic
   category:
