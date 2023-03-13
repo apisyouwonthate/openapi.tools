@@ -20,4 +20,4 @@ $ bundle exec jekyll serve
 4. We try talk about "Description Documents" instead of "Specs" for [reasons][overloaded-terms].
 5. Send a pull request and make sure the build doesn't break!
 
-[overloaded-terms]: https://www.apisyouwonthate.com/blog/resolving-overloaded-terms-for-api-specifications-descriptions-contract/
+[overloaded-terms]: https://apisyouwonthate.com/blog/resolving-overloaded-terms-for-api-specifications-descriptions-contracts
