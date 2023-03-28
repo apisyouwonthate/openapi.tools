@@ -1237,7 +1237,7 @@
     writing a bunch of code, by registering this middleware and pointing it at your
     API description document.
   v3: true
-  v3_1_link: https://github.com/thephpleague/openapi-psr7-validator/issues/163
+  v3_1: true
 
 - name: php-openapi
   category:
