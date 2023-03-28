@@ -1813,6 +1813,7 @@
   description: Strengthen your API tests by validating HttpFoundation responses against OpenAPI definitions
   github: https://github.com/osteel/openapi-httpfoundation-testing
   v3: true
+  v3_1: true
 
 - name: VSCode OpenAPI Snippets
   category: text-editors
