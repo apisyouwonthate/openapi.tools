@@ -2191,3 +2191,14 @@
   link: https://github.com/criteo/openapi-comparator
   description: C# library for comparing two OpenAPI specifications.
   v3: true
+
+- name: openapi-url-resolver
+  category: parsers
+  link: https://www.npmjs.com/package/openapi-url-resolver
+  github: https://github.com/vinitshahdeo/openapi-url-resolver
+  language: Node.js
+  description:
+    A lightweight NPM package that provides a simple and efficient way to resolve server URLs 
+    from OpenAPI documents.
+  v3: true
+  v3_1: true
