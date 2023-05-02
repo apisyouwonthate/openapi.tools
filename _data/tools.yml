@@ -2191,3 +2191,20 @@
   link: https://github.com/criteo/openapi-comparator
   description: C# library for comparing two OpenAPI specifications.
   v3: true
+
+- name: Hot Potato
+  category:
+    - data-validators
+    - description-validators
+    - server
+    - testing
+  language: C#
+  link: https://github.com/davidmbillie/Hot-Potato
+  github: https://github.com/davidmbillie/Hot-Potato
+  description:
+    A reverse proxy that validates responses against an OpenAPI specification.
+    It can be used as either a standalone .NET tool, or installed as 
+    NuGet packages for an ASP.NET Core integration testing project.
+  v2: true
+  v3: true
+  v3_1: true
