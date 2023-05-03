@@ -2202,7 +2202,7 @@
   link: https://github.com/davidmbillie/Hot-Potato
   github: https://github.com/davidmbillie/Hot-Potato
   description:
-    A reverse proxy that validates responses against an OpenAPI specification.
+    A reverse proxy that validates responses against an OpenAPI description.
     It can be used as either a standalone .NET tool, or installed as 
     NuGet packages for an ASP.NET Core integration testing project.
   v2: true
