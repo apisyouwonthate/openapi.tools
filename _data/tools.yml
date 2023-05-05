@@ -1442,6 +1442,7 @@
     - converters
   language: JavaScript, TypeScript
   github: https://github.com/readmeio/api
+  link: https://api.readme.dev
   description:
     Magical SDK generation from an OpenAPI definition
   v2: true
