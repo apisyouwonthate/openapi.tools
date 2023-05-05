@@ -125,6 +125,7 @@
 - name: ReadMe
   category: documentation
   link: https://readme.com
+  github: https://github.com/readmeio
   language: SaaS
   description: Interactive developer hubs that help users succeed with your APIs 🦉
   v2: true
