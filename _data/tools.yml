@@ -1237,7 +1237,7 @@
     writing a bunch of code, by registering this middleware and pointing it at your
     API description document.
   v3: true
-  v3_1_link: https://github.com/thephpleague/openapi-psr7-validator/issues/163
+  v3_1: true
 
 - name: php-openapi
   category:
@@ -1813,6 +1813,7 @@
   description: Strengthen your API tests by validating HttpFoundation responses against OpenAPI definitions
   github: https://github.com/osteel/openapi-httpfoundation-testing
   v3: true
+  v3_1: true
 
 - name: VSCode OpenAPI Snippets
   category: text-editors
@@ -2020,29 +2021,18 @@
   v3: true
   v3_1: false
 
-- name: Zuplo (Web Portal)
+- name: Zuplo (OpenAPI-based gateway and documentation)
   category:
     - gui-editors
     - gateway
+    - documentation
   language: Web / SaaS
   link: https://www.zuplo.com
   description:
-    Zuplo is an API gateway designed for developers. The web portal includes
-    a route designer that allows you to design your API surface and supports export to
-    OpenAPI v3.1, and integrates with GitHub. You can also import OpenAPI v3.1 
-    documents to create your gateway.
-  v3: false
-  v3_1: true
-
-- name: Zuplo (Docs)
-  category: documentation
-  language: TypeScript / JavaScript
-  link: https://www.zuplo.com
-  description:
-    Zuplo is an API gateway designed for developers and includes a hosted developer portal
-    that includes Stripe-like documentation and integrated API-key management. You can design 
-    your API using the built-in route designer or import your OpenAPI v3.1 descriptions.
-  v3: false
+    Zuplo is an API gateway designed for developers. Natively powered by OpenAPI (3.1 or 3.0), zuplo offers an OpenAPI design
+    surface, API documentation and a serverless, programmable edge gateway that includes request validation, auth, rate-limiting
+    and more.
+  v3: true
   v3_1: true
 
 - name: kotlin-openapi3-dsl
