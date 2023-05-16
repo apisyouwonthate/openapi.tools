@@ -2191,3 +2191,16 @@
   link: https://github.com/criteo/openapi-comparator
   description: C# library for comparing two OpenAPI specifications.
   v3: true
+
+- name: openapi-transformer-toolkit
+  category: converters
+  language: JavaScript
+  description: 
+    Automate design-first API workflows by generating JSON-schemas
+    and TypeScript types from OpenAPI specs.
+  link: https://www.npmjs.com/package/openapi-transformer-toolkit
+  github: https://github.com/nearform/openapi-transformer-toolkit
+  v2: true
+  v3: true
+  v3_1: true
+  
