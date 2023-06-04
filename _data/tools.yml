@@ -8,9 +8,9 @@
 
 - name: optic diff
   category: miscellaneous
-  language: Go
+  language: Node
   github: https://github.com/opticdev/optic
-  link: https://www.useoptic.com/docs/openapi-diff
+  link: https://www.useoptic.com/docs/diff-openapi
   description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.
   v3: true
   v3_1: true
