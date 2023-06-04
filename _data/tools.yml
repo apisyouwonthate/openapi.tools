@@ -366,6 +366,20 @@
   v3: true
   v3_1_link: https://github.com/OpenAPITools/openapi-generator/issues/9083
 
+- name: OpenAPI JSON Schema Generator
+  category:
+    - code-generators
+    - sdk
+  link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+  language: Python
+  github: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+  description:
+    A template-driven engine to generate API client code + documentation
+    by parsing your OpenAPI Description
+  v2: false
+  v3: true
+  v3_1_link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator/issues/131
+
 - name: Kiota Api Client Generator
   category:
     - code-generators
@@ -2280,6 +2294,22 @@
   v3: true
   v3_1: true
 
+- name: Fitting
+  category:
+    - testing
+    - data-validators
+    - learning
+  language: Ruby
+  github: https://github.com/funbox/fitting
+  link: https://github.com/funbox/fitting
+  description:
+    Library add improve test log for RSpec and WebMock,
+    validate its according to API Blueprint and Open API,
+    show the documentation coverage with log.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: kubb
   category:
     - code-generators
@@ -2291,3 +2321,4 @@
   v2: true
   v3: true
   v3_1: true
+  
