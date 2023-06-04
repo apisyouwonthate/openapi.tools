@@ -2280,3 +2280,18 @@
   v3: true
   v3_1: true
 
+- name: Fitting
+  category:
+    - testing
+    - data-validators
+    - learning
+  language: Ruby
+  github: https://github.com/funbox/fitting
+  link: https://github.com/funbox/fitting
+  description:
+    Library add improve test log for RSpec and WebMock,
+    validate its according to API Blueprint and Open API,
+    show the documentation coverage with log.
+  v2: true
+  v3: true
+  v3_1: true
