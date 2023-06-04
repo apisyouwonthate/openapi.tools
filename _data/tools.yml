@@ -366,6 +366,20 @@
   v3: true
   v3_1_link: https://github.com/OpenAPITools/openapi-generator/issues/9083
 
+- name: OpenAPI JSON Schema Generator
+  category:
+    - code-generators
+    - sdk
+  link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+  language: Python
+  github: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+  description:
+    A template-driven engine to generate API client code + documentation
+    by parsing your OpenAPI Description
+  v2: false
+  v3: true
+  v3_1_link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator/issues/131
+
 - name: Kiota Api Client Generator
   category:
     - code-generators
