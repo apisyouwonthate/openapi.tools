@@ -1,3 +1,13 @@
+- name: readmeio/oas
+  category: dsl
+  language: TypeScript / CLI
+  description:
+    A language-agnostic tool for documenting your API right from your code, generating an OpenAPI Definition.
+  link: https://github.com/readmeio/oas
+  v2: true
+  v3: true
+  v3_1: false
+
 - name: oasdiff
   category: miscellaneous
   language: Go
@@ -8,9 +18,9 @@
 
 - name: optic diff
   category: miscellaneous
-  language: Go
+  language: Node
   github: https://github.com/opticdev/optic
-  link: https://www.useoptic.com/docs/openapi-diff
+  link: https://www.useoptic.com/docs/diff-openapi
   description: Diff the effective API contract between any two versions of your OpenAPI description. Exit 1 on breaking changes.
   v3: true
   v3_1: true
@@ -125,8 +135,9 @@
 - name: ReadMe
   category: documentation
   link: https://readme.com
+  github: https://github.com/readmeio
   language: SaaS
-  description: Build beautiful, personalized, interactive developer hubs. 🦉
+  description: Interactive developer hubs that help users succeed with your APIs 🦉
   v2: true
   v3: true
   v3_1: true
@@ -217,9 +228,9 @@
 - name: ReDoc
   category: documentation
   language: React.js
-  github: https://github.com/Rebilly/ReDoc/
-  link: https://rebilly.github.io/ReDoc/
-  description: OpenAPI-generated API Reference Documentation
+  github: https://github.com/Redocly/ReDoc/
+  link: https://redocly.github.io/redoc/
+  description: Open source API reference docs from OpenAPI descriptions
   v2: true
   v3: true
   v3_1: true
@@ -552,6 +563,7 @@
     "
   v2: true
   v3: true
+  v3_1: true
 
 - name: Apitive Studio
   category: gui-editors
@@ -1056,12 +1068,12 @@
   v2: true
   v3: true
 
-- name: "@redocly/openapi-cli"
+- name: "@redocly/redocly-cli"
   category:
     - description-validators
     - miscellaneous
-  link: https://redoc.ly/openapi-cli
-  github: https://github.com/Redocly/openapi-cli
+  link: https://redoc.ly/redocly-cli
+  github: https://github.com/Redocly/redocly-cli
   language: CLI & TypeScript/JavaScript
   description:
     OpenAPI 3 CLI toolbox with rich validation and bundling features.
@@ -1106,18 +1118,6 @@
     incoming requests and outgoing responses, and simplify response building. You
     can even produce mock data.
   v2: true
-  v3: true
-
-- name: openapi4j
-  category:
-    - data-validators
-    - schema-validators
-    - parsers
-  github: https://github.com/openapi4j/openapi4j
-  language: Java
-  description:
-    Parse Description Document, validate API requests and responses using
-    OpenAPI 3.x.
   v3: true
 
 - name: oas-tools
@@ -1319,6 +1319,15 @@
   v3: true
   v3_1: true
 
+- name: docler-labs/api-client-generator
+  category: sdk
+  language: PHP
+  github: https://github.com/DoclerLabs/api-client-generator
+  description:
+    API client generator is a console application capable of auto-generating a PSR18/PSR7 API client based on OpenAPI
+    specification according to PHP best practices and your code style standards.
+  v3: true
+
 - name: janephp/open-api
   category: sdk
   language: PHP
@@ -1425,16 +1434,42 @@
   description: Utility for comparing two OpenAPI specifications.
   v3: true
 
-- name: "$ oas (CLI)"
+- name: oas
   category: miscellaneous
-  language: JavaScript
-  link: https://openap.is
+  language: JavaScript, TypeScript
   github: https://github.com/readmeio/oas
   description:
-    Generate OAS files from code comments and easily host them ($ npm install
-    oas -g)
+    Comprehensive tooling for working with OpenAPI definitions
   v2: true
   v3: true
+  v3_1: true
+
+- name: api
+  category:
+    - parsers
+    - description-validators
+    - converters
+  language: JavaScript, TypeScript
+  github: https://github.com/readmeio/api
+  link: https://api.readme.dev
+  description:
+    Magical SDK generation from an OpenAPI definition
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: oas-normalize
+  category:
+    - parsers
+    - description-validators
+    - converters
+  language: JavaScript, TypeScript
+  github: https://github.com/readmeio/oas-normalize
+  description:
+    Tooling for converting, validating, and parsing OpenAPI, Swagger, and Postman API definitions
+  v2: true
+  v3: true
+  v3_1: true
 
 - name: openapi-cli-tool
   category: miscellaneous
@@ -1692,8 +1727,10 @@
   category: converters
   github: https://github.com/postmanlabs/openapi-to-postman
   language: JavaScript
-  description: "Convert OpenAPI 3.0 specs to the Postman Collection (v2) format"
+  description: "Convert OpenAPI and Swagger specs to the Postman Collection (v2) format"
+  v2: true
   v3: true
+  v3_1: true
   v3_link: true
 
 - name: openapi-format
@@ -2124,10 +2161,11 @@
     - documentation
     - mock
     - gui-editors
+    - testing
   language: SaaS
   github: https://github.com/apigitlabs
   link: https://apigit.com
-  description: native Git based collaboration platform for API design, document, mock and share.
+  description: the native Git based collaboration platform for API design, document, mock, testing and share.
   v2: true
   v3: true
   v3_1: true
@@ -2157,16 +2195,28 @@
 - name: libopenapi
   category:
     - parsers
-  link: https://github.com/pb33f/libopenapi
+  link: https://pb33f.io/libopenapi
   language: go
   github: https://github.com/pb33f/libopenapi
   description:
-    Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser for go. A complete toolset
+    Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser library for go. A complete toolset
     for reading and parsing OpenAPI and Swagger specifications. 
     Comes complete with high and low-level APIs, diff engine, index and resolver.
   v2: true
   v3: true
   v3_1: true
+
+- name: ABAP OpenAPI Client & Server Generator
+  category:
+    - sdk
+    - server
+  language: ABAP
+  github: https://github.com/abap-openapi/abap-openapi 
+  link: https://abap-openapi.github.io/web-openapi-client/
+  description: 
+    ABAP OpenAPI Client & Server Generator written in ABAP. 
+    Code generation runs also in the Browser and on command line using NodeJS.
+  v3: true
 
 - name: Kusk Gateway
   category:
@@ -2201,3 +2251,19 @@
   link: https://specmatic.in/
   description: Specmatic enables teams to practice Contract-Driven Development by leveraging OpenAPI specifications as Executable Contracts to reduce time-to-market by allowing teams to build, test and deploy their MicroServices and MicroFrontends independently and Shift-Left the identification of compatibility issues between Components / Services in complex interdependent systems such as those built with MicroServices architecture. In the process it reduces / removes the need for Integration Testing.
   v3: true
+
+- name: openapi-changes
+  category:
+    - data-validators
+    - testing
+    - documentation 
+  link: https://pb33f.io/openapi-changes
+  language: go
+  github: https://github.com/pb33f/openapi-changes
+  description:
+    The world's fastest, most beautiful, powerful and detailed OpenAPI change detection tool on earth. 
+    Explore every change in An OpenAPI spec. See changes over time, go back into 
+    history and see what changed with each commit. Identifies all breaking changes, Powered by libopenapi.
+  v2: true
+  v3: true
+  v3_1: true
