@@ -125,8 +125,9 @@
 - name: ReadMe
   category: documentation
   link: https://readme.com
+  github: https://github.com/readmeio
   language: SaaS
-  description: Build beautiful, personalized, interactive developer hubs. 🦉
+  description: Interactive developer hubs that help users succeed with your APIs 🦉
   v2: true
   v3: true
   v3_1: true
@@ -1426,16 +1427,42 @@
   description: Utility for comparing two OpenAPI specifications.
   v3: true
 
-- name: "$ oas (CLI)"
+- name: oas
   category: miscellaneous
-  language: JavaScript
-  link: https://openap.is
+  language: JavaScript, TypeScript
   github: https://github.com/readmeio/oas
   description:
-    Generate OAS files from code comments and easily host them ($ npm install
-    oas -g)
+    Comprehensive tooling for working with OpenAPI definitions
   v2: true
   v3: true
+  v3_1: true
+
+- name: api
+  category:
+    - parsers
+    - description-validators
+    - converters
+  language: JavaScript, TypeScript
+  github: https://github.com/readmeio/api
+  link: https://api.readme.dev
+  description:
+    Magical SDK generation from an OpenAPI definition
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: oas-normalize
+  category:
+    - parsers
+    - description-validators
+    - converters
+  language: JavaScript, TypeScript
+  github: https://github.com/readmeio/oas-normalize
+  description:
+    Tooling for converting, validating, and parsing OpenAPI, Swagger, and Postman API definitions
+  v2: true
+  v3: true
+  v3_1: true
 
 - name: openapi-cli-tool
   category: miscellaneous
