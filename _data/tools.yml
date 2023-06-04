@@ -2282,7 +2282,7 @@
 
 - name: openapi-merge
   category: converters
-  language: Node.js / Typescript
+  language: TypeScript
   github: https://github.com/robertmassaioli/openapi-merge
   link: https://github.com/robertmassaioli/openapi-merge
   description: A simple tool to merge multiple independent OpenAPI description files into one file. 
