@@ -2158,11 +2158,11 @@
 - name: libopenapi
   category:
     - parsers
-  link: https://github.com/pb33f/libopenapi
+  link: https://pb33f.io/libopenapi
   language: go
   github: https://github.com/pb33f/libopenapi
   description:
-    Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser for go. A complete toolset
+    Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser library for go. A complete toolset
     for reading and parsing OpenAPI and Swagger specifications. 
     Comes complete with high and low-level APIs, diff engine, index and resolver.
   v2: true
@@ -2192,3 +2192,20 @@
   link: https://github.com/criteo/openapi-comparator
   description: C# library for comparing two OpenAPI specifications.
   v3: true
+
+- name: openapi-changes
+  category:
+    - data-validators
+    - testing
+    - documentation 
+  link: https://pb33f.io/openapi-changes
+  language: go
+  github: https://github.com/pb33f/openapi-changes
+  description:
+    The world's fastest, most beautiful, powerful and detailed OpenAPI change detection tool on earth. 
+    Explore every change in An OpenAPI spec. See changes over time, go back into 
+    history and see what changed with each commit. Identifies all breaking changes, Powered by libopenapi.
+  v2: true
+  v3: true
+  v3_1: true
+
