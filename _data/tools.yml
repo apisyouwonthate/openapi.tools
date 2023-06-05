@@ -610,6 +610,15 @@
     Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
   v3: true
 
+- name: OpenAPI Designer
+  category: gui-editors
+  language: SaaS
+  link: https://openapidesigner.com
+  description:
+    OpenAPI Designer is an easy-to-use, free, web-based, codeless description document editor with JSON and YAML outputs.
+  v3: true
+  v3_1: true
+
 - name: ApiBldr
   category: gui-editors
   language: Angular 9.0 / Saas
