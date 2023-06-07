@@ -15,6 +15,15 @@
   v3: true
   v3_1: true
 
+- name: OpenAPI CRUD Wizard
+  category: miscellaneous
+  language: Yaml
+  github: https://github.com/inssch/openapicrudwizard
+  link: https://plugins.jetbrains.com/plugin/19889-openapi-crud-wizard
+  description: This wizard is an IntelliJ Plugin to create a new OpenAPI document including all CRUD operations based only on a Yaml object. No knowledge about OpenAPI specification needed.
+  v3: true
+  v3_1: true
+
 - name: CUE
   category: dsl
   language: CUE
