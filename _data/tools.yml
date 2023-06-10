@@ -1698,16 +1698,33 @@
   v2: true
   v3: true
 
-- name: openapi-processor-spring
+- name: openapi-processor
   category:
-    - server
+   - server
   language: Java
-  link: https://docs.openapiprocessor.io/spring
-  github: https://github.com/openapi-processor/openapi-processor-spring
-  description:
-    Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) from
-    an openapi.yaml. Provides type mapping capabilities to adjust the generated code. Gradle support.
+  link: https://docs.openapiprocessor.io
+  github: https://github.com/openapi-processor
+  description: >
+    Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) or Micronaut
+    (annotation based) from an OpenAPI yaml description. Provides powerful type mapping capabilities to adjust the
+    generated code. Gradle & Maven support. Playground.
+  v2: false
   v3: true
+  v3_1: true
+
+- name: openapi-processor/openapi-parser
+  category:
+    - parsers
+    - schema-validators
+  language: Java
+  link: https://github.com/openapi-processor/openapi-parser
+  github: https://github.com/openapi-processor/openapi-parser
+  description: >
+    OpenAPI parser with (json schema) validation (currently 3.0 only). Separate apis for OpenAPI 3.0 & 3.1.
+    Easily get resolved $ref objects. Pluggable document reader & json/yaml converter. Minimal dependencies.
+  v2: false
+  v3: true
+  v3_1: true
 
 - name: har2openapi
   category: auto-generators
@@ -2147,8 +2164,8 @@
   v2: false
   v3: true
   v3_1: true
-  
-  
+
+
 - name: Counterfact
   category:
     - parser
@@ -2162,7 +2179,7 @@
     A new (July 2022) project that converts an OpenAPI document to a full implementation that runs on ts-node. The idea 
     is to replace the auto-generated code that returns random values with realistic code, one path at a time. If the 
     spec is updated, you can regenerate the types and let the type checker show you which parts of the implementation
-    need to be updated. The types can also be used in client-side code. 
+    need to be updated. The types can also be used in client-side code.
   v3: true
   v3_1: true
 
@@ -2214,7 +2231,7 @@
   description: RESTler is the first stateful REST API fuzzing tool for automatically testing cloud services through their REST APIs and finding security and reliability bugs in these services. RESTler analyzes the OpenAPI description of a cloud service, and then generates and executes tests that exercise the service through its REST API.  During testing, it checks for specific classes of bugs and dynamically learns how the service behaves from prior service responses.
   v2: true
   v3: true
-  
+
 - name: OpenAPI TypeScript
   category: converters
   language: TypeScript
@@ -2246,9 +2263,9 @@
     - sdk
     - server
   language: ABAP
-  github: https://github.com/abap-openapi/abap-openapi 
+  github: https://github.com/abap-openapi/abap-openapi
   link: https://abap-openapi.github.io/web-openapi-client/
-  description: 
+  description:
     ABAP OpenAPI Client & Server Generator written in ABAP. 
     Code generation runs also in the Browser and on command line using NodeJS.
   v3: true
@@ -2305,7 +2322,7 @@
   category:
     - data-validators
     - testing
-    - documentation 
+    - documentation
   link: https://pb33f.io/openapi-changes
   language: go
   github: https://github.com/pb33f/openapi-changes
@@ -2338,7 +2355,7 @@
     - code-generators
   language: Typescript
   description:
-    Kubb is a tool that can generate TypeScript types, Zod schemas, react-query hooks and much more. It has support for Tanstack Query(React, Solid, Svelte and Vue), SWR(React), Zod, Zodios and Axios. Kubb is made based on a plugin system, meaning you can create your own plugin and couple it with the Kubb ecosystem. 
+    Kubb is a tool that can generate TypeScript types, Zod schemas, react-query hooks and much more. It has support for Tanstack Query(React, Solid, Svelte and Vue), SWR(React), Zod, Zodios and Axios. Kubb is made based on a plugin system, meaning you can create your own plugin and couple it with the Kubb ecosystem.
   link: https://kubb.dev/
   github: https://github.com/kubb-project/kubb
   v2: true
