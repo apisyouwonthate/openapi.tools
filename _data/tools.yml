@@ -2259,6 +2259,38 @@
   v3: true
   v3_1: true
 
+- name: draig
+  category:
+    - sdk
+  link: https://gitlab.com/robarago/draig
+  language: Java
+  github: https://gitlab.com/robarago/draig
+  description:
+    DRAIG is an OpenAPI3 based design-first custom generator that creates fully functional microservices from
+    an OAS API description document. You can use DRAIG with openapi-generator as a backend generator or use
+    DRAIG CLI or REPL to generate your microservices. With simple user-customizable templates, you can extended
+    and improve implementation code so that generated code can be compiled and deployed immediatelly.
+  v2: false
+  v3: true
+  v3_1: false
+
+- name: draig-car
+  category:
+    - server
+    - testing
+    - text-editors
+  link: https://gitlab.com/robarago/draig-car
+  language: TypeScript
+  github: https://gitlab.com/robarago/draig-car
+  description:
+    This is a REPL OpenAPI3 description document text editor. It provides both a CLI and and a REPL you can use to
+    test your APIs, but you can also test database queries, start and stop database (containers), generate fake data
+    automatically, start your test microservice and much more. You don't have to exit from your REPL! Or you can use
+    the CLI to do the same if you want, giving you the option to automatize your contract-first based dev cycles.
+  v2: false
+  v3: true
+  v3_1: false
+
 - name: ABAP OpenAPI Client & Server Generator
   category:
     - sdk
