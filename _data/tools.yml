@@ -692,6 +692,7 @@
   description:
     A simple python module to generate OpenAPI Description Documents by supplying request/response bodies.
   v3: true
+  v3_1: true
 
 - name: Connexion
   category: mock
