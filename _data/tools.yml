@@ -2408,3 +2408,49 @@
     existing specifications for generating configuration and mock servers.
   v2: true
   v3: true
+
+- name: api-smart-diff
+  category: 
+    - miscellaneous
+  github: https://github.com/udamir/api-smart-diff
+  language: TypeScript
+  description:
+    Compare two Json based API documents (OpenAPI, AsyncAPI, JsonSchema, GraphAPI)
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: api-diff-viewer
+  category: 
+    - miscellaneous
+    - documentation
+  github: https://github.com/udamir/api-diff-viewer
+  language: TypeScript
+  description: >
+    React component to view the difference between two Json based API documents. Supported specifications: JsonSchema, OpenAPI 3.x, AsyncAPI 2.x.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: allof-merge
+  category: 
+    - converters
+    - miscellaneous
+  github: https://github.com/udamir/allof-merge
+  language: TypeScript
+  description:
+    Simplify your JsonSchema by combining allOf safely
+  v3: true
+  v3_1: true
+
+- name: api-ref-bundler
+  category: 
+    - converters
+    - miscellaneous
+  github: https://github.com/udamir/api-ref-bundler
+  language: TypeScript
+  description:
+    Bundle all external $ref in Json based API document into single document
+  v2: true
+  v3: true
+  v3_1: true
