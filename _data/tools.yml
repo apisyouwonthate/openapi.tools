@@ -383,7 +383,7 @@
   category:
     - code-generators
     - sdk
-  link: https://microsoft.github.io/kiota/
+  link: https://aka.ms/kiota/docs
   language: C#
   github: https://github.com/microsoft/kiota
   description:
