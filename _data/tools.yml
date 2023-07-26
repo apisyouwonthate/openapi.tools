@@ -2262,6 +2262,7 @@
 
 - name: go-openapi-spec-code-diffs
   category:
+    - miscellaneous
     - validator
   link: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
   language: go
