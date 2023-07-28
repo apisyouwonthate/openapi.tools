@@ -2476,3 +2476,15 @@
   v2: false
   v3: true
   v3_1: false
+  
+- name: Fern
+  category: 
+    - documentation
+    - code-generators
+    - sdk
+  link: https://github.com/fern-api/fern
+  language: SaaS
+  description:
+    Generate production-ready SDKs and Documentation for your API. 
+  v2: true
+  v3: true
