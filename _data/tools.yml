@@ -383,7 +383,7 @@
   category:
     - code-generators
     - sdk
-  link: https://microsoft.github.io/kiota/
+  link: https://aka.ms/kiota/docs
   language: C#
   github: https://github.com/microsoft/kiota
   description:
@@ -692,6 +692,7 @@
   description:
     A simple python module to generate OpenAPI Description Documents by supplying request/response bodies.
   v3: true
+  v3_1: true
 
 - name: Connexion
   category: mock
@@ -2259,6 +2260,18 @@
   v3: true
   v3_1: true
 
+- name: go-openapi-spec-code-diffs
+  category:
+    - miscellaneous
+    - validator
+  link: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
+  language: go
+  github: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
+  description:
+    A golang validation tool that compares given OpenAPI specs (e.g. openapi.yaml) vis-a-vis routes (e.g. /api/v1/customer/:id) defined in golang source code and reports differences. This is useful in scenarios where you want to keep the OpenAPI specs and Code in synch.
+  v3: true
+  v3_1: true
+
 - name: draig
   category:
     - sdk
@@ -2420,3 +2433,71 @@
   v2: true
   v3: true
   v3_1: false  
+
+- name: api-smart-diff
+  category: 
+    - miscellaneous
+  github: https://github.com/udamir/api-smart-diff
+  language: TypeScript
+  description:
+    Compare two Json based API documents (OpenAPI, AsyncAPI, JsonSchema, GraphAPI)
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: api-diff-viewer
+  category: 
+    - miscellaneous
+    - documentation
+  github: https://github.com/udamir/api-diff-viewer
+  language: TypeScript
+  description: >
+    React component to view the difference between two Json based API documents. Supported specifications: JsonSchema, OpenAPI 3.x, AsyncAPI 2.x.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: allof-merge
+  category: 
+    - converters
+    - miscellaneous
+  github: https://github.com/udamir/allof-merge
+  language: TypeScript
+  description:
+    Simplify your JsonSchema by combining allOf safely
+  v3: true
+  v3_1: true
+
+- name: api-ref-bundler
+  category: 
+    - converters
+    - miscellaneous
+  github: https://github.com/udamir/api-ref-bundler
+  language: TypeScript
+  description:
+    Bundle all external $ref in Json based API document into single document
+  v2: true
+  v3: true
+  v3_1: true
+  
+- name: rswag
+  category: dsl
+  language: ruby
+  github: https://github.com/rswag/rswag
+  description: Rswag extends rspec-rails request specs with a Swagger-based DSL for describing and testing API operations.
+  link: https://github.com/rswag/rswag
+  v2: false
+  v3: true
+  v3_1: false
+  
+- name: Fern
+  category: 
+    - documentation
+    - code-generators
+    - sdk
+  link: https://github.com/fern-api/fern
+  language: SaaS
+  description:
+    Generate production-ready SDKs and Documentation for your API. 
+  v2: true
+  v3: true
