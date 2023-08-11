@@ -2501,3 +2501,21 @@
     Generate production-ready SDKs and Documentation for your API. 
   v2: true
   v3: true
+
+- name: wiretap
+  category:
+    - miscellaneous
+    - testing-tools
+    - testing
+    - data-validators
+    - gateway
+  link: https://pb33f.io/wiretap/
+  language: go
+  github: https://github.com/pb33f/wiretap
+  description:
+    Wiretap is the world's sexiest OpenAPI compliance testing tool. Validate that a client and server are compliant 
+    with an OpenAPI spec. Rewrite paths, inject headers, and even host a UI locally to test an OpenAPI implementation.
+  v2: true
+  v3: true
+  v3_1: true
+
