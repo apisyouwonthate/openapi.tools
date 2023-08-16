@@ -2519,3 +2519,13 @@
   v3: true
   v3_1: true
 
+- name: openapi-schema-validator
+  category: description-validators
+  link: https://www.npmjs.com/package/@seriousme/openapi-schema-validator
+  github: https://github.com/seriousme/openapi-schema-validator
+  language: Javascript
+  description: OpenApi description validation
+  v2: true
+  v3: true
+  v3_1: true
+
