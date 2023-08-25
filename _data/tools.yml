@@ -2519,3 +2519,25 @@
   v3: true
   v3_1: true
 
+- name: openapi-schema-validator
+  category: description-validators
+  link: https://www.npmjs.com/package/@seriousme/openapi-schema-validator
+  github: https://github.com/seriousme/openapi-schema-validator
+  language: Javascript
+  description: OpenApi description validation
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: fastify-openapi-glue
+  category:
+    - data-validators
+  link: https://www.npmjs.com/package/fastify-openapi-glue
+  github: https://github.com/PayU/openapi-validator-middleware
+  language: Node.js
+  description:
+    A plugin for the Fastify webserver to autogenerate a Fastify configuration based on a OpenApi description.
+  v2: true
+  v3: true
+  v3_1: true
+
