@@ -39,13 +39,13 @@
   v2: true
   v3: true
 
-- name: Apimatic Transformer
+- name: APIMatic Transformer
   category: converters
   language: SaaS
   description:
     Transform API Descriptions to and from RAML, API Blueprint, OAI v2/v3,
     WSDL, etc.
-  link: https://apimatic.io/transformer
+  link: https://www.apimatic.io/transformer
   v2: true
   v3: true
   v3_1: true
@@ -143,7 +143,7 @@
 
 - name: APIMatic Developer Experience Portal
   category: documentation
-  link: https://apimatic.io/developer-experience-portal
+  link: https://www.apimatic.io/developer-experience-portal
   language: SaaS
   description:
     Customizable developer portals packed with language specific documentation,
@@ -1344,9 +1344,11 @@
   v3: true
 
 - name: APIMatic CodeGen
-  category: sdk
+  category:
+    - code-generators
+    - sdk
   language: SaaS
-  link: https://apimatic.io/code-generation-as-a-service
+  link: https://www.apimatic.io/code-generation-as-a-service
   description:
     Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL,
     etc.) to generate fully functional SDKs in over 10 languages.
