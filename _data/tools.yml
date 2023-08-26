@@ -635,7 +635,7 @@
     A design-first API managment platform with WYSIWYG API Designer for OpenAPI and AsyncAPI specifications.
   v2: true
   v3: true
-  
+
 - name: Frogment Editor
   category: gui-editors
   language: Desktop / SaaS
@@ -645,7 +645,6 @@
   v2: false
   v3: true
   v3_1: true
-
 
 # Learning
 - name: optic
