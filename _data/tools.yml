@@ -535,7 +535,6 @@
   v2: true
   v3: true
   v3_1: true
-  
 
 - name: JetBrains tools (IntelliJ IDEA, PyCharm etc.)
   category: gui-editors
@@ -646,6 +645,7 @@
   v2: false
   v3: true
   v3_1: true
+
 
 # Learning
 - name: optic
