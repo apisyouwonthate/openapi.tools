@@ -1752,7 +1752,7 @@
   language: Javascript
   link: https://granthai.com
   github: https://www.npmjs.com/package/granthai
-  description: NodeJs OpenAPI 3 based swagger documentation generator which sits between server APIs and anyone calling the APIs
+  description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
   v3: true
 
 - name: oa-client
