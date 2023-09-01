@@ -1396,6 +1396,17 @@
     or code from descriptions!
   v2: true
 
+- name: docs
+  category:
+    - parser
+    - converters
+    - sdk
+  link: https://github.com/go-oas/docs
+  github: https://github.com/go-oas/docs
+  description: A modern alternative to `go-swagger`. Offers generation and parsing of OpenAPI Specs, depending on the usage.
+  v3: true
+  v3_1: true
+
 - name: guardrail
   category:
     - sdk
