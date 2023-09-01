@@ -636,6 +636,16 @@
   v2: true
   v3: true
 
+- name: Frogment Editor
+  category: gui-editors
+  language: Desktop / SaaS
+  link: https://www.frogment.com
+  description: |
+    A free openAPI spec editor and linter that breaks down your spec into fragments to make editing easier and more intuituve.
+  v2: false
+  v3: true
+  v3_1: true
+
 # Learning
 - name: optic
   category: learning
@@ -1385,6 +1395,17 @@
     Unmaintained v2.0 only project seeking new maintainer, or probably a fork. Parser, validator, generates descriptions from code,
     or code from descriptions!
   v2: true
+
+- name: docs
+  category:
+    - parser
+    - converters
+    - sdk
+  link: https://github.com/go-oas/docs
+  github: https://github.com/go-oas/docs
+  description: A modern alternative to `go-swagger`. Offers generation and parsing of OpenAPI Specs, depending on the usage.
+  v3: true
+  v3_1: true
 
 - name: guardrail
   category:
@@ -2557,3 +2578,16 @@
     typeconv lets you convert between type systems which have core-types converters, such as JSON Schema, TypeScript, GraphQL, Open API and SureType. This package can be used as an API programatically or as an application (installed in node_modules/.bin or by using e.g. npx).
   v3: true
   
+- name: Traefik Hub
+  category:
+    - documentation
+    - gateway
+  link: https://doc.traefik.io/traefik-hub
+  github: https://github.com/traefik/traefik-hub-helm-chart
+  language: Go
+  description:
+    Traefik Hub is a Kubernetes-native API Management solution for publishing, securing, and managing APIs. 
+    Configuration is driven by Kubernetes CRDs, labels, and selectors for effective GitOps.
+  v2: true
+  v3: true
+
