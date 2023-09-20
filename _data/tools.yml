@@ -1058,6 +1058,18 @@
   description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
   v3: true
 
+- name: Step CI
+  category:
+    - testing
+    - converters
+    - data-validators
+  language: CLI, Node.js 
+  link: https://stepci.com
+  github: https://github.com/stepci/stepci
+  description: >
+    Open-source framework for API Quality Assurance. Generate multi-step test-scenarios from OpenAPI spec, validate responses against spec schema and more.
+  v3: true
+
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
