@@ -2598,3 +2598,16 @@
     Configuration is driven by Kubernetes CRDs, labels, and selectors for effective GitOps.
   v2: true
   v3: true
+
+- name: Api Quality
+  category:  
+    - description-validators
+    - security
+    - auto-generators
+    - testing
+  language: Any
+  link: https://apiquality.io/
+  description: The all-in-one tool for API First implementation
+  v2: true
+  v3: true
+  v3_1: true
