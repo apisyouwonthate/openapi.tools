@@ -1648,6 +1648,16 @@
   v2: true
   v3: true
 
+- name: FireTail
+  category: security
+  language: SaaS
+  github: https://github.com/firetail-io
+  description:
+    FireTail provides discovery, logging, posture management and in-line enforcement of APIs using OpenAPI. API governance is backed by cloud provider integrations and a suite of open-source application libraries.
+  link: https://www.firetail.io/
+  v2: true
+  v3: true
+
 - name: 42crunch
   category: security
   language: SaaS
