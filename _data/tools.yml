@@ -2586,6 +2586,20 @@
   v3: true
   v3_1: true
 
+- name: typeconv
+  category:
+    - converters
+  link: https://github.com/grantila/typeconv/
+  language: typescript
+  github: https://github.com/grantila/typeconv/
+  description:
+    typeconv is an extremely fast silver bullet type conversion utility.
+
+    It converts between any of its supported types, bidirectionally.
+
+    typeconv lets you convert between type systems which have core-types converters, such as JSON Schema, TypeScript, GraphQL, Open API and SureType. This package can be used as an API programatically or as an application (installed in node_modules/.bin or by using e.g. npx).
+  v3: true
+  
 - name: Traefik Hub
   category:
     - documentation
@@ -2598,3 +2612,4 @@
     Configuration is driven by Kubernetes CRDs, labels, and selectors for effective GitOps.
   v2: true
   v3: true
+
