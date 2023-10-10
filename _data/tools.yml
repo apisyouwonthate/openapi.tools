@@ -39,13 +39,13 @@
   v2: true
   v3: true
 
-- name: Apimatic Transformer
+- name: APIMatic Transformer
   category: converters
   language: SaaS
   description:
     Transform API Descriptions to and from RAML, API Blueprint, OAI v2/v3,
     WSDL, etc.
-  link: https://apimatic.io/transformer
+  link: https://www.apimatic.io/transformer
   v2: true
   v3: true
   v3_1: true
@@ -143,7 +143,7 @@
 
 - name: APIMatic Developer Experience Portal
   category: documentation
-  link: https://apimatic.io/developer-experience-portal
+  link: https://www.apimatic.io/developer-experience-portal
   language: SaaS
   description:
     Customizable developer portals packed with language specific documentation,
@@ -383,7 +383,7 @@
   category:
     - code-generators
     - sdk
-  link: https://microsoft.github.io/kiota/
+  link: https://aka.ms/kiota/docs
   language: C#
   github: https://github.com/microsoft/kiota
   description:
@@ -525,7 +525,7 @@
   v2: true
   v3: true
 
-- name: VSCode/Redocly OpenAPI
+- name: Redocly VSCode Extension
   category: text-editors
   language: Node.js
   link: https://marketplace.visualstudio.com/items?itemName=Redocly.openapi-vs-code
@@ -636,6 +636,16 @@
   v2: true
   v3: true
 
+- name: Frogment Editor
+  category: gui-editors
+  language: Desktop / SaaS
+  link: https://www.frogment.com
+  description: |
+    A free openAPI spec editor and linter that breaks down your spec into fragments to make editing easier and more intuituve.
+  v2: false
+  v3: true
+  v3_1: true
+
 # Learning
 - name: optic
   category: learning
@@ -731,13 +741,13 @@
 
 - name: Microcks
   category: mock,testing
-  language: Self-hosted / SaaS
+  language: Java
   link: https://microcks.io
   github: https://github.com/microcks/microcks
   description:
-    Kubernetes native tool for API Mocking and Testing. Turn your OAI contract examples
-    into ready to use mocks. Use examples to test and validate implementations
-    according spec and schema elements.
+    Open source Kubernetes-native tool for API Mocking and Testing. Turn your OAI 
+    contract examples into ready-to-use mocks. Use examples to test and validate implementations
+    according to spec and schema elements. Microcks is a Cloud Native Computing Sandbox project 🚀
   v2: true
   v3: true
   v3_1: true
@@ -978,16 +988,6 @@
     design-first workflow.
   v3: true
 
-- name: BigstickCarpet/swagger-cli
-  category: description-validators
-  github: https://github.com/BigstickCarpet/swagger-cli
-  language: Node.js / CLI
-  description:
-    Simple validation for OpenAPI files, supporting JSON/YAML and v2/v3
-    description documents.
-  v2: true
-  v3: true
-
 - name: openapi-spec-validator
   category: description-validators
   github: https://github.com/p1c2u/openapi-spec-validator
@@ -1048,6 +1048,18 @@
   description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
   v3: true
 
+- name: Step CI
+  category:
+    - testing
+    - converters
+    - data-validators
+  language: CLI, Node.js 
+  link: https://stepci.com
+  github: https://github.com/stepci/stepci
+  description: >
+    Open-source framework for API Quality Assurance. Generate multi-step test-scenarios from OpenAPI spec, validate responses against spec schema and more.
+  v3: true
+
 - name: openapi-spring-webflux-validator
   category:
     - miscellaneous
@@ -1091,15 +1103,15 @@
   v2: true
   v3: true
 
-- name: "@redocly/redocly-cli"
+- name: Redocly CLI
   category:
     - description-validators
-    - miscellaneous
-  link: https://redoc.ly/redocly-cli
+    - documentation
+  link: https://redocly.com/redocly-cli/
   github: https://github.com/Redocly/redocly-cli
-  language: CLI & TypeScript/JavaScript
+  language: CLI & TypeScript
   description:
-    OpenAPI 3 CLI toolbox with rich validation and bundling features.
+    Bring versatile OpenAPI validation, linting & bundling to your command line with this open-source Swiss-army knife.
   v2: true
   v3: true
   v3_1: true
@@ -1344,9 +1356,11 @@
   v3: true
 
 - name: APIMatic CodeGen
-  category: sdk
+  category:
+    - code-generators
+    - sdk
   language: SaaS
-  link: https://apimatic.io/code-generation-as-a-service
+  link: https://www.apimatic.io/code-generation-as-a-service
   description:
     Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL,
     etc.) to generate fully functional SDKs in over 10 languages.
@@ -1383,6 +1397,17 @@
     Unmaintained v2.0 only project seeking new maintainer, or probably a fork. Parser, validator, generates descriptions from code,
     or code from descriptions!
   v2: true
+
+- name: docs
+  category:
+    - parser
+    - converters
+    - sdk
+  link: https://github.com/go-oas/docs
+  github: https://github.com/go-oas/docs
+  description: A modern alternative to `go-swagger`. Offers generation and parsing of OpenAPI Specs, depending on the usage.
+  v3: true
+  v3_1: true
 
 - name: guardrail
   category:
@@ -1625,6 +1650,16 @@
   v2: true
   v3: true
 
+- name: FireTail
+  category: security
+  language: SaaS
+  github: https://github.com/firetail-io
+  description:
+    FireTail provides discovery, logging, posture management and in-line enforcement of APIs using OpenAPI. API governance is backed by cloud provider integrations and a suite of open-source application libraries.
+  link: https://www.firetail.io/
+  v2: true
+  v3: true
+
 - name: 42crunch
   category: security
   language: SaaS
@@ -1741,6 +1776,16 @@
   link: https://github.com/jonluca/har-to-openapi
   github: https://github.com/jonluca/har-to-openapi
   description: Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files
+  v3: true
+
+- name: GranthAi
+  category: 
+    - auto-generators
+    - documentation
+  language: Javascript
+  link: https://granthai.com
+  github: https://www.npmjs.com/package/granthai
+  description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
   v3: true
 
 - name: oa-client
@@ -2260,6 +2305,18 @@
   v3: true
   v3_1: true
 
+- name: go-openapi-spec-code-diffs
+  category:
+    - miscellaneous
+    - validator
+  link: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
+  language: go
+  github: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
+  description:
+    A golang validation tool that compares given OpenAPI specs (e.g. openapi.yaml) vis-a-vis routes (e.g. /api/v1/customer/:id) defined in golang source code and reports differences. This is useful in scenarios where you want to keep the OpenAPI specs and Code in synch.
+  v3: true
+  v3_1: true
+
 - name: draig
   category:
     - sdk
@@ -2420,3 +2477,151 @@
     Treblle is a lightweight SDK that helps Engineering and Product teams build, ship, and maintain REST based APIs faster.
   v3: true
   v3_1: true
+
+- name: openapi-request-response-validation
+  category:
+    - data-validators
+  github: https://github.com/gcatanese/openapi-request-response-validation
+  language: Java
+  description:
+    Runtime validation of requests and responses of your API according to the OpenAPI specs, 
+    returning (if any) the list of errors found. It is integrated via a simple REST API therefore 
+    usable by Java and non-Java applications and CI/CD.
+  v2: true
+  v3: true
+  v3_1: false  
+
+- name: api-smart-diff
+  category: 
+    - miscellaneous
+  github: https://github.com/udamir/api-smart-diff
+  language: TypeScript
+  description:
+    Compare two Json based API documents (OpenAPI, AsyncAPI, JsonSchema, GraphAPI)
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: api-diff-viewer
+  category: 
+    - miscellaneous
+    - documentation
+  github: https://github.com/udamir/api-diff-viewer
+  language: TypeScript
+  description: >
+    React component to view the difference between two Json based API documents. Supported specifications: JsonSchema, OpenAPI 3.x, AsyncAPI 2.x.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: allof-merge
+  category: 
+    - converters
+    - miscellaneous
+  github: https://github.com/udamir/allof-merge
+  language: TypeScript
+  description:
+    Simplify your JsonSchema by combining allOf safely
+  v3: true
+  v3_1: true
+
+- name: api-ref-bundler
+  category: 
+    - converters
+    - miscellaneous
+  github: https://github.com/udamir/api-ref-bundler
+  language: TypeScript
+  description:
+    Bundle all external $ref in Json based API document into single document
+  v2: true
+  v3: true
+  v3_1: true
+  
+- name: rswag
+  category: dsl
+  language: ruby
+  github: https://github.com/rswag/rswag
+  description: Rswag extends rspec-rails request specs with a Swagger-based DSL for describing and testing API operations.
+  link: https://github.com/rswag/rswag
+  v2: false
+  v3: true
+  v3_1: false
+  
+- name: Fern
+  category: 
+    - documentation
+    - code-generators
+    - sdk
+  link: https://github.com/fern-api/fern
+  language: SaaS
+  description:
+    Generate production-ready SDKs and Documentation for your API. 
+  v2: true
+  v3: true
+
+- name: wiretap
+  category:
+    - miscellaneous
+    - testing-tools
+    - testing
+    - data-validators
+    - gateway
+  link: https://pb33f.io/wiretap/
+  language: go
+  github: https://github.com/pb33f/wiretap
+  description:
+    Wiretap is the world's sexiest OpenAPI compliance testing tool. Validate that a client and server are compliant 
+    with an OpenAPI spec. Rewrite paths, inject headers, and even host a UI locally to test an OpenAPI implementation.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: openapi-schema-validator
+  category: description-validators
+  link: https://www.npmjs.com/package/@seriousme/openapi-schema-validator
+  github: https://github.com/seriousme/openapi-schema-validator
+  language: Javascript
+  description: OpenApi description validation
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: fastify-openapi-glue
+  category:
+    - data-validators
+  link: https://www.npmjs.com/package/fastify-openapi-glue
+  github: https://github.com/PayU/openapi-validator-middleware
+  language: Node.js
+  description:
+    A plugin for the Fastify webserver to autogenerate a Fastify configuration based on a OpenApi description.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: typeconv
+  category:
+    - converters
+  link: https://github.com/grantila/typeconv/
+  language: typescript
+  github: https://github.com/grantila/typeconv/
+  description:
+    typeconv is an extremely fast silver bullet type conversion utility.
+
+    It converts between any of its supported types, bidirectionally.
+
+    typeconv lets you convert between type systems which have core-types converters, such as JSON Schema, TypeScript, GraphQL, Open API and SureType. This package can be used as an API programatically or as an application (installed in node_modules/.bin or by using e.g. npx).
+  v3: true
+  
+- name: Traefik Hub
+  category:
+    - documentation
+    - gateway
+  link: https://doc.traefik.io/traefik-hub
+  github: https://github.com/traefik/traefik-hub-helm-chart
+  language: Go
+  description:
+    Traefik Hub is a Kubernetes-native API Management solution for publishing, securing, and managing APIs. 
+    Configuration is driven by Kubernetes CRDs, labels, and selectors for effective GitOps.
+  v2: true
+  v3: true
+
