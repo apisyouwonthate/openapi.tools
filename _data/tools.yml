@@ -525,7 +525,7 @@
   v2: true
   v3: true
 
-- name: VSCode/Redocly OpenAPI
+- name: Redocly VSCode Extension
   category: text-editors
   language: Node.js
   link: https://marketplace.visualstudio.com/items?itemName=Redocly.openapi-vs-code
@@ -988,16 +988,6 @@
     design-first workflow.
   v3: true
 
-- name: BigstickCarpet/swagger-cli
-  category: description-validators
-  github: https://github.com/BigstickCarpet/swagger-cli
-  language: Node.js / CLI
-  description:
-    Simple validation for OpenAPI files, supporting JSON/YAML and v2/v3
-    description documents.
-  v2: true
-  v3: true
-
 - name: openapi-spec-validator
   category: description-validators
   github: https://github.com/p1c2u/openapi-spec-validator
@@ -1113,15 +1103,15 @@
   v2: true
   v3: true
 
-- name: "@redocly/redocly-cli"
+- name: Redocly CLI
   category:
     - description-validators
-    - miscellaneous
-  link: https://redoc.ly/redocly-cli
+    - documentation
+  link: https://redocly.com/redocly-cli/
   github: https://github.com/Redocly/redocly-cli
-  language: CLI & TypeScript/JavaScript
+  language: CLI & TypeScript
   description:
-    OpenAPI 3 CLI toolbox with rich validation and bundling features.
+    Bring versatile OpenAPI validation, linting & bundling to your command line with this open-source Swiss-army knife.
   v2: true
   v3: true
   v3_1: true
@@ -2622,4 +2612,3 @@
     Configuration is driven by Kubernetes CRDs, labels, and selectors for effective GitOps.
   v2: true
   v3: true
-
