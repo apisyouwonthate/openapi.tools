@@ -377,7 +377,7 @@
     by parsing your OpenAPI Description
   v2: false
   v3: true
-  v3_1_link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator/issues/131
+  v3_1: true
 
 - name: Kiota Api Client Generator
   category:
