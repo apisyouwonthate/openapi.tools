@@ -6,6 +6,16 @@
   v3: true
   v3_1: false
 
+- name: Scalar
+  category: documentation
+  language: Vue.js
+  github: https://github.com/scalar/scalar
+  link: https://docs.scalar.com/swagger-editor
+  description: Beautiful Open-Source API references from Swagger/OAS files ✨
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: optic diff
   category: miscellaneous
   language: Node
