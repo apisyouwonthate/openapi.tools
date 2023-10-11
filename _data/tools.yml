@@ -2441,8 +2441,8 @@
     - data-validators
     - learning
   language: Ruby
-  github: https://github.com/funbox/fitting
-  link: https://github.com/funbox/fitting
+  github: https://github.com/matchtechnologies/fitting
+  link: https://github.com/matchtechnologies/fitting
   description:
     Library add improve test log for RSpec and WebMock,
     validate its according to API Blueprint and Open API,
