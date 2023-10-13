@@ -1680,6 +1680,16 @@
   v2: true
   v3: true
 
+- name: Equixly
+  category: security
+  language: SaaS
+  description:
+    AI-powered automated API Security Testing.
+  link: https://equixly.com/
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: openapi-fuzzer
   category: security
   language: Rust
