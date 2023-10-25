@@ -1798,6 +1798,16 @@
   description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
   v3: true
 
+- name: openapi-devtools
+  category:
+    - auto-generators
+    - documentation
+  language: TypeScript
+  link: https://github.com/AndrewWalsh/openapi-devtools
+  github: https://github.com/AndrewWalsh/openapi-devtools
+  description: Effortlessly discover API behaviour with a Chrome extension that automatically generates OpenAPI specifications in real time for any app or website
+  v3_1: true
+
 - name: oa-client
   category:
     - miscellaneous
