@@ -450,7 +450,9 @@
   v3: true
 
 - name: Fix My OpenAPI - A VSCode Extension by APIMatic
-  category: text-editors
+  category:
+  - text-editors
+  - description-validators
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
   description:
