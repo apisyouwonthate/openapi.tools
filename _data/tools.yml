@@ -449,6 +449,17 @@
   v2: true
   v3: true
 
+- name: Fix My OpenAPI - A VSCode Extension by APIMatic
+  category: text-editors
+  language: Any
+  link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
+  description:
+    APIMatic's VSCode extension helps you validate, lint, and auto-fix your OpenAPI files, 
+    along with other capabilities such as API transformations, API audit report generation, SDKs generation, and more.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: VSCode OpenAPI
   category: text-editors
   language: Any
