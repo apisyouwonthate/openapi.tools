@@ -2635,3 +2635,14 @@
   v2: true
   v3: true
 
+- name: Aptori
+  category:
+    - testing
+    - security
+  link: https://aptori.dev
+  github: "https://github.com/Aptori-dev/sift-action"
+  language: Any
+  description: Aptori is an application vulnerability scanner and REST API validator designed for Developers and DevSecOps teams. Utilizing OpenAPI v2 or v3 definitions, it automatically generates test scenarios and conducts comprehensive scans.
+  v2: true
+  v3: true
+  v3_1: true
