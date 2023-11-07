@@ -2635,3 +2635,10 @@
   v2: true
   v3: true
 
+- name: Zally
+  category: description-validators
+  gitub: https://github.com/zalando/zally
+  description: A minimalistic, simple-to-use OpenAPI 2 and 3 linter
+  v2: true
+  v3: true
+
