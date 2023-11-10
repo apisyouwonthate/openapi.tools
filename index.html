@@ -161,12 +161,11 @@
             </thead>
             <tbody>
               {% assign sponsored_tools = site.data.tools | where: "sponsored", true | sort_natural: 'name' %}
-              {% assign non_sponsored_tools = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" | sort_natural:'name' %}
+              {% assign non_sponsored_tools = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" | sort_natural: 'name' %}
 
               {% assign sorted_tools = sponsored_tools | concat: non_sponsored_tools %}
 
-              {% for tool in sorted_tools %} {% if tool.category ==
-              category.slug or tool.category contains category.slug %}
+              {% for tool in sorted_tools %} {% if tool.category == category.slug or tool.category contains category.slug %}
               <tr class="table-row {% if tool.sponsored %}font-weight-bold alert alert-primary{% endif %}">
                 <td class="font-serif w-3/5">
                   <a
@@ -177,10 +176,9 @@
                   </a>
                   {% if tool.description %} - {{ tool.description }} {% endif %}
                   {% if tool.sponsored %}
-                    <div class="">
-                      {% if tool.sponsored %}
-                    <span class="badge badge-light">Sponsored</span>
-                  {% endif %}{% if tool.testimonial %}<aside class="d-inline font-weight-normal small font-italic">{{ tool.testimonial }}</aside>{%endif %}
+                    <div>
+                      <span class="badge badge-light">Sponsored</span>
+                      {% if tool.testimonial %}<aside class="d-inline font-weight-normal small font-italic">{{ tool.testimonial }}</aside>{%endif %}
                     </div>
                   {% endif %}
                 </td>
