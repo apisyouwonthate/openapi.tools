@@ -1010,7 +1010,7 @@
 - name: Dredd
   category:
     - testing
-  link: http://dredd.io/
+  link: https://dredd.io/
   github: https://github.com/apiaryio/dredd
   language: Javascript
   description:
@@ -1052,7 +1052,7 @@
   category:
     - testing
     - converters
-  link: http://getportman.com/
+  link: https://getportman.com/
   github: https://github.com/apideck-libraries/portman
   language: Node.js
   description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
@@ -1325,7 +1325,7 @@
 
 - name: psx-api
   category: parsers
-  link: http://phpsx.org
+  link: https://phpsx.org
   github: https://github.com/apioo/psx-api
   language: PHP
   description: Parse and generate API specification formats
@@ -1444,7 +1444,7 @@
 - name: NSwag
   category:
     - sdk
-  link: http://NSwag.org
+  link: https://NSwag.org
   github: https://github.com/RicoSuter/NSwag
   language: ".NET"
   description: OpenAPI toolchain for .NET, Web API and TypeScript
@@ -2136,7 +2136,7 @@
     - documentation
     - testing
   link: https://ignatandrei.github.io/BlocklyAutomation/
-  github: http://github.com/ignatandrei/BlocklyAutomation
+  github: https://github.com/ignatandrei/BlocklyAutomation
   language: Javascript / .NET
   description:
     Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
