@@ -160,20 +160,31 @@
               </tr>
             </thead>
             <tbody>
-              {% assign sorted_tools = site.data.tools | sort_natural:'name' %}
+              {% assign sponsored_tools = site.data.tools | where: "sponsored", true | sort_natural: 'name' %}
+              {% assign non_sponsored_tools = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" | sort_natural:'name' %}
+
+              {% assign sorted_tools = sponsored_tools | concat: non_sponsored_tools %}
+
               {% for tool in sorted_tools %} {% if tool.category ==
               category.slug or tool.category contains category.slug %}
-              <tr class="table-row">
+              <tr class="table-row {% if tool.sponsored %}font-weight-bold alert alert-primary{% endif %}">
                 <td class="font-serif w-3/5">
                   <a
                     target="_blank"
-                    href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}"
+                    href="{% if tool.link %}{{ tool.link }}{% else %}{{ tool.github }}{% endif %}?utm_source=openapi-tools&utm_medium=website&utm_campaign=api-tools"
                   >
                     {{ tool.name }}
                   </a>
                   {% if tool.description %} - {{ tool.description }} {% endif %}
+                  {% if tool.sponsored %}
+                    <div class="">
+                      {% if tool.sponsored %}
+                    <span class="badge badge-light">Sponsored</span>
+                  {% endif %}{% if tool.testimonial %}<aside class="d-inline font-weight-normal small font-italic">{{ tool.testimonial }}</aside>{%endif %}
+                    </div>
+                  {% endif %}
                 </td>
-                <td class="font-serif w-1/5 text-center">
+                <td class="font-serif w-1/5">
                   {{ tool.language }}
                 </td>
                 <td class="font-serif w-1/3 text-center">
