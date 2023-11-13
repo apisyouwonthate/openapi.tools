@@ -6,6 +6,16 @@
   v3: true
   v3_1: false
 
+- name: Scalar
+  category: documentation
+  language: Vue.js
+  github: https://github.com/scalar/scalar
+  link: https://docs.scalar.com/swagger-editor
+  description: Beautiful Open-Source API references from Swagger/OAS files ✨
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: optic diff
   category: miscellaneous
   language: Node
@@ -333,7 +343,7 @@
   github: https://github.com/deepmap/oapi-codegen
   language: Go
   description:
-    Generate a client, server, and HTTP types for various Go HTTP servers, 
+    Generate a client, server, and HTTP types for various Go HTTP servers,
     from an OpenAPI v3 specification
   v3: true
 
@@ -377,7 +387,7 @@
     by parsing your OpenAPI Description
   v2: false
   v3: true
-  v3_1_link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator/issues/131
+  v3_1: true
 
 - name: Kiota Api Client Generator
   category:
@@ -387,7 +397,7 @@
   language: C#
   github: https://github.com/microsoft/kiota
   description:
-    Kiota is a cross platform API Client code generator that is small, fast, 
+    Kiota is a cross platform API Client code generator that is small, fast,
     and optimized for API consumers to find APIs and generate client code for just the
     parts of the API that they need. One tool, for any OpenAPI described API, that delivers a consistent client
     experience in multiple languages.
@@ -745,7 +755,7 @@
   link: https://microcks.io
   github: https://github.com/microcks/microcks
   description:
-    Open source Kubernetes-native tool for API Mocking and Testing. Turn your OAI 
+    Open source Kubernetes-native tool for API Mocking and Testing. Turn your OAI
     contract examples into ready-to-use mocks. Use examples to test and validate implementations
     according to spec and schema elements. Microcks is a Cloud Native Computing Sandbox project 🚀
   v2: true
@@ -1000,7 +1010,7 @@
 - name: Dredd
   category:
     - testing
-  link: http://dredd.io/
+  link: https://dredd.io/
   github: https://github.com/apiaryio/dredd
   language: Javascript
   description:
@@ -1042,7 +1052,7 @@
   category:
     - testing
     - converters
-  link: http://getportman.com/
+  link: https://getportman.com/
   github: https://github.com/apideck-libraries/portman
   language: Node.js
   description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
@@ -1053,7 +1063,7 @@
     - testing
     - converters
     - data-validators
-  language: CLI, Node.js 
+  language: CLI, Node.js
   link: https://stepci.com
   github: https://github.com/stepci/stepci
   description: >
@@ -1315,7 +1325,7 @@
 
 - name: psx-api
   category: parsers
-  link: http://phpsx.org
+  link: https://phpsx.org
   github: https://github.com/apioo/psx-api
   language: PHP
   description: Parse and generate API specification formats
@@ -1434,7 +1444,7 @@
 - name: NSwag
   category:
     - sdk
-  link: http://NSwag.org
+  link: https://NSwag.org
   github: https://github.com/RicoSuter/NSwag
   language: ".NET"
   description: OpenAPI toolchain for .NET, Web API and TypeScript
@@ -1682,7 +1692,7 @@
   category: security
   language: Java
   description:
-    CATS is a REST API Fuzzer and negative testing tool for OpenAPI endpoints. CATS automatically generates, 
+    CATS is a REST API Fuzzer and negative testing tool for OpenAPI endpoints. CATS automatically generates,
     runs and reports tests with minimum configuration and no coding effort. Tests are self-healing and do not require maintenance.
   link: https://github.com/Endava/cats
   v2: true
@@ -1779,7 +1789,7 @@
   v3: true
 
 - name: GranthAi
-  category: 
+  category:
     - auto-generators
     - documentation
   language: Javascript
@@ -1839,8 +1849,8 @@
   github: https://github.com/thim81/openapi-format
   link: https://www.npmjs.com/package/openapi-format
   language: Node.js
-  description: > 
-    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter 
+  description: >
+    A CLI to format an OpenAPI document by ordering fields in a hierarchical order, with the option to filter
     out flags, tags, methods, operationIDs; including the option to convert an OpenAPI 3.0 document to an OpenAPI version 3.1.
   v3: true
   v3_1: true
@@ -2126,7 +2136,7 @@
     - documentation
     - testing
   link: https://ignatandrei.github.io/BlocklyAutomation/
-  github: http://github.com/ignatandrei/BlocklyAutomation
+  github: https://github.com/ignatandrei/BlocklyAutomation
   language: Javascript / .NET
   description:
     Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
@@ -2223,8 +2233,8 @@
   github: https://github.com/pmcelhaney/counterfact
   language: TypeScript / Node
   description:
-    A new (July 2022) project that converts an OpenAPI document to a full implementation that runs on ts-node. The idea 
-    is to replace the auto-generated code that returns random values with realistic code, one path at a time. If the 
+    A new (July 2022) project that converts an OpenAPI document to a full implementation that runs on ts-node. The idea
+    is to replace the auto-generated code that returns random values with realistic code, one path at a time. If the
     spec is updated, you can regenerate the types and let the type checker show you which parts of the implementation
     need to be updated. The types can also be used in client-side code.
   v3: true
@@ -2249,7 +2259,7 @@
   language: go
   github: https://github.com/daveshanley/vacuum
   description:
-    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and 
+    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and
     designed for enterprise-grade speed and scale.
   v2: true
   v3: true
@@ -2299,7 +2309,7 @@
   github: https://github.com/pb33f/libopenapi
   description:
     Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parser library for go. A complete toolset
-    for reading and parsing OpenAPI and Swagger specifications. 
+    for reading and parsing OpenAPI and Swagger specifications.
     Comes complete with high and low-level APIs, diff engine, index and resolver.
   v2: true
   v3: true
@@ -2357,7 +2367,7 @@
   github: https://github.com/abap-openapi/abap-openapi
   link: https://abap-openapi.github.io/web-openapi-client/
   description:
-    ABAP OpenAPI Client & Server Generator written in ABAP. 
+    ABAP OpenAPI Client & Server Generator written in ABAP.
     Code generation runs also in the Browser and on command line using NodeJS.
   v3: true
 
@@ -2370,8 +2380,8 @@
   github: https://github.com/kubeshop/kusk-gateway
   language: Kubernetes
   description:
-    Kusk-Gateway is an OpenAPI-driven API Gateway for Kubernetes. It empowers you to 
-    develop, validate, mock and deploy your APIs in a matter of minutes using both 
+    Kusk-Gateway is an OpenAPI-driven API Gateway for Kubernetes. It empowers you to
+    develop, validate, mock and deploy your APIs in a matter of minutes using both
     manual and automated GitOps/APIOps workflows.
   v2: true
   v3: true
@@ -2396,7 +2406,7 @@
   github: https://github.com/davidmbillie/Hot-Potato
   description:
     A reverse proxy that validates responses against an OpenAPI description.
-    It can be used as either a standalone .NET tool, or installed as 
+    It can be used as either a standalone .NET tool, or installed as
     NuGet packages for an ASP.NET Core integration testing project.
 
 - name: Specmatic
@@ -2418,8 +2428,8 @@
   language: go
   github: https://github.com/pb33f/openapi-changes
   description:
-    The world's fastest, most beautiful, powerful and detailed OpenAPI change detection tool on earth. 
-    Explore every change in An OpenAPI spec. See changes over time, go back into 
+    The world's fastest, most beautiful, powerful and detailed OpenAPI change detection tool on earth.
+    Explore every change in An OpenAPI spec. See changes over time, go back into
     history and see what changed with each commit. Identifies all breaking changes, Powered by libopenapi.
   v2: true
   v3: true
@@ -2431,8 +2441,8 @@
     - data-validators
     - learning
   language: Ruby
-  github: https://github.com/funbox/fitting
-  link: https://github.com/funbox/fitting
+  github: https://github.com/matchtechnologies/fitting
+  link: https://github.com/matchtechnologies/fitting
   description:
     Library add improve test log for RSpec and WebMock,
     validate its according to API Blueprint and Open API,
@@ -2460,8 +2470,8 @@
   link: https://www.krakend.io/enterprise/
   language: Golang
   description:
-    KrakenD is a high-performance, stateless API Gateway, seamlessly integrated with OpenAPI. 
-    It facilitates automatic API documentation and provides the capability to import 
+    KrakenD is a high-performance, stateless API Gateway, seamlessly integrated with OpenAPI.
+    It facilitates automatic API documentation and provides the capability to import
     existing specifications for generating configuration and mock servers.
   v2: true
   v3: true
@@ -2484,15 +2494,15 @@
   github: https://github.com/gcatanese/openapi-request-response-validation
   language: Java
   description:
-    Runtime validation of requests and responses of your API according to the OpenAPI specs, 
-    returning (if any) the list of errors found. It is integrated via a simple REST API therefore 
+    Runtime validation of requests and responses of your API according to the OpenAPI specs,
+    returning (if any) the list of errors found. It is integrated via a simple REST API therefore
     usable by Java and non-Java applications and CI/CD.
   v2: true
   v3: true
-  v3_1: false  
+  v3_1: false
 
 - name: api-smart-diff
-  category: 
+  category:
     - miscellaneous
   github: https://github.com/udamir/api-smart-diff
   language: TypeScript
@@ -2503,7 +2513,7 @@
   v3_1: true
 
 - name: api-diff-viewer
-  category: 
+  category:
     - miscellaneous
     - documentation
   github: https://github.com/udamir/api-diff-viewer
@@ -2515,7 +2525,7 @@
   v3_1: true
 
 - name: allof-merge
-  category: 
+  category:
     - converters
     - miscellaneous
   github: https://github.com/udamir/allof-merge
@@ -2526,7 +2536,7 @@
   v3_1: true
 
 - name: api-ref-bundler
-  category: 
+  category:
     - converters
     - miscellaneous
   github: https://github.com/udamir/api-ref-bundler
@@ -2536,7 +2546,7 @@
   v2: true
   v3: true
   v3_1: true
-  
+
 - name: rswag
   category: dsl
   language: ruby
@@ -2546,16 +2556,20 @@
   v2: false
   v3: true
   v3_1: false
-  
-- name: Fern
-  category: 
+
+- name: 🌿 Fern
+  sponsored: true
+  testimonial: >
+    I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
+  category:
     - documentation
     - code-generators
     - sdk
-  link: https://github.com/fern-api/fern
+  github: https://github.com/fern-api/fern
+  link: https://buildwithfern.com
   language: SaaS
   description:
-    Generate production-ready SDKs and Documentation for your API. 
+    Generate production-ready SDKs and Documentation for your API.
   v2: true
   v3: true
 
@@ -2570,7 +2584,7 @@
   language: go
   github: https://github.com/pb33f/wiretap
   description:
-    Wiretap is the world's sexiest OpenAPI compliance testing tool. Validate that a client and server are compliant 
+    Wiretap is the world's sexiest OpenAPI compliance testing tool. Validate that a client and server are compliant
     with an OpenAPI spec. Rewrite paths, inject headers, and even host a UI locally to test an OpenAPI implementation.
   v2: true
   v3: true
@@ -2611,7 +2625,7 @@
 
     typeconv lets you convert between type systems which have core-types converters, such as JSON Schema, TypeScript, GraphQL, Open API and SureType. This package can be used as an API programatically or as an application (installed in node_modules/.bin or by using e.g. npx).
   v3: true
-  
+
 - name: Traefik Hub
   category:
     - documentation
@@ -2620,7 +2634,7 @@
   github: https://github.com/traefik/traefik-hub-helm-chart
   language: Go
   description:
-    Traefik Hub is a Kubernetes-native API Management solution for publishing, securing, and managing APIs. 
+    Traefik Hub is a Kubernetes-native API Management solution for publishing, securing, and managing APIs.
     Configuration is driven by Kubernetes CRDs, labels, and selectors for effective GitOps.
   v2: true
   v3: true
