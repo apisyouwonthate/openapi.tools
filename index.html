@@ -171,7 +171,7 @@
                 <td class="font-serif w-3/5">
                   <a
                     target="_blank"
-                    href="{{ url }}{% if url contains '?' %}&{% else %}?{% endif %}utm_source=openapi-tools&utm_medium=website&utm_campaign=api-tools"
+                    href="{{ url }}{% if url contains '?' %}&{% else %}?{% endif %}utm_source=openapi-tools&utm_medium=website&utm_campaign={{ category.slug }}"
                   >
                     {{ tool.name }}
                   </a>
