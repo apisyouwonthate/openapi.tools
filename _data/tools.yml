@@ -2656,3 +2656,16 @@
   v2: true
   v3: true
 
+- name: HopFront
+  category:
+    - documentation
+    - miscellaneous
+  link: https://github.com/hopfront/hopfront
+  github: https://github.com/hopfront/hopfront
+  language: TypeScript
+  description:
+    HopFront automatically builds an user friendly UI from a collection of OpenAPI specifications.
+    You can setup custom dashboard tailored to the way your interact with your APIs.
+  v3: true
+  
+
