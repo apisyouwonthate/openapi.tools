@@ -2572,6 +2572,7 @@
     Generate production-ready SDKs and Documentation for your API.
   v2: true
   v3: true
+  v3_1: true
 
 - name: wiretap
   category:
