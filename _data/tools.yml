@@ -2656,3 +2656,13 @@
   v2: true
   v3: true
 
+- name: OpenAPI Native Mock Server
+  category: mock
+  language: Java
+  link: https://github.com/gcatanese/openapi-native-mock-server
+  github: https://github.com/gcatanese/openapi-native-mock-server
+  description: Generate mock responses based on the OpenAPI contracts. No dependencies. Lightweight, fast, simple, with a built-in 
+  HTML viewer to browse the request-response interactions, making clear the expectations. 
+  v2: true
+  v3: true
+
