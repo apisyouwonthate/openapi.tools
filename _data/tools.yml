@@ -1,3 +1,15 @@
+- name: apiUi
+  category: mock,testing
+  language: CLI / API / Docker
+  link: https://apiUi.org
+  github: https://github.com/apiUi/apiUi
+  description:
+    Only free tool for API Mocking and Testing offering structured UI-form based on OpenApi documents. Request and response schema validation.
+    Coverage- and regression-reporting. Low-code but also with a rich scripting-engine. Stateful Behaviour. Webhooks and callbacks.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: oasdiff
   category: miscellaneous
   language: Go
