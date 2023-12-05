@@ -2656,3 +2656,14 @@
   v2: true
   v3: true
 
+- name: Huma
+  category:
+    - auto-generators
+    - data-validators
+    - server
+  language: Go
+  link: https://huma.rocks/
+  github: https://github.com/danielgtaylor/huma
+  description: A modern, simple, fast & flexible micro framework for building HTTP REST/RPC APIs in Go backed by OpenAPI 3 and JSON Schema.
+  v3: true
+  v3_1: true
