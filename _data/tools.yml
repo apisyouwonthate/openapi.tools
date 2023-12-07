@@ -2656,3 +2656,17 @@
   v2: true
   v3: true
 
+- name: Xapi Platform
+  category:
+    - GUI editors
+    - Text editors
+    - Testing
+  language: Springboot
+  github: -
+  link: https://xapihub.io/
+  description: 
+    Xapi is an integrated platform that enables you to implement a streamlined API-first design strategy with standardized API artifacts and collaborative teams.
+  v2: false
+  v3: false
+  v3_1: true
+
