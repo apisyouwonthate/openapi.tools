@@ -1,5 +1,5 @@
 - name: ✨ Stainless
-  sponsored: false
+  sponsored: true
   category:
     - code-generators
     - sdk
