@@ -162,17 +162,6 @@
   v3: true
   v3_1: true
 
-- name: APITree
-  category: documentation
-  github: https://github.com/apitree
-  link: https://apitree.com/
-  language: SaaS
-  description:
-    HUB for managing and sharing APIs. Converts OpenAPI v2 / v3 files into
-    beautiful API documentation.
-  v2: true
-  v3: true
-
 - name: Kong Enterprise Edition
   category:
     - documentation
