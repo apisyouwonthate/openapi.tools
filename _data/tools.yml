@@ -2582,7 +2582,7 @@
   category:
     - documentation
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com
+  link: https://docs.buildwithfern.com/generate-docs
   language: TypeScript, Java, Python, Go, and C#
   description:
     Beautiful API documentation from OpenAPI.
@@ -2670,3 +2670,14 @@
   v3: false
   v3_1: true
 
+- name: Huma
+  category:
+    - auto-generators
+    - data-validators
+    - server
+  language: Go
+  link: https://huma.rocks/
+  github: https://github.com/danielgtaylor/huma
+  description: A modern, simple, fast & flexible micro framework for building HTTP REST/RPC APIs in Go backed by OpenAPI 3 and JSON Schema.
+  v3: true
+  v3_1: true
