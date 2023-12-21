@@ -1,3 +1,16 @@
+- name: ✨ Stainless
+  sponsored: true
+  category:
+    - code-generators
+    - sdk
+  link: https://stainlessapi.com
+  language: TypeScript, Python, Go, Java, and Kotlin
+  description:
+    Generate SDKs in popular languages and publish them to package managers (like npm).
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: oasdiff
   category: miscellaneous
   language: Go
