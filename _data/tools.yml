@@ -1224,7 +1224,7 @@
   description: Swagger Parser reads OpenAPI definitions into current Java POJOs.
   v2: true
   v3: true
-  v3_1_link: https://github.com/swagger-api/swagger-parser/pull/1730
+  v3_1: true
 
 - name: APIDevTools/swagger-parser
   category: parsers
@@ -2704,3 +2704,13 @@
   v3: true
   v3_1: true
 
+- name: openapi-merge
+  category: converters
+  language: TypeScript
+  github: https://github.com/robertmassaioli/openapi-merge
+  link: https://github.com/robertmassaioli/openapi-merge
+  description: A simple tool to merge multiple independent OpenAPI description files into one file. 
+    Useful when you have a number of microservices and you decide to expose them through a gateway.
+  v2: false
+  v3: true
+  v3_1: false
