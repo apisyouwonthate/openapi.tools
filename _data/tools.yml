@@ -1,3 +1,15 @@
+- name: ratemyopenapi
+  category: 
+    - miscellaneous
+    - description-validators
+    - security
+  language: Go
+  github: https://github.com/zuplo/rate-my-openapi
+  link: https://ratemyopenapi.com
+  description: Free and open source OpenAPI automated review and validation tool. 
+  v3: true
+  v3_1: true
+  
 - name: oasdiff
   category: miscellaneous
   language: Go
@@ -153,7 +165,7 @@
 
 - name: APIMatic Developer Experience Portal
   category: documentation
-  link: https://www.apimatic.io/developer-experience-portal
+  link: https://www.apimatic.io/product/publish
   language: SaaS
   description:
     Customizable developer portals packed with language specific documentation,
@@ -2658,9 +2670,9 @@
 
 - name: Xapi Platform
   category:
-    - GUI editors
-    - Text editors
-    - Testing
+    - gui-editors
+    - text-editors
+    - testing
   language: Springboot
   github: -
   link: https://xapihub.io/
@@ -2669,6 +2681,17 @@
   v2: false
   v3: false
   v3_1: true
+
+- name: API Insights
+  category:
+    - monitoring
+    - description-validators
+  link: https://apiinsights.io/
+  github: https://github.com/treblle
+  description:
+    API Insights is a web application and native Mac application that allows you get real time insights into your API using your OpenAPI specification. Think of it like a static analysis tool for your API, using your OpenAPI Specification file.
+  v2: false
+  v3: true
 
 - name: Huma
   category:
@@ -2681,3 +2704,4 @@
   description: A modern, simple, fast & flexible micro framework for building HTTP REST/RPC APIs in Go backed by OpenAPI 3 and JSON Schema.
   v3: true
   v3_1: true
+
