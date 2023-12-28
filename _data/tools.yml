@@ -2656,6 +2656,17 @@
   v2: true
   v3: true
 
+- name: API Insights
+  category:
+    - monitoring
+    - description-validators
+  link: https://apiinsights.io/
+  github: https://github.com/treblle
+  description:
+    API Insights is a web application and native Mac application that allows you get real time insights into your API using your OpenAPI specification. Think of it like a static analysis tool for your API, using your OpenAPI Specification file.
+  v2: false
+  v3: true
+
 - name: Huma
   category:
     - auto-generators
@@ -2667,3 +2678,4 @@
   description: A modern, simple, fast & flexible micro framework for building HTTP REST/RPC APIs in Go backed by OpenAPI 3 and JSON Schema.
   v3: true
   v3_1: true
+
