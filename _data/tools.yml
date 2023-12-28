@@ -1863,6 +1863,18 @@
   v2: true
   v3: true
 
+- name: Oxlip API Language
+  category: dsl
+  link: https://www.oxlip-lang.org/
+  github: https://github.com/oxlip-lang/oal
+  language: OAL
+  description: |
+    Oxlip is a high-level functional programming language for designing OpenAPI definitions.
+    It defines algebraic abstractions over REST concepts to alleviate the pain of managing OpenAPI in JSON or YAML by hand and at scale.
+  v2: false
+  v3: true
+  v3_1: false
+
 - name: openapi-core
   category: data-validators
   language: Python
@@ -2350,7 +2362,6 @@
   link: https://github.com/criteo/openapi-comparator
   description: C# library for comparing two OpenAPI specifications.
   v3: true
-<<<<<<< HEAD
 
 - name: Hot Potato
   category:
