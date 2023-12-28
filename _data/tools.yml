@@ -2557,21 +2557,38 @@
   v3: true
   v3_1: false
 
+# Fern Entry 1: codegen / sdk gen
+- name: 🌿 Fern
+  sponsored: true
+  testimonial: >
+    I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
+  category:
+    - code-generators
+    - sdk
+  github: https://github.com/fern-api/fern
+  link: https://buildwithfern.com
+  language: TypeScript, Java, Python, Go, and C#
+  description:
+    Generate SDKs in popular languages and publish them to package managers (like npm).
+  v2: true
+  v3: true
+  v3_1: true
+
+# Fern Entry 2: docs product
 - name: 🌿 Fern
   sponsored: true
   testimonial: >
     I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
   category:
     - documentation
-    - code-generators
-    - sdk
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com
-  language: SaaS
+  link: https://docs.buildwithfern.com/generate-docs
+  language: TypeScript, Java, Python, Go, and C#
   description:
-    Generate production-ready SDKs and Documentation for your API.
+    Beautiful API documentation from OpenAPI.
   v2: true
   v3: true
+  v3_1: true
 
 - name: wiretap
   category:
@@ -2649,4 +2666,16 @@
     API Insights is a web application and native Mac application that allows you get real time insights into your API using your OpenAPI specification. Think of it like a static analysis tool for your API, using your OpenAPI Specification file.
   v2: false
   v3: true
+
+- name: Huma
+  category:
+    - auto-generators
+    - data-validators
+    - server
+  language: Go
+  link: https://huma.rocks/
+  github: https://github.com/danielgtaylor/huma
+  description: A modern, simple, fast & flexible micro framework for building HTTP REST/RPC APIs in Go backed by OpenAPI 3 and JSON Schema.
+  v3: true
+  v3_1: true
 
