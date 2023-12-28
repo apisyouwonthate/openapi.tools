@@ -1,3 +1,15 @@
+- name: ratemyopenapi
+  category: 
+    - miscellaneous
+    - description-validators
+    - security
+  language: Go
+  github: https://github.com/zuplo/rate-my-openapi
+  link: https://ratemyopenapi.com
+  description: Free and open source OpenAPI automated review and validation tool. 
+  v3: true
+  v3_1: true
+  
 - name: oasdiff
   category: miscellaneous
   language: Go
