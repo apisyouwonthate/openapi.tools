@@ -559,18 +559,7 @@
     as you edit.
   v2: true
   v3: true
-  v3_1_link: https://youtrack.jetbrains.com/issue/IDEA-294782/Add-support-for-OpenAPI-31-in-OpenAPI-Specifications-plugin
-
-- name: VSCode/openapi-lint
-  category: text-editors
-  language: Node.js
-  link: https://marketplace.visualstudio.com/items?itemName=mermade.openapi-lint
-  github: https://github.com/mermade/openapi-lint-vscode
-  description:
-    OpenAPI 2.0/3.0.x intellisense, validator and linter for Visual Studio
-    Code
-  v2: true
-  v3: true
+  v3_1: true
 
 - name: Redocly VSCode Extension
   category: text-editors
@@ -701,16 +690,6 @@
   description: Meeshkan is an automated testing and mocking tool. It offers first-class support for GraphQL APIs, but Meeshkan is also built to handle REST APIs and third-party dependencies.
   v3: true
 
-- name: Swagger Inspector
-  category: learning
-  language: SaaS
-  link: https://swagger.io/tools/swagger-inspector/
-  description:
-    Run mock requests in a webapp and Swagger Inspector infers your OpenAPI
-    description.
-  v2: true
-  v3: true
-
 - name: Response2Schema
   category: learning
   language: PHP
@@ -763,16 +742,6 @@
   v2: true
   v3: true
   v3_1: true
-
-- name: API Sprout
-  category: mock
-  language: cli / Docker
-  link: https://github.com/danielgtaylor/apisprout
-  github: https://github.com/danielgtaylor/apisprout
-  description:
-    Lightweight, blazing fast, cross-platform OpenAPI 3 mock server with
-    validation
-  v3: true
 
 - name: OpenAPI Mocker
   category: mock
