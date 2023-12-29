@@ -107,7 +107,7 @@
   language: Java, Python
   link: https://plugins.jetbrains.com/plugin/14394-openapi-specifications
   github:
-  description: |
+  description: >
     JetBrains development tools like IntelliJ IDEA, PyCharm and others come with a bundled *OpenAPI Specifications* plugin.
     The plugin allows you to write the OpenAPI specifications and supports you with validations, formatting, code-completion etc.
     It supports a *text view* as well as a rendered SwaggerUI-like *graphical interface*.
@@ -586,14 +586,12 @@
   category:
     - gui-editors
     - text-editor
-  language: Desktop / SaaS
+  language: SaaS
   link: https://stoplight.io/studio
-  description:
-    "Stoplight Studio is a GUI/text editor with linting and mocking built
-    right in.  It can run on the desktop with local files, and in the browser powered
-    by your  existing GitHub, GitLab, or BitBucket repos.
-
-    "
+  description: >
+    Stoplight Studio is a powerful GUI/text editor with linting and mocking
+    built right in. The desktop version has been discontinued, but it runs in
+    the browser, powered by your existing GitHub, GitLab, or BitBucket repos.
   v2: true
   v3: true
   v3_1: true
@@ -603,11 +601,9 @@
   language: ReactJS
   link: https://hackolade.com
   github: https://github.com/hackolade/OpenAPI
-  description:
-    "A visual editor for OpenAPI v2/v3, from the pioneer in data modeling
+  description: >
+    A visual editor for OpenAPI v2/v3, from the pioneer in data modeling
     for NoSQL databases.
-
-    "
   v2: true
   v3: true
   v3_1: true
@@ -616,11 +612,9 @@
   category: gui-editors
   language: Angular 7.0, Java / Saas
   link: https://www.apitive.com
-  description:
-    "A platform for Digital Product Managers and API Consultants to design
+  description: >
+    A platform for Digital Product Managers and API Consultants to design
     REST APIs with in-built mock and documentation.
-
-    "
   v2: true
   v3: true
 
@@ -629,7 +623,7 @@
   language: Angular 7.0, Java / Saas
   link: https://www.apicur.io/
   github: https://github.com/apicurio/apicurio-studio
-  description: |
+  description: >
     Web-Based Open Source API Design via the OpenAPI specification.
   v2: true
   v3: true
@@ -639,7 +633,7 @@
   language: Vue.js
   link: https://www.github.com/OAIE/oaie-sketch
   github: https://github.com/OAIE/oaie-sketch
-  description: |
+  description: >
     Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
   v3: true
 
@@ -655,7 +649,7 @@
   category: gui-editors
   language: Angular 9.0 / Saas
   link: https://www.apibldr.com/
-  description: |
+  description: >
     Web-Based API Designer for OpenAPI (swagger) and AsyncAPI specifications.
   v2: true
   v3: true
@@ -664,7 +658,7 @@
   category: gui-editors
   language: Angular 9.0 / Saas
   link: https://www.restcase.com/platform/design
-  description: |
+  description: >
     A design-first API managment platform with WYSIWYG API Designer for OpenAPI and AsyncAPI specifications.
   v2: true
   v3: true
@@ -673,7 +667,7 @@
   category: gui-editors
   language: Desktop / SaaS
   link: https://www.frogment.com
-  description: |
+  description: >
     A free openAPI spec editor and linter that breaks down your spec into fragments to make editing easier and more intuituve.
   v2: false
   v3: true
@@ -835,10 +829,10 @@
   category: mock
   language: CLI / Docker
   link: https://mockintosh.io
-  description:
-    "Mocks for CloudNative Environments - Converts OpenAPI files to Mocks and use them
+  description: >
+    Mocks for CloudNative Environments - Converts OpenAPI files to Mocks and use them
     to develop in isolated environments and test edge cases, Async call to queues such as Kafka or RabbitMQ
-    or simulate performance & chaos testing"
+    or simulate performance & chaos testing
   v2: true
   v3: true
   v3_1: true
@@ -902,7 +896,7 @@
   language: Node.js
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
   github: https://github.com/smartrecruiters/openapi-first
-  description: |
+  description: >
     Initializes your API express application with the description in OpenAPI 3.0 format using
     provided middlewares (parsers, validators, controller, defaults setting) or custom ones
   v3: true
@@ -1075,7 +1069,9 @@
   link: https://stepci.com
   github: https://github.com/stepci/stepci
   description: >
-    Open-source framework for API Quality Assurance. Generate multi-step test-scenarios from OpenAPI spec, validate responses against spec schema and more.
+    Open-source framework for API Quality Assurance. Generate multi-step
+    test-scenarios from OpenAPI. Validate responses against description
+    documents and more.
   v3: true
 
 - name: openapi-spring-webflux-validator
@@ -1085,9 +1081,9 @@
     - data-validators
   github: https://github.com/cdimascio/openapi-spring-webflux-validator
   language: Java/Kotlin
-  description:
-    "\U0001F331 A friendly kotlin library to validate API endpoints using
-    an OpenAPI 3.0 or OpenAPI 2.0 specification"
+  description: > 
+    A friendly kotlin library to validate API endpoints against an OpenAPI
+    description document.
   v2: true
   v3: true
 
@@ -1096,9 +1092,10 @@
   link: https://stoplight.io/spectral
   github: https://github.com/stoplightio/spectral
   language: CLI & TypeScript/JavaScript
-  description:
-    A flexible JSON/YAML object linter with portable "rulesets" and custom
-    functions.
+  description: >
+    A flexible OpenAPI/AsyncAPI API linter, which can help you build anything
+    from automated API Style Guides for API Governance workflows, or handle any
+    other JSON/YAML object linting. functions.
   v2: true
   v3: true
   v3_1: true
@@ -1107,7 +1104,7 @@
   category: description-validators
   github: https://github.com/OpenAPITools/openapi-style-validator
   language: Java, CLI
-  description:
+  description: >
     A customizable style validator to make sure your OpenAPI description
     follows your organization's standards.
   v2: true
@@ -1128,7 +1125,9 @@
   link: https://redocly.com/redocly-cli/
   github: https://github.com/Redocly/redocly-cli
   language: CLI & TypeScript
-  description: Bring versatile OpenAPI validation, linting & bundling to your command line with this open-source Swiss-army knife.
+  description: > 
+    Bring versatile OpenAPI validation, linting & bundling to your command line
+    with this open-source Swiss-army knife.
   v2: true
   v3: true
   v3_1: true
@@ -1139,7 +1138,9 @@
   link: https://atyourservice.awalsh.io/
   github: https://github.com/AndrewWalsh/at-your-service
   language: TypeScript
-  description: A developer tool for API observability on the browser. Generate OpenAPI specifications and code from network traffic
+  description: > 
+    A developer tool for API observability on the browser. Generate OpenAPI
+    specifications and code from network traffic
   v2: false
   v3: false
   v3_1: true
@@ -1151,7 +1152,9 @@
   link: https://www.npmjs.com/package/openapi-validator-middleware
   github: https://github.com/PayU/openapi-validator-middleware
   language: Node.js
-  description: Provides data validation within an Express, Koa or Fastify app according to a OpenAPI definition. It uses Ajv under the hood for validation.
+  description: > 
+    Provides data validation within an Express, Koa or Fastify app according to
+    a OpenAPI definition. It uses Ajv under the hood for validation.
   v2: true
   v3: true
 
@@ -1868,7 +1871,7 @@
   link: https://www.oxlip-lang.org/
   github: https://github.com/oxlip-lang/oal
   language: OAL
-  description: |
+  description: >
     Oxlip is a high-level functional programming language for designing OpenAPI definitions.
     It defines algebraic abstractions over REST concepts to alleviate the pain of managing OpenAPI in JSON or YAML by hand and at scale.
   v2: false
