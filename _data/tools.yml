@@ -2489,7 +2489,7 @@
   link: https://github.com/rswag/rswag
   v2: false
   v3: true
-  v3_1: false
+  v3_1_link: https://github.com/rswag/rswag/pull/714
 
 # Fern Entry 1: codegen / sdk gen
 - name: 🌿 Fern
