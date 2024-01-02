@@ -2020,6 +2020,7 @@
   language: Python
   description: Generate modern Python clients from OpenAPI 3.0 documents.
   v3: true
+  v3_1: true
 
 - name: Elements
   category: documentation
