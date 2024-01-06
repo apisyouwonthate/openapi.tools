@@ -160,7 +160,7 @@
               </tr>
             </thead>
             <tbody>
-              {% assign sponsored_tools = site.data.tools | where: "sponsored", true | sort_natural: 'name' %}
+              {% assign sponsored_tools = site.data.tools | where: "sponsored", true | sort: 'sponsoredDate'  %}
               {% assign non_sponsored_tools = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" | sort_natural: 'name' %}
 
               {% assign sorted_tools = sponsored_tools | concat: non_sponsored_tools %}

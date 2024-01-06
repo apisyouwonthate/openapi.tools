@@ -7,7 +7,7 @@
   description:
     Alphadoc is a full featured developer experience platform. API components with granular parameter control and diagrams
     generated from your OpenAPI. Not only the reference, but the entire set of tutorials and guides automatically updates when
-    the underlying API updates. 
+    the underlying API updates.
   v2: true
   v3: true
   v3_1: true
@@ -48,7 +48,7 @@
   category: documentation
   language: Angular 7.0, Java / Saas
   link: https://www.apitive.com
-  description: > 
+  description: >
     A platform for Digital Product Managers and API Consultants to design
     REST APIs with in-built mock and documentation.
   v2: true
@@ -64,7 +64,7 @@
     validate JSON Schema responses and status codes on every endpoint.
   v2: true
   v3: true
-  
+
 - name: avantation
   category: converters
   language: TypeScript
@@ -1050,7 +1050,7 @@
     - data-validators
   github: https://github.com/cdimascio/openapi-spring-webflux-validator
   language: Java/Kotlin
-  description: > 
+  description: >
     A friendly kotlin library to validate API endpoints against an OpenAPI
     description document.
   v2: true
@@ -1094,7 +1094,7 @@
   link: https://redocly.com/redocly-cli/
   github: https://github.com/Redocly/redocly-cli
   language: CLI & TypeScript
-  description: > 
+  description: >
     Bring versatile OpenAPI validation, linting & bundling to your command line
     with this open-source Swiss-army knife.
   v2: true
@@ -1107,7 +1107,7 @@
   link: https://atyourservice.awalsh.io/
   github: https://github.com/AndrewWalsh/at-your-service
   language: TypeScript
-  description: > 
+  description: >
     A developer tool for API observability on the browser. Generate OpenAPI
     specifications and code from network traffic
   v2: false
@@ -1121,7 +1121,7 @@
   link: https://www.npmjs.com/package/openapi-validator-middleware
   github: https://github.com/PayU/openapi-validator-middleware
   language: Node.js
-  description: > 
+  description: >
     Provides data validation within an Express, Koa or Fastify app according to
     a OpenAPI definition. It uses Ajv under the hood for validation.
   v2: true
@@ -2495,6 +2495,7 @@
 # Fern Entry 1: codegen / sdk gen
 - name: 🌿 Fern
   sponsored: true
+  sponsoredDate: 2023-11-01 06:00:00
   testimonial: >
     I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
   category:
@@ -2511,6 +2512,7 @@
 # Fern Entry 2: docs product
 - name: 🌿 Fern
   sponsored: true
+  sponsoredDate: 2023-11-01 06:00:00
   testimonial: >
     I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
   category:
@@ -2520,6 +2522,20 @@
   language: TypeScript, Java, Python, Go, and C#
   description: Beautiful API documentation from OpenAPI.
   v2: true
+  v3: true
+  v3_1: true
+
+- name: ✨ Stainless
+  sponsored: true
+  sponsoredDate: 2024-01-01 06:00:00
+  category:
+    - sdk
+  github: https://github.com/stainless-api/stl-api
+  link: https://stainlessapi.com
+  language: TypeScript, Python, Go, Java, and Kotlin
+  description:
+    Generate SDKs in popular languages and publish them to package managers (like npm).
+  v2: false
   v3: true
   v3_1: true
 
