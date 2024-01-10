@@ -2208,6 +2208,17 @@
   v3: true
   v3_1: true
 
+- name: apigen-ts
+  category:
+    - sdk
+  language: TypeScript
+  link: https://www.npmjs.com/package/apigen-ts
+  github: https://github.com/vladkens/apigen-ts
+  description: Typed HTTP client generator as single file without extra dependencies
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: APIGit
   category:
     - documentation
