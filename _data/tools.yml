@@ -256,6 +256,18 @@
   v3: true
   v3_1: true
 
+- name: OpenAPI-UI
+  category: documentation
+  description:
+    a simpler and more beautiful openapi UI document than swagger UI, 
+    quickly generate mock params and call api request.
+  link: https://docs.openapi-ui.com
+  github: https://github.com/rookie-luochao/openapi-ui
+  language: React.js
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
