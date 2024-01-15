@@ -2202,7 +2202,7 @@
   language: go
   github: https://github.com/daveshanley/vacuum
   description:
-    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and
+    A blazing fast OpenAPI linter and validator that is compatible with Spectral rulesets, and
     designed for enterprise-grade speed and scale.
   v2: true
   v3: true
@@ -2550,7 +2550,7 @@
   language: go
   github: https://github.com/pb33f/wiretap
   description:
-    Wiretap is the world's sexiest OpenAPI compliance testing tool. Validate that a client and server are compliant
+    Wiretap is a feature packed OpenAPI compliance testing tool. Validate that a client and server are compliant
     with an OpenAPI spec. Rewrite paths, inject headers, and even host a UI locally to test an OpenAPI implementation.
   v2: true
   v3: true
