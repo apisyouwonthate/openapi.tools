@@ -1531,6 +1531,14 @@
   description: Generate OpenAPI 3 specification for Laravel Applications.
   v3: true
 
+- name: lapidary
+  category:
+  - dsl
+  language: python
+  github: https://github.com/python-lapidary/lapidary
+  description: Easily write Web API clients with annotations.
+  v3: true
+
 - name: Flotiq - headless CMS with OpenAPI support
   category:
     - sdk
