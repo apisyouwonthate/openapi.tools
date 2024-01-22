@@ -2502,8 +2502,8 @@
     - code-generators
     - sdk
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com
-  language: TypeScript, Java, Python, Go, and C#
+  link: https://buildwithfern.com/demo
+  language: TypeScript, Java, Python, Go, Ruby, and C#
   description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: true
   v3: true
@@ -2518,8 +2518,8 @@
   category:
     - documentation
   github: https://github.com/fern-api/fern
-  link: https://docs.buildwithfern.com/generate-docs
-  language: TypeScript, Java, Python, Go, and C#
+  link: https://buildwithfern.com/demo
+  language: TypeScript, Java, Python, Go, Ruby, and C#
   description: Beautiful API documentation from OpenAPI.
   v2: true
   v3: true
