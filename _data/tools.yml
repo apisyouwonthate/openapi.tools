@@ -2539,6 +2539,19 @@
   v3: true
   v3_1: true
 
+- name: // Speakeasy
+  sponsored: true
+  sponsoredDate: 2024-02-09 06:00:00
+  category:
+    - sdk
+    - documentation
+  github: https://github.com/speakeasy-api
+  link: https://speakeasyapi.dev/
+  language: TypeScript, Python, Go, Java, Terraform, C#, PHP, Ruby, Swift, Unity
+  description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
+  v3: true
+  v3_1: true
+
 - name: wiretap
   category:
     - miscellaneous
