@@ -2629,6 +2629,17 @@
   v3: false
   v3_1: true
 
+- name: Fuego
+  category:
+    - auto-generators
+    - data-validators
+    - server
+  language: Go
+  link: https://go-fuego.github.io/fuego/
+  github: https://github.com/go-fuego/fuego
+  description: Golang Fuego - web & API framework generating OpenAPI 3 spec from source code
+  v3: true
+
 - name: Huma
   category:
     - auto-generators
