@@ -102,6 +102,19 @@
   link: https://cuelang.org/docs/integrations/openapi/
   v3: true
 
+- name: Docusaurus JSON Schema Plugin
+  category:
+    - documentation
+    - description-validator
+  link: https://jy95.github.io/docusaurus-json-schema-plugin
+  github: https://github.com/jy95/docusaurus-json-schema-plugin
+  language: TypeScript
+  description:
+    Viewer to make exploration of specs a delightful experience
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: JetBrains tools (IntelliJ IDEA, PyCharm etc.)
   category: gui-editors
   language: Java, Python
