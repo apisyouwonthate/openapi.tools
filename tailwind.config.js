@@ -1,30 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx,astro}',
-    './pages/**/*.{js,ts,jsx,tsx,mdx,astro}',
-    './components/**/*.{js,ts,jsx,tsx,mdx,astro}',
-    './src/**/*.{js,ts,jsx,tsx,mdx,astro}',
-  ],
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
-    extend: {
-      colors: {
-        // ... your color definitions
-      },
-      fontFamily: {
-        futura: ['Futura', 'Trebuchet MS', 'Arial', 'sans-serif'], // Custom Futura font
-      },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            'h1, h2, h3, h4, h5, h6': {
-              fontFamily: `${theme('fontFamily.futura')}`,
-              textTransform: 'uppercase',
-            },
-          },
-        },
-      }),
-    },
+    extend: {},
   },
-  plugins: ['@tailwindcss/typography'],
+  plugins: [],
 };

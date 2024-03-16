@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.9",
+    "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.5.5"
   },
   "devDependencies": {
