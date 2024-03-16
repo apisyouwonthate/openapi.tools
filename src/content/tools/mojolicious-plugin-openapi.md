@@ -1,0 +1,14 @@
+---
+name: Mojolicious::Plugin::OpenApi
+description: |
+  Mojolicious::Plugin::OpenAPI is a plugin for Mojolicious framework that add routes and input/output validation to your Mojolicious application based on OpenAPI description documents.'
+categories:
+  - server
+link: https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI
+github: https://github.com/jhthorsen/mojolicious-plugin-openapi
+openApiVersions:
+  v2: true
+  v3: true
+  v3_1: false
+  v4: false
+---

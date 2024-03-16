@@ -4,15 +4,15 @@ import { defineCollection, reference, z } from 'astro:content';
 // 2. Define your collection(s)
 const categoriesCollection = defineCollection({
   type: 'content',
-  schema: {
+  schema: z.object({
     name: z.string(),
     description: z.string(),
-  },
+  }),
 });
 
 const toolsCollection = defineCollection({
   type: 'content',
-  schema: {
+  schema: z.object({
     name: z.string(),
     description: z.string(),
     categories: z.array(reference('categories')),
@@ -23,7 +23,7 @@ const toolsCollection = defineCollection({
       v3_1: z.boolean().optional(),
       v4: z.boolean().optional(),
     }),
-  },
+  }),
 });
 
 // 3. Export a single `collections` object to register your collection(s)

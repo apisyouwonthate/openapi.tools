@@ -1,0 +1,15 @@
+---
+name: go-swagger
+description: Unmaintained v2.0 only project seeking new maintainer, or probably a fork. Parser, validator, generates descriptions from code, or code from descriptions!
+categories:
+  - parser
+  - sdk
+  - converters
+link: https://goswagger.io/
+github: https://github.com/go-swagger/go-swagger
+openApiVersions:
+  v2: true
+  v3: false
+  v3_1: false
+  v4: false
+---
