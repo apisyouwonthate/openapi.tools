@@ -290,7 +290,6 @@
   v3: true
   v3_1: true
 
-
 - name: OAS RAML Converter
   category: converters
   language: Node.js
@@ -2544,8 +2543,7 @@
   github: https://github.com/stainless-api/stl-api
   link: https://stainlessapi.com
   language: TypeScript, Python, Go, Java, and Kotlin
-  description:
-    Generate SDKs in popular languages and publish them to package managers (like npm).
+  description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: false
   v3: true
   v3_1: true
@@ -2714,5 +2712,4 @@
   description: Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x
   v2: true
   v3: true
-
 # Please add new entries in alphabetical order, which slightly helps reduce conflicts
