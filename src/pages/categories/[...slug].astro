@@ -1,4 +1,5 @@
 ---
+import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 // 1. Generate a new path for every collection entry
@@ -14,5 +15,11 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<h1>{entry.data.title}</h1>
-<Content />
+<Layout>
+  <header>
+    <h1>{entry.data.name}</h1>
+  </header>
+  <main class="bg-white">
+    <Content />
+  </main>
+</Layout>
