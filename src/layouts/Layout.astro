@@ -1,5 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
+
 import PostHog from '../components/PostHog.astro';
 
 interface Props {
@@ -8,7 +9,7 @@ interface Props {
 ---
 
 <!doctype html>
-<html lang="en" class="dark:bg- bg-white">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -106,34 +107,5 @@ interface Props {
 
   <body>
     <slot />
-    <style is:global>
-      :root {
-        --accent: 136, 58, 234;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-          45deg,
-          rgb(var(--accent)),
-          rgb(var(--accent-light)) 30%,
-          white 60%
-        );
-      }
-      html {
-        font-family: system-ui, sans-serif;
-        background: #13151a;
-        background-size: 224px;
-      }
-      code {
-        font-family:
-          Menlo,
-          Monaco,
-          Lucida Console,
-          Liberation Mono,
-          DejaVu Sans Mono,
-          Bitstream Vera Sans Mono,
-          Courier New,
-          monospace;
-      }
-    </style>
   </body>
 </html>
