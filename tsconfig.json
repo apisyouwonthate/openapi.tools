@@ -6,5 +6,12 @@
       "@/layouts/*": ["./src/layouts/*"]
     }
   },
-  "include": ["jsx.d.ts", "env.d.ts", "types.d.ts"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "jsx.d.ts",
+    "env.d.ts",
+    "types.d.ts",
+    "posthog.d.ts"
+  ]
 }

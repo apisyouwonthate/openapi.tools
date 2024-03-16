@@ -1,11 +1,10 @@
 ---
 import { SEO } from 'astro-seo';
+import PostHog from '../components/PostHog.astro';
 
 interface Props {
   title: string;
 }
-
-const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -83,8 +82,7 @@ const { title } = Astro.props;
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
-    <script src="https://cdn.usefathom.com/script.js" data-site="MKNBSINY" defer
-    ></script>
+
     <SEO
       titleTemplate="%s | OpenApi.tools, from APIs You Won't Hate"
       description="A comprehensive and open source list of resources for developers working with OpenAPI."
@@ -101,8 +99,10 @@ const { title } = Astro.props;
         site: '@apisyouwonthate',
       }}
     />
-    <title>{title}</title></head
-  >
+    <script src="https://cdn.usefathom.com/script.js" data-site="MKNBSINY" defer
+    ></script>
+    <PostHog />
+  </head>
 
   <body>
     <slot />
