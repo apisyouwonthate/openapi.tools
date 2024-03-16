@@ -5,5 +5,6 @@
       "@/components/*": ["./src/components/*"],
       "@/layouts/*": ["./src/layouts/*"]
     }
-  }
+  },
+  "include": ["jsx.d.ts", "env.d.ts", "types.d.ts"]
 }

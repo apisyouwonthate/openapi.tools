@@ -44,6 +44,7 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'warn',
         '@typescript-eslint/comma-dangle': 'off',
         '@typescript-eslint/semi': 'off',
+        '@typescript-eslint/explicit-function-return-type': 'off',
       },
       parserOptions: {
         ecmaFeatures: {
