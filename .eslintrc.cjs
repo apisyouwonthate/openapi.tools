@@ -1,4 +1,11 @@
 module.exports = {
+  ignorePatterns: [
+    '.eslintrc.cjs',
+    '**/*.config.js',
+    '**/*.config.cjs',
+    '**/*.config.mjs',
+    'pnpm-lock.yaml',
+  ],
   extends: [
     'eslint:recommended',
     'love',
