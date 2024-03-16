@@ -12,6 +12,22 @@ export default {
     'prettier-plugin-tailwindcss',
   ],
   tailwindConfig: './tailwind.config.js',
+  importOrder: [
+    '^(react/(.*)$)|^(react$)|^(react-native(.*)$)',
+    '^(next/(.*)$)|^(next$)',
+    '^(expo(.*)$)|^(expo$)',
+    '<THIRD_PARTY_MODULES>',
+    '',
+    '^@craftwork/(.*)$',
+    '^@components/(.*)$',
+    '^@layouts/(.*)$',
+    '^@ui/(.*)$',
+    '^@utils/(.*)$',
+    '^@styles/(.*)$',
+    '^@/(.*)$',
+    '^[./]',
+  ],
+  importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   overrides: [
     {
       files: '*.astro',
