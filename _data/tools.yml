@@ -503,7 +503,7 @@
   link: https://bump.sh
   language: SaaS
   github: https://github.com/bump-sh/cli
-  description:
+  description: >
     Bump.sh generates elegant documentation and changelogs from your OpenAPI
     specifications. Git diff, for your API. Integrates with CI and Slack.
   v2: true
@@ -518,12 +518,35 @@
   description: This library facilitates creating OpenAPI document for Python projects.
   v3: true
 
+- name: Apitive Studio
+  category: documentation
+  language: Angular 7.0, Java / Saas
+  link: https://www.apitive.com
+  description: > 
+    A platform for Digital Product Managers and API Consultants to design
+    REST APIs with in-built mock and documentation.
+  v2: true
+  v3: true
+
+- name: Fix My OpenAPI - A VSCode Extension by APIMatic
+  category:
+  - text-editors
+  - description-validators
+  language: Any
+  link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
+  description: >
+    APIMatic's VSCode extension helps you validate, lint, and auto-fix your OpenAPI files, 
+    along with other capabilities such as API transformations, API audit report generation, SDKs generation, and more.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: VSCode OpenAPI
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
   github: https://github.com/42Crunch/vscode-openapi
-  description:
+  description: >
     OpenAPI extension for Visual Studio Code - new file templates, navigation,
     intellisense, code snippets.
   v2: true
@@ -534,7 +557,7 @@
   language: Java
   license: EPL
   github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
-  description:
+  description: >
     Full-featured Eclipse editor for OpenAPI, also available on Eclipse
     Marketplace.
   v2: true
@@ -544,7 +567,7 @@
   category: text-editors
   language: Node.js
   github: https://github.com/swagger-api/swagger-editor
-  description:
+  description: >
     Design, describe, and document your API on the first open source editor
     fully dedicated to OpenAPI-based APIs.
   v2: true
@@ -555,7 +578,7 @@
   language: SaaS/On-Premise NodeJS
   github:
   link: https://swagger.io/tools/swaggerhub/
-  description:
+  description: >
     API design and documentation platform to improve collaboration, standardize
     development workflow and centralize their API discovery and consumption.
   v2: true
@@ -565,7 +588,7 @@
   category: text-editors
   language: Java
   link: https://senya.io
-  description:
+  description: >
     JetBrains IDE plugin to show Swagger UI as a preview, for visual feedback
     as you edit.
   v2: true
