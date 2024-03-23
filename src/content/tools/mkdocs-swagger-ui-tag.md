@@ -2,7 +2,7 @@
 name: MkDocs Swagger UI Tag
 description: A MkDocs plugin supports for add Swagger UI in page.
 categories:
-  - documentation
+  - docs
 link: https://blueswen.github.io/mkdocs-swagger-ui-tag/
 github: https://github.com/blueswen/mkdocs-swagger-ui-tag
 openApiVersions:

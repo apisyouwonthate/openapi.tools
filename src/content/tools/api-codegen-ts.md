@@ -2,7 +2,7 @@
 name: api-codegen-ts
 description: Generates TypeScript models, response validators, and operation controllers from OpenAPI descriptions
 categories:
-  - sdk
+  - sdk-generators
   - data-validators
 link: https://www.npmjs.com/package/@nll/api-codegen-ts
 github: https://github.com/nullpub/api-codegen-ts

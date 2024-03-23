@@ -2,7 +2,7 @@
 name: kotlin-openapi3-dsl
 description: kotlin-openapi3-dsl is a DSL written in Kotlin to write OpenAPI descriptions in plain Kotlin.
 categories:
-  - dsl
+  - dsls
 link: https://github.com/derveloper/kotlin-openapi3-dsl
 openApiVersions:
   v2: false

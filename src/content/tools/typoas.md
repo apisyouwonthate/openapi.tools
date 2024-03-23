@@ -2,7 +2,7 @@
 name: Typoas
 description: Fully typed OpenAPI Typescript generator
 categories:
-  - sdk
+  - sdk-generators
 link: https://github.com/Embraser01/typoas
 github: https://github.com/Embraser01/typoas
 openApiVersions:

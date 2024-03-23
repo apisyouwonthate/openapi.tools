@@ -2,7 +2,7 @@
 name: InducOapi
 description: A simple python module to generate OpenAPI Description Documents by supplying request/response bodies.
 categories:
-  - learning
+  - courses
 link: https://pypi.org/project/inducoapi
 github: https://github.com/TheWall89/inducoapi
 openApiVersions:

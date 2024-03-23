@@ -3,7 +3,7 @@ name: OpenAPI Commander
 description: Generate a Node.js command line tool from an OpenAPI definition.
 categories:
   - code-generators
-  - sdk
+  - sdk-generators
 link: https://www.npmjs.com/package/openapi-commander
 github: https://github.com/bcoughlan/openapi-commander
 openApiVersions:

@@ -2,7 +2,7 @@
 name: NSwag
 description: OpenAPI toolchain for .NET, Web API and TypeScript
 categories:
-  - sdk
+  - sdk-generators
 link: https://NSwag.org
 github: https://github.com/RicoSuter/NSwag
 openApiVersions:

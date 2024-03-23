@@ -3,7 +3,7 @@ name: OAIE Sketch
 description: |
   Browser based OpenApi Integrated Editor with side-by side view of the yaml and an interactive graph.
 categories:
-  - gui-editors
+  - ides
 link: https://www.github.com/OAIE/oaie-sketch
 github: https://github.com/OAIE/oaie-sketch
 openApiVersions:

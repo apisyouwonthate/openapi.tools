@@ -2,7 +2,7 @@
 name: Stoplight Docs
 description: Create beautiful, customizable, interactive API documentation generated from OpenAPI, integrated with Stoplight Studio.
 categories:
-  - documentation
+  - docs
 link: https://stoplight.io/api-documentation
 openApiVersions:
   v2: true

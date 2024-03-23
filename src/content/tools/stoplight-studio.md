@@ -3,8 +3,8 @@ name: Stoplight Studio
 description: |
   Stoplight Studio is a powerful GUI/text editor with linting and mocking built right in. The desktop version has been discontinued, but it runs in the browser, powered by your existing GitHub, GitLab, or BitBucket repos.
 categories:
-  - gui-editors
-  - text-editor
+  - ides
+  - text-editors
 link: https://stoplight.io/studio
 openApiVersions:
   v2: true

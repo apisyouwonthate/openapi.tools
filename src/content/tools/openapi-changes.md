@@ -4,7 +4,7 @@ description: The world's fastest, most beautiful, powerful and detailed OpenAPI 
 categories:
   - data-validators
   - testing
-  - documentation
+  - docs
 link: https://pb33f.io/openapi-changes
 github: https://github.com/pb33f/openapi-changes
 openApiVersions:

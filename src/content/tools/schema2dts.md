@@ -2,7 +2,7 @@
 name: schema2dts
 description: Create types definitions from an OpenAPI schema.
 categories:
-  - miscellaneous
+  - misc
 link: https://github.com/nfroidure/schema2dts
 github: https://github.com/nfroidure/schema2dts
 openApiVersions:

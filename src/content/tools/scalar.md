@@ -2,7 +2,7 @@
 name: Scalar
 description: Beautiful Open-Source API references from Swagger/OAS files ✨
 categories:
-  - documentation
+  - docs
 link: https://docs.scalar.com/swagger-editor
 github: https://github.com/scalar/scalar
 openApiVersions:

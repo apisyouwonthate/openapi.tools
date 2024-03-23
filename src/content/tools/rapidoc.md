@@ -2,7 +2,7 @@
 name: RapiDoc
 description: Custom Element to view OpenAPI descriptions.
 categories:
-  - documentation
+  - docs
 link: https://rapidocweb.com/
 github: https://github.com/mrin9/RapiDoc
 openApiVersions:

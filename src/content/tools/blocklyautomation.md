@@ -3,8 +3,8 @@ name: BlocklyAutomation
 description: Input any OpenAPI document to have generated Blocks in Blockly form to test and generate documentation.
 categories:
   - code-generators
-  - sdk
-  - documentation
+  - sdk-generators
+  - docs
   - testing
 link: https://ignatandrei.github.io/BlocklyAutomation/
 github: https://github.com/ignatandrei/BlocklyAutomation

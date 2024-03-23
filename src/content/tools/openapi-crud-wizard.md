@@ -2,7 +2,7 @@
 name: OpenAPI CRUD Wizard
 description: This wizard is an IntelliJ Plugin to create a new OpenAPI document including all CRUD operations based only on a Yaml object. No knowledge about OpenAPI specification needed.
 categories:
-  - miscellaneous
+  - misc
 link: https://plugins.jetbrains.com/plugin/19889-openapi-crud-wizard
 github: https://github.com/inssch/openapicrudwizard
 openApiVersions:

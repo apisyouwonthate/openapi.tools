@@ -3,7 +3,7 @@ name: api-ref-bundler
 description: Bundle all external $ref in Json based API document into single document
 categories:
   - converters
-  - miscellaneous
+  - misc
 github: https://github.com/udamir/api-ref-bundler
 openApiVersions:
   v2: true

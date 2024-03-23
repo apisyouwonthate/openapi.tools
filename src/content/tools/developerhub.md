@@ -2,7 +2,7 @@
 name: DeveloperHub
 description: Collaboration platform for product and API documentation
 categories:
-  - documentation
+  - docs
 link: https://developerhub.io
 openApiVersions:
   v2: true

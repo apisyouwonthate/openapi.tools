@@ -4,7 +4,7 @@ description: |
   The framework for building app backends and microservices via the API design-first workflow.
 categories:
   - server
-  - mock
+  - mock-servers
 link: https://github.com/NotJustAToy/falcon-heavy
 github: https://github.com/NotJustAToy/falcon-heavy
 openApiVersions:

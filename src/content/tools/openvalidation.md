@@ -2,8 +2,8 @@
 name: openVALIDATION
 description: Allows complex validation rules to be specified in openAPI spec files using natural language.
 categories:
-  - miscellaneous
-  - description-validators
+  - misc
+  - schema-validators
   - data-validators
 link: https://docs.openvalidation.io/openapi/openapi-specification
 github: https://github.com/openvalidation/openvalidation-openapi

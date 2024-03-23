@@ -3,7 +3,7 @@ name: GranthAi
 description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
 categories:
   - auto-generators
-  - documentation
+  - docs
 link: https://granthai.com
 github: https://www.npmjs.com/package/granthai
 openApiVersions:

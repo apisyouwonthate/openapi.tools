@@ -3,7 +3,7 @@ name: Apicurio Studio
 description: |
   Web-Based Open Source API Design via the OpenAPI specification.
 categories:
-  - gui-editors
+  - ides
 link: https://www.apicur.io/
 github: https://github.com/apicurio/apicurio-studio
 openApiVersions:

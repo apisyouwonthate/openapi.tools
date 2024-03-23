@@ -2,8 +2,8 @@
 name: vacuum
 description: A blazing fast OpenAPI linter and validator that is compatible with Spectral rulesets, and designed for enterprise-grade speed and scale.
 categories:
-  - miscellaneous
-  - description-validators
+  - misc
+  - schema-validators
   - data-validators
 link: https://quobix.com/vacuum
 github: https://github.com/daveshanley/vacuum

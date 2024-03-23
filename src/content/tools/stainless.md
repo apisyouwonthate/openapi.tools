@@ -2,7 +2,7 @@
 name: ✨ Stainless
 description: Generate SDKs in popular languages and publish them to package managers (like npm).
 categories:
-  - sdk
+  - sdk-generators
 link: https://stainlessapi.com
 github: https://github.com/stainless-api/stl-api
 openApiVersions:

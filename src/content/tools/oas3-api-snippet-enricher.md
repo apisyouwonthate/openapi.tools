@@ -2,7 +2,7 @@
 name: oas3-api-snippet-enricher
 description: Enrich your existing description documents with generated code samples
 categories:
-  - documentation
+  - docs
 link: https://github.com/cdwv/oas3-api-snippet-enricher/
 github: https://github.com/cdwv/oas3-api-snippet-enricher/
 openApiVersions:

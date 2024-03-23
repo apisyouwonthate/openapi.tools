@@ -2,7 +2,7 @@
 name: Connexion
 description: OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support
 categories:
-  - mock
+  - mock-servers
 link: https://connexion.readthedocs.io/en/latest/
 github: https://github.com/zalando/connexion
 openApiVersions:

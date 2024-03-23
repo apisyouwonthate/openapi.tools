@@ -2,7 +2,7 @@
 name: OpenAPI Explorer
 description: Generate and render fully customizable API documentation, then explore and execute API requests via the integrated console.
 categories:
-  - documentation
+  - docs
 link: https://github.com/Rhosys/openapi-explorer/blob/main/README.md
 github: https://github.com/Rhosys/openapi-explorer
 openApiVersions:

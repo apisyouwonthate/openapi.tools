@@ -2,7 +2,7 @@
 name: MockLab
 description: SaaS platform to upload your spec to create a mock server
 categories:
-  - mock
+  - mock-servers
 link: https://www.mocklab.io/docs/getting-started/
 github: https://www.mocklab.io/docs/getting-started/
 openApiVersions:

@@ -2,8 +2,8 @@
 name: Frevo
 description: Keep track of changes in your OpenAPI specifications & generate API references ⛱️
 categories:
-  - documentation
-  - miscellaneous
+  - docs
+  - misc
 link: https://frevo.dev?ref=openapitools
 openApiVersions:
   v2: false

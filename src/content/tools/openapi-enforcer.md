@@ -3,7 +3,7 @@ name: OpenAPI Enforcer
 description: Validate your OpenAPI document, serialize, deserialize, and validate incoming requests and outgoing responses, and simplify response building. You can even produce mock data.
 categories:
   - data-validators
-  - description-validators
+  - schema-validators
   - server
   - testing
 link: https://www.npmjs.com/package/openapi-enforcer

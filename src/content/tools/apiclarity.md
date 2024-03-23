@@ -2,7 +2,7 @@
 name: APIClarity
 description: Reconstruct Open API Specifications from real-time workload traffic seamlessly.
 categories:
-  - learning
+  - courses
 link: https://apiclarity.io/
 github: https://github.com/apiclarity/apiclarity
 openApiVersions:

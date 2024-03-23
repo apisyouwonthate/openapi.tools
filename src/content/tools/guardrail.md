@@ -2,7 +2,7 @@
 name: guardrail
 description: Principled code generation from OpenAPI descriptions
 categories:
-  - sdk
+  - sdk-generators
 link: https://github.com/twilio/guardrail
 github: https://github.com/twilio/guardrail
 openApiVersions:

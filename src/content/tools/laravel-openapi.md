@@ -3,7 +3,7 @@ name: laravel-openapi
 description: Generate OpenAPI 3 specification for Laravel Applications.
 categories:
   - converters
-  - miscellaneous
+  - misc
 github: https://github.com/vyuldashev/laravel-openapi
 openApiVersions:
   v2: false

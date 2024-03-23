@@ -2,7 +2,7 @@
 name: openapi-spec-validator
 description: OpenAPI Description validator
 categories:
-  - description-validators
+  - schema-validators
 github: https://github.com/p1c2u/openapi-spec-validator
 openApiVersions:
   v2: true

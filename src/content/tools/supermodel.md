@@ -2,7 +2,7 @@
 name: Supermodel
 description: Model your data using JSON Schema, refer and remix the models freely, convert to various formats including OAS v2/v3.
 categories:
-  - dsl
+  - dsls
 link: https://supermodel.io
 openApiVersions:
   v2: true

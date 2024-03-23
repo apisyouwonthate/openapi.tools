@@ -2,8 +2,8 @@
 name: // Speakeasy
 description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
 categories:
-  - sdk
-  - documentation
+  - sdk-generators
+  - docs
 link: https://speakeasyapi.dev/
 github: https://github.com/speakeasy-api
 openApiVersions:

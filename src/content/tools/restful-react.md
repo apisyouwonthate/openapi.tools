@@ -2,7 +2,7 @@
 name: restful-react
 description: Generate React hooks with appropriate type-signatures from OpenAPI descriptions
 categories:
-  - sdk
+  - sdk-generators
 link: https://github.com/contiamo/restful-react
 github: https://github.com/contiamo/restful-react
 openApiVersions:

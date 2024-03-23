@@ -2,9 +2,9 @@
 name: docs
 description: A modern alternative to `go-swagger`. Offers generation and parsing of OpenAPI Specs, depending on the usage.
 categories:
-  - parser
+  - parsers
   - converters
-  - sdk
+  - sdk-generators
 link: https://github.com/go-oas/docs
 github: https://github.com/go-oas/docs
 openApiVersions:

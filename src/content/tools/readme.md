@@ -2,7 +2,7 @@
 name: ReadMe
 description: Interactive developer hubs that help users succeed with your APIs 🦉
 categories:
-  - documentation
+  - docs
 link: https://readme.com
 github: https://github.com/readmeio
 openApiVersions:

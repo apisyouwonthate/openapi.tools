@@ -2,7 +2,7 @@
 name: openapi-schema-validator
 description: OpenApi description validation
 categories:
-  - description-validators
+  - schema-validators
 link: https://www.npmjs.com/package/@seriousme/openapi-schema-validator
 github: https://github.com/seriousme/openapi-schema-validator
 openApiVersions:

@@ -2,8 +2,8 @@
 name: express-openapi-validator
 description: 🦋 Auto-validate API requests and responses in ExpressJS.
 categories:
-  - miscellaneous
-  - description-validators
+  - misc
+  - schema-validators
   - data-validators
 github: https://github.com/cdimascio/express-openapi-validator
 openApiVersions:

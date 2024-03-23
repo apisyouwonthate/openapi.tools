@@ -2,8 +2,8 @@
 name: Kong Enterprise Edition
 description: Highly customizable developer portal with developer onboarding, integrated with the Kong API Gateway
 categories:
-  - documentation
-  - gateway
+  - docs
+  - gateways
 link: https://konghq.com/kong-enterprise-edition/
 openApiVersions:
   v2: true

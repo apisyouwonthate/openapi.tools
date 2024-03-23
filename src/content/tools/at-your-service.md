@@ -3,7 +3,7 @@ name: at-your-service
 description: |
   A developer tool for API observability on the browser. Generate OpenAPI specifications and code from network traffic
 categories:
-  - miscellaneous
+  - misc
 link: https://atyourservice.awalsh.io/
 github: https://github.com/AndrewWalsh/at-your-service
 openApiVersions:

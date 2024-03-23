@@ -2,7 +2,7 @@
 name: OpenAPI Designer
 description: OpenAPI Designer is an easy-to-use, free, web-based, codeless description document editor with JSON and YAML outputs.
 categories:
-  - gui-editors
+  - ides
 link: https://openapidesigner.com
 openApiVersions:
   v2: false

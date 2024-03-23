@@ -2,9 +2,9 @@
 name: openapi-dev-tool
 description: OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!
 categories:
-  - miscellaneous
+  - misc
   - testing
-  - documentation
+  - docs
 github: https://github.com/lyra/openapi-dev-tool
 openApiVersions:
   v2: false

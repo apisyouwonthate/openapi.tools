@@ -2,7 +2,7 @@
 name: openapi-comparator
 description: C# library for comparing two OpenAPI specifications.
 categories:
-  - miscellaneous
+  - misc
 link: https://github.com/criteo/openapi-comparator
 github: https://github.com/criteo/openapi-comparator
 openApiVersions:

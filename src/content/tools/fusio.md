@@ -3,7 +3,7 @@ name: Fusio
 description: Open source API management platform
 categories:
   - server
-  - gateway
+  - gateways
 link: https://www.fusio-project.org/
 github: https://github.com/apioo/fusio
 openApiVersions:

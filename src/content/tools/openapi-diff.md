@@ -2,7 +2,7 @@
 name: openapi-diff
 description: Utility for comparing two OpenAPI specifications.
 categories:
-  - miscellaneous
+  - misc
 github: https://github.com/quen2404/openapi-diff
 openApiVersions:
   v2: false

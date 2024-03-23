@@ -2,7 +2,7 @@
 name: rswag
 description: Rswag extends rspec-rails request specs with a Swagger-based DSL for describing and testing API operations.
 categories:
-  - dsl
+  - dsls
 link: https://github.com/rswag/rswag
 github: https://github.com/rswag/rswag
 openApiVersions:

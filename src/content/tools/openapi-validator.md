@@ -2,7 +2,7 @@
 name: OpenAPI Validator
 description: Configurable and extensible validator/linter for OpenAPI documents
 categories:
-  - description-validators
+  - schema-validators
 github: https://github.com/IBM/openapi-validator
 openApiVersions:
   v2: true

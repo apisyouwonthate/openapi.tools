@@ -2,7 +2,7 @@
 name: php-openapi-faker
 description: Library to generate fake data for OpenAPI 3.x requests, responses and schemas.
 categories:
-  - miscellaneous
+  - misc
 github: https://github.com/canvural/php-openapi-faker
 openApiVersions:
   v2: false

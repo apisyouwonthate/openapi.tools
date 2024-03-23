@@ -3,7 +3,7 @@ name: tsoa
 description: Creates OpenAPI docs and provides free runtime validation for your Koa, Express, Hapi (and more) services
 categories:
   - server
-  - data-validation
+  - data-validators
 link: https://github.com/lukeautry/tsoa
 github: https://github.com/lukeautry/tsoa
 openApiVersions:

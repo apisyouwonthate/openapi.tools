@@ -2,7 +2,7 @@
 name: Nexmo OAS Renderer
 description: Ruby OpenAPI docs rendering, use standalone or add to your Rails app
 categories:
-  - documentation
+  - docs
 github: https://github.com/Nexmo/nexmo-oas-renderer
 openApiVersions:
   v2: false

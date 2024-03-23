@@ -2,8 +2,8 @@
 name: openapi-examples-validator
 description: Validates embedded JSON-examples in OpenAPI-specs
 categories:
-  - miscellaneous
-  - description-validators
+  - misc
+  - schema-validators
   - data-validators
 github: https://github.com/codekie/openapi-examples-validator
 openApiVersions:

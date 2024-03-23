@@ -3,11 +3,11 @@ name: oas-tools
 description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description over Express servers, including security validations
 categories:
   - security
-  - documentation
+  - docs
   - server
   - parsers
   - data-validators
-  - description-validators
+  - schema-validators
 github: https://github.com/isa-group/oas-tools
 openApiVersions:
   v2: false

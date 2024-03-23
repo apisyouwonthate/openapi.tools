@@ -2,8 +2,8 @@
 name: ratemyopenapi
 description: Free and open source OpenAPI automated review and validation tool.
 categories:
-  - miscellaneous
-  - description-validators
+  - misc
+  - schema-validators
   - security
 link: https://ratemyopenapi.com
 github: https://github.com/zuplo/rate-my-openapi

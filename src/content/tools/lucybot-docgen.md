@@ -2,7 +2,7 @@
 name: LucyBot DocGen
 description: Generate a customizable website, with API documentation, console, and interactive workflows, from an OpenAPI spec
 categories:
-  - documentation
+  - docs
 link: https://lucybot.com/docgen
 github: https://github.com/LucyBot-Inc/documentation-starter
 openApiVersions:

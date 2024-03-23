@@ -2,7 +2,7 @@
 name: MrinDoc
 description: OpenAPI description document viewer.
 categories:
-  - documentation
+  - docs
 link: https://mrin9.github.io/OpenAPI-Viewer/
 github: https://github.com/mrin9/OpenAPI-Viewer
 openApiVersions:

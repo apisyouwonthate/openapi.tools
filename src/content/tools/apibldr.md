@@ -3,7 +3,7 @@ name: ApiBldr
 description: |
   Web-Based API Designer for OpenAPI (swagger) and AsyncAPI specifications.
 categories:
-  - gui-editors
+  - ides
 link: https://www.apibldr.com/
 openApiVersions:
   v2: true

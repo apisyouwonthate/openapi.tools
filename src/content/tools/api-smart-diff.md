@@ -2,7 +2,7 @@
 name: api-smart-diff
 description: Compare two Json based API documents (OpenAPI, AsyncAPI, JsonSchema, GraphAPI)
 categories:
-  - miscellaneous
+  - misc
 github: https://github.com/udamir/api-smart-diff
 openApiVersions:
   v2: true

@@ -2,10 +2,10 @@
 name: Treblle
 description: Treblle is a lightweight SDK that helps Engineering and Product teams build, ship, and maintain REST based APIs faster.
 categories:
-  - documentation
+  - docs
   - security
   - monitoring
-  - miscellaneous
+  - misc
 link: https://www.treblle.com/
 openApiVersions:
   v2: false

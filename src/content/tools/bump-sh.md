@@ -2,7 +2,7 @@
 name: Bump.sh
 description: Bump.sh generates elegant documentation and changelogs from your OpenAPI specifications. Git diff, for your API. Integrates with CI and Slack.
 categories:
-  - documentation
+  - docs
 link: https://bump.sh
 github: https://github.com/bump-sh/cli
 openApiVersions:

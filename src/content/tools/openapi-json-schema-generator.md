@@ -3,7 +3,7 @@ name: OpenAPI JSON Schema Generator
 description: A template-driven engine to generate API client code + documentation by parsing your OpenAPI Description
 categories:
   - code-generators
-  - sdk
+  - sdk-generators
 link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
 github: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
 openApiVersions:

@@ -2,7 +2,7 @@
 name: Response2Schema
 description: Takes any JSON response and generates an OpenAPI definition document with the component schema and a default endpoint.
 categories:
-  - learning
+  - courses
 link: https://github.com/dsuurlant/response2schema
 openApiVersions:
   v2: false

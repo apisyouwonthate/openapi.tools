@@ -2,8 +2,8 @@
 name: Restish
 description: A CLI for REST-ish APIs with HTTP/2, built-in auth, content negotiation, caching, and more that understands and can discover OpenAPI descriptions.
 categories:
-  - documentation
-  - miscellaneous
+  - docs
+  - misc
   - testing
 link: https://rest.sh/
 github: https://github.com/danielgtaylor/restish

@@ -2,7 +2,7 @@
 name: ReDoc
 description: Open source API reference docs from OpenAPI descriptions
 categories:
-  - documentation
+  - docs
 link: https://redocly.github.io/redoc/
 github: https://github.com/Redocly/ReDoc/
 openApiVersions:
