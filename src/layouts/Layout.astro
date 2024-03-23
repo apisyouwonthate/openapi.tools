@@ -1,6 +1,7 @@
 ---
 import { SEO } from 'astro-seo';
 
+import Container from '../components/Container';
 import PostHog from '../components/PostHog.astro';
 
 interface Props {
@@ -107,5 +108,65 @@ interface Props {
 
   <body>
     <slot />
+    <footer
+      class="my-20 min-h-[400px] gap-4 bg-gray-700 px-8 py-20 text-xl text-white"
+    >
+      <Container>
+        &copy; {new Date().getFullYear()} &nbsp;
+        <a href="https://apisyouwonthate.com" target="_blank"
+          >APIs You Won't Hate</a
+        >. All rights reserved.
+      </Container>
+
+      <Container>
+        <div class="flex space-x-4">
+          <a
+            rel="me"
+            href="https://twitter.com/apisyouwonthate"
+            class="text-white"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            target="_blank"
+            rel="me"
+            href="https://github.com/apisyouwonthate/openapi.tools"
+            class="text-white"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+
+          <a
+            target="_blank"
+            rel="me"
+            href="https://www.linkedin.com/company/apisyouwonthate"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+
+          <a
+            target="_blank"
+            rel="me"
+            href="https://www.youtube.com/channel/UCF7gjKbU2Rj8n8uXzr2c5Gg"
+            class="text-white"
+          >
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <a href="https://apisyouwonthate.com/podcast" class="text-white">
+            <i class="fa fa-microphone"></i> APIs You Won't Hate (the podcast)
+          </a>
+
+          <a
+            target="_blank"
+            href="https://apisyouwonthate.com/newsletter"
+            class="text-white"
+          >
+            <i class="fa fa-envelope"></i> APIs You Won't Hate (the newsletter)
+          </a>
+        </div>
+      </Container>
+    </footer>
   </body>
 </html>
