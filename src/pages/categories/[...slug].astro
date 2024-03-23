@@ -1,6 +1,8 @@
 ---
-import Layout from '@/layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+
+import Container from '../../components/Container';
+import Layout from '../../layouts/Layout.astro';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -13,13 +15,49 @@ export async function getStaticPaths() {
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+// 3 get entries for this category from the Tools collection
+const allTools = await getCollection('tools', {
+  filter: (tool) => {
+    console.log('tool', tool.data.categories, entry.data.name);
+    return tool.data.categories.contains(entry.data.name);
+  },
+});
+
+const tools = allTools.filter((tool) => {
+  if (!tool.data.categories) {
+    return false;
+  }
+  const categories = tool.data.categories;
+  // look through the categories list to see if any of the categories matches enry.slug
+  return categories.some((category) => category.slug === entry.slug);
+});
+
+const toolCount = tools.length;
 ---
 
-<Layout>
-  <header>
-    <h1>{entry.data.name}</h1>
-  </header>
-  <main class="bg-white">
-    <Content />
-  </main>
+<Layout title={entry.data.name}>
+  <Container>
+    <header>
+      <h1>{entry.data.name} - ({toolCount})</h1>
+      <p>{entry.data.description}</p>
+    </header>
+
+    <section>
+      <Content />
+    </section>
+
+    <main class="bg-white">
+      <ul>
+        {
+          tools.map((tool) => (
+            <li>
+              <h2>{tool.data.name}</h2>
+              <p>{tool.data.description}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </main>
+  </Container>
 </Layout>
