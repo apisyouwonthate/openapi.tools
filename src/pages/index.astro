@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 
 import Card from '../components/Card.astro';
+import Container from '../components/Container';
 import Sponsor from '../components/Sponsor.tsx';
 import Layout from '../layouts/Layout.astro';
 
@@ -9,37 +10,54 @@ const allCategories = await getCollection('categories');
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <header>
-      <h1>Openapi.tools</h1>
-      <p>
-        Stay up to date with a community-driven list of high-quality, modern
-        tools for OpenAPI. An open source project from <a
-          href="https://apisyouwonthate.com"
-          target="_blank"
-        >
-          APIs You Won't Hate</a
-        >.
-      </p>
+  <div class="flex flex-col gap-8">
+    <header class="bg-purple-400 py-20 text-white">
+      <Container>
+        <h1 class="text-6xl">Openapi.tools</h1>
+        <p>
+          Stay up to date with a community-driven list of high-quality, modern
+          tools for OpenAPI. An open source project from <a
+            href="https://apisyouwonthate.com"
+            target="_blank"
+          >
+            APIs You Won't Hate</a
+          >.
+        </p>
 
-      <p class="text-md">
-        Is there a tool missing that you think should be on the list? Submit a
-        Pull Request on <a
-          href="https://github.com/apisyouwonthate/openapi.tools"
-          >GitHub apisyouwonthate/openapi.tools</a
-        >.
-      </p>
+        <p class="text-md">
+          Is there a tool missing that you think should be on the list? Submit a
+          Pull Request on <a
+            href="https://github.com/apisyouwonthate/openapi.tools"
+            >GitHub apisyouwonthate/openapi.tools</a
+          >.
+        </p>
+      </Container>
     </header>
 
+    {/* sponsor is a react component. Neat! */}
     <Sponsor />
-    {
-      allCategories.map((category) => (
-        <Card
-          href={'#'}
-          title={category.data.name}
-          body={category.data.description}
-        />
-      ))
-    }
-  </main>
+
+    <Container>
+      <main>
+        <header class="mb-8">
+          <h2 class="text-4xl font-bold">Tool Types</h2>
+          <p class="text-lg">
+            We've organized everything into categories so you can jump to the
+            section you're interested in.
+          </p>
+        </header>
+        <ul class="grid grid-cols-3 gap-8">
+          {
+            allCategories.map((category) => (
+              <Card
+                href={`/categories/${category.slug}`}
+                title={category.data.name}
+                body={category.data.description}
+              />
+            ))
+          }
+        </ul>
+      </main>
+    </Container>
+  </div>
 </Layout>
