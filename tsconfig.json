@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "paths": {
       "@/components/*": ["./src/components/*"],
       "@/layouts/*": ["./src/layouts/*"]
