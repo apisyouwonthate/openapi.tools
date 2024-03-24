@@ -1,0 +1,24 @@
+---
+import clsx from 'clsx';
+
+interface props {
+  title: string;
+  description?: string;
+}
+
+const { title, description, children } = Astro.props;
+---
+
+<header class="my-9 space-y-1">
+  <h1 class="font-display text-sm font-medium text-sky-500">{title}</h1>
+  <p
+    class={clsx(
+      'font-display pb-3 text-3xl tracking-tight text-slate-900 dark:text-white'
+    )}
+  >
+    {description}
+  </p>
+  <div class="flex flex-col gap-1">
+    <slot />
+  </div>
+</header>

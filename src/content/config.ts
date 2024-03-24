@@ -1,7 +1,7 @@
 // 1. Import utilities from `astro:content`
 import { defineCollection, reference, z } from 'astro:content';
 
-import { Icon, icons } from '@/components/Icon';
+import { icons } from '@/components/Icon';
 
 const iconNames = Object.keys(icons);
 

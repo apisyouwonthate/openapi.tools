@@ -1,5 +1,3 @@
-'use client';
-
 import { Suspense, useCallback, useState } from 'react';
 import { Dialog } from '@headlessui/react';
 
@@ -41,6 +39,7 @@ function CloseOnNavigation({ close }: { close: () => void }) {
   document.addEventListener('astro:after-swap', () => {
     close();
   });
+  return null;
 }
 
 export function MobileNavigation() {

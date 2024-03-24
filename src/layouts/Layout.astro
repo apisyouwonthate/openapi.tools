@@ -33,6 +33,7 @@ const categories: NavigationItems = [
     links: allCategories.map((category) => ({
       title: category.data.name,
       href: `/categories/${category.slug}`,
+      description: category.data.description,
     })),
   },
 ];
@@ -57,9 +58,6 @@ const categories: NavigationItems = [
     />
     <meta name="author" content="APIs You Won't Hate" />
     <link rel="canonical" href="https://openapi.tools" />
-    <title>
-      OpenAPI.Tools - an Open Source list of great tools for OpenAPI.
-    </title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -116,6 +114,7 @@ const categories: NavigationItems = [
 
     <SEO
       titleTemplate="%s | OpenApi.tools, from APIs You Won't Hate"
+      title={title}
       description="A comprehensive and open source list of resources for developers working with OpenAPI."
       openGraph={{
         basic: {
@@ -166,7 +165,9 @@ const categories: NavigationItems = [
             <Navigation categories={categories} url={Astro.url} />
           </div>
         </div>
-        <slot />
+        <main class="flex flex-col px-4">
+          <slot />
+        </main>
       </div>
     </div>
   </body>

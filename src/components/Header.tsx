@@ -21,8 +21,6 @@ export function Header() {
     };
   }, []);
 
-  const { pathname } = { pathname: 'wom' };
-
   return (
     <header
       className={clsx(

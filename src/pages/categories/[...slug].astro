@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 
+import Card from '@/components/Card.astro';
+import PageHeader from '@/components/PageHeader.astro';
 import Container from '../../components/Container';
 import Layout from '../../layouts/Layout.astro';
 
@@ -32,27 +34,22 @@ const toolCount = tools.length;
 ---
 
 <Layout title={entry.data.name}>
-  <Container>
-    <header>
-      <h1>{entry.data.name} - ({toolCount})</h1>
-      <p>{entry.data.description}</p>
-    </header>
+  <PageHeader title={entry.data.name} description={entry.data.description}>
+    {/* render the body of the markdown file for this category */}
+    <Content />
+  </PageHeader>
 
-    <section>
-      <Content />
-    </section>
+  <hr class="my-6" />
 
-    <main>
-      <ul>
-        {
-          tools.map((tool) => (
-            <li>
-              <h2>{tool.data.name}</h2>
-              <p>{tool.data.description}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </main>
-  </Container>
+  <main>
+    <ul>
+      {
+        tools.map((tool) => (
+          <>
+            <Card title={tool.data.name} body={tool.data.description} />
+          </>
+        ))
+      }
+    </ul>
+  </main>
 </Layout>
