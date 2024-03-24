@@ -1,18 +1,17 @@
 {
   "extends": "astro/tsconfigs/strict",
+
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
+    "baseUrl": "/Users/mike/src/apisyouwonthate/openapi.tools",
     "paths": {
-      "@/components/*": ["./src/components/*"],
-      "@/layouts/*": ["./src/layouts/*"]
-    }
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "jsx.d.ts",
-    "env.d.ts",
-    "types.d.ts",
-    "posthog.d.ts"
-  ]
+      "@/components/*": ["src/components/*"],
+      "@/layouts/*": ["src/layouts/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/styles/*": ["src/styles/*"],
+      "@/utils/*": ["src/utils/*"]
+    },
+    "verbatimModuleSyntax": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }

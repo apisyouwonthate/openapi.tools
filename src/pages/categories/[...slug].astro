@@ -19,7 +19,6 @@ const { Content } = await entry.render();
 // 3 get entries for this category from the Tools collection
 const allTools = await getCollection('tools', {
   filter: (tool) => {
-    console.log('tool', tool.data.categories, entry.data.name);
     return tool.data.categories.contains(entry.data.name);
   },
 });
@@ -47,7 +46,7 @@ const toolCount = tools.length;
       <Content />
     </section>
 
-    <main class="bg-white">
+    <main>
       <ul>
         {
           tools.map((tool) => (

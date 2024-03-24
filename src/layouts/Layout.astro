@@ -1,16 +1,24 @@
 ---
 import { SEO } from 'astro-seo';
+import clsx from 'clsx';
 
-import Container from '../components/Container';
+import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
+import { Navigation, type NavigationItems } from '@/components/Navigation';
 import PostHog from '../components/PostHog.astro';
 
 interface Props {
   title: string;
+  categories: NavigationItems;
 }
+
+const { href, title, body, categories } = Astro.props;
+
+const isHomePage = Astro.url.pathname === '/';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class={clsx('h-full antialiased')}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -101,72 +109,44 @@ interface Props {
         site: '@apisyouwonthate',
       }}
     />
-    <script src="https://cdn.usefathom.com/script.js" data-site="MKNBSINY" defer
-    ></script>
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      data-site="MKNBSINY"
+      defer
+      is:inline></script>
     <PostHog />
   </head>
 
-  <body>
-    <slot />
-    <footer
-      class="my-20 min-h-[400px] gap-4 bg-gray-700 px-8 py-20 text-xl text-white"
-    >
-      <Container>
-        &copy; {new Date().getFullYear()} &nbsp;
-        <a href="https://apisyouwonthate.com" target="_blank"
-          >APIs You Won't Hate</a
-        >. All rights reserved.
-      </Container>
+  <body class="flex min-h-full bg-white dark:bg-slate-900">
+    <div class="flex w-full flex-col">
+      <Header />
 
-      <Container>
-        <div class="flex space-x-4">
-          <a
-            rel="me"
-            href="https://twitter.com/apisyouwonthate"
-            class="text-white"
-          >
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a
-            target="_blank"
-            rel="me"
-            href="https://github.com/apisyouwonthate/openapi.tools"
-            class="text-white"
-          >
-            <i class="fa fa-github"></i>
-          </a>
+      {isHomePage && <Hero />}
 
-          <a
-            target="_blank"
-            rel="me"
-            href="https://www.linkedin.com/company/apisyouwonthate"
+      <div
+        class="max-w-8xl relative mx-auto flex w-full flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
+      >
+        <div class="hidden lg:relative lg:block lg:flex-none">
+          <div
+            class="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden"
           >
-            <i class="fa fa-linkedin"></i>
-          </a>
-
-          <a
-            target="_blank"
-            rel="me"
-            href="https://www.youtube.com/channel/UCF7gjKbU2Rj8n8uXzr2c5Gg"
-            class="text-white"
+          </div>
+          <div
+            class="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"
           >
-            <i class="fa fa-youtube"></i>
-          </a>
+          </div>
+          <div
+            class="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block"
+          >
+          </div>
+          <div
+            class="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
+          >
+            <Navigation categories={categories} />
+          </div>
         </div>
-        <div class="flex flex-col gap-2">
-          <a href="https://apisyouwonthate.com/podcast" class="text-white">
-            <i class="fa fa-microphone"></i> APIs You Won't Hate (the podcast)
-          </a>
-
-          <a
-            target="_blank"
-            href="https://apisyouwonthate.com/newsletter"
-            class="text-white"
-          >
-            <i class="fa fa-envelope"></i> APIs You Won't Hate (the newsletter)
-          </a>
-        </div>
-      </Container>
-    </footer>
+        <slot />
+      </div>
+    </div>
   </body>
 </html>

@@ -33,6 +33,16 @@ module.exports = {
       },
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    "@typescript-eslint/member-delimiter-style": {
+      "multiline": {
+        "delimiter": "semi",
+        "requireLast": true
+      },
+      "singleline": {
+        "delimiter": "semi",
+        "requireLast": false
+      },
+    }
   },
   overrides: [
     {
@@ -45,6 +55,7 @@ module.exports = {
         '@typescript-eslint/comma-dangle': 'off',
         '@typescript-eslint/semi': 'off',
         '@typescript-eslint/explicit-function-return-type': 'off',
+        ""
       },
       parserOptions: {
         ecmaFeatures: {
