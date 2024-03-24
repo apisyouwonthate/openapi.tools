@@ -62,7 +62,6 @@ const categories: NavigationItems = [
       content="OpenAPI.tools is a comprehensive and open source list of resources for developers working with OpenAPI."
     />
     <meta name="author" content="APIs You Won't Hate" />
-    <link rel="canonical" href="https://openapi.tools" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -121,6 +120,7 @@ const categories: NavigationItems = [
       titleTemplate="%s | OpenApi.tools, from APIs You Won't Hate"
       title={title}
       description="A comprehensive and open source list of resources for developers working with OpenAPI."
+      canonical={Astro.url.href}
       openGraph={{
         basic: {
           title: 'OpenAPI.tools',
@@ -149,7 +149,7 @@ const categories: NavigationItems = [
       {isHomePage && <Hero />}
 
       <div
-        class="relative mx-auto flex w-full max-w-8xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
+        class="max-w-8xl relative mx-auto flex w-full flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
       >
         <div class="hidden lg:relative lg:block lg:flex-none">
           <div
