@@ -76,12 +76,16 @@ const toolCount = tools.length;
 <Layout title={entry.data.name}>
   <PageHeader title={entry.data.name} description={entry.data.description}>
     {/* render the body of the markdown file for this category */}
-    <Content />
+    <div
+      class="prose prose-lg dark:prose-invert prose-headings:text-green-700/90"
+    >
+      <Content />
+    </div>
   </PageHeader>
 
   <hr class="my-6" />
 
-  <main>
+  <main class="prose prose-lg dark:prose-invert">
     <h2 class="mb-4 text-2xl font-bold">{toolCount} {entry.data.name}</h2>
     <section class="flex flex-col gap-4">
       {

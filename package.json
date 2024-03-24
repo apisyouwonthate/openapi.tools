@@ -22,7 +22,6 @@
     "@headlessui/react": "^1.7.18",
     "@markdoc/markdoc": "^0.4.0",
     "@sindresorhus/slugify": "^2.2.1",
-    "@tailwindcss/typography": "^0.5.10",
     "@types/react-dom": "^18.2.22",
     "astro": "^4.5.5",
     "astro-seo": "^0.8.3",
@@ -39,6 +38,7 @@
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.2.0",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/react": "^18.2.69",
     "@typescript-eslint/parser": "^7.2.0",
     "eslint": "^8.57.0",
