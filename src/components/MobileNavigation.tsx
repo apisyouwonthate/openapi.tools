@@ -4,7 +4,7 @@ import { Dialog } from '@headlessui/react';
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 import { Logomark } from './Logo';
-import { Navigation, type NavigationItems } from './Navigation';
+import { Navigation } from './Navigation';
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
