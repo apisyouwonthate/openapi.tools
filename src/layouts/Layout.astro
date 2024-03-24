@@ -1,5 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
+import { getCollection } from 'astro:content';
 import clsx from 'clsx';
 
 import { Header } from '@/components/Header';
@@ -9,12 +10,31 @@ import PostHog from '../components/PostHog.astro';
 
 interface Props {
   title: string;
-  categories: NavigationItems;
 }
 
-const { href, title, body, categories } = Astro.props;
+const { title } = Astro.props;
 
 const isHomePage = Astro.url.pathname === '/';
+
+const allCategories = await getCollection('categories');
+
+const categories: NavigationItems = [
+  {
+    title: 'Openapi.tools',
+    links: [
+      { title: 'All Categories', href: '/' },
+      { title: 'Contributing', href: '/contributing' },
+      { title: 'Sponsoring', href: '/contributing' },
+    ],
+  },
+  {
+    title: 'Categories',
+    links: allCategories.map((category) => ({
+      title: category.data.name,
+      href: `/categories/${category.slug}`,
+    })),
+  },
+];
 ---
 
 <!doctype html>

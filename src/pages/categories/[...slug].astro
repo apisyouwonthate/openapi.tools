@@ -17,11 +17,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 // 3 get entries for this category from the Tools collection
-const allTools = await getCollection('tools', {
-  filter: (tool) => {
-    return tool.data.categories.contains(entry.data.name);
-  },
-});
+const allTools = await getCollection('tools');
 
 const tools = allTools.filter((tool) => {
   if (!tool.data.categories) {

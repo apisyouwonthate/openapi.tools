@@ -4,6 +4,7 @@ import { Highlight } from 'prism-react-renderer';
 
 import { Button } from './Button';
 import { HeroBackground } from './HeroBackground';
+import Sponsor from './Sponsor';
 
 const codeLanguage = 'json';
 const code = `{
@@ -37,8 +38,8 @@ function TrafficLightsIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.75rem] dark:pb-32 dark:pt-[4.75rem]">
-      <div className="py-16 sm:px-2 lg:relative lg:px-0 lg:py-20">
+    <div className="mb-10 overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.75rem] dark:pb-32 dark:pt-[4.75rem]">
+      <div className="flex flex-col gap-4 py-16 sm:px-2 lg:relative lg:px-0 lg:py-20">
         <div className="lg:max-w-8xl mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
           <div className="relative z-10 md:text-center lg:text-left">
             <img
@@ -63,8 +64,18 @@ export function Hero() {
                 </a>
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
-                <Button href="/" variant="secondary">
+                <Button
+                  href="https://github.com/apisyouwonthate/openapi.tools/blob/main/CONTRIBUTING.md"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Contribute
+                </Button>
+                <Button
+                  variant="secondary"
+                  target="_blank"
+                  href="https://github.com/apisyouwonthate/openapi.tools"
+                >
                   View on GitHub
                 </Button>
               </div>
@@ -147,7 +158,8 @@ export function Hero() {
                         <pre
                           className={clsx(
                             className,
-                            'flex overflow-x-auto pb-6'
+                            'flex overflow-x-auto pb-6',
+                            'text-green-200/80'
                           )}
                           style={style}
                         >
