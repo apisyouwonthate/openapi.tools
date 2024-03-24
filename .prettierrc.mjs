@@ -24,7 +24,7 @@ export default {
     '^@/utils/(.*)$',
     '^@/styles/(.*)$',
     '^@/(.*)$',
-    '',
+
     '^[./]',
   ],
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],

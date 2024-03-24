@@ -1,3 +1,5 @@
+import React from 'react';
+
 export function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>

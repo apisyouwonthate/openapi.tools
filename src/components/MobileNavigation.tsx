@@ -1,4 +1,4 @@
-import { Suspense, useCallback, useState } from 'react';
+import React, { Suspense, useCallback, useState } from 'react';
 import { Dialog } from '@headlessui/react';
 
 import type { NavigationProps } from '@/layouts/Layout.astro';

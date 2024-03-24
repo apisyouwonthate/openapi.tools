@@ -5,10 +5,10 @@ module.exports = {
     '**/*.config.cjs',
     '**/*.config.mjs',
     'pnpm-lock.yaml',
+    '**/*.d.ts',
   ],
   extends: [
     'eslint:recommended',
-    'love',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
     'plugin:astro/recommended',
@@ -32,39 +32,23 @@ module.exports = {
         usePrettierrc: true,
       },
     ],
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    "@typescript-eslint/member-delimiter-style": {
-      "multiline": {
-        "delimiter": "semi",
-        "requireLast": true
-      },
-      "singleline": {
-        "delimiter": "semi",
-        "requireLast": false
-      },
-    }
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    '@typescript-eslint/comma-dangle': 'off',
+    '@typescript-eslint/semi': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
   },
   overrides: [
     {
       files: ['*.js', '*.jsx', '*.ts', '*.tsx'],
-      extends: 'love',
-      rules: {
-        'react/react-in-jsx-scope': 'off',
-        'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
-        '@typescript-eslint/comma-dangle': 'off',
-        '@typescript-eslint/semi': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
-        ""
-      },
       parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
         ecmaVersion: 12,
         sourceType: 'module',
-        project: './tsconfig.json',
+        project: true,
       },
+      parser: '@typescript-eslint/parser',
     },
     {
       // Define the configuration for `.astro` file.

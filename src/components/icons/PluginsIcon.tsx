@@ -1,12 +1,11 @@
-import { DarkMode, Gradient, LightMode } from '@/components/Icon'
+import React from 'react';
 
-export function PluginsIcon({
-  id,
-  color,
-}: {
-  id: string
-  color?: React.ComponentProps<typeof Gradient>['color']
-}) {
+import { DarkMode, Gradient, LightMode } from '@/components/Icon';
+
+const PluginsIcon: React.FC<{
+  id: string;
+  color?: React.ComponentProps<typeof Gradient>['color'];
+}> = ({ id, color }) => {
   return (
     <>
       <defs>
@@ -65,5 +64,7 @@ export function PluginsIcon({
         />
       </DarkMode>
     </>
-  )
-}
+  );
+};
+
+export { PluginsIcon };

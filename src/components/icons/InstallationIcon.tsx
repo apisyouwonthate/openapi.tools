@@ -1,11 +1,13 @@
-import { DarkMode, Gradient, LightMode } from '@/components/Icon'
+import React from 'react';
+
+import { DarkMode, Gradient, LightMode } from '@/components/Icon';
 
 export function InstallationIcon({
   id,
   color,
 }: {
-  id: string
-  color?: React.ComponentProps<typeof Gradient>['color']
+  id: string;
+  color?: React.ComponentProps<typeof Gradient>['color'];
 }) {
   return (
     <>
@@ -43,5 +45,5 @@ export function InstallationIcon({
         />
       </DarkMode>
     </>
-  )
+  );
 }

@@ -1,17 +1,19 @@
 ---
+import type { GetStaticPaths } from 'astro';
 import { getCollection } from 'astro:content';
 
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '../../layouts/Layout.astro';
 
 // 1. Generate a new path for every collection entry
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const categories = await getCollection('categories');
   return categories.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
-}
+};
+
 // 2. For your template, you can get the entry directly from the prop
 const { entry } = Astro.props;
 const { Content } = await entry.render();
@@ -57,11 +59,11 @@ const tools = allTools
       return 1;
     }
 
-    const aDate = a.data.sponsorship?.startDate;
     const bDate = b.data.sponsorship?.startDate;
+    const aDate = a.data.sponsorship?.startDate;
     // both are sponsored, sort by start date
     // note: gross syntax here because TypeScript is not happy with the optional chaining
-    if (aSponsor && bSponsor && aDate && bDate) {
+    if (aSponsor && bSponsor && aDate !== undefined && bDate !== undefined) {
       return new Date(aDate).getTime() - new Date(bDate).getTime();
     }
 

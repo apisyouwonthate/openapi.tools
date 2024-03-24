@@ -1,3 +1,4 @@
+import React from 'react';
 import clsx from 'clsx';
 
 import type { NavigationProps } from '@/layouts/Layout.astro';
@@ -32,16 +33,13 @@ export function Navigation({
 
   return (
     <nav className={clsx('text-base lg:text-sm', className)}>
-      <ul role="list" className="space-y-9">
+      <ul className="space-y-9">
         {categories?.map((category) => (
           <li key={category.title}>
             <h2 className="font-display font-medium text-slate-900">
               {category.title}
             </h2>
-            <ul
-              role="list"
-              className="mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800"
-            >
+            <ul className="mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800">
               {category.links?.map((link) => (
                 <li
                   key={link.href}
