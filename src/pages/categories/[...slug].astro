@@ -77,7 +77,7 @@ const toolCount = tools.length;
   <PageHeader title={entry.data.name} description={entry.data.description}>
     {/* render the body of the markdown file for this category */}
     <div
-      class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90"
+      class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
     >
       <Content />
     </div>
@@ -89,17 +89,19 @@ const toolCount = tools.length;
     <h2 class="mb-4 text-2xl font-bold">{toolCount} {entry.data.name}</h2>
     <section class="flex flex-col gap-4">
       {
-        tools.map((tool) => (
-          <div>
-            {tool.data.sponsorship?.startDate ?? (
-              <div>
-                <span class="text-sm font-semibold">Sponsored</span>
-              </div>
-            )}
-            {tool.data.name}
-            {tool.data.description}
-          </div>
-        ))
+        tools.map((tool) => {
+          return (
+            <div>
+              {tool.data.sponsorship && tool.data.sponsorship.startDate && (
+                <div>
+                  <span class="text-sm font-semibold">Sponsored</span>
+                </div>
+              )}
+              {tool.data.name}
+              {tool.data.description}
+            </div>
+          );
+        })
       }
     </section>
   </main>
