@@ -8,7 +8,7 @@ import { PresetsIcon } from '@/components/icons/PresetsIcon';
 import { ThemingIcon } from '@/components/icons/ThemingIcon';
 import { WarningIcon } from '@/components/icons/WarningIcon';
 
-const icons = {
+export const icons = {
   installation: InstallationIcon,
   presets: PresetsIcon,
   plugins: PluginsIcon,
@@ -16,6 +16,8 @@ const icons = {
   lightbulb: LightbulbIcon,
   warning: WarningIcon,
 };
+
+export type IconVariants = keyof typeof icons;
 
 const iconStyles = {
   blue: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
@@ -30,9 +32,10 @@ export function Icon({
   ...props
 }: {
   color?: keyof typeof iconStyles;
-  icon: keyof typeof icons;
+  icon: IconVariants;
 } & Omit<React.ComponentPropsWithoutRef<'svg'>, 'color'>) {
   let id = useId();
+
   let IconComponent = icons[icon];
 
   return (

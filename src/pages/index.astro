@@ -2,6 +2,7 @@
 import { SEO } from 'astro-seo';
 import { getCollection } from 'astro:content';
 
+import { QuickLink } from '@/components/QuickLink';
 import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
 
@@ -11,26 +12,40 @@ const allCategories = await getCollection('categories');
 <Layout title="Tools for working with OpenAPI">
   <SEO title="Categories" />
 
-  <main>
+  <main class="flex flex-col">
     <header class="mb-9 space-y-1">
       <h1 class="font-display text-sm font-medium text-sky-500">Categories</h1>
       <p
-        class="font-display text-3xl tracking-tight text-slate-900 dark:text-white"
+        class="font-display pb-3 text-3xl tracking-tight text-slate-900 dark:text-white"
       >
         We've organized everything into categories so you can jump to the
         section you're interested in.
       </p>
+      <div class="flex flex-col gap-1">
+        <p>
+          There are many tools and resources available for working with OpenAPI.
+          We've organized them into categories to help you find what you're
+          looking for. If you're looking for a specific tool or resource, you
+          can use the search bar at the top of the page.
+        </p>
+        <p>
+          If you feel like something is missing, check out our instructions on
+          how to
+          <a class="font-medium underline" href="/contribute">contributing</a>.
+        </p>
+      </div>
     </header>
-    <ul class="grid grid-cols-3 gap-8">
+    <div class="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
       {
         allCategories.map((category) => (
-          <Card
+          <QuickLink
             href={`/categories/${category.slug}`}
             title={category.data.name}
             body={category.data.description}
+            icon={category?.icon}
           />
         ))
       }
-    </ul>
+    </div>
   </main>
 </Layout>

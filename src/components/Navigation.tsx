@@ -19,12 +19,14 @@ export function Navigation({
   className,
   onLinkClick,
   categories,
+  url,
 }: {
   categories: NavigationItems;
   className?: string;
   onLinkClick?: React.MouseEventHandler<HTMLAnchorElement>;
+  url: URL;
 }) {
-  const { pathname } = { pathname: 'wom' };
+  const { pathname } = url;
 
   return (
     <nav className={clsx('text-base lg:text-sm', className)}>

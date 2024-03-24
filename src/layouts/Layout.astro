@@ -20,15 +20,16 @@ const allCategories = await getCollection('categories');
 
 const categories: NavigationItems = [
   {
-    title: 'Openapi.tools',
+    title: 'Get Started',
     links: [
       { title: 'All Categories', href: '/' },
+      { title: "What's OpenAPI?", href: '/openapi' },
       { title: 'Contributing', href: '/contributing' },
       { title: 'Sponsoring', href: '/contributing' },
     ],
   },
   {
-    title: 'Categories',
+    title: 'OpenAPI Tool Categories',
     links: allCategories.map((category) => ({
       title: category.data.name,
       href: `/categories/${category.slug}`,
@@ -162,7 +163,7 @@ const categories: NavigationItems = [
           <div
             class="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
           >
-            <Navigation categories={categories} />
+            <Navigation categories={categories} url={Astro.url} />
           </div>
         </div>
         <slot />

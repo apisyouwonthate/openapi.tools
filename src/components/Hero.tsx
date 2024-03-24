@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { Highlight } from 'prism-react-renderer';
 
 import { Button } from './Button';
+import { GitHubIcon } from './GitHubIcon';
 import { HeroBackground } from './HeroBackground';
 import Sponsor from './Sponsor';
 
@@ -76,7 +77,10 @@ export function Hero() {
                   target="_blank"
                   href="https://github.com/apisyouwonthate/openapi.tools"
                 >
-                  View on GitHub
+                  <span className="mr-[0.5ch] inline-block h-4 w-4 self-center fill-white pt-[3px]">
+                    <GitHubIcon />
+                  </span>{' '}
+                  Contribute on GitHub
                 </Button>
               </div>
             </div>

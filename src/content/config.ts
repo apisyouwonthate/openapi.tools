@@ -1,12 +1,22 @@
 // 1. Import utilities from `astro:content`
 import { defineCollection, reference, z } from 'astro:content';
 
+import { Icon, icons } from '@/components/Icon';
+
+const iconNames = Object.keys(icons);
+
 // 2. Define your collection(s)
 const categoriesCollection = defineCollection({
   type: 'content',
   schema: z.object({
     name: z.string(),
     description: z.string(),
+    icon: z
+      .string()
+      .optional()
+      .refine((value) => !value || (value && iconNames.includes(value)), {
+        message: 'Invalid icon name. Must be one of: ' + iconNames.join(', '),
+      }),
   }),
 });
 
