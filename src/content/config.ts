@@ -33,6 +33,14 @@ const toolsCollection = defineCollection({
       v3_1: z.boolean().optional(),
       v4: z.boolean().optional(),
     }),
+    sponsorship: z
+      .object({
+        startDate: z.date(),
+        endDate: z.date().optional(), // will be set when sponsorship ends
+        url: z.string().url().optional(), // optionally override default link while sponsored
+        testimonial: z.string().optional(), // optionally include a testimonial
+      })
+      .optional(),
   }),
 });
 

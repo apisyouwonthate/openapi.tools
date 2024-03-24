@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 
+import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 
 export type NavigationItem = {
@@ -19,14 +20,12 @@ export function Navigation({
   className,
   onLinkClick,
   categories,
-  url,
-}: {
-  categories: NavigationItems;
+  currentUrl,
+}: NavigationProps & {
   className?: string;
   onLinkClick?: React.MouseEventHandler<HTMLAnchorElement>;
-  url: URL;
 }) {
-  const { pathname } = url;
+  const { pathname } = currentUrl;
 
   const linkStandardColors =
     'text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300';

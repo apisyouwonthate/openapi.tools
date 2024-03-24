@@ -22,7 +22,6 @@ export function Logomark(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
-  const greenColor = '#6BA43A';
   return (
     <svg
       viewBox="0 -12 974 137"

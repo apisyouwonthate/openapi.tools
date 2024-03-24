@@ -3,11 +3,12 @@ import clsx from 'clsx';
 
 import { GitHubIcon } from '@/components/GitHubIcon';
 import { ThemeSelector } from '@/components/ThemeSelector';
+import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 import { Logo, Logomark } from './Logo';
 import { MobileNavigation } from './MobileNavigation';
 
-export function Header() {
+export function Header({ categories, currentUrl }: NavigationProps) {
   let [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ export function Header() {
       )}
     >
       <div className="mr-6 flex lg:hidden">
-        <MobileNavigation />
+        <MobileNavigation categories={categories} currentUrl={currentUrl} />
       </div>
       <div className="relative flex flex-grow basis-0 items-center">
         <Link href="/" aria-label="Home page">

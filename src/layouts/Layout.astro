@@ -12,6 +12,11 @@ interface Props {
   title: string;
 }
 
+export interface NavigationProps {
+  categories: NavigationItems;
+  currentUrl: URL;
+}
+
 const { title } = Astro.props;
 
 const isHomePage = Astro.url.pathname === '/';
@@ -139,7 +144,7 @@ const categories: NavigationItems = [
 
   <body class="flex min-h-full bg-white dark:bg-slate-900">
     <div class="flex w-full flex-col">
-      <Header />
+      <Header categories={categories} url={Astro.url} />
 
       {isHomePage && <Hero />}
 
@@ -162,11 +167,14 @@ const categories: NavigationItems = [
           <div
             class="sticky top-[4.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto overflow-x-hidden py-16 pl-0.5 pr-8 xl:w-72 xl:pr-16"
           >
-            <Navigation categories={categories} url={Astro.url} />
+            <Navigation categories={categories} currentUrl={Astro.url} />
           </div>
         </div>
-        <main class="flex flex-col px-4">
+        <main class="flex flex-col px-4 pb-40">
           <slot />
+          <div class="mt-16 flex justify-center gap-4 text-6xl text-green-600">
+            <span>*</span><span>*</span><span>*</span>
+          </div>
         </main>
       </div>
     </div>

@@ -20,10 +20,11 @@ const code = `{
       "email": "support@example.com"
     },
   },
+  // ...
 }`;
 
 const tabs = [
-  { name: 'openapi.yaml', isActive: true },
+  { name: 'openapi.json', isActive: true },
   { name: 'README.md', isActive: false },
 ];
 

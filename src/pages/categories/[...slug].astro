@@ -1,9 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-import Card from '@/components/Card.astro';
 import PageHeader from '@/components/PageHeader.astro';
-import Container from '../../components/Container';
 import Layout from '../../layouts/Layout.astro';
 
 // 1. Generate a new path for every collection entry
@@ -21,14 +19,54 @@ const { Content } = await entry.render();
 // 3 get entries for this category from the Tools collection
 const allTools = await getCollection('tools');
 
-const tools = allTools.filter((tool) => {
-  if (!tool.data.categories) {
-    return false;
-  }
-  const categories = tool.data.categories;
-  // look through the categories list to see if any of the categories matches enry.slug
-  return categories.some((category) => category.slug === entry.slug);
-});
+const tools = allTools
+  .filter((tool) => {
+    if (!tool.data.categories) {
+      return false;
+    }
+    const categories = tool.data.categories;
+    // look through the categories list to see if any of the categories matches enry.slug
+    return categories.some((category) => category.slug === entry.slug);
+  })
+  .sort((a, b) => {
+    const checkIsCurrentSponsor = (currentTool: (typeof allTools)[0]) => {
+      if (!currentTool.data.sponsorship) {
+        return false;
+      }
+      if (
+        !currentTool.data.sponsorship.startDate ||
+        !currentTool.data.sponsorship.endDate
+      ) {
+        return false;
+      }
+      const startDate = new Date(currentTool.data.sponsorship.startDate);
+      const endDate = new Date(currentTool.data.sponsorship.endDate);
+      const now = new Date();
+      return startDate < now && endDate > now;
+    };
+
+    // sponsored tools come first, with the sponsor that started the earliest coming first
+    // then sort by name
+    const aSponsor = checkIsCurrentSponsor(a);
+    const bSponsor = checkIsCurrentSponsor(b);
+
+    if (aSponsor && !bSponsor) {
+      return -1;
+    }
+    if (!aSponsor && bSponsor) {
+      return 1;
+    }
+
+    const aDate = a.data.sponsorship?.startDate;
+    const bDate = b.data.sponsorship?.startDate;
+    // both are sponsored, sort by start date
+    // note: gross syntax here because TypeScript is not happy with the optional chaining
+    if (aSponsor && bSponsor && aDate && bDate) {
+      return new Date(aDate).getTime() - new Date(bDate).getTime();
+    }
+
+    return a.data.name.localeCompare(b.data.name);
+  });
 
 const toolCount = tools.length;
 ---
@@ -42,14 +80,21 @@ const toolCount = tools.length;
   <hr class="my-6" />
 
   <main>
-    <ul>
+    <h2 class="mb-4 text-2xl font-bold">{toolCount} {entry.data.name}</h2>
+    <section class="flex flex-col gap-4">
       {
         tools.map((tool) => (
-          <>
-            <Card title={tool.data.name} body={tool.data.description} />
-          </>
+          <div>
+            {tool.data.sponsorship?.startDate ?? (
+              <div>
+                <span class="text-sm font-semibold">Sponsored</span>
+              </div>
+            )}
+            {tool.data.name}
+            {tool.data.description}
+          </div>
         ))
       }
-    </ul>
+    </section>
   </main>
 </Layout>

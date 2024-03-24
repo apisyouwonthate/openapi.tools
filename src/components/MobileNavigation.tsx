@@ -1,9 +1,10 @@
 import { Suspense, useCallback, useState } from 'react';
 import { Dialog } from '@headlessui/react';
 
+import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 import { Logomark } from './Logo';
-import { Navigation } from './Navigation';
+import { Navigation, type NavigationItems } from './Navigation';
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -42,7 +43,7 @@ function CloseOnNavigation({ close }: { close: () => void }) {
   return null;
 }
 
-export function MobileNavigation() {
+export function MobileNavigation({ categories, currentUrl }: NavigationProps) {
   let [isOpen, setIsOpen] = useState(false);
   let close = useCallback(() => setIsOpen(false), [setIsOpen]);
 
@@ -88,7 +89,12 @@ export function MobileNavigation() {
               <Logomark className="h-9 w-9" />
             </Link>
           </div>
-          <Navigation className="mt-5 px-1" onLinkClick={onLinkClick} />
+          <Navigation
+            className="mt-5 px-1"
+            onLinkClick={onLinkClick}
+            categories={categories}
+            currentUrl={currentUrl}
+          />
         </Dialog.Panel>
       </Dialog>
     </>
