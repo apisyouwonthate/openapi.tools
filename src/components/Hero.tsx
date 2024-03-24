@@ -44,7 +44,7 @@ export function Hero() {
       <div className="flex flex-col gap-4 py-10 sm:px-2 lg:relative lg:px-0 lg:py-12">
         <Sponsor />
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
-          <div className="relative z-10 md:text-center lg:text-left">
+          <div className="relative z-10 text-left">
             <img
               className="absolute bottom-full right-full -mb-56 -mr-72 opacity-50"
               src="images/blur-cyan.png"
@@ -54,7 +54,8 @@ export function Hero() {
             />
             <div className="relative">
               <p className="font-display inline bg-gradient-to-r from-green-200 via-green-400 to-green-200 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
-                Tools for working wih OpenAPI specs
+                Tools for working with <br className="md:hidden" /> OpenAPI
+                specs
               </p>
               <p className="mt-3 text-2xl tracking-tight text-gray-400">
                 A community-driven, open source project from <br />
@@ -164,8 +165,7 @@ export function Hero() {
                         <pre
                           className={clsx(
                             className,
-                            'flex overflow-x-auto pb-6',
-                            'text-green-200/80'
+                            'flex overflow-x-auto pb-6'
                           )}
                           style={style}
                         >

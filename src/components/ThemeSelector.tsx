@@ -47,12 +47,25 @@ function SystemIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export function ThemeSelector(
   props: React.ComponentPropsWithoutRef<typeof Listbox<'div'>>
 ) {
-  const [theme, setTheme] = useState<string>('system');
+  const [theme, setTheme] = useState<string>(() => {
+    return localStorage?.getItem('theme') ?? 'system';
+  });
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    console.log('mountains');
   }, []);
+
+  useEffect(() => {
+    if (theme === 'system') {
+      document.documentElement.classList.remove('dark');
+      localStorage?.removeItem('theme');
+    } else {
+      document.documentElement.classList.toggle('dark', theme === 'dark');
+      localStorage?.setItem('theme', theme);
+    }
+  });
 
   if (!mounted) {
     return <div className="h-6 w-6">MOUNTEE</div>;
