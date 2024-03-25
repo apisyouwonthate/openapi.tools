@@ -11,6 +11,9 @@ Inside of the repo, you'll see the following folders and files:
 ├── public/
 │   └── favicon.svg
 ├── src/
+│   ├── content/
+│   │   ├── categories/
+│   │   └── tools/
 │   ├── components/
 │   │   └── Card.astro
 │   ├── layouts/
