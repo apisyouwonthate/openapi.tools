@@ -53,7 +53,6 @@ export const ToolColumns: ColumnDef<Tool & { slug: string }>[] = [
             className="text-emerald-600 dark:text-emerald-300"
           >
             <GitHubIcon className="inline-block h-4 w-4 fill-white" />
-            githubbb
           </a>
         )}
       </div>
