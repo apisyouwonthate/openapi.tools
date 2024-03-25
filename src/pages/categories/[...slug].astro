@@ -90,6 +90,10 @@ const toolCount = tools.length;
     <section class="flex flex-col gap-4">
       {
         tools.map((tool) => {
+          let languages: string[] = [];
+          if (tool.data?.languages) {
+            languages = Object.keys(tool.data?.languages);
+          }
           return (
             <div>
               {tool.data.sponsorship && tool.data.sponsorship.startDate && (
@@ -99,11 +103,15 @@ const toolCount = tools.length;
               )}
               {tool.data.name}
               {tool.data.description}
-              {tool.data?.languages && (
-                <span>languages</span>
-                <pre>
-                  {JSON.stringify(tool.data?.languages, null, 2)}
-                </pre>
+              {languages.length > 0 && (
+                <>
+                  <div>Languages</div>
+                  <div class="flex flex-row gap-2">
+                    {languages.map((language) => (
+                      <span>{language}</span>
+                    ))}
+                  </div>
+                </>
               )}
             </div>
           );
