@@ -99,6 +99,12 @@ const toolCount = tools.length;
               )}
               {tool.data.name}
               {tool.data.description}
+              {tool.data?.languages && (
+                <span>languages</span>
+                <pre>
+                  {JSON.stringify(tool.data?.languages, null, 2)}
+                </pre>
+              )}
             </div>
           );
         })
