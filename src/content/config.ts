@@ -14,6 +14,7 @@ const categoriesCollection = defineCollection({
     icon: z
       .string()
       .optional()
+      .nullable()
       .refine((value) => !value || (value && iconNames.includes(value)), {
         message: 'Invalid icon name. Must be one of: ' + iconNames.join(', '),
       }),

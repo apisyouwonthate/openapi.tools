@@ -2,6 +2,7 @@
 import { SEO } from 'astro-seo';
 import { getCollection } from 'astro:content';
 
+import type { IconVariants } from '@/components/Icon';
 import PageHeader from '@/components/PageHeader.astro';
 import { QuickLink } from '@/components/QuickLink';
 import Layout from '../layouts/Layout.astro';
@@ -34,7 +35,7 @@ const allCategories = await getCollection('categories');
           href={`/categories/${category.slug}`}
           title={category.data.name}
           body={category.data.description}
-          icon={category.icon}
+          icon={category.data.icon as IconVariants}
         />
       ))
     }

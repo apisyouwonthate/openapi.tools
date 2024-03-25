@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntryBySlug } from 'astro:content';
 
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '../../layouts/Layout.astro';
@@ -8,15 +8,20 @@ import Layout from '../../layouts/Layout.astro';
 // 1. Generate a new path for every collection entry
 export const getStaticPaths: GetStaticPaths = async () => {
   const categories = await getCollection('categories');
-  return categories.map((entry) => ({
-    params: { slug: entry.slug },
-    props: { entry },
+  return categories.map((category) => ({
+    params: { slug: category.slug },
   }));
 };
 
 // 2. For your template, you can get the entry directly from the prop
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { slug } = Astro.params;
+const category = await getEntryBySlug('categories', slug as string);
+
+if (!category) {
+  throw new Error(`No category found for slug ${slug}`);
+}
+
+const { Content } = await category.render();
 
 // 3 get entries for this category from the Tools collection
 const allTools = await getCollection('tools');
@@ -28,7 +33,7 @@ const tools = allTools
     }
     const categories = tool.data.categories;
     // look through the categories list to see if any of the categories matches enry.slug
-    return categories.some((category) => category.slug === entry.slug);
+    return categories.some((category) => category.slug === tool.slug);
   })
   .sort((a, b) => {
     const checkIsCurrentSponsor = (currentTool: (typeof allTools)[0]) => {
@@ -73,8 +78,11 @@ const tools = allTools
 const toolCount = tools.length;
 ---
 
-<Layout title={entry.data.name}>
-  <PageHeader title={entry.data.name} description={entry.data.description}>
+<Layout title={category.data.name}>
+  <PageHeader
+    title={category.data.name}
+    description={category.data.description}
+  >
     {/* render the body of the markdown file for this category */}
     <div
       class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
@@ -86,7 +94,7 @@ const toolCount = tools.length;
   <hr class="my-6" />
 
   <main class="prose prose-lg dark:prose-invert">
-    <h2 class="mb-4 text-2xl font-bold">{toolCount} {entry.data.name}</h2>
+    <h2 class="mb-4 text-2xl font-bold">{toolCount} {category.data.name}</h2>
     <section class="flex flex-col gap-4">
       {
         tools.map((tool) => {
