@@ -1,0 +1,36 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, getEntry } from 'astro:content';
+
+import PageHeader from '@/components/PageHeader.astro';
+import Layout from '../../layouts/Layout.astro';
+
+// 1. Generate a new path for every collection entry
+export const getStaticPaths: GetStaticPaths = async () => {
+  const tools = await getCollection('tools');
+  return tools.map((category) => ({
+    params: { slug: category.slug },
+  }));
+};
+
+// 2. For your template, you can get the entry directly from the prop
+const { slug } = Astro.params;
+const tool = await getEntry('tools', slug as string);
+
+if (!tool) {
+  throw new Error(`No category found for slug ${slug}`);
+}
+
+const { Content } = await tool.render();
+---
+
+<Layout title={tool.data.name}>
+  <PageHeader title={tool.data.name} description={tool.data.description}>
+    {/* render the body of the markdown file for this category */}
+    <div
+      class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
+    >
+      <Content />
+    </div>
+  </PageHeader>
+</Layout>

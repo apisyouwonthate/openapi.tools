@@ -10,6 +10,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const categories = await getCollection('categories');
   return categories.map((category) => ({
     params: { slug: category.slug },
+    props: { category },
   }));
 };
 
@@ -26,6 +27,8 @@ const { Content } = await category.render();
 // 3 get entries for this category from the Tools collection
 const allTools = await getCollection('tools');
 
+console.log('allTools', allTools.length);
+
 const tools = allTools
   .filter((tool) => {
     if (!tool.data.categories) {
@@ -33,7 +36,7 @@ const tools = allTools
     }
     const categories = tool.data.categories;
     // look through the categories list to see if any of the categories matches enry.slug
-    return categories.some((category) => category.slug === tool.slug);
+    return categories.some((cat) => cat.slug === category.slug);
   })
   .sort((a, b) => {
     const checkIsCurrentSponsor = (currentTool: (typeof allTools)[0]) => {
