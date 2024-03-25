@@ -1,6 +1,8 @@
 import React from 'react';
 
-import { DarkMode, Gradient, LightMode } from '@/components/Icon';
+import { DarkMode } from './DarkMode';
+import { Gradient } from './Gradient';
+import { LightMode } from './LightMode';
 
 export function WarningIcon({
   id,
