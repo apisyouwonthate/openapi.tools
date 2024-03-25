@@ -5,6 +5,8 @@ categories:
   - misc
   - testing
   - docs
+languages:
+  javascript: true
 github: https://github.com/lyra/openapi-dev-tool
 openApiVersions:
   v2: false

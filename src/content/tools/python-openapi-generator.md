@@ -4,6 +4,8 @@ description: This library facilitates creating OpenAPI document for Python proje
 categories:
   - code-generators
 link: https://github.com/wael34218/python_openapi_generator
+languages:
+  python: true
 github: https://github.com/wael34218/python_openapi_generator
 openApiVersions:
   v2: false

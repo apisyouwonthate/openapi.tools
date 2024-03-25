@@ -5,6 +5,8 @@ description: |
 categories:
   - ides
 link: https://www.github.com/OAIE/oaie-sketch
+languages:
+  vue: true
 github: https://github.com/OAIE/oaie-sketch
 openApiVersions:
   v2: false

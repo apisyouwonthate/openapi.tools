@@ -4,6 +4,8 @@ description: Generate the repository structure for a scalable OpenAPI Descriptio
 categories:
   - code-generators
 link: https://github.com/Rebilly/generator-openapi-repo
+languages:
+  javascript: true
 github: https://github.com/Rebilly/generator-openapi-repo
 openApiVersions:
   v2: true

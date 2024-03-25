@@ -1,8 +1,10 @@
 ---
 name: openapi-snippet
-description: Generates code snippets in various languages & tools (ccurrentUrl, Node, Python, Ruby, Java, Go, C#...), from OpenAPI documents.
+description: Generates code snippets in various languages & tools (cURL, Node, Python, Ruby, Java, Go, C#...), from OpenAPI documents.
 categories:
   - parsers
+languages:
+  node: true
 github: https://github.com/ErikWittern/openapi-snippet
 openApiVersions:
   v2: true

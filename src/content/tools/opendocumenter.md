@@ -4,6 +4,8 @@ description: OpenDocumenter is a automatic documentation generator for OpenAPI v
 categories:
   - docs
 link: https://github.com/ouropencode/OpenDocumenter
+languages:
+  vue: true
 openApiVersions:
   v2: true
   v3: true

@@ -5,6 +5,8 @@ categories:
   - code-generators
   - sdk-generators
 link: https://github.com/cjbooms/fabrikt
+languages:
+  kotlin: true
 github: https://github.com/cjbooms/fabrikt
 openApiVersions:
   v2: false

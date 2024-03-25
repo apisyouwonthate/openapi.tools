@@ -4,6 +4,9 @@ description: Generate and render fully customizable API documentation, then expl
 categories:
   - docs
 link: https://github.com/Rhosys/openapi-explorer/blob/main/README.md
+languages:
+  javascript: true
+  custom element: true
 github: https://github.com/Rhosys/openapi-explorer
 openApiVersions:
   v2: true

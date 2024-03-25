@@ -3,6 +3,8 @@ name: OpenAPI3-Rust
 description: Rust serialization library for OpenAPI v3
 categories:
   - parsers
+languages:
+  rust: true
 github: https://github.com/adwhit/openapi3-rust
 openApiVersions:
   v2: false

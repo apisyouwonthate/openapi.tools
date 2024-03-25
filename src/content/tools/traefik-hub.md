@@ -5,6 +5,8 @@ categories:
   - docs
   - gateways
 link: https://doc.traefik.io/traefik-hub
+languages:
+  go: true
 github: https://github.com/traefik/traefik-hub-helm-chart
 openApiVersions:
   v2: true

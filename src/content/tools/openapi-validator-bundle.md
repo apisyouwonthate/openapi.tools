@@ -3,6 +3,8 @@ name: openapi-validator-bundle
 description: Validates Request and Response using Symfony Framework
 categories:
   - data-validators
+languages:
+  php: true
 github: https://github.com/cydrickn/openapi-validator-bundle
 openApiVersions:
   v2: false

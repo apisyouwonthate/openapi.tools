@@ -4,6 +4,8 @@ description: Import an OpenAPI specification into Assertible to generate tests t
 categories:
   - testing
 link: https://assertible.com
+languages:
+  saas: true
 github: null
 openApiVersions:
   v2: true

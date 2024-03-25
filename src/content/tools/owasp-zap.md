@@ -4,6 +4,8 @@ description: OWASP ZAP is a free and open source web security tool that can be u
 categories:
   - security
 link: https://www.zaproxy.org/
+languages:
+  java: true
 github: https://github.com/zaproxy/zaproxy
 openApiVersions:
   v2: true

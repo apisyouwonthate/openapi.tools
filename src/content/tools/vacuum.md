@@ -6,6 +6,8 @@ categories:
   - schema-validators
   - data-validators
 link: https://quobix.com/vacuum
+languages:
+  go: true
 github: https://github.com/daveshanley/vacuum
 openApiVersions:
   v2: true

@@ -5,6 +5,10 @@ description: |
 categories:
   - ides
 link: https://www.apicur.io/
+languages:
+  angular 7.0: true
+  java: true
+  saas: true
 github: https://github.com/apicurio/apicurio-studio
 openApiVersions:
   v2: true

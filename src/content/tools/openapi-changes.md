@@ -6,6 +6,8 @@ categories:
   - testing
   - docs
 link: https://pb33f.io/openapi-changes
+languages:
+  go: true
 github: https://github.com/pb33f/openapi-changes
 openApiVersions:
   v2: true

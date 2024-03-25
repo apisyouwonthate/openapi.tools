@@ -2,8 +2,11 @@
 name: Whook
 description: OpenAPI 3 based NodeJS server.
 categories:
-  - server
+  - servers
 link: https://github.com/nfroidure/whook
+languages:
+  javascript: true
+  typescript: true
 github: https://github.com/nfroidure/whook
 openApiVersions:
   v2: false

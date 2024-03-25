@@ -6,6 +6,8 @@ categories:
   - sdk-generators
   - converters
 link: https://goswagger.io/
+languages:
+  go: true
 github: https://github.com/go-swagger/go-swagger
 openApiVersions:
   v2: true

@@ -6,6 +6,8 @@ categories:
   - schema-validators
   - data-validators
 link: https://docs.openvalidation.io/openapi/openapi-specification
+languages:
+  java: true
 github: https://github.com/openvalidation/openvalidation-openapi
 openApiVersions:
   v2: false

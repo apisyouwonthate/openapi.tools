@@ -4,6 +4,9 @@ description: Generate React hooks with appropriate type-signatures from OpenAPI 
 categories:
   - sdk-generators
 link: https://github.com/contiamo/restful-react
+languages:
+  react: true
+  typescript: true
 github: https://github.com/contiamo/restful-react
 openApiVersions:
   v2: true

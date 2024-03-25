@@ -6,6 +6,8 @@ categories:
   - schema-validators
   - docs
 link: https://redocly.com/redocly-cli/
+languages:
+  cli & typescript: true
 github: https://github.com/Redocly/redocly-cli
 openApiVersions:
   v2: true

@@ -5,6 +5,8 @@ description: |
 categories:
   - misc
 link: https://www.django-rest-framework.org/api-guide/schemas/
+languages:
+  python: true
 github: https://github.com/encode/django-rest-framework
 openApiVersions:
   v2: false

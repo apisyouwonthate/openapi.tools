@@ -4,6 +4,8 @@ description: C# library for comparing two OpenAPI specifications.
 categories:
   - misc
 link: https://github.com/criteo/openapi-comparator
+languages:
+  csharp: true
 github: https://github.com/criteo/openapi-comparator
 openApiVersions:
   v2: false

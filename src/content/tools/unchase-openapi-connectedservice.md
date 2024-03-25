@@ -5,6 +5,8 @@ categories:
   - sdk-generators
   - code-generators
 link: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
+languages:
+  .net: true
 github: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
 openApiVersions:
   v2: true

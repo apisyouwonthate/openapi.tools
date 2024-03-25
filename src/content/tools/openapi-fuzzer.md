@@ -4,6 +4,8 @@ description: Based on OpenAPI specification, openapi-fuzzer provides random data
 categories:
   - security
 link: https://github.com/matusf/openapi-fuzzer
+languages:
+  rust: true
 openApiVersions:
   v2: false
   v3: true

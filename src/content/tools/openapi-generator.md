@@ -5,6 +5,8 @@ categories:
   - code-generators
   - sdk-generators
 link: https://openapi-generator.tech
+languages:
+  java: true
 github: https://github.com/OpenAPITools/openapi-generator
 openApiVersions:
   v2: true

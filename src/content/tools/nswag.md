@@ -4,6 +4,8 @@ description: OpenAPI toolchain for .NET, Web API and TypeScript
 categories:
   - sdk-generators
 link: https://NSwag.org
+languages:
+  .net: true
 github: https://github.com/RicoSuter/NSwag
 openApiVersions:
   v2: true

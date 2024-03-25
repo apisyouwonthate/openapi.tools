@@ -4,6 +4,8 @@ description: Parse and generate API specification formats
 categories:
   - parsers
 link: https://phpsx.org
+languages:
+  php: true
 github: https://github.com/apioo/psx-api
 openApiVersions:
   v2: true

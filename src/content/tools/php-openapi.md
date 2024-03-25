@@ -4,6 +4,8 @@ description: A PHP library for manipulating and validating OpenAPI 3.0 Descripti
 categories:
   - parsers
   - schema-validators
+languages:
+  php: true
 github: https://github.com/cebe/php-openapi
 openApiVersions:
   v2: false

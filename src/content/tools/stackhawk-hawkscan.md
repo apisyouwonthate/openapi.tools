@@ -4,6 +4,8 @@ description: StackHawk is an application vulnerability scanner purpose built for
 categories:
   - security
 link: https://stackhawk.com/
+languages:
+  saas: true
 github: https://github.com/stackhawk
 openApiVersions:
   v2: true

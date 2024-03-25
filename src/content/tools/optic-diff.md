@@ -4,6 +4,8 @@ description: Diff the effective API contract between any two versions of your Op
 categories:
   - misc
 link: https://www.useoptic.com/docs/diff-openapi
+languages:
+  node: true
 github: https://github.com/opticdev/optic
 openApiVersions:
   v2: false

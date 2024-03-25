@@ -4,6 +4,8 @@ description: Generate modern Python clients from OpenAPI 3.0 documents.
 categories:
   - converters
 link: https://github.com/openapi-generators/openapi-python-client
+languages:
+  python: true
 github: https://github.com/openapi-generators/openapi-python-client
 openApiVersions:
   v2: false

@@ -4,6 +4,8 @@ description: A SaaS platform to integrate APIs using OpenAPI documents, and mani
 categories:
   - misc
 link: https://www.meta-api.io
+languages:
+  saas: true
 openApiVersions:
   v2: true
   v3: true

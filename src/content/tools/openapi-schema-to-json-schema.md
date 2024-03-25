@@ -4,6 +4,8 @@ description: Due to the OpenAPI v3.0 and JSON Schema discrepancy, you can use th
 categories:
   - converters
 link: https://www.npmjs.com/package/@openapi-contrib/openapi-schema-to-json-schema
+languages:
+  typescript: true
 github: https://github.com/openapi-contrib/openapi-schema-to-json-schema
 openApiVersions:
   v2: false

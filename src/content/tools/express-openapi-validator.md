@@ -5,6 +5,8 @@ categories:
   - misc
   - schema-validators
   - data-validators
+languages:
+  javascript: true
 github: https://github.com/cdimascio/express-openapi-validator
 openApiVersions:
   v2: false

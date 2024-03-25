@@ -6,6 +6,8 @@ categories:
   - parsers
   - schema-validators
 link: https://github.com/openapi-processor/openapi-parser
+languages:
+  java: true
 github: https://github.com/openapi-processor/openapi-parser
 openApiVersions:
   v2: false

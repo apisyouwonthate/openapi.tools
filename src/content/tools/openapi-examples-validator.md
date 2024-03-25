@@ -5,6 +5,8 @@ categories:
   - misc
   - schema-validators
   - data-validators
+languages:
+  javascript: true
 github: https://github.com/codekie/openapi-examples-validator
 openApiVersions:
   v2: true

@@ -4,6 +4,8 @@ description: Kubb is a tool that can generate TypeScript types, Zod schemas, rea
 categories:
   - code-generators
 link: https://kubb.dev/
+languages:
+  typescript: true
 github: https://github.com/kubb-project/kubb
 openApiVersions:
   v2: true

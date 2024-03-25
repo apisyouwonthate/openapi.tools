@@ -4,6 +4,8 @@ description: Convert static OpenAPI schemas to TypeScript types quickly using pu
 categories:
   - converters
 link: https://github.com/drwpow/openapi-typescript
+languages:
+  typescript: true
 openApiVersions:
   v2: true
   v3: true

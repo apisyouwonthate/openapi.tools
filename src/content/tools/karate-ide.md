@@ -4,8 +4,10 @@ description: Generates KarateDSL Tests and Mocks from OpenAPI 3.0 documents and 
 categories:
   - converters
   - testing
-  - mock-servers
+  - mocking-tools
 link: https://marketplace.visualstudio.com/items?itemName=KarateIDE.karate-ide
+languages:
+  vscode extension: true
 github: https://github.com/ivangsa/karate-ide
 openApiVersions:
   v2: false

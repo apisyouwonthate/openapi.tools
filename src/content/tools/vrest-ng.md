@@ -4,6 +4,8 @@ description: vREST NG is a simple and powerful application for API Automation. I
 categories:
   - testing
 link: https://ng.vrest.io
+languages:
+  javascript: true
 github: null
 openApiVersions:
   v2: true

@@ -4,6 +4,8 @@ description: RestCase executes hundrends of security and quality checks against 
 categories:
   - security
 link: https://restcase.com/platform/security
+languages:
+  saas: true
 openApiVersions:
   v2: true
   v3: true

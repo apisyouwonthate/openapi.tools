@@ -4,6 +4,8 @@ description: Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x
 categories:
   - docs
 link: https://mermade.github.io/shins
+languages:
+  node: true
 github: https://github.com/mermade/widdershins
 openApiVersions:
   v2: true

@@ -6,6 +6,9 @@ categories:
   - misc
   - schema-validators
   - data-validators
+languages:
+  java: true
+  kotlin: true
 github: https://github.com/cdimascio/openapi-spring-webflux-validator
 openApiVersions:
   v2: true

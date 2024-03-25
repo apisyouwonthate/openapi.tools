@@ -4,6 +4,8 @@ description: DRAIG is an OpenAPI3 based design-first custom generator that creat
 categories:
   - sdk-generators
 link: https://gitlab.com/robarago/draig
+languages:
+  java: true
 github: https://gitlab.com/robarago/draig
 openApiVersions:
   v2: false

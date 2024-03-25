@@ -3,6 +3,8 @@ name: openapi-psr7-validator
 description: Using a PHP framework that supports PSR-7? Get free validation without writing a bunch of code, by registering this middleware and pointing it at your API description document.
 categories:
   - data-validators
+languages:
+  php: true
 github: https://github.com/thephpleague/openapi-psr7-validator
 openApiVersions:
   v2: false

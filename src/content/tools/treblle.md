@@ -7,6 +7,7 @@ categories:
   - monitoring
   - misc
 link: https://www.treblle.com/
+languages: {}
 openApiVersions:
   v2: false
   v3: true

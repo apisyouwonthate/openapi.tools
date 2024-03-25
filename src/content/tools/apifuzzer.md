@@ -4,6 +4,8 @@ description: Fuzz test your application using your OpenAPI definition without co
 categories:
   - data-validators
 link: https://github.com/KissPeter/APIFuzzer
+languages:
+  python: true
 github: https://github.com/KissPeter/APIFuzzer
 openApiVersions:
   v2: true

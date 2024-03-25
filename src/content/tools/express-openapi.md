@@ -2,8 +2,11 @@
 name: express-openapi
 description: An unopinionated OpenAPI framework for Express, which supports Promise based middleware, response handlers and Security Filtering.
 categories:
-  - server
+  - servers
 link: https://www.npmjs.com/package/express-openapi
+languages:
+  node: true
+  typescript: true
 github: https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi
 openApiVersions:
   v2: true

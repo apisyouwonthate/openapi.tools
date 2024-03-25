@@ -5,6 +5,8 @@ description: |
 categories:
   - testing
 link: https://smartbear.com/product/ready-api/overview/
+languages:
+  java: true
 openApiVersions:
   v2: true
   v3: true

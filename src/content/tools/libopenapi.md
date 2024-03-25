@@ -4,6 +4,8 @@ description: Enterprise grade, fully featured OpenAPI 3.1, 3.0 and Swagger parse
 categories:
   - parsers
 link: https://pb33f.io/libopenapi
+languages:
+  go: true
 github: https://github.com/pb33f/libopenapi
 openApiVersions:
   v2: true

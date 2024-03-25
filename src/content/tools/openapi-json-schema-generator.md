@@ -5,6 +5,8 @@ categories:
   - code-generators
   - sdk-generators
 link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
+languages:
+  python: true
 github: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
 openApiVersions:
   v2: false

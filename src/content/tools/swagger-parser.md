@@ -3,6 +3,8 @@ name: swagger-parser
 description: Swagger Parser reads OpenAPI definitions into current Java POJOs.
 categories:
   - parsers
+languages:
+  java: true
 github: https://github.com/swagger-api/swagger-parser
 openApiVersions:
   v2: true

@@ -4,6 +4,8 @@ description: Custom Element to view OpenAPI descriptions.
 categories:
   - docs
 link: https://rapidocweb.com/
+languages:
+  web component: true
 github: https://github.com/mrin9/RapiDoc
 openApiVersions:
   v2: true

@@ -4,6 +4,8 @@ description: Generate OpenAPI 3.x specification from HAR.
 categories:
   - converters
 link: https://www.avantation.in/
+languages:
+  typescript: true
 github: https://github.com/anbuksv/avantation
 openApiVersions:
   v2: false

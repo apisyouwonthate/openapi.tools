@@ -3,6 +3,8 @@ name: openapi3_parser
 description: A Ruby implementation of parser and validator for the OpenAPI 3 Specification.
 categories:
   - parsers
+languages:
+  ruby: true
 github: https://github.com/kevindew/openapi3_parser
 openApiVersions:
   v2: false

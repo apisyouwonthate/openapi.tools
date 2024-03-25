@@ -5,6 +5,8 @@ description: |
 categories:
   - misc
 link: https://atyourservice.awalsh.io/
+languages:
+  typescript: true
 github: https://github.com/AndrewWalsh/at-your-service
 openApiVersions:
   v2: false

@@ -4,6 +4,8 @@ description: Fully typed OpenAPI Typescript generator
 categories:
   - sdk-generators
 link: https://github.com/Embraser01/typoas
+languages:
+  typescript: true
 github: https://github.com/Embraser01/typoas
 openApiVersions:
   v2: false

@@ -3,6 +3,8 @@ name: hikaku
 description: A library that tests if the implementation of a REST-API meets its specification.
 categories:
   - testing
+languages:
+  kotlin: true
 github: https://github.com/codecentric/hikaku
 openApiVersions:
   v2: false

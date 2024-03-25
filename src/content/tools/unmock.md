@@ -2,9 +2,11 @@
 name: Unmock
 description: API integration testing library that intercepts outgoing requests and serves back mock data based on the OpenAPI descriptions.
 categories:
-  - mock-servers
+  - mocking-tools
   - testing
 link: https://unmock.io
+languages:
+  node: true
 github: https://github.com/unmock/unmock-js
 openApiVersions:
   v2: false

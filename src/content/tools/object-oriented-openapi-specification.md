@@ -3,6 +3,8 @@ name: Object Oriented OpenAPI Specification
 description: An object oriented approach to generating OpenAPI Descriptions, implemented in PHP
 categories:
   - parsers
+languages:
+  php: true
 github: https://github.com/goldspecdigital/oooas
 openApiVersions:
   v2: false

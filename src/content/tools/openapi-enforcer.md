@@ -4,9 +4,11 @@ description: Validate your OpenAPI document, serialize, deserialize, and validat
 categories:
   - data-validators
   - schema-validators
-  - server
+  - servers
   - testing
 link: https://www.npmjs.com/package/openapi-enforcer
+languages:
+  node: true
 github: https://github.com/byu-oit/openapi-enforcer
 openApiVersions:
   v2: true

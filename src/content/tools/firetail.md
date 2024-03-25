@@ -4,6 +4,8 @@ description: FireTail provides discovery, logging, posture management and in-lin
 categories:
   - security
 link: https://www.firetail.io/
+languages:
+  saas: true
 github: https://github.com/firetail-io
 openApiVersions:
   v2: true

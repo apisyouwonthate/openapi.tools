@@ -4,6 +4,8 @@ description: An OpenAPI 3 documentation website generator built with Jekyll for 
 categories:
   - docs
 link: https://github.com/robertlove/jekyll-openapi
+languages:
+  jekyll: true
 openApiVersions:
   v2: false
   v3: true

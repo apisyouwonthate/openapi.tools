@@ -4,6 +4,9 @@ description: Build beautiful, interactive API Docs with embeddable React or Web 
 categories:
   - docs
 link: https://stoplight.io/open-source/elements
+languages:
+  javascript: true
+  custom element: true
 github: https://github.com/stoplightio/elements
 openApiVersions:
   v2: true

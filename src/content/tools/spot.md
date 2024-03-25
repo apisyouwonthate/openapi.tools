@@ -2,7 +2,9 @@
 name: Spot
 description: A concise, developer-friendly way to describe your API contract.
 categories:
-  - dsls
+  - domain-specific-languages
+languages:
+  typescript: true
 github: https://github.com/airtasker/spot
 openApiVersions:
   v2: true

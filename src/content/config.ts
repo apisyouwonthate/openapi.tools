@@ -26,6 +26,7 @@ const toolsCollection = defineCollection({
     name: z.string(),
     description: z.string(),
     categories: z.array(reference('categories')),
+    languages: z.record(z.boolean()).optional(),
     link: z.string().url().optional(),
     openApiVersions: z.object({
       v2: z.boolean().optional(),

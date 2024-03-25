@@ -1,8 +1,11 @@
 ---
 name: Swagger Editor
-description: Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs.
+description: |
+  Design, describe, and document your API on the first open source editor fully dedicated to OpenAPI-based APIs.
 categories:
-  - text-editors
+  - text-editors-extensions
+languages:
+  node: true
 github: https://github.com/swagger-api/swagger-editor
 openApiVersions:
   v2: true

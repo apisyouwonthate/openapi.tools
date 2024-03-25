@@ -7,6 +7,8 @@ description: |-
 categories:
   - converters
 link: https://github.com/grantila/typeconv/
+languages:
+  typescript: true
 github: https://github.com/grantila/typeconv/
 openApiVersions:
   v2: false

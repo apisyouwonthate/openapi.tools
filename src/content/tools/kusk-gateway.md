@@ -3,9 +3,11 @@ name: Kusk Gateway
 description: Kusk-Gateway is an OpenAPI-driven API Gateway for Kubernetes. It empowers you to develop, validate, mock and deploy your APIs in a matter of minutes using both manual and automated GitOps/APIOps workflows.
 categories:
   - docs
-  - mock-servers
+  - mocking-tools
   - gateways
 link: https://docs.kusk.io/
+languages:
+  kubernetes: true
 github: https://github.com/kubeshop/kusk-gateway
 openApiVersions:
   v2: true

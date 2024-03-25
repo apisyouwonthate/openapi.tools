@@ -4,6 +4,8 @@ description: A plugin for the Fastify webserver to autogenerate a Fastify config
 categories:
   - data-validators
 link: https://www.npmjs.com/package/fastify-openapi-glue
+languages:
+  node: true
 github: https://github.com/PayU/openapi-validator-middleware
 openApiVersions:
   v2: true

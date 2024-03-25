@@ -3,8 +3,10 @@ name: Swift OpenAPI Generator
 description: Generate Swift client and server code from an OpenAPI document. Includes support for type-safe JSON event streaming, multipart, Swift concurrency, customizable middlewares, and pluggable HTTP libraries.
 categories:
   - sdk-generators
-  - server
+  - servers
 link: https://github.com/apple/swift-openapi-generator
+languages:
+  swift: true
 github: https://github.com/apple/swift-openapi-generator
 openApiVersions:
   v2: false

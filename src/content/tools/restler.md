@@ -4,6 +4,8 @@ description: RESTler is the first stateful REST API fuzzing tool for automatical
 categories:
   - security
   - testing
+languages:
+  any: true
 github: https://github.com/microsoft/restler
 openApiVersions:
   v2: true

@@ -2,8 +2,10 @@
 name: Goa
 description: Goa provides a holistic approach for developing remote APIs and microservices in Go. implementers don't have to worry about the documentation getting out of sync as Goa takes care of generating OpenAPI specifications for HTTP based services and gRPC protocol buffer files for gRPC based services
 categories:
-  - dsls
+  - domain-specific-languages
 link: https://goa.design
+languages:
+  go: true
 openApiVersions:
   v2: true
   v3: true

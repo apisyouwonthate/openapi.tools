@@ -4,6 +4,9 @@ description: Validate API requests against an OpenAPI schema. Lightweight, focus
 categories:
   - data-validators
 link: https://github.com/Rhosys/openapi-data-validator.js/blob/main/README.md
+languages:
+  node: true
+  javascript: true
 github: https://github.com/Rhosys/openapi-data-validator.js
 openApiVersions:
   v2: false

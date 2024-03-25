@@ -4,8 +4,10 @@ description: |
   Provides data validation within an Express, Koa or Fastify app according to a OpenAPI definition. It uses Ajv under the hood for validation.
 categories:
   - data-validators
-  - server
+  - servers
 link: https://www.npmjs.com/package/openapi-validator-middleware
+languages:
+  node: true
 github: https://github.com/PayU/openapi-validator-middleware
 openApiVersions:
   v2: true

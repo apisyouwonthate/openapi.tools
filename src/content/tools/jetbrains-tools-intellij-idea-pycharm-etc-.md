@@ -5,6 +5,9 @@ description: |
 categories:
   - ides
 link: https://plugins.jetbrains.com/plugin/14394-openapi-specifications
+languages:
+  java: true
+  python: true
 github: null
 openApiVersions:
   v2: true

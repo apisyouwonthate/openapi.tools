@@ -5,6 +5,8 @@ categories:
   - docs
   - schema-validators
 link: https://alphadoc.io
+languages:
+  saas: true
 openApiVersions:
   v2: true
   v3: true

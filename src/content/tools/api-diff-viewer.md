@@ -5,6 +5,8 @@ description: |
 categories:
   - misc
   - docs
+languages:
+  typescript: true
 github: https://github.com/udamir/api-diff-viewer
 openApiVersions:
   v2: true

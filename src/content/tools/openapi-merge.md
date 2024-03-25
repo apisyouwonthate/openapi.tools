@@ -4,6 +4,8 @@ description: A simple tool to merge multiple independent OpenAPI description fil
 categories:
   - converters
 link: https://github.com/robertmassaioli/openapi-merge
+languages:
+  typescript: true
 github: https://github.com/robertmassaioli/openapi-merge
 openApiVersions:
   v2: false

@@ -4,6 +4,8 @@ description: Create beautiful, customizable, interactive API documentation gener
 categories:
   - docs
 link: https://stoplight.io/api-documentation
+languages:
+  saas: true
 openApiVersions:
   v2: true
   v3: true

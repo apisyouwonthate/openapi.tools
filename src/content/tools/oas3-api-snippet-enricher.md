@@ -4,6 +4,8 @@ description: Enrich your existing description documents with generated code samp
 categories:
   - docs
 link: https://github.com/cdwv/oas3-api-snippet-enricher/
+languages:
+  javascript: true
 github: https://github.com/cdwv/oas3-api-snippet-enricher/
 openApiVersions:
   v2: false

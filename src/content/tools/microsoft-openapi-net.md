@@ -3,6 +3,8 @@ name: Microsoft/OpenAPI.NET
 description: C# based parser with OpenAPI Description validation and migration support from V2
 categories:
   - parsers
+languages:
+  .net: true
 github: https://github.com/Microsoft/OpenAPI.NET
 openApiVersions:
   v2: true

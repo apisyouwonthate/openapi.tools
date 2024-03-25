@@ -4,9 +4,11 @@ description: A reverse proxy that validates responses against an OpenAPI descrip
 categories:
   - data-validators
   - schema-validators
-  - server
+  - servers
   - testing
 link: https://github.com/davidmbillie/Hot-Potato
+languages:
+  csharp: true
 github: https://github.com/davidmbillie/Hot-Potato
 openApiVersions:
   v2: false

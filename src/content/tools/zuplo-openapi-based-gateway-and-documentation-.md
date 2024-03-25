@@ -6,6 +6,9 @@ categories:
   - gateways
   - docs
 link: https://www.zuplo.com
+languages:
+  web: true
+  saas: true
 openApiVersions:
   v2: false
   v3: true

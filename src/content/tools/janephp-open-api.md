@@ -3,6 +3,8 @@ name: janephp/open-api
 description: Generate a PHP Client API (PSR-7 compatible) given a OpenAPI specification.
 categories:
   - sdk-generators
+languages:
+  php: true
 github: https://github.com/janephp/open-api
 openApiVersions:
   v2: true

@@ -4,6 +4,8 @@ description: OpenAPI Designer is an easy-to-use, free, web-based, codeless descr
 categories:
   - ides
 link: https://openapidesigner.com
+languages:
+  saas: true
 openApiVersions:
   v2: false
   v3: true

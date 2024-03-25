@@ -4,8 +4,10 @@ description: Library add improve test log for RSpec and WebMock, validate its ac
 categories:
   - testing
   - data-validators
-  - courses
+  - education
 link: https://github.com/matchtechnologies/fitting
+languages:
+  ruby: true
 github: https://github.com/matchtechnologies/fitting
 openApiVersions:
   v2: true

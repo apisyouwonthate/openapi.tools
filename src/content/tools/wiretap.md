@@ -4,9 +4,12 @@ description: Wiretap is a feature packed OpenAPI compliance testing tool. Valida
 categories:
   - misc
   - testing
+  - testing
   - data-validators
   - gateways
 link: https://pb33f.io/wiretap/
+languages:
+  go: true
 github: https://github.com/pb33f/wiretap
 openApiVersions:
   v2: true

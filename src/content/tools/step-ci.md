@@ -7,6 +7,9 @@ categories:
   - converters
   - data-validators
 link: https://stepci.com
+languages:
+  cli: true
+  node: true
 github: https://github.com/stepci/stepci
 openApiVersions:
   v2: false

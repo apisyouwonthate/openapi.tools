@@ -3,9 +3,11 @@ name: Xapi Platform
 description: Xapi is an integrated platform that enables you to implement a streamlined API-first design strategy with standardized API artifacts and collaborative teams.
 categories:
   - ides
-  - text-editors
+  - text-editors-extensions
   - testing
 link: https://xapihub.io/
+languages:
+  springboot: true
 openApiVersions:
   v2: false
   v3: false

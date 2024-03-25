@@ -5,6 +5,8 @@ categories:
   - code-generators
   - misc
 link: https://github.com/deepmap/oapi-codegen
+languages:
+  go: true
 github: https://github.com/deepmap/oapi-codegen
 openApiVersions:
   v2: false

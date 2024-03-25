@@ -3,6 +3,8 @@ name: api-smart-diff
 description: Compare two Json based API documents (OpenAPI, AsyncAPI, JsonSchema, GraphAPI)
 categories:
   - misc
+languages:
+  typescript: true
 github: https://github.com/udamir/api-smart-diff
 openApiVersions:
   v2: true

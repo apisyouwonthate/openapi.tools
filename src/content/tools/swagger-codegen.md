@@ -4,6 +4,8 @@ description: Swagger Codegen enables generating server stubs and client SDKs for
 categories:
   - code-generators
 link: https://swagger.io/swagger-codegen/
+languages:
+  java: true
 github: https://github.com/swagger-api/swagger-codegen
 openApiVersions:
   v2: true

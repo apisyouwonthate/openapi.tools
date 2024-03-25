@@ -3,6 +3,8 @@ name: Google Gnostic
 description: Compile OpenAPI descriptions into equivalent Protocol Buffer representations
 categories:
   - converters
+languages:
+  go: true
 github: https://github.com/googleapis/gnostic
 openApiVersions:
   v2: true

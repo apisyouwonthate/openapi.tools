@@ -4,6 +4,8 @@ description: Simplify your JsonSchema by combining allOf safely
 categories:
   - converters
   - misc
+languages:
+  typescript: true
 github: https://github.com/udamir/allof-merge
 openApiVersions:
   v2: false

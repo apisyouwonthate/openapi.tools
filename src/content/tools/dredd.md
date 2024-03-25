@@ -4,6 +4,8 @@ description: Language-agnostic command-line tool for validating API description 
 categories:
   - testing
 link: https://dredd.io/
+languages:
+  javascript: true
 github: https://github.com/apiaryio/dredd
 openApiVersions:
   v2: true

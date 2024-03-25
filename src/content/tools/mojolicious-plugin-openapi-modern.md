@@ -2,8 +2,10 @@
 name: Mojolicious::Plugin::OpenAPI::Modern
 description: Mojolicious plugin for OpenAPI::Modern
 categories:
-  - server
+  - servers
 link: https://metacpan.org/dist/Mojolicious-Plugin-OpenAPI-Modern
+languages:
+  perl: true
 github: https://github.com/karenetheridge/Mojolicious-Plugin-OpenAPI-Modern
 openApiVersions:
   v2: false

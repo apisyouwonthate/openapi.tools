@@ -7,6 +7,8 @@ categories:
   - parsers
   - converters
 link: https://www.npmjs.com/package/openapi-format
+languages:
+  node: true
 github: https://github.com/thim81/openapi-format
 openApiVersions:
   v2: false

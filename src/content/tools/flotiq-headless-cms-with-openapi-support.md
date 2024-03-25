@@ -6,6 +6,7 @@ categories:
   - ides
   - misc
 link: https://flotiq.com
+languages: {}
 openApiVersions:
   v2: false
   v3: true

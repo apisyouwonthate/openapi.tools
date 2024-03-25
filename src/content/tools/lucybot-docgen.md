@@ -4,6 +4,8 @@ description: Generate a customizable website, with API documentation, console, a
 categories:
   - docs
 link: https://lucybot.com/docgen
+languages:
+  javascript: true
 github: https://github.com/LucyBot-Inc/documentation-starter
 openApiVersions:
   v2: true

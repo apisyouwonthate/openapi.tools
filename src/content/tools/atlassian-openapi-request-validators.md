@@ -4,6 +4,8 @@ description: A set of Java libraries which allow you to integrate OpenAPI Descri
 categories:
   - testing
 link: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
+languages:
+  java: true
 github: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
 openApiVersions:
   v2: true

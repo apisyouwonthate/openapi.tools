@@ -4,10 +4,12 @@ description: NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Descr
 categories:
   - security
   - docs
-  - server
+  - servers
   - parsers
   - data-validators
   - schema-validators
+languages:
+  node: true
 github: https://github.com/isa-group/oas-tools
 openApiVersions:
   v2: false

@@ -4,6 +4,8 @@ description: Generate OpenAPI 3 specification for Laravel Applications.
 categories:
   - converters
   - misc
+languages:
+  php: true
 github: https://github.com/vyuldashev/laravel-openapi
 openApiVersions:
   v2: false

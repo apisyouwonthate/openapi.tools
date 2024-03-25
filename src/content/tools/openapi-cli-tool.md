@@ -4,6 +4,8 @@ description: Can list up defined API paths and bundle multi-file into one. Suppo
 categories:
   - misc
 link: https://pypi.org/project/openapi-cli-tool/
+languages:
+  python: true
 github: https://github.com/hakopako/openapi-cli-tool
 openApiVersions:
   v2: false

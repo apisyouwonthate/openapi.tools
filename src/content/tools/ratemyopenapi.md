@@ -6,6 +6,8 @@ categories:
   - schema-validators
   - security
 link: https://ratemyopenapi.com
+languages:
+  go: true
 github: https://github.com/zuplo/rate-my-openapi
 openApiVersions:
   v2: false

@@ -5,6 +5,8 @@ categories:
   - auto-generators
   - docs
 link: https://granthai.com
+languages:
+  javascript: true
 github: https://www.npmjs.com/package/granthai
 openApiVersions:
   v2: false

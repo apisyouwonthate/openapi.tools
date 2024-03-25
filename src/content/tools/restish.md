@@ -6,6 +6,9 @@ categories:
   - misc
   - testing
 link: https://rest.sh/
+languages:
+  cli: true
+  go: true
 github: https://github.com/danielgtaylor/restish
 openApiVersions:
   v2: false

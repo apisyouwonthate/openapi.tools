@@ -4,6 +4,8 @@ description: A CLI tool that helps avoid undefined user behaviour by validating 
 categories:
   - schema-validators
 link: https://www.blstsecurity.com/cherrybomb
+languages:
+  rust: true
 github: https://github.com/blst-security/cherrybomb
 openApiVersions:
   v2: false

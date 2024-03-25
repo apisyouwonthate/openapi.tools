@@ -5,6 +5,8 @@ categories:
   - code-generators
   - sdk-generators
 link: https://www.apimatic.io/code-generation-as-a-service
+languages:
+  saas: true
 openApiVersions:
   v2: true
   v3: true

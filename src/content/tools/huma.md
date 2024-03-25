@@ -4,8 +4,10 @@ description: A modern, simple, fast & flexible micro framework for building HTTP
 categories:
   - auto-generators
   - data-validators
-  - server
+  - servers
 link: https://huma.rocks/
+languages:
+  go: true
 github: https://github.com/danielgtaylor/huma
 openApiVersions:
   v2: false

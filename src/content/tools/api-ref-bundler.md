@@ -4,6 +4,8 @@ description: Bundle all external $ref in Json based API document into single doc
 categories:
   - converters
   - misc
+languages:
+  typescript: true
 github: https://github.com/udamir/api-ref-bundler
 openApiVersions:
   v2: true

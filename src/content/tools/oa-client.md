@@ -5,6 +5,8 @@ categories:
   - misc
   - sdk-generators
 link: https://github.com/ninofiliu/oa-client
+languages:
+  typescript: true
 github: https://github.com/ninofiliu/oa-client
 openApiVersions:
   v2: false

@@ -4,6 +4,8 @@ description: Automatically generate OpenAPI 3.0 Spec by using network requests c
 categories:
   - auto-generators
 link: https://github.com/dcarr178/har2openapi
+languages:
+  typescript: true
 github: https://github.com/dcarr178/har2openapi
 openApiVersions:
   v2: false

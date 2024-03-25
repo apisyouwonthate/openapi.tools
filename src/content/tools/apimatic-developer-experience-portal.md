@@ -4,6 +4,8 @@ description: Customizable developer portals packed with language specific docume
 categories:
   - docs
 link: https://www.apimatic.io/product/publish
+languages:
+  saas: true
 openApiVersions:
   v2: true
   v3: true

@@ -5,6 +5,8 @@ categories:
   - docs
   - misc
 link: https://frevo.dev?ref=openapitools
+languages:
+  saas: true
 openApiVersions:
   v2: false
   v3: true

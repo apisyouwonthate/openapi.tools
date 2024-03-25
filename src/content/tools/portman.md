@@ -5,6 +5,8 @@ categories:
   - testing
   - converters
 link: https://getportman.com/
+languages:
+  node: true
 github: https://github.com/apideck-libraries/portman
 openApiVersions:
   v2: false

@@ -4,6 +4,8 @@ description: An API-first and security-first management platform. Design visuall
 categories:
   - docs
 link: https://www.restcase.com/platform/docs
+languages:
+  saas: true
 openApiVersions:
   v2: true
   v3: true

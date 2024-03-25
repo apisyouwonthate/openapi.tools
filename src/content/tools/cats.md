@@ -4,6 +4,8 @@ description: CATS is a REST API Fuzzer and negative testing tool for OpenAPI end
 categories:
   - security
 link: https://github.com/Endava/cats
+languages:
+  java: true
 openApiVersions:
   v2: true
   v3: true

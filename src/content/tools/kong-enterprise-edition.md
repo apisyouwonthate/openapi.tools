@@ -5,6 +5,8 @@ categories:
   - docs
   - gateways
 link: https://konghq.com/kong-enterprise-edition/
+languages:
+  lua: true
 openApiVersions:
   v2: true
   v3: true

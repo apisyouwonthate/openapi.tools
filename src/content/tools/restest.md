@@ -5,6 +5,8 @@ description: |
 categories:
   - testing
 link: https://github.com/isa-group/RESTest
+languages:
+  java: true
 github: https://github.com/isa-group/RESTest
 openApiVersions:
   v2: true

@@ -4,6 +4,8 @@ description: Converts between OpenAPI and RAML API specifications
 categories:
   - converters
 link: https://mulesoft.github.io/oas-raml-converter/
+languages:
+  node: true
 github: https://github.com/mulesoft/oas-raml-converter
 openApiVersions:
   v2: true

@@ -4,6 +4,9 @@ description: Upgrade files from OpenAPI v2.0 to v3.0, bundling into one mega fil
 categories:
   - converters
 link: https://mermade.org.uk/openapi-converter
+languages:
+  node: true
+  cli: true
 github: https://github.com/Mermade/swagger2openapi
 openApiVersions:
   v2: true

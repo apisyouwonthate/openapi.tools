@@ -5,6 +5,8 @@ categories:
   - schema-validators
   - data-validators
 link: https://metacpan.org/dist/OpenAPI-Modern
+languages:
+  perl: true
 github: https://github.com/karenetheridge/OpenAPI-Modern
 openApiVersions:
   v2: false
