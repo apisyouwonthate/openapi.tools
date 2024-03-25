@@ -5,7 +5,7 @@ import clsx from 'clsx';
 const themes = [
   { name: 'Light', value: 'light', icon: LightIcon },
   { name: 'Dark', value: 'dark', icon: DarkIcon },
-  { name: 'System', value: 'system', icon: SystemIcon },
+  // { name: 'System', value: 'system', icon: SystemIcon },
 ];
 
 function LightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
