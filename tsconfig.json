@@ -2,7 +2,7 @@
   "extends": "astro/tsconfigs/strict",
 
   "compilerOptions": {
-    "baseUrl": "/Users/mike/src/apisyouwonthate/openapi.tools",
+    "baseUrl": ".",
     "paths": {
       "@/components/*": ["src/components/*"],
       "@/layouts/*": ["src/layouts/*"],
