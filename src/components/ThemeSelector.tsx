@@ -54,7 +54,6 @@ export function ThemeSelector(
 
   useEffect(() => {
     setMounted(true);
-    console.log('mountains');
   }, []);
 
   useEffect(() => {

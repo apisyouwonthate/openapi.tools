@@ -1,6 +1,8 @@
 import { type ColumnDef } from '@tanstack/react-table';
 import type { Category, Tool } from 'src/content/config';
 
+import { GitHubIcon } from '../GitHubIcon';
+
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
 
@@ -30,6 +32,32 @@ export const ToolColumns: ColumnDef<Tool & { slug: string }>[] = [
 
       return versions.reverse().join(', ');
     },
+  },
+  {
+    accessorKey: 'urls',
+    header: 'Links',
+    cell: ({ row }) => (
+      <div className="flex flex-col space-y-1">
+        {row.original.link && (
+          <a
+            href={row.original.link}
+            className="text-emerald-600 dark:text-emerald-300"
+          >
+            Website
+          </a>
+        )}
+
+        {row.original.github && (
+          <a
+            href={row.original.github}
+            className="text-emerald-600 dark:text-emerald-300"
+          >
+            <GitHubIcon className="inline-block h-4 w-4 fill-white" />
+            githubbb
+          </a>
+        )}
+      </div>
+    ),
   },
 ];
 

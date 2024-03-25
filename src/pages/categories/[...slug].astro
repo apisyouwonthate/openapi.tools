@@ -29,8 +29,6 @@ const { Content } = await category.render();
 // 3 get entries for this category from the Tools collection
 const allTools = await getCollection('tools');
 
-console.log('allTools', allTools.length);
-
 const tools = allTools
   .filter((tool) => {
     if (!tool.data.categories) {
@@ -107,37 +105,6 @@ const toolsData = tools.map((tool) => ({ ...tool.data, slug: tool.slug }));
     </h2>
     <section class="prose w-full max-w-none">
       <DataTable data={toolsData} columns={ToolColumns} />
-    </section>
-    <section class="prose flex flex-col gap-4">
-      {
-        tools.map((tool) => {
-          let languages: string[] = [];
-          if (tool.data?.languages) {
-            languages = Object.keys(tool.data?.languages);
-          }
-          return (
-            <div>
-              {tool.data.sponsorship && tool.data.sponsorship.startDate && (
-                <div>
-                  <span class="text-sm font-semibold">Sponsored</span>
-                </div>
-              )}
-              {tool.data.name}
-              {tool.data.description}
-              {languages.length > 0 && (
-                <>
-                  <div>Languages</div>
-                  <div class="flex flex-row gap-2">
-                    {languages.map((language) => (
-                      <span>{language}</span>
-                    ))}
-                  </div>
-                </>
-              )}
-            </div>
-          );
-        })
-      }
     </section>
   </main>
 </Layout>
