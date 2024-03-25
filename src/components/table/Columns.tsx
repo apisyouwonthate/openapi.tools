@@ -17,7 +17,7 @@ export const ToolColumns: ColumnDef<Tool & { slug: string }>[] = [
         className="group flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
       >
         {row.original.sponsorship && <Badge variant="green">Sponsored</Badge>}
-        <span className="font-medium text-emerald-600 group-hover:underline dark:text-emerald-300">
+        <span className="whitespace-pre font-medium text-emerald-600 group-hover:underline dark:text-emerald-300">
           {row.getValue('name')}
         </span>{' '}
         <span className="font-normal">{row.original.description}</span>
