@@ -6,7 +6,6 @@ categories:
 link: https://assertible.com
 languages:
   saas: true
-github: null
 openApiVersions:
   v2: true
   v3: true

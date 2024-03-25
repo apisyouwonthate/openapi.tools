@@ -8,7 +8,6 @@ link: https://swagger.io/tools/swaggerhub/
 languages:
   saas: true
   on-premise node: true
-github: null
 openApiVersions:
   v2: true
   v3: true

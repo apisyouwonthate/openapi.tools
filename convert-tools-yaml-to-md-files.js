@@ -154,7 +154,7 @@ const convertToolToMarkdown = (tool) => {
     categories, // Use the adjusted categories array
     languages,
     link,
-    github,
+    github: github === 'null' || github === null ? undefined : github, // filter out the string "null"
     openApiVersions,
     sponsorship,
   });
