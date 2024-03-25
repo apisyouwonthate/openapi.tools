@@ -58,6 +58,10 @@ const convertToolToMarkdown = (tool) => {
       case 'learning':
         cat = 'education';
         break;
+      case 'description-validator':
+      case 'description-validators':
+        cat = 'schema-validators';
+        break;
       case 'data-validation':
         cat = 'data-validators';
         break;
@@ -73,8 +77,12 @@ const convertToolToMarkdown = (tool) => {
       case 'mock':
         cat = 'mocking-tools';
         break;
+      case 'parser':
+        cat = 'parsers';
+        break;
       case 'sdk':
-        cat = 'sdks';
+      case 'sdks':
+        cat = 'sdk-generators';
         break;
       case 'server':
         cat = 'servers';
@@ -85,6 +93,9 @@ const convertToolToMarkdown = (tool) => {
       case 'text-editor':
       case 'text-editors':
         cat = 'text-editors-extensions';
+        break;
+      case 'validator':
+        cat = 'schema-validators';
         break;
     }
 
@@ -167,7 +178,7 @@ const generateMarkdownFiles = (tools) => {
       .replace(/^-+/, '') // Remove any leading hyphens
       .toLowerCase();
 
-    const filePath = `./tools/${sanitizedTitle}.md`;
+    const filePath = `./src/content/tools/${sanitizedTitle}.md`;
     fs.writeFileSync(filePath, markdown);
     console.log(`Generated ${filePath}`);
   });
@@ -201,8 +212,8 @@ const loadToolsFromYaml = (filePath) => {
 
 const main = () => {
   const tools = loadToolsFromYaml('./tools.yml');
-  if (!fs.existsSync('./tools')) {
-    fs.mkdirSync('./tools');
+  if (!fs.existsSync('./src/content/tools')) {
+    fs.mkdirSync('./src/content/tools');
   }
   generateMarkdownFiles(tools);
 };
