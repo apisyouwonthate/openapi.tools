@@ -3,6 +3,8 @@ import type { GetStaticPaths } from 'astro';
 import { getCollection, getEntry } from 'astro:content';
 
 import PageHeader from '@/components/PageHeader.astro';
+import { ToolColumns } from '@/components/table/Columns';
+import { DataTable } from '@/components/table/DataTable';
 import Layout from '../../layouts/Layout.astro';
 
 // 1. Generate a new path for every collection entry
@@ -79,6 +81,8 @@ const tools = allTools
   });
 
 const toolCount = tools.length;
+
+const toolsData = tools.map((tool) => ({ ...tool.data, slug: tool.slug }));
 ---
 
 <Layout title={category.data.name}>
@@ -96,9 +100,15 @@ const toolCount = tools.length;
 
   <hr class="my-6" />
 
-  <main class="prose prose-lg w-full dark:prose-invert">
-    <h2 class="mb-4 text-2xl font-bold">{toolCount} {category.data.name}</h2>
-    <section class="flex flex-col gap-4">
+  <main class="prose-lg w-full dark:prose-invert">
+    <h2 class="prose mb-4 text-2xl font-bold">
+      {toolCount}
+      {category.data.name}
+    </h2>
+    <section class="prose w-full max-w-none">
+      <DataTable data={toolsData} columns={ToolColumns} />
+    </section>
+    <section class="prose flex flex-col gap-4">
       {
         tools.map((tool) => {
           let languages: string[] = [];
