@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection, getEntryBySlug } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '../../layouts/Layout.astro';
@@ -15,7 +15,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 // 2. For your template, you can get the entry directly from the prop
 const { slug } = Astro.params;
-const category = await getEntryBySlug('categories', slug as string);
+const category = await getEntry('categories', slug as string);
 
 if (!category) {
   throw new Error(`No category found for slug ${slug}`);
