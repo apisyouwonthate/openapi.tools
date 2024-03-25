@@ -72,7 +72,7 @@ const tools = allTools
     // both are sponsored, sort by start date
     // note: gross syntax here because TypeScript is not happy with the optional chaining
     if (aSponsor && bSponsor && aDate !== undefined && bDate !== undefined) {
-      return new Date(aDate).getTime() - new Date(bDate).getTime();
+      return new Date(bDate).getTime() - new Date(aDate).getTime();
     }
 
     return a.data.name.localeCompare(b.data.name);

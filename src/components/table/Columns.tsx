@@ -1,6 +1,7 @@
 import { type ColumnDef } from '@tanstack/react-table';
 import type { Category, Tool } from 'src/content/config';
 
+import Badge from '../Badge';
 import { GitHubIcon } from '../GitHubIcon';
 
 // This type is used to define the shape of our data.
@@ -13,8 +14,9 @@ export const ToolColumns: ColumnDef<Tool & { slug: string }>[] = [
     cell: ({ row }) => (
       <a
         href={`/tools/${row.original.slug}`}
-        className="group text-slate-800 no-underline dark:text-slate-200"
+        className="group flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
       >
+        {row.original.sponsorship && <Badge variant="green">Sponsored</Badge>}
         <span className="font-medium text-emerald-600 group-hover:underline dark:text-emerald-300">
           {row.getValue('name')}
         </span>{' '}
