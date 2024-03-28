@@ -1559,8 +1559,8 @@
     - description-validators
     - converters
   language: JavaScript, TypeScript
-  github: https://github.com/readmeio/oas-normalize
-  description: Tooling for converting, validating, and parsing OpenAPI, Swagger, and Postman API definitions
+  github: https://github.com/readmeio/oas
+  description: Comprehensive tooling for working with OpenAPI definitions. 
   v2: true
   v3: true
   v3_1: true
