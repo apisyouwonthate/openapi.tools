@@ -8,7 +8,7 @@ link: https://github.com/lukeautry/tsoa
 languages:
   node: true
   typescript: true
-github: https://github.com/lukeautry/tsoa
+repo: https://github.com/lukeautry/tsoa
 openApiVersions:
   v2: true
   v3: true

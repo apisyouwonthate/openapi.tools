@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   java: true
-github: https://github.com/swagger-api/swagger-parser
+repo: https://github.com/swagger-api/swagger-parser
 openApiVersions:
   v2: true
   v3: true

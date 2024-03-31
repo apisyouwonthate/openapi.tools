@@ -6,7 +6,7 @@ categories:
 link: https://pypi.org/project/openapi3-fuzzer/
 languages:
   python: true
-github: https://github.com/vwt-digital/openapi3-fuzzer/tree/master
+repo: https://github.com/vwt-digital/openapi3-fuzzer/tree/master
 openApiVersions:
   v2: false
   v3: true

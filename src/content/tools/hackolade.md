@@ -7,7 +7,7 @@ categories:
 link: https://hackolade.com
 languages:
   react: true
-github: https://github.com/hackolade/OpenAPI
+repo: https://github.com/hackolade/OpenAPI
 openApiVersions:
   v2: true
   v3: true

@@ -10,7 +10,7 @@ categories:
   - schema-validators
 languages:
   node: true
-github: https://github.com/isa-group/oas-tools
+repo: https://github.com/isa-group/oas-tools
 openApiVersions:
   v2: false
   v3: true

@@ -9,7 +9,7 @@ categories:
 languages:
   java: true
   kotlin: true
-github: https://github.com/cdimascio/openapi-spring-webflux-validator
+repo: https://github.com/cdimascio/openapi-spring-webflux-validator
 openApiVersions:
   v2: true
   v3: true

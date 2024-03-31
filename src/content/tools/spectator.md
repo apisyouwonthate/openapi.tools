@@ -6,7 +6,7 @@ categories:
 link: https://github.com/hotmeteor/spectator
 languages:
   php: true
-github: https://github.com/hotmeteor/spectator
+repo: https://github.com/hotmeteor/spectator
 openApiVersions:
   v2: false
   v3: true

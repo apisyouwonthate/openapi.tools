@@ -7,7 +7,7 @@ link: https://apiclarity.io/
 languages:
   golang: true
   javascript: true
-github: https://github.com/apiclarity/apiclarity
+repo: https://github.com/apiclarity/apiclarity
 openApiVersions:
   v2: true
   v3: true

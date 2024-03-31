@@ -6,7 +6,7 @@ categories:
 link: https://github.com/Rebilly/generator-openapi-repo
 languages:
   javascript: true
-github: https://github.com/Rebilly/generator-openapi-repo
+repo: https://github.com/Rebilly/generator-openapi-repo
 openApiVersions:
   v2: true
   v3: false

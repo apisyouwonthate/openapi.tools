@@ -6,7 +6,7 @@ categories:
 link: https://koumoul.com/openapi-viewer/
 languages:
   vue: true
-github: https://github.com/koumoul-dev/openapi-viewer
+repo: https://github.com/koumoul-dev/openapi-viewer
 openApiVersions:
   v2: false
   v3: true

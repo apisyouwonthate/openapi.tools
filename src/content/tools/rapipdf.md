@@ -6,7 +6,7 @@ categories:
 link: https://mrin9.github.io/RapiPdf
 languages:
   web component: true
-github: https://github.com/mrin9/RapiPdf
+repo: https://github.com/mrin9/RapiPdf
 openApiVersions:
   v2: true
   v3: true

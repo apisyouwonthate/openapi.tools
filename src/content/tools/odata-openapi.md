@@ -5,7 +5,7 @@ categories:
   - converters
 languages:
   .net: true
-github: https://github.com/xuzhg/OData.OpenAPI
+repo: https://github.com/xuzhg/OData.OpenAPI
 openApiVersions:
   v2: false
   v3: true

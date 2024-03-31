@@ -7,7 +7,7 @@ categories:
 link: https://docs.openapiprocessor.io
 languages:
   java: true
-github: https://github.com/openapi-processor
+repo: https://github.com/openapi-processor
 openApiVersions:
   v2: false
   v3: true

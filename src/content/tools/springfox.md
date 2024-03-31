@@ -9,7 +9,7 @@ languages:
   kotlin: true
   groovy: true
   ruby: true
-github: https://github.com/springfox/springfox
+repo: https://github.com/springfox/springfox
 openApiVersions:
   v2: true
   v3: true

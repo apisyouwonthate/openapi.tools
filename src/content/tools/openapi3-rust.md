@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   rust: true
-github: https://github.com/adwhit/openapi3-rust
+repo: https://github.com/adwhit/openapi3-rust
 openApiVersions:
   v2: false
   v3: true

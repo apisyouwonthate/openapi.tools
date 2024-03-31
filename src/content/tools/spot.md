@@ -5,7 +5,7 @@ categories:
   - domain-specific-languages
 languages:
   typescript: true
-github: https://github.com/airtasker/spot
+repo: https://github.com/airtasker/spot
 openApiVersions:
   v2: true
   v3: true

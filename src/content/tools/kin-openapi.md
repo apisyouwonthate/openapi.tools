@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   go: true
-github: https://github.com/getkin/kin-openapi
+repo: https://github.com/getkin/kin-openapi
 openApiVersions:
   v2: false
   v3: true

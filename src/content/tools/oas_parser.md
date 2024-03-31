@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   ruby: true
-github: https://github.com/Nexmo/oas_parser
+repo: https://github.com/Nexmo/oas_parser
 openApiVersions:
   v2: false
   v3: true

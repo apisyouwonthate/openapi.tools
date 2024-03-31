@@ -7,7 +7,7 @@ categories:
 link: https://www.github.com/OAIE/oaie-sketch
 languages:
   vue: true
-github: https://github.com/OAIE/oaie-sketch
+repo: https://github.com/OAIE/oaie-sketch
 openApiVersions:
   v2: false
   v3: true

@@ -2,7 +2,10 @@ import { type ColumnDef } from '@tanstack/react-table';
 import type { Category, Tool } from 'src/content/config';
 
 import Badge from '../Badge';
-import { GitHubIcon } from '../GitHubIcon';
+import { GitHubIcon } from '../icons/GitHubIcon';
+import { GitLabIcon } from '../icons/GitLabIcon';
+import GitIcon from '../icons/GitIcon';
+import RepoIcon from '../icons/RepoIcon';
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -49,12 +52,12 @@ export const ToolColumns: ColumnDef<Tool & { slug: string }>[] = [
           </a>
         )}
 
-        {row.original.github && (
+        {row.original.repo && (
           <a
-            href={row.original.github}
+            href={row.original.repo}
             className="text-emerald-600 dark:text-emerald-300"
           >
-            <GitHubIcon className="inline-block h-4 w-4 fill-white" />
+            <RepoIcon className="inline-block h-4 w-4 fill-white" repo={row.original.repo} />
           </a>
         )}
       </div>

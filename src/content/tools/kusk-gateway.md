@@ -8,7 +8,7 @@ categories:
 link: https://docs.kusk.io/
 languages:
   kubernetes: true
-github: https://github.com/kubeshop/kusk-gateway
+repo: https://github.com/kubeshop/kusk-gateway
 openApiVersions:
   v2: true
   v3: true

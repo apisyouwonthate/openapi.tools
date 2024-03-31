@@ -5,7 +5,7 @@ categories:
   - sdk-generators
 languages:
   java: true
-github: https://github.com/jrcodeza/spring-openapi
+repo: https://github.com/jrcodeza/spring-openapi
 openApiVersions:
   v2: false
   v3: true

@@ -6,7 +6,7 @@ categories:
 link: https://gitlab.com/robarago/draig
 languages:
   java: true
-github: https://gitlab.com/robarago/draig
+repo: https://gitlab.com/robarago/draig
 openApiVersions:
   v2: false
   v3: true

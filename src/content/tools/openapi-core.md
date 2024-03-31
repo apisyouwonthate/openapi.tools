@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   python: true
-github: https://github.com/p1c2u/openapi-core
+repo: https://github.com/p1c2u/openapi-core
 openApiVersions:
   v2: false
   v3: true

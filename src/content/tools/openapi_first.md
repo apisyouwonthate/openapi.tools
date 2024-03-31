@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   ruby: true
-github: https://github.com/ahx/openapi_first
+repo: https://github.com/ahx/openapi_first
 openApiVersions:
   v2: false
   v3: true

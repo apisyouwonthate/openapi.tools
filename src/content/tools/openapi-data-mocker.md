@@ -6,7 +6,7 @@ categories:
   - mocking-tools
 languages:
   php: true
-github: https://github.com/ybelenko/openapi-data-mocker
+repo: https://github.com/ybelenko/openapi-data-mocker
 openApiVersions:
   v2: false
   v3: true

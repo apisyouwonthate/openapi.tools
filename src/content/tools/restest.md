@@ -7,7 +7,7 @@ categories:
 link: https://github.com/isa-group/RESTest
 languages:
   java: true
-github: https://github.com/isa-group/RESTest
+repo: https://github.com/isa-group/RESTest
 openApiVersions:
   v2: true
   v3: true

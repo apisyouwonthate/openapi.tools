@@ -6,7 +6,7 @@ categories:
 link: https://github.com/wael34218/python_openapi_generator
 languages:
   python: true
-github: https://github.com/wael34218/python_openapi_generator
+repo: https://github.com/wael34218/python_openapi_generator
 openApiVersions:
   v2: false
   v3: true

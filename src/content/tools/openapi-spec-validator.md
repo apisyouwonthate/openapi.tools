@@ -5,7 +5,7 @@ categories:
   - schema-validators
 languages:
   python: true
-github: https://github.com/p1c2u/openapi-spec-validator
+repo: https://github.com/p1c2u/openapi-spec-validator
 openApiVersions:
   v2: true
   v3: true

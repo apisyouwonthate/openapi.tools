@@ -6,7 +6,7 @@ categories:
   - text-editors-extensions
 languages:
   node: true
-github: https://github.com/swagger-api/swagger-editor
+repo: https://github.com/swagger-api/swagger-editor
 openApiVersions:
   v2: true
   v3: true

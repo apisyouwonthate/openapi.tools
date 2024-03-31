@@ -7,7 +7,7 @@ categories:
 link: https://doc.traefik.io/traefik-hub
 languages:
   go: true
-github: https://github.com/traefik/traefik-hub-helm-chart
+repo: https://github.com/traefik/traefik-hub-helm-chart
 openApiVersions:
   v2: true
   v3: true

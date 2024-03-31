@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   typescript: true
-github: https://github.com/metadevpro/openapi3-ts
+repo: https://github.com/metadevpro/openapi3-ts
 openApiVersions:
   v2: false
   v3: true

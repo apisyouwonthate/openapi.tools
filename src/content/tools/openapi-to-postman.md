@@ -5,7 +5,7 @@ categories:
   - converters
 languages:
   javascript: true
-github: https://github.com/postmanlabs/openapi-to-postman
+repo: https://github.com/postmanlabs/openapi-to-postman
 openApiVersions:
   v2: true
   v3: true

@@ -8,7 +8,7 @@ link: https://www.npmjs.com/package/openapi-commander
 languages:
   node: true
   cli: true
-github: https://github.com/bcoughlan/openapi-commander
+repo: https://github.com/bcoughlan/openapi-commander
 openApiVersions:
   v2: false
   v3: true

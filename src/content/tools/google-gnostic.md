@@ -5,7 +5,7 @@ categories:
   - converters
 languages:
   go: true
-github: https://github.com/googleapis/gnostic
+repo: https://github.com/googleapis/gnostic
 openApiVersions:
   v2: true
   v3: true

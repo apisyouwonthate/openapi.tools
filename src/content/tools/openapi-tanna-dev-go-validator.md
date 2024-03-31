@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   go: true
-github: https://gitlab.com/jamietanna/httptest-openapi/
+repo: https://gitlab.com/jamietanna/httptest-openapi/
 openApiVersions:
   v2: false
   v3: true

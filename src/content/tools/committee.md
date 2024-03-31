@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   ruby: true
-github: https://github.com/interagent/committee
+repo: https://github.com/interagent/committee
 openApiVersions:
   v2: true
   v3: true

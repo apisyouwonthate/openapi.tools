@@ -7,7 +7,7 @@ categories:
 link: https://metacpan.org/pod/Mojolicious::Plugin::OpenAPI
 languages:
   perl: true
-github: https://github.com/jhthorsen/mojolicious-plugin-openapi
+repo: https://github.com/jhthorsen/mojolicious-plugin-openapi
 openApiVersions:
   v2: true
   v3: true

@@ -6,7 +6,7 @@ categories:
   - text-editors-extensions
 languages:
   java: true
-github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
+repo: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
 openApiVersions:
   v2: true
   v3: true

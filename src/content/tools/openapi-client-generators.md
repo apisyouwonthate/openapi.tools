@@ -7,7 +7,7 @@ categories:
 link: https://github.com/zijianhuang/openapiclientgen
 languages:
   csharp: true
-github: https://github.com/zijianhuang/openapiclientgen
+repo: https://github.com/zijianhuang/openapiclientgen
 openApiVersions:
   v2: true
   v3: true

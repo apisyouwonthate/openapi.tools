@@ -6,7 +6,7 @@ categories:
 link: https://github.com/robertmassaioli/openapi-merge
 languages:
   typescript: true
-github: https://github.com/robertmassaioli/openapi-merge
+repo: https://github.com/robertmassaioli/openapi-merge
 openApiVersions:
   v2: false
   v3: true

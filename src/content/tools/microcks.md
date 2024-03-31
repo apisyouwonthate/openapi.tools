@@ -7,7 +7,7 @@ categories:
 link: https://microcks.io
 languages:
   java: true
-github: https://github.com/microcks/microcks
+repo: https://github.com/microcks/microcks
 openApiVersions:
   v2: true
   v3: true

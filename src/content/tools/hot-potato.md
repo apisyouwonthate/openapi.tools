@@ -9,7 +9,7 @@ categories:
 link: https://github.com/davidmbillie/Hot-Potato
 languages:
   csharp: true
-github: https://github.com/davidmbillie/Hot-Potato
+repo: https://github.com/davidmbillie/Hot-Potato
 openApiVersions:
   v2: false
   v3: false

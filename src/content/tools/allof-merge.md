@@ -6,7 +6,7 @@ categories:
   - misc
 languages:
   typescript: true
-github: https://github.com/udamir/allof-merge
+repo: https://github.com/udamir/allof-merge
 openApiVersions:
   v2: false
   v3: true

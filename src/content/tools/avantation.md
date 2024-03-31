@@ -6,7 +6,7 @@ categories:
 link: https://www.avantation.in/
 languages:
   typescript: true
-github: https://github.com/anbuksv/avantation
+repo: https://github.com/anbuksv/avantation
 openApiVersions:
   v2: false
   v3: true

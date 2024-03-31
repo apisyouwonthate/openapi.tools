@@ -6,7 +6,7 @@ categories:
 link: https://github.com/criteo/openapi-comparator
 languages:
   csharp: true
-github: https://github.com/criteo/openapi-comparator
+repo: https://github.com/criteo/openapi-comparator
 openApiVersions:
   v2: false
   v3: true

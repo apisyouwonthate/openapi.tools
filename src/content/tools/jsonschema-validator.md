@@ -6,7 +6,7 @@ categories:
 link: https://metacpan.org/pod/JSONSchema::Validator
 languages:
   perl: true
-github: https://github.com/skbkontur/perl-jsonschema-validator
+repo: https://github.com/skbkontur/perl-jsonschema-validator
 openApiVersions:
   v2: false
   v3: true

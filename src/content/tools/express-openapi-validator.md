@@ -7,7 +7,7 @@ categories:
   - data-validators
 languages:
   javascript: true
-github: https://github.com/cdimascio/express-openapi-validator
+repo: https://github.com/cdimascio/express-openapi-validator
 openApiVersions:
   v2: false
   v3: true

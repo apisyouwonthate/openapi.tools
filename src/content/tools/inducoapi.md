@@ -6,7 +6,7 @@ categories:
 link: https://pypi.org/project/inducoapi
 languages:
   python: true
-github: https://github.com/TheWall89/inducoapi
+repo: https://github.com/TheWall89/inducoapi
 openApiVersions:
   v2: false
   v3: true

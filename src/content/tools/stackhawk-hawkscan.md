@@ -6,7 +6,7 @@ categories:
 link: https://stackhawk.com/
 languages:
   saas: true
-github: https://github.com/stackhawk
+repo: https://github.com/stackhawk
 openApiVersions:
   v2: true
   v3: true

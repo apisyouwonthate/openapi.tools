@@ -7,7 +7,7 @@ categories:
   - sdk-generators
 link: https://github.com/go-oas/docs
 languages: {}
-github: https://github.com/go-oas/docs
+repo: https://github.com/go-oas/docs
 openApiVersions:
   v2: false
   v3: true

@@ -7,7 +7,7 @@ link: https://github.com/contiamo/restful-react
 languages:
   react: true
   typescript: true
-github: https://github.com/contiamo/restful-react
+repo: https://github.com/contiamo/restful-react
 openApiVersions:
   v2: true
   v3: true

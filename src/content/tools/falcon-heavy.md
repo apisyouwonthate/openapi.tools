@@ -8,7 +8,7 @@ categories:
 link: https://github.com/NotJustAToy/falcon-heavy
 languages:
   python: true
-github: https://github.com/NotJustAToy/falcon-heavy
+repo: https://github.com/NotJustAToy/falcon-heavy
 openApiVersions:
   v2: false
   v3: true

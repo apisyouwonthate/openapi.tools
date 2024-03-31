@@ -6,7 +6,7 @@ categories:
 link: https://github.com/Embraser01/typoas
 languages:
   typescript: true
-github: https://github.com/Embraser01/typoas
+repo: https://github.com/Embraser01/typoas
 openApiVersions:
   v2: false
   v3: true

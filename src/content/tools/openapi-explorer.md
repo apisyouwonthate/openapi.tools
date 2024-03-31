@@ -7,7 +7,7 @@ link: https://github.com/Rhosys/openapi-explorer/blob/main/README.md
 languages:
   javascript: true
   custom element: true
-github: https://github.com/Rhosys/openapi-explorer
+repo: https://github.com/Rhosys/openapi-explorer
 openApiVersions:
   v2: true
   v3: true

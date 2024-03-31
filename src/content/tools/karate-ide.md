@@ -8,7 +8,7 @@ categories:
 link: https://marketplace.visualstudio.com/items?itemName=KarateIDE.karate-ide
 languages:
   vscode extension: true
-github: https://github.com/ivangsa/karate-ide
+repo: https://github.com/ivangsa/karate-ide
 openApiVersions:
   v2: false
   v3: true

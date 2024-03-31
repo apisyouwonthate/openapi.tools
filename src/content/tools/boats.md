@@ -7,7 +7,7 @@ categories:
 link: https://www.npmjs.com/package/boats
 languages:
   node: true
-github: https://github.com/johndcarmichael/boats
+repo: https://github.com/johndcarmichael/boats
 openApiVersions:
   v2: true
   v3: true

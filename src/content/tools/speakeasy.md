@@ -16,7 +16,7 @@ languages:
   ruby: true
   swift: true
   unity: true
-github: https://github.com/speakeasy-api
+repo: https://github.com/speakeasy-api
 openApiVersions:
   v2: false
   v3: true

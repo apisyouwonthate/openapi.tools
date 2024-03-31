@@ -6,7 +6,7 @@ categories:
   - misc
 languages:
   typescript: true
-github: https://github.com/udamir/api-ref-bundler
+repo: https://github.com/udamir/api-ref-bundler
 openApiVersions:
   v2: true
   v3: true

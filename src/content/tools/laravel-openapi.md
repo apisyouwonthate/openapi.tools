@@ -6,7 +6,7 @@ categories:
   - misc
 languages:
   php: true
-github: https://github.com/vyuldashev/laravel-openapi
+repo: https://github.com/vyuldashev/laravel-openapi
 openApiVersions:
   v2: false
   v3: true

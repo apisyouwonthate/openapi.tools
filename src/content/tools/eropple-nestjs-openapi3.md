@@ -7,7 +7,7 @@ categories:
 link: https://github.com/eropple/nestjs-openapi3
 languages:
   node: true
-github: https://github.com/eropple/nestjs-openapi3
+repo: https://github.com/eropple/nestjs-openapi3
 openApiVersions:
   v2: false
   v3: true

@@ -7,7 +7,7 @@ categories:
   - docs
 languages:
   typescript: true
-github: https://github.com/udamir/api-diff-viewer
+repo: https://github.com/udamir/api-diff-viewer
 openApiVersions:
   v2: true
   v3: true

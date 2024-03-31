@@ -6,7 +6,7 @@ categories:
 link: https://rapidocweb.com/
 languages:
   web component: true
-github: https://github.com/mrin9/RapiDoc
+repo: https://github.com/mrin9/RapiDoc
 openApiVersions:
   v2: true
   v3: true

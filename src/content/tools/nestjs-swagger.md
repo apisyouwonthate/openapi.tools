@@ -7,7 +7,7 @@ categories:
 link: https://docs.nestjs.com/recipes/swagger
 languages:
   node: true
-github: https://github.com/nestjs/swagger
+repo: https://github.com/nestjs/swagger
 openApiVersions:
   v2: false
   v3: true

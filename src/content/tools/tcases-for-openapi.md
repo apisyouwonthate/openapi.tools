@@ -5,7 +5,7 @@ categories:
   - testing
 languages:
   java: true
-github: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
+repo: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
 openApiVersions:
   v2: false
   v3: true

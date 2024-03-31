@@ -6,7 +6,7 @@ categories:
 link: https://www.zaproxy.org/
 languages:
   java: true
-github: https://github.com/zaproxy/zaproxy
+repo: https://github.com/zaproxy/zaproxy
 openApiVersions:
   v2: true
   v3: true

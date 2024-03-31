@@ -7,7 +7,7 @@ link: https://www.npmjs.com/package/express-openapi
 languages:
   node: true
   typescript: true
-github: https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi
+repo: https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi
 openApiVersions:
   v2: true
   v3: true

@@ -6,7 +6,7 @@ categories:
 link: https://www.firetail.io/
 languages:
   saas: true
-github: https://github.com/firetail-io
+repo: https://github.com/firetail-io
 openApiVersions:
   v2: true
   v3: true

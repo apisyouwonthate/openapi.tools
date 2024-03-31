@@ -6,7 +6,7 @@ categories:
 link: https://www.npmjs.com/package/api-spec-converter
 languages:
   node: true
-github: https://github.com/LucyBot-Inc/api-spec-converter
+repo: https://github.com/LucyBot-Inc/api-spec-converter
 openApiVersions:
   v2: true
   v3: true

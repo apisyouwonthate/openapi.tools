@@ -5,7 +5,7 @@ categories:
   - misc
 languages:
   php: true
-github: https://github.com/canvural/php-openapi-faker
+repo: https://github.com/canvural/php-openapi-faker
 openApiVersions:
   v2: false
   v3: true

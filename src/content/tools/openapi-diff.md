@@ -5,7 +5,7 @@ categories:
   - misc
 languages:
   java: true
-github: https://github.com/quen2404/openapi-diff
+repo: https://github.com/quen2404/openapi-diff
 openApiVersions:
   v2: false
   v3: true

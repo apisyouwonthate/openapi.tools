@@ -11,7 +11,7 @@ languages:
   vue: true
   svelte: true
   angular: true
-github: https://github.com/anymaniax/orval
+repo: https://github.com/anymaniax/orval
 openApiVersions:
   v2: true
   v3: true

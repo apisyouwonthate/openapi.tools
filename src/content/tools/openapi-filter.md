@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   node: true
-github: https://github.com/Mermade/openapi-filter
+repo: https://github.com/Mermade/openapi-filter
 openApiVersions:
   v2: true
   v3: true

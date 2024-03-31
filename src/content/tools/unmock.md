@@ -7,7 +7,7 @@ categories:
 link: https://unmock.io
 languages:
   node: true
-github: https://github.com/unmock/unmock-js
+repo: https://github.com/unmock/unmock-js
 openApiVersions:
   v2: false
   v3: true

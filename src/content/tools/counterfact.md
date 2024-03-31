@@ -8,7 +8,7 @@ link: https://counterfact.dev
 languages:
   typescript: true
   node: true
-github: https://github.com/pmcelhaney/counterfact
+repo: https://github.com/pmcelhaney/counterfact
 openApiVersions:
   v2: true
   v3: true

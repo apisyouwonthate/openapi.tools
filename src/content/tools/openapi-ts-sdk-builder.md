@@ -7,7 +7,7 @@ link: https://github.com/nfroidure/openapi-ts-sdk-builder
 languages:
   javascript: true
   typescript: true
-github: https://github.com/nfroidure/openapi-ts-sdk-builder
+repo: https://github.com/nfroidure/openapi-ts-sdk-builder
 openApiVersions:
   v2: false
   v3: true

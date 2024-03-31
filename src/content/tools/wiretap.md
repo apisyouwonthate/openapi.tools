@@ -10,7 +10,7 @@ categories:
 link: https://pb33f.io/wiretap/
 languages:
   go: true
-github: https://github.com/pb33f/wiretap
+repo: https://github.com/pb33f/wiretap
 openApiVersions:
   v2: true
   v3: true

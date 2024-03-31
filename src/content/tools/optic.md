@@ -6,7 +6,7 @@ categories:
 link: https://useoptic.com
 languages:
   cli: true
-github: https://github.com/opticdev/optic
+repo: https://github.com/opticdev/optic
 openApiVersions:
   v2: false
   v3: true

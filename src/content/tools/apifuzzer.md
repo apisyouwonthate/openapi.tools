@@ -6,7 +6,7 @@ categories:
 link: https://github.com/KissPeter/APIFuzzer
 languages:
   python: true
-github: https://github.com/KissPeter/APIFuzzer
+repo: https://github.com/KissPeter/APIFuzzer
 openApiVersions:
   v2: true
   v3: true

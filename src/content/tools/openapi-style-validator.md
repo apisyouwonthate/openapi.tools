@@ -7,7 +7,7 @@ categories:
 languages:
   java: true
   cli: true
-github: https://github.com/OpenAPITools/openapi-style-validator
+repo: https://github.com/OpenAPITools/openapi-style-validator
 openApiVersions:
   v2: true
   v3: true

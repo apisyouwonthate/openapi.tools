@@ -5,7 +5,7 @@ categories:
   - testing
 languages:
   kotlin: true
-github: https://github.com/codecentric/hikaku
+repo: https://github.com/codecentric/hikaku
 openApiVersions:
   v2: false
   v3: true

@@ -6,7 +6,7 @@ categories:
 link: https://mulesoft.github.io/oas-raml-converter/
 languages:
   node: true
-github: https://github.com/mulesoft/oas-raml-converter
+repo: https://github.com/mulesoft/oas-raml-converter
 openApiVersions:
   v2: true
   v3: true

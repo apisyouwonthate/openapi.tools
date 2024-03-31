@@ -7,7 +7,7 @@ link: https://github.com/nfroidure/schema2dts
 languages:
   javascript: true
   typescript: true
-github: https://github.com/nfroidure/schema2dts
+repo: https://github.com/nfroidure/schema2dts
 openApiVersions:
   v2: false
   v3: true

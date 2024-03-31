@@ -6,7 +6,7 @@ categories:
 link: https://github.com/cdwv/oas3-api-snippet-enricher/
 languages:
   javascript: true
-github: https://github.com/cdwv/oas3-api-snippet-enricher/
+repo: https://github.com/cdwv/oas3-api-snippet-enricher/
 openApiVersions:
   v2: false
   v3: true

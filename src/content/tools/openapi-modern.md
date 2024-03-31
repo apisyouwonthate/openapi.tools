@@ -7,7 +7,7 @@ categories:
 link: https://metacpan.org/dist/OpenAPI-Modern
 languages:
   perl: true
-github: https://github.com/karenetheridge/OpenAPI-Modern
+repo: https://github.com/karenetheridge/OpenAPI-Modern
 openApiVersions:
   v2: false
   v3: false

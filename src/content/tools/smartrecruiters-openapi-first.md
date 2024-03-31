@@ -7,7 +7,7 @@ categories:
 link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
 languages:
   node: true
-github: https://github.com/smartrecruiters/openapi-first
+repo: https://github.com/smartrecruiters/openapi-first
 openApiVersions:
   v2: false
   v3: true

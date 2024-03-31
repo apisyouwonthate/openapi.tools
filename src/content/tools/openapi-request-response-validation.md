@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   java: true
-github: https://github.com/gcatanese/openapi-request-response-validation
+repo: https://github.com/gcatanese/openapi-request-response-validation
 openApiVersions:
   v2: true
   v3: true

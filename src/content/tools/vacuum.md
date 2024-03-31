@@ -8,7 +8,7 @@ categories:
 link: https://quobix.com/vacuum
 languages:
   go: true
-github: https://github.com/daveshanley/vacuum
+repo: https://github.com/daveshanley/vacuum
 openApiVersions:
   v2: true
   v3: true

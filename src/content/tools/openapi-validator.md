@@ -5,7 +5,7 @@ categories:
   - schema-validators
 languages:
   node: true
-github: https://github.com/IBM/openapi-validator
+repo: https://github.com/IBM/openapi-validator
 openApiVersions:
   v2: true
   v3: true

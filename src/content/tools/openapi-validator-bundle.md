@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   php: true
-github: https://github.com/cydrickn/openapi-validator-bundle
+repo: https://github.com/cydrickn/openapi-validator-bundle
 openApiVersions:
   v2: false
   v3: true

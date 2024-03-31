@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { Highlight } from 'prism-react-renderer';
 
 import { Button } from './Button';
-import { GitHubIcon } from './GitHubIcon';
+import { GitHubIcon } from './icons/GitHubIcon';
 import { HeroBackground } from './HeroBackground';
 import Sponsor from './Sponsor';
 

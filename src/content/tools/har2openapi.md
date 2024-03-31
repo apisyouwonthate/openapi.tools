@@ -6,7 +6,7 @@ categories:
 link: https://github.com/dcarr178/har2openapi
 languages:
   typescript: true
-github: https://github.com/dcarr178/har2openapi
+repo: https://github.com/dcarr178/har2openapi
 openApiVersions:
   v2: false
   v3: true

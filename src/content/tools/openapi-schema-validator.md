@@ -6,7 +6,7 @@ categories:
 link: https://www.npmjs.com/package/@seriousme/openapi-schema-validator
 languages:
   javascript: true
-github: https://github.com/seriousme/openapi-schema-validator
+repo: https://github.com/seriousme/openapi-schema-validator
 openApiVersions:
   v2: true
   v3: true

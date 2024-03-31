@@ -5,7 +5,7 @@ categories:
   - misc
 languages:
   typescript: true
-github: https://github.com/udamir/api-smart-diff
+repo: https://github.com/udamir/api-smart-diff
 openApiVersions:
   v2: true
   v3: true

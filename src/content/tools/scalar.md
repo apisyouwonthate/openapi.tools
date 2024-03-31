@@ -6,7 +6,7 @@ categories:
 link: https://docs.scalar.com/swagger-editor
 languages:
   vue: true
-github: https://github.com/scalar/scalar
+repo: https://github.com/scalar/scalar
 openApiVersions:
   v2: true
   v3: true

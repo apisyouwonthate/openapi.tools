@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   php: true
-github: https://github.com/osteel/openapi-httpfoundation-testing
+repo: https://github.com/osteel/openapi-httpfoundation-testing
 openApiVersions:
   v2: false
   v3: true

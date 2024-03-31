@@ -8,7 +8,7 @@ link: https://specmatic.in/
 languages:
   any: true
   cli: true
-github: https://github.com/znsio/specmatic
+repo: https://github.com/znsio/specmatic
 openApiVersions:
   v2: false
   v3: true

@@ -6,7 +6,7 @@ categories:
 link: https://pypi.org/project/openapi-cli-tool/
 languages:
   python: true
-github: https://github.com/hakopako/openapi-cli-tool
+repo: https://github.com/hakopako/openapi-cli-tool
 openApiVersions:
   v2: false
   v3: true

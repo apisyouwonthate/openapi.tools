@@ -7,7 +7,7 @@ categories:
 link: https://github.com/ninofiliu/oa-client
 languages:
   typescript: true
-github: https://github.com/ninofiliu/oa-client
+repo: https://github.com/ninofiliu/oa-client
 openApiVersions:
   v2: false
   v3: true

@@ -8,7 +8,7 @@ categories:
 link: https://github.com/matchtechnologies/fitting
 languages:
   ruby: true
-github: https://github.com/matchtechnologies/fitting
+repo: https://github.com/matchtechnologies/fitting
 openApiVersions:
   v2: true
   v3: true

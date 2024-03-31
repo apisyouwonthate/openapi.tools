@@ -6,7 +6,7 @@ categories:
 link: https://www.npmjs.com/package/openapi-enforcer-middleware
 languages:
   node: true
-github: https://github.com/byu-oit/openapi-enforcer-middleware
+repo: https://github.com/byu-oit/openapi-enforcer-middleware
 openApiVersions:
   v2: true
   v3: true

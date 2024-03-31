@@ -7,7 +7,7 @@ categories:
 link: https://github.com/cjbooms/fabrikt
 languages:
   kotlin: true
-github: https://github.com/cjbooms/fabrikt
+repo: https://github.com/cjbooms/fabrikt
 openApiVersions:
   v2: false
   v3: true

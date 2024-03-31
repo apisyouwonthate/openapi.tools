@@ -5,7 +5,7 @@ categories:
   - testing
 languages:
   node: true
-github: https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator
+repo: https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator
 openApiVersions:
   v2: true
   v3: true

@@ -6,7 +6,7 @@ categories:
 link: https://kubb.dev/
 languages:
   typescript: true
-github: https://github.com/kubb-project/kubb
+repo: https://github.com/kubb-project/kubb
 openApiVersions:
   v2: true
   v3: true

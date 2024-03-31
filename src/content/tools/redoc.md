@@ -6,7 +6,7 @@ categories:
 link: https://redocly.github.io/redoc/
 languages:
   react: true
-github: https://github.com/Redocly/ReDoc/
+repo: https://github.com/Redocly/ReDoc/
 openApiVersions:
   v2: true
   v3: true

@@ -12,7 +12,7 @@ languages:
   ruby: true
   ceylon: true
   scala: true
-github: https://github.com/vert-x3/vertx-web/tree/master/vertx-web-api-contract
+repo: https://github.com/vert-x3/vertx-web/tree/master/vertx-web-api-contract
 openApiVersions:
   v2: false
   v3: true

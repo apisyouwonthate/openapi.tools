@@ -7,7 +7,7 @@ link: https://github.com/justinfeng/fakeit
 languages:
   cli: true
   docker: true
-github: https://github.com/justinfeng/fakeit
+repo: https://github.com/justinfeng/fakeit
 openApiVersions:
   v2: false
   v3: true

@@ -7,7 +7,7 @@ link: https://mermade.org.uk/openapi-converter
 languages:
   node: true
   cli: true
-github: https://github.com/Mermade/swagger2openapi
+repo: https://github.com/Mermade/swagger2openapi
 openApiVersions:
   v2: true
   v3: true

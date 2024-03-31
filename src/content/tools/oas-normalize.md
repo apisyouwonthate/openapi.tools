@@ -8,7 +8,7 @@ categories:
 languages:
   javascript: true
   typescript: true
-github: https://github.com/readmeio/oas-normalize
+repo: https://github.com/readmeio/oas-normalize
 openApiVersions:
   v2: true
   v3: true

@@ -6,7 +6,7 @@ categories:
 link: https://lucybot.com/docgen
 languages:
   javascript: true
-github: https://github.com/LucyBot-Inc/documentation-starter
+repo: https://github.com/LucyBot-Inc/documentation-starter
 openApiVersions:
   v2: true
   v3: true

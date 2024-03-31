@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   node: true
-github: https://github.com/ErikWittern/openapi-snippet
+repo: https://github.com/ErikWittern/openapi-snippet
 openApiVersions:
   v2: true
   v3: true

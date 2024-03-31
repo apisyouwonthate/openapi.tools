@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   node: true
-github: https://github.com/APIDevTools/swagger-parser
+repo: https://github.com/APIDevTools/swagger-parser
 openApiVersions:
   v2: true
   v3: true

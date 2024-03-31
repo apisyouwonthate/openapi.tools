@@ -6,7 +6,7 @@ categories:
 link: https://www.npmjs.com/package/open-api-mocker
 languages:
   node: true
-github: https://github.com/jormaechea/open-api-mocker
+repo: https://github.com/jormaechea/open-api-mocker
 openApiVersions:
   v2: false
   v3: true

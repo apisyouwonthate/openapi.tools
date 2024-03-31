@@ -8,7 +8,7 @@ categories:
 link: https://gitlab.com/robarago/draig-car
 languages:
   typescript: true
-github: https://gitlab.com/robarago/draig-car
+repo: https://gitlab.com/robarago/draig-car
 openApiVersions:
   v2: false
   v3: true

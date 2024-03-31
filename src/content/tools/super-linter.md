@@ -6,7 +6,7 @@ categories:
 languages:
   cli: true
   docker: true
-github: https://github.com/github/super-linter
+repo: https://github.com/github/super-linter
 openApiVersions:
   v2: true
   v3: true

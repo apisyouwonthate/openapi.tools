@@ -6,7 +6,7 @@ categories:
 link: https://connexion.readthedocs.io/en/latest/
 languages:
   python: true
-github: https://github.com/zalando/connexion
+repo: https://github.com/zalando/connexion
 openApiVersions:
   v2: true
   v3: true

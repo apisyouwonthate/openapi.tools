@@ -10,7 +10,7 @@ link: https://ignatandrei.github.io/BlocklyAutomation/
 languages:
   javascript: true
   .net: true
-github: https://github.com/ignatandrei/BlocklyAutomation
+repo: https://github.com/ignatandrei/BlocklyAutomation
 openApiVersions:
   v2: false
   v3: true

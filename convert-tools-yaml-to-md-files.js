@@ -9,7 +9,7 @@ const toolSchema = z.object({
   categories: z.array(z.string()),
   link: z.string().url().optional(),
   languages: z.record(z.boolean()),
-  github: z.string().url().optional().nullable(),
+  repo: z.string().url().optional().nullable(),
   openApiVersions: z.object({
     v2: z.boolean().optional(),
     v3: z.boolean().optional(),
@@ -154,7 +154,7 @@ const convertToolToMarkdown = (tool) => {
     categories, // Use the adjusted categories array
     languages,
     link,
-    github: github === 'null' || github === null ? undefined : github, // filter out the string "null"
+    repo: github === 'null' || github === null ? undefined : github, // filter out the string "null"
     openApiVersions,
     sponsorship,
   });

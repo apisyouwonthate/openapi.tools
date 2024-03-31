@@ -6,7 +6,7 @@ categories:
 languages:
   java: true
   kotlin: true
-github: https://github.com/EMResearch/EvoMaster
+repo: https://github.com/EMResearch/EvoMaster
 openApiVersions:
   v2: true
   v3: true

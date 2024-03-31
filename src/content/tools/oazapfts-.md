@@ -5,7 +5,7 @@ categories:
   - sdk-generators
 languages:
   typescript: true
-github: https://github.com/cellular/oazapfts
+repo: https://github.com/cellular/oazapfts
 openApiVersions:
   v2: true
   v3: true

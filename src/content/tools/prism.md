@@ -6,7 +6,7 @@ categories:
 link: https://stoplight.io/open-source/prism
 languages:
   cli: true
-github: https://github.com/stoplightio/prism
+repo: https://github.com/stoplightio/prism
 openApiVersions:
   v2: true
   v3: true

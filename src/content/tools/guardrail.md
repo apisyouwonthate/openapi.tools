@@ -7,7 +7,7 @@ link: https://github.com/twilio/guardrail
 languages:
   scala: true
   java: true
-github: https://github.com/twilio/guardrail
+repo: https://github.com/twilio/guardrail
 openApiVersions:
   v2: true
   v3: true

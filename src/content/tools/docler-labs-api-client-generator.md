@@ -5,7 +5,7 @@ categories:
   - sdk-generators
 languages:
   php: true
-github: https://github.com/DoclerLabs/api-client-generator
+repo: https://github.com/DoclerLabs/api-client-generator
 openApiVersions:
   v2: false
   v3: true

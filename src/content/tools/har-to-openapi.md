@@ -6,7 +6,7 @@ categories:
 link: https://github.com/jonluca/har-to-openapi
 languages:
   typescript: true
-github: https://github.com/jonluca/har-to-openapi
+repo: https://github.com/jonluca/har-to-openapi
 openApiVersions:
   v2: false
   v3: true

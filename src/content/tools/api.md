@@ -9,7 +9,7 @@ link: https://api.readme.dev
 languages:
   javascript: true
   typescript: true
-github: https://github.com/readmeio/api
+repo: https://github.com/readmeio/api
 openApiVersions:
   v2: true
   v3: true

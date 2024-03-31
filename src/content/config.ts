@@ -31,7 +31,7 @@ const ToolSchema = z.object({
   categories: z.array(reference('categories')),
   languages: z.record(z.boolean()).optional(),
   link: z.string().url().optional(),
-  github: z.string().url().optional(),
+  repo: z.string().url().optional(),
   openApiVersions: z.object({
     v2: z.boolean().optional(),
     v3: z.boolean().optional(),

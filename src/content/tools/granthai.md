@@ -7,7 +7,7 @@ categories:
 link: https://granthai.com
 languages:
   javascript: true
-github: https://www.npmjs.com/package/granthai
+repo: https://www.npmjs.com/package/granthai
 openApiVersions:
   v2: false
   v3: true

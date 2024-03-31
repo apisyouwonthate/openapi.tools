@@ -6,7 +6,7 @@ categories:
   - testing
 languages:
   any: true
-github: https://github.com/microsoft/restler
+repo: https://github.com/microsoft/restler
 openApiVersions:
   v2: true
   v3: true

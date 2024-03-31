@@ -6,7 +6,7 @@ categories:
 link: https://www.npmjs.com/package/baucis-openapi3
 languages:
   node: true
-github: https://github.com/metadevpro/baucis-openapi3
+repo: https://github.com/metadevpro/baucis-openapi3
 openApiVersions:
   v2: false
   v3: true

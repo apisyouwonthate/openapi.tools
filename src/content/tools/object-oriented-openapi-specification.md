@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   php: true
-github: https://github.com/goldspecdigital/oooas
+repo: https://github.com/goldspecdigital/oooas
 openApiVersions:
   v2: false
   v3: true

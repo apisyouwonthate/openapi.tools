@@ -6,7 +6,7 @@ categories:
 link: https://dredd.io/
 languages:
   javascript: true
-github: https://github.com/apiaryio/dredd
+repo: https://github.com/apiaryio/dredd
 openApiVersions:
   v2: true
   v3: true

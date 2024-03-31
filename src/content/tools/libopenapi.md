@@ -6,7 +6,7 @@ categories:
 link: https://pb33f.io/libopenapi
 languages:
   go: true
-github: https://github.com/pb33f/libopenapi
+repo: https://github.com/pb33f/libopenapi
 openApiVersions:
   v2: true
   v3: true

@@ -5,7 +5,7 @@ categories:
   - misc
 languages:
   go: true
-github: https://github.com/tufin/oasdiff
+repo: https://github.com/tufin/oasdiff
 openApiVersions:
   v2: false
   v3: true

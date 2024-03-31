@@ -7,7 +7,7 @@ categories:
 link: https://bump.sh
 languages:
   saas: true
-github: https://github.com/bump-sh/cli
+repo: https://github.com/bump-sh/cli
 openApiVersions:
   v2: true
   v3: true

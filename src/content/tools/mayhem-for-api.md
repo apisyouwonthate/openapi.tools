@@ -8,7 +8,7 @@ categories:
 link: https://forallsecure.com/mayhem-for-api
 languages:
   any: true
-github: https://github.com/ForAllSecure/mapi-action
+repo: https://github.com/ForAllSecure/mapi-action
 openApiVersions:
   v2: true
   v3: true

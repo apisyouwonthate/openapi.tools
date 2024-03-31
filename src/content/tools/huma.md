@@ -8,7 +8,7 @@ categories:
 link: https://huma.rocks/
 languages:
   go: true
-github: https://github.com/danielgtaylor/huma
+repo: https://github.com/danielgtaylor/huma
 openApiVersions:
   v2: false
   v3: true

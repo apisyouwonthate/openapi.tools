@@ -9,7 +9,7 @@ categories:
 link: https://apigit.com
 languages:
   saas: true
-github: https://github.com/apigitlabs
+repo: https://github.com/apigitlabs
 openApiVersions:
   v2: true
   v3: true

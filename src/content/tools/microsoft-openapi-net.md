@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   .net: true
-github: https://github.com/Microsoft/OpenAPI.NET
+repo: https://github.com/Microsoft/OpenAPI.NET
 openApiVersions:
   v2: true
   v3: true

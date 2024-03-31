@@ -7,7 +7,7 @@ categories:
 link: https://abap-openapi.github.io/web-openapi-client/
 languages:
   abap: true
-github: https://github.com/abap-openapi/abap-openapi
+repo: https://github.com/abap-openapi/abap-openapi
 openApiVersions:
   v2: false
   v3: true

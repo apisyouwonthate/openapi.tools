@@ -6,7 +6,7 @@ categories:
 languages:
   javascript: true
   typescript: true
-github: https://github.com/readmeio/oas
+repo: https://github.com/readmeio/oas
 openApiVersions:
   v2: true
   v3: true

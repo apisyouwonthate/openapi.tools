@@ -7,7 +7,7 @@ categories:
   - docs
 languages:
   javascript: true
-github: https://github.com/lyra/openapi-dev-tool
+repo: https://github.com/lyra/openapi-dev-tool
 openApiVersions:
   v2: false
   v3: true

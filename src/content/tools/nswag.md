@@ -6,7 +6,7 @@ categories:
 link: https://NSwag.org
 languages:
   .net: true
-github: https://github.com/RicoSuter/NSwag
+repo: https://github.com/RicoSuter/NSwag
 openApiVersions:
   v2: true
   v3: true

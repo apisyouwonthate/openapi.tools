@@ -7,7 +7,7 @@ link: https://stoplight.io/open-source/elements
 languages:
   javascript: true
   custom element: true
-github: https://github.com/stoplightio/elements
+repo: https://github.com/stoplightio/elements
 openApiVersions:
   v2: true
   v3: true

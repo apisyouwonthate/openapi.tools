@@ -5,7 +5,7 @@ categories:
   - testing
 languages:
   python: true
-github: https://github.com/kiwicom/schemathesis
+repo: https://github.com/kiwicom/schemathesis
 openApiVersions:
   v2: true
   v3: true

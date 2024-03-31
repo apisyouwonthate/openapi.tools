@@ -6,7 +6,7 @@ categories:
 link: https://marketplace.visualstudio.com/items?itemName=Redocly.openapi-vs-code
 languages:
   node: true
-github: https://github.com/Redocly/redocly-vs-code
+repo: https://github.com/Redocly/redocly-vs-code
 openApiVersions:
   v2: true
   v3: true

@@ -6,7 +6,7 @@ categories:
 link: https://mermade.github.io/shins
 languages:
   node: true
-github: https://github.com/mermade/widdershins
+repo: https://github.com/mermade/widdershins
 openApiVersions:
   v2: true
   v3: true

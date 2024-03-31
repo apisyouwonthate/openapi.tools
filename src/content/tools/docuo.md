@@ -6,7 +6,7 @@ categories:
 link: https://docuo.spreading.ai/?via=ot
 languages:
   saas: true
-github: https://github.com/spreadingai
+repo: https://github.com/spreadingai
 openApiVersions:
   v2: false
   v3: true

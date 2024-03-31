@@ -7,7 +7,7 @@ categories:
 link: https://aka.ms/kiota/docs
 languages:
   csharp: true
-github: https://github.com/microsoft/kiota
+repo: https://github.com/microsoft/kiota
 openApiVersions:
   v2: true
   v3: true

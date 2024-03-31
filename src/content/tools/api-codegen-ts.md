@@ -7,7 +7,7 @@ categories:
 link: https://www.npmjs.com/package/@nll/api-codegen-ts
 languages:
   typescript: true
-github: https://github.com/nullpub/api-codegen-ts
+repo: https://github.com/nullpub/api-codegen-ts
 openApiVersions:
   v2: true
   v3: true

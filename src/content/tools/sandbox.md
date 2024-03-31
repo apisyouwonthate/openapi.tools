@@ -7,7 +7,7 @@ link: https://getsandbox.com/
 languages:
   saas: true
   java: true
-github: https://github.com/getsandbox/sandbox
+repo: https://github.com/getsandbox/sandbox
 openApiVersions:
   v2: true
   v3: true

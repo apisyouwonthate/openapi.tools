@@ -7,7 +7,7 @@ categories:
 link: https://github.com/apple/swift-openapi-generator
 languages:
   swift: true
-github: https://github.com/apple/swift-openapi-generator
+repo: https://github.com/apple/swift-openapi-generator
 openApiVersions:
   v2: false
   v3: true

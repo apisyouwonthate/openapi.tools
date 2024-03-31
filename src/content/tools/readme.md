@@ -6,7 +6,7 @@ categories:
 link: https://readme.com
 languages:
   saas: true
-github: https://github.com/readmeio
+repo: https://github.com/readmeio
 openApiVersions:
   v2: true
   v3: true

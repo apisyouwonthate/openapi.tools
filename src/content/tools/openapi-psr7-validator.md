@@ -5,7 +5,7 @@ categories:
   - data-validators
 languages:
   php: true
-github: https://github.com/thephpleague/openapi-psr7-validator
+repo: https://github.com/thephpleague/openapi-psr7-validator
 openApiVersions:
   v2: false
   v3: true

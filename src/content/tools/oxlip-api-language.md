@@ -7,7 +7,7 @@ categories:
 link: https://www.oxlip-lang.org/
 languages:
   oal: true
-github: https://github.com/oxlip-lang/oal
+repo: https://github.com/oxlip-lang/oal
 openApiVersions:
   v2: false
   v3: true

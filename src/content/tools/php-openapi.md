@@ -6,7 +6,7 @@ categories:
   - schema-validators
 languages:
   php: true
-github: https://github.com/cebe/php-openapi
+repo: https://github.com/cebe/php-openapi
 openApiVersions:
   v2: false
   v3: true

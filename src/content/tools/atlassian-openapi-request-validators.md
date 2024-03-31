@@ -6,7 +6,7 @@ categories:
 link: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
 languages:
   java: true
-github: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
+repo: https://bitbucket.org/atlassian/swagger-request-validator/src/master/
 openApiVersions:
   v2: true
   v3: true

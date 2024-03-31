@@ -9,7 +9,7 @@ categories:
 link: https://www.npmjs.com/package/openapi-enforcer
 languages:
   node: true
-github: https://github.com/byu-oit/openapi-enforcer
+repo: https://github.com/byu-oit/openapi-enforcer
 openApiVersions:
   v2: true
   v3: true

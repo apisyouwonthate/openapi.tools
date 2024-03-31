@@ -5,7 +5,7 @@ categories:
   - docs
 languages:
   ruby: true
-github: https://github.com/Nexmo/nexmo-oas-renderer
+repo: https://github.com/Nexmo/nexmo-oas-renderer
 openApiVersions:
   v2: false
   v3: true

@@ -5,7 +5,7 @@ categories:
   - misc
 languages:
   any: true
-github: https://github.com/ybelenko/oauth2_as_oas3_components
+repo: https://github.com/ybelenko/oauth2_as_oas3_components
 openApiVersions:
   v2: false
   v3: true

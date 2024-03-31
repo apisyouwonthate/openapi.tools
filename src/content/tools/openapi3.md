@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   python: true
-github: https://github.com/Dorthu/openapi3
+repo: https://github.com/Dorthu/openapi3
 openApiVersions:
   v2: false
   v3: true

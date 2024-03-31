@@ -5,7 +5,7 @@ categories:
   - parsers
 languages:
   node: true
-github: https://github.com/richardkabiling/openapi-snippet-cli
+repo: https://github.com/richardkabiling/openapi-snippet-cli
 openApiVersions:
   v2: true
   v3: true

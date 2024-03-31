@@ -5,7 +5,7 @@ categories:
   - sdk-generators
 languages:
   typescript: true
-github: https://github.com/Azure/autorest/
+repo: https://github.com/Azure/autorest/
 openApiVersions:
   v2: true
   v3: true

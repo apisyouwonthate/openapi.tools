@@ -7,7 +7,7 @@ categories:
 link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
 languages:
   any: true
-github: https://github.com/42Crunch/vscode-openapi
+repo: https://github.com/42Crunch/vscode-openapi
 openApiVersions:
   v2: true
   v3: true

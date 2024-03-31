@@ -6,7 +6,7 @@ categories:
 link: https://blueswen.github.io/mkdocs-swagger-ui-tag/
 languages:
   python: true
-github: https://github.com/blueswen/mkdocs-swagger-ui-tag
+repo: https://github.com/blueswen/mkdocs-swagger-ui-tag
 openApiVersions:
   v2: true
   v3: true

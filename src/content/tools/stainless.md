@@ -10,7 +10,7 @@ languages:
   go: true
   java: true
   kotlin: true
-github: https://github.com/stainless-api/stl-api
+repo: https://github.com/stainless-api/stl-api
 openApiVersions:
   v2: false
   v3: true

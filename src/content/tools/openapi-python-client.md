@@ -6,7 +6,7 @@ categories:
 link: https://github.com/openapi-generators/openapi-python-client
 languages:
   python: true
-github: https://github.com/openapi-generators/openapi-python-client
+repo: https://github.com/openapi-generators/openapi-python-client
 openApiVersions:
   v2: false
   v3: true

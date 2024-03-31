@@ -6,7 +6,7 @@ categories:
 link: https://mrin9.github.io/OpenAPI-Viewer/
 languages:
   vue: true
-github: https://github.com/mrin9/OpenAPI-Viewer
+repo: https://github.com/mrin9/OpenAPI-Viewer
 openApiVersions:
   v2: true
   v3: true

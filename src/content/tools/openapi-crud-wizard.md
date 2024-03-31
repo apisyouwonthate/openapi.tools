@@ -6,7 +6,7 @@ categories:
 link: https://plugins.jetbrains.com/plugin/19889-openapi-crud-wizard
 languages:
   yaml: true
-github: https://github.com/inssch/openapicrudwizard
+repo: https://github.com/inssch/openapicrudwizard
 openApiVersions:
   v2: false
   v3: true

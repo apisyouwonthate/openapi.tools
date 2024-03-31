@@ -9,7 +9,7 @@ link: https://rest.sh/
 languages:
   cli: true
   go: true
-github: https://github.com/danielgtaylor/restish
+repo: https://github.com/danielgtaylor/restish
 openApiVersions:
   v2: false
   v3: true

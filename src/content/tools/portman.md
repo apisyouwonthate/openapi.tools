@@ -7,7 +7,7 @@ categories:
 link: https://getportman.com/
 languages:
   node: true
-github: https://github.com/apideck-libraries/portman
+repo: https://github.com/apideck-libraries/portman
 openApiVersions:
   v2: false
   v3: true

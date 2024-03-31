@@ -7,7 +7,7 @@ categories:
 link: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
 languages:
   go: true
-github: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
+repo: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
 openApiVersions:
   v2: false
   v3: true

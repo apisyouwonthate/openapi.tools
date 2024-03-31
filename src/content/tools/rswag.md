@@ -6,7 +6,7 @@ categories:
 link: https://github.com/rswag/rswag
 languages:
   ruby: true
-github: https://github.com/rswag/rswag
+repo: https://github.com/rswag/rswag
 openApiVersions:
   v2: false
   v3: true
