@@ -1,4 +1,4 @@
-import type { Category } from "src/content/config";
+import type { Category } from 'src/content/config';
 
 const slugify = (text?: string) => {
   if (!text) return '';
@@ -25,7 +25,11 @@ type UTMParameterGeneratorProps = {
  * @param {string} props.category - The category of the tool
  * @param {string} props.linkPlacementDescription - The description of where the link is placed. This will be slugified and used as the utm_content parameter
  */
-export const generateUrlWithUTM = ({url, category, linkPlacementDescription } :UTMParameterGeneratorProps ) => {
+export const generateUrlWithUTM = ({
+  url,
+  category,
+  linkPlacementDescription,
+}: UTMParameterGeneratorProps) => {
   const oldUrl = new URL(url);
 
   const utmParameters = {

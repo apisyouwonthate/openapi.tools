@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Listbox } from '@headlessui/react';
 import clsx from 'clsx';
-import { LightIcon } from './icons/LightIcon';
+
 import { DarkIcon } from './icons/DarkIcon';
+import { LightIcon } from './icons/LightIcon';
 
 const themes = [
   { name: 'Light', value: 'light', icon: LightIcon },

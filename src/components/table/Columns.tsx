@@ -20,17 +20,18 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
     cell: ({ row }) => {
       const { tool, slug } = row.original;
       return (
-      <Link
-        href={`/tools/${slug}`}
-        className="group flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
-      >
-        {tool?.sponsorship && <Badge variant="green">Sponsored</Badge>}
-        <span className="whitespace-pre font-medium text-emerald-600 group-hover:underline dark:text-emerald-300">
-          {row.getValue('name')}
-        </span>{' '}
-        <span className="font-normal">{tool?.description}</span>
-      </Link>
-    )}
+        <Link
+          href={`/tools/${slug}`}
+          className="group flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
+        >
+          {tool?.sponsorship && <Badge variant="green">Sponsored</Badge>}
+          <span className="whitespace-pre font-medium text-emerald-600 group-hover:underline dark:text-emerald-300">
+            {row.getValue('name')}
+          </span>{' '}
+          <span className="font-normal">{tool?.description}</span>
+        </Link>
+      );
+    },
   },
   {
     accessorKey: 'openApiVersions',
@@ -69,11 +70,14 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
               href={tool.repo}
               className="text-emerald-600 dark:text-emerald-300"
             >
-              <RepoIcon className="inline-block h-4 w-4 fill-white" repo={tool.repo} />
+              <RepoIcon
+                className="inline-block h-4 w-4 fill-white"
+                repo={tool.repo}
+              />
             </Link>
           )}
         </div>
-      )
+      );
     },
   },
 ];

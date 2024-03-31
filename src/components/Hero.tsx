@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import { Highlight } from 'prism-react-renderer';
 
 import { Button } from './Button';
-import { GitHubIcon } from './icons/GitHubIcon';
 import { HeroBackground } from './HeroBackground';
+import { GitHubIcon } from './icons/GitHubIcon';
 import Sponsor from './Sponsor';
 
 const codeLanguage = 'json';

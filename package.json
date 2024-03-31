@@ -11,7 +11,8 @@
     "astro": "astro",
     "sync": "astro sync",
     "lint": "eslint --ext .astro,.js,.ts,.tsx,.jsx --ignore-path .gitignore .",
-    "lint-fix": "eslint --ext .astro,.js,.ts,.tsx,.jsx --ignore-path .gitignore --fix ."
+    "lint-fix": "eslint --ext .astro,.js,.ts,.tsx,.jsx --ignore-path .gitignore --fix .",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@algolia/autocomplete-core": "^1.17.0",
