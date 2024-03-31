@@ -1,6 +1,6 @@
 import React from 'react';
 
-import astroConfig from 'astro.config.mjs';
+const SITE_URL = process.env.node_env === 'production' ? 'https://openapi.tools' : 'http://localhost';
 
 import posthog from 'posthog-js';
 import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
@@ -29,7 +29,7 @@ const Link: React.FC<LinkProps> = ({
     const href = e.currentTarget.href;
 
     // If the link is an outbound link, track it
-    if (href.startsWith('http') && !href.startsWith(astroConfig.site!)) {
+    if (href.startsWith('http') && !href.startsWith(SITE_URL)) {
       posthog.capture('outbound_link_click', {
         href,
       });
@@ -41,7 +41,7 @@ const Link: React.FC<LinkProps> = ({
       return href;
     }
 
-    if (href.startsWith('http') && !href.startsWith(astroConfig.site!)) {
+    if (href.startsWith('http') && !href.startsWith(SITE_URL)) {
       return generateUrlWithUTM({ url: href, category, linkPlacementDescription, });
     }
 
