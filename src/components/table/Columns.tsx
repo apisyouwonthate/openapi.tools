@@ -6,32 +6,41 @@ import { GitHubIcon } from '../icons/GitHubIcon';
 import { GitLabIcon } from '../icons/GitLabIcon';
 import GitIcon from '../icons/GitIcon';
 import RepoIcon from '../icons/RepoIcon';
+import Link from '../Link';
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
+type ToolColumnDefinition = {
+  tool: Tool;
+  slug: string;
+  category?: Category;
+};
 
-export const ToolColumns: ColumnDef<Tool & { slug: string }>[] = [
+export const ToolColumns: ColumnDef<ToolColumnDefinition>[] = [
   {
     accessorKey: 'name',
     header: 'Name',
-    cell: ({ row }) => (
-      <a
-        href={`/tools/${row.original.slug}`}
+    cell: ({ row }) => {
+      const { category, tool, slug } = row.original;
+      return (
+      <Link
+        href={`/tools/${slug}`}
         className="group flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
       >
-        {row.original.sponsorship && <Badge variant="green">Sponsored</Badge>}
+        {tool?.sponsorship && <Badge variant="green">Sponsored</Badge>}
         <span className="whitespace-pre font-medium text-emerald-600 group-hover:underline dark:text-emerald-300">
           {row.getValue('name')}
         </span>{' '}
-        <span className="font-normal">{row.original.description}</span>
-      </a>
-    ),
+        <span className="font-normal">{tool?.description}</span>
+      </Link>
+    )}
   },
   {
     accessorKey: 'openApiVersions',
     header: 'OpenAPI Versions',
     cell: ({ row }) => {
-      const versions = Object.entries(row.original.openApiVersions)
+      const tool = row.original.tool;
+      const versions = Object.entries(tool?.openApiVersions || {})
         .filter(([, value]) => value)
         .map(([key]) => key.replace('_', '.'));
 
@@ -41,27 +50,34 @@ export const ToolColumns: ColumnDef<Tool & { slug: string }>[] = [
   {
     accessorKey: 'urls',
     header: 'Links',
-    cell: ({ row }) => (
-      <div className="flex flex-col space-y-1">
-        {row.original.link && (
-          <a
-            href={row.original.link}
-            className="text-emerald-600 dark:text-emerald-300"
-          >
-            Website
-          </a>
-        )}
+    cell: ({ row }) => {
+      const { tool, category,slug } = row.original;
+      return (
+        <div className="flex flex-col space-y-1">
+          {tool?.link && (
+            <Link
+              href={tool.link}
+              className="text-emerald-600 dark:text-emerald-300"
+              category={category}
+              linkPlacementDescription="category-landing-page-table"
+            >
+              Website
+            </Link>
+          )}
 
-        {row.original.repo && (
-          <a
-            href={row.original.repo}
-            className="text-emerald-600 dark:text-emerald-300"
-          >
-            <RepoIcon className="inline-block h-4 w-4 fill-white" repo={row.original.repo} />
-          </a>
-        )}
-      </div>
-    ),
+          {tool?.repo && (
+            <Link
+              category={category}
+              linkPlacementDescription="category-landing-page-table"
+              href={tool.repo}
+              className="text-emerald-600 dark:text-emerald-300"
+            >
+              <RepoIcon className="inline-block h-4 w-4 fill-white" repo={tool.repo} />
+            </Link>
+          )}
+        </div>
+      )
+    },
   },
 ];
 

@@ -18,5 +18,8 @@ export default defineConfig({
     devImageService: 'squoosh',
     isr: true,
     maxDuration: 10 // max # seconds a serverless function can run (to be safe)
-  })
+  }),
+  site: "https://openapi.tools",
+  trailingSlash: 'never',
+
 });

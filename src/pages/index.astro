@@ -6,6 +6,7 @@ import type { IconVariants } from '@/components/Icon';
 import PageHeader from '@/components/PageHeader.astro';
 import { QuickLink } from '@/components/QuickLink';
 import Layout from '../layouts/Layout.astro';
+import Link from '@/components/Link';
 
 const allCategories = await getCollection('categories');
 ---
@@ -23,8 +24,7 @@ const allCategories = await getCollection('categories');
     <p class="prose dark:prose-invert">
       If you feel like something is missing, check out our instructions on how
       to
-      <a class="font-medium hover:underline" href="/contribute">contributing</a
-      >.
+      <Link className="font-medium hover:underline" href="/contribute">contributing</Link>.
     </p>
   </PageHeader>
 

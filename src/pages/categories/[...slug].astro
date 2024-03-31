@@ -80,7 +80,7 @@ const tools = allTools
 
 const toolCount = tools.length;
 
-const toolsData = tools.map((tool) => ({ ...tool.data, slug: tool.slug }));
+const toolsData = tools.map((tool) => ({ category, tool: tool.data, slug: tool.slug }));
 ---
 
 <Layout title={category.data.name}>
