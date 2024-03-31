@@ -8,7 +8,11 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   // ...
-  integrations: [sitemap(), react(), tailwind({
+  integrations: [sitemap({
+    changefreq: 'weekly',
+    priority: 0.7,
+    lastmod: new Date('2022-02-24'),
+  }), react(), tailwind({
     // Example: Allow writing nested CSS declarations
     // alongside Tailwind's syntax
     nesting: true
