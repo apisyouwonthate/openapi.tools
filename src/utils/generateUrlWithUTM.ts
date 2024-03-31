@@ -19,9 +19,11 @@ type UTMParameterGeneratorProps = {
 
 /**
  * Generate a URL with UTM parameters
- * @param {string} url - The URL to add UTM parameters to
- * @param {string} category - The category of the tool
- * @param {string} linkPlacementDescription - The description of where the link is placed. This will be slugified and used as the utm_content parameter
+ * @param {UTMParameterGeneratorProps} props - The props object, which contains
+ *
+ * @param {string} props.url - The URL to add UTM parameters to
+ * @param {string} props.category - The category of the tool
+ * @param {string} props.linkPlacementDescription - The description of where the link is placed. This will be slugified and used as the utm_content parameter
  */
 export const generateUrlWithUTM = ({url, category, linkPlacementDescription } :UTMParameterGeneratorProps ) => {
   const oldUrl = new URL(url);

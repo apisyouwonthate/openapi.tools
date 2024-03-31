@@ -6,17 +6,16 @@ import posthog from 'posthog-js';
 import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
 import type { Category } from 'src/content/config';
 
+/**
+ * The props for the Link component
+ * @param {Category} category - The category of the tool
+ * @param {string} linkPlacementDescription - The description of where the link is placed. This will be slugified and used as the utm_content parameter
+ */
 type LinkProps = React.HTMLProps<HTMLAnchorElement> & {
   category?: Category;
   linkPlacementDescription?: string;
 };
 
-/**
- * A wrapper around the anchor element that adds UTM parameters to outbound links
- * @param {string} href - The URL to link to
- * @param {Category} category - The category of the tool
- * @param {string} linkPlacementDescription - The description of where the link is placed. This will be slugified and used as the utm_content parameter
- */
 const Link: React.FC<LinkProps> = ({
   href,
   target,
