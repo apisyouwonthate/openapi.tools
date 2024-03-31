@@ -1,4 +1,6 @@
-# 🛠 Adding New Tools
+# Contributing to OpenAPI.Tools
+
+## 🛠 Adding New Tools
 
 To add a new tool to the project, you need to create a new markdown file in the `src/content/tools/` directory. Each tool should have its own file.
 
@@ -51,11 +53,11 @@ To add a new tool to the project, you need to create a new markdown file in the 
 
 ---
 
-# Openapi.tools is built with Astro
+## Openapi.tools is built with Astro
 
 [Astro](https://astro.build/) is the web content framework for content-driven websites. Our configuration of Astro uses React, TypeScript, and Tailwind CSS.
 
-## 🚀 Project Structure
+### 🚀 Project Structure
 
 Inside of the repo, you'll see the following folders and files:
 
@@ -82,7 +84,7 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+### 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -94,8 +96,9 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm preview`         | Preview your build locally, before deploying |
 | `pnpm astro ...`       | CLI commands like `astro add`, `astro check` |
 | `pnpm astro -- --help` | Get help using the Astro CLI                 |
+| `pnpm prettier-fix`    | Format your code with Prettier               |
+| `pnpm lint`            | Lint your code with ESLint                   |
 
 ## 👀 Want to learn more about Astro?
 
 Feel free to check out [Astro documentation](https://docs.astro.build).
-
