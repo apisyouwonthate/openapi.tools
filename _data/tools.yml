@@ -785,14 +785,24 @@
   description: Standalone nodejs based OpenAPI 3 mock server, docker-friendly with request validation and autoreload.
   v3: true
 
-- name: MockLab
-  category: mock
+- name: Wiremock
+  category:
+    - mock
+    - testing
+    - data-validators
+    - documentation
   language: SaaS
-  link: https://www.mocklab.io/docs/getting-started/
-  github: https://www.mocklab.io/docs/getting-started/
-  description: SaaS platform to upload your spec to create a mock server
+  link: https://www.wiremock.io/product
+  github: https://www.wiremock.io/product
+  description:
+    WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project. 
+    It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with 
+    additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced 
+    capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration 
+    and user management.
   v2: true
   v3: true
+  v3_1: true
 
 - name: Fakeit
   category: mock
