@@ -38,6 +38,14 @@ const ToolSchema = z.object({
     v3_1: z.boolean().optional(),
     v4: z.boolean().optional(),
   }),
+  featuredArticles: z
+    .array(
+      z.object({
+        title: z.string(),
+        url: z.string().url(),
+      })
+    )
+    .optional(),
   sponsorship: z
     .object({
       startDate: z.date(),
