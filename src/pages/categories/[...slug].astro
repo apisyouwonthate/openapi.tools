@@ -27,56 +27,36 @@ if (!category) {
 const { Content } = await category.render();
 
 // 3 get entries for this category from the Tools collection
-const allTools = await getCollection('tools');
+const allTools = (await getCollection('tools')).filter((tool) => {
+  if (!tool.data.categories) {
+    return false;
+  }
+  const categories = tool.data.categories;
+  // look through the categories list to see if any of the categories matches enry.slug
+  return categories.some((cat) => cat.slug === category.slug);
+});
 
-const tools = allTools
-  .filter((tool) => {
-    if (!tool.data.categories) {
-      return false;
-    }
-    const categories = tool.data.categories;
-    // look through the categories list to see if any of the categories matches enry.slug
-    return categories.some((cat) => cat.slug === category.slug);
-  })
+// get all the sponsored tools
+const sponsoredTools = allTools
+  .filter((tool) => tool.data.sponsorship)
   .sort((a, b) => {
-    const checkIsCurrentSponsor = (currentTool: (typeof allTools)[0]) => {
-      if (!currentTool.data.sponsorship) {
-        return false;
-      }
-      if (
-        !currentTool.data.sponsorship.startDate ||
-        !currentTool.data.sponsorship.endDate
-      ) {
-        return false;
-      }
-      const startDate = new Date(currentTool.data.sponsorship.startDate);
-      const endDate = new Date(currentTool.data.sponsorship.endDate);
-      const now = new Date();
-      return startDate < now && endDate > now;
-    };
-
-    // sponsored tools come first, with the sponsor that started the earliest coming first
-    // then sort by name
-    const aSponsor = checkIsCurrentSponsor(a);
-    const bSponsor = checkIsCurrentSponsor(b);
-
-    if (aSponsor && !bSponsor) {
-      return -1;
+    // sort sponsored tools by start date
+    if (!a.data.sponsorship || !b.data.sponsorship) {
+      return 0;
     }
-    if (!aSponsor && bSponsor) {
-      return 1;
-    }
+    const aDate = new Date(a.data.sponsorship.startDate);
+    const bDate = new Date(b.data.sponsorship.startDate);
+    return aDate.getTime() - bDate.getTime();
+  });
 
-    const bDate = b.data.sponsorship?.startDate;
-    const aDate = a.data.sponsorship?.startDate;
-    // both are sponsored, sort by start date
-    // note: gross syntax here because TypeScript is not happy with the optional chaining
-    if (aSponsor && bSponsor && aDate !== undefined && bDate !== undefined) {
-      return new Date(bDate).getTime() - new Date(aDate).getTime();
-    }
-
+// get all the tools that are not sponsored
+const nonSponsoredTools = allTools
+  .filter((tool) => !tool.data.sponsorship)
+  .sort((a, b) => {
     return a.data.name.localeCompare(b.data.name);
   });
+
+const tools = [...sponsoredTools, ...nonSponsoredTools];
 
 const toolCount = tools.length;
 

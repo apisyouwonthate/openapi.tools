@@ -19,7 +19,6 @@ const toolSchema = z.object({
   sponsorship: z
     .object({
       startDate: z.date(),
-      endDate: z.date().optional(), // will be set when sponsorship ends
       url: z.string().url().optional(), // optionally override default link while sponsored
       testimonial: z.string().optional(), // optionally include a testimonial
     })
