@@ -4,6 +4,7 @@ description: Generate SDKs in popular languages and publish them to package mana
 categories:
   - sdk-generators
   - docs
+  - code-generators
 link: https://stainlessapi.com
 languages:
   typescript: true
