@@ -3,7 +3,7 @@ import clsx from 'clsx';
 const SponsoredSection = () => (
   <section
     className={clsx(
-      'z-20 flex w-full flex-row items-center justify-center gap-2 text-white',
+      'items- z-20 flex w-full flex-row justify-center gap-2 text-white',
       'bg-gradient-to-r from-teal-400/30 via-teal-400 to-teal-400/30 p-px font-medium text-slate-100/90'
     )}
     id="sponsor"

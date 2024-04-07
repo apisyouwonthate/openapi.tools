@@ -7,13 +7,26 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+// if this url contains `/tools`, then we want to use a smaller heading size
+
+let headingSize = 'text-sm';
+let descriptionSize = 'text-3xl';
+
+if (Astro.url.pathname.includes('/tools/')) {
+  headingSize = 'text-3xl mb-0';
+  descriptionSize = 'text-xl';
+}
 ---
 
 <header class="prose my-9 space-y-1">
-  <h1 class="font-display text-sm font-medium text-emerald-500">{title}</h1>
+  <h1 class={clsx('font-display font-medium text-emerald-500', headingSize)}>
+    {title}
+  </h1>
   <p
     class={clsx(
-      'font-display pb-3 text-3xl tracking-tight text-slate-900 dark:text-white'
+      'font-display pb-3 tracking-tight text-slate-900 dark:text-white',
+      descriptionSize
     )}
   >
     {description}

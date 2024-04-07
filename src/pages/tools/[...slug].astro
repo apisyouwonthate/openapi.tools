@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro';
 import { getCollection, getEntry } from 'astro:content';
 
+import Languages from '@/components/Languages';
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '../../layouts/Layout.astro';
 
@@ -21,6 +22,8 @@ if (!tool) {
   throw new Error(`No category found for slug ${slug}`);
 }
 
+const languages: Record<string, boolean> = tool.data?.languages || {};
+
 const { Content } = await tool.render();
 ---
 
@@ -30,6 +33,7 @@ const { Content } = await tool.render();
     <div
       class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
     >
+      <Languages languages={languages} />
       <Content />
     </div>
   </PageHeader>
