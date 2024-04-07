@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import Header from '@/components/Header.astro';
 import { Hero } from '@/components/Hero';
 import { Navigation, type NavigationItems } from '@/components/Navigation';
+import Sponsor from '@/components/Sponsor';
 import PostHog from '../components/PostHog.astro';
 
 import '../styles/base.css';
@@ -136,6 +137,12 @@ const categories: NavigationItems = [
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
 
+    <!-- devicons: https://github.com/devicons/devicon/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 
     <SEO
@@ -166,6 +173,7 @@ const categories: NavigationItems = [
 
   <body class="flex min-h-full bg-white dark:bg-slate-900">
     <div class="flex w-full flex-col">
+      <Sponsor />
       <Header categories={categories} url={Astro.url} />
 
       {isHomePage && <Hero />}
