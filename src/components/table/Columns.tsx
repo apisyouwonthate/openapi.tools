@@ -20,16 +20,18 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
     cell: ({ row }) => {
       const { tool, slug } = row.original;
       return (
-        <Link
-          href={`/tools/${slug}`}
-          className="group flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
-        >
-          {tool?.sponsorship && <Badge variant="green">Sponsored</Badge>}
-          <span className="whitespace-pre font-medium text-emerald-600 group-hover:underline dark:text-emerald-300">
-            {row.getValue('name')}
-          </span>{' '}
+        <>
+          <Link
+            href={`/tools/${slug}`}
+            className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
+          >
+            {tool?.sponsorship && <Badge variant="green">Sponsored</Badge>}
+            <span className="whitespace-pre font-bold text-emerald-600 group-hover:underline dark:text-emerald-300">
+              {tool.name}
+            </span>
+          </Link>{' '}
           <span className="font-normal">{tool?.description}</span>
-        </Link>
+        </>
       );
     },
   },
