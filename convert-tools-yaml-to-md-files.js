@@ -114,8 +114,9 @@ const convertToolToMarkdown = (tool) => {
     .replace(/\.js/gi, '') // remove ".js"
     .replace(/\.JS/gi, '') // remove ".JS"
     .replace(/JS/gi, '') // remove "JS"
+    .replace(/js/gi, 'javascript') // replace "js" with "javascript"
     .replace(/c#/gi, 'csharp') // replace "c#" with "csharp"
-    .replace(/c\+\+/gi, 'cpp') // replace "c++" with "cpp"
+    .replace(/c\+\+/gi, 'cplusplus') // replace "c++" with "cpp"
     // replace the standalone word "or" with a comma
     .replace(/\bor\b/gi, ',')
     .replace(/\.{3}/gi, '') // delete "..."
