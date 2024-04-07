@@ -9,7 +9,7 @@ categories:
 link: https://ignatandrei.github.io/BlocklyAutomation/
 languages:
   javascript: true
-  .net: true
+  dot-net: true
 repo: https://github.com/ignatandrei/BlocklyAutomation
 openApiVersions:
   v2: false

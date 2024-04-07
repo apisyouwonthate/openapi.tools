@@ -6,7 +6,7 @@ categories:
   - code-generators
 link: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
 languages:
-  .net: true
+  dot-net: true
 repo: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
 openApiVersions:
   v2: true

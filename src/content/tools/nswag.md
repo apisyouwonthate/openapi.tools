@@ -5,7 +5,7 @@ categories:
   - sdk-generators
 link: https://NSwag.org
 languages:
-  .net: true
+  dot-net: true
 repo: https://github.com/RicoSuter/NSwag
 openApiVersions:
   v2: true

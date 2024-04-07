@@ -4,7 +4,7 @@ description: C# based parser with OpenAPI Description validation and migration s
 categories:
   - parsers
 languages:
-  .net: true
+  dot-net: true
 repo: https://github.com/Microsoft/OpenAPI.NET
 openApiVersions:
   v2: true

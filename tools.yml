@@ -573,7 +573,7 @@
 
 - name: SwaggerHub
   category: text-editors
-  language: SaaS/On-Premise NodeJS
+  language: SaaS/NodeJS
   github:
   link: https://swagger.io/tools/swaggerhub/
   description: >
@@ -2583,6 +2583,8 @@
   sponsoredDate: 2024-01-01 06:00:00
   category:
     - sdk
+    - docs
+    - code-generators
   github: https://github.com/stainless-api/stl-api
   link: https://stainlessapi.com
   language: TypeScript, Python, Go, Java, and Kotlin
