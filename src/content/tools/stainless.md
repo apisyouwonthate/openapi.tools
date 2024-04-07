@@ -3,6 +3,7 @@ name: ✨ Stainless
 description: Generate SDKs in popular languages and publish them to package managers (like npm).
 categories:
   - sdk-generators
+  - docs
 link: https://stainlessapi.com
 languages:
   typescript: true
