@@ -94,15 +94,15 @@ const toolsData = tools.map((tool) => ({
   >
     {/* render the body of the markdown file for this category */}
     <div
-      class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
+      class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300"
     >
       <Content />
     </div>
   </PageHeader>
 
-  <hr class="my-6" />
-
-  <main class="prose-lg w-full dark:prose-invert">
+  <main
+    class="prose-lg w-full dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300"
+  >
     <h2 class="prose mb-4 text-2xl font-bold">
       {toolCount}
       {category.data.name}
