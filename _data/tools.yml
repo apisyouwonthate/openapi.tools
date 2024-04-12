@@ -1791,7 +1791,7 @@
   language: TypeScript
   link: https://chrome.google.com/webstore/detail/openapi-devtools/jelghndoknklgabjgaeppjhommkkmdii
   github: https://github.com/AndrewWalsh/openapi-devtools
-  description: Effortlessly discover API behaviour with a browser extension that automatically generates OpenAPI specifications in real time for any app or website
+  description: Browser extension that generates API specs for any app or website
   v2: false
   v3: true
   v3_1: true
