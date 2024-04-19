@@ -1051,7 +1051,9 @@
   github: https://github.com/lyra/openapi-dev-tool
   language: JavaScript
   description: "OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!"
+  v2: true
   v3: true
+  v3_1: true
 
 - name: portman
   category:
