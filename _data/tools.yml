@@ -12,6 +12,17 @@
   v3: true
   v3_1: true
 
+
+- name: Docuo
+  category: documentation
+  link: https://docuo.spreading.ai/?via=ot
+  github: https://github.com/spreadingai
+  language: SaaS
+  description: Docuo is a lightweight platform that transforms your static contents into a modern developer hub, API reference, product guides, and more.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: API Insights
   category:
     - monitoring
@@ -489,10 +500,10 @@
 
 - name: Bump.sh
   category: documentation
-  link: https://bump.sh?utm_source=openapi_tools&utm_medium=referral&utm_campaign=openapi
+  link: https://bump.sh
   language: SaaS
   github: https://github.com/bump-sh/cli
-  description:
+  description: >
     Bump.sh generates elegant documentation and changelogs from your OpenAPI
     specifications. Git diff, for your API. Integrates with CI and Slack.
   v2: true
@@ -507,12 +518,35 @@
   description: This library facilitates creating OpenAPI document for Python projects.
   v3: true
 
+- name: Apitive Studio
+  category: documentation
+  language: Angular 7.0, Java / Saas
+  link: https://www.apitive.com
+  description: > 
+    A platform for Digital Product Managers and API Consultants to design
+    REST APIs with in-built mock and documentation.
+  v2: true
+  v3: true
+
+- name: Fix My OpenAPI - A VSCode Extension by APIMatic
+  category:
+  - text-editors
+  - description-validators
+  language: Any
+  link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
+  description: >
+    APIMatic's VSCode extension helps you validate, lint, and auto-fix your OpenAPI files, 
+    along with other capabilities such as API transformations, API audit report generation, SDKs generation, and more.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: VSCode OpenAPI
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
   github: https://github.com/42Crunch/vscode-openapi
-  description:
+  description: >
     OpenAPI extension for Visual Studio Code - new file templates, navigation,
     intellisense, code snippets.
   v2: true
@@ -523,7 +557,7 @@
   language: Java
   license: EPL
   github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
-  description:
+  description: >
     Full-featured Eclipse editor for OpenAPI, also available on Eclipse
     Marketplace.
   v2: true
@@ -533,7 +567,7 @@
   category: text-editors
   language: Node.js
   github: https://github.com/swagger-api/swagger-editor
-  description:
+  description: >
     Design, describe, and document your API on the first open source editor
     fully dedicated to OpenAPI-based APIs.
   v2: true
@@ -544,7 +578,7 @@
   language: SaaS/On-Premise NodeJS
   github:
   link: https://swagger.io/tools/swaggerhub/
-  description:
+  description: >
     API design and documentation platform to improve collaboration, standardize
     development workflow and centralize their API discovery and consumption.
   v2: true
@@ -554,7 +588,7 @@
   category: text-editors
   language: Java
   link: https://senya.io
-  description:
+  description: >
     JetBrains IDE plugin to show Swagger UI as a preview, for visual feedback
     as you edit.
   v2: true
@@ -709,7 +743,7 @@
 - name: Prism
   category: mock
   language: cli
-  link: https://stoplight.io/prism
+  link: https://stoplight.io/open-source/prism
   github: https://github.com/stoplightio/prism
   description:
     Turn any OAI file into an API server with mocking, transformations,
@@ -1138,6 +1172,17 @@
   v2: true
   v3: true
 
+- name: openapi_first
+  category: data-validators
+  github: https://github.com/ahx/openapi_first
+  language: Ruby
+  description:
+    It validates requests and responses against your API description using rack middlewares or a low-level interface.
+    It gives you access to request parameters that are parsed exactly as described
+    in your API description and produces useful customizable error responses if request validation fails.
+  v3: true
+  v3_1: true
+
 - name: OpenAPI Enforcer
   category:
     - data-validators
@@ -1257,6 +1302,14 @@
   github: https://github.com/getkin/kin-openapi
   language: Go
   description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
+  v3: true
+
+- name: openapi.tanna.dev/go/validator
+  category:
+    - data-validators
+  github: https://gitlab.com/jamietanna/httptest-openapi/
+  language: Go
+  description: A Go library for making it easier to validate that your OpenAPI contracts match your HTTP request/responses used in your tests. Based on kin-openapi.
   v3: true
 
 - name: openapi-psr7-validator
@@ -2502,7 +2555,7 @@
     - code-generators
     - sdk
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com/demo
+  link: https://buildwithfern.com/contact
   language: TypeScript, Java, Python, Go, Ruby, and C#
   description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: true
@@ -2518,7 +2571,7 @@
   category:
     - documentation
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com/demo
+  link: https://buildwithfern.com/contact
   language: TypeScript, Java, Python, Go, Ruby, and C#
   description: Beautiful API documentation from OpenAPI.
   v2: true
@@ -2535,6 +2588,31 @@
   language: TypeScript, Python, Go, Java, and Kotlin
   description:
     Generate SDKs in popular languages and publish them to package managers (like npm).
+  v2: false
+  v3: true
+  v3_1: true
+
+- name: // Speakeasy
+  sponsored: true
+  sponsoredDate: 2024-02-09 06:00:00
+  category:
+    - sdk
+    - documentation
+  github: https://github.com/speakeasy-api
+  link: https://speakeasyapi.dev/
+  language: TypeScript, Python, Go, Java, Terraform, C#, PHP, Ruby, Swift, Unity
+  description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
+  v3: true
+  v3_1: true
+
+- name: Swift OpenAPI Generator
+  category:
+    - sdk
+    - server
+  language: Swift
+  github: https://github.com/apple/swift-openapi-generator
+  link: https://github.com/apple/swift-openapi-generator
+  description: Generate Swift client and server code from an OpenAPI document. Includes support for type-safe JSON event streaming, multipart, Swift concurrency, customizable middlewares, and pluggable HTTP libraries.
   v2: false
   v3: true
   v3_1: true
@@ -2615,6 +2693,17 @@
   v2: false
   v3: false
   v3_1: true
+
+- name: Fuego
+  category:
+    - auto-generators
+    - data-validators
+    - server
+  language: Go
+  link: https://go-fuego.github.io/fuego/
+  github: https://github.com/go-fuego/fuego
+  description: Golang Fuego - web & API framework generating OpenAPI 3 spec from source code
+  v3: true
 
 - name: Huma
   category:
