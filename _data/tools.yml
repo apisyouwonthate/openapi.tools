@@ -2750,6 +2750,18 @@
   description: OpenAPI v3.1 validator and JSON Schema validator (draft7, draft2019-09, draft2020-12)
   v3_1: true
 
+- name: OpenAPI Qraft
+  category:
+    - code-generators
+    - sdk
+  github: https://github.com/OpenAPI-Qraft/openapi-qraft
+  link: https://openapi-qraft.github.io/openapi-qraft/
+  language: TypeScript
+  description: Generate a type-safe TanStack Query client for React from an OpenAPI Document.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: Mojolicious::Plugin::OpenAPI::Modern
   category:
     - server
