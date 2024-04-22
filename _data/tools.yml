@@ -1135,19 +1135,6 @@
   v3: true
   v3_1: true
 
-- name: "at-your-service"
-  category:
-    - miscellaneous
-  link: https://atyourservice.awalsh.io/
-  github: https://github.com/AndrewWalsh/at-your-service
-  language: TypeScript
-  description: >
-    A developer tool for API observability on the browser. Generate OpenAPI
-    specifications and code from network traffic
-  v2: false
-  v3: false
-  v3_1: true
-
 - name: openapi-validator-middleware
   category:
     - data-validators
@@ -1796,6 +1783,18 @@
   github: https://www.npmjs.com/package/granthai
   description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
   v3: true
+
+- name: OpenAPI DevTools
+  category:
+    - auto-generators
+    - documentation
+  language: TypeScript
+  link: https://chrome.google.com/webstore/detail/openapi-devtools/jelghndoknklgabjgaeppjhommkkmdii
+  github: https://github.com/AndrewWalsh/openapi-devtools
+  description: Browser extension that generates API specs for any app or website
+  v2: false
+  v3: true
+  v3_1: true
 
 - name: oa-client
   category:
