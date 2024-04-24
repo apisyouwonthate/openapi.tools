@@ -199,6 +199,16 @@
   v3: true
   v3_1: true
 
+- name: Scribe
+  category: documentation
+  link: https://scribe.knuckles.wtf/
+  github: https://github.com/knuckleswtf/scribe/
+  language: PHP
+  description: Generate API documentation for humans from your Laravel codebase.
+  v2: false
+  v3: true
+  v3_1: false
+
 - name: Supermodel
   category: dsl
   language: SaaS
