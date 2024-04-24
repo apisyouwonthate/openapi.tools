@@ -1796,6 +1796,18 @@
   description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
   v3: true
 
+- name: OpenAPI AutoSpec
+  category:
+    - auto-generators
+    - documentation
+  language: JavaScript
+  link: https://www.portway.ai/
+  github: https://github.com/Adawg4/openapi-autospec
+  description: Proxy server that generates API specs for any app or website on localhost
+  v2: false
+  v3: true
+  v3_1: false
+
 - name: OpenAPI DevTools
   category:
     - auto-generators
