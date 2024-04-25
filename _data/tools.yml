@@ -1803,7 +1803,7 @@
   language: JavaScript
   link: https://www.portway.ai/
   github: https://github.com/Adawg4/openapi-autospec
-  description: Proxy server that generates API specs for any app or website on localhost
+  description: Proxy server that generates API descriptions for any app or website on localhost.
   v2: false
   v3: true
   v3_1: false
