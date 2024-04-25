@@ -1,5 +1,13 @@
 # Contributing
 
+We encourage all efforts in the OpenAPI ecosystem. That said, there's a lot that goes into a successful contribution and we're focused on high-quality content. Submissions must align with the following guidelines:
+- **Real-world use**: there should be evidence that people are using it, perhaps through package downloads, GitHub stars, or other means
+- **Testable**: submissions should be released, and there should be a way of testing it so we can validate it works
+- **Relevant**: all submissions must relate to the OpenAPI ecosystem and abide by its [Code of Conduct](https://github.com/OAI/OpenAPI-Specification/blob/main/CODE_OF_CONDUCT.md)
+- **Terminology**: descriptions and language should follow the [OpenAPI Glossay](https://github.com/openapi-contrib/glossary?tab=readme-ov-file#api-description)
+
+## How to Run the Site Locally
+
 We use [jekyll](https://jekyllrb.com/) so you should use ruby and install it using bundler.
 
 ```
