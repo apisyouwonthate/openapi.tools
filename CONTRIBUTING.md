@@ -1,6 +1,8 @@
 # Contributing
 
-We encourage all efforts in the OpenAPI ecosystem. That said, there's a lot that goes into a successful contribution and we're focused on high-quality content. Submissions must align with the following guidelines:
+We encourage all efforts in the OpenAPI ecosystem, and none of these tools are easy to create and maintain. That said, we don't want to be an exhaustive list of every single tool out there. OpenAPI.Tools is a curated list, which aims to help people find modern, reliable tooling, that's of as high quality as we can reasonably hope for. 
+
+Our focus on high-quality tooling means we cannot accept every tool that would like to be listed here, at least not right away. Submissions must align with the following guidelines:
 - **Real-world use**: there should be evidence that people are using it, perhaps through package downloads, GitHub stars, or other means
 - **Testable**: submissions should be released, and there should be a way of testing it so we can validate it works
 - **Relevant**: all submissions must relate to the OpenAPI ecosystem and abide by its [Code of Conduct](https://github.com/OAI/OpenAPI-Specification/blob/main/CODE_OF_CONDUCT.md)
