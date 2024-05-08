@@ -12,7 +12,6 @@
   v3: true
   v3_1: true
 
-
 - name: Docuo
   category: documentation
   link: https://docuo.spreading.ai/?via=ot
@@ -189,6 +188,16 @@
   v3: true
   v3_1: true
 
+- name: React Openapi Designer
+  category: documentation
+  language: ReactJS
+  link: https://codeasashu.github.io/react-openapi-designer/
+  github: https://github.com/codeasashu/react-openapi-designer
+  description: React openapi designer is a react based openapi designer web application that conforms to Openapi specifications
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: Scalar
   category: documentation
   language: Vue.js
@@ -310,7 +319,6 @@
   description: This wizard is an IntelliJ Plugin to create a new OpenAPI document including all CRUD operations based only on a Yaml object. No knowledge about OpenAPI specification needed.
   v3: true
   v3_1: true
-
 
 - name: OAS RAML Converter
   category: converters
@@ -532,7 +540,7 @@
   category: documentation
   language: Angular 7.0, Java / Saas
   link: https://www.apitive.com
-  description: > 
+  description: >
     A platform for Digital Product Managers and API Consultants to design
     REST APIs with in-built mock and documentation.
   v2: true
@@ -540,8 +548,8 @@
 
 - name: Fix My OpenAPI - A VSCode Extension by APIMatic
   category:
-  - text-editors
-  - description-validators
+    - text-editors
+    - description-validators
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
   description: >
@@ -805,10 +813,10 @@
   link: https://www.wiremock.io/product
   github: https://www.wiremock.io/product
   description:
-    WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project. 
-    It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with 
-    additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced 
-    capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration 
+    WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project.
+    It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with
+    additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced
+    capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration
     and user management.
   v2: true
   v3: true
@@ -1569,7 +1577,7 @@
     - converters
   language: JavaScript, TypeScript
   github: https://github.com/readmeio/oas
-  description: Comprehensive tooling for working with OpenAPI definitions. 
+  description: Comprehensive tooling for working with OpenAPI definitions.
   v2: true
   v3: true
   v3_1: true
@@ -2619,8 +2627,7 @@
   github: https://github.com/stainless-api/stl-api
   link: https://stainlessapi.com
   language: TypeScript, Python, Go, Java, and Kotlin
-  description:
-    Generate SDKs in popular languages and publish them to package managers (like npm).
+  description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: false
   v3: true
   v3_1: true
@@ -2801,5 +2808,4 @@
   description: Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x
   v2: true
   v3: true
-
 # Please add new entries in alphabetical order, which slightly helps reduce conflicts
