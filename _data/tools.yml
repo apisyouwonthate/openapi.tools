@@ -55,6 +55,16 @@
   v3: true
   v3_1: true
 
+- name: Apitally
+  category: monitoring
+  language: SaaS
+  description: Simple REST API monitoring tool that helps engineering and product teams understand how their APIs are being used.
+  link: https://apitally.io
+  github: https://github.com/apitally
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Apitive Studio
   category: documentation
   language: Angular 7.0, Java / Saas
