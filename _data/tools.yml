@@ -1780,6 +1780,14 @@
   v3: true
   v3_1: true
 
+- name: OpenApiSpecGeneratorPlugin
+  category: auto-generators
+  language: C#
+  link: https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/technical-reference/openapispecgeneratorplugin
+  github: https://github.com/microsoft/dev-proxy
+  description: Built-in plugin for open-source DevProxy that automatically generates OpenAPI 3.0 Spec from captured network requests
+  v3: true
+
 - name: har2openapi
   category: auto-generators
   language: TypeScript
