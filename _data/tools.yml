@@ -1780,6 +1780,14 @@
   v3: true
   v3_1: true
 
+- name: mitmproxy2swagger
+  category: auto-generators
+  language: Python
+  link: https://github.com/alufers/mitmproxy2swagger
+  github: https://github.com/alufers/mitmproxy2swagger
+  description: A tool for automatically converting mitmproxy captures to OpenAPI 3.0 specifications. Automatically reverse-engineer REST APIs by just running the apps and capturing the traffic.
+  v3: true
+
 - name: OpenApiSpecGeneratorPlugin
   category: auto-generators
   language: C#
