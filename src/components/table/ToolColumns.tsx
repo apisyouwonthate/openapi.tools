@@ -1,17 +1,9 @@
 import { type ColumnDef } from '@tanstack/react-table';
-import type { Category, Tool } from 'src/content/config';
 
+import Badge from '../Badge';
 import RepoIcon from '../icons/RepoIcon';
 import Link from '../Link';
-import SponsorBadge from '../SponsorBadge';
-
-// This type is used to define the shape of our data.
-// You can use a Zod schema here if you want.
-export type ToolRowData = {
-  tool: Tool;
-  slug: string;
-  category?: Category;
-};
+import type { ToolRowData } from './Columns';
 
 export const ToolColumns: ColumnDef<ToolRowData>[] = [
   {
@@ -25,7 +17,7 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
             href={`/tools/${slug}`}
             className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
           >
-            {tool?.sponsorship && <SponsorBadge />}
+            {tool?.sponsorship && <Badge variant="green">Sponsored</Badge>}
             <span className="whitespace-pre font-bold text-emerald-600 group-hover:underline dark:text-emerald-300">
               {tool.name}
             </span>
@@ -81,16 +73,5 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
         </div>
       );
     },
-  },
-];
-
-export const CategoryColumns: ColumnDef<Category>[] = [
-  {
-    accessorKey: 'name',
-    header: 'Name',
-  },
-  {
-    accessorKey: 'description',
-    header: 'Description',
   },
 ];

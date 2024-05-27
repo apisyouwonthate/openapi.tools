@@ -25,10 +25,17 @@ if (!tool) {
 const languages: Record<string, boolean> = tool.data?.languages || {};
 
 const { Content } = await tool.render();
+
+console.log('tool', !!tool.data.sponsorship);
 ---
 
 <Layout title={tool.data.name}>
-  <PageHeader title={tool.data.name} description={tool.data.description}>
+  <PageHeader
+    title={tool.data.name}
+    description={tool.data.description}
+    url={tool.data.link}
+    isSponsor={!!tool?.data.sponsorship}
+  >
     {/* render the body of the markdown file for this category */}
     <div
       class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
