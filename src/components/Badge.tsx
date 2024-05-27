@@ -1,7 +1,7 @@
 import React from 'react';
 
 type BadgeProps = {
-  variant:
+  variant?:
     | 'gray'
     | 'red'
     | 'yellow'

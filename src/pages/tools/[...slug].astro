@@ -2,9 +2,14 @@
 import type { GetStaticPaths } from 'astro';
 import { getCollection, getEntry } from 'astro:content';
 
+
+import Badge from '@/components/Badge';
+import ExternalArticle from '@/components/ExternalArticle';
 import Languages from '@/components/Languages';
 import PageHeader from '@/components/PageHeader.astro';
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+import enrichFeaturedArticles from '@/utils/enrichFeaturedArticles';
+
 
 // 1. Generate a new path for every collection entry
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -26,7 +31,10 @@ const languages: Record<string, boolean> = tool.data?.languages || {};
 
 const { Content } = await tool.render();
 
-console.log('tool', !!tool.data.sponsorship);
+const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
+
+console.log(enrichedFeaturedArticles);
+
 ---
 
 <Layout title={tool.data.name}>
@@ -41,7 +49,27 @@ console.log('tool', !!tool.data.sponsorship);
       class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
     >
       <Languages languages={languages} />
-      <Content />
     </div>
   </PageHeader>
+  <main
+    class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
+  >
+    <hr class="my-4" />
+
+    {
+      enrichedFeaturedArticles && (
+        <>
+          <Badge className="mb-4">Featured Articles</Badge>
+
+          <section class="md-grid-cols-2 grid gap-4 lg:grid-cols-3">
+            {enrichedFeaturedArticles.map((article) => (
+              <ExternalArticle key={article.url} {...article.og} />
+            ))}
+          </section>
+        </>
+      )
+    }
+
+    <Content />
+  </main>
 </Layout>

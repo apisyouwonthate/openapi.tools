@@ -43,6 +43,7 @@ const ToolSchema = z.object({
       z.object({
         title: z.string(),
         url: z.string().url(),
+        date: z.date(),
       })
     )
     .optional(),
