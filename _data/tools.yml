@@ -55,16 +55,6 @@
   v3: true
   v3_1: true
 
-- name: Apitive Studio
-  category: documentation
-  language: Angular 7.0, Java / Saas
-  link: https://www.apitive.com
-  description: >
-    A platform for Digital Product Managers and API Consultants to design
-    REST APIs with in-built mock and documentation.
-  v2: true
-  v3: true
-
 - name: Assertible
   category: testing
   language: SaaS
@@ -528,16 +518,6 @@
   description: This library facilitates creating OpenAPI document for Python projects.
   v3: true
 
-- name: Apitive Studio
-  category: documentation
-  language: Angular 7.0, Java / Saas
-  link: https://www.apitive.com
-  description: > 
-    A platform for Digital Product Managers and API Consultants to design
-    REST APIs with in-built mock and documentation.
-  v2: true
-  v3: true
-
 - name: Fix My OpenAPI - A VSCode Extension by APIMatic
   category:
   - text-editors
@@ -640,16 +620,6 @@
   v2: true
   v3: true
   v3_1: true
-
-- name: Apitive Studio
-  category: gui-editors
-  language: Angular 7.0, Java / Saas
-  link: https://www.apitive.com
-  description: >
-    A platform for Digital Product Managers and API Consultants to design
-    REST APIs with in-built mock and documentation.
-  v2: true
-  v3: true
 
 - name: Apicurio Studio
   category: gui-editors
@@ -834,18 +804,6 @@
   description:
     API integration testing library that intercepts outgoing requests and
     serves back mock data based on the OpenAPI descriptions.
-  v3: true
-
-- name: Apitive Studio
-  category: mock
-  language: Angular 7.0, Java / Saas
-  link: https://www.apitive.com
-  description:
-    "A platform for Digital Product Managers and API Consultants to design
-    REST APIs with in-built mock and documentation.
-
-    "
-  v2: true
   v3: true
 
 - name: Mockintosh
