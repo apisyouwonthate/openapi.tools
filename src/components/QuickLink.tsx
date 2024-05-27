@@ -1,11 +1,11 @@
-import { Icon, type IconVariants } from '@/components/Icon';
+import { type IconVariants } from '@/components/Icon';
 import Link from '@/components/Link';
 
 export function QuickLink({
   title,
   body,
   href,
-  icon = 'warning',
+  // icon = 'warning',
 }: {
   title: string;
   body: string;
