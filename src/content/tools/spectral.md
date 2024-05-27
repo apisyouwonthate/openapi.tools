@@ -6,7 +6,8 @@ categories:
   - schema-validators
 link: https://stoplight.io/spectral
 languages:
-  cli & typescript: true
+  cli: true
+  typescript: true
   javascript: true
 repo: https://github.com/stoplightio/spectral
 openApiVersions:

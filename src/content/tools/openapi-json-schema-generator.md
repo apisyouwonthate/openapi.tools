@@ -7,6 +7,7 @@ categories:
 link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
 languages:
   python: true
+  java: true
 repo: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
 openApiVersions:
   v2: false

@@ -9,8 +9,8 @@ languages:
   javascript: true
 repo: https://github.com/lyra/openapi-dev-tool
 openApiVersions:
-  v2: false
+  v2: true
   v3: true
-  v3_1: false
+  v3_1: true
   v4: false
 ---

@@ -198,6 +198,16 @@
   v3: true
   v3_1: true
 
+- name: Scribe
+  category: documentation
+  link: https://scribe.knuckles.wtf/
+  github: https://github.com/knuckleswtf/scribe/
+  language: PHP
+  description: Generate API documentation for humans from your Laravel codebase.
+  v2: false
+  v3: true
+  v3_1: false
+
 - name: Supermodel
   category: dsl
   language: SaaS
@@ -460,7 +470,7 @@
     - code-generators
     - sdk
   link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
-  language: Python
+  language: Python, Java
   github: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
   description:
     A template-driven engine to generate API client code + documentation
@@ -573,7 +583,7 @@
 
 - name: SwaggerHub
   category: text-editors
-  language: SaaS/NodeJS
+  language: SaaS/On-Premise NodeJS
   github:
   link: https://swagger.io/tools/swaggerhub/
   description: >
@@ -785,14 +795,24 @@
   description: Standalone nodejs based OpenAPI 3 mock server, docker-friendly with request validation and autoreload.
   v3: true
 
-- name: MockLab
-  category: mock
+- name: Wiremock
+  category:
+    - mock
+    - testing
+    - data-validators
+    - documentation
   language: SaaS
-  link: https://www.mocklab.io/docs/getting-started/
-  github: https://www.mocklab.io/docs/getting-started/
-  description: SaaS platform to upload your spec to create a mock server
+  link: https://www.wiremock.io/product
+  github: https://www.wiremock.io/product
+  description:
+    WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project.
+    It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with
+    additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced
+    capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration
+    and user management.
   v2: true
   v3: true
+  v3_1: true
 
 - name: Fakeit
   category: mock
@@ -906,7 +926,7 @@
 
 - name: openapi-backend
   category: server
-  language: Node.js + Typescript
+  language: Node.js, Typescript
   link: https://www.npmjs.com/package/openapi-backend
   github: https://github.com/anttiviljami/openapi-backend
   description: Build, Validate, Route, and Mock using OpenAPI specification. Framework-agnostic
@@ -1051,7 +1071,9 @@
   github: https://github.com/lyra/openapi-dev-tool
   language: JavaScript
   description: 'OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!'
+  v2: true
   v3: true
+  v3_1: true
 
 - name: portman
   category:
@@ -1094,7 +1116,7 @@
   category: description-validators
   link: https://stoplight.io/spectral
   github: https://github.com/stoplightio/spectral
-  language: CLI & TypeScript/JavaScript
+  language: CLI, TypeScript, JavaScript
   description: >
     A flexible OpenAPI/AsyncAPI API linter, which can help you build anything
     from automated API Style Guides for API Governance workflows, or handle any
@@ -1127,25 +1149,12 @@
     - documentation
   link: https://redocly.com/redocly-cli/
   github: https://github.com/Redocly/redocly-cli
-  language: CLI & TypeScript
+  language: CLI, TypeScript
   description: >
     Bring versatile OpenAPI validation, linting & bundling to your command line
     with this open-source Swiss-army knife.
   v2: true
   v3: true
-  v3_1: true
-
-- name: 'at-your-service'
-  category:
-    - miscellaneous
-  link: https://atyourservice.awalsh.io/
-  github: https://github.com/AndrewWalsh/at-your-service
-  language: TypeScript
-  description: >
-    A developer tool for API observability on the browser. Generate OpenAPI
-    specifications and code from network traffic
-  v2: false
-  v3: false
   v3_1: true
 
 - name: openapi-validator-middleware
@@ -1559,8 +1568,8 @@
     - description-validators
     - converters
   language: JavaScript, TypeScript
-  github: https://github.com/readmeio/oas-normalize
-  description: Tooling for converting, validating, and parsing OpenAPI, Swagger, and Postman API definitions
+  github: https://github.com/readmeio/oas
+  description: Comprehensive tooling for working with OpenAPI definitions.
   v2: true
   v3: true
   v3_1: true
@@ -1797,6 +1806,30 @@
   description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
   v3: true
 
+- name: OpenAPI AutoSpec
+  category:
+    - auto-generators
+    - documentation
+  language: JavaScript
+  link: https://www.portway.ai/
+  github: https://github.com/Adawg4/openapi-autospec
+  description: Proxy server that generates API descriptions for any app or website on localhost.
+  v2: false
+  v3: true
+  v3_1: false
+
+- name: OpenAPI DevTools
+  category:
+    - auto-generators
+    - documentation
+  language: TypeScript
+  link: https://chrome.google.com/webstore/detail/openapi-devtools/jelghndoknklgabjgaeppjhommkkmdii
+  github: https://github.com/AndrewWalsh/openapi-devtools
+  description: Browser extension that generates API specs for any app or website
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: oa-client
   category:
     - miscellaneous
@@ -1913,7 +1946,7 @@
 
 - name: LoopBack 4
   category: server
-  language: Node.js + TypeScript
+  language: Node.js, TypeScript
   link: https://loopback.io/
   github: https://github.com/strongloop/loopback-next
   description: >
@@ -2435,8 +2468,8 @@
     - data-validators
     - learning
   language: Ruby
-  github: https://github.com/matchtechnologies/fitting
-  link: https://github.com/matchtechnologies/fitting
+  github: https://github.com/tuwilof/fitting
+  link: https://github.com/tuwilof/fitting
   description: Library add improve test log for RSpec and WebMock,
     validate its according to API Blueprint and Open API,
     show the documentation coverage with log.
@@ -2583,8 +2616,6 @@
   sponsoredDate: 2024-01-01 06:00:00
   category:
     - sdk
-    - docs
-    - code-generators
   github: https://github.com/stainless-api/stl-api
   link: https://stainlessapi.com
   language: TypeScript, Python, Go, Java, and Kotlin
@@ -2738,6 +2769,18 @@
   link: https://metacpan.org/dist/OpenAPI-Modern
   language: Perl
   description: OpenAPI v3.1 validator and JSON Schema validator (draft7, draft2019-09, draft2020-12)
+  v3_1: true
+
+- name: OpenAPI Qraft
+  category:
+    - code-generators
+    - sdk
+  github: https://github.com/OpenAPI-Qraft/openapi-qraft
+  link: https://openapi-qraft.github.io/openapi-qraft/
+  language: TypeScript
+  description: Generate a type-safe TanStack Query client for React from an OpenAPI Document.
+  v2: false
+  v3: true
   v3_1: true
 
 - name: Mojolicious::Plugin::OpenAPI::Modern

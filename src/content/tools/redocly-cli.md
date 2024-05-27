@@ -7,7 +7,8 @@ categories:
   - docs
 link: https://redocly.com/redocly-cli/
 languages:
-  cli & typescript: true
+  cli: true
+  typescript: true
 repo: https://github.com/Redocly/redocly-cli
 openApiVersions:
   v2: true

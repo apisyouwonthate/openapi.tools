@@ -5,10 +5,10 @@ categories:
   - testing
   - data-validators
   - education
-link: https://github.com/matchtechnologies/fitting
+link: https://github.com/tuwilof/fitting
 languages:
   ruby: true
-repo: https://github.com/matchtechnologies/fitting
+repo: https://github.com/tuwilof/fitting
 openApiVersions:
   v2: true
   v3: true

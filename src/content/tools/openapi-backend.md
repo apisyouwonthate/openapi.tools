@@ -5,7 +5,8 @@ categories:
   - servers
 link: https://www.npmjs.com/package/openapi-backend
 languages:
-  node + typescript: true
+  node: true
+  typescript: true
 repo: https://github.com/anttiviljami/openapi-backend
 openApiVersions:
   v2: false

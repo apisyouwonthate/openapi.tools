@@ -1,6 +1,6 @@
 ---
 name: oas-normalize
-description: Tooling for converting, validating, and parsing OpenAPI, Swagger, and Postman API definitions
+description: Comprehensive tooling for working with OpenAPI definitions.
 categories:
   - parsers
   - schema-validators
@@ -8,7 +8,7 @@ categories:
 languages:
   javascript: true
   typescript: true
-repo: https://github.com/readmeio/oas-normalize
+repo: https://github.com/readmeio/oas
 openApiVersions:
   v2: true
   v3: true
