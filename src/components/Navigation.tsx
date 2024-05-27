@@ -81,9 +81,12 @@ export function Navigation({
           </div>
 
           <div>
-            Get in touch to become a{' '}
-            <Link className="hover:underline" href="/sponsor">
-              Sponsor
+            Get in touch to{' '}
+            <Link
+              className="font-medium text-emerald-600 hover:underline"
+              href="/sponsor"
+            >
+              become a Sponsor
             </Link>
             .
           </div>
@@ -91,18 +94,27 @@ export function Navigation({
           <div>
             This site is{' '}
             <Link
-              className="hover:underline"
+              className="font-medium text-emerald-600 hover:underline"
               href="https://github.com/apisyouwonthate/openapi.tools"
               target="_blank"
             >
               community-driven and OSS
             </Link>
+            , built wih{' '}
+            <Link
+              href="https://astro.build"
+              className="font-medium text-emerald-600 hover:underline"
+            >
+              Astro
+            </Link>{' '}
+            and hosted on{' '}
+            <Link
+              href="https://vercel.com"
+              className="font-medium text-emerald-600 hover:underline"
+            >
+              Vercel
+            </Link>
             .
-          </div>
-
-          <div>
-            Built wih <Link href="https://astro.build">Astro</Link> and hosted
-            on <Link href="https://vercel.com">Vercel</Link>.
           </div>
         </footer>
       </nav>
