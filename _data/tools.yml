@@ -1793,7 +1793,7 @@
   language: TypeScript
   link: https://typespec.io/
   github: https://github.com/microsoft/typespec
-  description: Emit OpenAPI specifications from API descriptions defined in the generic, interoperable, and extensible TypeSpec language
+  description: Emit OpenAPI specifications from API descriptions defined in the generic, interoperable, and extensible TypeSpec language.
   v3: true
 
 - name: oa-client
