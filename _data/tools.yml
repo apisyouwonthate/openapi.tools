@@ -2198,6 +2198,16 @@
   v2: true
   v3: true
 
+- name: MkDocs Redoc Tag
+  category: documentation
+  language: Python
+  link: https://blueswen.github.io/mkdocs-redoc-tag/
+  github: https://github.com/blueswen/mkdocs-redoc-tag
+  description: A MkDocs plugin supports adding Redoc to the page.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: MkDocs Swagger UI Tag
   category: documentation
   language: Python
