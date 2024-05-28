@@ -2467,6 +2467,19 @@
   v2: true
   v3: true
 
+- name: Serverless API Gateway
+  category:
+    - gateway
+  link: https://serverlessapigateway.com
+  github: https://github.com/irensaltali/serverlessapigateway
+  language: TypeScript
+  description:
+    Serverless API Gateway is a serverless, open-source, and free API Gateway that is
+    designed to be used with any HTTP source.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Treblle
   category:
     - documentation
