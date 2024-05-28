@@ -2399,6 +2399,17 @@
   description: C# library for comparing two OpenAPI specifications.
   v3: true
 
+- name: openapi-validator-junit
+  category: description-validators
+  link: https://github.com/stefankoppier/openapi-validator
+  github: https://github.com/stefankoppier/openapi-validator
+  language: Kotlin
+  description:
+    A JUnit extension for validating a wide range of properties of a specification.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Hot Potato
   category:
     - data-validators
