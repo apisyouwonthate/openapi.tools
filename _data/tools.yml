@@ -914,6 +914,15 @@
     database schema from an OpenAPI description. Based on Yii Framework.
   v3: true
 
+- name: Beeceptor
+  category: mock
+  language: SaaS
+  link: https://beeceptor.com/
+  description:
+     "\U0001F41D An HTTP interceptor and rule-based mocking service for REST APIs. No coding required to create a mock endpoint. No sign-up required."
+  v2: false
+  v3: true
+
 - name: "@eropple/nestjs-openapi3"
   category:
     - server
