@@ -58,7 +58,10 @@
 - name: Apitally
   category: monitoring
   language: SaaS
-  description: Simple REST API monitoring tool that helps engineering and product teams understand how their APIs are being used.
+  description:
+    Simple REST API monitoring tool that helps engineering and product teams understand their APIs.
+    Tracks usage, errors, response times and more using middleware for Python and Node.js frameworks.
+    Also offers uptime monitoring and logging of individual requests.
   link: https://apitally.io
   github: https://github.com/apitally
   v2: true
