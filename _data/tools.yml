@@ -1738,6 +1738,22 @@
   v3: true
   v3_1: true
 
+- name: mitmproxy2swagger
+  category: auto-generators
+  language: Python
+  link: https://github.com/alufers/mitmproxy2swagger
+  github: https://github.com/alufers/mitmproxy2swagger
+  description: A tool for automatically converting mitmproxy captures to OpenAPI 3.0 specifications. Automatically reverse-engineer REST APIs by just running the apps and capturing the traffic.
+  v3: true
+
+- name: OpenApiSpecGeneratorPlugin
+  category: auto-generators
+  language: C#
+  link: https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/technical-reference/openapispecgeneratorplugin
+  github: https://github.com/microsoft/dev-proxy
+  description: Built-in plugin for open-source DevProxy that automatically generates OpenAPI 3.0 Spec from captured network requests
+  v3: true
+
 - name: har2openapi
   category: auto-generators
   language: TypeScript
