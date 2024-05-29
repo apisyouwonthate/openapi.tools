@@ -12,6 +12,17 @@
   v3: true
   v3_1: true
 
+
+- name: Docuo
+  category: documentation
+  link: https://docuo.spreading.ai/?via=ot
+  github: https://github.com/spreadingai
+  language: SaaS
+  description: Docuo is a lightweight platform that transforms your static contents into a modern developer hub, API reference, product guides, and more.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: API Insights
   category:
     - monitoring
@@ -44,16 +55,6 @@
   v3: true
   v3_1: true
 
-- name: Apitive Studio
-  category: documentation
-  language: Angular 7.0, Java / Saas
-  link: https://www.apitive.com
-  description: >
-    A platform for Digital Product Managers and API Consultants to design
-    REST APIs with in-built mock and documentation.
-  v2: true
-  v3: true
-
 - name: Assertible
   category: testing
   language: SaaS
@@ -68,10 +69,10 @@
 - name: avantation
   category: converters
   language: TypeScript
-  link: https://www.avantation.in/
   github: https://github.com/anbuksv/avantation
   description: "Generate OpenAPI 3.x specification from HAR."
   v3: true
+  v3_1_link: https://github.com/anbuksv/avantation/issues/42
 
 - name: BOATS
   category: dsl
@@ -146,27 +147,7 @@
   v3: true
   v3_1: true
 
-- name: LucyBot api-spec-converter
-  category: converters
-  language: Node.js
-  link: https://www.npmjs.com/package/api-spec-converter
-  github: https://github.com/LucyBot-Inc/api-spec-converter
-  description: "Convert between API description formats such as OpenAPI and RAML."
-  v2: true
-  v3: true
-
-- name: LucyBot DocGen
-  category: documentation
-  github: https://github.com/LucyBot-Inc/documentation-starter
-  link: https://lucybot.com/docgen
-  language: JavaScript
-  description:
-    Generate a customizable website, with API documentation, console, and
-    interactive workflows, from an OpenAPI spec
-  v2: true
-  v3: true
-
-- name: ratemyopenapi
+- name: Rate My OpenAPI
   category:
     - miscellaneous
     - description-validators
@@ -187,6 +168,16 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: Scribe
+  category: documentation
+  link: https://scribe.knuckles.wtf/
+  github: https://github.com/knuckleswtf/scribe/
+  language: PHP
+  description: Generate API documentation for humans from your Laravel codebase.
+  v2: false
+  v3: true
+  v3_1: false
 
 - name: Supermodel
   category: dsl
@@ -463,7 +454,7 @@
     - code-generators
     - sdk
   link: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
-  language: Python
+  language: Python, Java
   github: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
   description:
     A template-driven engine to generate API client code + documentation
@@ -501,10 +492,10 @@
 
 - name: Bump.sh
   category: documentation
-  link: https://bump.sh?utm_source=openapi_tools&utm_medium=referral&utm_campaign=openapi
+  link: https://bump.sh
   language: SaaS
   github: https://github.com/bump-sh/cli
-  description:
+  description: >
     Bump.sh generates elegant documentation and changelogs from your OpenAPI
     specifications. Git diff, for your API. Integrates with CI and Slack.
   v2: true
@@ -519,23 +510,48 @@
   description: This library facilitates creating OpenAPI document for Python projects.
   v3: true
 
-- name: VSCode OpenAPI
+- name: Fix My OpenAPI - A VSCode Extension by APIMatic
+  category:
+  - text-editors
+  - description-validators
+  language: Any
+  link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
+  description: >
+    APIMatic's VSCode extension helps you validate, lint, and auto-fix your OpenAPI files, 
+    along with other capabilities such as API transformations, API audit report generation, SDKs generation, and more.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: VSCode OpenAPI Editor
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
   github: https://github.com/42Crunch/vscode-openapi
-  description:
+  description: >
     OpenAPI extension for Visual Studio Code - new file templates, navigation,
     intellisense, code snippets.
   v2: true
   v3: true
+
+- name: 42Crunch IntelliJ OpenAPI Editor
+  category: text-editors
+  language: Any
+  link: https://plugins.jetbrains.com/plugin/14837-openapi-swagger-editor
+  github: https://github.com/42Crunch/vscode-openapi
+  description: >
+    OpenAPI extension for Visual Studio Code - new file templates, navigation,
+    intellisense, code snippets.
+  v2: true
+  v3: true
+  v3_1: false
 
 - name: KaiZen-OpenAPI-Editor
   category: text-editors
   language: Java
   license: EPL
   github: https://github.com/RepreZen/KaiZen-OpenAPI-Editor
-  description:
+  description: >
     Full-featured Eclipse editor for OpenAPI, also available on Eclipse
     Marketplace.
   v2: true
@@ -545,7 +561,7 @@
   category: text-editors
   language: Node.js
   github: https://github.com/swagger-api/swagger-editor
-  description:
+  description: >
     Design, describe, and document your API on the first open source editor
     fully dedicated to OpenAPI-based APIs.
   v2: true
@@ -556,22 +572,11 @@
   language: SaaS/On-Premise NodeJS
   github:
   link: https://swagger.io/tools/swaggerhub/
-  description:
+  description: >
     API design and documentation platform to improve collaboration, standardize
     development workflow and centralize their API discovery and consumption.
   v2: true
   v3: true
-
-- name: Senya Editor
-  category: text-editors
-  language: Java
-  link: https://senya.io
-  description:
-    JetBrains IDE plugin to show Swagger UI as a preview, for visual feedback
-    as you edit.
-  v2: true
-  v3: true
-  v3_1: true
 
 - name: Redocly VSCode Extension
   category: text-editors
@@ -608,16 +613,6 @@
   v2: true
   v3: true
   v3_1: true
-
-- name: Apitive Studio
-  category: gui-editors
-  language: Angular 7.0, Java / Saas
-  link: https://www.apitive.com
-  description: >
-    A platform for Digital Product Managers and API Consultants to design
-    REST APIs with in-built mock and documentation.
-  v2: true
-  v3: true
 
 - name: Apicurio Studio
   category: gui-editors
@@ -721,7 +716,7 @@
 - name: Prism
   category: mock
   language: cli
-  link: https://stoplight.io/prism
+  link: https://stoplight.io/open-source/prism
   github: https://github.com/stoplightio/prism
   description:
     Turn any OAI file into an API server with mocking, transformations,
@@ -729,18 +724,6 @@
   v2: true
   v3: true
   v3_1: true
-
-- name: Sandbox
-  category: mock
-  language: SaaS / Java
-  link: https://getsandbox.com/
-  github: https://github.com/getsandbox/sandbox
-  description:
-    SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) descriptions
-    into a mock server, where you can modify behaviour, simulate downtime, and any
-    other nonsense you can think of thanks to a built-in code editor!
-  v2: true
-  v3: true
 
 - name: Microcks
   category: mock,testing
@@ -763,14 +746,24 @@
   description: Standalone nodejs based OpenAPI 3 mock server, docker-friendly with request validation and autoreload.
   v3: true
 
-- name: MockLab
-  category: mock
+- name: Wiremock
+  category:
+    - mock
+    - testing
+    - data-validators
+    - documentation
   language: SaaS
-  link: https://www.mocklab.io/docs/getting-started/
-  github: https://www.mocklab.io/docs/getting-started/
-  description: SaaS platform to upload your spec to create a mock server
+  link: https://www.wiremock.io/product
+  github: https://www.wiremock.io/product
+  description:
+    WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project. 
+    It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with 
+    additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced 
+    capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration 
+    and user management.
   v2: true
   v3: true
+  v3_1: true
 
 - name: Fakeit
   category: mock
@@ -780,30 +773,6 @@
   description:
     Create mock server from OpenAPI 3 specification with random response
     generation and request validation.
-  v3: true
-
-- name: Unmock
-  category:
-    - mock
-    - testing
-  link: https://unmock.io
-  language: Node.js
-  github: https://github.com/unmock/unmock-js
-  description:
-    API integration testing library that intercepts outgoing requests and
-    serves back mock data based on the OpenAPI descriptions.
-  v3: true
-
-- name: Apitive Studio
-  category: mock
-  language: Angular 7.0, Java / Saas
-  link: https://www.apitive.com
-  description:
-    "A platform for Digital Product Managers and API Consultants to design
-    REST APIs with in-built mock and documentation.
-
-    "
-  v2: true
   v3: true
 
 - name: Mockintosh
@@ -1029,7 +998,9 @@
   github: https://github.com/lyra/openapi-dev-tool
   language: JavaScript
   description: "OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!"
+  v2: true
   v3: true
+  v3_1: true
 
 - name: portman
   category:
@@ -1113,19 +1084,6 @@
   v3: true
   v3_1: true
 
-- name: "at-your-service"
-  category:
-    - miscellaneous
-  link: https://atyourservice.awalsh.io/
-  github: https://github.com/AndrewWalsh/at-your-service
-  language: TypeScript
-  description: >
-    A developer tool for API observability on the browser. Generate OpenAPI
-    specifications and code from network traffic
-  v2: false
-  v3: false
-  v3_1: true
-
 - name: openapi-validator-middleware
   category:
     - data-validators
@@ -1149,6 +1107,17 @@
     Ruby object (e.g. convert datetime string to DateTime class).
   v2: true
   v3: true
+
+- name: openapi_first
+  category: data-validators
+  github: https://github.com/ahx/openapi_first
+  language: Ruby
+  description:
+    It validates requests and responses against your API description using rack middlewares or a low-level interface.
+    It gives you access to request parameters that are parsed exactly as described
+    in your API description and produces useful customizable error responses if request validation fails.
+  v3: true
+  v3_1: true
 
 - name: OpenAPI Enforcer
   category:
@@ -1271,6 +1240,14 @@
   description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
   v3: true
 
+- name: openapi.tanna.dev/go/validator
+  category:
+    - data-validators
+  github: https://gitlab.com/jamietanna/httptest-openapi/
+  language: Go
+  description: A Go library for making it easier to validate that your OpenAPI contracts match your HTTP request/responses used in your tests. Based on kin-openapi.
+  v3: true
+
 - name: openapi-psr7-validator
   category: data-validators
   github: https://github.com/thephpleague/openapi-psr7-validator
@@ -1351,12 +1328,12 @@
   description: A Ruby implementation of parser and validator for the OpenAPI 3 Specification.
   v3: true
 
-- name: APIMatic CodeGen
+- name: APIMatic Generate
   category:
     - code-generators
     - sdk
   language: SaaS
-  link: https://www.apimatic.io/code-generation-as-a-service
+  link: https://www.apimatic.io/product/generate
   description:
     Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL,
     etc.) to generate fully functional SDKs in over 10 languages.
@@ -1518,8 +1495,8 @@
     - description-validators
     - converters
   language: JavaScript, TypeScript
-  github: https://github.com/readmeio/oas-normalize
-  description: Tooling for converting, validating, and parsing OpenAPI, Swagger, and Postman API definitions
+  github: https://github.com/readmeio/oas
+  description: Comprehensive tooling for working with OpenAPI definitions. 
   v2: true
   v3: true
   v3_1: true
@@ -1730,6 +1707,22 @@
   v3: true
   v3_1: true
 
+- name: mitmproxy2swagger
+  category: auto-generators
+  language: Python
+  link: https://github.com/alufers/mitmproxy2swagger
+  github: https://github.com/alufers/mitmproxy2swagger
+  description: A tool for automatically converting mitmproxy captures to OpenAPI 3.0 specifications. Automatically reverse-engineer REST APIs by just running the apps and capturing the traffic.
+  v3: true
+
+- name: OpenApiSpecGeneratorPlugin
+  category: auto-generators
+  language: C#
+  link: https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/technical-reference/openapispecgeneratorplugin
+  github: https://github.com/microsoft/dev-proxy
+  description: Built-in plugin for open-source DevProxy that automatically generates OpenAPI 3.0 Spec from captured network requests
+  v3: true
+
 - name: har2openapi
   category: auto-generators
   language: TypeScript
@@ -1754,6 +1747,38 @@
   link: https://granthai.com
   github: https://www.npmjs.com/package/granthai
   description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
+  v3: true
+
+- name: OpenAPI AutoSpec
+  category:
+    - auto-generators
+    - documentation
+  language: JavaScript
+  link: https://www.portway.ai/
+  github: https://github.com/Adawg4/openapi-autospec
+  description: Proxy server that generates API descriptions for any app or website on localhost.
+  v2: false
+  v3: true
+  v3_1: false
+
+- name: OpenAPI DevTools
+  category:
+    - auto-generators
+    - documentation
+  language: TypeScript
+  link: https://chrome.google.com/webstore/detail/openapi-devtools/jelghndoknklgabjgaeppjhommkkmdii
+  github: https://github.com/AndrewWalsh/openapi-devtools
+  description: Browser extension that generates API specs for any app or website
+  v2: false
+  v3: true
+  v3_1: true
+
+- name: TypeSpec
+  category: auto-generators
+  language: TypeScript
+  link: https://typespec.io/
+  github: https://github.com/microsoft/typespec
+  description: Emit OpenAPI specifications from API descriptions defined in the generic, interoperable, and extensible TypeSpec language.
   v3: true
 
 - name: oa-client
@@ -2082,15 +2107,6 @@
   v3: true
   v3_1: true
 
-- name: Meta-API
-  category: miscellaneous
-  link: https://www.meta-api.io
-  language: SaaS
-  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
-  v2: true
-  v3: true
-  v3_1: true
-
 - name: BlocklyAutomation
   category:
     - code-generators
@@ -2158,6 +2174,16 @@
   v2: true
   v3: true
 
+- name: MkDocs Redoc Tag
+  category: documentation
+  language: Python
+  link: https://blueswen.github.io/mkdocs-redoc-tag/
+  github: https://github.com/blueswen/mkdocs-redoc-tag
+  description: A MkDocs plugin supports adding Redoc to the page.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: MkDocs Swagger UI Tag
   category: documentation
   language: Python
@@ -2214,8 +2240,19 @@
   language: go
   github: https://github.com/daveshanley/vacuum
   description:
-    The worlds fastest OpenAPI linter and validator. Compatible with Spectral rule-sets and
+    A blazing fast OpenAPI linter and validator that is compatible with Spectral rulesets, and
     designed for enterprise-grade speed and scale.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: apigen-ts
+  category:
+    - sdk
+  language: TypeScript
+  link: https://www.npmjs.com/package/apigen-ts
+  github: https://github.com/vladkens/apigen-ts
+  description: Typed HTTP client generator as single file without extra dependencies
   v2: true
   v3: true
   v3_1: true
@@ -2348,6 +2385,17 @@
   description: C# library for comparing two OpenAPI specifications.
   v3: true
 
+- name: openapi-validator-junit
+  category: description-validators
+  link: https://github.com/stefankoppier/openapi-validator
+  github: https://github.com/stefankoppier/openapi-validator
+  language: Kotlin
+  description:
+    A JUnit extension for validating a wide range of properties of a specification.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Hot Potato
   category:
     - data-validators
@@ -2394,8 +2442,8 @@
     - data-validators
     - learning
   language: Ruby
-  github: https://github.com/matchtechnologies/fitting
-  link: https://github.com/matchtechnologies/fitting
+  github: https://github.com/tuwilof/fitting
+  link: https://github.com/tuwilof/fitting
   description: Library add improve test log for RSpec and WebMock,
     validate its according to API Blueprint and Open API,
     show the documentation coverage with log.
@@ -2426,6 +2474,19 @@
     existing specifications for generating configuration and mock servers.
   v2: true
   v3: true
+
+- name: Serverless API Gateway
+  category:
+    - gateway
+  link: https://serverlessapigateway.com
+  github: https://github.com/irensaltali/serverlessapigateway
+  language: TypeScript
+  description:
+    Serverless API Gateway is a serverless, open-source, and free API Gateway that is
+    designed to be used with any HTTP source.
+  v2: true
+  v3: true
+  v3_1: true
 
 - name: Treblle
   category:
@@ -2514,8 +2575,8 @@
     - code-generators
     - sdk
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com
-  language: TypeScript, Java, Python, Go, and C#
+  link: https://buildwithfern.com/contact
+  language: TypeScript, Java, Python, Go, Ruby, and C#
   description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: true
   v3: true
@@ -2530,8 +2591,8 @@
   category:
     - documentation
   github: https://github.com/fern-api/fern
-  link: https://docs.buildwithfern.com/generate-docs
-  language: TypeScript, Java, Python, Go, and C#
+  link: https://buildwithfern.com/contact
+  language: TypeScript, Java, Python, Go, Ruby, and C#
   description: Beautiful API documentation from OpenAPI.
   v2: true
   v3: true
@@ -2551,6 +2612,31 @@
   v3: true
   v3_1: true
 
+- name: // Speakeasy
+  sponsored: true
+  sponsoredDate: 2024-02-09 06:00:00
+  category:
+    - sdk
+    - documentation
+  github: https://github.com/speakeasy-api
+  link: https://speakeasyapi.dev/
+  language: TypeScript, Python, Go, Java, Terraform, C#, PHP, Ruby, Swift, Unity
+  description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
+  v3: true
+  v3_1: true
+
+- name: Swift OpenAPI Generator
+  category:
+    - sdk
+    - server
+  language: Swift
+  github: https://github.com/apple/swift-openapi-generator
+  link: https://github.com/apple/swift-openapi-generator
+  description: Generate Swift client and server code from an OpenAPI document. Includes support for type-safe JSON event streaming, multipart, Swift concurrency, customizable middlewares, and pluggable HTTP libraries.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: wiretap
   category:
     - miscellaneous
@@ -2562,7 +2648,7 @@
   language: go
   github: https://github.com/pb33f/wiretap
   description:
-    Wiretap is the world's sexiest OpenAPI compliance testing tool. Validate that a client and server are compliant
+    Wiretap is a feature packed OpenAPI compliance testing tool. Validate that a client and server are compliant
     with an OpenAPI spec. Rewrite paths, inject headers, and even host a UI locally to test an OpenAPI implementation.
   v2: true
   v3: true
@@ -2616,17 +2702,40 @@
   v2: true
   v3: true
 
+- name: HopFront
+  category:
+    - documentation
+    - miscellaneous
+  link: https://github.com/hopfront/hopfront
+  github: https://github.com/hopfront/hopfront
+  language: TypeScript
+  description:
+    HopFront automatically builds an user friendly UI from a collection of OpenAPI specifications.
+    You can setup custom dashboard tailored to the way your interact with your APIs.
+  v3: true
+  
 - name: Xapi Platform
   category:
     - gui-editors
     - text-editors
     - testing
-  language: Springboot
+  language: Saas
   link: https://xapihub.io/
   description: Xapi is an integrated platform that enables you to implement a streamlined API-first design strategy with standardized API artifacts and collaborative teams.
   v2: false
   v3: false
   v3_1: true
+
+- name: Fuego
+  category:
+    - auto-generators
+    - data-validators
+    - server
+  language: Go
+  link: https://go-fuego.github.io/fuego/
+  github: https://github.com/go-fuego/fuego
+  description: Golang Fuego - web & API framework generating OpenAPI 3 spec from source code
+  v3: true
 
 - name: Huma
   category:
@@ -2660,6 +2769,18 @@
   link: https://metacpan.org/dist/OpenAPI-Modern
   language: Perl
   description: OpenAPI v3.1 validator and JSON Schema validator (draft7, draft2019-09, draft2020-12)
+  v3_1: true
+
+- name: OpenAPI Qraft
+  category:
+    - code-generators
+    - sdk
+  github: https://github.com/OpenAPI-Qraft/openapi-qraft
+  link: https://openapi-qraft.github.io/openapi-qraft/
+  language: TypeScript
+  description: Generate a type-safe TanStack Query client for React from an OpenAPI Document.
+  v2: false
+  v3: true
   v3_1: true
 
 - name: Mojolicious::Plugin::OpenAPI::Modern
