@@ -531,7 +531,7 @@
   v3: true
   v3_1: true
 
-- name: VSCode OpenAPI
+- name: VSCode OpenAPI Editor
   category: text-editors
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi
@@ -541,6 +541,18 @@
     intellisense, code snippets.
   v2: true
   v3: true
+
+- name: 42Crunch IntelliJ OpenAPI Editor
+  category: text-editors
+  language: Any
+  link: https://plugins.jetbrains.com/plugin/14837-openapi-swagger-editor
+  github: https://github.com/42Crunch/vscode-openapi
+  description: >
+    OpenAPI extension for Visual Studio Code - new file templates, navigation,
+    intellisense, code snippets.
+  v2: true
+  v3: true
+  v3_1: false
 
 - name: KaiZen-OpenAPI-Editor
   category: text-editors
@@ -573,17 +585,6 @@
     development workflow and centralize their API discovery and consumption.
   v2: true
   v3: true
-
-- name: Senya Editor
-  category: text-editors
-  language: Java
-  link: https://senya.io
-  description: >
-    JetBrains IDE plugin to show Swagger UI as a preview, for visual feedback
-    as you edit.
-  v2: true
-  v3: true
-  v3_1: true
 
 - name: Redocly VSCode Extension
   category: text-editors
