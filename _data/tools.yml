@@ -266,7 +266,7 @@
   language: TypeScript
   v2: true
   v3: true
-  v3_1: true
+  v3_1: false
 
 - name: openapi-viewer
   category: documentation
