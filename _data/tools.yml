@@ -69,10 +69,10 @@
 - name: avantation
   category: converters
   language: TypeScript
-  link: https://www.avantation.in/
   github: https://github.com/anbuksv/avantation
   description: "Generate OpenAPI 3.x specification from HAR."
   v3: true
+  v3_1_link: https://github.com/anbuksv/avantation/issues/42
 
 - name: BOATS
   category: dsl
@@ -147,27 +147,7 @@
   v3: true
   v3_1: true
 
-- name: LucyBot api-spec-converter
-  category: converters
-  language: Node.js
-  link: https://www.npmjs.com/package/api-spec-converter
-  github: https://github.com/LucyBot-Inc/api-spec-converter
-  description: "Convert between API description formats such as OpenAPI and RAML."
-  v2: true
-  v3: true
-
-- name: LucyBot DocGen
-  category: documentation
-  github: https://github.com/LucyBot-Inc/documentation-starter
-  link: https://lucybot.com/docgen
-  language: JavaScript
-  description:
-    Generate a customizable website, with API documentation, console, and
-    interactive workflows, from an OpenAPI spec
-  v2: true
-  v3: true
-
-- name: ratemyopenapi
+- name: Rate My OpenAPI
   category:
     - miscellaneous
     - description-validators
@@ -733,18 +713,6 @@
   v3: true
   v3_1: true
 
-- name: Sandbox
-  category: mock
-  language: SaaS / Java
-  link: https://getsandbox.com/
-  github: https://github.com/getsandbox/sandbox
-  description:
-    SaaS, self-hosted, or CLI tool for turning OpenAPI (and other) descriptions
-    into a mock server, where you can modify behaviour, simulate downtime, and any
-    other nonsense you can think of thanks to a built-in code editor!
-  v2: true
-  v3: true
-
 - name: Microcks
   category: mock,testing
   language: Java
@@ -793,18 +761,6 @@
   description:
     Create mock server from OpenAPI 3 specification with random response
     generation and request validation.
-  v3: true
-
-- name: Unmock
-  category:
-    - mock
-    - testing
-  link: https://unmock.io
-  language: Node.js
-  github: https://github.com/unmock/unmock-js
-  description:
-    API integration testing library that intercepts outgoing requests and
-    serves back mock data based on the OpenAPI descriptions.
   v3: true
 
 - name: Mockintosh
@@ -1360,12 +1316,12 @@
   description: A Ruby implementation of parser and validator for the OpenAPI 3 Specification.
   v3: true
 
-- name: APIMatic CodeGen
+- name: APIMatic Generate
   category:
     - code-generators
     - sdk
   language: SaaS
-  link: https://www.apimatic.io/code-generation-as-a-service
+  link: https://www.apimatic.io/product/generate
   description:
     Bring in your API description (OAI v2/v3, RAML, API Blueprint, WSDL,
     etc.) to generate fully functional SDKs in over 10 languages.
@@ -2136,15 +2092,6 @@
   link: https://www.blstsecurity.com/cherrybomb
   github: https://github.com/blst-security/cherrybomb
   description: A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
-  v3: true
-  v3_1: true
-
-- name: Meta-API
-  category: miscellaneous
-  link: https://www.meta-api.io
-  language: SaaS
-  description: A SaaS platform to integrate APIs using OpenAPI documents, and manipulation of data with online code editor, and automating configuration, authentication, deployment and monitoring.
-  v2: true
   v3: true
   v3_1: true
 
