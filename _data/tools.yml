@@ -247,6 +247,18 @@
   v3: true
   v3_1: true
 
+- name: OpenAPI-UI
+  category: documentation
+  description:
+    Create simple and beautiful OpenAPI/Swagger documentation from OpenAPI files.
+    Generate mock parameters and call APIs. Like Postman, but for OpenAPI specifications.
+  link: https://docs.openapi-ui.com
+  github: https://github.com/rookie-luochao/openapi-ui
+  language: TypeScript
+  v2: true
+  v3: true
+  v3_1: false
+
 - name: openapi-viewer
   category: documentation
   link: https://koumoul.com/openapi-viewer/
