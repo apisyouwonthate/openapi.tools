@@ -259,8 +259,8 @@
 - name: OpenAPI-UI
   category: documentation
   description:
-    a simpler and more beautiful openapi UI document than swagger UI, 
-    quickly generate mock params and call api request.
+    Create simple and beautiful OpenAPI/Swagger documentation from OpenAPI files.
+    Generate mock parameters and call APIs. Like Postman, but for OpenAPI specifications.
   link: https://docs.openapi-ui.com
   github: https://github.com/rookie-luochao/openapi-ui
   language: React.js
