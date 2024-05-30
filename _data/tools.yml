@@ -55,6 +55,19 @@
   v3: true
   v3_1: true
 
+- name: Apitally
+  category: monitoring
+  language: SaaS
+  description:
+    Simple REST API monitoring tool that helps engineering and product teams understand their APIs.
+    Tracks usage, errors, response times and more using middleware for Python and Node.js frameworks.
+    Also offers uptime monitoring and logging of individual requests.
+  link: https://apitally.io
+  github: https://github.com/apitally
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Assertible
   category: testing
   language: SaaS
