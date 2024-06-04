@@ -1700,6 +1700,16 @@
   v2: true
   v3: true
 
+- name: OpenAPI Preview
+  category: documentation
+  language: TypeScript
+  link: https://marketplace.visualstudio.com/items?itemName=zoellner.openapi-preview
+  github: https://github.com/zoellner/openapi-preview
+  description: View OpenAPI 3.1 specifications in Visual Studio Code using Spotlight Elements.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: openapi-processor
   category:
     - server
