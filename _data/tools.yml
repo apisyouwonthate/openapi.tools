@@ -1989,7 +1989,7 @@
   language: TypeScript
   link: https://marketplace.visualstudio.com/items?itemName=AndrewButson.vscode-openapi-viewer
   github: https://github.com/arbs-io/vscode-openapi-viewer
-  description: Preview and edit JSON or YAML OpenAPI specifications in VSCode directly.
+  description: Preview and edit JSON or YAML OpenAPI specifications in Visual Studio Code using RapiDoc.
   v2: true
   v3: true
   v3_1: true
