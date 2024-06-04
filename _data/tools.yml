@@ -1982,6 +1982,18 @@
   link: https://marketplace.visualstudio.com/items?itemName=proohit.openapi-snippets
   github: https://github.com/proohit/openapi-snippets
 
+- name: VSCode OpenAPI Viewer
+  category:
+    - documentation
+    - text-editors
+  language: TypeScript
+  link: https://marketplace.visualstudio.com/items?itemName=AndrewButson.vscode-openapi-viewer
+  github: https://github.com/arbs-io/vscode-openapi-viewer
+  description: Preview and edit JSON or YAML OpenAPI specifications in VSCode directly.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Spectator
   category: testing
   language: PHP
