@@ -1700,7 +1700,7 @@
   v2: true
   v3: true
 
-- name: OpenAPI Preview
+- name: VSCode OpenAPI Preview
   category: documentation
   language: TypeScript
   link: https://marketplace.visualstudio.com/items?itemName=zoellner.openapi-preview
