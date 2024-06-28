@@ -1090,6 +1090,7 @@
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
+  v3_1: true
 
 - name: Redocly CLI
   category:
