@@ -600,6 +600,17 @@
   v3: true
   v3_1: true
 
+- name: Api-Fiddle
+  category: gui-editors
+  language: TypeScript / Saas
+  link: https://www.api-fiddle.com/
+  description: >
+    Opinionated API design platform built for collaboration and exploration.
+    Create API designs for technical documents, specifications, and reviews. 
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: Stoplight Studio
   category:
     - gui-editors
