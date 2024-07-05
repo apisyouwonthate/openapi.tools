@@ -182,7 +182,9 @@
   v3_1: true
 
 - name: Scramble
-  category: documentation
+  category: 
+    - auto-generators
+    - documentation
   language: PHP
   github: https://github.com/dedoc/scramble
   link: https://scramble.dedoc.co/
