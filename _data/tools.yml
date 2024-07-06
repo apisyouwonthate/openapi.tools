@@ -12,6 +12,17 @@
   v3: true
   v3_1: true
 
+- name: Openapiviewer
+  category:
+    - documentation
+  link: https://www.openapiviewer.com
+  language: SaaS
+  description:
+    Upload a openapi.json and view it online via a shareable link. Nothing else. Uses OpenAPI Explorer under the hood.
+  v2: false
+  v3: true
+  v3_1: true
+
 
 - name: Docuo
   category: documentation
@@ -1517,7 +1528,7 @@
     - converters
   language: JavaScript, TypeScript
   github: https://github.com/readmeio/oas
-  description: Comprehensive tooling for working with OpenAPI definitions. 
+  description: Comprehensive tooling for working with OpenAPI definitions.
   v2: true
   v3: true
   v3_1: true
@@ -2757,7 +2768,7 @@
     HopFront automatically builds an user friendly UI from a collection of OpenAPI specifications.
     You can setup custom dashboard tailored to the way your interact with your APIs.
   v3: true
-  
+
 - name: Xapi Platform
   category:
     - gui-editors
