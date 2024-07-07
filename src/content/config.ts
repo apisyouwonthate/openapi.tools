@@ -5,6 +5,15 @@ import { icons } from '../components/Icon';
 
 const iconNames = Object.keys(icons);
 
+const BannerSponsorSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+  ctaText: z.string().max(20), // 20 characters max
+  ctaUrl: z.string().url(),
+});
+
+export type BannerSponsor = z.infer<typeof BannerSponsorSchema>;
+
 const CategorySchema = z.object({
   name: z.string(),
   description: z.string(),
@@ -18,12 +27,6 @@ const CategorySchema = z.object({
 });
 
 export type Category = z.infer<typeof CategorySchema>;
-
-// 2. Define your collection(s)
-const categoriesCollection = defineCollection({
-  type: 'content',
-  schema: CategorySchema,
-});
 
 const ToolSchema = z.object({
   name: z.string(),
@@ -58,6 +61,17 @@ const ToolSchema = z.object({
 
 export type Tool = z.infer<typeof ToolSchema>;
 
+// 2. Define your collection(s)
+const bannerSponsorsCollection = defineCollection({
+  type: 'content',
+  schema: BannerSponsorSchema,
+});
+
+const categoriesCollection = defineCollection({
+  type: 'content',
+  schema: CategorySchema,
+});
+
 const toolsCollection = defineCollection({
   type: 'content',
   schema: ToolSchema,
@@ -68,4 +82,5 @@ const toolsCollection = defineCollection({
 export const collections = {
   categories: categoriesCollection,
   tools: toolsCollection,
+  bannerSponsors: bannerSponsorsCollection,
 };

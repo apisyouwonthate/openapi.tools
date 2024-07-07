@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import Header from '@/components/Header.astro';
 import { Hero } from '@/components/Hero';
 import { Navigation, type NavigationItems } from '@/components/Navigation';
-import Sponsor from '@/components/Sponsor';
+import SponsorBanner from '@/components/SponsorBanner';
 import PostHog from '../components/PostHog.astro';
 
 import '../styles/base.css';
@@ -25,6 +25,10 @@ const { title } = Astro.props;
 const isHomePage = Astro.url.pathname === '/';
 
 const allCategories = await getCollection('categories');
+const bannerSponsorsCollection = await getCollection('banner-sponsors');
+const bannerSponsors = bannerSponsorsCollection.map((sponsor) => sponsor.data);
+
+console.log('we out here', bannerSponsors);
 
 const categories: NavigationItems = [
   {
@@ -173,7 +177,7 @@ const categories: NavigationItems = [
 
   <body class="flex min-h-full bg-white dark:bg-slate-900">
     <div class="flex w-full flex-col">
-      <Sponsor />
+      <SponsorBanner sponsors={bannerSponsors} client:only="react" />
       <Header categories={categories} url={Astro.url} />
 
       {isHomePage && <Hero />}
