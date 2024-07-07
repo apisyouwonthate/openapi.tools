@@ -7,6 +7,7 @@ type LanguagesProps = {
 };
 
 const Languages: React.FC<LanguagesProps> = ({ languages }) => {
+  if (!languages) return null;
   // return nothing if there are no languages
   if (!Object.keys(languages).length) {
     return null;
