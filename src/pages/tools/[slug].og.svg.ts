@@ -5,18 +5,12 @@ import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
 
-const loadFont = async (fontFileName: string) => {
-  const response = await fetch(`/fonts/${fontFileName}`);
-
-  return await response.arrayBuffer();
-};
-
 export async function getStaticPaths() {
   const tools = await getCollection('tools');
   return tools.map((tool) => ({ params: { slug: tool.slug } }));
 }
 
-export const get: APIRoute = async ({ params }) => {
+export const GET: APIRoute = async ({ params }) => {
   const { slug } = params;
   /// One line to get the tool from our collection using slug
   const tool = await getEntryBySlug('tools', slug!!);
@@ -32,13 +26,15 @@ export const get: APIRoute = async ({ params }) => {
     </div>
   </div>`);
 
-  const inter = await loadFont('Inter-Regular.ttf');
+  const Roboto = await fetch(
+    'https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff'
+  ).then((res) => res.arrayBuffer());
 
   const svg = await satori(markup as React.ReactNode, {
     fonts: [
       {
-        name: 'Inter',
-        data: inter,
+        name: 'Roboto',
+        data: Roboto,
       },
     ],
     width: 1200,
