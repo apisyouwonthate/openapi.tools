@@ -28,8 +28,6 @@ const allCategories = await getCollection('categories');
 const bannerSponsorsCollection = await getCollection('banner-sponsors');
 const bannerSponsors = bannerSponsorsCollection.map((sponsor) => sponsor.data);
 
-console.log('we out here', bannerSponsors);
-
 const categories: NavigationItems = [
   {
     title: 'Get Started',

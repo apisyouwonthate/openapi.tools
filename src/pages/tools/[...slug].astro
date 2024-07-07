@@ -30,8 +30,6 @@ const languages: Record<string, boolean> = tool.data?.languages || {};
 const { Content } = await tool.render();
 
 const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
-
-console.log(enrichedFeaturedArticles);
 ---
 
 <Layout title={tool.data.name}>
