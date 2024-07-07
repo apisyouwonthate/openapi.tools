@@ -65,13 +65,13 @@ export function Hero() {
                   APIs You Won't Hate.
                 </a>
               </p>
-              <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
+              <div className="mt-8 flex flex-col gap-4 md:flex-row md:justify-center lg:justify-start">
                 <Button
                   href="https://github.com/apisyouwonthate/openapi.tools/blob/main/CONTRIBUTING.md"
                   target="_blank"
                   variant="primary"
                 >
-                  Contribute
+                  Submit a tool
                 </Button>
                 <Button
                   variant="secondary"
