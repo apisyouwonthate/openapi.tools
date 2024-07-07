@@ -1,5 +1,5 @@
 import React, { Suspense, useCallback, useState } from 'react';
-import { Dialog } from '@headlessui/react';
+import { Dialog, DialogPanel } from '@headlessui/react';
 
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
@@ -76,7 +76,7 @@ export function MobileNavigation({ categories, currentUrl }: NavigationProps) {
         className="fixed inset-0 z-50 flex items-start overflow-y-auto bg-slate-900/50 pr-10 backdrop-blur lg:hidden"
         aria-label="Navigation"
       >
-        <Dialog.Panel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 sm:px-6 dark:bg-slate-900">
+        <DialogPanel className="min-h-full w-full max-w-xs bg-white px-4 pb-12 pt-5 sm:px-6 dark:bg-slate-900">
           <div className="flex items-center">
             <button
               type="button"
@@ -95,7 +95,7 @@ export function MobileNavigation({ categories, currentUrl }: NavigationProps) {
             categories={categories}
             currentUrl={currentUrl}
           />
-        </Dialog.Panel>
+        </DialogPanel>
       </Dialog>
     </>
   );
