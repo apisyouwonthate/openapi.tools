@@ -23,3 +23,6 @@ pnpm-debug.log*
 
 # vercel directory
 .vercel
+
+
+.turbo/
