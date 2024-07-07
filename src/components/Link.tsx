@@ -4,10 +4,9 @@ import type { Category } from 'src/content/config';
 
 import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
 
-const SITE_URL =
-  process.env.node_env === 'production'
-    ? 'https://openapi.tools'
-    : 'http://localhost';
+const SITE_URL = import.meta.env.PROD
+  ? 'https://openapi.tools'
+  : 'http://localhost';
 
 /**
  * The props for the Link component
