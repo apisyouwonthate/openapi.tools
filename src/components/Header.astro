@@ -20,7 +20,11 @@ const { categories, currentUrl } = Astro.props;
   )}
 >
   <div class="mr-6 flex lg:hidden">
-    <MobileNavigation categories={categories} currentUrl={currentUrl} />
+    <MobileNavigation
+      categories={categories}
+      currentUrl={currentUrl}
+      client:only="react"
+    />
   </div>
   <div class="relative flex flex-grow basis-0 items-center">
     <Link href="/" aria-label="Home page">
