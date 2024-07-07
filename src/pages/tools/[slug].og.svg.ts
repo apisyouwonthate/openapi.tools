@@ -1,8 +1,21 @@
+import React from 'react';
 import type { APIRoute } from 'astro';
-import { getEntryBySlug } from 'astro:content';
+import { getCollection, getEntryBySlug } from 'astro:content';
+import fetch from 'node-fetch';
 import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
+
+const loadFont = async (fontFileName: string) => {
+  const response = await fetch(`/fonts/${fontFileName}`);
+
+  return await response.arrayBuffer();
+};
+
+export async function getStaticPaths() {
+  const tools = await getCollection('tools');
+  return tools.map((tool) => ({ params: { slug: tool.slug } }));
+}
 
 export const get: APIRoute = async ({ params }) => {
   const { slug } = params;
@@ -20,7 +33,15 @@ export const get: APIRoute = async ({ params }) => {
     </div>
   </div>`);
 
-  const svg = await satori(markup, {
+  const inter = await loadFont('Inter-Regular.ttf');
+
+  const svg = await satori(markup as React.ReactNode, {
+    fonts: [
+      {
+        name: 'Inter',
+        data: inter,
+      },
+    ],
     width: 1200,
     height: 630,
   });
@@ -30,7 +51,7 @@ export const get: APIRoute = async ({ params }) => {
   return new Response(response, {
     status: 200,
     headers: {
-      'Content-Type': 'image/png',
+      'Content-Type': 'image/svg',
       'Cache-Control': 's-maxage=1, stale-while-revalidate=59',
     },
   });
