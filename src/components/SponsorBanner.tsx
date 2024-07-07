@@ -23,7 +23,7 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
   return (
     <section
       className={clsx(
-        'sticky top-0 z-20 flex w-full flex-row justify-between gap-2 text-xs text-white',
+        'z-20 flex w-full flex-col-reverse justify-between py-2 text-xs text-white md:flex-row md:gap-2',
         // 'bg-gradient-to-r from-teal-400/30 via-teal-400 to-teal-400/30',
         'p-px font-medium text-slate-100/90',
         'bg-slate-800'
@@ -43,13 +43,17 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
             'flex w-full flex-row items-center gap-2 px-2 py-3 pr-4'
           )}
         >
-          Sponsored by {sponsor.name} - {sponsor.description}
-          <span className="inline-block break-inside-avoid whitespace-pre rounded-full bg-pink-600 px-4 py-2 text-white hover:bg-pink-600/80 active:bg-pink-600/90">
-            {sponsor.ctaText}
+          <span>
+            Sponsored by{' '}
+            <span className="text-pink-600 md:text-white">{sponsor.name}</span>{' '}
+            - {sponsor.description}
+            <span className="ml-2 hidden break-inside-avoid whitespace-pre rounded-full bg-pink-600 px-4 text-white hover:bg-pink-600/80 active:bg-pink-600/90 md:inline-block md:py-2">
+              {sponsor.ctaText}
+            </span>
           </span>
         </div>
       </a>
-      <a className="flex items-center justify-end px-2 py-3" href="/sponsor">
+      <a className="flex items-center px-2 py-1 md:justify-end" href="/sponsor">
         <span className="text-white">Sponsor openapi.tools</span>
       </a>
     </section>
