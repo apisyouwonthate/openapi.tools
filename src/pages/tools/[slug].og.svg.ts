@@ -1,7 +1,6 @@
 import React from 'react';
 import type { APIRoute } from 'astro';
 import { getCollection, getEntryBySlug } from 'astro:content';
-import fetch from 'node-fetch';
 import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
