@@ -21,7 +21,7 @@ export function Navigation({
   className,
   onLinkClick,
   categories,
-  currentUrl,
+  currentUrl = new URL('/'),
 }: NavigationProps & {
   className?: string;
   onLinkClick?: React.MouseEventHandler<HTMLAnchorElement>;

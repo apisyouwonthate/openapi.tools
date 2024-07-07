@@ -11,9 +11,10 @@ function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     <svg
       aria-hidden="true"
       viewBox="0 0 24 24"
-      fill="none"
       strokeWidth="2"
       strokeLinecap="round"
+      stroke="currentColor"
+      className="text-whit fill-white stroke-white"
       {...props}
     >
       <path d="M4 7h16M4 12h16M4 17h16" />
@@ -65,7 +66,7 @@ export function MobileNavigation({ categories, currentUrl }: NavigationProps) {
         className="relative"
         aria-label="Open navigation"
       >
-        <MenuIcon className="h-6 w-6 stroke-slate-500" />
+        <MenuIcon className="h-6 w-6 stroke-slate-500 dark:stroke-white dark:text-white" />
       </button>
       <Suspense fallback={null}>
         <CloseOnNavigation close={close} />
