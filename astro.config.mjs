@@ -15,6 +15,7 @@ export default defineConfig({
     }),
     react(),
     tailwind({
+      applyBaseStyles: false,
       // Example: Allow writing nested CSS declarations
       // alongside Tailwind's syntax
       nesting: true,

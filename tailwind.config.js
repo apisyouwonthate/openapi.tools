@@ -2,10 +2,18 @@ import typographyPlugin from '@tailwindcss/typography';
 import tailwindCssAnimate from 'tailwindcss-animate';
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: ['class'],
   content: ['./src/**/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-  darkMode: 'selector',
+  prefix: '',
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
@@ -22,10 +30,6 @@ export default {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
-      // fontFamily: {
-      //   // sans: 'var(--font-inter)',
-      //   // display: ['var(--font-lexend)', { fontFeatureSettings: '"ss01"' }],
-      // },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
