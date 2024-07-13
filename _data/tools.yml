@@ -1775,8 +1775,8 @@
     - auto-generators
     - documentation
   language: Javascript
-  link: https://granthai.com
-  github: https://www.npmjs.com/package/granthai
+  link: https://granthai.vercel.app
+  github: https://github.com/omkarajagunde/granthai/tree/master/generator-nodejs
   description: NodeJs OpenAPI 3 based documentation generator which sits between server APIs and anyone calling the APIs
   v3: true
 
