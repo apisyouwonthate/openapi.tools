@@ -210,6 +210,17 @@
   v2: true
   v3: true
 
+- name: Swaggie
+  category: sdk
+  language: TypeScript / Node.js / CLI
+  link: https://github.com/yhnavein/swaggie
+  github: https://github.com/yhnavein/swaggie
+  description:
+    Tool for generating TypeScript client code for given OAS document. Flexible with small footprint and supports different libraries (fetch, axios, SWR, etc)
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: ReadMe
   category: documentation
   link: https://readme.com
