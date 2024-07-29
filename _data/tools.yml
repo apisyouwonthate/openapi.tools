@@ -2856,4 +2856,16 @@
   v2: true
   v3: true
 
+- name: '@hey-api/openapi-ts'
+  category:
+    - converters
+    - sdk
+  description: ✨ Turn your OpenAPI specification into a beautiful TypeScript client
+  language: TypeScript
+  github: https://github.com/hey-api/openapi-ts
+  link: https://heyapi.vercel.app/
+  v2: true
+  v3: true
+  v3_1: true
+
 # Please add new entries in alphabetical order, which slightly helps reduce conflicts
