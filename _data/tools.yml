@@ -23,6 +23,17 @@
   v3: true
   v3_1: true
 
+- name: DocDriven
+  category:
+    - gui-editors
+    - mock
+    - server
+  link: https://docdriven.com
+  description: DocDriven is a user friendly GUI editor with collaboration features, cloud mock servers and AI code generation.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: API Insights
   category:
     - monitoring
