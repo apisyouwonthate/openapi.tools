@@ -98,6 +98,21 @@
   v2: true
   v3: true
 
+- name: Bitstream
+  category:
+    - security
+    - monitoring
+    - miscellaneous
+  link: https://www.bitstreamapis.com
+  github: https://github.com/bitstreamapis
+  language: Saas
+  description: >
+    Bitstream is an API analytics platform designed to provide insights into API usage, performance, security and more.
+    It offers tools for monitoring and alerting, collaboration and intelligent features to automate API management.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Connexion
   category: server
   language: Python
