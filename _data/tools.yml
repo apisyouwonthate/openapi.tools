@@ -2630,8 +2630,8 @@
     - code-generators
     - sdk
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com/contact
-  language: TypeScript, Java, Python, Go, Ruby, and C#
+  link: https://buildwithfern.com
+  language: TypeScript, Java, Python, Go, Ruby, C#, PHP, Swift, and Rust
   description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: true
   v3: true
@@ -2646,9 +2646,25 @@
   category:
     - documentation
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com/contact
-  language: TypeScript, Java, Python, Go, Ruby, and C#
-  description: Beautiful API documentation from OpenAPI.
+  link: https://buildwithfern.com
+  language: TypeScript, Java, Python, Go, Ruby, C#, PHP, Swift, and Rust
+  description: 
+  v2: true
+  v3: true
+  v3_1: true
+
+# Fern Entry 3: server stubs product
+- name: 🌿 Fern
+  sponsored: true
+  sponsoredDate: 2023-11-01 06:00:00
+  testimonial: >
+    I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
+  category:
+    - server
+  github: https://github.com/fern-api/fern
+  link: https://buildwithfern.com
+  language: Express.js, FastAPI, Spring Boot
+  description: Generate server-side boilerplate code from OpenAPI and then implement your business logic.
   v2: true
   v3: true
   v3_1: true
