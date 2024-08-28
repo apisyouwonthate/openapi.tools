@@ -1003,6 +1003,15 @@
   v2: true
   v3: true
 
+- name: django-contract-tester
+  category: data-validators
+  github: https://github.com/maticardenas/django-contract-tester
+  language: Python
+  description: Validate Django REST Framework (DRF) and Django Ninja APIs against their OpenAPI specification.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: openapi-data-validator
   category:
     - data-validators
