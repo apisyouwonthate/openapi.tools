@@ -181,6 +181,18 @@
   v3: true
   v3_1: true
 
+- name: Scramble
+  category: 
+    - auto-generators
+    - documentation
+  language: PHP
+  github: https://github.com/dedoc/scramble
+  link: https://scramble.dedoc.co/
+  description: Modern Laravel OpenAPI documentation generator. No PHPDoc annotations required.
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: Scribe
   category: documentation
   link: https://scribe.knuckles.wtf/
