@@ -1,18 +1,3 @@
-- name: Alphadoc
-  category:
-    - documentation
-    - description-validator
-  link: https://alphadoc.io
-  language: SaaS
-  description:
-    Alphadoc is a full featured developer experience platform. API components with granular parameter control and diagrams
-    generated from your OpenAPI. Not only the reference, but the entire set of tutorials and guides automatically updates when
-    the underlying API updates.
-  v2: true
-  v3: true
-  v3_1: true
-
-
 - name: Docuo
   category: documentation
   link: https://docuo.spreading.ai/?via=ot
