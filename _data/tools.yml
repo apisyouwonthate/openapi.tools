@@ -1,18 +1,3 @@
-- name: Alphadoc
-  category:
-    - documentation
-    - description-validator
-  link: https://alphadoc.io
-  language: SaaS
-  description:
-    Alphadoc is a full featured developer experience platform. API components with granular parameter control and diagrams
-    generated from your OpenAPI. Not only the reference, but the entire set of tutorials and guides automatically updates when
-    the underlying API updates.
-  v2: true
-  v3: true
-  v3_1: true
-
-
 - name: Docuo
   category: documentation
   link: https://docuo.spreading.ai/?via=ot
@@ -179,6 +164,18 @@
   description: Beautiful Open-Source API references from Swagger/OAS files ✨
   v2: true
   v3: true
+  v3_1: true
+
+- name: Scramble
+  category: 
+    - auto-generators
+    - documentation
+  language: PHP
+  github: https://github.com/dedoc/scramble
+  link: https://scramble.dedoc.co/
+  description: Modern Laravel OpenAPI documentation generator. No PHPDoc annotations required.
+  v2: false
+  v3: false
   v3_1: true
 
 - name: Scribe
@@ -1003,6 +1000,15 @@
   v2: true
   v3: true
 
+- name: django-contract-tester
+  category: data-validators
+  github: https://github.com/maticardenas/django-contract-tester
+  language: Python
+  description: Validate Django REST Framework (DRF) and Django Ninja APIs against their OpenAPI specification.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: openapi-data-validator
   category:
     - data-validators
@@ -1101,6 +1107,7 @@
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
+  v3_1: true
 
 - name: Redocly CLI
   category:
