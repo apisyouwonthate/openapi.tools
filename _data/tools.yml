@@ -1,3 +1,64 @@
+- name: "@nestia/editor"
+  category:
+    - documentation
+    - gui-editors
+    - mock-servers
+    - testing
+  link: https://nestia.io/docs/editor
+  github: https://github.com/samchon/nestia
+  language: TypeScript
+  v2: true
+  v3: true
+  v3_1: true
+  description: 
+    Provides online TypeScript editor and Swagger-UI at the same time.
+
+    In the TypeScript editor, client SDK (Software Development Kit) interacting with the remote HTTP server is embedded, 
+    and the SDK also provides the mockup simulator of the HTTP server without actual connection. Of course, if you hope, 
+    you can directly build the SDK library by the CLI command.
+     
+    Furthermore, <b>@nestia/editor</b> supports NestJS server code generation from the OpenAPI (Swagger) document file, 
+    so you can do everything with the OpenAPI document file.
+
+- name: "@nestia/sdk"
+  category:
+    - auto-generators
+    - server-implementations
+    - sdk-generators
+    - mock-servers
+  link: https://github.com/samchon/nestia
+  github: https://github.com/samchon/nestia
+  language: TypeScript
+  v2: true
+  v3: true
+  v3_1: true
+  description: 
+    Generator of OpenAPI (Swagger) Documents from the NestJS server code.
+
+    It does not require any extra schema definition, but just fine with the pure TypeScript type. 
+    <b>@nestia/sdk</b> analyzes your TypeScript code in the compilation level, and generates OpenAPI
+    document by parsing the programming AST (Abstract Syntax Tree) nodes. 
+    
+    Also, <b>@nestia/sdk</b> supports client side SDK (Software Development Kit) generation, 
+    and it embeds the mockup simulator of the NestJS server without connection.
+
+- name: "@samchon/openapi"
+  category:
+    - converters
+    - description-validators
+    - parsers
+  link: https://github.com/samchon/openapi
+  github: https://github.com/samchon/openapi
+  language: TypeScript
+  v2: true
+  v3: true
+  v3_1: true
+  description:
+    A TypeScript library providing OpenAPI definitions for every versions. 
+    It also provides converters to each other versions, and supports LLM (Large Language Model) function calling application composer from the OpenAPI document. 
+    If you want to validate OpenAPI document, you can accomplish it with <a href="https://github.com/samchon/typia">typia</a> or 
+    <a href="https://typia.io/playground/?script=JYWwDg9gTgLgBAbzgeTAUwHYEEzADQrra4BqAzAapjsOQPoCMBAygO4CGA5p2lCQExwAvnABmUCCDgAiAAIBndiADGACwgYA9BCLtc0gNwAoUJFhwYAT1zsxEqdKs3DRo8o3z4IdsAxwAvHDs8pYYynAAFACUAFxwAAr2wPJoADwAbhDAACYAfAH5CEZwcJqacADiAKIAKnAAmsgAqgBKKPFVAHJY8QCScAAiyADCTQCyXTXFcO4YnnBQaPKQc2hxLUsrKQFBHMDwomgwahHTJdKqMDBg8jFlUOysAHSc+6oArgBG7ylQszCYGBPdwgTSKFTqLQ6TB6YCabyeXiaNAADyUYAANktNOkyE8AAzaXTAJ4AK3kGmk0yixhKs3m2QgyneIEBcXYGEsO0ePngi2WHjQZIpGGixmmZTgNXqHTgWGYzCqLRqvWQnWmTmA7CewV+MAq73YUGyqTOcAAPoRqKQyIwnr0BkyWYCzZaqMRaHiHU7WRgYK64GwuDw+Px7Y7mb7-SVchFGZHATTXCVJcM1SQlXUasg4FUJp0BlUBtN6fA0L7smhsnF3TRwz7ATta7hgRp0rwYHGG36k3SPBAsU9fKIIBFy5hK9kk0JjN5fNFgexjqoIvSB0LeBIoDSgA">💻 typia playground website</a>.
+
 - name: Docuo
   category: documentation
   link: https://docuo.spreading.ai/?via=ot
