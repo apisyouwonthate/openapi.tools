@@ -1873,6 +1873,16 @@
   v2: true
   v3: true
 
+- name: vitepress-theme-openapi
+  category: documentation
+  language: Vue, TypeScript
+  link: https://vitepress-theme-openapi.vercel.app/
+  github: https://github.com/enzonotario/vitepress-theme-openapi
+  description: Generate VitePress API Docs from OpenAPI specifications.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: VSCode OpenAPI Preview
   category: documentation
   language: TypeScript
