@@ -1,18 +1,3 @@
-- name: Alphadoc
-  category:
-    - documentation
-    - description-validator
-  link: https://alphadoc.io
-  language: SaaS
-  description:
-    Alphadoc is a full featured developer experience platform. API components with granular parameter control and diagrams
-    generated from your OpenAPI. Not only the reference, but the entire set of tutorials and guides automatically updates when
-    the underlying API updates.
-  v2: true
-  v3: true
-  v3_1: true
-
-
 - name: Docuo
   category: documentation
   link: https://docuo.spreading.ai/?via=ot
@@ -179,6 +164,18 @@
   description: Beautiful Open-Source API references from Swagger/OAS files ✨
   v2: true
   v3: true
+  v3_1: true
+
+- name: Scramble
+  category: 
+    - auto-generators
+    - documentation
+  language: PHP
+  github: https://github.com/dedoc/scramble
+  link: https://scramble.dedoc.co/
+  description: Modern Laravel OpenAPI documentation generator. No PHPDoc annotations required.
+  v2: false
+  v3: false
   v3_1: true
 
 - name: Scribe
@@ -833,6 +830,18 @@
   v2: true
   v3: true
 
+- name: '@hey-api/openapi-ts'
+  category:
+    - converters
+    - sdk
+  description: Turn your OpenAPI description into a beautiful TypeScript client.
+  language: TypeScript
+  github: https://github.com/hey-api/openapi-ts
+  link: https://heyapi.vercel.app/
+  v2: true
+  v3: true
+  v3_1: true
+  
 - name: Vert.x Web Api Contract
   category: server
   language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon or Scala
@@ -1003,6 +1012,15 @@
   v2: true
   v3: true
 
+- name: django-contract-tester
+  category: data-validators
+  github: https://github.com/maticardenas/django-contract-tester
+  language: Python
+  description: Validate Django REST Framework (DRF) and Django Ninja APIs against their OpenAPI specification.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: openapi-data-validator
   category:
     - data-validators
@@ -1101,6 +1119,7 @@
   description: Configurable and extensible validator/linter for OpenAPI documents
   v2: true
   v3: true
+  v3_1: true
 
 - name: Redocly CLI
   category:
@@ -2630,8 +2649,8 @@
     - code-generators
     - sdk
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com/contact
-  language: TypeScript, Java, Python, Go, Ruby, and C#
+  link: https://buildwithfern.com
+  language: TypeScript, Java, Python, Go, Ruby, C#, PHP, Swift, and Rust
   description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: true
   v3: true
@@ -2646,9 +2665,25 @@
   category:
     - documentation
   github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com/contact
-  language: TypeScript, Java, Python, Go, Ruby, and C#
-  description: Beautiful API documentation from OpenAPI.
+  link: https://buildwithfern.com
+  language: TypeScript, Java, Python, Go, Ruby, C#, PHP, Swift, and Rust
+  description: 
+  v2: true
+  v3: true
+  v3_1: true
+
+# Fern Entry 3: server stubs product
+- name: 🌿 Fern
+  sponsored: true
+  sponsoredDate: 2023-11-01 06:00:00
+  testimonial: >
+    I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
+  category:
+    - server
+  github: https://github.com/fern-api/fern
+  link: https://buildwithfern.com
+  language: Express.js, FastAPI, Spring Boot
+  description: Generate server-side boilerplate code from OpenAPI and then implement your business logic.
   v2: true
   v3: true
   v3_1: true
@@ -2868,5 +2903,15 @@
   description: Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x
   v2: true
   v3: true
+  
+- name: Zudoku
+  category: documentation
+  link: https://zudoku.dev
+  github: https://github.com/zuplo/zudoku
+  language: React
+  description: OpenAPI powered, highly customizable, API reference and documentation framework with CDN packaged and self-hosted options.
+  v2: false
+  v3: true
+  v3_1: true
 
 # Please add new entries in alphabetical order, which slightly helps reduce conflicts
