@@ -2850,6 +2850,7 @@
     A code generation tool for openapi 3 / 3.1, and typespec specifications, 
     primarily aimed at generating typescript client SDKs, and server stubs, 
     with an emphasis on compile & runtime safety.
+  v2: false
   v3: true
   v3_1: true
 
