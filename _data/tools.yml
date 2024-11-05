@@ -844,6 +844,18 @@
   v2: true
   v3: true
 
+- name: '@hey-api/openapi-ts'
+  category:
+    - converters
+    - sdk
+  description: Turn your OpenAPI description into a beautiful TypeScript client.
+  language: TypeScript
+  github: https://github.com/hey-api/openapi-ts
+  link: https://heyapi.vercel.app/
+  v2: true
+  v3: true
+  v3_1: true
+  
 - name: Vert.x Web Api Contract
   category: server
   language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon or Scala
@@ -2892,5 +2904,15 @@
   description: Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x
   v2: true
   v3: true
+  
+- name: Zudoku
+  category: documentation
+  link: https://zudoku.dev
+  github: https://github.com/zuplo/zudoku
+  language: React
+  description: OpenAPI powered, highly customizable, API reference and documentation framework with CDN packaged and self-hosted options.
+  v2: false
+  v3: true
+  v3_1: true
 
 # Please add new entries in alphabetical order, which slightly helps reduce conflicts
