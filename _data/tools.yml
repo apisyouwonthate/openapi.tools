@@ -566,6 +566,15 @@
   v2: true
   v3: true
 
+- name: Swaggerboy
+  category: gui-editors
+  language: Node.js
+  github: https://github.com/LLM-Studios/swaggerboy
+  description: >
+    AI-Copilot for OpenAPI Description Documents.
+  v2: false
+  v3: true
+
 - name: Swagger Editor
   category: text-editors
   language: Node.js
