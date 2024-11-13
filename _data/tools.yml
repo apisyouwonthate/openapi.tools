@@ -1753,13 +1753,14 @@
   category: 
     - auto-generators
     - converters
+    - dsl
   language: Typescript
   link: https://github.com/ts-oas/ts-oas
   github: https://github.com/ts-oas/ts-oas
   description: Automatically generate OpenAPI specifications from lovely Typescript types.
   v2: false
   v3: true
-  v3_1: false
+  v3_1: true
 
 - name: mitmproxy2swagger
   category: auto-generators
