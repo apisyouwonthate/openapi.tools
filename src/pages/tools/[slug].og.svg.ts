@@ -1,19 +1,24 @@
 import React from 'react';
-import type { APIRoute } from 'astro';
-import { getCollection, getEntryBySlug } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
+
+type OgRouteParams = {
+  params: {
+    slug: string;
+  };
+};
 
 export async function getStaticPaths() {
   const tools = await getCollection('tools');
   return tools.map((tool) => ({ params: { slug: tool.slug } }));
 }
 
-export const GET: APIRoute = async ({ params }) => {
+export const GET = async ({ params }: OgRouteParams) => {
   const { slug } = params;
   /// One line to get the tool from our collection using slug
-  const tool = await getEntryBySlug('tools', slug!!);
+  const tool = await getEntry('tools', slug!!);
   const title = tool?.data.name ?? 'Openapi.tools';
 
   const markup = html(`<div
