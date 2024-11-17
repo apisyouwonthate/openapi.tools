@@ -42,8 +42,12 @@ const convertToolToMarkdown = (tool) => {
     ...versions
   } = tool;
 
-  // Ensure categories is an array
-  let categories = Array.isArray(category) ? category : [category]; // Adjust here
+  // Ensure categories is an array and handle comma-separated strings
+  let categories = Array.isArray(category)
+    ? category
+    : typeof category === 'string'
+      ? category.split(',').map(c => c.trim())
+      : [category];
 
   categories.forEach((category, index) => {
     let cat = category.toLowerCase();
