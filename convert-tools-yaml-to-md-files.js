@@ -113,13 +113,16 @@ const convertToolToMarkdown = (tool) => {
     .replace(/\.js/gi, '') // remove ".js"
     .replace(/\.JS/gi, '') // remove ".JS"
     .replace(/JS/gi, '') // remove "JS"
+    .replace(/Angular\s*\d+\.?\d*/gi, 'angular') // replace "Angular" followed by optional version number (e.g., Angular 7.0, Angular 9.0) with "angular"
     .replace(/js/gi, 'javascript') // replace "js" with "javascript"
     .replace(/c#/gi, 'csharp') // replace "c#" with "csharp"
     .replace(/c\+\+/gi, 'cplusplus') // replace "c++" with "cpp"
-    // replace ".net" with "dotnet"
-    .replace(/\.net/gi, 'dot-net')
-    // replace the standalone word "or" with a comma
-    .replace(/\bor\b/gi, ',')
+    .replace(/\breact\s*(?:\([^)]*\))?/gi, 'react') // replace react ** with "react"
+    .replace(/\.net/gi, 'dot-net') // replace ".net" with "dotnet"
+    .replace(/on-premise node/gi, 'node') // replace "on-premise node" with "node"
+    .replace(/\bor\b/gi, ',') // replace the standalone word "or" with a comma
+    .replace(/\s*&\s*/gi, ',') // replace the standalone word "&" with a comma
+    .replace(/\s*\+\s*/gi, ',') // replace the standalone word "+" with a comma
     .replace(/\.{3}/gi, '') // delete "..."
     .split(',')
     .forEach((lang) => {
@@ -172,6 +175,7 @@ ${frontmatter}---
 
 const generateMarkdownFiles = (tools) => {
   tools.forEach((tool) => {
+    console.log("Processing tool:", tool)
     const markdown = convertToolToMarkdown(tool);
     const sanitizedTitle = tool.name
       .replace(/[\s@]+/g, '-') // Replace spaces and "@" with a single hyphen.
