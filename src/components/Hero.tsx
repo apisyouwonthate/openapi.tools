@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import clsx from 'clsx';
-import { Highlight } from 'prism-react-renderer';
+import { Highlight,themes, type Token } from 'prism-react-renderer';
 
 import { Button } from './Button';
 import { HeroBackground } from './HeroBackground';
@@ -151,7 +151,13 @@ export function Hero() {
                     <Highlight
                       code={code}
                       language={codeLanguage}
-                      theme={{ plain: {}, styles: [] }}
+                      theme={{
+                        ...themes.dracula,
+                        plain: {
+                          ...themes.dracula.plain,
+                          backgroundColor: 'transparent'
+                        }
+                      }}
                     >
                       {({
                         className,
@@ -168,9 +174,9 @@ export function Hero() {
                           style={style}
                         >
                           <code className="px-4">
-                            {tokens.map((line, lineIndex) => (
+                            {tokens?.map((line: Token[], lineIndex: number) => (
                               <div key={lineIndex} {...getLineProps({ line })}>
-                                {line.map((token, tokenIndex) => (
+                                {line?.map((token: Token, tokenIndex: number) => (
                                   <span
                                     key={tokenIndex}
                                     {...getTokenProps({ token })}
