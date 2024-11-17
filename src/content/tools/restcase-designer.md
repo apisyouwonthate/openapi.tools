@@ -6,7 +6,7 @@ categories:
   - ides
 link: https://www.restcase.com/platform/design
 languages:
-  angular 9.0: true
+  angular: true
   saas: true
 openApiVersions:
   v2: true

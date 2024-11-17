@@ -7,7 +7,7 @@ categories:
   - mocking-tools
 languages:
   php: true
-repo: https://github.com/cebe/yii2-app-api
+repo: https://github.com/php-openapi/yii2-app-api
 openApiVersions:
   v2: false
   v3: true

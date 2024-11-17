@@ -7,7 +7,7 @@ categories:
   - testing
 link: https://xapihub.io/
 languages:
-  springboot: true
+  saas: true
 openApiVersions:
   v2: false
   v3: false

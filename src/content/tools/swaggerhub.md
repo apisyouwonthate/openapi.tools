@@ -7,7 +7,7 @@ categories:
 link: https://swagger.io/tools/swaggerhub/
 languages:
   saas: true
-  on-premise node: true
+  node: true
 openApiVersions:
   v2: true
   v3: true

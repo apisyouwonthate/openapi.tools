@@ -9,6 +9,6 @@ repo: https://github.com/IBM/openapi-validator
 openApiVersions:
   v2: true
   v3: true
-  v3_1: false
+  v3_1: true
   v4: false
 ---

@@ -6,7 +6,6 @@ categories:
 link: https://github.com/contiamo/restful-react
 languages:
   react: true
-  typescript: true
 repo: https://github.com/contiamo/restful-react
 openApiVersions:
   v2: true

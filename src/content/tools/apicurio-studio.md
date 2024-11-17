@@ -6,7 +6,7 @@ categories:
   - ides
 link: https://www.apicur.io/
 languages:
-  angular 7.0: true
+  angular: true
   java: true
   saas: true
 repo: https://github.com/apicurio/apicurio-studio
