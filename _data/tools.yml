@@ -2247,6 +2247,16 @@
   v2: true
   v3: true
 
+- name: Mintlify
+  category: documentation
+  language: Web / SaaS
+  link: https://mintlify.com
+  github: https://github.com/mintlify/starter
+  description: Modern standard for API documentation. Beautiful and easy-to-maintain UI components and interactive playground.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: MkDocs Redoc Tag
   category: documentation
   language: Python
