@@ -1020,6 +1020,15 @@
   v2: true
   v3: true
   v3_1: true
+  
+- name: drf-spectacular
+  category: auto-generators
+  github: https://github.com/tfranzel/drf-spectacular
+  language: Python
+  description: Sane and flexible OpenAPI 3 schema generation for Django REST framework.
+  v2: false
+  v3: true
+  v3_1: true
 
 - name: openapi-data-validator
   category:
