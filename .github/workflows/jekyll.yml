@@ -48,10 +48,9 @@ jobs:
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: '_site'  # Path to built site directory
-          name: 'github-pages'  # Explicitly name the artifact
 
   # Deployment job
   deploy:
@@ -63,6 +62,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
-        with:
-          artifact_name: 'github-pages'  # Must use the same artifact name as above
+        uses: actions/deploy-pages@v4
