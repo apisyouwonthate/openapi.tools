@@ -116,7 +116,7 @@
   category: documentation
   link: https://github.com/shapehq/framna-docs/
   language: TypeScript
-  description: Self-hosted web portal that centralizes OpenAPI documentation and facilitates spec-driven development, built with GitHub-based authorization.
+  description: Self-hosted web portal that centralizes OpenAPI documentation and facilitates spec-driven development, built with GitHub-based authorization. Integrates with SwaggerUI, Stoplight Elements, and Redocly.
   v2: true
   v3: true
   v3_1: true
