@@ -5,7 +5,7 @@ import { getCollection, getEntry } from 'astro:content';
 import PageHeader from '@/components/PageHeader.astro';
 import { DataTable } from '@/components/table/DataTable';
 import { ToolColumns } from '@/components/table/ToolColumns';
-import Layout from '../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 
 // 1. Generate a new path for every collection entry
 export const getStaticPaths: GetStaticPaths = async () => {

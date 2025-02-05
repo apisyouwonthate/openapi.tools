@@ -46,7 +46,7 @@ const convertToolToMarkdown = (tool) => {
   let categories = Array.isArray(category)
     ? category
     : typeof category === 'string'
-      ? category.split(',').map(c => c.trim())
+      ? category.split(',').map((c) => c.trim())
       : [category];
 
   categories.forEach((category, index) => {
@@ -163,7 +163,8 @@ const convertToolToMarkdown = (tool) => {
     categories, // Use the adjusted categories array
     languages,
     link,
-    repo: github === 'null' || github === null ? undefined : github, // filter out the string "null"
+    repo:
+      tool.github === 'null' || tool.github === null ? undefined : tool.github, // filter out the string "null"
     openApiVersions,
     sponsorship,
   });
@@ -179,7 +180,7 @@ ${frontmatter}---
 
 const generateMarkdownFiles = (tools) => {
   tools.forEach((tool) => {
-    console.log("Processing tool:", tool)
+    console.log('Processing tool:', tool);
     const markdown = convertToolToMarkdown(tool);
     const sanitizedTitle = tool.name
       .replace(/[\s@]+/g, '-') // Replace spaces and "@" with a single hyphen.

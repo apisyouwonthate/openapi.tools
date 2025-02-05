@@ -65,7 +65,7 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
               className="text-emerald-600 dark:text-emerald-300"
             >
               <RepoIcon
-                className="inline-block h-4 w-4 fill-white"
+                className="inline-block h-4 w-4 dark:fill-white fill-slate-800"
                 repo={tool.repo}
               />
             </Link>

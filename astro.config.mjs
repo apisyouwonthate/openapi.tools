@@ -13,7 +13,9 @@ export default defineConfig({
       priority: 0.7,
       lastmod: new Date('2022-02-24'),
     }),
-    react(),
+    react({
+      experimentalReactChildren: true,
+    }),
     tailwind({
       applyBaseStyles: false,
       // Example: Allow writing nested CSS declarations
