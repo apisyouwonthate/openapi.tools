@@ -1,0 +1,45 @@
+name: Deploy PR Preview
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    if: |
+      github.event.pull_request.author_association == 'OWNER' ||
+      github.event.pull_request.author_association == 'COLLABORATOR' ||
+      github.event.pull_request.author_association == 'MEMBER'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Allows pushing to gh-pages
+      pull-requests: write  # Needed for commenting
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (if needed)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies & build site
+        run: |
+          npm install  # Replace with your site's build steps
+          npm run build
+
+      - name: Deploy preview to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # Replace with your build output folder
+          destination_dir: preview-${{ github.event.number }}
+          keep_files: true  # Keeps existing previews
+
+      - name: Comment Preview URL
+        uses: thollander/actions-comment-pull-request@v2
+        with:
+          message: "🔍 Preview your changes here: [Preview Site](https://yourusername.github.io/your-repo/preview-${{ github.event.number }}/)"
