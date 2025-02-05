@@ -21,21 +21,22 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js (if needed)
-        uses: actions/setup-node@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          node-version: 18
+          ruby-version: '3.2'
+          bundler-cache: true
 
-      - name: Install dependencies & build site
+      - name: Install and Build Jekyll site
         run: |
-          npm install  # Replace with your site's build steps
-          npm run build
+          bundle install
+          bundle exec jekyll build
 
       - name: Deploy preview to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Replace with your build output folder
+          publish_dir: ./_site  # Jekyll's default output directory
           destination_dir: preview-${{ github.event.number }}
           keep_files: true  # Keeps existing previews
 
