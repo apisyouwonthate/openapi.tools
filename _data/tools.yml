@@ -140,6 +140,29 @@
   v2: true
   v3: true
 
+- name: Apache APISIX
+  category:
+    - gateway
+  link: https://github.com/apache/apisix
+  language: Lua
+  description:
+    APISIX API Gateway offers a variety of traffic management features, including load balancing, dynamic upstream, canary release, circuit breaking, authentication, observability, and more.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: API7 Enterprise Edition
+  category:
+    - documentation
+    - gateway
+  link: https://api7.ai/demos
+  language: Lua
+  description:
+    A comprehensive API lifecycle management solution based on Apache APISIX, featuring a Developer Portal for onboarding.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Kong Enterprise Edition
   category:
     - documentation
