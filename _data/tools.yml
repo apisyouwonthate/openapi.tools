@@ -153,6 +153,18 @@
   v3: true
   v3_1: true
 
+- name: Rage
+  category:
+    - auto-generators
+    - server
+  language: Ruby
+  link: https://github.com/rage-rb/rage
+  github: https://github.com/rage-rb/rage
+  description: A Ruby web framework for building APIs with first-class OpenAPI support.
+  v2: false
+  v3: true
+  v3_1: false
+
 - name: Rate My OpenAPI
   category:
     - miscellaneous
