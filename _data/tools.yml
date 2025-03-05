@@ -1042,6 +1042,18 @@
   v3: true
   v3_1: true
 
+- name: mondrian-framework
+  category:
+    - server
+    - auto-generators
+    - data-validators
+  link: https://github.com/mondrian-framework/mondrian-framework
+  language: Typescript
+  description: "Framework for generating OpenAPI 3.1 documents and servers from formal TypeScript definitions of models and services. Includes built-in data validation."
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: openapi-data-validator
   category:
     - data-validators
