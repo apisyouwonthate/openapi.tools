@@ -816,6 +816,16 @@
     generation and request validation.
   v3: true
 
+- name: Manifest
+  category: server
+  github: https://github.com/mnfst/manifest
+  link: https://manifest.build
+  language: YAML
+  description: A complete backend in 1 file. Manifest generates database entities, API routes with an OpenAPI documentation and other backend features with a single YAML file. 
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: Mockintosh
   category: mock
   language: CLI / Docker
