@@ -2207,15 +2207,6 @@
   v2: false
   v3: true
 
-- name: Cherrybomb
-  category: description-validators
-  language: Rust
-  link: https://www.blstsecurity.com/cherrybomb
-  github: https://github.com/blst-security/cherrybomb
-  description: A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
-  v3: true
-  v3_1: true
-
 - name: BlocklyAutomation
   category:
     - code-generators
