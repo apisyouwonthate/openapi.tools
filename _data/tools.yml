@@ -1060,6 +1060,7 @@
   language: JavaScript
   description: "\U0001F98B Auto-validate API requests and responses in ExpressJS."
   v3: true
+  v3_1: true
 
 - name: openapi-dev-tool
   category:
