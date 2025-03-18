@@ -153,6 +153,18 @@
   v3: true
   v3_1: true
 
+- name: Rage
+  category:
+    - auto-generators
+    - server
+  language: Ruby
+  link: https://github.com/rage-rb/rage
+  github: https://github.com/rage-rb/rage
+  description: A Ruby web framework for building APIs with first-class OpenAPI support.
+  v2: false
+  v3: true
+  v3_1: false
+
 - name: Rate My OpenAPI
   category:
     - miscellaneous
@@ -1030,6 +1042,18 @@
   v3: true
   v3_1: true
 
+- name: mondrian-framework
+  category:
+    - server
+    - auto-generators
+    - data-validators
+  link: https://github.com/mondrian-framework/mondrian-framework
+  language: Typescript
+  description: "Framework for generating OpenAPI 3.1 documents and servers from formal TypeScript definitions of models and services. Includes built-in data validation."
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: openapi-data-validator
   category:
     - data-validators
@@ -1048,6 +1072,7 @@
   language: JavaScript
   description: "\U0001F98B Auto-validate API requests and responses in ExpressJS."
   v3: true
+  v3_1: true
 
 - name: openapi-dev-tool
   category:
@@ -1781,6 +1806,19 @@
   v3: true
   v3_1: true
 
+- name: ts-oas
+  category: 
+    - auto-generators
+    - converters
+    - dsl
+  language: Typescript
+  link: https://github.com/ts-oas/ts-oas
+  github: https://github.com/ts-oas/ts-oas
+  description: Automatically generate OpenAPI specifications from lovely Typescript types.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: mitmproxy2swagger
   category: auto-generators
   language: Python
@@ -2183,15 +2221,6 @@
   description: Create types definitions from an OpenAPI schema.
   v2: false
   v3: true
-
-- name: Cherrybomb
-  category: description-validators
-  language: Rust
-  link: https://www.blstsecurity.com/cherrybomb
-  github: https://github.com/blst-security/cherrybomb
-  description: A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
-  v3: true
-  v3_1: true
 
 - name: BlocklyAutomation
   category:
