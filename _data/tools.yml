@@ -864,6 +864,17 @@
   v2: true
   v3: true
 
+- name: // SDK-IT
+  category:
+    - sdk
+    - converters
+  github: https://github.com/januarylabs/sdk-it
+  link: https://github.com/januarylabs/sdk-it
+  language: TypeScript, Dart
+  description: Generates type-safe client SDKs from OpenAPI specifications and creates OpenAPI specs from TypeScript code.
+  v3: true
+  v3_1: true
+  
 - name: '@hey-api/openapi-ts'
   category:
     - converters
