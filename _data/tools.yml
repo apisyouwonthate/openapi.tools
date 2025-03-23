@@ -153,6 +153,18 @@
   v3: true
   v3_1: true
 
+- name: "OpenApi4s"
+  category:
+    - server
+    - sdk
+  language: Scala
+  link: https://github.com/sake92/openapi4s
+  github: https://github.com/sake92/openapi4s
+  description: >
+    OpenApi generators for Scala. Direct code generation, minimally intrusive and with automatic refactoring.
+  v3: true
+  v3_1: true
+
 - name: Rage
   category:
     - auto-generators
