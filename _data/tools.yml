@@ -72,6 +72,20 @@
   v3: true
   v3_1_link: https://github.com/anbuksv/avantation/issues/42
 
+- name: Ballerina OpenAPI tool
+  category:
+    - auto-generators
+    - converters
+    - sdk
+    - server
+  link: https://ballerina.io/learn/openapi-tool/
+  github: https://github.com/ballerina-platform/openapi-tools
+  language: Java, Ballerina
+  description: The Ballerina OpenAPI tool enables the generation of Ballerina client and service skeleton from provided OpenAPI specifications (v2, v3) and facilitates the creation of OpenAPI v3 specifications for given Ballerina services.
+  v2: true
+  v3: true
+  v3_1: true
+  
 - name: BOATS
   category: dsl
   link: https://www.npmjs.com/package/boats
