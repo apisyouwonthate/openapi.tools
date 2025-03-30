@@ -377,6 +377,18 @@
   description: Enrich your existing description documents with generated code samples
   v3: true
 
+- name: MCP Server Generator
+  category:
+    - convertors
+    - sdk
+  language: MCP
+  link: https://mcp.run/settings/services/openapi-to-mcp
+  github: https://github.com/dylibso/mcp.run-servlets
+  description: >
+    Automatically generate a universal & optimized MCP Server from your OpenAPI specification, usable via STDIO, SSE, or HTTP transports
+  v3: true
+  v3_1: true
+
 - name: MrinDoc
   category: documentation
   description: OpenAPI description document viewer.
