@@ -1,3 +1,14 @@
+- name: FastMCP
+  category:
+    - server
+    - auto-generators
+  link: https://gofastmcp.com/patterns/openapi
+  github: https://github.com/jlowin/fastmcp
+  description: FastMCP can automatically generate an MCP server from an OpenAPI specification. Users only need to provide an OpenAPI specification (3.0 or 3.1) and an API client.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: Docuo
   category: documentation
   link: https://docuo.spreading.ai/?via=ot
