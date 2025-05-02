@@ -305,6 +305,14 @@
   v3: true
   v3_1: false
 
+- name: oas-patch
+  category: miscellaneous
+  language: Python
+  github: https://github.com/mcroissant/oas_patcher
+  description: A command-line tool for OpenAPI Overlays, allowing you to patch and modify OpenAPI documents. And create overlays from two openapi documents
+  v3: true
+  v3_1: true
+  
 - name: optic diff
   category: miscellaneous
   language: Node
