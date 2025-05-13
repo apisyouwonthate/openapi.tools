@@ -8,6 +8,17 @@
   v3: true
   v3_1: true
 
+- name: API Foundry
+  category:
+    - documentation
+    - converters
+  link: https://apifoundry.dev/
+  language: SaaS
+  description: API Foundry is an API docs site aimed at TypeScript developers. Generate docs with built-in TypeScript and Zod types for all APIs you work with.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: API Insights
   category:
     - monitoring
