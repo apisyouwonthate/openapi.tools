@@ -1536,6 +1536,15 @@
   v2: true
   v3: true
 
+- name: Swagger UI Standalone
+  category: documentation
+  language: Ruby
+  github: https://github.com/typisttech/swagger_ui_standalone
+  description: Generate standalone static Swagger UI sites from OpenAPI specifications. 
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Azure AutoRest
   category:
     - sdk
