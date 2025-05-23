@@ -112,6 +112,15 @@
   v2: true
   v3: true
 
+- name: Framna Docs
+  category: documentation
+  link: https://github.com/shapehq/framna-docs/
+  language: TypeScript
+  description: Self-hosted web portal that centralizes OpenAPI documentation and facilitates spec-driven development, built with GitHub-based authorization. Integrates with Swagger UI, Stoplight Elements, and Redocly.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Frevo
   category:
     - documentation
@@ -143,6 +152,18 @@
   v2: true
   v3: true
   v3_1: true
+
+- name: Rage
+  category:
+    - auto-generators
+    - server
+  language: Ruby
+  link: https://github.com/rage-rb/rage
+  github: https://github.com/rage-rb/rage
+  description: A Ruby web framework for building APIs with first-class OpenAPI support.
+  v2: false
+  v3: true
+  v3_1: false
 
 - name: Rate My OpenAPI
   category:
@@ -529,6 +550,19 @@
     APIMatic's VSCode extension helps you validate, lint, and auto-fix your OpenAPI files, 
     along with other capabilities such as API transformations, API audit report generation, SDKs generation, and more.
   v2: true
+  v3: true
+  v3_1: true
+  
+- name: APIMatic OpenAPI Linter - GitHub App
+  category:
+  - description-validators
+  language: Any
+  link: https://github.com/marketplace/apimatic-openapi-linter
+  description: >
+    The APIMatic OpenAPI Linter GitHub App automatically validates and lints your OpenAPI definitions within GitHub repositories. 
+    Every time you create or update a pull request, the app ensures your API definitions meet high standards for both code generation and documentation generation, 
+    helping you maintain consistency and quality across your API projects.
+  v2: false
   v3: true
   v3_1: true
 
@@ -1021,6 +1055,18 @@
   v3: true
   v3_1: true
 
+- name: mondrian-framework
+  category:
+    - server
+    - auto-generators
+    - data-validators
+  link: https://github.com/mondrian-framework/mondrian-framework
+  language: Typescript
+  description: "Framework for generating OpenAPI 3.1 documents and servers from formal TypeScript definitions of models and services. Includes built-in data validation."
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: openapi-data-validator
   category:
     - data-validators
@@ -1039,6 +1085,7 @@
   language: JavaScript
   description: "\U0001F98B Auto-validate API requests and responses in ExpressJS."
   v3: true
+  v3_1: true
 
 - name: openapi-dev-tool
   category:
@@ -1578,7 +1625,9 @@
     - miscellaneous
   link: https://flotiq.com
   description: Visually define your Content Types, Flotiq automatically generates your own OpenAPI v3 compatible endpoints, SDKs and Postman collections.
+  v2: true
   v3: true
+  v3_1: true
 
 - name: Chai OpenAPI Response Validator
   category: testing
@@ -1764,6 +1813,19 @@
   description: >
     OpenAPI parser with (json schema) validation (currently 3.0 only). Separate apis for OpenAPI 3.0 & 3.1.
     Easily get resolved $ref objects. Pluggable document reader & json/yaml converter. Minimal dependencies.
+  v2: false
+  v3: true
+  v3_1: true
+
+- name: ts-oas
+  category: 
+    - auto-generators
+    - converters
+    - dsl
+  language: Typescript
+  link: https://github.com/ts-oas/ts-oas
+  github: https://github.com/ts-oas/ts-oas
+  description: Automatically generate OpenAPI specifications from lovely Typescript types.
   v2: false
   v3: true
   v3_1: true
@@ -2170,15 +2232,6 @@
   description: Create types definitions from an OpenAPI schema.
   v2: false
   v3: true
-
-- name: Cherrybomb
-  category: description-validators
-  language: Rust
-  link: https://www.blstsecurity.com/cherrybomb
-  github: https://github.com/blst-security/cherrybomb
-  description: A CLI tool that helps avoid undefined user behaviour by validating your API descriptions, to make sure key parts are not missing or vague.
-  v3: true
-  v3_1: true
 
 - name: BlocklyAutomation
   category:

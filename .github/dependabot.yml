@@ -1,0 +1,33 @@
+version: 2
+updates:
+  # Ruby dependencies
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "ruby"
+    groups:
+      dependencies:
+        applies-to: "version-updates"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    groups:
+      dependencies:
+        applies-to: "version-updates"
+        update-types:
+          - "minor"
+          - "patch"
