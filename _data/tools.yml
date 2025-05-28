@@ -498,7 +498,7 @@
     - code-generators
     - sdk
   link: https://aka.ms/kiota/docs
-  language: C#
+  language: C#, Go, Java, PHP, Python, Ruby, and TypeScript
   github: https://github.com/microsoft/kiota
   description:
     Kiota is a cross platform API Client code generator that is small, fast,
@@ -507,7 +507,7 @@
     experience in multiple languages.
   v2: true
   v3: true
-  v3_1: false
+  v3_1: true
 
 - name: FabriKt
   category:
