@@ -2855,6 +2855,19 @@
   v2: true
   v3: true
 
+- name: The Codegen Project
+  category:
+    - sdk
+    - server
+    - miscellaneous
+    - testing
+  language: TypeScript
+  link: https://the-codegen-project.org
+  description: Stop wasting time on manual code. Generate payloads, parameters, headers, types, client wrappers, and more from your OpenAPI document!
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: HopFront
   category:
     - documentation
