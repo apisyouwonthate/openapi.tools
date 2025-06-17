@@ -927,7 +927,9 @@
   v3_1: true
 
 - name: OpenAPI Enforcer Middleware
-  category: server
+  category: 
+  - server
+  - data-validators
   language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer-middleware
   github: https://github.com/byu-oit/openapi-enforcer-middleware
@@ -937,6 +939,18 @@
     package.
   v2: true
   v3: true
+
+- name: Kappa
+  category: 
+  - server
+  - data-validators
+  language: Java
+  link: https://github.com/erosb/kappa
+  github: https://github.com/erosb/kappa
+  description: |
+    Java validation middleware which can be used to validate HTTP requests and 
+    responses against OpenAPI 3.1 definitions based on popular but archived openapi4j. Works with Spring and Vert.x.
+  v3_1: true
 
 - name: API Platform
   category: server
@@ -1246,19 +1260,6 @@
   description:
     NodeJS module to manage RESTful APIs defined with OpenAPI 3.0 Description
     over Express servers, including security validations
-  v3: true
-
-- name: openVALIDATION
-  category:
-    - miscellaneous
-    - description-validators
-    - data-validators
-  github: https://github.com/openvalidation/openvalidation-openapi
-  link: https://docs.openvalidation.io/openapi/openapi-specification
-  language: Java
-  description:
-    Allows complex validation rules to be specified in openAPI spec files
-    using natural language.
   v3: true
 
 - name: swagger-parser
