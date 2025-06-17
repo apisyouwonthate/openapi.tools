@@ -1633,6 +1633,8 @@
     - sdk
     - gui-editors
     - miscellaneous
+  language: SaaS
+  github: https://github.com/flotiq
   link: https://flotiq.com
   description: Visually define your Content Types, Flotiq automatically generates your own OpenAPI v3 compatible endpoints, SDKs and Postman collections.
   v2: true
