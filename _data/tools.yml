@@ -980,12 +980,14 @@
     database schema from an OpenAPI description. Based on Yii Framework.
   v3: true
 
-- name: Beeceptor
+- name: Beeceptor OpenAPI Mock Server
   category: mock
   language: SaaS
-  link: https://beeceptor.com/
-  description:
-     "\U0001F41D An HTTP interceptor and rule-based mocking service for REST APIs. No coding required to create a mock endpoint. No sign-up required."
+  link: https://beeceptor.com/openapi-mock-server/
+  description: >
+    🐝 A free service that transforms your OpenAPI description documents into instant mock servers with AI-generated
+    realistic responses. Upload your YAML/JSON files to get schema-compliant mocks without writing any code.
+    Helps with early integration testing and simulating various API behaviors.
   v2: false
   v3: true
 
