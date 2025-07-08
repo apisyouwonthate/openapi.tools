@@ -2877,6 +2877,7 @@
     - testing
   language: TypeScript
   link: https://the-codegen-project.org
+  github: https://github.com/the-codegen-project/cli/
   description: Stop wasting time on manual code. Generate payloads, parameters, headers, types, client wrappers, and more from your OpenAPI document!
   v2: true
   v3: true
