@@ -88,8 +88,7 @@
   language: Python
   link: https://connexion.readthedocs.io/en/latest/
   github: https://github.com/spec-first/connexion
-  description:
-    Connexion is a modern Python web framework that makes spec-first and api-first development easy.  No code is generated.  With Connexion, you write your server-side API handlers according to a naming convention, and the Connexion engine, given a spec, invokes your code after any input has been validated.
+  description: Connexion is a modern Python web framework that makes spec-first and api-first development easy.  No code is generated.  With Connexion, you write your server-side API handlers according to a naming convention, and the Connexion engine, given a spec, invokes your code after any input has been validated.
   v2: true
   v3: true
 
@@ -188,7 +187,7 @@
   v3_1: true
 
 - name: Scramble
-  category: 
+  category:
     - auto-generators
     - documentation
   language: PHP
@@ -312,7 +311,7 @@
   description: A command-line tool for OpenAPI Overlays, allowing you to patch and modify OpenAPI documents. And create overlays from two openapi documents
   v3: true
   v3_1: true
-  
+
 - name: optic diff
   category: miscellaneous
   language: Node
@@ -330,7 +329,6 @@
   description: This wizard is an IntelliJ Plugin to create a new OpenAPI document including all CRUD operations based only on a Yaml object. No knowledge about OpenAPI specification needed.
   v3: true
   v3_1: true
-
 
 - name: OAS RAML Converter
   category: converters
@@ -550,8 +548,8 @@
 
 - name: Fix My OpenAPI - A VSCode Extension by APIMatic
   category:
-  - text-editors
-  - description-validators
+    - text-editors
+    - description-validators
   language: Any
   link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
   description: >
@@ -560,10 +558,10 @@
   v2: true
   v3: true
   v3_1: true
-  
+
 - name: APIMatic OpenAPI Linter - GitHub App
   category:
-  - description-validators
+    - description-validators
   language: Any
   link: https://github.com/marketplace/apimatic-openapi-linter
   description: >
@@ -645,7 +643,7 @@
   link: https://www.api-fiddle.com/
   description: >
     Opinionated API design platform built for collaboration and exploration.
-    Create API designs for technical documents, specifications, and reviews. 
+    Create API designs for technical documents, specifications, and reviews.
   v2: false
   v3: false
   v3_1: true
@@ -818,10 +816,10 @@
   link: https://www.wiremock.io/product
   github: https://www.wiremock.io/product
   description:
-    WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project. 
-    It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with 
-    additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced 
-    capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration 
+    WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project.
+    It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with
+    additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced
+    capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration
     and user management.
   v2: true
   v3: true
@@ -872,7 +870,7 @@
   v2: true
   v3: true
 
-- name: '@hey-api/openapi-ts'
+- name: "@hey-api/openapi-ts"
   category:
     - converters
     - sdk
@@ -883,7 +881,7 @@
   v2: true
   v3: true
   v3_1: true
-  
+
 - name: Vert.x Web Api Contract
   category: server
   language: Java, Kotlin, JavaScript, Groovy, Ruby, Ceylon or Scala
@@ -935,9 +933,9 @@
   v3_1: true
 
 - name: OpenAPI Enforcer Middleware
-  category: 
-  - server
-  - data-validators
+  category:
+    - server
+    - data-validators
   language: Node.js
   link: https://www.npmjs.com/package/openapi-enforcer-middleware
   github: https://github.com/byu-oit/openapi-enforcer-middleware
@@ -949,9 +947,9 @@
   v3: true
 
 - name: Kappa
-  category: 
-  - server
-  - data-validators
+  category:
+    - server
+    - data-validators
   language: Java
   link: https://github.com/erosb/kappa
   github: https://github.com/erosb/kappa
@@ -1606,7 +1604,7 @@
     - converters
   language: JavaScript, TypeScript
   github: https://github.com/readmeio/oas
-  description: Comprehensive tooling for working with OpenAPI definitions. 
+  description: Comprehensive tooling for working with OpenAPI definitions.
   v2: true
   v3: true
   v3_1: true
@@ -1832,7 +1830,7 @@
   v3_1: true
 
 - name: ts-oas
-  category: 
+  category:
     - auto-generators
     - converters
     - dsl
@@ -2541,8 +2539,7 @@
   link: https://github.com/stefankoppier/openapi-validator
   github: https://github.com/stefankoppier/openapi-validator
   language: Kotlin
-  description:
-    A JUnit extension for validating a wide range of properties of a specification.
+  description: A JUnit extension for validating a wide range of properties of a specification.
   v2: true
   v3: true
   v3_1: true
@@ -2744,7 +2741,7 @@
   github: https://github.com/fern-api/fern
   link: https://buildwithfern.com
   language: TypeScript, Java, Python, Go, Ruby, C#, PHP, Swift, and Rust
-  description: 
+  description:
   v2: true
   v3: true
   v3_1: true
@@ -2773,8 +2770,7 @@
   github: https://github.com/stainless-api/stl-api
   link: https://stainlessapi.com
   language: TypeScript, Python, Go, Java, and Kotlin
-  description:
-    Generate SDKs in popular languages and publish them to package managers (like npm).
+  description: Generate SDKs in popular languages and publish them to package managers (like npm).
   v2: false
   v3: true
   v3_1: true
@@ -2785,10 +2781,34 @@
   category:
     - sdk
     - documentation
+    - miscellaneous
+    - testing
+    - mock
+    - gui-editors
+    - learning
   github: https://github.com/speakeasy-api
-  link: https://speakeasyapi.dev/
+  link: https://www.speakeasy.com/
   language: TypeScript, Python, Go, Java, Terraform, C#, PHP, Ruby, Swift, Unity
   description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
+  v2: false
+  v3: true
+  v3_1: true
+
+- name: 🛠️ Speakeasy OpenAPI
+  sponsored: true
+  sponsoredDate: 2024-02-09 06:00:00
+  category:
+    - parsers
+    - converters
+    - description-validators
+    - dsl
+    - auto-generators
+    - miscellaneous
+  github: https://github.com/speakeasy-api/openapi
+  link: https://www.speakeasy.com/
+  language: Go, CLI
+  description: An OSS set of packages and tools used by Speakeasy for working with OpenAPI, Arazzo and Overlay Specification documents. Includes CLI tools for validation, bundling, inlining, upgrading, and more.
+  v2: false
   v3: true
   v3_1: true
 
@@ -2893,7 +2913,7 @@
     HopFront automatically builds an user friendly UI from a collection of OpenAPI specifications.
     You can setup custom dashboard tailored to the way your interact with your APIs.
   v3: true
-  
+
 - name: Xapi Platform
   category:
     - gui-editors
@@ -2995,7 +3015,7 @@
   description: Generate Slate/Shins markdown from OpenAPI 2.0/3.0.x
   v2: true
   v3: true
-  
+
 - name: Zudoku
   category: documentation
   link: https://zudoku.dev
@@ -3005,5 +3025,4 @@
   v2: false
   v3: true
   v3_1: true
-
 # Please add new entries in alphabetical order, which slightly helps reduce conflicts
