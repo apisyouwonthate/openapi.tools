@@ -153,6 +153,7 @@
               <tr>
                 <th>Name</th>
                 <th>Language</th>
+                <th>v3.2</th>
                 <th>v3.1</th>
                 <th>v3.0</th>
                 <th>v2.0</th>
@@ -185,6 +186,13 @@
                 </td>
                 <td class="font-serif w-1/5">
                   {{ tool.language }}
+                </td>
+                <td class="font-serif w-1/3 text-center">
+                  {% if tool.v3_2 %}✅{% elsif tool.v3_2_link %}<a
+                    target="_blank"
+                    href="{{ tool.v3_2_link }}"
+                    >👷</a
+                  >{% else %}❌{% endif %}
                 </td>
                 <td class="font-serif w-1/3 text-center">
                   {% if tool.v3_1 %}✅{% elsif tool.v3_1_link %}<a
