@@ -68,9 +68,8 @@
   category: converters
   language: TypeScript
   github: https://github.com/anbuksv/avantation
-  description: "Generate OpenAPI 3.x specification from HAR."
+  description: "Generate OpenAPI 3.0 specification from HAR."
   v3: true
-  v3_1_link: https://github.com/anbuksv/avantation/issues/42
 
 - name: BOATS
   category: dsl
@@ -371,11 +370,10 @@
   link: https://github.com/ouropencode/OpenDocumenter
   language: Vue.js
   description:
-    OpenDocumenter is a automatic documentation generator for OpenAPI v3 schemas.
+    OpenDocumenter is a automatic documentation generator for OpenAPI v3.0 schemas.
     Simply provide your schema file in JSON or YAML, then sit back and enjoy the documentation.
   v2: true
   v3: true
-  v3_1_link: https://github.com/ouropencode/OpenDocumenter/issues/2
 
 - name: oas3-api-snippet-enricher
   category: documentation
@@ -485,7 +483,6 @@
     fork of swagger-codegen)
   v2: true
   v3: true
-  v3_1_link: https://github.com/OpenAPITools/openapi-generator/issues/9083
 
 - name: OpenAPI JSON Schema Generator
   category:
@@ -903,7 +900,7 @@
   description: An unopinionated OpenAPI framework for Express, which supports Promise based middleware, response handlers and Security Filtering.
   v2: true
   v3: true
-  v3_1_link: https://github.com/vert-x3/vertx-web/issues/1872
+  v3_1: true
 
 - name: BaucisJS + baucis-openapi3
   category: server
@@ -2115,7 +2112,7 @@
   language: PHP
   description: Spectator provides light-weight OpenAPI testing tools you can use within your existing Laravel test suite.
   v3: true
-  v3_1_link: https://github.com/hotmeteor/spectator/issues/100
+  v3_1: true
   link: https://github.com/hotmeteor/spectator
   github: https://github.com/hotmeteor/spectator
 
@@ -2714,7 +2711,7 @@
   link: https://github.com/rswag/rswag
   v2: false
   v3: true
-  v3_1_link: https://github.com/rswag/rswag/pull/714
+  v3_1: true
 
 # Fern Entry 1: codegen / sdk gen
 - name: 🌿 Fern
