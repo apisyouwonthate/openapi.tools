@@ -890,7 +890,6 @@
     Create API endpoints with Vert.x 3 and OpenAPI 3 with automatic requests
     validation
   v3: true
-  v3_link: https://github.com/vert-x3/vertx-web/issues/1872
 
 - name: express-openapi
   category: server
@@ -1956,7 +1955,6 @@
   v2: true
   v3: true
   v3_1: true
-  v3_link: true
 
 - name: openapi-format
   category:
