@@ -1466,7 +1466,7 @@
 - name: janephp/open-api
   category: sdk
   language: PHP
-  github: https://github.com/janephp/open-api
+  github: https://github.com/janephp/janephp
   description: Generate a PHP Client API (PSR-7 compatible) given a OpenAPI specification.
   v2: true
   v3: true
