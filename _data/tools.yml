@@ -871,10 +871,10 @@
   category:
     - converters
     - sdk
-  description: Turn your OpenAPI description into a beautiful TypeScript client.
+  description: The OpenAPI to TypeScript codegen. Generate clients, SDKs, validators, and more.
   language: TypeScript
   github: https://github.com/hey-api/openapi-ts
-  link: https://heyapi.vercel.app/
+  link: https://heyapi.dev/
   v2: true
   v3: true
   v3_1: true
