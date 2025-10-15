@@ -2987,8 +2987,9 @@
   github: https://github.com/karenetheridge/OpenAPI-Modern
   link: https://metacpan.org/dist/OpenAPI-Modern
   language: Perl
-  description: OpenAPI v3.1 validator and JSON Schema validator (draft7, draft2019-09, draft2020-12)
+  description: OpenAPI v3.1, v3.2 validator and JSON Schema validator (drafts 4 through draft2020-12)
   v3_1: true
+  v3_2: true
 
 - name: OpenAPI Qraft
   category:
@@ -3010,6 +3011,7 @@
   language: Perl
   description: Mojolicious plugin for OpenAPI::Modern
   v3_1: true
+  v3_2: true
 
 - name: widdershins
   category: documentation
