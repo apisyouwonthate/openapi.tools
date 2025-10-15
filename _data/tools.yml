@@ -3052,6 +3052,18 @@
   v2: true
   v3: true
 
+- name: xyd
+  category: 
+    - documentation
+    - server 
+  github: https://github.com/livesession/xyd
+  link: https://xyd.dev
+  language: TypeScript
+  description: A new scalable docs framework. Generate API Docs from OpenAPI definitions easier. Powered by LiveSession.
+  v2: false
+  v3: true
+  v3_1: true
+  
 - name: Zudoku
   category: documentation
   link: https://zudoku.dev
