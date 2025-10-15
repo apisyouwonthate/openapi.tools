@@ -869,7 +869,7 @@
 - name: tsoa
   category:
     - server
-    - data-validation
+    - data-validators
   language: Node.js / TypeScript
   link: https://github.com/lukeautry/tsoa
   github: https://github.com/lukeautry/tsoa
