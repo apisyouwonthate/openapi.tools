@@ -2432,6 +2432,16 @@
   v2: true
   v3: true
 
+- name: WuppieFuzz
+  category:
+    - security
+    - testing
+  language: Any
+  github: https://github.com/TNO-S3/WuppieFuzz
+  description: WuppieFuzz is a coverage-guided REST API fuzzer developed on top of LibAFL, targeting a wide audience of end-users, with a strong focus on ease-of-use, explainability of the discovered flaws and modularity. WuppieFuzz supports all three settings of testing (black box, grey box and white box).
+  v2: true
+  v3: true
+
 - name: OpenAPI TypeScript
   category: converters
   language: TypeScript
