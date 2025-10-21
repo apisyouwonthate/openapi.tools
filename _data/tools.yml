@@ -2836,6 +2836,7 @@
   v2: false
   v3: true
   v3_1: true
+  v3_2_link: https://github.com/speakeasy-api/openapi/pull/54
 
 - name: Swift OpenAPI Generator
   category:
