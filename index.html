@@ -163,7 +163,9 @@
               {% assign sponsored_tools = site.data.tools | where: "sponsored", true | sort: 'sponsoredDate'  %}
               {% assign non_sponsored_all = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" %}
 
-              {% # Group by supported version, sorted by name within each group %}
+              {% comment %}
+              {% Group by supported version, sorted by name within each group %}
+              {% endcomment %}
               {% assign v3_2_tools = non_sponsored_all | where: "v3_2", true | sort_natural: 'name' %}
               {% assign v3_1_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 == true" | sort_natural: 'name' %}
               {% assign v3_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 == true" | sort_natural: 'name' %}
