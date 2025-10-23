@@ -1072,7 +1072,7 @@
   v2: true
   v3: true
   v3_1: true
-  
+
 - name: drf-spectacular
   category: auto-generators
   github: https://github.com/tfranzel/drf-spectacular
@@ -1813,12 +1813,13 @@
   link: https://docs.openapiprocessor.io
   github: https://github.com/openapi-processor
   description: >
-    Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) or Micronaut
-    (annotation based) from an OpenAPI yaml description. Provides powerful type mapping capabilities to adjust the
-    generated code. Gradle & Maven support. Playground.
+    Generates java interfaces & DTOs (pojo or record) for Spring Boot (annotation based, MVC & WebFlux) or Micronaut
+    (annotation based) from an OpenAPI YAML/JSON description. Provides powerful type mapping capabilities to adjust 
+    the generated code. Gradle & Maven support. Playground.
   v2: false
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: openapi-processor/openapi-parser
   category:
@@ -1828,11 +1829,12 @@
   link: https://github.com/openapi-processor/openapi-parser
   github: https://github.com/openapi-processor/openapi-parser
   description: >
-    OpenAPI parser with (json schema) validation (currently 3.0 only). Separate apis for OpenAPI 3.0 & 3.1.
-    Easily get resolved $ref objects. Pluggable document reader & json/yaml converter. Minimal dependencies.
+    OpenAPI parser with (JSON schema) validation. Separate APIs for OpenAPI 3.2, 3.1, 3.0.
+    Easily get resolved $ref objects. Pluggable document reader & JSON/YAML converter. Minimal dependencies.
   v2: false
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: ts-oas
   category:
