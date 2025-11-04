@@ -18,6 +18,18 @@
   v2: false
   v3: true
 
+- name: APIdog
+  category:
+    - documentation
+    - monitoring
+    - testing
+  link: https://apidog.com/
+  language: SaaS
+  description: A comprehensive, all-in-one API development platform that revolutionizes how teams design, test, and document APIs. Built for modern development workflows, Apidog combines powerful API documentation generation, robust testing capabilities, and intelligent mock servers into a single, intuitive platform.
+  v3_0: true
+  v3_1: true
+  v3_2: 👷
+
 - name: APIMatic Developer Experience Portal
   category: documentation
   link: https://www.apimatic.io/product/publish
