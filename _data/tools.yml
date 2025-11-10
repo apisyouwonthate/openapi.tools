@@ -317,6 +317,17 @@
   v3: true
   v3_1: true
 
+- name: Sourcemeta JSON Schema Standard Library
+  category:
+    - miscellaneous
+  link: https://github.com/sourcemeta/std
+  language: JSON
+  github: https://github.com/sourcemeta/std
+  description: 'A growing collection of battle-tested schemas (ISO, IETF, IEC, W3C, etc) to power your next API spec, so you never have to bother with JSON Schema again'
+  v2: false
+  v3: false
+  v3_1: true
+
 - name: OAS RAML Converter
   category: converters
   language: Node.js
