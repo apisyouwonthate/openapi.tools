@@ -151,6 +151,18 @@
   v3: true
   v3_1: true
 
+- name: Playground-Y
+  category:
+    - documentation
+    - gateways
+  language: Python/NodeJS
+  link: https://github.com/Playground-Y/Playground-Y
+  github: https://github.com/Playground-Y/Playground-Y
+  description: Auto-generate interactive API playgrounds from OpenAPI specs. Get developers calling your API in seconds.
+  v2: true
+  v3: false
+  v3_1: false
+
 - name: Rage
   category:
     - auto-generators
