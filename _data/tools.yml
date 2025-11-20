@@ -142,6 +142,7 @@
   category:
     - gateway
     - data-validators
+  github: https://github.com/membrane/api-gateway
   link: https://github.com/membrane/api-gateway
   language: Java
   description: Open source API gateway with built-in OpenAPI support. Turn OpenAPI specs into APIs and enforce request and response validation.
