@@ -314,6 +314,16 @@
   description: Golang module for deep comparison of two OpenAPI specifications. Available also as a command-line.
   v3: true
   v3_1: false
+  
+- name: oas_rails
+  category:
+    - documentation
+    - auto-generators
+  link: https://github.com/a-chacon/oas_rails
+  language: Ruby
+  description:
+    Rails engine for generate automatic interactive documentation in your Rails HTTP APIs. 
+  v3_1: true
 
 - name: oas-patch
   category: miscellaneous
