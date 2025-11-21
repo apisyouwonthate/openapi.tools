@@ -2397,6 +2397,16 @@
   v3: true
   v3_1: true
 
+- name: GitBook
+  category: documentation
+  language: Web / SaaS
+  link: https://www.gitbook.com/
+  github: https://github.com/GitbookIO/gitbook
+  description: Effortlessly publish stunning, interactive documentation for products, APIs, and more.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: MkDocs Redoc Tag
   category: documentation
   language: Python
