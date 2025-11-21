@@ -151,13 +151,13 @@
   v3: true
   v3_1: true
 
-- name: Playground-Y
+- name: madrasly
   category:
     - documentation
     - gateways
   language: Python/NodeJS
-  link: https://github.com/Playground-Y/Playground-Y
-  github: https://github.com/Playground-Y/Playground-Y
+  link: https://github.com/madrasly/madrasly
+  github: https://github.com/madrasly/madrasly
   description: Auto-generate interactive API playgrounds from OpenAPI specs. Get developers calling your API in seconds.
   v2: true
   v3: false
