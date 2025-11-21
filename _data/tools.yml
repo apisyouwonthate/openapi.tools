@@ -1396,6 +1396,20 @@
   description: TS Model & utils for OpenAPI 3.0.x contracts
   v3: true
 
+- name: OpenAPIKit
+  category:
+    - parsers
+    - description-validators
+    - dsl
+  language: Swift
+  github: https://github.com/mattpolzin/openapikit
+  link: https://github.com/mattpolzin/openapikit
+  description: Codable Swift types that encode to- and decode from OpenAPI 3.0.x and OpenAPI 3.1.x Documents and their components.
+  v2: false
+  v3: true
+  v3_1: true
+  v3_2: false
+
 - name: kin-openapi
   category:
     - parsers
