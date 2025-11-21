@@ -138,6 +138,19 @@
   v2: true
   v3: true
 
+- name: Membrane API Gateway
+  category:
+    - gateway
+    - data-validators
+  github: https://github.com/membrane/api-gateway
+  link: https://www.membrane-api.io
+  language: Java
+  description: Open source API gateway with built-in OpenAPI support. Turn OpenAPI specs into APIs and enforce request and response validation.
+  v2: true
+  v3: true
+  v3_1: true
+  v3_2: true
+
 - name: Kong Enterprise Edition
   category:
     - documentation
