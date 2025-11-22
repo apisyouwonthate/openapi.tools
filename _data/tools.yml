@@ -1,3 +1,17 @@
+- name: Alphadoc
+  category:
+    - documentation
+    - description-validator
+  link: https://alphadoc.io
+  language: SaaS
+  description:
+    Alphadoc is a full featured developer experience platform. API components with granular parameter control and diagrams
+    generated from your OpenAPI. Not only the reference, but the entire set of tutorials and guides automatically updates when
+    the underlying API updates.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Docuo
   category: documentation
   link: https://docuo.spreading.ai/?via=ot
@@ -419,6 +433,17 @@
     Simply provide your schema file in JSON or YAML, then sit back and enjoy the documentation.
   v2: true
   v3: true
+
+- name: Openapiviewer
+  category:
+    - documentation
+  link: https://www.openapiviewer.com
+  language: SaaS
+  description:
+    Upload a openapi.json and view it online via a shareable link. Nothing else. Uses OpenAPI Explorer under the hood.
+  v2: false
+  v3: true
+  v3_1: true
 
 - name: oas3-api-snippet-enricher
   category: documentation
