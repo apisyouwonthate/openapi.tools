@@ -268,7 +268,7 @@
   description: Generate API documentation for humans from your Laravel codebase.
   v2: false
   v3: true
-  v3_1: false
+  v3_1: true
 
 - name: Supermodel
   category: dsl
