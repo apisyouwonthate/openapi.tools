@@ -696,6 +696,7 @@
     fully dedicated to OpenAPI-based APIs.
   v2: true
   v3: true
+  v3_!: true
 
 - name: SwaggerHub
   category: text-editors
