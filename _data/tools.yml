@@ -2046,6 +2046,8 @@
   github: https://github.com/microsoft/typespec
   description: Emit OpenAPI specifications from API descriptions defined in the generic, interoperable, and extensible TypeSpec language.
   v3: true
+  v3_1: true
+  v3_2: true
 
 - name: oa-client
   category:
