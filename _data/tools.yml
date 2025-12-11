@@ -3205,10 +3205,13 @@
   v3_1: true
   
 - name: Zudoku
-  category: documentation
-  link: https://zudoku.dev
+  sponsored: true
+  sponsoredDate: 2024-09-09 06:00:00
+  category:
+    - documentation
+  link: https://zudoku.dev?utm_source=openapitools&ref=openapitools
   github: https://github.com/zuplo/zudoku
-  language: React
+  language: TypesScript
   description: OpenAPI powered, highly customizable, API reference and documentation framework with CDN packaged and self-hosted options.
   v2: false
   v3: true
