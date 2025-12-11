@@ -153,15 +153,24 @@
               <tr>
                 <th>Name</th>
                 <th>Language</th>
+                <th>v3.2</th>
                 <th>v3.1</th>
                 <th>v3.0</th>
-                <th>v2.0</th>
                 <th>GitHub</th>
               </tr>
             </thead>
             <tbody>
               {% assign sponsored_tools = site.data.tools | where: "sponsored", true | sort: 'sponsoredDate'  %}
-              {% assign non_sponsored_tools = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" | sort_natural: 'name' %}
+              {% assign non_sponsored_all = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" %}
+
+              {% comment %}
+              {% Group by supported version, sorted by name within each group %}
+              {% endcomment %}
+              {% assign v3_2_tools = non_sponsored_all | where: "v3_2", true | sort_natural: 'name' %}
+              {% assign v3_1_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 == true" | sort_natural: 'name' %}
+              {% assign v3_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 == true" | sort_natural: 'name' %}
+              {% assign no_v3_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 != true" | sort_natural: 'name' %}
+              {% assign non_sponsored_tools = v3_2_tools | concat: v3_1_tools | concat: v3_tools | concat: no_v3_tools %}
 
               {% assign sorted_tools = sponsored_tools | concat: non_sponsored_tools %}
 
@@ -187,6 +196,13 @@
                   {{ tool.language }}
                 </td>
                 <td class="font-serif w-1/3 text-center">
+                  {% if tool.v3_2 %}✅{% elsif tool.v3_2_link %}<a
+                    target="_blank"
+                    href="{{ tool.v3_2_link }}"
+                    >👷</a
+                  >{% else %}❌{% endif %}
+                </td>
+                <td class="font-serif w-1/3 text-center">
                   {% if tool.v3_1 %}✅{% elsif tool.v3_1_link %}<a
                     target="_blank"
                     href="{{ tool.v3_1_link }}"
@@ -194,14 +210,7 @@
                   >{% else %}❌{% endif %}
                 </td>
                 <td class="font-serif w-1/3 text-center">
-                  {% if tool.v3 %}✅{% elsif tool.v3_link %}<a
-                    target="_blank"
-                    href="{{ tool.v3_link }}"
-                    >👷</a
-                  >{% else %}❌{% endif %}
-                </td>
-                <td class="font-serif w-1/3 text-center">
-                  {% if tool.v2 %}✅{% else %}❌{% endif %}
+                  {% if tool.v3 %}✅{% else %}❌{% endif %}
                 </td>
                 <td class="w-2/3 text-center">
                   {% if tool.github %}<a
