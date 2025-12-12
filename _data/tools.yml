@@ -963,6 +963,7 @@
     Koa, Express, Hapi (and more) services
   v2: true
   v3: true
+  v3_1_link: https://github.com/lukeautry/tsoa/pull/1768
 
 - name: "@hey-api/openapi-ts"
   category:
