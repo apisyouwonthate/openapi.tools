@@ -708,6 +708,7 @@
     development workflow and centralize their API discovery and consumption.
   v2: true
   v3: true
+  v3_1: true
 
 - name: Redocly VSCode Extension
   category: text-editors
