@@ -168,9 +168,7 @@
               {% endcomment %}
               {% assign v3_2_tools = non_sponsored_all | where: "v3_2", true | sort_natural: 'name' %}
               {% assign v3_1_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 == true" | sort_natural: 'name' %}
-              {% assign v3_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 == true" | sort_natural: 'name' %}
-              {% assign no_v3_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 != true" | sort_natural: 'name' %}
-              {% assign non_sponsored_tools = v3_2_tools | concat: v3_1_tools | concat: v3_tools | concat: no_v3_tools %}
+              {% assign non_sponsored_tools = v3_2_tools | concat: v3_1_tools %}
 
               {% assign sorted_tools = sponsored_tools | concat: non_sponsored_tools %}
 
