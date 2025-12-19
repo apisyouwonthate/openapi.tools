@@ -51,7 +51,7 @@ export const GET = async ({ params }: OgRouteParams) => {
   return new Response(new Uint8Array(response), {
     status: 200,
     headers: {
-      'Content-Type': 'image/svg',
+      'Content-Type': 'image/png',
       'Cache-Control': 's-maxage=1, stale-while-revalidate=59',
     },
   });

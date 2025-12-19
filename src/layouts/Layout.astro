@@ -11,16 +11,26 @@ import SponsorBanner from '@/components/SponsorBanner';
 
 import '@/styles/base.css';
 
-interface Props {
+type Props = {
   title: string;
-}
+  description?: string;
+  ogImage?: string;
+};
 
 export interface NavigationProps {
   categories: NavigationItems;
   currentUrl: URL;
 }
 
-const { title } = Astro.props;
+const { title, description, ogImage } = Astro.props;
+
+const defaultDescription =
+  'A comprehensive and open source list of resources for developers working with OpenAPI.';
+const defaultOgImage =
+  'https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png';
+
+const pageDescription = description || defaultDescription;
+const pageOgImage = ogImage || defaultOgImage;
 
 const isHomePage = Astro.url.pathname === '/';
 
@@ -71,19 +81,13 @@ const categories: NavigationItems = [
 <html lang="en" class={clsx('h-full antialiased')}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta
-      name="description"
-      content="OpenAPI.tools is a comprehensive and open source list of resources for developers working with OpenAPI."
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={pageDescription} />
     <meta name="author" content="APIs You Won't Hate" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
@@ -150,20 +154,52 @@ const categories: NavigationItems = [
     <SEO
       titleTemplate="%s | OpenApi.tools, from APIs You Won't Hate"
       title={title}
-      description="A comprehensive and open source list of resources for developers working with OpenAPI."
+      description={pageDescription}
       canonical={Astro.url.href}
       openGraph={{
         basic: {
-          title: 'OpenAPI.tools',
+          title: `${title} | OpenAPI.tools`,
           type: 'website',
-          image:
-            'https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png',
+          image: pageOgImage,
+          url: Astro.url.href,
+        },
+        optional: {
+          description: pageDescription,
+          siteName: 'OpenAPI.tools',
+        },
+        image: {
+          url: pageOgImage,
+          width: 1200,
+          height: 630,
+          alt: `${title} - OpenAPI.tools`,
         },
       }}
       twitter={{
+        card: 'summary_large_image',
         creator: '@irreverentmike',
         site: '@apisyouwonthate',
+        title: `${title} | OpenAPI.tools`,
+        description: pageDescription,
+        image: pageOgImage,
       }}
+    />
+
+    {/* JSON-LD Structured Data */}
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'OpenAPI.tools',
+        url: 'https://openapi.tools',
+        description: defaultDescription,
+        publisher: {
+          '@type': 'Organization',
+          name: 'APIs You Won\'t Hate',
+          url: 'https://apisyouwonthate.com',
+        },
+      })}
     />
     <script
       src="https://cdn.usefathom.com/script.js"
