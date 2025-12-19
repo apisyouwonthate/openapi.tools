@@ -26,3 +26,6 @@ pnpm-debug.log*
 
 
 .turbo/
+
+# Jekyll legacy
+_site/
