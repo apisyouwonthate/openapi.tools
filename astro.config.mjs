@@ -1,7 +1,7 @@
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel';
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
@@ -24,7 +24,7 @@ export default defineConfig({
     }),
   ],
   // @see hosting with vercel https://docs.astro.build/en/guides/integrations-guide/vercel/
-  output: 'hybrid',
+  output: 'static',
   adapter: vercel({
     imageService: true,
     devImageService: 'squoosh',

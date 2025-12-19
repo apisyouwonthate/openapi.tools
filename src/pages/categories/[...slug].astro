@@ -33,7 +33,7 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   }
   const categories = tool.data.categories;
   // look through the categories list to see if any of the categories matches enry.slug
-  return categories.some((cat) => cat.slug === category.slug);
+  return categories.some((cat) => cat.id === category.id);
 });
 
 // get all the sponsored tools
