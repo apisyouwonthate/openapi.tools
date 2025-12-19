@@ -4,7 +4,12 @@ description: Generate & publish SDKs in 10+ languages, Terraform Providers, and 
 categories:
   - sdk-generators
   - docs
-link: https://speakeasyapi.dev/
+  - misc
+  - testing
+  - mocking-tools
+  - ides
+  - education
+link: https://www.speakeasy.com/
 languages:
   typescript: true
   python: true

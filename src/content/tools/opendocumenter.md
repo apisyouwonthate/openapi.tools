@@ -1,6 +1,6 @@
 ---
 name: OpenDocumenter
-description: OpenDocumenter is a automatic documentation generator for OpenAPI v3 schemas. Simply provide your schema file in JSON or YAML, then sit back and enjoy the documentation.
+description: OpenDocumenter is a automatic documentation generator for OpenAPI v3.0 schemas. Simply provide your schema file in JSON or YAML, then sit back and enjoy the documentation.
 categories:
   - docs
 link: https://github.com/ouropencode/OpenDocumenter

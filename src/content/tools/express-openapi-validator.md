@@ -11,6 +11,6 @@ repo: https://github.com/cdimascio/express-openapi-validator
 openApiVersions:
   v2: false
   v3: true
-  v3_1: false
+  v3_1: true
   v4: false
 ---

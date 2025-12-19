@@ -11,6 +11,6 @@ repo: https://github.com/apideck-libraries/portman
 openApiVersions:
   v2: false
   v3: true
-  v3_1: false
+  v3_1: true
   v4: false
 ---

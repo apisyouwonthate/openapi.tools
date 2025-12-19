@@ -1,13 +1,21 @@
 ---
-name: 🌿 Fern
-description: Generate server-side boilerplate code from OpenAPI and then implement your business logic.
+name: 🌿 Fern SDKs & Docs
+description: Generate SDKs in popular languages and publish them to package managers (like npm), plus beautiful API documentation.
 categories:
-  - servers
+  - code-generators
+  - sdk-generators
+  - docs
 link: https://buildwithfern.com
 languages:
-  express: true
-  fastapi: true
-  spring boot: true
+  typescript: true
+  java: true
+  python: true
+  go: true
+  ruby: true
+  csharp: true
+  php: true
+  swift: true
+  rust: true
 repo: https://github.com/fern-api/fern
 openApiVersions:
   v2: true

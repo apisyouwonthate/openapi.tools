@@ -1,7 +1,7 @@
 ---
 name: openapi-processor/openapi-parser
 description: |
-  OpenAPI parser with (json schema) validation (currently 3.0 only). Separate apis for OpenAPI 3.0 & 3.1. Easily get resolved $ref objects. Pluggable document reader & json/yaml converter. Minimal dependencies.
+  OpenAPI parser with (JSON schema) validation. Separate APIs for OpenAPI 3.2, 3.1, 3.0. Easily get resolved $ref objects. Pluggable document reader & JSON/YAML converter. Minimal dependencies.
 categories:
   - parsers
   - schema-validators

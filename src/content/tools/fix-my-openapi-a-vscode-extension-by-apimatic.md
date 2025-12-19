@@ -1,7 +1,7 @@
 ---
 name: Fix My OpenAPI - A VSCode Extension by APIMatic
 description: |
-  APIMatic's VSCode extension helps you validate, lint, and auto-fix your OpenAPI files, along with other capabilities such as API transformations, API audit report generation, SDKs generation, and more.
+  APIMatic's VSCode extension helps you validate, lint, and auto-fix your OpenAPI files,  along with other capabilities such as API transformations, API audit report generation, SDKs generation, and more.
 categories:
   - text-editors-extensions
   - schema-validators

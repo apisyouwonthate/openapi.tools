@@ -5,7 +5,7 @@ categories:
   - sdk-generators
 languages:
   php: true
-repo: https://github.com/janephp/open-api
+repo: https://github.com/janephp/janephp
 openApiVersions:
   v2: true
   v3: true

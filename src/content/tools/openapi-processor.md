@@ -1,7 +1,7 @@
 ---
 name: openapi-processor
 description: |
-  Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) or Micronaut (annotation based) from an OpenAPI yaml description. Provides powerful type mapping capabilities to adjust the generated code. Gradle & Maven support. Playground.
+  Generates java interfaces & DTOs (pojo or record) for Spring Boot (annotation based, MVC & WebFlux) or Micronaut (annotation based) from an OpenAPI YAML/JSON description. Provides powerful type mapping capabilities to adjust  the generated code. Gradle & Maven support. Playground.
 categories:
   - servers
 link: https://docs.openapiprocessor.io

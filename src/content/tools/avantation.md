@@ -1,6 +1,6 @@
 ---
 name: avantation
-description: Generate OpenAPI 3.x specification from HAR.
+description: Generate OpenAPI 3.0 specification from HAR.
 categories:
   - converters
 languages:

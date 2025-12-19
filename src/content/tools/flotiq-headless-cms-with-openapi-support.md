@@ -6,10 +6,12 @@ categories:
   - ides
   - misc
 link: https://flotiq.com
-languages: {}
+languages:
+  saas: true
+repo: https://github.com/flotiq
 openApiVersions:
-  v2: false
+  v2: true
   v3: true
-  v3_1: false
+  v3_1: true
   v4: false
 ---

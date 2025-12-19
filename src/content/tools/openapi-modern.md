@@ -1,6 +1,6 @@
 ---
 name: OpenAPI::Modern
-description: OpenAPI v3.1 validator and JSON Schema validator (draft7, draft2019-09, draft2020-12)
+description: OpenAPI v3.1, v3.2 validator and JSON Schema validator (drafts 4 through draft2020-12)
 categories:
   - schema-validators
   - data-validators
