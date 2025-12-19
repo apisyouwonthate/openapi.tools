@@ -27,13 +27,16 @@ if (!category) {
 const { Content } = await category.render();
 
 // 3 get entries for this category from the Tools collection
+// Note: category.id includes .md extension, but tool category references don't
+const categoryIdWithoutExt = category.id.replace(/\.md$/, '');
+
 const allTools = (await getCollection('tools')).filter((tool) => {
   if (!tool.data.categories) {
     return false;
   }
   const categories = tool.data.categories;
-  // look through the categories list to see if any of the categories matches enry.slug
-  return categories.some((cat) => cat.id === category.id);
+  // look through the categories list to see if any of the categories matches category id
+  return categories.some((cat) => cat.id === categoryIdWithoutExt);
 });
 
 // get all the sponsored tools

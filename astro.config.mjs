@@ -1,12 +1,15 @@
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import vercel from '@astrojs/vercel';
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
   // ...
+  vite: {
+    plugins: [tailwindcss()],
+  },
   integrations: [
     sitemap({
       changefreq: 'weekly',
@@ -15,12 +18,6 @@ export default defineConfig({
     }),
     react({
       experimentalReactChildren: true,
-    }),
-    tailwind({
-      applyBaseStyles: false,
-      // Example: Allow writing nested CSS declarations
-      // alongside Tailwind's syntax
-      nesting: true,
     }),
   ],
   // @see hosting with vercel https://docs.astro.build/en/guides/integrations-guide/vercel/

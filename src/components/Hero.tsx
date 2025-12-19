@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import clsx from 'clsx';
-import { Highlight, themes, type Token } from 'prism-react-renderer';
+import { Highlight, themes, type Token, type RenderProps } from 'prism-react-renderer';
 
 import { Button } from './Button';
 import { HeroBackground } from './HeroBackground';
@@ -159,13 +159,14 @@ export function Hero() {
                         },
                       }}
                     >
+                      {/* @ts-expect-error - prism-react-renderer types are incorrect for React 19 */}
                       {({
                         className,
                         style,
                         tokens,
                         getLineProps,
                         getTokenProps,
-                      }) => (
+                      }: RenderProps) => (
                         <pre
                           className={clsx(
                             className,
@@ -174,18 +175,23 @@ export function Hero() {
                           style={style}
                         >
                           <code className="px-4">
-                            {tokens?.map((line: Token[], lineIndex: number) => (
-                              <div key={lineIndex} {...getLineProps({ line })}>
-                                {line?.map(
-                                  (token: Token, tokenIndex: number) => (
-                                    <span
-                                      key={tokenIndex}
-                                      {...getTokenProps({ token })}
-                                    />
-                                  )
-                                )}
-                              </div>
-                            ))}
+                            {tokens?.map(
+                              (line: Token[], lineIndex: number) => (
+                                <div
+                                  key={lineIndex}
+                                  {...getLineProps({ line })}
+                                >
+                                  {line?.map(
+                                    (token: Token, tokenIndex: number) => (
+                                      <span
+                                        key={tokenIndex}
+                                        {...getTokenProps({ token })}
+                                      />
+                                    )
+                                  )}
+                                </div>
+                              )
+                            )}
                           </code>
                         </pre>
                       )}
