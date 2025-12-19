@@ -6,8 +6,8 @@ import clsx from 'clsx';
 import Header from '@/components/Header.astro';
 import { Hero } from '@/components/Hero';
 import { Navigation, type NavigationItems } from '@/components/Navigation';
-import SponsorBanner from '@/components/SponsorBanner';
 import PostHog from '@/components/PostHog.astro';
+import SponsorBanner from '@/components/SponsorBanner';
 
 import '@/styles/base.css';
 
@@ -176,7 +176,7 @@ const categories: NavigationItems = [
   <body class="flex min-h-full bg-white dark:bg-slate-900">
     <div class="flex w-full flex-col">
       <SponsorBanner sponsors={bannerSponsors} client:only="react" />
-      <Header categories={categories} url={Astro.url} />
+      <Header categories={categories} currentUrl={Astro.url} />
 
       {isHomePage && <Hero />}
 

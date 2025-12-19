@@ -40,7 +40,7 @@ export function Navigation({
               <h2 className="font-display font-medium text-slate-900">
                 {category.title}
               </h2>
-              <ul className="mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800">
+              <ul className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
                 {category.links?.map((link) => (
                   <li
                     key={link.href}

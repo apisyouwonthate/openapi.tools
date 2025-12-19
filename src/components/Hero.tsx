@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import clsx from 'clsx';
-import { Highlight,themes, type Token } from 'prism-react-renderer';
+import { Highlight, themes, type Token } from 'prism-react-renderer';
 
 import { Button } from './Button';
 import { HeroBackground } from './HeroBackground';
@@ -87,7 +87,7 @@ export function Hero() {
             </div>
           </div>
           <div className="relative lg:static xl:pl-10">
-            <div className="absolute inset-x-[-50vw] -bottom-48 -top-32 [mask-image:linear-gradient(transparent,white,white)] lg:-bottom-32 lg:-top-32 lg:left-[calc(50%+14rem)] lg:right-0 lg:[mask-image:none] dark:[mask-image:linear-gradient(transparent,white,transparent)] lg:dark:[mask-image:linear-gradient(white,white,transparent)]">
+            <div className="absolute inset-x-[-50vw] -bottom-48 -top-32 [mask-image:linear-gradient(transparent,white,white)] dark:[mask-image:linear-gradient(transparent,white,transparent)] lg:-bottom-32 lg:-top-32 lg:left-[calc(50%+14rem)] lg:right-0 lg:[mask-image:none] lg:dark:[mask-image:linear-gradient(white,white,transparent)]">
               <HeroBackground className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:translate-x-0 lg:translate-y-[-60%]" />
             </div>
             <div className="relative">
@@ -155,8 +155,8 @@ export function Hero() {
                         ...themes.dracula,
                         plain: {
                           ...themes.dracula.plain,
-                          backgroundColor: 'transparent'
-                        }
+                          backgroundColor: 'transparent',
+                        },
                       }}
                     >
                       {({
@@ -176,12 +176,14 @@ export function Hero() {
                           <code className="px-4">
                             {tokens?.map((line: Token[], lineIndex: number) => (
                               <div key={lineIndex} {...getLineProps({ line })}>
-                                {line?.map((token: Token, tokenIndex: number) => (
-                                  <span
-                                    key={tokenIndex}
-                                    {...getTokenProps({ token })}
-                                  />
-                                ))}
+                                {line?.map(
+                                  (token: Token, tokenIndex: number) => (
+                                    <span
+                                      key={tokenIndex}
+                                      {...getTokenProps({ token })}
+                                    />
+                                  )
+                                )}
                               </div>
                             ))}
                           </code>

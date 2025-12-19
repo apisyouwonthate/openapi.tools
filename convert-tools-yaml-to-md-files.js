@@ -36,7 +36,7 @@ const convertToolToMarkdown = (tool) => {
     category,
     language,
     link,
-    github,
+    github: _github, // eslint-disable-line no-unused-vars
     sponsoredDate,
     testimonial,
     ...versions
