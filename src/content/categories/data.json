@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Auto Generators",
+    "description": "Tools that will take your code and turn it into an OpenAPI Specification document",
+    "slug": "auto-generators"
+  },
+  {
+    "name": "Converters",
+    "description": "Various tools to convert to and from OpenAPI and other API description formats.",
+    "slug": "converters"
+  },
+  {
+    "name": "Data Validators",
+    "description": "Check to see if API requests and responses are lining up with the API description.",
+    "slug": "data-validators"
+  },
+  {
+    "name": "Documentation",
+    "description": "Render API Description as HTML (or maybe a PDF) so slightly less technical people can figure out how to work with the API.",
+    "slug": "documentation"
+  },
+  {
+    "name": "DSL",
+    "description": "Writing YAML by hand is no fun, and maybe you don't want a GUI, so use a Domain Specific Language to write OpenAPI in your language of choice.",
+    "slug": "dsl"
+  },
+  {
+    "name": "Text Editors",
+    "description": "Text editors give you visual feedback whilst you write OpenAPI, so you can see what docs might look like.",
+    "slug": "text-editors"
+  },
+  {
+    "name": "GUI Editors",
+    "description": "Visual editors help you design APIs without needing to memorize the entire OpenAPI specification.",
+    "slug": "gui-editors"
+  },
+  {
+    "name": "Learning",
+    "description": "Whether you're trying to get documentation for a third party API based on traffic, or are trying to switch to design-first at an organization with no OpenAPI at all, learning can help you move your API spec forward and keep it up to date.",
+    "slug": "learning"
+  },
+  {
+    "name": "Mock Servers",
+    "description": "Fake servers that take description document as input, then route incoming HTTP requests to example responses or dynamically generates examples.",
+    "slug": "mock"
+  },
+  {
+    "name": "Description Validators",
+    "description": "Check your API description to see if it is valid OpenAPI.",
+    "slug": "description-validators"
+  },
+  {
+    "name": "Security",
+    "description": "By poking around your OpenAPI description, some tools can look out for attack vectors you might not have noticed.",
+    "slug": "security"
+  },
+  {
+    "name": "SDK Generators",
+    "description": "Generate code to give to consumers, to help them avoid interacting at a HTTP level.",
+    "slug": "sdk"
+  },
+  {
+    "name": "Server Implementations",
+    "description": "Easily create and implement resources and routes for your APIs.",
+    "slug": "server"
+  },
+  {
+    "name": "Miscellaneous",
+    "description": "Anything else that does stuff with OpenAPI but hasn't quite got enough to warrant its own category.",
+    "slug": "miscellaneous"
+  },
+  {
+    "name": "Parsers",
+    "description": "Loads and read OpenAPI descriptions, so you can work with them programmatically.",
+    "slug": "parsers"
+  },
+  {
+    "name": "Testing",
+    "description": "Quickly execute API requests and validate responses on the fly through command line or GUI interfaces.",
+    "slug": "testing"
+  },
+  {
+    "name": "Gateways",
+    "description": "API Gateways and related tools that have integrated support for OpenAPI.",
+    "slug": "gateway"
+  },
+  {
+    "name": "Monitoring",
+    "description": "Monitoring tools let you know what is going on in your API.",
+    "slug": "monitoring"
+  }
+]

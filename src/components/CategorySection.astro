@@ -1,0 +1,27 @@
+---
+import ToolTable from './ToolTable.astro';
+import type { Tool } from '../utils/sortTools';
+
+interface Category {
+  name: string;
+  description: string;
+  slug: string;
+}
+
+interface Props {
+  category: Category;
+  tools: Tool[];
+}
+
+const { category, tools } = Astro.props;
+---
+
+<div>
+  <h2 id={category.slug}>
+    <a href={`#${category.slug}`} name={category.slug}>
+      {category.name}
+    </a>
+  </h2>
+  <p class="lead">{category.description}</p>
+  <ToolTable tools={tools} categorySlug={category.slug} />
+</div>

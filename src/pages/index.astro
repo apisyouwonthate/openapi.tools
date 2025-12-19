@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Sponsor from '../components/Sponsor.astro';
+import CategorySection from '../components/CategorySection.astro';
+import { getEntry } from 'astro:content';
+import { sortTools, filterByCategory } from '../utils/sortTools';
+
+// Load data from Content Collections
+const categoriesEntry = await getEntry('categories', 'data');
+const toolsEntry = await getEntry('tools', 'data');
+
+if (!categoriesEntry || !toolsEntry) {
+  throw new Error('Failed to load content collections');
+}
+
+const categories = categoriesEntry.data;
+const allTools = toolsEntry.data;
+
+// Sort categories alphabetically by slug for the table of contents
+const sortedCategories = [...categories].sort((a, b) => a.slug.localeCompare(b.slug));
+---
+
+<Layout
+  title="OpenAPI.Tools - an Open Source list of great tools for OpenAPI."
+  description="OpenAPI.tools is a comprehensive and open source list of resources for developers working with OpenAPI."
+>
+  <header class="jumbotron">
+    <div class="container">
+      <h1 class="jumbotron-heading text-center">OpenAPI.Tools</h1>
+      <p class="lead">
+        Stay up to date with a community-driven list of high-quality, modern
+        tools for OpenAPI. An open source project from
+        <a href="https://apisyouwonthate.com" target="_blank">APIs You Won't Hate.</a>
+      </p>
+
+      <p>
+        Is there a tool missing that you think should be on the list?
+        <br />
+        Submit a Pull Request on GitHub
+        <a
+          target="_blank"
+          href="https://github.com/apisyouwonthate/openapi.tools"
+        >
+          apisyouwonthate/openapi.tools
+        </a>
+      </p>
+
+      <p class="text-center">
+        <a
+          target="_blank"
+          href="https://github.com/apisyouwonthate/openapi.tools"
+          class="btn btn-primary"
+        >
+          Submit an OpenAPI tool
+        </a>
+      </p>
+    </div>
+  </header>
+
+  <section class="content">
+    <div class="container">
+      <Sponsor />
+
+      <div>
+        <h2>Tool Types</h2>
+        <p class="lead">
+          We've organised everything into categories so you can jump to the
+          section you're interested in.
+        </p>
+        <ul>
+          {sortedCategories.map(category => (
+            <li>
+              <strong>
+                <a href={`#${category.slug}`}>{category.name}:</a>
+              </strong>
+              {category.description}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {categories.map(category => {
+        const categoryTools = filterByCategory(allTools, category.slug);
+        const sortedTools = sortTools(categoryTools);
+
+        return (
+          <CategorySection
+            category={category}
+            tools={sortedTools}
+          />
+        );
+      })}
+    </div>
+
+    <Sponsor />
+  </section>
+</Layout>

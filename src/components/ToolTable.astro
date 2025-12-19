@@ -1,0 +1,79 @@
+---
+import type { Tool } from '../utils/sortTools';
+
+interface Props {
+  tools: Tool[];
+  categorySlug: string;
+}
+
+const { tools, categorySlug } = Astro.props;
+
+function buildUrl(tool: Tool): string {
+  const url = tool.link || tool.github || '';
+  const separator = url.includes('?') ? '&' : '?';
+  return `${url}${separator}utm_source=openapi-tools&utm_medium=website&utm_campaign=${categorySlug}`;
+}
+---
+
+<table class="table table-striped">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Name</th>
+      <th>Language</th>
+      <th>v3.2</th>
+      <th>v3.1</th>
+      <th>v3.0</th>
+      <th>GitHub</th>
+    </tr>
+  </thead>
+  <tbody>
+    {tools.map(tool => {
+      const url = buildUrl(tool);
+      const isSponsored = tool.sponsored || false;
+
+      return (
+        <tr class:list={['table-row', { 'font-weight-bold alert alert-primary': isSponsored }]}>
+          <td class="font-serif w-3/5">
+            <a target="_blank" href={url}>
+              {tool.name}
+            </a>
+            {tool.description && ` - ${tool.description}`}
+            {isSponsored && (
+              <div>
+                <span class="badge badge-light">Sponsored</span>
+                {tool.testimonial && (
+                  <aside class="d-inline font-weight-normal small font-italic">
+                    {tool.testimonial}
+                  </aside>
+                )}
+              </div>
+            )}
+          </td>
+          <td class="font-serif w-1/5">
+            {tool.language}
+          </td>
+          <td class="font-serif w-1/3 text-center">
+            {tool.v3_2 ? '✅' : tool.v3_2_link ? (
+              <a target="_blank" href={tool.v3_2_link}>👷</a>
+            ) : '❌'}
+          </td>
+          <td class="font-serif w-1/3 text-center">
+            {tool.v3_1 ? '✅' : tool.v3_1_link ? (
+              <a target="_blank" href={tool.v3_1_link}>👷</a>
+            ) : '❌'}
+          </td>
+          <td class="font-serif w-1/3 text-center">
+            {tool.v3 ? '✅' : '❌'}
+          </td>
+          <td class="w-2/3 text-center">
+            {tool.github && (
+              <a target="_blank" href={tool.github}>
+                <img src="/img/octocat.png" alt="github octocat" />
+              </a>
+            )}
+          </td>
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
