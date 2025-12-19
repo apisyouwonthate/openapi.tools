@@ -18,7 +18,7 @@
     <meta name="author" content="APIs You Won't Hate" />
     <link rel="canonical" href="https://openapi.tools" />
     <title>
-      OpenAPI.Tools - an Open Source list of great tools for OpenAPI.
+      Legacy OpenAPI.Tools - an Open Source list of great tools for historic OpenAPI versions.
     </title>
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
@@ -85,34 +85,19 @@
   <body>
     <header class="jumbotron">
       <div class="container">
-        <h1 class="jumbotron-heading text-center">OpenAPI.Tools</h1>
+        <h1 class="jumbotron-heading text-center">Legacy OpenAPI.Tools</h1>
         <p class="lead">
-          Stay up to date with a community-driven list of high-quality, modern
-          tools for OpenAPI. An open source project from
+          This is a community-driven list of high-quality OpenAPI tools that have fallen out of recency for 
+          various reasons, but are still helpful for those stuck with older OpenAPI. An open source project 
+          from
           <a href="https://apisyouwonthate.com" target="_blank"
             >APIs You Won&apos;t Hate.</a
           >
         </p>
 
         <p>
-          Is there a tool missing that you think should be on the list?
-          <br />
-          Submit a Pull Request on GitHub
-          <a
-            target="_blank"
-            href="https://github.com/apisyouwonthate/openapi.tools"
-          >
-            apisyouwonthate/openapi.tools
-          </a>
-        </p>
-
-        <p class="text-center">
-          <a
-            target="_blank"
-            href="https://github.com/apisyouwonthate/openapi.tools"
-            class="btn btn-primary"
-            >Submit an OpenAPI tool</a
-          >
+          ⚠️ <strong>This is the legacy list of old OpenAPI tools, covering v3.0 and v2.0 tools that have not yet added
+          support for v3.1 or v3.2. Please visit the main site for the <a href="/">latest tools.</a></strong>
         </p>
       </div>
     </header>
@@ -153,25 +138,20 @@
               <tr>
                 <th>Name</th>
                 <th>Language</th>
-                <th>v3.2</th>
-                <th>v3.1</th>
+                <th>v3.0</th>
+                <th>v2.0</th>
                 <th>GitHub</th>
               </tr>
             </thead>
             <tbody>
-              {% assign sponsored_tools = site.data.tools | where: "sponsored", true | sort: 'sponsoredDate'  %}
-              {% assign non_sponsored_all = site.data.tools | where_exp: "tool", "tool.sponsored == nil or tool.sponsored == false" %}
-
               {% comment %}
               {% Group by supported version, sorted by name within each group %}
               {% endcomment %}
-              {% assign v3_2_tools = non_sponsored_all | where: "v3_2", true | sort_natural: 'name' %}
-              {% assign v3_1_tools = non_sponsored_all | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 == true" | sort_natural: 'name' %}
-              {% assign non_sponsored_tools = v3_2_tools | concat: v3_1_tools %}
+              {% assign v3_tools = site.data.tools | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 == true" | sort_natural: 'name' %}
+              {% assign v2_tools = site.data.tools | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 != true and tool.v2 == true" | sort_natural: 'name' %}
+              {% assign legacy_tools = v3_tools | concat: v2_tools %}
 
-              {% assign sorted_tools = sponsored_tools | concat: non_sponsored_tools %}
-
-              {% for tool in sorted_tools %} {% if tool.category == category.slug or tool.category contains category.slug %}
+              {% for tool in legacy_tools %} {% if tool.category == category.slug or tool.category contains category.slug %}
               {% assign url = tool.link | default: tool.github %}
               <tr class="table-row {% if tool.sponsored %}font-weight-bold alert alert-primary{% endif %}">
                 <td class="font-serif w-3/5">
@@ -193,14 +173,10 @@
                   {{ tool.language }}
                 </td>
                 <td class="font-serif w-1/3 text-center">
-                  {% if tool.v3_2 %}✅{% elsif tool.v3_2_link %}<a
-                    target="_blank"
-                    href="{{ tool.v3_2_link }}"
-                    >👷</a
-                  >{% else %}❌{% endif %}
+                  {% if tool.v3 %}✅{% else %}❌{% endif %}
                 </td>
                 <td class="font-serif w-1/3 text-center">
-                  {% if tool.v3_1 %}✅{% else %}❌{% endif %}
+                  {% if tool.v2 %}✅{% else %}❌{% endif %}
                 </td>
                 <td class="w-2/3 text-center">
                   {% if tool.github %}<a
@@ -216,10 +192,9 @@
         </div>
         {% endfor %}
       </div>
-      {% include sponsor.html %}
 
       <div class="col text-center">
-        <p>Looking for some older tools? Check out the <a href="/legacy.html">legacy list.</a></p>
+        <p>Looking for more modern tools? Check out the <a href="/index.html">main list.</a></p>
       </div>
 
     </section>
