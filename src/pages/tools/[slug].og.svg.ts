@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 export const GET = async ({ params }: OgRouteParams) => {
   const { slug } = params;
   /// One line to get the tool from our collection using slug
-  const tool = await getEntry('tools', slug!!);
+  const tool = await getEntry('tools', slug!);
   const title = tool?.data.name ?? 'Openapi.tools';
 
   const markup = html(`<div

@@ -38,9 +38,9 @@ export function Icon({
   color?: keyof typeof iconStyles;
   icon: IconVariants;
 } & Omit<React.ComponentPropsWithoutRef<'svg'>, 'color'>) {
-  let id = useId();
+  const id = useId();
 
-  let IconComponent = icons[icon];
+  const IconComponent = icons[icon];
 
   return (
     <svg

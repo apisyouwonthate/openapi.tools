@@ -10,7 +10,7 @@ export const RepoIcon = ({
   repo,
   ...props
 }: { repo: string } & React.ComponentPropsWithoutRef<'svg'>) => {
-  let repoUrlAdjusted = repo.replace('https://www.', 'https://');
+  const repoUrlAdjusted = repo.replace('https://www.', 'https://');
 
   switch (true) {
     case repoUrlAdjusted.includes('https://github.com'):
