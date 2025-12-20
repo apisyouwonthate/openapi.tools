@@ -39,6 +39,7 @@ const ToolSchema = z.object({
     v2: z.boolean().optional(),
     v3: z.boolean().optional(),
     v3_1: z.boolean().optional(),
+    v3_2: z.boolean().optional(),
     v4: z.boolean().optional(),
   }),
   featuredArticles: z
