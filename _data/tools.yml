@@ -32,16 +32,7 @@
   v2: true
   v3: true
   v3_1: true
-  description: 
-    Generator of OpenAPI (Swagger) Documents from the NestJS server code.
-
-    It does not require any extra schema definition, but just fine with the pure TypeScript type. 
-    <b>@nestia/sdk</b> analyzes your TypeScript code in the compilation level, and generates OpenAPI
-    document by parsing the programming AST (Abstract Syntax Tree) nodes. 
-    
-    Also, <b>@nestia/sdk</b> supports client side SDK (Software Development Kit) generation, 
-    and it embeds the mockup simulator of the NestJS server without connection.
-
+  description: Generate OpenAPI documents from NestJS server code. No extra schema definition, works with pure TypeScript code evaluated at the compilation level.
 - name: "@samchon/openapi"
   category:
     - converters
