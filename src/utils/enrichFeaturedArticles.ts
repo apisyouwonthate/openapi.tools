@@ -5,11 +5,19 @@ export const enrichFeaturedArticles = async (tool: Tool) => {
   const results = [];
 
   for (const article of tool?.featuredArticles || []) {
-    const ogData = await ogs({ url: article.url });
-    results.push({
-      ...article,
-      og: ogData.result,
-    });
+    try {
+      const ogData = await ogs({ url: article.url });
+      results.push({
+        ...article,
+        og: ogData.result,
+      });
+    } catch (error) {
+      console.error(`Failed to fetch OG data for ${article.url}:`, error);
+      results.push({
+        ...article,
+        og: undefined,
+      });
+    }
   }
 
   return results;
