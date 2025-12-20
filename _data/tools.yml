@@ -10,7 +10,7 @@
   v2: true
   v3: true
   v3_1: true
-  description: 
+  description:
     Provides online TypeScript editor and Swagger-UI at the same time.
 
     In the TypeScript editor, client SDK (Software Development Kit) interacting with the remote HTTP server is embedded, 
