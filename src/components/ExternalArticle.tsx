@@ -38,7 +38,7 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
         {ogImage && ogImage.length > 0 && (
           <img
             src={ogImage[0].url}
-            alt={ogImage[0].alt}
+            alt={ogImage[0].alt || title || 'Article image'}
             className="w-full bg-gray-100 object-cover"
           />
         )}
