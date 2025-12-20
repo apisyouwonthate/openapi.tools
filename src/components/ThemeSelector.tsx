@@ -14,29 +14,18 @@ import { LightIcon } from './icons/LightIcon';
 const themes = [
   { name: 'Light', value: 'light', icon: LightIcon },
   { name: 'Dark', value: 'dark', icon: DarkIcon },
-  // { name: 'System', value: 'system', icon: SystemIcon },
 ];
 
 export function ThemeSelector(
   props: React.ComponentPropsWithoutRef<typeof Listbox<'div'>>
 ) {
   const [theme, setTheme] = useState<string>(() => {
-    return localStorage?.getItem('theme') ?? 'system';
+    return localStorage?.getItem('theme') ?? 'light';
   });
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    if (theme === 'system') {
-      document.documentElement.classList.remove('dark');
-      localStorage?.removeItem('theme');
-    } else {
-      document.documentElement.classList.toggle('dark', theme === 'dark');
-      localStorage?.setItem('theme', theme);
-    }
+    document.documentElement.classList.toggle('dark', theme === 'dark');
+    localStorage?.setItem('theme', theme);
   }, [theme]);
 
   return (
@@ -46,18 +35,8 @@ export function ThemeSelector(
         className="flex h-6 w-6 items-center justify-center rounded-lg shadow-md ring-1 shadow-black/5 ring-black/5 dark:bg-slate-700 dark:ring-white/5 dark:ring-inset"
         aria-label="Theme"
       >
-        <LightIcon
-          className={clsx(
-            'h-4 w-4 dark:hidden',
-            theme === 'system' ? 'fill-slate-400' : 'fill-emerald-400'
-          )}
-        />
-        <DarkIcon
-          className={clsx(
-            'hidden h-4 w-4 dark:block',
-            theme === 'system' ? 'fill-slate-400' : 'fill-emerald-400'
-          )}
-        />
+        <LightIcon className="h-4 w-4 fill-emerald-400 dark:hidden" />
+        <DarkIcon className="hidden h-4 w-4 fill-emerald-400 dark:block" />
       </ListboxButton>
       <ListboxOptions className="absolute top-full left-1/2 mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md ring-1 shadow-black/5 ring-black/5 dark:bg-slate-800 dark:ring-white/5">
         {themes.map((theme) => (
