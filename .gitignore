@@ -21,8 +21,8 @@ pnpm-debug.log*
 .DS_Store
 
 
-# vercel directory
-.vercel
+# netlify
+.netlify/
 
 
 .turbo/

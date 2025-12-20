@@ -1,12 +1,11 @@
+import netlify from '@astrojs/netlify';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
-import vercel from '@astrojs/vercel';
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  // ...
   vite: {
     plugins: [tailwindcss()],
   },
@@ -20,14 +19,9 @@ export default defineConfig({
       experimentalReactChildren: true,
     }),
   ],
-  // @see hosting with vercel https://docs.astro.build/en/guides/integrations-guide/vercel/
+  // @see hosting with netlify https://docs.astro.build/en/guides/integrations-guide/netlify/
   output: 'static',
-  adapter: vercel({
-    imageService: true,
-    devImageService: 'squoosh',
-    isr: true,
-    maxDuration: 10, // max # seconds a serverless function can run (to be safe)
-  }),
+  adapter: netlify(),
   site: 'https://openapi.tools',
   trailingSlash: 'never',
 });

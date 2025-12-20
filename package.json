@@ -22,10 +22,10 @@
   "dependencies": {
     "@algolia/autocomplete-core": "^1.19.4",
     "@astrojs/check": "^0.9.6",
+    "@astrojs/netlify": "^6.6.3",
     "@astrojs/react": "^4.4.2",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/ts-plugin": "^1.10.6",
-    "@astrojs/vercel": "^9.0.2",
     "@headlessui/react": "^2.2.9",
     "@markdoc/markdoc": "^0.5.4",
     "@sindresorhus/slugify": "^3.0.0",
