@@ -89,6 +89,18 @@
   v3: true
   v3_1: true
 
+  - name: APIQuality
+  category: monitoring
+  language: SaaS
+  description:
+    A low code tool for APIOps. Integrates all API Tools in one single platform, so you can develop your API-First cycle easily.
+    Create API Templates with AI, simulate APIs with mocking tools and test your APIs before deployment. 
+  link: https://apiquality.io
+  github: https://github.com/APIQuality-io
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Assertible
   category: testing
   language: SaaS
