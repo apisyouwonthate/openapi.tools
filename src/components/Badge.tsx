@@ -54,6 +54,9 @@ const Badge: React.FC<BadgeProps> = ({
       badgeClasses = 'bg-pink-100 text-pink-700';
       dotClasses = 'fill-pink-500';
       break;
+    default:
+      badgeClasses = 'bg-gray-100 text-gray-600';
+      dotClasses = 'fill-gray-400';
   }
 
   return (
