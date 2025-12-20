@@ -107,10 +107,10 @@ export function Navigation({
             </Link>{' '}
             and hosted on{' '}
             <Link
-              href="https://vercel.com"
+              href="https://www.netlify.com"
               className="font-medium text-emerald-600 hover:underline"
             >
-              Vercel
+              Netlify
             </Link>
             .
           </div>
