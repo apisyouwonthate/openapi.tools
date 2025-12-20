@@ -1,14 +1,17 @@
 ---
 import Layout from './Layout.astro';
+import PostHogLayout from './PostHogLayout.astro';
 
 const { title } = Astro.props;
 ---
 
-<Layout title={title}>
-  <div
-    class="prose mx-auto dark:prose-invert md:prose-lg lg:prose-xl prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
-  >
-    <h1>{title}</h1>
-    <slot />
-  </div>
-</Layout>
+<PostHogLayout>
+  <Layout title={title}>
+    <div
+      class="prose dark:prose-invert md:prose-lg lg:prose-xl prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90 mx-auto"
+    >
+      <h1>{title}</h1>
+      <slot />
+    </div>
+  </Layout>
+</PostHogLayout>

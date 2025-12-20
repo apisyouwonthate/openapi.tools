@@ -5,37 +5,39 @@ import Link from '@/components/Link';
 import PageHeader from '@/components/PageHeader.astro';
 import { QuickLink } from '@/components/QuickLink';
 import Layout from '../layouts/Layout.astro';
+import PostHogLayout from '../layouts/PostHogLayout.astro';
 
 const allCategories = await getCollection('categories');
 ---
 
-<Layout title="Tools for working with OpenAPI">
+<PostHogLayout>
+  <Layout title="Tools for working with OpenAPI">
+    <PageHeader title="Categories" description="Tools for working with OpenAPI">
+      <p class="prose dark:prose-invert">
+        There are many tools and resources available for working with OpenAPI.
+        We&apos;ve organized them into categories to help you find what you're
+        looking for. If you're looking for a specific tool or resource, you can
+        use the search bar at the top of the page.
+      </p>
+      <p class="prose dark:prose-invert">
+        If you feel like something is missing, check out our instructions on how
+        to
+        <Link className="font-medium hover:underline" href="/contribute"
+          >contributing</Link
+        >.
+      </p>
+    </PageHeader>
 
-  <PageHeader title="Categories" description="Tools for working with OpenAPI">
-    <p class="prose dark:prose-invert">
-      There are many tools and resources available for working with OpenAPI.
-      We&apos;ve organized them into categories to help you find what you're
-      looking for. If you're looking for a specific tool or resource, you can
-      use the search bar at the top of the page.
-    </p>
-    <p class="prose dark:prose-invert">
-      If you feel like something is missing, check out our instructions on how
-      to
-      <Link className="font-medium hover:underline" href="/contribute"
-        >contributing</Link
-      >.
-    </p>
-  </PageHeader>
-
-  <div class="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-    {
-      allCategories.map((category) => (
-        <QuickLink
-          href={`/categories/${category.slug}`}
-          title={category.data.name}
-          body={category.data.description}
-        />
-      ))
-    }
-  </div>
-</Layout>
+    <div class="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+      {
+        allCategories.map((category) => (
+          <QuickLink
+            href={`/categories/${category.slug}`}
+            title={category.data.name}
+            body={category.data.description}
+          />
+        ))
+      }
+    </div>
+  </Layout>
+</PostHogLayout>

@@ -7,6 +7,7 @@ import ExternalArticle from '@/components/ExternalArticle';
 import Languages from '@/components/Languages';
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
+import PostHogLayout from '@/layouts/PostHogLayout.astro';
 import enrichFeaturedArticles from '@/utils/enrichFeaturedArticles';
 import {
   createBreadcrumbSchema,
@@ -37,70 +38,72 @@ const { Content } = await tool.render();
 const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
 ---
 
-<Layout
-  title={tool.data.name}
-  description={tool.data.description}
-  ogImage={`https://openapi.tools/tools/${slug}.og.png`}
->
-  {/* Breadcrumb Structured Data */}
-  <script
-    is:inline
-    slot="head"
-    type="application/ld+json"
-    set:html={serializeSchema(
-      createBreadcrumbSchema([
-        { name: 'Home', url: 'https://openapi.tools/' },
-        { name: 'Tools', url: 'https://openapi.tools/' },
-        { name: tool.data.name, url: `https://openapi.tools/tools/${slug}` },
-      ])
-    )}
-  />
-  {/* SoftwareApplication Structured Data */}
-  <script
-    is:inline
-    slot="head"
-    type="application/ld+json"
-    set:html={serializeSchema(
-      createSoftwareApplicationSchema({
-        name: tool.data.name,
-        description: tool.data.description,
-        link: tool.data.link,
-        slug: slug as string,
-      })
-    )}
-  />
-  <PageHeader
+<PostHogLayout>
+  <Layout
     title={tool.data.name}
     description={tool.data.description}
-    url={tool.data.link}
-    isSponsor={!!tool?.data.sponsorship}
+    ogImage={`https://openapi.tools/tools/${slug}.og.png`}
   >
-    {/* render the body of the markdown file for this category */}
-    <div
+    {/* Breadcrumb Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createBreadcrumbSchema([
+          { name: 'Home', url: 'https://openapi.tools/' },
+          { name: 'Tools', url: 'https://openapi.tools/' },
+          { name: tool.data.name, url: `https://openapi.tools/tools/${slug}` },
+        ])
+      )}
+    />
+    {/* SoftwareApplication Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createSoftwareApplicationSchema({
+          name: tool.data.name,
+          description: tool.data.description,
+          link: tool.data.link,
+          slug: slug as string,
+        })
+      )}
+    />
+    <PageHeader
+      title={tool.data.name}
+      description={tool.data.description}
+      url={tool.data.link}
+      isSponsor={!!tool?.data.sponsorship}
+    >
+      {/* render the body of the markdown file for this category */}
+      <div
+        class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
+      >
+        <Languages languages={languages} />
+      </div>
+    </PageHeader>
+    <main
       class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
     >
-      <Languages languages={languages} />
-    </div>
-  </PageHeader>
-  <main
-    class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
-  >
-    <hr class="my-4" />
+      <hr class="my-4" />
 
-    {
-      enrichedFeaturedArticles && (
-        <>
-          <Badge>Featured Articles</Badge>
+      {
+        enrichedFeaturedArticles && (
+          <>
+            <Badge>Featured Articles</Badge>
 
-          <section class="md-grid-cols-2 grid gap-4 lg:grid-cols-3">
-            {enrichedFeaturedArticles.map((article) => (
-              <ExternalArticle {...article.og} />
-            ))}
-          </section>
-        </>
-      )
-    }
+            <section class="md-grid-cols-2 grid gap-4 lg:grid-cols-3">
+              {enrichedFeaturedArticles.map((article) => (
+                <ExternalArticle {...article.og} />
+              ))}
+            </section>
+          </>
+        )
+      }
 
-    <Content />
-  </main>
-</Layout>
+      <Content />
+    </main>
+  </Layout>
+</PostHogLayout>
