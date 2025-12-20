@@ -3,6 +3,9 @@
 
 @plugin "@tailwindcss/typography";
 
+/* Enable class-based dark mode (for manual theme switcher) */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Font sizes */
   --font-size-xs: 0.75rem;
