@@ -7,7 +7,7 @@ categories:
   - servers
 link: https://huma.rocks/
 languages:
-  go: true
+  golang: true
 repo: https://github.com/danielgtaylor/huma
 openApiVersions:
   v2: false

@@ -6,7 +6,7 @@ categories:
   - schema-validators
 link: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
 languages:
-  go: true
+  golang: true
 repo: https://github.com/RHEcosystemAppEng/go-openapi-spec-code-diffs
 openApiVersions:
   v2: false

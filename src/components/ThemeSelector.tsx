@@ -37,7 +37,7 @@ export function ThemeSelector(
       document.documentElement.classList.toggle('dark', theme === 'dark');
       localStorage?.setItem('theme', theme);
     }
-  });
+  }, [theme]);
 
   return (
     <Listbox as="div" value={theme} onChange={setTheme} {...props}>

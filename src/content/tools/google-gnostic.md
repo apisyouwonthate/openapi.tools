@@ -4,7 +4,7 @@ description: Compile OpenAPI descriptions into equivalent Protocol Buffer repres
 categories:
   - converters
 languages:
-  go: true
+  golang: true
 repo: https://github.com/googleapis/gnostic
 openApiVersions:
   v2: true

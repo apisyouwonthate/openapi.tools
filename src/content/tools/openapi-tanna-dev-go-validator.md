@@ -4,7 +4,7 @@ description: A Go library for making it easier to validate that your OpenAPI con
 categories:
   - data-validators
 languages:
-  go: true
+  golang: true
 repo: https://gitlab.com/jamietanna/httptest-openapi/
 openApiVersions:
   v2: false

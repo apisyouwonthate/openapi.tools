@@ -1,5 +1,5 @@
 ---
-name: // Speakeasy
+name: Speakeasy
 description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
 categories:
   - sdk-generators
@@ -13,7 +13,7 @@ link: https://www.speakeasy.com/
 languages:
   typescript: true
   python: true
-  go: true
+  golang: true
   java: true
   terraform: true
   csharp: true

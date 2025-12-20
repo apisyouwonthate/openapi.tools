@@ -6,7 +6,7 @@ categories:
   - misc
 link: https://github.com/deepmap/oapi-codegen
 languages:
-  go: true
+  golang: true
 repo: https://github.com/deepmap/oapi-codegen
 openApiVersions:
   v2: false

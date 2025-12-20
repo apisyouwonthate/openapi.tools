@@ -4,7 +4,7 @@ description: Golang module for deep comparison of two OpenAPI specifications. Av
 categories:
   - misc
 languages:
-  go: true
+  golang: true
 repo: https://github.com/tufin/oasdiff
 openApiVersions:
   v2: false

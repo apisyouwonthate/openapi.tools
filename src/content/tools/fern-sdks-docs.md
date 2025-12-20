@@ -10,7 +10,7 @@ languages:
   typescript: true
   java: true
   python: true
-  go: true
+  golang: true
   ruby: true
   csharp: true
   php: true

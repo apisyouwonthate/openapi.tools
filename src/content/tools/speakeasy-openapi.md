@@ -10,7 +10,7 @@ categories:
   - misc
 link: https://www.speakeasy.com/
 languages:
-  go: true
+  golang: true
   cli: true
 repo: https://github.com/speakeasy-api/openapi
 openApiVersions:

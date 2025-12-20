@@ -9,7 +9,7 @@ categories:
   - gateways
 link: https://pb33f.io/wiretap/
 languages:
-  go: true
+  golang: true
 repo: https://github.com/pb33f/wiretap
 openApiVersions:
   v2: true

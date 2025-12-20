@@ -5,7 +5,7 @@ categories:
   - docs
 link: https://zudoku.dev?utm_source=openapitools&ref=openapitools
 languages:
-  typesscript: true
+  typescript: true
 repo: https://github.com/zuplo/zudoku
 openApiVersions:
   v2: false

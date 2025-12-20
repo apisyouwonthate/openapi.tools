@@ -14,7 +14,7 @@ function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
       strokeWidth="2"
       strokeLinecap="round"
       stroke="currentColor"
-      className="text-whit fill-white stroke-white"
+      className="text-white fill-white stroke-white"
       {...props}
     >
       <path d="M4 7h16M4 12h16M4 17h16" />

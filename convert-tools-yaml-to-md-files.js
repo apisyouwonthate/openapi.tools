@@ -14,6 +14,7 @@ const toolSchema = z.object({
     v2: z.boolean().optional(),
     v3: z.boolean().optional(),
     v3_1: z.boolean().optional(),
+    v3_2: z.boolean().optional(),
     v4: z.boolean().optional(),
   }),
   sponsorship: z
@@ -128,6 +129,7 @@ const convertToolToMarkdown = (tool) => {
     .replace(/\s*&\s*/gi, ',') // replace the standalone word "&" with a comma
     .replace(/\s*\+\s*/gi, ',') // replace the standalone word "+" with a comma
     .replace(/\.{3}/gi, '') // delete "..."
+    .replace(/\bgo\b/gi, 'golang') // standardize "go" to "golang"
     .split(',')
     .forEach((lang) => {
       // finally, split the string into an array and remove whitespace
@@ -146,6 +148,7 @@ const convertToolToMarkdown = (tool) => {
     v2: versions.v2 || false,
     v3: versions.v3 || false,
     v3_1: versions.v3_1 || false,
+    v3_2: versions.v3_2 || false,
     v4: false, // Assuming v4 is false by default since it's not in the original data
   };
 

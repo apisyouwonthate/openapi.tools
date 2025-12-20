@@ -11,7 +11,6 @@ export default {
     'prettier-plugin-astro',
     'prettier-plugin-tailwindcss',
   ],
-  tailwindConfig: './tailwind.config.js',
   importOrder: [
     '^(react/(.*)$)|^(react$)|^(react-native(.*)$)',
     '^(next/(.*)$)|^(next$)',

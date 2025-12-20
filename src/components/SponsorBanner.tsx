@@ -16,7 +16,7 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
     }, 1000 * SPONSOR_ROTATION_IN_SECONDS);
 
     return () => clearInterval(interval);
-  });
+  }, [sponsor, sponsors]);
 
   if (sponsors?.length === 0) return null;
 
@@ -36,7 +36,8 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
           linkPlacementDescription: 'rotating sponsor banner',
         })}
         target="_blank"
-        className={clsx('roundex-xl flex h-16 w-full')}
+        rel="noopener noreferrer"
+        className={clsx('rounded-xl flex h-16 w-full')}
       >
         <div
           className={clsx(

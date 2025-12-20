@@ -7,7 +7,7 @@ categories:
   - docs
 link: https://pb33f.io/openapi-changes
 languages:
-  go: true
+  golang: true
 repo: https://github.com/pb33f/openapi-changes
 openApiVersions:
   v2: true

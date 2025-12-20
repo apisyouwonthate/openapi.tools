@@ -8,7 +8,7 @@ categories:
 link: https://rest.sh/
 languages:
   cli: true
-  go: true
+  golang: true
 repo: https://github.com/danielgtaylor/restish
 openApiVersions:
   v2: false

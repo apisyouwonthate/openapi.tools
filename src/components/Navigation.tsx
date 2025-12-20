@@ -100,7 +100,7 @@ export function Navigation({
             >
               community-driven and OSS
             </Link>
-            , built wih{' '}
+            , built with{' '}
             <Link
               href="https://astro.build"
               className="font-medium text-emerald-600 hover:underline"

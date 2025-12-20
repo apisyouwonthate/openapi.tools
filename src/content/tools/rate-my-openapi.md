@@ -7,7 +7,7 @@ categories:
   - security
 link: https://ratemyopenapi.com
 languages:
-  go: true
+  golang: true
 repo: https://github.com/zuplo/rate-my-openapi
 openApiVersions:
   v2: false

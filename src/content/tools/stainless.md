@@ -7,7 +7,7 @@ link: https://stainlessapi.com
 languages:
   typescript: true
   python: true
-  go: true
+  golang: true
   java: true
   kotlin: true
 repo: https://github.com/stainless-api/stl-api
