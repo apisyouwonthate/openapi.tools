@@ -47,7 +47,7 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
         <div className="mt-2 flex items-center gap-x-2 text-xs">
           {postDate && (
             <time
-              dateTime={postDate.getUTCDate().toString()}
+              dateTime={postDate.toISOString()}
               className="text-gray-500"
             >
               {postDate.toLocaleDateString()}
@@ -67,15 +67,11 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
         </div>
         <div className="relative mt-8 flex items-center gap-x-4">
           {author && (
-            <>
-              <div className="text-sm leading-6">
-                <p className="font-semibold text-gray-900">
-                  <span className="absolute inset-0" />
-                  {author}
-                </p>
-                <p className="text-gray-600">{author}</p>
-              </div>
-            </>
+            <div className="text-sm leading-6">
+              <p className="font-semibold text-gray-900">
+                {author}
+              </p>
+            </div>
           )}
         </div>
       </div>
