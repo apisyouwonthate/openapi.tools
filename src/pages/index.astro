@@ -1,5 +1,4 @@
 ---
-import { SEO } from 'astro-seo';
 import { getCollection } from 'astro:content';
 
 import Link from '@/components/Link';
@@ -11,7 +10,6 @@ const allCategories = await getCollection('categories');
 ---
 
 <Layout title="Tools for working with OpenAPI">
-  <SEO title="Categories" />
 
   <PageHeader title="Categories" description="Tools for working with OpenAPI">
     <p class="prose dark:prose-invert">

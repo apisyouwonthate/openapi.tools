@@ -44,6 +44,7 @@
     "react-highlight-words": "^0.21.0",
     "satori": "^0.18.3",
     "satori-html": "^0.3.2",
+    "schema-dts": "^1.1.5",
     "sharp": "^0.34.0",
     "tailwind-merge": "^3.4.0",
     "tw-animate-css": "^1.3.0",

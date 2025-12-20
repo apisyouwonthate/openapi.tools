@@ -6,6 +6,11 @@ import PageHeader from '@/components/PageHeader.astro';
 import { DataTable } from '@/components/table/DataTable';
 import { ToolColumns } from '@/components/table/ToolColumns';
 import Layout from '@/layouts/Layout.astro';
+import {
+  createBreadcrumbSchema,
+  createCollectionPageSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
 
 // 1. Generate a new path for every collection entry
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -70,7 +75,41 @@ const toolsData = tools.map((tool) => ({
 }));
 ---
 
-<Layout title={category.data.name} description={category.data.description}>
+<Layout
+  title={category.data.name}
+  description={category.data.description}
+  ogImage={`https://openapi.tools/categories/${slug}.og.png`}
+>
+  {/* Breadcrumb Structured Data */}
+  <script
+    is:inline
+    slot="head"
+    type="application/ld+json"
+    set:html={serializeSchema(
+      createBreadcrumbSchema([
+        { name: 'Home', url: 'https://openapi.tools/' },
+        { name: 'Categories', url: 'https://openapi.tools/' },
+        {
+          name: category.data.name,
+          url: `https://openapi.tools/categories/${slug}`,
+        },
+      ])
+    )}
+  />
+  {/* CollectionPage Structured Data */}
+  <script
+    is:inline
+    slot="head"
+    type="application/ld+json"
+    set:html={serializeSchema(
+      createCollectionPageSchema({
+        name: category.data.name,
+        description: category.data.description,
+        slug: slug as string,
+        tools: tools.map((t) => ({ name: t.data.name, slug: t.slug })),
+      })
+    )}
+  />
   <PageHeader
     title={category.data.name}
     description={category.data.description}

@@ -9,6 +9,12 @@ import { Navigation, type NavigationItems } from '@/components/Navigation';
 import PostHog from '@/components/PostHog.astro';
 import SponsorBanner from '@/components/SponsorBanner';
 
+import {
+  createOrganizationSchema,
+  createWebSiteSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
+
 import '@/styles/base.css';
 
 type Props = {
@@ -133,6 +139,12 @@ const categories: NavigationItems = [
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
 
+    <!-- Preconnect hints for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans:400,700"
       rel="stylesheet"
@@ -188,18 +200,12 @@ const categories: NavigationItems = [
     <script
       is:inline
       type="application/ld+json"
-      set:html={JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'WebSite',
-        name: 'OpenAPI.tools',
-        url: 'https://openapi.tools',
-        description: defaultDescription,
-        publisher: {
-          '@type': 'Organization',
-          name: 'APIs You Won\'t Hate',
-          url: 'https://apisyouwonthate.com',
-        },
-      })}
+      set:html={serializeSchema(createWebSiteSchema(defaultDescription))}
+    />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={serializeSchema(createOrganizationSchema())}
     />
     <script
       src="https://cdn.usefathom.com/script.js"
@@ -207,6 +213,8 @@ const categories: NavigationItems = [
       defer
       is:inline></script>
     <PostHog />
+    {/* Named slot for page-specific structured data */}
+    <slot name="head" />
   </head>
 
   <body class="flex min-h-full bg-white dark:bg-slate-900">

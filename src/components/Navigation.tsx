@@ -66,9 +66,7 @@ export function Navigation({
           ))}
         </ul>
 
-        <footer
-          className={clsx('mt-6 flex flex-col gap-2', linkStandardColors)}
-        >
+        <footer className="mt-6 flex flex-col gap-2 text-slate-500 dark:text-slate-400">
           <div>
             &copy; {new Date().getFullYear()}{' '}
             <Link
