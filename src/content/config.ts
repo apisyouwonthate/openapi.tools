@@ -62,6 +62,30 @@ const ToolSchema = z.object({
 
 export type Tool = z.infer<typeof ToolSchema>;
 
+const CollectionFiltersSchema = z.object({
+  // Language filter - tool.languages[key] === true
+  languages: z.array(z.string()).optional(),
+  // Version filter - requires specific version support
+  requireVersions: z
+    .array(z.enum(['v2', 'v3', 'v3_1', 'v3_2', 'v4']))
+    .optional(),
+  // Legacy filter - excludes v3.1+ support
+  legacy: z.boolean().optional(),
+  // Open source filter - must have repo URL
+  requireRepo: z.boolean().optional(),
+  // SaaS filter - tool.languages.saas === true
+  saas: z.boolean().optional(),
+});
+
+const CollectionSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+  filters: CollectionFiltersSchema.optional(),
+});
+
+export type Collection = z.infer<typeof CollectionSchema>;
+export type CollectionFilters = z.infer<typeof CollectionFiltersSchema>;
+
 // 2. Define your collection(s)
 const bannerSponsorsCollection = defineCollection({
   type: 'content',
@@ -78,10 +102,16 @@ const toolsCollection = defineCollection({
   schema: ToolSchema,
 });
 
+const curatedCollectionsCollection = defineCollection({
+  type: 'content',
+  schema: CollectionSchema,
+});
+
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   categories: categoriesCollection,
   tools: toolsCollection,
   bannerSponsors: bannerSponsorsCollection,
+  'curated-collections': curatedCollectionsCollection,
 };

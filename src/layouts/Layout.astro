@@ -40,6 +40,7 @@ const pageOgImage = ogImage || defaultOgImage;
 const isHomePage = Astro.url.pathname === '/';
 
 const allCategories = await getCollection('categories');
+const allCollections = await getCollection('curated-collections');
 const bannerSponsorsCollection = await getCollection('banner-sponsors');
 const bannerSponsors = bannerSponsorsCollection.map((sponsor) => sponsor.data);
 
@@ -52,6 +53,14 @@ const categories: NavigationItems = [
       { title: 'Contributing', href: '/contributing' },
       { title: 'Sponsors', href: '/sponsor' },
     ],
+  },
+  {
+    title: 'Collections',
+    links: allCollections.map((collection) => ({
+      title: collection.data.name,
+      href: `/collections/${collection.slug}`,
+      description: collection.data.description,
+    })),
   },
   {
     title: 'OpenAPI Tool Categories',
