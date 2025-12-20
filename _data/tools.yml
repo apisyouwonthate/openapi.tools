@@ -2578,6 +2578,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: apigen-ts
   category:
@@ -2779,6 +2780,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: Fitting
   category:
@@ -3038,6 +3040,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: openapi-schema-validator
   category: description-validators
