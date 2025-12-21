@@ -1259,6 +1259,24 @@
   v3: true
   v3_1: true
 
+- name: clientele
+  category: auto-generators
+  github: https://github.com/phalt/clientele
+  language: Python
+  description: Clientele lets you generate fully-typed, pythonic HTTP API Clients using an OpenAPI schema.
+  v2: false
+  v3: true
+  v3_1: true
+
+- name: cicerone
+  category: parsers
+  github: https://github.com/phalt/cicerone
+  language: Python
+  description: Cicerone parses OpenAPI schemas into Pydantic models for introspection and traversal.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: mondrian-framework
   category:
     - server
