@@ -2,9 +2,8 @@
 import type { GetStaticPaths } from 'astro';
 import { getCollection, getEntry } from 'astro:content';
 
+import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
 import PageHeader from '@/components/PageHeader.astro';
-import { DataTable } from '@/components/table/DataTable';
-import { ToolColumns } from '@/components/table/ToolColumns';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
 import {
@@ -66,7 +65,6 @@ const nonSponsoredTools = allTools
   });
 
 const tools = [...sponsoredTools, ...nonSponsoredTools];
-const toolCount = tools.length;
 const toolsData = tools.map((tool) => ({
   category: category.data,
   tool: tool.data,
@@ -127,11 +125,13 @@ const toolsData = tools.map((tool) => ({
       class="prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300 w-full"
     >
       <h2 class="prose mb-4 text-2xl font-bold">
-        {toolCount}
         {category.data.name}
       </h2>
       <section class="prose w-full max-w-none">
-        <DataTable data={toolsData} columns={ToolColumns} />
+        <FilterableToolsList
+          client:load
+          tools={toolsData}
+        />
       </section>
     </main>
   </Layout>

@@ -2,9 +2,8 @@
 import type { GetStaticPaths } from 'astro';
 import { getCollection, getEntry } from 'astro:content';
 
+import { FilterableCollectionView } from '@/components/filters/FilterableCollectionView';
 import PageHeader from '@/components/PageHeader.astro';
-import { DataTable } from '@/components/table/DataTable';
-import { CollectionToolColumns } from '@/components/table/CollectionToolColumns';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
 import type { CollectionFilters } from '@/content/config';
@@ -96,6 +95,18 @@ const categoriesWithTools: CategoryWithTools[] = allCategories
   .sort((a, b) => a.category.data.name.localeCompare(b.category.data.name));
 
 const totalTools = filteredTools.length;
+
+// Transform data for FilterableCollectionView
+const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
+  id: category.id,
+  name: category.data.name,
+  description: category.data.description,
+  tools: tools.map((tool) => ({
+    tool: tool.data,
+    slug: tool.slug,
+    category: category.data,
+  })),
+}));
 ---
 
 <PostHogLayout>
@@ -109,37 +120,14 @@ const totalTools = filteredTools.length;
       >
         <Content />
       </div>
-      <p class="mt-4 text-slate-600 dark:text-slate-400">
-        Found <strong>{totalTools}</strong> tools across <strong
-          >{categoriesWithTools.length}</strong
-        > categories.
-      </p>
     </PageHeader>
 
-    <main class="w-full space-y-12">
-      {
-        categoriesWithTools.map(({ category, tools }) => (
-          <section>
-            <h2 class="mb-4 text-2xl font-bold text-slate-800 dark:text-slate-200">
-              {category.data.name}
-              <span class="ml-2 text-base font-normal text-slate-500">
-                ({tools.length} tools)
-              </span>
-            </h2>
-            <p class="mb-4 text-slate-600 dark:text-slate-400">
-              {category.data.description}
-            </p>
-            <DataTable
-              data={tools.map((tool) => ({
-                tool: tool.data,
-                slug: tool.slug,
-                category: category.data,
-              }))}
-              columns={CollectionToolColumns}
-            />
-          </section>
-        ))
-      }
+    <main class="w-full">
+      <FilterableCollectionView
+        client:load
+        categoriesWithTools={categoryGroups}
+        totalToolCount={totalTools}
+      />
     </main>
   </Layout>
 </PostHogLayout>
