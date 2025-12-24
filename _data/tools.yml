@@ -772,6 +772,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: Api-Fiddle
   category: gui-editors
@@ -1373,6 +1374,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: openapi-validator-middleware
   category:
