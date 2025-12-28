@@ -1518,19 +1518,13 @@
 - name: kin-openapi
   category:
     - parsers
-  github: https://github.com/getkin/kin-openapi
-  language: Go
-  description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
-  v3: true
-  v2: true
-
-- name: kin-openapi
-  category:
     - data-validators
   github: https://github.com/getkin/kin-openapi
   language: Go
   description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
+  v2: true
   v3: true
+  v3_1_link: https://github.com/getkin/kin-openapi/pull/1102
 
 - name: openapi.tanna.dev/go/validator
   category:
