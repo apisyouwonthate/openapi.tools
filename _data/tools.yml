@@ -75,7 +75,7 @@
   v3: true
   v3_1: true
 
-  - name: APIQuality
+- name: APIQuality
   category: monitoring
   language: SaaS
   description:
