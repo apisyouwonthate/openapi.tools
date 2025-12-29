@@ -130,6 +130,19 @@
   v2: true
   v3: true
 
+- name: Bruno
+  category:
+    - gui-editors
+    - testing
+    - converters
+    - auto-generators
+    - text-editors
+  link: https://usebruno.com
+  description: Bruno is a local, git-native, open source API client. Collections are authored as text files on your system allowing Git operations to be performed on them and ultimately have collections stored and versioned alongside your spec and codebase.
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: CodeMirror OAS support
   category: 
     - text-editors
