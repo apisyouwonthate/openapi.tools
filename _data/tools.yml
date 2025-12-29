@@ -29,6 +29,17 @@
   v2: false
   v3: true
 
+- name: APIdog
+  category:
+    - documentation
+    - monitoring
+    - testing
+  link: https://apidog.com/
+  language: SaaS
+  description: A comprehensive, all-in-one API development platform that revolutionizes how teams design, test, and document APIs. Built for modern development workflows, Apidog combines powerful API documentation generation, robust testing capabilities, and intelligent mock servers into a single, intuitive platform.
+  v3_0: true
+  v3_1: true
+
 - name: APIMatic Developer Experience Portal
   category: documentation
   link: https://www.apimatic.io/product/publish
@@ -64,6 +75,18 @@
   v3: true
   v3_1: true
 
+  - name: APIQuality
+  category: monitoring
+  language: SaaS
+  description:
+    A low code tool for APIOps. Integrates all API Tools in one single platform, so you can develop your API-First cycle easily.
+    Create API Templates with AI, simulate APIs with mocking tools and test your APIs before deployment. 
+  link: https://apiquality.io
+  github: https://github.com/APIQuality-io
+  v2: true
+  v3: true
+  v3_1: true
+
 - name: Assertible
   category: testing
   language: SaaS
@@ -82,6 +105,20 @@
   description: "Generate OpenAPI 3.0 specification from HAR."
   v3: true
 
+- name: Ballerina OpenAPI tool
+  category:
+    - auto-generators
+    - converters
+    - sdk
+    - server
+  link: https://ballerina.io/learn/openapi-tool/
+  github: https://github.com/ballerina-platform/openapi-tools
+  language: Java, Ballerina
+  description: The Ballerina OpenAPI tool enables the generation of Ballerina client and service skeleton from provided OpenAPI descriptions and facilitates the creation of OpenAPI v3.x descriptions for given Ballerina services.
+  v2: true
+  v3: true
+  v3_1: true
+  
 - name: BOATS
   category: dsl
   link: https://www.npmjs.com/package/boats
@@ -91,6 +128,30 @@
     BOATS allows for larger teams to contribute to multi-file OpenAPI definitions by writing Nunjucks tpl syntax in YAML with a few
     important helpers to ensure stricter consistency, eg operationId: <$ uniqueOpId() $>.
   v2: true
+  v3: true
+
+- name: Bruno
+  category:
+    - gui-editors
+    - testing
+    - converters
+    - auto-generators
+    - text-editors
+  link: https://usebruno.com
+  description: Bruno is a local, git-native, open source API client. Collections are authored as text files on your system allowing Git operations to be performed on them and ultimately have collections stored and versioned alongside your spec and codebase.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: CodeMirror OAS support
+  category: 
+    - text-editors
+    - miscellaneous
+  language: TypeScript
+  link: https://evitadb.io/download/single-file-playground.html
+  github: https://github.com/ruzito/oas-aware-rest-lang-support
+  description:
+    Plugin for text editor https://codemirror.net/ running in your browser that can fetch and parse your OpenAPI schema definition and provide auto-completion support (for large and complex JSON message payloads), error highlighting and access to schema documentation. It is capable of parsing megabytes of OpenAPI schema definition in a second and providing auto-completion support in milliseconds. The work is an MVP of a plugin with basic functionality made as part of a master thesis at ČVUT.
   v3: true
 
 - name: Connexion
@@ -121,6 +182,16 @@
   v2: true
   v3: true
 
+- name: FastMCP
+  category:
+    - server
+    - auto-generators
+  link: https://gofastmcp.com/integrations/openapi#openapi-fastmcp
+  github: https://github.com/jlowin/fastmcp
+  description: FastMCP can automatically generate an MCP server from an OpenAPI specification. Users only need to provide an OpenAPI specification (3.0 or 3.1) and an API client.
+  v2: false
+  v3: true
+
 - name: Framna Docs
   category: documentation
   link: https://github.com/shapehq/framna-docs/
@@ -149,6 +220,28 @@
   v2: true
   v3: true
 
+- name: Apache APISIX
+  category:
+    - gateway
+  link: https://github.com/apache/apisix
+  language: Lua
+  description:
+    APISIX API Gateway offers a variety of traffic management features, including load balancing, dynamic upstream, canary release, circuit breaking, authentication, observability, and more.
+  v2: true
+  v3: true
+  v3_1: true
+
+- name: API7 Enterprise Edition
+  category:
+    - documentation
+    - gateway
+  link: https://api7.ai/demos
+  language: Lua
+  description:
+    A comprehensive API lifecycle management solution based on Apache APISIX, featuring a Developer Portal for onboarding.
+  v2: true
+  v3: true
+  v3_1: true
 - name: Membrane API Gateway
   category:
     - gateway
@@ -186,6 +279,18 @@
   v2: true
   v3: false
   v3_1: false
+
+- name: "OpenApi4s"
+  category:
+    - server
+    - sdk
+  language: Scala
+  link: https://github.com/sake92/openapi4s
+  github: https://github.com/sake92/openapi4s
+  description: >
+    OpenApi generators for Scala. Direct code generation, minimally intrusive and with automatic refactoring.
+  v3: true
+  v3_1: true
 
 - name: Rage
   category:
@@ -241,7 +346,7 @@
   description: Generate API documentation for humans from your Laravel codebase.
   v2: false
   v3: true
-  v3_1: false
+  v3_1: true
 
 - name: Supermodel
   category: dsl
@@ -326,6 +431,16 @@
   description: Golang module for deep comparison of two OpenAPI specifications. Available also as a command-line.
   v3: true
   v3_1: false
+  
+- name: oas_rails
+  category:
+    - documentation
+    - auto-generators
+  link: https://github.com/a-chacon/oas_rails
+  language: Ruby
+  description:
+    Rails engine for generate automatic interactive documentation in your Rails HTTP APIs. 
+  v3_1: true
 
 - name: oas-patch
   category: miscellaneous
@@ -351,6 +466,17 @@
   link: https://plugins.jetbrains.com/plugin/19889-openapi-crud-wizard
   description: This wizard is an IntelliJ Plugin to create a new OpenAPI document including all CRUD operations based only on a Yaml object. No knowledge about OpenAPI specification needed.
   v3: true
+  v3_1: true
+
+- name: Sourcemeta JSON Schema Standard Library
+  category:
+    - miscellaneous
+  link: https://github.com/sourcemeta/std
+  language: JSON
+  github: https://github.com/sourcemeta/std
+  description: 'A growing collection of battle-tested schemas (ISO, IETF, IEC, W3C, etc) to power your next API spec, so you never have to bother with JSON Schema again'
+  v2: false
+  v3: false
   v3_1: true
 
 - name: OAS RAML Converter
@@ -396,6 +522,17 @@
     Simply provide your schema file in JSON or YAML, then sit back and enjoy the documentation.
   v2: true
   v3: true
+
+- name: Openapiviewer
+  category:
+    - documentation
+  link: https://www.openapiviewer.com
+  language: SaaS
+  description:
+    Upload a openapi.json and view it online via a shareable link. Nothing else. Uses OpenAPI Explorer under the hood.
+  v2: false
+  v3: true
+  v3_1: true
 
 - name: oas3-api-snippet-enricher
   category: documentation
@@ -500,11 +637,11 @@
   language: Java
   github: https://github.com/OpenAPITools/openapi-generator
   description:
-    A template-driven engine to generate documentation, API clients and
-    server stubs in different languages by parsing your OpenAPI Description (community-driven
-    fork of swagger-codegen)
+    A template-driven engine to generate API clients (a.k.a SDKs) and server stubs in over 50
+    languages (Go, Groovy, Java, Kotlin, PHP, Python, Ruby, Rust, Scala, TypeScript, etc.)
   v2: true
   v3: true
+  v3_1: true
 
 - name: OpenAPI JSON Schema Generator
   category:
@@ -637,6 +774,7 @@
     fully dedicated to OpenAPI-based APIs.
   v2: true
   v3: true
+  v3_!: true
 
 - name: SwaggerHub
   category: text-editors
@@ -648,6 +786,7 @@
     development workflow and centralize their API discovery and consumption.
   v2: true
   v3: true
+  v3_1: true
 
 - name: Redocly VSCode Extension
   category: text-editors
@@ -658,6 +797,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: Api-Fiddle
   category: gui-editors
@@ -899,11 +1039,23 @@
   link: https://github.com/lukeautry/tsoa
   github: https://github.com/lukeautry/tsoa
   description:
-    Creates OpenAPI docs and provides free runtime validation for your
-    Koa, Express, Hapi (and more) services
+    Build OpenAPI-compliant REST APIs using TypeScript and Node, and power runtime validation for
+    Koa, Express, Hapi (and more) services. (v7.0.0 alpha supports OpenAPI v3.1)
   v2: true
   v3: true
+  v3_1: true
 
+- name: // SDK-IT
+  category:
+    - sdk
+    - converters
+  github: https://github.com/januarylabs/sdk-it
+  link: https://github.com/januarylabs/sdk-it
+  language: TypeScript, Dart
+  description: Generates type-safe client SDKs from OpenAPI specifications and creates OpenAPI specs from TypeScript code.
+  v3: true
+  v3_1: true
+  
 - name: "@hey-api/openapi-ts"
   category:
     - converters
@@ -1109,7 +1261,7 @@
   v2: true
   v3: true
   v3_1: true
-  
+
 - name: drf-spectacular
   category: auto-generators
   github: https://github.com/tfranzel/drf-spectacular
@@ -1139,6 +1291,7 @@
   description: "Validate API requests against an OpenAPI schema. Lightweight, focused, and integrates with any framework"
   link: https://github.com/Rhosys/openapi-data-validator.js/blob/main/README.md
   v3: true
+  v3_1: true
 
 - name: express-openapi-validator
   category:
@@ -1246,6 +1399,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: openapi-validator-middleware
   category:
@@ -1373,22 +1527,31 @@
   description: TS Model & utils for OpenAPI 3.0.x contracts
   v3: true
 
-- name: kin-openapi
+- name: OpenAPIKit
   category:
     - parsers
-  github: https://github.com/getkin/kin-openapi
-  language: Go
-  description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
+    - description-validators
+    - dsl
+  language: Swift
+  github: https://github.com/mattpolzin/openapikit
+  link: https://github.com/mattpolzin/openapikit
+  description: Codable Swift types that encode to- and decode from OpenAPI 3.0.x and OpenAPI 3.1.x Documents and their components.
+  v2: false
   v3: true
-  v2: true
+  v3_1: true
+  v3_2: false
+  v3_2_link: https://github.com/mattpolzin/OpenAPIKit/pull/428
 
 - name: kin-openapi
   category:
+    - parsers
     - data-validators
   github: https://github.com/getkin/kin-openapi
   language: Go
   description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
+  v2: true
   v3: true
+  v3_1_link: https://github.com/getkin/kin-openapi/pull/1102
 
 - name: openapi.tanna.dev/go/validator
   category:
@@ -1502,13 +1665,14 @@
     specification according to PHP best practices and your code style standards.
   v3: true
 
-- name: janephp/open-api
+- name: janephp
   category: sdk
   language: PHP
   github: https://github.com/janephp/janephp
   description: Generate a PHP Client API (PSR-7 compatible) given a OpenAPI specification.
   v2: true
   v3: true
+  v3_1_link: https://github.com/janephp/janephp/issues/504
 
 - name: go-swagger
   category:
@@ -1835,6 +1999,16 @@
   v2: true
   v3: true
 
+- name: vitepress-openapi
+  category: documentation
+  language: Vue, TypeScript
+  link: https://vitepress-openapi.vercel.app/
+  github: https://github.com/enzonotario/vitepress-openapi
+  description: Generate VitePress API Docs from OpenAPI specifications.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: VSCode OpenAPI Preview
   category: documentation
   language: TypeScript
@@ -1852,12 +2026,13 @@
   link: https://docs.openapiprocessor.io
   github: https://github.com/openapi-processor
   description: >
-    Generates java interfaces & model classes for Spring Boot (annotation based, MVC & WebFlux) or Micronaut
-    (annotation based) from an OpenAPI yaml description. Provides powerful type mapping capabilities to adjust the
-    generated code. Gradle & Maven support. Playground.
+    Generates java interfaces & DTOs (pojo or record) for Spring Boot (annotation based, MVC & WebFlux) or Micronaut
+    (annotation based) from an OpenAPI YAML/JSON description. Provides powerful type mapping capabilities to adjust 
+    the generated code. Gradle & Maven support. Playground.
   v2: false
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: openapi-processor/openapi-parser
   category:
@@ -1867,11 +2042,12 @@
   link: https://github.com/openapi-processor/openapi-parser
   github: https://github.com/openapi-processor/openapi-parser
   description: >
-    OpenAPI parser with (json schema) validation (currently 3.0 only). Separate apis for OpenAPI 3.0 & 3.1.
-    Easily get resolved $ref objects. Pluggable document reader & json/yaml converter. Minimal dependencies.
+    OpenAPI parser with (JSON schema) validation. Separate APIs for OpenAPI 3.2, 3.1, 3.0.
+    Easily get resolved $ref objects. Pluggable document reader & JSON/YAML converter. Minimal dependencies.
   v2: false
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: ts-oas
   category:
@@ -1959,6 +2135,8 @@
   github: https://github.com/microsoft/typespec
   description: Emit OpenAPI specifications from API descriptions defined in the generic, interoperable, and extensible TypeSpec language.
   v3: true
+  v3_1: true
+  v3_2: true
 
 - name: oa-client
   category:
@@ -1992,6 +2170,15 @@
   description: "Validates embedded JSON-examples in OpenAPI-specs"
   v2: true
   v3: true
+
+- name: openapi-to-hurl
+  category: converters
+  github: https://github.com/ethancarlsson/openapi-to-hurl
+  language: CLI
+  description: "A CLI to convert OpenAPI 3.1 Description Documents to hurl test files"
+  v2: false
+  v3: false
+  v3_1: true
 
 - name: openapi-to-postman
   category: converters
@@ -2376,6 +2563,16 @@
   v3: true
   v3_1: true
 
+- name: GitBook
+  category: documentation
+  language: Web / SaaS
+  link: https://www.gitbook.com/
+  github: https://github.com/GitbookIO/gitbook
+  description: Effortlessly publish stunning, interactive documentation for products, APIs, and more.
+  v2: false
+  v3: true
+  v3_1: true
+
 - name: MkDocs Redoc Tag
   category: documentation
   language: Python
@@ -2445,6 +2642,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: apigen-ts
   category:
@@ -2646,6 +2844,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: Fitting
   category:
@@ -2856,7 +3055,7 @@
   v2: false
   v3: true
   v3_1: true
-  v3_2_link: https://github.com/speakeasy-api/openapi/pull/54
+  v3_2: true
 
 - name: 🛠️ Speakeasy OpenAPI
   sponsored: true
@@ -2875,7 +3074,7 @@
   v2: false
   v3: true
   v3_1: true
-  v3_2_link: https://github.com/speakeasy-api/openapi/pull/54
+  v3_2: true
 
 - name: Swift OpenAPI Generator
   category:
@@ -2905,6 +3104,7 @@
   v2: true
   v3: true
   v3_1: true
+  v3_2: true
 
 - name: openapi-schema-validator
   category: description-validators
@@ -2962,6 +3162,7 @@
     - testing
   language: TypeScript
   link: https://the-codegen-project.org
+  github: https://github.com/the-codegen-project/cli/
   description: Stop wasting time on manual code. Generate payloads, parameters, headers, types, client wrappers, and more from your OpenAPI document!
   v2: true
   v3: true
@@ -3048,8 +3249,9 @@
   github: https://github.com/karenetheridge/OpenAPI-Modern
   link: https://metacpan.org/dist/OpenAPI-Modern
   language: Perl
-  description: OpenAPI v3.1 validator and JSON Schema validator (draft7, draft2019-09, draft2020-12)
+  description: OpenAPI v3.1, v3.2 validator and JSON Schema validator (drafts 4 through draft2020-12)
   v3_1: true
+  v3_2: true
 
 - name: OpenAPI Qraft
   category:
@@ -3071,6 +3273,7 @@
   language: Perl
   description: Mojolicious plugin for OpenAPI::Modern
   v3_1: true
+  v3_2: true
 
 - name: widdershins
   category: documentation
@@ -3094,10 +3297,13 @@
   v3_1: true
   
 - name: Zudoku
-  category: documentation
-  link: https://zudoku.dev
+  sponsored: true
+  sponsoredDate: 2024-09-09 06:00:00
+  category:
+    - documentation
+  link: https://zudoku.dev?utm_source=openapitools&ref=openapitools
   github: https://github.com/zuplo/zudoku
-  language: React
+  language: TypesScript
   description: OpenAPI powered, highly customizable, API reference and documentation framework with CDN packaged and self-hosted options.
   v2: false
   v3: true
