@@ -612,11 +612,11 @@
   language: Java
   github: https://github.com/OpenAPITools/openapi-generator
   description:
-    A template-driven engine to generate documentation, API clients and
-    server stubs in different languages by parsing your OpenAPI Description (community-driven
-    fork of swagger-codegen)
+    A template-driven engine to generate API clients (a.k.a SDKs) and server stubs in over 50
+    languages (Go, Groovy, Java, Kotlin, PHP, Python, Ruby, Rust, Scala, TypeScript, etc.)
   v2: true
   v3: true
+  v3_1: true
 
 - name: OpenAPI JSON Schema Generator
   category:
@@ -1638,13 +1638,14 @@
     specification according to PHP best practices and your code style standards.
   v3: true
 
-- name: janephp/open-api
+- name: janephp
   category: sdk
   language: PHP
   github: https://github.com/janephp/janephp
   description: Generate a PHP Client API (PSR-7 compatible) given a OpenAPI specification.
   v2: true
   v3: true
+  v3_1_link: https://github.com/janephp/janephp/issues/504
 
 - name: go-swagger
   category:
