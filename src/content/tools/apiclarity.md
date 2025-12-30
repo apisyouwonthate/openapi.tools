@@ -2,7 +2,7 @@
 name: APIClarity
 description: Reconstruct Open API Specifications from real-time workload traffic seamlessly.
 categories:
-  - education
+  - learning
 link: https://apiclarity.io/
 languages:
   golang: true

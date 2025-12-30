@@ -4,7 +4,7 @@ description: Library add improve test log for RSpec and WebMock, validate its ac
 categories:
   - testing
   - data-validators
-  - education
+  - learning
 link: https://github.com/tuwilof/fitting
 languages:
   ruby: true
@@ -13,5 +13,4 @@ openApiVersions:
   v2: true
   v3: true
   v3_1: true
-  v4: false
 ---
