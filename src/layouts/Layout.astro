@@ -1,0 +1,257 @@
+---
+import { SEO } from 'astro-seo';
+import { getCollection } from 'astro:content';
+import clsx from 'clsx';
+
+import Header from '@/components/Header.astro';
+import { Hero } from '@/components/Hero';
+import { Navigation, type NavigationItems } from '@/components/Navigation';
+import PostHog from '@/components/PostHog.astro';
+import SponsorBanner from '@/components/SponsorBanner';
+
+import {
+  createOrganizationSchema,
+  createWebSiteSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
+
+import '@/styles/base.css';
+
+type Props = {
+  title: string;
+  description?: string;
+  ogImage?: string;
+};
+
+export interface NavigationProps {
+  categories: NavigationItems;
+  currentUrl: URL;
+}
+
+const { title, description, ogImage } = Astro.props;
+
+const defaultDescription =
+  'A comprehensive and open source list of resources for developers working with OpenAPI.';
+const defaultOgImage = 'https://openapi.tools/og.png';
+
+const pageDescription = description || defaultDescription;
+const pageOgImage = ogImage || defaultOgImage;
+
+const isHomePage = Astro.url.pathname === '/';
+
+const allCategories = await getCollection('categories');
+const bannerSponsorsCollection = await getCollection('banner-sponsors');
+const bannerSponsors = bannerSponsorsCollection.map((sponsor) => sponsor.data);
+
+const categories: NavigationItems = [
+  {
+    title: 'Get Started',
+    links: [
+      { title: 'All Categories', href: '/' },
+      // { title: "What's OpenAPI?", href: '/openapi' },
+      { title: 'Contributing', href: '/contributing' },
+      { title: 'Sponsors', href: '/sponsor' },
+    ],
+  },
+  {
+    title: 'OpenAPI Tool Categories',
+    links: allCategories.map((category) => ({
+      title: category.data.name,
+      href: `/categories/${category.slug}`,
+      description: category.data.description,
+    })),
+  },
+];
+---
+
+<script is:inline>
+  const theme = (() => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      return 'dark';
+    }
+    return 'light';
+  })();
+
+  if (theme === 'light') {
+    document.documentElement.classList.remove('dark');
+  } else {
+    document.documentElement.classList.add('dark');
+  }
+  window.localStorage.setItem('theme', theme);
+</script>
+
+<html lang="en" class={clsx('h-full antialiased')}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={pageDescription} />
+    <meta name="author" content="APIs You Won't Hate" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preconnect hints for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+
+    <!-- devicons: https://github.com/devicons/devicon/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+
+    <SEO
+      titleTemplate="%s | OpenApi.tools, from APIs You Won't Hate"
+      title={title}
+      description={pageDescription}
+      canonical={Astro.url.href}
+      openGraph={{
+        basic: {
+          title: `${title} | OpenAPI.tools`,
+          type: 'website',
+          image: pageOgImage,
+          url: Astro.url.href,
+        },
+        optional: {
+          description: pageDescription,
+          siteName: 'OpenAPI.tools',
+        },
+        image: {
+          url: pageOgImage,
+          width: 1200,
+          height: 630,
+          alt: `${title} - OpenAPI.tools`,
+        },
+      }}
+      twitter={{
+        card: 'summary_large_image',
+        creator: '@irreverentmike',
+        site: '@apisyouwonthate',
+        title: `${title} | OpenAPI.tools`,
+        description: pageDescription,
+        image: pageOgImage,
+      }}
+    />
+
+    {/* JSON-LD Structured Data */}
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={serializeSchema(createWebSiteSchema(defaultDescription))}
+    />
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={serializeSchema(createOrganizationSchema())}
+    />
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      data-site="MKNBSINY"
+      defer
+      is:inline></script>
+    <PostHog />
+    {/* Named slot for page-specific structured data */}
+    <slot name="head" />
+  </head>
+
+  <body class="flex min-h-full bg-white dark:bg-slate-900">
+    <div class="flex w-full flex-col">
+      <SponsorBanner sponsors={bannerSponsors} client:only="react" />
+      <Header categories={categories} currentUrl={Astro.url} />
+
+      {isHomePage && <Hero />}
+
+      <div
+        class="relative mx-auto flex w-full max-w-8xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
+      >
+        <div class="hidden lg:relative lg:block lg:flex-none">
+          <div
+            class="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden"
+          >
+          </div>
+          <div
+            class="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"
+          >
+          </div>
+          <div
+            class="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block"
+          >
+          </div>
+          <div
+            class="sticky top-[2.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto overflow-x-hidden py-8 pl-0.5 pr-8 xl:w-72 xl:pr-16"
+          >
+            <Navigation categories={categories} currentUrl={Astro.url} />
+          </div>
+        </div>
+        <main class="flex w-full grow flex-col px-4 pb-40">
+          <slot />
+          <div class="mt-16 flex justify-center gap-4 text-6xl text-green-600">
+            <span>*</span><span>*</span><span>*</span>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
