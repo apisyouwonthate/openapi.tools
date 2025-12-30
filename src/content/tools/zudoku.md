@@ -5,13 +5,13 @@ categories:
   - docs
 link: https://zudoku.dev?utm_source=openapitools&ref=openapitools
 languages:
-  typescript: true
+  typesscript: true
 repo: https://github.com/zuplo/zudoku
 openApiVersions:
   v2: false
   v3: true
   v3_1: true
-  v4: false
+  v3_2: false
 sponsorship:
   startDate: 2024-09-09T06:00:00.000Z
 ---

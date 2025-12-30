@@ -21,7 +21,7 @@ openApiVersions:
   v2: true
   v3: true
   v3_1: true
-  v4: false
+  v3_2: false
 sponsorship:
   startDate: 2023-11-01T06:00:00.000Z
   testimonial: |
