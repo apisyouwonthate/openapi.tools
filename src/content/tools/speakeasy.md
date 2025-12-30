@@ -13,7 +13,7 @@ link: https://www.speakeasy.com/
 languages:
   typescript: true
   python: true
-  golang: true
+  go: true
   java: true
   terraform: true
   csharp: true

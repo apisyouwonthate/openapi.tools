@@ -5,7 +5,7 @@ categories:
   - learning
 link: https://apiclarity.io/
 languages:
-  golang: true
+  go: true
   javascript: true
 repo: https://github.com/apiclarity/apiclarity
 openApiVersions:

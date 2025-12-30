@@ -7,7 +7,7 @@ categories:
   - servers
 link: https://go-fuego.github.io/fuego/
 languages:
-  golang: true
+  go: true
 repo: https://github.com/go-fuego/fuego
 openApiVersions:
   v2: false

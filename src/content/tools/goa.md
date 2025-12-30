@@ -5,7 +5,7 @@ categories:
   - domain-specific-languages
 link: https://goa.design
 languages:
-  golang: true
+  go: true
 openApiVersions:
   v2: true
   v3: true

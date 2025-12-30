@@ -6,7 +6,7 @@ categories:
   - domain-specific-languages
 link: https://www.npmjs.com/package/boats
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/johndcarmichael/boats
 openApiVersions:
   v2: true

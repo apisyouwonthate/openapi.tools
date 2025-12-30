@@ -6,7 +6,7 @@ categories:
   - gateways
 link: https://www.krakend.io/enterprise/
 languages:
-  golang: true
+  go: true
 openApiVersions:
   v2: true
   v3: true

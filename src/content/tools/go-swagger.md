@@ -7,7 +7,7 @@ categories:
   - converters
 link: https://goswagger.io/
 languages:
-  golang: true
+  go: true
 repo: https://github.com/go-swagger/go-swagger
 openApiVersions:
   v2: true

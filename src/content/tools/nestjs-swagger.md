@@ -6,7 +6,7 @@ categories:
   - servers
 link: https://docs.nestjs.com/recipes/swagger
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/nestjs/swagger
 openApiVersions:
   v2: false

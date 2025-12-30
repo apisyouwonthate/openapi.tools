@@ -4,7 +4,7 @@ description: Additional Jest matchers for asserting that HTTP responses satisfy 
 categories:
   - testing
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/jest-openapi
 openApiVersions:
   v2: true

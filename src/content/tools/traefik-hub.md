@@ -6,7 +6,7 @@ categories:
   - gateways
 link: https://doc.traefik.io/traefik-hub
 languages:
-  golang: true
+  go: true
 repo: https://github.com/traefik/traefik-hub-helm-chart
 openApiVersions:
   v2: true

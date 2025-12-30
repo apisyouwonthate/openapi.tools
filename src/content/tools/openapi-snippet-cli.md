@@ -4,7 +4,7 @@ description: Adds code snippets in redoc style (x-codeSamples) to OpenAPI docume
 categories:
   - parsers
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/richardkabiling/openapi-snippet-cli
 openApiVersions:
   v2: true

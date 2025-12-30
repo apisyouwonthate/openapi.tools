@@ -5,7 +5,7 @@ categories:
   - parsers
   - data-validators
 languages:
-  golang: true
+  go: true
 repo: https://gitlab.com/jamietanna/httptest-openapi/
 openApiVersions:
   v2: false

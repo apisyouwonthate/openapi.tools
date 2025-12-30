@@ -5,7 +5,7 @@ categories:
   - parsers
   - data-validators
 languages:
-  golang: true
+  go: true
 repo: https://github.com/getkin/kin-openapi
 openApiVersions:
   v2: true

@@ -8,7 +8,7 @@ languages:
   typescript: true
   java: true
   python: true
-  golang: true
+  go: true
   ruby: true
   csharp: true
   php: true

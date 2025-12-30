@@ -5,7 +5,7 @@ categories:
   - data-validators
 link: https://github.com/Rhosys/openapi-data-validator.js/blob/main/README.md
 languages:
-  node: true
+  nodejs: true
   javascript: true
 repo: https://github.com/Rhosys/openapi-data-validator.js
 openApiVersions:

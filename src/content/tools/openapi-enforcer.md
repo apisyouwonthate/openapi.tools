@@ -8,7 +8,7 @@ categories:
   - testing
 link: https://www.npmjs.com/package/openapi-enforcer
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/byu-oit/openapi-enforcer
 openApiVersions:
   v2: true

@@ -6,7 +6,7 @@ categories:
   - servers
 link: https://loopback.io/
 languages:
-  node: true
+  nodejs: true
   typescript: true
 repo: https://github.com/strongloop/loopback-next
 openApiVersions:

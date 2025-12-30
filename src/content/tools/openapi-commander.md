@@ -6,7 +6,7 @@ categories:
   - sdk-generators
 link: https://www.npmjs.com/package/openapi-commander
 languages:
-  node: true
+  nodejs: true
   cli: true
 repo: https://github.com/bcoughlan/openapi-commander
 openApiVersions:

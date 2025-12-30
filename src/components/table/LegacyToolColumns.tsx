@@ -29,6 +29,28 @@ export const LegacyToolColumns: ColumnDef<ToolRowData>[] = [
     },
   },
   {
+    accessorKey: 'languages',
+    header: 'Languages',
+    cell: ({ row }) => {
+      const tool = row.original.tool;
+      const languages = tool?.languages;
+      if (!languages || !Object.keys(languages).length) {
+        return null;
+      }
+      return (
+        <div className="flex flex-row flex-wrap gap-1">
+          {Object.keys(languages).map((language) => (
+            <i
+              key={language}
+              className={`devicon-${language.toLowerCase().trim()}-plain text-lg text-slate-700 dark:text-slate-300`}
+              title={language}
+            />
+          ))}
+        </div>
+      );
+    },
+  },
+  {
     accessorKey: 'v3',
     header: 'v3.0',
     cell: ({ row }) => {

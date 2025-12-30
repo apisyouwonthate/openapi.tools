@@ -5,7 +5,7 @@ categories:
   - testing
 link: https://www.npmjs.com/package/swagger-coverage-cli
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/dreamquality/swagger-coverage-cli
 openApiVersions:
   v2: true

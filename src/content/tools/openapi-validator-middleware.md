@@ -7,7 +7,7 @@ categories:
   - servers
 link: https://www.npmjs.com/package/openapi-validator-middleware
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/PayU/openapi-validator-middleware
 openApiVersions:
   v2: true

@@ -5,7 +5,7 @@ categories:
   - converters
   - parsers
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/Mermade/openapi-filter
 openApiVersions:
   v2: true

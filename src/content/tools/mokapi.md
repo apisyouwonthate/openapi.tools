@@ -5,7 +5,7 @@ categories:
   - mocking-tools
 link: https://mokapi.io
 languages:
-  golang: true
+  go: true
 openApiVersions:
   v2: true
   v3: true
