@@ -1,19 +1,25 @@
 ---
 name: 🌿 Fern Server
-description: Generate server-side boilerplate code from OpenAPI and then implement your business logic.
+description: Build beautiful, interactive documentation websites with Fern Docs. Create API references, custom components, and AI-powered features in under 5 minutes.
 categories:
-  - servers
+  - code-generators
 link: https://buildwithfern.com
 languages:
-  express: true
-  fastapi: true
-  spring boot: true
+  typescript: true
+  java: true
+  python: true
+  golang: true
+  ruby: true
+  csharp: true
+  php: true
+  swift: true
+  rust: true
 repo: https://github.com/fern-api/fern
 openApiVersions:
   v2: true
   v3: true
   v3_1: true
-  v4: false
+  v3_2: false
 sponsorship:
   startDate: 2023-11-01T06:00:00.000Z
   testimonial: |

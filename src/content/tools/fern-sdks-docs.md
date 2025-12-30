@@ -2,7 +2,6 @@
 name: 🌿 Fern SDKs & Docs
 description: Generate SDKs in popular languages and publish them to package managers (like npm), plus beautiful API documentation.
 categories:
-  - code-generators
   - sdk-generators
   - docs
 link: https://buildwithfern.com
