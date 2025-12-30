@@ -101,7 +101,7 @@
   language: SaaS
   description:
     A low code tool for APIOps. Integrates all API Tools in one single platform, so you can develop your API-First cycle easily.
-    Create API Templates with AI, simulate APIs with mocking tools and test your APIs before deployment. 
+    Create API Templates with AI, simulate APIs with mocking tools and test your APIs before deployment.
   link: https://apiquality.io
   github: https://github.com/APIQuality-io
   v2: true
@@ -123,7 +123,7 @@
   category: converters
   language: TypeScript
   github: https://github.com/anbuksv/avantation
-  description: "Generate OpenAPI 3.0 specification from HAR."
+  description: 'Generate OpenAPI 3.0 specification from HAR.'
   v3: true
 
 - name: Ballerina OpenAPI tool
@@ -139,7 +139,7 @@
   v2: true
   v3: true
   v3_1: true
-  
+
 - name: BOATS
   category: dsl
   link: https://www.npmjs.com/package/boats
@@ -165,14 +165,13 @@
   v3_1: true
 
 - name: CodeMirror OAS support
-  category: 
+  category:
     - text-editors
     - miscellaneous
   language: TypeScript
   link: https://evitadb.io/download/single-file-playground.html
   github: https://github.com/ruzito/oas-aware-rest-lang-support
-  description:
-    Plugin for text editor https://codemirror.net/ running in your browser that can fetch and parse your OpenAPI schema definition and provide auto-completion support (for large and complex JSON message payloads), error highlighting and access to schema documentation. It is capable of parsing megabytes of OpenAPI schema definition in a second and providing auto-completion support in milliseconds. The work is an MVP of a plugin with basic functionality made as part of a master thesis at ČVUT.
+  description: Plugin for text editor https://codemirror.net/ running in your browser that can fetch and parse your OpenAPI schema definition and provide auto-completion support (for large and complex JSON message payloads), error highlighting and access to schema documentation. It is capable of parsing megabytes of OpenAPI schema definition in a second and providing auto-completion support in milliseconds. The work is an MVP of a plugin with basic functionality made as part of a master thesis at ČVUT.
   v3: true
 
 - name: Connexion
@@ -246,8 +245,7 @@
     - gateway
   link: https://github.com/apache/apisix
   language: Lua
-  description:
-    APISIX API Gateway offers a variety of traffic management features, including load balancing, dynamic upstream, canary release, circuit breaking, authentication, observability, and more.
+  description: APISIX API Gateway offers a variety of traffic management features, including load balancing, dynamic upstream, canary release, circuit breaking, authentication, observability, and more.
   v2: true
   v3: true
   v3_1: true
@@ -258,8 +256,7 @@
     - gateway
   link: https://api7.ai/demos
   language: Lua
-  description:
-    A comprehensive API lifecycle management solution based on Apache APISIX, featuring a Developer Portal for onboarding.
+  description: A comprehensive API lifecycle management solution based on Apache APISIX, featuring a Developer Portal for onboarding.
   v2: true
   v3: true
   v3_1: true
@@ -289,7 +286,7 @@
   v3: true
   v3_1: true
 
-- name: "OpenApi4s"
+- name: 'OpenApi4s'
   category:
     - server
     - sdk
@@ -439,15 +436,14 @@
   description: Golang module for deep comparison of two OpenAPI specifications. Available also as a command-line.
   v3: true
   v3_1: false
-  
+
 - name: oas_rails
   category:
     - documentation
     - auto-generators
   link: https://github.com/a-chacon/oas_rails
   language: Ruby
-  description:
-    Rails engine for generate automatic interactive documentation in your Rails HTTP APIs. 
+  description: Rails engine for generate automatic interactive documentation in your Rails HTTP APIs.
   v3_1: true
 
 - name: oas-patch
@@ -519,7 +515,7 @@
 - name: OData.OpenAPI (.NET)
   category: converters
   github: https://github.com/xuzhg/OData.OpenAPI
-  language: ".NET"
+  language: '.NET'
   description: Convert an Edm (Entity Data Model) to OpenAPI 3.0
   v3: true
 
@@ -538,8 +534,7 @@
     - documentation
   link: https://www.openapiviewer.com
   language: SaaS
-  description:
-    Upload a openapi.json and view it online via a shareable link. Nothing else. Uses OpenAPI Explorer under the hood.
+  description: Upload a openapi.json and view it online via a shareable link. Nothing else. Uses OpenAPI Explorer under the hood.
   v2: false
   v3: true
   v3_1: true
@@ -1077,7 +1072,7 @@
   v3: true
   v3_1: true
 
-- name: "@hey-api/openapi-ts"
+- name: '@hey-api/openapi-ts'
   category:
     - converters
     - sdk
@@ -1119,7 +1114,7 @@
     v.3 contracts
   v3: true
 
-- name: "@smartrecruiters/openapi-first"
+- name: '@smartrecruiters/openapi-first'
   category: server
   language: Node.js
   link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
@@ -1217,7 +1212,7 @@
   v2: false
   v3: true
 
-- name: "@eropple/nestjs-openapi3"
+- name: '@eropple/nestjs-openapi3'
   category:
     - server
   language: Node.js
@@ -1229,7 +1224,7 @@
     via ReDoc, and validates inputs for conformance to spec.
   v3: true
 
-- name: "@nestjs/swagger"
+- name: '@nestjs/swagger'
   category:
     - server
   language: Node.js
@@ -1269,8 +1264,8 @@
   github: https://github.com/apiaryio/dredd
   language: Javascript
   description:
-    "Language-agnostic command-line tool for validating API description
-    document against backend implementation of the API"
+    'Language-agnostic command-line tool for validating API description
+    document against backend implementation of the API'
   v2: true
   v3: true
 
@@ -1299,7 +1294,7 @@
     - data-validators
   link: https://github.com/mondrian-framework/mondrian-framework
   language: Typescript
-  description: "Framework for generating OpenAPI 3.1 documents and servers from formal TypeScript definitions of models and services. Includes built-in data validation."
+  description: 'Framework for generating OpenAPI 3.1 documents and servers from formal TypeScript definitions of models and services. Includes built-in data validation.'
   v2: false
   v3: false
   v3_1: true
@@ -1309,7 +1304,7 @@
     - data-validators
   github: https://github.com/Rhosys/openapi-data-validator.js
   language: Node.js/ Javascript
-  description: "Validate API requests against an OpenAPI schema. Lightweight, focused, and integrates with any framework"
+  description: 'Validate API requests against an OpenAPI schema. Lightweight, focused, and integrates with any framework'
   link: https://github.com/Rhosys/openapi-data-validator.js/blob/main/README.md
   v3: true
   v3_1: true
@@ -1332,7 +1327,7 @@
     - documentation
   github: https://github.com/lyra/openapi-dev-tool
   language: JavaScript
-  description: "OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!"
+  description: 'OpenAPI Dev Tool proposes to developers a unique tool to address development and industrialization needs!'
   v2: true
   v3: true
   v3_1: true
@@ -1344,7 +1339,7 @@
   link: https://getportman.com/
   github: https://github.com/apideck-libraries/portman
   language: Node.js
-  description: "Port OpenAPI Spec to Postman Collection, with contract & variation tests included!"
+  description: 'Port OpenAPI Spec to Postman Collection, with contract & variation tests included!'
   v3: true
   v3_1: true
 
@@ -1622,7 +1617,7 @@
 - name: Microsoft/OpenAPI.NET
   category: parsers
   github: https://github.com/Microsoft/OpenAPI.NET
-  language: ".NET"
+  language: '.NET'
   description:
     C# based parser with OpenAPI Description validation and migration support
     from V2
@@ -1736,7 +1731,7 @@
     - sdk
   link: https://NSwag.org
   github: https://github.com/RicoSuter/NSwag
-  language: ".NET"
+  language: '.NET'
   description: OpenAPI toolchain for .NET, Web API and TypeScript
   v2: true
   v3: true
@@ -1894,10 +1889,10 @@
   language: Java
   github: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
   description:
-    "Generates test cases directly from an OpenAPI v3 description of your
+    'Generates test cases directly from an OpenAPI v3 description of your
     API. Creates tests executable using various test frameworks. Bonus:
     Semantic linter reports elements that are inconsistent, superfluous,
-    or dubious."
+    or dubious.'
   v3: true
 
 - name: Schemathesis
@@ -1995,7 +1990,7 @@
     - code-generators
   link: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
   github: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
-  language: ".NET"
+  language: '.NET'
   description: Visual Studio extension to generate C# (TypeScript) HttpClient (or C# Controllers) code for OpenAPI web service with NSwag.
   v2: true
   v3: true
@@ -2176,7 +2171,7 @@
     - data-validators
   github: https://github.com/codekie/openapi-examples-validator
   language: JavaScript
-  description: "Validates embedded JSON-examples in OpenAPI-specs"
+  description: 'Validates embedded JSON-examples in OpenAPI-specs'
   v2: true
   v3: true
 
@@ -2184,7 +2179,7 @@
   category: converters
   github: https://github.com/ethancarlsson/openapi-to-hurl
   language: CLI
-  description: "A CLI to convert OpenAPI 3.1 Description Documents to hurl test files"
+  description: 'A CLI to convert OpenAPI 3.1 Description Documents to hurl test files'
   v2: false
   v3: false
   v3_1: true
@@ -2193,7 +2188,7 @@
   category: converters
   github: https://github.com/postmanlabs/openapi-to-postman
   language: JavaScript
-  description: "Convert OpenAPI and Swagger specs to the Postman Collection (v2) format"
+  description: 'Convert OpenAPI and Swagger specs to the Postman Collection (v2) format'
   v2: true
   v3: true
   v3_1: true
@@ -2217,7 +2212,7 @@
   category: description-validators
   github: https://github.com/github/super-linter
   language: CLI / Docker
-  description: "GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral."
+  description: 'GitHub Action to lint repositories as part of CI/CD. Implements the latest version of Spectral.'
   v2: true
   v3: true
 
@@ -2235,7 +2230,7 @@
   category: miscellaneous
   language: PHP
   github: https://github.com/canvural/php-openapi-faker
-  description: "Library to generate fake data for OpenAPI 3.x requests, responses and schemas."
+  description: 'Library to generate fake data for OpenAPI 3.x requests, responses and schemas.'
   v3: true
 
 - name: OWASP ZAP
@@ -2432,7 +2427,7 @@
     - data-validators
     - security
   link: https://forallsecure.com/mayhem-for-api
-  github: "https://github.com/ForAllSecure/mapi-action"
+  github: 'https://github.com/ForAllSecure/mapi-action'
   language: Any
   description: Probe your REST API with an infinite stream of test cases generated automatically from your OpenAPI specification.
   v2: true
@@ -3002,7 +2997,6 @@
   testimonial: >
     I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
   category:
-    - code-generators
     - sdk
     - documentation
   github: https://github.com/fern-api/fern
@@ -3020,27 +3014,11 @@
   testimonial: >
     I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
   category:
-    - server
+    - code-generators
   github: https://github.com/fern-api/fern
   link: https://buildwithfern.com
   language: TypeScript, Java, Python, Go, Ruby, C#, PHP, Swift, and Rust
-  description:
-  v2: true
-  v3: true
-  v3_1: true
-
-# Fern Entry 3: server stubs product
-- name: 🌿 Fern
-  sponsored: true
-  sponsoredDate: 2023-11-01 06:00:00
-  testimonial: >
-    I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
-  category:
-    - server
-  github: https://github.com/fern-api/fern
-  link: https://buildwithfern.com
-  language: Express.js, FastAPI, Spring Boot
-  description: Generate server-side boilerplate code from OpenAPI and then implement your business logic.
+  description: Build beautiful, interactive documentation websites with Fern Docs. Create API references, custom components, and AI-powered features in under 5 minutes.
   v2: true
   v3: true
   v3_1: true
@@ -3306,9 +3284,9 @@
   v3: true
 
 - name: xyd
-  category: 
+  category:
     - documentation
-    - server 
+    - server
   github: https://github.com/livesession/xyd
   link: https://xyd.dev
   language: TypeScript
@@ -3316,7 +3294,7 @@
   v2: false
   v3: true
   v3_1: true
-  
+
 - name: Zudoku
   sponsored: true
   sponsoredDate: 2024-09-09 06:00:00
