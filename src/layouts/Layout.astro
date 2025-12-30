@@ -44,16 +44,15 @@ const bannerSponsors = bannerSponsorsCollection.map((sponsor) => sponsor.data);
 
 const categories: NavigationItems = [
   {
-    title: 'Get Started',
+    title: 'Handy Stuff',
     links: [
-      { title: 'All Categories', href: '/' },
       // { title: "What's OpenAPI?", href: '/openapi' },
       { title: 'Contributing', href: '/contributing' },
       { title: 'Sponsors', href: '/sponsor' },
     ],
   },
   {
-    title: 'OpenAPI Tool Categories',
+    title: 'Tool Categories',
     links: allCategories.map((category) => ({
       title: category.data.name,
       href: `/categories/${category.slug}`,
