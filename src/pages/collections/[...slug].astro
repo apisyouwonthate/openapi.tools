@@ -124,7 +124,7 @@ const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
 
     <main class="w-full">
       <FilterableCollectionView
-        client:load
+        client:only="react"
         categoriesWithTools={categoryGroups}
         totalToolCount={totalTools}
       />

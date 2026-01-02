@@ -1,11 +1,18 @@
 import { useMemo } from 'react';
+import { X } from 'lucide-react';
 
 import type { ToolRowData } from '@/components/table/Columns';
 import { CollectionToolColumns } from '@/components/table/CollectionToolColumns';
 import { DataTable } from '@/components/table/DataTable';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { useLanguageFilter } from '@/hooks/useLanguageFilter';
-import { extractLanguages, filterToolsByLanguages } from '@/utils/languageUtils';
-import { LanguageFilterPopover } from './LanguageFilterPopover';
+import {
+  extractLanguages,
+  extractPlatforms,
+  filterToolsByLanguages,
+} from '@/utils/languageUtils';
+import { FilterPopover } from './LanguageFilterPopover';
 
 type CategoryGroup = {
   id: string;
@@ -37,10 +44,20 @@ export function FilterableCollectionView({
     [categoriesWithTools]
   );
 
-  // Extract available languages from all tools
+  // Extract available languages and platforms from all tools
   const availableLanguages = useMemo(
     () => extractLanguages(allTools),
     [allTools]
+  );
+  const availablePlatforms = useMemo(
+    () => extractPlatforms(allTools),
+    [allTools]
+  );
+
+  // Get labels for selected items
+  const allOptions = useMemo(
+    () => [...availableLanguages, ...availablePlatforms],
+    [availableLanguages, availablePlatforms]
   );
 
   // Filter and re-group tools by category
@@ -88,22 +105,59 @@ export function FilterableCollectionView({
     );
   }
 
+  const hasFilters = selectedLanguages.length > 0;
+
   return (
     <div className="not-prose space-y-6">
-      {availableLanguages.length > 0 && (
-        <LanguageFilterPopover
-          languages={availableLanguages}
-          selectedLanguages={selectedLanguages}
-          onToggleLanguage={toggleLanguage}
-          onClearFilters={clearFilters}
+      <div className="flex flex-wrap items-center gap-2">
+        <FilterPopover
+          title="Languages"
+          options={availableLanguages}
+          selectedValues={selectedLanguages}
+          onToggle={toggleLanguage}
         />
-      )}
+        <FilterPopover
+          title="Platforms"
+          options={availablePlatforms}
+          selectedValues={selectedLanguages}
+          onToggle={toggleLanguage}
+        />
+
+        {hasFilters && (
+          <>
+            <div className="flex flex-wrap gap-1">
+              {selectedLanguages.map((value) => {
+                const option = allOptions.find((o) => o.value === value);
+                return (
+                  <Badge
+                    key={value}
+                    variant="secondary"
+                    className="cursor-pointer bg-slate-200 text-slate-700 hover:bg-slate-300 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
+                    onClick={() => toggleLanguage(value)}
+                  >
+                    {option?.label || value}
+                    <X className="ml-1 h-3 w-3" />
+                  </Badge>
+                );
+              })}
+            </div>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={clearFilters}
+              className="h-8 px-2 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
+            >
+              Clear all
+            </Button>
+          </>
+        )}
+      </div>
 
       <p className="text-slate-600 dark:text-slate-400">
         Showing <strong>{filteredToolCount}</strong>
-        {selectedLanguages.length > 0 && ` of ${totalToolCount}`} tools
+        {hasFilters && ` of ${totalToolCount}`} tools
         across <strong>{filteredCategoriesWithTools.length}</strong> categories
-        {selectedLanguages.length > 0 && <span> matching selected languages</span>}
+        {hasFilters && <span> matching selected filters</span>}
       </p>
 
       <div className="space-y-12">
