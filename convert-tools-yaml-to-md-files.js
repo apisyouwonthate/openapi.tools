@@ -15,7 +15,6 @@ const toolSchema = z.object({
     v3: z.boolean().optional(),
     v3_1: z.boolean().optional(),
     v3_2: z.boolean().optional(),
-    v4: z.boolean().optional(),
   }),
   sponsorship: z
     .object({
@@ -37,7 +36,7 @@ const convertToolToMarkdown = (tool) => {
     category,
     language,
     link,
-    github: _github,  
+    github: _github,
     sponsoredDate,
     testimonial,
     ...versions
@@ -60,7 +59,7 @@ const convertToolToMarkdown = (tool) => {
         cat = 'domain-specific-languages';
         break;
       case 'learning':
-        cat = 'education';
+        cat = 'learning';
         break;
       case 'description-validator':
       case 'description-validators':
@@ -125,11 +124,13 @@ const convertToolToMarkdown = (tool) => {
     .replace(/\breact\s*(?:\([^)]*\))?/gi, 'react') // replace react ** with "react"
     .replace(/\.net/gi, 'dot-net') // replace ".net" with "dotnet"
     .replace(/on-premise node/gi, 'node') // replace "on-premise node" with "node"
+    .replace(/vscode extension/gi, 'vscode') // replace "on-premise node" with "node"
     .replace(/\bor\b/gi, ',') // replace the standalone word "or" with a comma
     .replace(/\s*&\s*/gi, ',') // replace the standalone word "&" with a comma
     .replace(/\s*\+\s*/gi, ',') // replace the standalone word "+" with a comma
     .replace(/\.{3}/gi, '') // delete "..."
-    .replace(/\bgo\b/gi, 'golang') // standardize "go" to "golang"
+    .replace(/\bgolang\b/gi, 'go') // standardize "go" to "golang"
+    .replace(/\bnode\b/gi, 'nodejs') // standardize "node" to "nodejs"
     .split(',')
     .forEach((lang) => {
       // finally, split the string into an array and remove whitespace
@@ -149,7 +150,6 @@ const convertToolToMarkdown = (tool) => {
     v3: versions.v3 || false,
     v3_1: versions.v3_1 || false,
     v3_2: versions.v3_2 || false,
-    v4: false, // Assuming v4 is false by default since it's not in the original data
   };
 
   let sponsorship = undefined;

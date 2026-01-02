@@ -15,12 +15,12 @@ const { title, description, url, isSponsor = false } = Astro.props;
 
 // if this url contains `/tools`, then we want to use a smaller heading size
 
-let headingSize = 'text-sm';
-let descriptionSize = 'text-3xl';
+let headingSize = 'text-3xl mb-0';
+let descriptionSize = 'text-xl';
 
 if (Astro.url.pathname.includes('/tools/')) {
-  headingSize = 'text-3xl mb-0';
-  descriptionSize = 'text-xl';
+  headingSize = 'text-sm';
+  descriptionSize = 'text-3xl';
 }
 ---
 

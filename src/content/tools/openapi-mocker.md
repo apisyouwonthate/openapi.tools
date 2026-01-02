@@ -5,11 +5,11 @@ categories:
   - mocking-tools
 link: https://www.npmjs.com/package/open-api-mocker
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/jormaechea/open-api-mocker
 openApiVersions:
   v2: false
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---

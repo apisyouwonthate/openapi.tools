@@ -1,0 +1,17 @@
+---
+name: // SDK-IT
+description: Generates type-safe client SDKs from OpenAPI specifications and creates OpenAPI specs from TypeScript code.
+categories:
+  - sdk-generators
+  - converters
+link: https://github.com/januarylabs/sdk-it
+languages:
+  typescript: true
+  dart: true
+repo: https://github.com/januarylabs/sdk-it
+openApiVersions:
+  v2: false
+  v3: true
+  v3_1: true
+  v3_2: false
+---

@@ -2,7 +2,6 @@
 name: 🌿 Fern SDKs & Docs
 description: Generate SDKs in popular languages and publish them to package managers (like npm), plus beautiful API documentation.
 categories:
-  - code-generators
   - sdk-generators
   - docs
 link: https://buildwithfern.com
@@ -10,7 +9,7 @@ languages:
   typescript: true
   java: true
   python: true
-  golang: true
+  go: true
   ruby: true
   csharp: true
   php: true
@@ -21,7 +20,7 @@ openApiVersions:
   v2: true
   v3: true
   v3_1: true
-  v4: false
+  v3_2: false
 sponsorship:
   startDate: 2023-11-01T06:00:00.000Z
   testimonial: |

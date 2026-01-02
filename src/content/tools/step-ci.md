@@ -9,11 +9,11 @@ categories:
 link: https://stepci.com
 languages:
   cli: true
-  node: true
+  nodejs: true
 repo: https://github.com/stepci/stepci
 openApiVersions:
   v2: false
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---

@@ -9,11 +9,11 @@ categories:
   - data-validators
   - schema-validators
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/isa-group/oas-tools
 openApiVersions:
   v2: false
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---

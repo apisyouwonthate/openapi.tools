@@ -5,11 +5,11 @@ categories:
   - misc
 link: https://www.useoptic.com/docs/diff-openapi
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/opticdev/optic
 openApiVersions:
   v2: false
   v3: true
   v3_1: true
-  v4: false
+  v3_2: false
 ---

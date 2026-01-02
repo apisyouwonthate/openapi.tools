@@ -1,5 +1,5 @@
 ---
-name: Speakeasy
+name: // Speakeasy
 description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
 categories:
   - sdk-generators
@@ -8,12 +8,12 @@ categories:
   - testing
   - mocking-tools
   - ides
-  - education
+  - learning
 link: https://www.speakeasy.com/
 languages:
   typescript: true
   python: true
-  golang: true
+  go: true
   java: true
   terraform: true
   csharp: true
@@ -26,7 +26,7 @@ openApiVersions:
   v2: false
   v3: true
   v3_1: true
-  v4: false
+  v3_2: true
 sponsorship:
   startDate: 2024-02-09T06:00:00.000Z
 ---

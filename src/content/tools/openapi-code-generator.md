@@ -7,11 +7,11 @@ categories:
   - servers
 link: https://openapi-code-generator.nahkies.co.nz
 languages:
-  typescript: true
+  typesscript: true
 repo: https://github.com/mnahkies/openapi-code-generator
 openApiVersions:
   v2: false
   v3: true
   v3_1: true
-  v4: false
+  v3_2: false
 ---

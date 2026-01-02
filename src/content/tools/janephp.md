@@ -1,5 +1,5 @@
 ---
-name: janephp/open-api
+name: janephp
 description: Generate a PHP Client API (PSR-7 compatible) given a OpenAPI specification.
 categories:
   - sdk-generators
@@ -10,5 +10,5 @@ openApiVersions:
   v2: true
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---

@@ -5,11 +5,11 @@ categories:
   - converters
 link: https://mulesoft.github.io/oas-raml-converter/
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/mulesoft/oas-raml-converter
 openApiVersions:
   v2: true
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---

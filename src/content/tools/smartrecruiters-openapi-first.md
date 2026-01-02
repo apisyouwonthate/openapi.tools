@@ -6,11 +6,11 @@ categories:
   - servers
 link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/smartrecruiters/openapi-first
 openApiVersions:
   v2: false
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---

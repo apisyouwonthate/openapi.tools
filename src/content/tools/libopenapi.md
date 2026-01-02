@@ -5,11 +5,11 @@ categories:
   - parsers
 link: https://pb33f.io/libopenapi
 languages:
-  golang: true
+  go: true
 repo: https://github.com/pb33f/libopenapi
 openApiVersions:
   v2: true
   v3: true
   v3_1: true
-  v4: false
+  v3_2: true
 ---

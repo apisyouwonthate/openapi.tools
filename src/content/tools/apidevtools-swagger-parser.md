@@ -4,11 +4,11 @@ description: OpenAPI 2.0 and 3.0 parser and validator. Can also bundle multiple 
 categories:
   - parsers
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/APIDevTools/swagger-parser
 openApiVersions:
   v2: true
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---

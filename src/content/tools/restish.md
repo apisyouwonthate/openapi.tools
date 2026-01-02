@@ -8,11 +8,11 @@ categories:
 link: https://rest.sh/
 languages:
   cli: true
-  golang: true
+  go: true
 repo: https://github.com/danielgtaylor/restish
 openApiVersions:
   v2: false
   v3: true
   v3_1: true
-  v4: false
+  v3_2: false
 ---

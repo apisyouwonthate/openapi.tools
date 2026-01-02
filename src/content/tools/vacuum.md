@@ -5,11 +5,11 @@ categories:
   - schema-validators
 link: https://quobix.com/vacuum
 languages:
-  golang: true
+  go: true
 repo: https://github.com/daveshanley/vacuum
 openApiVersions:
   v2: true
   v3: true
   v3_1: true
-  v4: false
+  v3_2: true
 ---

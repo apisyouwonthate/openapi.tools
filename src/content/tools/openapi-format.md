@@ -8,11 +8,11 @@ categories:
   - converters
 link: https://www.npmjs.com/package/openapi-format
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/thim81/openapi-format
 openApiVersions:
   v2: false
   v3: true
   v3_1: true
-  v4: false
+  v3_2: true
 ---

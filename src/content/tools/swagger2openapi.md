@@ -5,12 +5,12 @@ categories:
   - converters
 link: https://mermade.org.uk/openapi-converter
 languages:
-  node: true
+  nodejs: true
   cli: true
 repo: https://github.com/Mermade/swagger2openapi
 openApiVersions:
   v2: true
   v3: true
   v3_1: false
-  v4: false
+  v3_2: false
 ---
