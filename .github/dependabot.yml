@@ -1,33 +1,33 @@
 version: 2
 updates:
   # Ruby dependencies
-  - package-ecosystem: "bundler"
-    directory: "/"
+  - package-ecosystem: 'bundler'
+    directory: '/'
     schedule:
-      interval: "weekly"
+      interval: 'weekly'
     open-pull-requests-limit: 10
     labels:
-      - "dependencies"
-      - "ruby"
+      - 'dependencies'
+      - 'ruby'
     groups:
       dependencies:
-        applies-to: "version-updates"
+        applies-to: 'version-updates'
         update-types:
-          - "minor"
-          - "patch"
+          - 'minor'
+          - 'patch'
 
   # GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "sunday"
+      interval: 'weekly'
+      day: 'sunday'
     labels:
-      - "dependencies"
-      - "github-actions"
+      - 'dependencies'
+      - 'github-actions'
     groups:
       dependencies:
-        applies-to: "version-updates"
+        applies-to: 'version-updates'
         update-types:
-          - "minor"
-          - "patch"
+          - 'minor'
+          - 'patch'

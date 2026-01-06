@@ -1,0 +1,92 @@
+---
+import { getCollection } from 'astro:content';
+
+import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
+import PageHeader from '@/components/PageHeader.astro';
+import Layout from '@/layouts/Layout.astro';
+import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import {
+  createBreadcrumbSchema,
+  createCollectionPageSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
+
+// Get all tools that support modern OpenAPI (v3.1+)
+const allTools = await getCollection('tools');
+const modernTools = allTools.filter((tool) => {
+  const v = tool.data.openApiVersions;
+  return v?.v3_1 || v?.v3_2;
+});
+
+// Sort: sponsored first, then alphabetically
+const sponsoredTools = modernTools
+  .filter((tool) => tool.data.sponsorship)
+  .sort((a, b) => {
+    if (!a.data.sponsorship || !b.data.sponsorship) return 0;
+    const aDate = new Date(a.data.sponsorship.startDate);
+    const bDate = new Date(b.data.sponsorship.startDate);
+    return aDate.getTime() - bDate.getTime();
+  });
+
+const nonSponsoredTools = modernTools
+  .filter((tool) => !tool.data.sponsorship)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const tools = [...sponsoredTools, ...nonSponsoredTools];
+const toolsData = tools.map((tool) => ({
+  tool: tool.data,
+  slug: tool.slug,
+}));
+
+const title = 'All Tools';
+const description =
+  'Browse all OpenAPI tools that support modern OpenAPI specifications (v3.1+).';
+---
+
+<PostHogLayout>
+  <Layout title={title} description={description}>
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createBreadcrumbSchema([
+          { name: 'Home', url: 'https://openapi.tools/' },
+          { name: 'All Tools', url: 'https://openapi.tools/tools' },
+        ])
+      )}
+    />
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createCollectionPageSchema({
+          name: title,
+          description: description,
+          slug: 'tools',
+          tools: tools.map((t) => ({ name: t.data.name, slug: t.slug })),
+        })
+      )}
+    />
+
+    <PageHeader title={title} description={description}>
+      <p class="mt-4 text-slate-600 dark:text-slate-400">
+        Showing <strong>{tools.length}</strong> tools that support OpenAPI v3.1 or
+        later. Looking for older tools? Check out the <a
+          href="/collections/legacy"
+          class="text-emerald-600 hover:underline dark:text-emerald-400"
+          >legacy collection</a
+        >.
+      </p>
+    </PageHeader>
+
+    <main
+      class="prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300 w-full"
+    >
+      <section class="prose w-full max-w-none">
+        <FilterableToolsList client:only="react" tools={toolsData} />
+      </section>
+    </main>
+  </Layout>
+</PostHogLayout>

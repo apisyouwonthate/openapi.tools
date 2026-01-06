@@ -1,0 +1,208 @@
+import React, { Fragment } from 'react';
+import clsx from 'clsx';
+import {
+  Highlight,
+  themes,
+  type RenderProps,
+  type Token,
+} from 'prism-react-renderer';
+
+import { Button } from './Button';
+import { HeroBackground } from './HeroBackground';
+import { GitHubIcon } from './icons/GitHubIcon';
+
+const codeLanguage = 'json';
+const code = `{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Train Travel API",
+    "description": "Find and book train trips.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Train Support",
+      "url": "https://example.com/support",
+      "email": "support@example.com"
+    },
+  },
+  // ...
+}`;
+
+const tabs = [
+  { name: 'openapi.json', isActive: true },
+  { name: 'README.md', isActive: false },
+];
+
+function TrafficLightsIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 42 10" fill="none" {...props}>
+      <circle cx="5" cy="5" r="4.5" />
+      <circle cx="21" cy="5" r="4.5" />
+      <circle cx="37" cy="5" r="4.5" />
+    </svg>
+  );
+}
+
+export function Hero() {
+  return (
+    <div className="overflow-hidden bg-slate-900 dark:mt-[-4.75rem] dark:-mb-32 dark:pt-[4.75rem] dark:pb-32">
+      <div className="flex flex-col gap-4 py-10 sm:px-2 lg:relative lg:px-0 lg:py-12">
+        <div className="lg:max-w-8xl mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
+          <div className="relative z-10 text-left">
+            <img
+              className="absolute right-full bottom-full -mr-72 -mb-56 opacity-50"
+              src="images/blur-cyan.png"
+              alt=""
+              width={530}
+              height={530}
+            />
+            <div className="relative">
+              <p className="font-display inline bg-gradient-to-r from-green-200 via-green-400 to-green-200 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
+                Tools for working with <br className="md:hidden" /> OpenAPI
+                specs
+              </p>
+              <p className="mt-3 text-2xl tracking-tight text-gray-400">
+                A community-driven, open source project from <br />
+                <a
+                  href="https://apisyouwonthate.com"
+                  target="_blank"
+                  className="font-medium text-green-200/80 transition-all hover:text-green-200 hover:underline"
+                >
+                  APIs You Won't Hate.
+                </a>
+              </p>
+              <div className="mt-8 flex flex-col gap-4 md:flex-row md:justify-center lg:justify-start">
+                <Button
+                  href="https://github.com/apisyouwonthate/openapi.tools/blob/main/CONTRIBUTING.md"
+                  target="_blank"
+                  variant="primary"
+                >
+                  Submit a tool
+                </Button>
+                <Button
+                  variant="secondary"
+                  target="_blank"
+                  href="https://github.com/apisyouwonthate/openapi.tools"
+                >
+                  <span className="mr-[0.5ch] inline-block h-4 w-4 self-center fill-white pt-[3px]">
+                    <GitHubIcon />
+                  </span>{' '}
+                  Contribute on GitHub
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="relative lg:static xl:pl-10">
+            <div className="absolute inset-x-[-50vw] -top-32 -bottom-48 [mask-image:linear-gradient(transparent,white,white)] lg:-top-32 lg:right-0 lg:-bottom-32 lg:left-[calc(50%+14rem)] lg:[mask-image:none] dark:[mask-image:linear-gradient(transparent,white,transparent)] lg:dark:[mask-image:linear-gradient(white,white,transparent)]">
+              <HeroBackground className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 lg:left-0 lg:translate-x-0 lg:translate-y-[-60%]" />
+            </div>
+            <div className="relative">
+              <img
+                className="absolute -top-64 -right-64"
+                src={'images/blur-cyan.png'}
+                alt=""
+                width={530}
+                height={530}
+              />
+              <img
+                className="absolute -right-44 -bottom-40"
+                src={'images/blur-indigo.png'}
+                alt=""
+                width={567}
+                height={567}
+              />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-emerald-300 via-emerald-300/70 to-green-300 opacity-10 blur-lg" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-emerald-300 via-emerald-300/70 to-green-300 opacity-10" />
+              <div className="relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur">
+                <div className="absolute -top-px right-11 left-20 h-px bg-gradient-to-r from-emerald-300/0 via-emerald-300/70 to-emerald-300/0" />
+                <div className="absolute right-20 -bottom-px left-11 h-px bg-gradient-to-r from-green-400/0 via-green-400 to-green-400/0" />
+                <div className="pt-4 pl-4">
+                  <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
+                  <div className="mt-4 flex space-x-2 text-xs">
+                    {tabs.map((tab) => (
+                      <div
+                        key={tab.name}
+                        className={clsx(
+                          'flex h-6 rounded-full',
+                          tab.isActive
+                            ? 'bg-gradient-to-r from-emerald-400/30 via-emerald-400 to-emerald-400/30 p-px font-medium text-emerald-300'
+                            : 'text-slate-500'
+                        )}
+                      >
+                        <div
+                          className={clsx(
+                            'flex items-center rounded-full px-2.5',
+                            tab.isActive && 'bg-slate-800'
+                          )}
+                        >
+                          {tab.name}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-6 flex items-start px-1 text-sm">
+                    <div
+                      aria-hidden="true"
+                      className="border-r border-slate-300/5 pr-4 font-mono text-slate-600 select-none"
+                    >
+                      {Array.from({
+                        length: code.split('\n').length,
+                      }).map((_, index) => (
+                        <Fragment key={index}>
+                          {(index + 1).toString().padStart(2, '0')}
+                          <br />
+                        </Fragment>
+                      ))}
+                    </div>
+                    <Highlight
+                      code={code}
+                      language={codeLanguage}
+                      theme={{
+                        ...themes.dracula,
+                        plain: {
+                          ...themes.dracula.plain,
+                          backgroundColor: 'transparent',
+                        },
+                      }}
+                    >
+                      {/* @ts-expect-error - prism-react-renderer types are incorrect for React 19 */}
+                      {({
+                        className,
+                        style,
+                        tokens,
+                        getLineProps,
+                        getTokenProps,
+                      }: RenderProps) => (
+                        <pre
+                          className={clsx(
+                            className,
+                            'flex overflow-x-auto pb-6'
+                          )}
+                          style={style}
+                        >
+                          <code className="px-4">
+                            {tokens?.map((line: Token[], lineIndex: number) => (
+                              <div key={lineIndex} {...getLineProps({ line })}>
+                                {line?.map(
+                                  (token: Token, tokenIndex: number) => (
+                                    <span
+                                      key={tokenIndex}
+                                      {...getTokenProps({ token })}
+                                    />
+                                  )
+                                )}
+                              </div>
+                            ))}
+                          </code>
+                        </pre>
+                      )}
+                    </Highlight>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

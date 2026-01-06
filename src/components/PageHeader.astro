@@ -1,0 +1,66 @@
+---
+import clsx from 'clsx';
+
+import Link from './Link';
+import SponsorBadge from './SponsorBadge';
+
+interface Props {
+  title: string;
+  description?: string;
+  url?: string;
+  isSponsor?: boolean;
+}
+
+const { title, description, url, isSponsor = false } = Astro.props;
+
+// if this url contains `/tools`, then we want to use a smaller heading size
+
+let headingSize = 'text-sm';
+let descriptionSize = 'text-3xl';
+
+if (Astro.url.pathname.includes('/tools/')) {
+  headingSize = 'text-3xl mb-0';
+  descriptionSize = 'text-xl';
+}
+---
+
+<header class="prose my-9 space-y-1">
+  {
+    isSponsor && (
+      <a class="text-xs" href="/sponsor">
+        <SponsorBadge />
+      </a>
+    )
+  }
+  {
+    url && url?.length > 0 ? (
+      <Link href={url} className="no-underline">
+        <h1
+          class={clsx(
+            'font-display font-medium text-emerald-500 hover:text-emerald-500/80',
+            headingSize
+          )}
+        >
+          {title}
+        </h1>
+      </Link>
+    ) : (
+      <h1
+        class={clsx('font-display font-medium text-emerald-500', headingSize)}
+      >
+        {title}
+      </h1>
+    )
+  }
+</header>
+<p
+  class={clsx(
+    'font-display pb-3 tracking-tight text-slate-900 dark:text-white',
+    descriptionSize
+  )}
+>
+  {description}
+</p>
+<div class="flex flex-col gap-1">
+  <slot />
+</div>

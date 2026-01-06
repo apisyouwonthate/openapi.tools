@@ -1,7 +1,7 @@
 ---
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -18,7 +18,8 @@
     <meta name="author" content="APIs You Won't Hate" />
     <link rel="canonical" href="https://openapi.tools" />
     <title>
-      Legacy OpenAPI.Tools - an Open Source list of great tools for historic OpenAPI versions.
+      Legacy OpenAPI.Tools - an Open Source list of great tools for historic
+      OpenAPI versions.
     </title>
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
@@ -87,17 +88,21 @@
       <div class="container">
         <h1 class="jumbotron-heading text-center">Legacy OpenAPI.Tools</h1>
         <p class="lead">
-          This is a community-driven list of high-quality OpenAPI tools that have fallen out of recency for 
-          various reasons, but are still helpful for those stuck with older OpenAPI. An open source project 
-          from
+          This is a community-driven list of high-quality OpenAPI tools that
+          have fallen out of recency for various reasons, but are still helpful
+          for those stuck with older OpenAPI. An open source project from
           <a href="https://apisyouwonthate.com" target="_blank"
             >APIs You Won&apos;t Hate.</a
           >
         </p>
 
         <p>
-          ⚠️ <strong>This is the legacy list of old OpenAPI tools, covering v3.0 and v2.0 tools that have not yet added
-          support for v3.1 or v3.2. Please visit the main site for the <a href="/">latest tools.</a></strong>
+          ⚠️
+          <strong
+            >This is the legacy list of old OpenAPI tools, covering v3.0 and
+            v2.0 tools that have not yet added support for v3.1 or v3.2. Please
+            visit the main site for the <a href="/">latest tools.</a></strong
+          >
         </p>
       </div>
     </header>
@@ -133,7 +138,7 @@
             >
           </h2>
           <p class="lead">{{ category.description }}</p>
-          <table class="table table-striped">
+          <table class="table-striped table">
             <thead class="thead-inverse">
               <tr>
                 <th>Name</th>
@@ -144,17 +149,21 @@
               </tr>
             </thead>
             <tbody>
-              {% comment %}
-              {% Group by supported version, sorted by name within each group %}
-              {% endcomment %}
-              {% assign v3_tools = site.data.tools | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 == true" | sort_natural: 'name' %}
-              {% assign v2_tools = site.data.tools | where_exp: "tool", "tool.v3_2 != true and tool.v3_1 != true and tool.v3 != true and tool.v2 == true" | sort_natural: 'name' %}
-              {% assign legacy_tools = v3_tools | concat: v2_tools %}
-
-              {% for tool in legacy_tools %} {% if tool.category == category.slug or tool.category contains category.slug %}
-              {% assign url = tool.link | default: tool.github %}
-              <tr class="table-row {% if tool.sponsored %}font-weight-bold alert alert-primary{% endif %}">
-                <td class="font-serif w-3/5">
+              {% comment %} {% Group by supported version, sorted by name within
+              each group %} {% endcomment %} {% assign v3_tools =
+              site.data.tools | where_exp: "tool", "tool.v3_2 != true and
+              tool.v3_1 != true and tool.v3 == true" | sort_natural: 'name' %}
+              {% assign v2_tools = site.data.tools | where_exp: "tool",
+              "tool.v3_2 != true and tool.v3_1 != true and tool.v3 != true and
+              tool.v2 == true" | sort_natural: 'name' %} {% assign legacy_tools
+              = v3_tools | concat: v2_tools %} {% for tool in legacy_tools %} {%
+              if tool.category == category.slug or tool.category contains
+              category.slug %} {% assign url = tool.link | default: tool.github
+              %}
+              <tr
+                class="{% if tool.sponsored %}font-weight-bold alert alert-primary{% endif %} table-row"
+              >
+                <td class="w-3/5 font-serif">
                   <a
                     target="_blank"
                     href="{{ url }}{% if url contains '?' %}&{% else %}?{% endif %}utm_source=openapi-tools&utm_medium=website&utm_campaign={{ category.slug }}"
@@ -163,19 +172,23 @@
                   </a>
                   {% if tool.description %} - {{ tool.description }} {% endif %}
                   {% if tool.sponsored %}
-                    <div>
-                      <span class="badge badge-light">Sponsored</span>
-                      {% if tool.testimonial %}<aside class="d-inline font-weight-normal small font-italic">{{ tool.testimonial }}</aside>{%endif %}
-                    </div>
+                  <div>
+                    <span class="badge badge-light">Sponsored</span>
+                    {% if tool.testimonial %}
+                    <aside
+                      class="d-inline font-weight-normal small font-italic"
+                    >
+                      {{ tool.testimonial }}
+                    </aside>
+                    {%endif %}
+                  </div>
                   {% endif %}
                 </td>
-                <td class="font-serif w-1/5">
-                  {{ tool.language }}
-                </td>
-                <td class="font-serif w-1/3 text-center">
+                <td class="w-1/5 font-serif">{{ tool.language }}</td>
+                <td class="w-1/3 text-center font-serif">
                   {% if tool.v3 %}✅{% else %}❌{% endif %}
                 </td>
-                <td class="font-serif w-1/3 text-center">
+                <td class="w-1/3 text-center font-serif">
                   {% if tool.v2 %}✅{% else %}❌{% endif %}
                 </td>
                 <td class="w-2/3 text-center">
@@ -194,9 +207,11 @@
       </div>
 
       <div class="col text-center">
-        <p>Looking for more modern tools? Check out the <a href="/index.html">main list.</a></p>
+        <p>
+          Looking for more modern tools? Check out the
+          <a href="/index.html">main list.</a>
+        </p>
       </div>
-
     </section>
 
     <footer class="text-muted">

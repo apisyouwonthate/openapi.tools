@@ -1,0 +1,56 @@
+name: Astro CI
+
+# This workflow is triggered on pushes to the repository.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Setup Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # LTS version
+
+      # Install pnpm (version from package.json packageManager field)
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      # Cache pnpm modules
+      - name: Cache pnpm modules
+        uses: actions/cache@v4
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
+
+      # Install dependencies using pnpm
+      - name: Install dependencies
+        run: pnpm install
+
+      # Run linting
+      - name: Lint
+        run: pnpm lint
+
+      # Check formatting with Prettier
+      - name: Check formatting
+        run: pnpm prettier
+
+      # Check for type and other errors
+      - name: Type and error check
+        run: pnpm check
+
+      # Build the project
+      - name: Build
+        run: pnpm build

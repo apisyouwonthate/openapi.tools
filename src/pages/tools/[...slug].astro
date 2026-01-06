@@ -1,0 +1,109 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, getEntry } from 'astro:content';
+
+import Badge from '@/components/Badge';
+import ExternalArticle from '@/components/ExternalArticle';
+import Languages from '@/components/Languages';
+import PageHeader from '@/components/PageHeader.astro';
+import Layout from '@/layouts/Layout.astro';
+import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import enrichFeaturedArticles from '@/utils/enrichFeaturedArticles';
+import {
+  createBreadcrumbSchema,
+  createSoftwareApplicationSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
+
+// 1. Generate a new path for every collection entry
+export const getStaticPaths: GetStaticPaths = async () => {
+  const tools = await getCollection('tools');
+  return tools.map((category) => ({
+    params: { slug: category.slug },
+  }));
+};
+
+// 2. For your template, you can get the entry directly from the prop
+const { slug } = Astro.params;
+const tool = await getEntry('tools', slug as string);
+
+if (!tool) {
+  throw new Error(`No category found for slug ${slug}`);
+}
+
+const languages: Record<string, boolean> = tool.data?.languages || {};
+
+const { Content } = await tool.render();
+
+const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
+---
+
+<PostHogLayout>
+  <Layout
+    title={tool.data.name}
+    description={tool.data.description}
+    ogImage={`https://openapi.tools/tools/${slug}.og.png`}
+  >
+    {/* Breadcrumb Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createBreadcrumbSchema([
+          { name: 'Home', url: 'https://openapi.tools/' },
+          { name: 'Tools', url: 'https://openapi.tools/' },
+          { name: tool.data.name, url: `https://openapi.tools/tools/${slug}` },
+        ])
+      )}
+    />
+    {/* SoftwareApplication Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createSoftwareApplicationSchema({
+          name: tool.data.name,
+          description: tool.data.description,
+          link: tool.data.link,
+          slug: slug as string,
+        })
+      )}
+    />
+    <PageHeader
+      title={tool.data.name}
+      description={tool.data.description}
+      url={tool.data.link}
+      isSponsor={!!tool?.data.sponsorship}
+    >
+      {/* render the body of the markdown file for this category */}
+      <div
+        class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
+      >
+        <Languages languages={languages} />
+      </div>
+    </PageHeader>
+    <main
+      class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
+    >
+      <hr class="my-4" />
+
+      {
+        enrichedFeaturedArticles && (
+          <>
+            <Badge>Featured Articles</Badge>
+
+            <section class="md-grid-cols-2 grid gap-4 lg:grid-cols-3">
+              {enrichedFeaturedArticles.map((article) => (
+                <ExternalArticle {...article.og} />
+              ))}
+            </section>
+          </>
+        )
+      }
+
+      <Content />
+    </main>
+  </Layout>
+</PostHogLayout>

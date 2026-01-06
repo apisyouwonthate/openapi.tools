@@ -1,0 +1,136 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, getEntry } from 'astro:content';
+
+import { FilterableCollectionView } from '@/components/filters/FilterableCollectionView';
+import PageHeader from '@/components/PageHeader.astro';
+import Layout from '@/layouts/Layout.astro';
+import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import type { CollectionFilters } from '@/content/config';
+
+// Helper function to filter tools based on collection filters
+function filterTools(
+  tools: Awaited<ReturnType<typeof getCollection<'tools'>>>,
+  filters: CollectionFilters | undefined
+) {
+  if (!filters) return tools;
+
+  return tools.filter((tool) => {
+    // Legacy filter - excludes v3.1+ support
+    if (filters.legacy) {
+      const v = tool.data.openApiVersions;
+      if (v?.v3_1 || v?.v3_2) return false;
+    }
+
+    // Language filter
+    if (filters.languages?.length) {
+      const hasLang = filters.languages.some((l) => tool.data.languages?.[l]);
+      if (!hasLang) return false;
+    }
+
+    // SaaS filter
+    if (filters.saas && !tool.data.languages?.saas) return false;
+
+    // Open source filter - must have repo URL
+    if (filters.requireRepo && !tool.data.repo) return false;
+
+    // Version requirements
+    if (filters.requireVersions?.length) {
+      const hasVersion = filters.requireVersions.some(
+        (v) => tool.data.openApiVersions?.[v]
+      );
+      if (!hasVersion) return false;
+    }
+
+    return true;
+  });
+}
+
+// 1. Generate a new path for every collection entry
+export const getStaticPaths: GetStaticPaths = async () => {
+  const curatedCollections = await getCollection('curated-collections');
+  return curatedCollections.map((collection) => ({
+    params: { slug: collection.slug },
+    props: { collection },
+  }));
+};
+
+// 2. Get the collection from props
+const { slug } = Astro.params;
+const collection = await getEntry('curated-collections', slug as string);
+
+if (!collection) {
+  throw new Error(`No collection found for slug ${slug}`);
+}
+
+const { Content } = await collection.render();
+
+// 3. Get all tools and filter them based on collection filters
+const allTools = await getCollection('tools');
+const filteredTools = filterTools(allTools, collection.data.filters);
+
+// 4. Get all categories for grouping
+const allCategories = await getCollection('categories');
+
+// 5. Group filtered tools by category
+type CategoryWithTools = {
+  category: (typeof allCategories)[0];
+  tools: typeof filteredTools;
+};
+
+const categoriesWithTools: CategoryWithTools[] = allCategories
+  .map((category) => {
+    const categoryIdWithoutExt = category.id.replace(/\.md$/, '');
+    const toolsInCategory = filteredTools.filter((tool) =>
+      tool.data.categories?.some((cat) => cat.id === categoryIdWithoutExt)
+    );
+    return {
+      category,
+      tools: toolsInCategory.sort((a, b) =>
+        a.data.name.localeCompare(b.data.name)
+      ),
+    };
+  })
+  .filter((cat) => cat.tools.length > 0)
+  .sort((a, b) => a.category.data.name.localeCompare(b.category.data.name));
+
+const totalTools = filteredTools.length;
+
+// Transform data for FilterableCollectionView
+const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
+  id: category.id,
+  name: category.data.name,
+  description: category.data.description,
+  tools: tools.map((tool) => ({
+    tool: tool.data,
+    slug: tool.slug,
+    category: category.data,
+  })),
+}));
+---
+
+<PostHogLayout>
+  <Layout
+    title={collection.data.name}
+    description={collection.data.description}
+  >
+    <PageHeader
+      title={collection.data.name}
+      description={collection.data.description}
+    >
+      <div
+        class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300 mt-4"
+      >
+        <Content />
+      </div>
+    </PageHeader>
+
+    <main class="w-full">
+      <FilterableCollectionView
+        client:only="react"
+        categoriesWithTools={categoryGroups}
+        totalToolCount={totalTools}
+      />
+    </main>
+  </Layout>
+</PostHogLayout>
