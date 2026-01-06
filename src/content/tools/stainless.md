@@ -15,7 +15,6 @@ openApiVersions:
   v2: false
   v3: true
   v3_1: true
-  v4: false
 sponsorship:
   startDate: 2024-01-01T06:00:00.000Z
 ---

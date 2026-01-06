@@ -40,7 +40,6 @@ const ToolSchema = z.object({
     v3: z.boolean().optional(),
     v3_1: z.boolean().optional(),
     v3_2: z.boolean().optional(),
-    v4: z.boolean().optional(),
   }),
   featuredArticles: z
     .array(
@@ -67,7 +66,7 @@ const CollectionFiltersSchema = z.object({
   languages: z.array(z.string()).optional(),
   // Version filter - requires specific version support
   requireVersions: z
-    .array(z.enum(['v2', 'v3', 'v3_1', 'v3_2', 'v4']))
+    .array(z.enum(['v2', 'v3', 'v3_1', 'v3_2']))
     .optional(),
   // Legacy filter - excludes v3.1+ support
   legacy: z.boolean().optional(),

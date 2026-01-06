@@ -25,7 +25,7 @@ To add a new tool to the project, you need to create a new markdown file in the 
     v2: false
     v3: true
     v3_1: true
-    v4: true
+    v3_2: true
   ---
 
   ## Overview

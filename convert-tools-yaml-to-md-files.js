@@ -15,7 +15,6 @@ const toolSchema = z.object({
     v3: z.boolean().optional(),
     v3_1: z.boolean().optional(),
     v3_2: z.boolean().optional(),
-    v4: z.boolean().optional(),
   }),
   sponsorship: z
     .object({
@@ -149,7 +148,6 @@ const convertToolToMarkdown = (tool) => {
     v3: versions.v3 || false,
     v3_1: versions.v3_1 || false,
     v3_2: versions.v3_2 || false,
-    v4: false, // Assuming v4 is false by default since it's not in the original data
   };
 
   let sponsorship = undefined;
