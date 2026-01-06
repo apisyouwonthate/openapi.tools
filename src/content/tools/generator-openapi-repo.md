@@ -11,4 +11,5 @@ openApiVersions:
   v2: true
   v3: false
   v3_1: false
+  v3_2: false
 ---

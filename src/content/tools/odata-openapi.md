@@ -1,14 +1,14 @@
 ---
-name: OData OpenAPI
-description: OData 4.0, 3.0, and 2.0 to OpenAPI v3.1, v3.0, and v2.0 converter
+name: OData.OpenAPI
+description: Convert an Edm (Entity Data Model) to OpenAPI 3.0
 categories:
   - converters
 languages:
-  node: true
-  xslt: true
-repo: https://github.com/oasis-tcs/odata-openapi
+  dot-net: true
+repo: https://github.com/xuzhg/OData.OpenAPI
 openApiVersions:
-  v2: true
+  v2: false
   v3: true
-  v3_1: true
+  v3_1: false
+  v3_2: false
 ---
