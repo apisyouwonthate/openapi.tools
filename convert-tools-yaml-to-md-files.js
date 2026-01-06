@@ -58,9 +58,6 @@ const convertToolToMarkdown = (tool) => {
       case 'dsl':
         cat = 'domain-specific-languages';
         break;
-      case 'learning':
-        cat = 'education';
-        break;
       case 'description-validator':
       case 'description-validators':
         cat = 'schema-validators';

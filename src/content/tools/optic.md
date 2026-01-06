@@ -2,7 +2,7 @@
 name: optic
 description: Build your first OpenAPI description from traffic. Use Optic to patch the OpenAPI every time it detects new API behavior.
 categories:
-  - education
+  - learning
 link: https://useoptic.com
 languages:
   cli: true

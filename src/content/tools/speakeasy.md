@@ -8,7 +8,7 @@ categories:
   - testing
   - mocking-tools
   - ides
-  - education
+  - learning
 link: https://www.speakeasy.com/
 languages:
   typescript: true
