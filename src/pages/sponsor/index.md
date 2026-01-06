@@ -17,3 +17,5 @@ You can sponsor OpenAPI.tools by making a donation through [GitHub Sponsors](htt
 ### Become a Member
 
 OpenAPI.tools is a community-driven project, maintained by the team behind [APIs You Won't Hate](https://apisyouwonthate.com). If you're not a corporation and you'd like to support us, consider [Becoming a paid member of APIs You Won't Hate](https://apisyouwonthate.com/#/portal/)'s community.
+
+<iframe src="https://github.com/sponsors/apisyouwonthate/card" title="Sponsor apisyouwonthate" height="225" width="100%" class="max-w-xl border-0"></iframe>
