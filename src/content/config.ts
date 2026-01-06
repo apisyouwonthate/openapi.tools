@@ -65,9 +65,7 @@ const CollectionFiltersSchema = z.object({
   // Language filter - tool.languages[key] === true
   languages: z.array(z.string()).optional(),
   // Version filter - requires specific version support
-  requireVersions: z
-    .array(z.enum(['v2', 'v3', 'v3_1', 'v3_2']))
-    .optional(),
+  requireVersions: z.array(z.enum(['v2', 'v3', 'v3_1', 'v3_2'])).optional(),
   // Legacy filter - excludes v3.1+ support
   legacy: z.boolean().optional(),
   // Open source filter - must have repo URL

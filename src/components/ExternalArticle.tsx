@@ -46,16 +46,13 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
       <div className="max-w-xl">
         <div className="mt-2 flex items-center gap-x-2 text-xs">
           {postDate && (
-            <time
-              dateTime={postDate.toISOString()}
-              className="text-gray-500"
-            >
+            <time dateTime={postDate.toISOString()} className="text-gray-500">
               {postDate.toLocaleDateString()}
             </time>
           )}
         </div>
         <div className="group relative">
-          <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+          <h3 className="mt-3 text-lg leading-6 font-semibold text-gray-900 group-hover:text-gray-600">
             <Link href={url} className="font-medium no-underline">
               <span className="absolute inset-0" />
               {title}
@@ -68,9 +65,7 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
         <div className="relative mt-8 flex items-center gap-x-4">
           {author && (
             <div className="text-sm leading-6">
-              <p className="font-semibold text-gray-900">
-                {author}
-              </p>
+              <p className="font-semibold text-gray-900">{author}</p>
             </div>
           )}
         </div>

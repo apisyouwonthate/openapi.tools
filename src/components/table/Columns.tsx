@@ -26,7 +26,7 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
             className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
           >
             {tool?.sponsorship && <SponsorBadge />}
-            <span className="whitespace-pre font-bold text-emerald-600 group-hover:underline dark:text-emerald-300">
+            <span className="font-bold whitespace-pre text-emerald-600 group-hover:underline dark:text-emerald-300">
               {tool.name}
             </span>
           </Link>{' '}

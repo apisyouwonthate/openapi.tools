@@ -40,7 +40,7 @@ export function Navigation({
               <h2 className="font-display font-medium text-slate-900">
                 {category.title}
               </h2>
-              <ul className="mt-2 space-y-2 border-l-2 border-slate-100 dark:border-slate-800 lg:mt-4 lg:space-y-4 lg:border-slate-200">
+              <ul className="mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800">
                 {category.links?.map((link) => (
                   <li
                     key={link.href}
@@ -51,7 +51,7 @@ export function Navigation({
                       href={link.href}
                       onClick={onLinkClick}
                       className={clsx(
-                        'block w-full pl-3.5 before:pointer-events-none before:absolute before:-left-1 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full',
+                        'block w-full pl-3.5 before:pointer-events-none before:absolute before:top-1/2 before:-left-1 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full',
                         link.href === pathname
                           ? 'font-semibold text-emerald-500 before:bg-emerald-500'
                           : linkStandardColors

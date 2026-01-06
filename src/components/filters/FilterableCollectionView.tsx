@@ -1,17 +1,17 @@
 import { useMemo } from 'react';
 import { X } from 'lucide-react';
 
-import type { ToolRowData } from '@/components/table/Columns';
 import { CollectionToolColumns } from '@/components/table/CollectionToolColumns';
+import type { ToolRowData } from '@/components/table/Columns';
 import { DataTable } from '@/components/table/DataTable';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import {
   extractLanguages,
   extractPlatforms,
   filterToolsByLanguages,
 } from '@/utils/languageUtils';
+import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import { FilterPopover } from './LanguageFilterPopover';
 
 type CategoryGroup = {
@@ -31,12 +31,8 @@ export function FilterableCollectionView({
   totalToolCount,
 }: FilterableCollectionViewProps) {
   const columns = CollectionToolColumns;
-  const {
-    selectedLanguages,
-    toggleLanguage,
-    clearFilters,
-    isInitialized,
-  } = useLanguageFilter();
+  const { selectedLanguages, toggleLanguage, clearFilters, isInitialized } =
+    useLanguageFilter();
 
   // Flatten all tools for language extraction
   const allTools = useMemo(
@@ -76,7 +72,11 @@ export function FilterableCollectionView({
 
   // Calculate filtered totals
   const filteredToolCount = useMemo(
-    () => filteredCategoriesWithTools.reduce((sum, cat) => sum + cat.tools.length, 0),
+    () =>
+      filteredCategoriesWithTools.reduce(
+        (sum, cat) => sum + cat.tools.length,
+        0
+      ),
     [filteredCategoriesWithTools]
   );
 
@@ -155,8 +155,8 @@ export function FilterableCollectionView({
 
       <p className="text-slate-600 dark:text-slate-400">
         Showing <strong>{filteredToolCount}</strong>
-        {hasFilters && ` of ${totalToolCount}`} tools
-        across <strong>{filteredCategoriesWithTools.length}</strong> categories
+        {hasFilters && ` of ${totalToolCount}`} tools across{' '}
+        <strong>{filteredCategoriesWithTools.length}</strong> categories
         {hasFilters && <span> matching selected filters</span>}
       </p>
 

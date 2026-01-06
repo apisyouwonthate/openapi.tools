@@ -8,7 +8,6 @@ import { Hero } from '@/components/Hero';
 import { Navigation, type NavigationItems } from '@/components/Navigation';
 import PostHog from '@/components/PostHog.astro';
 import SponsorBanner from '@/components/SponsorBanner';
-
 import {
   createOrganizationSchema,
   createWebSiteSchema,
@@ -235,7 +234,7 @@ const categories: NavigationItems = [
       {isHomePage && <Hero />}
 
       <div
-        class="relative mx-auto flex w-full max-w-8xl flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
+        class="max-w-8xl relative mx-auto flex w-full flex-auto justify-center sm:px-2 lg:px-8 xl:px-12"
       >
         <div class="hidden lg:relative lg:block lg:flex-none">
           <div
@@ -243,15 +242,15 @@ const categories: NavigationItems = [
           >
           </div>
           <div
-            class="absolute bottom-0 right-0 top-16 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"
+            class="absolute top-16 right-0 bottom-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block"
           >
           </div>
           <div
-            class="absolute bottom-0 right-0 top-28 hidden w-px bg-slate-800 dark:block"
+            class="absolute top-28 right-0 bottom-0 hidden w-px bg-slate-800 dark:block"
           >
           </div>
           <div
-            class="sticky top-[2.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-y-auto overflow-x-hidden py-8 pl-0.5 pr-8 xl:w-72 xl:pr-16"
+            class="sticky top-[2.75rem] -ml-0.5 h-[calc(100vh-4.75rem)] w-64 overflow-x-hidden overflow-y-auto py-8 pr-8 pl-0.5 xl:w-72 xl:pr-16"
           >
             <Navigation categories={categories} currentUrl={Astro.url} />
           </div>

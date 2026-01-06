@@ -128,10 +128,7 @@ const toolsData = tools.map((tool) => ({
         {category.data.name}
       </h2>
       <section class="prose w-full max-w-none">
-        <FilterableToolsList
-          client:only="react"
-          tools={toolsData}
-        />
+        <FilterableToolsList client:only="react" tools={toolsData} />
       </section>
     </main>
   </Layout>

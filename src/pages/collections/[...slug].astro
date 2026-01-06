@@ -110,13 +110,16 @@ const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
 ---
 
 <PostHogLayout>
-  <Layout title={collection.data.name} description={collection.data.description}>
+  <Layout
+    title={collection.data.name}
+    description={collection.data.description}
+  >
     <PageHeader
       title={collection.data.name}
       description={collection.data.description}
     >
       <div
-        class="prose prose-lg mt-4 dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300"
+        class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300 mt-4"
       >
         <Content />
       </div>

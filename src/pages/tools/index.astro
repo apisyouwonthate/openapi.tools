@@ -39,14 +39,12 @@ const toolsData = tools.map((tool) => ({
 }));
 
 const title = 'All Tools';
-const description = 'Browse all OpenAPI tools that support modern OpenAPI specifications (v3.1+).';
+const description =
+  'Browse all OpenAPI tools that support modern OpenAPI specifications (v3.1+).';
 ---
 
 <PostHogLayout>
-  <Layout
-    title={title}
-    description={description}
-  >
+  <Layout title={title} description={description}>
     <script
       is:inline
       slot="head"
@@ -72,13 +70,14 @@ const description = 'Browse all OpenAPI tools that support modern OpenAPI specif
       )}
     />
 
-    <PageHeader
-      title={title}
-      description={description}
-    >
+    <PageHeader title={title} description={description}>
       <p class="mt-4 text-slate-600 dark:text-slate-400">
-        Showing <strong>{tools.length}</strong> tools that support OpenAPI v3.1 or later.
-        Looking for older tools? Check out the <a href="/collections/legacy" class="text-emerald-600 hover:underline dark:text-emerald-400">legacy collection</a>.
+        Showing <strong>{tools.length}</strong> tools that support OpenAPI v3.1 or
+        later. Looking for older tools? Check out the <a
+          href="/collections/legacy"
+          class="text-emerald-600 hover:underline dark:text-emerald-400"
+          >legacy collection</a
+        >.
       </p>
     </PageHeader>
 
@@ -86,10 +85,7 @@ const description = 'Browse all OpenAPI tools that support modern OpenAPI specif
       class="prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300 w-full"
     >
       <section class="prose w-full max-w-none">
-        <FilterableToolsList
-          client:only="react"
-          tools={toolsData}
-        />
+        <FilterableToolsList client:only="react" tools={toolsData} />
       </section>
     </main>
   </Layout>

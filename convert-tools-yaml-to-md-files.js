@@ -36,7 +36,7 @@ const convertToolToMarkdown = (tool) => {
     category,
     language,
     link,
-    github: _github,  
+    github: _github,
     sponsoredDate,
     testimonial,
     ...versions

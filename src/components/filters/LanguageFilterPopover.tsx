@@ -1,9 +1,7 @@
 import { Check, ChevronsUpDown } from 'lucide-react';
 
-import type { LanguageOption } from '@/types/filters';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Command,
   CommandEmpty,
@@ -17,6 +15,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover';
+import { cn } from '@/lib/utils';
+import type { LanguageOption } from '@/types/filters';
 
 type FilterPopoverProps = {
   title: string;
@@ -72,7 +72,7 @@ export function FilterPopover({
                   >
                     <div
                       className={cn(
-                        'mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary',
+                        'border-primary mr-2 flex h-4 w-4 items-center justify-center rounded-sm border',
                         isSelected
                           ? 'bg-primary text-primary-foreground'
                           : 'opacity-50 [&_svg]:invisible'

@@ -1,7 +1,7 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
-@plugin "@tailwindcss/typography";
+@plugin '@tailwindcss/typography';
 
 /* Enable class-based dark mode (for manual theme switcher) */
 @custom-variant dark (&:where(.dark, .dark *));

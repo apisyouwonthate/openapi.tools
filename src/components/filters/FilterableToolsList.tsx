@@ -2,32 +2,26 @@ import { useMemo } from 'react';
 import { X } from 'lucide-react';
 
 import type { ToolRowData } from '@/components/table/Columns';
-import { ToolColumns } from '@/components/table/ToolColumns';
 import { DataTable } from '@/components/table/DataTable';
+import { ToolColumns } from '@/components/table/ToolColumns';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import {
   extractLanguages,
   extractPlatforms,
   filterToolsByLanguages,
 } from '@/utils/languageUtils';
+import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import { FilterPopover } from './LanguageFilterPopover';
 
 type FilterableToolsListProps = {
   tools: ToolRowData[];
 };
 
-export function FilterableToolsList({
-  tools,
-}: FilterableToolsListProps) {
+export function FilterableToolsList({ tools }: FilterableToolsListProps) {
   const columns = ToolColumns;
-  const {
-    selectedLanguages,
-    toggleLanguage,
-    clearFilters,
-    isInitialized,
-  } = useLanguageFilter();
+  const { selectedLanguages, toggleLanguage, clearFilters, isInitialized } =
+    useLanguageFilter();
 
   // Extract available languages and platforms from all tools
   const availableLanguages = useMemo(() => extractLanguages(tools), [tools]);

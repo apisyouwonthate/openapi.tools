@@ -37,7 +37,7 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
         })}
         target="_blank"
         rel="noopener noreferrer"
-        className={clsx('rounded-xl flex h-16 w-full')}
+        className={clsx('flex h-16 w-full rounded-xl')}
       >
         <div
           className={clsx(
@@ -48,7 +48,7 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
             Sponsored by{' '}
             <span className="text-pink-600 md:text-white">{sponsor.name}</span>{' '}
             - {sponsor.description}
-            <span className="ml-2 hidden break-inside-avoid whitespace-pre rounded-full bg-pink-600 px-4 text-white hover:bg-pink-600/80 active:bg-pink-600/90 md:inline-block md:py-2">
+            <span className="ml-2 hidden break-inside-avoid rounded-full bg-pink-600 px-4 whitespace-pre text-white hover:bg-pink-600/80 active:bg-pink-600/90 md:inline-block md:py-2">
               {sponsor.ctaText}
             </span>
           </span>

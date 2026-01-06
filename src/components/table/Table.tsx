@@ -47,7 +47,7 @@ const TableFooter = React.forwardRef<
   <tfoot
     ref={ref}
     className={clsxm(
-      'border-t bg-muted/50 font-medium dark:prose-invert [&>tr]:last:border-b-0',
+      'bg-muted/50 dark:prose-invert border-t font-medium [&>tr]:last:border-b-0',
       className
     )}
     {...props}
@@ -62,7 +62,7 @@ const TableRow = React.forwardRef<
   <tr
     ref={ref}
     className={clsxm(
-      'border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted',
+      'hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors',
       className
     )}
     {...props}
@@ -77,7 +77,7 @@ const TableHead = React.forwardRef<
   <th
     ref={ref}
     className={clsxm(
-      'my-2 px-4 py-2 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0',
+      'text-muted-foreground my-2 px-4 py-2 text-left align-middle font-medium [&:has([role=checkbox])]:pr-0',
       'text-emerald-600 dark:text-emerald-200',
       className
     )}
@@ -107,7 +107,7 @@ const TableCaption = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <caption
     ref={ref}
-    className={clsxm('mt-4 text-sm text-muted-foreground', className)}
+    className={clsxm('text-muted-foreground mt-4 text-sm', className)}
     {...props}
   />
 ));

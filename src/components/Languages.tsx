@@ -20,7 +20,7 @@ const Languages: React.FC<LanguagesProps> = ({ languages }) => {
         {Object.keys(languages).map((language) => (
           <li
             key={language}
-            className="inline-flex h-10 w-10 select-none items-center justify-center rounded bg-green-600 p-1 hover:scale-105"
+            className="inline-flex h-10 w-10 items-center justify-center rounded bg-green-600 p-1 select-none hover:scale-105"
             title={language}
           >
             <i
