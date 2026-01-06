@@ -81,7 +81,7 @@ for (const category of sortedCategories) {
           class="prose dark:prose-invert list-disc pl-6 md:columns-2 md:gap-8 lg:columns-3"
         >
           {
-            Array.from(toolsByCategory.entries()).map(([categoryId, tools]) => {
+            Array.from(toolsByCategory.keys()).map((categoryId) => {
               const category = sortedCategories.find(
                 (c) => c.id === categoryId
               );

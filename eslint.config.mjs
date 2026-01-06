@@ -19,6 +19,7 @@ export default tseslint.config(
       '**/*.d.ts',
       'dist/**',
       '.astro/**',
+      '.netlify/**',
       '.vercel/**',
       '_site/**',
       'node_modules/**',
