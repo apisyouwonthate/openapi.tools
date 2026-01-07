@@ -45,6 +45,7 @@ const ToolSchema = z.object({
     .object({
       oas: z.boolean().optional(),
       overlays: z.boolean().optional(),
+      arazzo: z.boolean().optional(),
     })
     .optional(),
   featuredArticles: z
@@ -80,6 +81,8 @@ const CollectionFiltersSchema = z.object({
   saas: z.boolean().optional(),
   // Overlays filter - tool.oaiSpecs.overlays === true
   overlays: z.boolean().optional(),
+  // Arazzo filter - tool.oaiSpecs.arazzo === true
+  arazzo: z.boolean().optional(),
 });
 
 const CollectionSchema = z.object({

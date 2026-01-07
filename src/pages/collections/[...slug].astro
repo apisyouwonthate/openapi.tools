@@ -42,6 +42,9 @@ function filterTools(
     // Overlays filter
     if (filters.overlays && !tool.data.oaiSpecs?.overlays) return false;
 
+    // Arazzo filter
+    if (filters.arazzo && !tool.data.oaiSpecs?.arazzo) return false;
+
     // Version requirements
     if (filters.requireVersions?.length) {
       const hasVersion = filters.requireVersions.some(
