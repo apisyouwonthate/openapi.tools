@@ -9,7 +9,7 @@ languages:
 repo: https://github.com/karenetheridge/Mojolicious-Plugin-OpenAPI-Modern
 openApiVersions:
   v2: false
-  v3: false
+  v3: true
   v3_1: true
   v3_2: true
 ---
