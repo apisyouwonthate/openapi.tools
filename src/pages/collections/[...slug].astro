@@ -6,12 +6,12 @@ import { FilterableCollectionView } from '@/components/filters/FilterableCollect
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
-import type { CollectionFilters } from '@/content/config';
 import {
   createBreadcrumbSchema,
   createCollectionPageSchema,
   serializeSchema,
 } from '@/utils/structuredData';
+import type { CollectionFilters } from '@/content/config';
 
 // Helper function to filter tools based on collection filters
 function filterTools(

@@ -18,13 +18,13 @@ OpenAPI.tools is a community-driven directory helping developers discover the be
 
 ### Sponsorship Benefits
 
-| Benefit | Included |
-|---------|----------|
-| Priority listing in categories | ✓ |
-| "Sponsored" badge on your tool | ✓ |
-| Embeddable badges for your website | ✓ |
-| Banner rotation (limited spots) | Contact us |
-| Featured testimonial | ✓ |
+| Benefit                            | Included   |
+| ---------------------------------- | ---------- |
+| Priority listing in categories     | ✓          |
+| "Sponsored" badge on your tool     | ✓          |
+| Embeddable badges for your website | ✓          |
+| Banner rotation (limited spots)    | Contact us |
+| Featured testimonial               | ✓          |
 
 ### Current Sponsors
 

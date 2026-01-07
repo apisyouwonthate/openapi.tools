@@ -23,6 +23,7 @@ Want to add a tool or improve the site? Please read [CONTRIBUTING.md](./CONTRIBU
 OpenAPI.tools is maintained by [APIs You Won't Hate](https://apisyouwonthate.com). Sponsorship helps cover hosting costs and supports continued development.
 
 **Benefits for sponsors:**
+
 - Priority placement in category listings
 - "Sponsored" badge on your tool
 - Embeddable badges for your website ([see options](https://openapi.tools/badges))

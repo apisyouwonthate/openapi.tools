@@ -24,6 +24,7 @@
     "@astrojs/check": "^0.9.6",
     "@astrojs/netlify": "^6.6.3",
     "@astrojs/react": "^4.4.2",
+    "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/ts-plugin": "^1.10.6",
     "@headlessui/react": "^2.2.9",

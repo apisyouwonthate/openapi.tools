@@ -1,7 +1,7 @@
 ---
+import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
-import PageHeader from '@/components/PageHeader.astro';
 import {
   createBreadcrumbSchema,
   serializeSchema,
@@ -48,7 +48,9 @@ const description =
             height="40"
           />
           <div class="flex-1">
-            <p class="mb-2 text-sm font-medium text-slate-600 dark:text-slate-400">
+            <p
+              class="mb-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+            >
               Purple gradient badge
             </p>
           </div>
@@ -86,7 +88,9 @@ const description =
             height="40"
           />
           <div class="flex-1">
-            <p class="mb-2 text-sm font-medium text-slate-600 dark:text-slate-400">
+            <p
+              class="mb-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+            >
               Green gradient (light backgrounds)
             </p>
           </div>
@@ -135,8 +139,8 @@ const description =
       <p>
         Want to display these badges on your website? <a href="/sponsor"
           >Become a sponsor</a
-        > to support OpenAPI.tools and get access to these badges, priority
-        placement in tool listings, and more.
+        > to support OpenAPI.tools and get access to these badges, priority placement
+        in tool listings, and more.
       </p>
 
       <div class="mt-8 flex gap-4">

@@ -1,6 +1,7 @@
 import type {
   BreadcrumbList,
   CollectionPage,
+  FAQPage,
   Organization,
   SoftwareApplication,
   WebSite,
@@ -127,6 +128,26 @@ export function createCollectionPageSchema(data: {
         url: tool.url,
       })),
     },
+  };
+}
+
+/**
+ * Generate FAQPage structured data for category pages
+ */
+export function createFAQSchema(
+  faqs: Array<{ question: string; answer: string }>
+): WithContext<FAQPage> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question' as const,
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer' as const,
+        text: faq.answer,
+      },
+    })),
   };
 }
 

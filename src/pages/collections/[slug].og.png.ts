@@ -42,7 +42,9 @@ function filterTools(
 
 export async function getStaticPaths() {
   const collections = await getCollection('curated-collections');
-  return collections.map((collection) => ({ params: { slug: collection.slug } }));
+  return collections.map((collection) => ({
+    params: { slug: collection.slug },
+  }));
 }
 
 export const GET = async ({ params }: OgRouteParams) => {
