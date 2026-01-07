@@ -103,8 +103,11 @@ const toolsData = tools.map((tool) => ({
         createCollectionPageSchema({
           name: category.data.name,
           description: category.data.description,
-          slug: slug as string,
-          tools: tools.map((t) => ({ name: t.data.name, slug: t.slug })),
+          url: `https://openapi.tools/categories/${slug}`,
+          tools: tools.map((t) => ({
+            name: t.data.name,
+            url: `https://openapi.tools/tools/${t.slug}`,
+          })),
         })
       )}
     />

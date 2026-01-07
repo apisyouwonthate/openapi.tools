@@ -7,6 +7,11 @@ import { DataTable } from '@/components/table/DataTable';
 import { LegacyToolColumns } from '@/components/table/LegacyToolColumns';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import {
+  createBreadcrumbSchema,
+  createCollectionPageSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
 
 // Get all tools
 const allTools = await getCollection('tools');
@@ -57,6 +62,36 @@ for (const category of sortedCategories) {
     title="Legacy OpenAPI Tools"
     description="High-quality OpenAPI tools for v3.0 and v2.0 that haven't yet added support for v3.1 or v3.2"
   >
+    {/* Breadcrumb Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createBreadcrumbSchema([
+          { name: 'Home', url: 'https://openapi.tools/' },
+          { name: 'Legacy Tools', url: 'https://openapi.tools/legacy' },
+        ])
+      )}
+    />
+    {/* CollectionPage Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createCollectionPageSchema({
+          name: 'Legacy OpenAPI Tools',
+          description:
+            'High-quality OpenAPI tools for v3.0 and v2.0 that haven\'t yet added support for v3.1 or v3.2',
+          url: 'https://openapi.tools/legacy',
+          tools: legacyTools.slice(0, 10).map((t) => ({
+            name: t.data.name,
+            url: `https://openapi.tools/tools/${t.slug}`,
+          })),
+        })
+      )}
+    />
     <PageHeader
       title="Legacy OpenAPI Tools"
       description="Tools for historic OpenAPI versions"

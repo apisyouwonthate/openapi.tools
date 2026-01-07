@@ -4,30 +4,57 @@ import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
 
+import type { CollectionFilters } from '@/content/config';
+
 type OgRouteParams = {
   params: {
     slug: string;
   };
 };
 
+// Helper function to filter tools based on collection filters
+function filterTools(
+  tools: Awaited<ReturnType<typeof getCollection<'tools'>>>,
+  filters: CollectionFilters | undefined
+) {
+  if (!filters) return tools;
+
+  return tools.filter((tool) => {
+    if (filters.legacy) {
+      const v = tool.data.openApiVersions;
+      if (v?.v3_1 || v?.v3_2) return false;
+    }
+    if (filters.languages?.length) {
+      const hasLang = filters.languages.some((l) => tool.data.languages?.[l]);
+      if (!hasLang) return false;
+    }
+    if (filters.saas && !tool.data.languages?.saas) return false;
+    if (filters.requireRepo && !tool.data.repo) return false;
+    if (filters.requireVersions?.length) {
+      const hasVersion = filters.requireVersions.some(
+        (v) => tool.data.openApiVersions?.[v]
+      );
+      if (!hasVersion) return false;
+    }
+    return true;
+  });
+}
+
 export async function getStaticPaths() {
-  const categories = await getCollection('categories');
-  return categories.map((category) => ({ params: { slug: category.slug } }));
+  const collections = await getCollection('curated-collections');
+  return collections.map((collection) => ({ params: { slug: collection.slug } }));
 }
 
 export const GET = async ({ params }: OgRouteParams) => {
   const { slug } = params;
-  const category = await getEntry('categories', slug!);
-  const title = category?.data.name ?? 'OpenAPI Tools';
-  const description = category?.data.description ?? '';
+  const collection = await getEntry('curated-collections', slug!);
+  const title = collection?.data.name ?? 'OpenAPI Tools Collection';
+  const description = collection?.data.description ?? '';
 
-  // Get tool count for this category
-  const categoryIdWithoutExt = category?.id.replace(/\.md$/, '') ?? '';
+  // Get tool count for this collection
   const allTools = await getCollection('tools');
-  const toolCount = allTools.filter((tool) => {
-    if (!tool.data.categories) return false;
-    return tool.data.categories.some((cat) => cat.id === categoryIdWithoutExt);
-  }).length;
+  const filteredTools = filterTools(allTools, collection?.data.filters);
+  const toolCount = filteredTools.length;
 
   const markup = html(`<div
     style="height: 100%; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: rgb(45,26,84); font-size: 32px; font-weight: 600; padding: 40px;"
@@ -35,7 +62,7 @@ export const GET = async ({ params }: OgRouteParams) => {
     <div
       style="font-size: 24px; color: rgb(134, 239, 172); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 20px;"
     >
-      OpenAPI.tools
+      OpenAPI.tools Collection
     </div>
     <div
       style="font-size: 70px; display: flex; flex-direction: column; color: white; text-align: center;"
@@ -50,7 +77,7 @@ export const GET = async ({ params }: OgRouteParams) => {
     <div
       style="font-size: 24px; color: rgb(134, 239, 172); margin-top: 30px;"
     >
-      ${toolCount} tools available
+      ${toolCount} tools in this collection
     </div>
   </div>`);
 

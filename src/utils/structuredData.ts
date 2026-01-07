@@ -71,9 +71,10 @@ export function createSoftwareApplicationSchema(tool: {
   name: string;
   description: string;
   link?: string;
+  repo?: string;
   slug: string;
 }): WithContext<SoftwareApplication> {
-  return {
+  const schema: WithContext<SoftwareApplication> = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: tool.name,
@@ -81,37 +82,49 @@ export function createSoftwareApplicationSchema(tool: {
     applicationCategory: 'DeveloperApplication',
     url: tool.link || `${SITE_URL}/tools/${tool.slug}`,
     operatingSystem: 'Cross-platform',
+    author: {
+      '@type': 'Organization',
+      name: ORG_NAME,
+      url: ORG_URL,
+    },
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
     },
   };
+
+  // Add code repository if available
+  if (tool.repo) {
+    (schema as unknown as Record<string, unknown>).codeRepository = tool.repo;
+  }
+
+  return schema;
 }
 
 /**
- * Generate CollectionPage structured data for category pages
+ * Generate CollectionPage structured data for category and collection pages
  */
-export function createCollectionPageSchema(category: {
+export function createCollectionPageSchema(data: {
   name: string;
   description: string;
-  slug: string;
-  tools: Array<{ name: string; slug: string }>;
+  url: string;
+  tools: Array<{ name: string; url: string }>;
 }): WithContext<CollectionPage> {
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: category.name,
-    description: category.description,
-    url: `${SITE_URL}/categories/${category.slug}`,
+    name: data.name,
+    description: data.description,
+    url: data.url,
     mainEntity: {
       '@type': 'ItemList',
-      numberOfItems: category.tools.length,
-      itemListElement: category.tools.slice(0, 10).map((tool, index) => ({
+      numberOfItems: data.tools.length,
+      itemListElement: data.tools.slice(0, 10).map((tool, index) => ({
         '@type': 'ListItem' as const,
         position: index + 1,
         name: tool.name,
-        url: `${SITE_URL}/tools/${tool.slug}`,
+        url: tool.url,
       })),
     },
   };

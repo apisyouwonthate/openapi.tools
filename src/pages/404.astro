@@ -1,0 +1,88 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import PostHogLayout from '@/layouts/PostHogLayout.astro';
+---
+
+<PostHogLayout>
+  <Layout
+    title="Page Not Found"
+    description="The page you're looking for doesn't exist or has been moved."
+  >
+    <main class="mx-auto max-w-2xl px-4 py-16 text-center">
+      <h1 class="mb-4 text-6xl font-bold text-emerald-600 dark:text-emerald-400">
+        404
+      </h1>
+      <h2
+        class="mb-6 text-2xl font-semibold text-slate-800 dark:text-slate-200"
+      >
+        Page Not Found
+      </h2>
+      <p class="mb-8 text-lg text-slate-600 dark:text-slate-400">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+
+      <div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <a
+          href="/"
+          class="inline-flex items-center rounded-lg bg-emerald-600 px-6 py-3 text-white transition-colors hover:bg-emerald-700"
+        >
+          <svg
+            class="mr-2 h-5 w-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            ></path>
+          </svg>
+          Browse Categories
+        </a>
+        <a
+          href="/tools"
+          class="inline-flex items-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-slate-700 transition-colors hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
+        >
+          <svg
+            class="mr-2 h-5 w-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          View All Tools
+        </a>
+      </div>
+
+      <div class="mt-12 border-t border-slate-200 pt-8 dark:border-slate-700">
+        <p class="mb-4 text-sm text-slate-500 dark:text-slate-400">
+          Looking for something specific?
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-3 text-sm text-emerald-600 dark:text-emerald-400"
+        >
+          <a href="/categories/code-generators" class="hover:underline"
+            >Code Generators</a
+          >
+          <span class="text-slate-300 dark:text-slate-600">|</span>
+          <a href="/categories/documentation" class="hover:underline"
+            >Documentation</a
+          >
+          <span class="text-slate-300 dark:text-slate-600">|</span>
+          <a href="/categories/testing" class="hover:underline">Testing</a>
+          <span class="text-slate-300 dark:text-slate-600">|</span>
+          <a href="/categories/sdk-generators" class="hover:underline"
+            >SDK Generators</a
+          >
+        </div>
+      </div>
+    </main>
+  </Layout>
+</PostHogLayout>

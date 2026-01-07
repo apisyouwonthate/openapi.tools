@@ -34,7 +34,7 @@ if (Astro.url.pathname.includes('/tools/')) {
   }
   {
     url && url?.length > 0 ? (
-      <Link href={url} className="no-underline">
+      <Link href={url} className="no-underline" isSponsored={isSponsor}>
         <h1
           class={clsx(
             'font-display font-medium text-emerald-500 hover:text-emerald-500/80',

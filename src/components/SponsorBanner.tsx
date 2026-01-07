@@ -36,7 +36,7 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
           linkPlacementDescription: 'rotating sponsor banner',
         })}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="sponsored nofollow noopener noreferrer"
         className={clsx('flex h-16 w-full rounded-xl')}
       >
         <div
