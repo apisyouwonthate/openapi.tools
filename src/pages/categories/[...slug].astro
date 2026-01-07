@@ -40,6 +40,10 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   if (!tool.data.categories) {
     return false;
   }
+  // Exclude tools where oaiSpecs.oas === false (non-OAS tools)
+  if (tool.data.oaiSpecs?.oas === false) {
+    return false;
+  }
   const categories = tool.data.categories;
   // look through the categories list to see if any of the categories matches category id
   return categories.some((cat) => cat.id === categoryIdWithoutExt);
