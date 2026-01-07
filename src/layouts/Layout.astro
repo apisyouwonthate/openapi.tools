@@ -6,7 +6,6 @@ import clsx from 'clsx';
 import Header from '@/components/Header.astro';
 import { Hero } from '@/components/Hero';
 import { Navigation, type NavigationItems } from '@/components/Navigation';
-import PostHog from '@/components/PostHog.astro';
 import SponsorBanner from '@/components/SponsorBanner';
 import {
   createOrganizationSchema,
@@ -221,7 +220,6 @@ const categories: NavigationItems = [
       data-site="MKNBSINY"
       defer
       is:inline></script>
-    <PostHog />
     {/* Named slot for page-specific structured data */}
     <slot name="head" />
   </head>
