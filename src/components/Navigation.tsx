@@ -114,6 +114,14 @@ export function Navigation({
             </Link>
             .
           </div>
+          <div className="mt-4">
+            <a href="https://www.netlify.com?utm_source=openapi.tools&utm_medium=referral&utm_campaign=nav">
+              <img
+                src="https://www.netlify.com/assets/badges/netlify-badge-color-accent.svg"
+                alt="Deploys by Netlify"
+              />
+            </a>
+          </div>
         </footer>
       </nav>
     </>
