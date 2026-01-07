@@ -6,6 +6,11 @@ categories:
 languages:
   python: true
 repo: https://github.com/mcroissant/oas_patcher
+
+oaiSpecs:
+  oas: true
+  overlays: true
+
 openApiVersions:
   v2: false
   v3: true

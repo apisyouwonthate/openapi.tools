@@ -10,6 +10,11 @@ link: https://www.npmjs.com/package/openapi-format
 languages:
   node: true
 repo: https://github.com/thim81/openapi-format
+
+oaiSpecs:
+  oas: true
+  overlays: true
+
 openApiVersions:
   v2: false
   v3: true

@@ -7,6 +7,9 @@ link: https://quobix.com/vacuum
 languages:
   golang: true
 repo: https://github.com/daveshanley/vacuum
+oaiSpecs:
+  oas: true
+  overlays: true
 openApiVersions:
   v2: true
   v3: true

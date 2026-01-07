@@ -39,6 +39,9 @@ function filterTools(
     // Open source filter - must have repo URL
     if (filters.requireRepo && !tool.data.repo) return false;
 
+    // Overlays filter
+    if (filters.overlays && !tool.data.oaiSpecs?.overlays) return false;
+
     // Version requirements
     if (filters.requireVersions?.length) {
       const hasVersion = filters.requireVersions.some(

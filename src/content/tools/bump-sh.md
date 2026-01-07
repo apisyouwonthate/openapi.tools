@@ -8,6 +8,9 @@ link: https://bump.sh
 languages:
   saas: true
 repo: https://github.com/bump-sh/cli
+oaiSpecs:
+  oas: true
+  overlays: true
 openApiVersions:
   v2: true
   v3: true

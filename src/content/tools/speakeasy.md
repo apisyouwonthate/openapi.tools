@@ -22,8 +22,10 @@ languages:
   swift: true
   unity: true
 repo: https://github.com/speakeasy-api
+oaiSpecs:
+  oas: true
+  overlays: true
 openApiVersions:
-  v2: false
   v3: true
   v3_1: true
   v3_2: true

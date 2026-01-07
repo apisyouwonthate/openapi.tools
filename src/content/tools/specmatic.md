@@ -9,6 +9,9 @@ languages:
   any: true
   cli: true
 repo: https://github.com/znsio/specmatic
+oaiSpecs:
+  oas: true
+  overlays: true
 openApiVersions:
   v2: false
   v3: true
