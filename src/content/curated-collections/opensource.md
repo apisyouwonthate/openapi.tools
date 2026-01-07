@@ -1,6 +1,6 @@
 ---
 name: Open Source Tools
-description: Free and open source tools for working with OpenAPI specifications.
+description: Free and open source tools for working with OpenAPI descriptions.
 filters:
   requireRepo: true
 ---

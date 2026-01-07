@@ -13,7 +13,7 @@ export async function GET(context: APIContext) {
   return rss({
     title: 'OpenAPI.tools',
     description:
-      'A comprehensive directory of tools for working with OpenAPI specifications',
+      'A comprehensive directory of tools for working with OpenAPI descriptions.',
     site: context.site ?? 'https://openapi.tools',
     items: sortedTools.map((tool) => ({
       title: tool.data.name,

@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1eca64b4-f28c-4250-b884-c30627ab65d8/deploy-status)](https://app.netlify.com/sites/openapi-tools/deploys)
 [![Buy us a tree](https://img.shields.io/badge/Buy%20us%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://shop.protect.earth/products/tree)
 
-A comprehensive directory of **300+ tools** for working with OpenAPI specifications — editors, linters, parsers, code generators, documentation, testing, mocking, and more.
+A comprehensive directory of **300+ tools** for working with OpenAPI descriptions — editors, linters, parsers, code generators, documentation, testing, mocking, and more.
 
 **[Visit openapi.tools →](https://openapi.tools)**
 

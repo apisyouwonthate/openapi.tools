@@ -1,7 +1,7 @@
 ---
 name: api-diff-viewer
 description: |
-  React component to view the difference between two Json based API documents. Supported specifications: JsonSchema, OpenAPI 3.x, AsyncAPI 2.x.
+  React component to view the difference between two JSON based API descriptions. Supported description formats: JSON Schema, OpenAPI 3.x, AsyncAPI 2.x.
 categories:
   - misc
   - docs

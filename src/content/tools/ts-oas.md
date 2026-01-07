@@ -1,6 +1,6 @@
 ---
 name: ts-oas
-description: Automatically generate OpenAPI specifications from lovely Typescript types.
+description: Automatically generate OpenAPI descriptions from lovely Typescript types.
 categories:
   - auto-generators
   - converters

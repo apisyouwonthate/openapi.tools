@@ -1,6 +1,6 @@
 ---
 name: openapi-request-response-validation
-description: Runtime validation of requests and responses of your API according to the OpenAPI specs, returning (if any) the list of errors found. It is integrated via a simple REST API therefore usable by Java and non-Java applications and CI/CD.
+description: Runtime validation of requests and responses of your API according to the OpenAPI descriptions, returning (if any) the list of errors found. It is integrated via a simple REST API therefore usable by Java and non-Java applications and CI/CD.
 categories:
   - data-validators
 languages:

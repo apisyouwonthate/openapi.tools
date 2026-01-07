@@ -1,6 +1,6 @@
 ---
 name: oasdiff
-description: Golang module for deep comparison of two OpenAPI specifications. Available also as a command-line.
+description: Golang module for deep comparison of two OpenAPI descriptions. Available also as a command-line.
 categories:
   - misc
 languages:

@@ -1,8 +1,8 @@
 ---
 name: TypeSpec
-description: Emit OpenAPI specifications from API descriptions defined in the generic, interoperable, and extensible TypeSpec language.
+description: Emit OpenAPI descriptions from an elegant DSL using the TypeScript-like TypeSpec language.
 categories:
-  - auto-generators
+  - domain-specific-languages
 link: https://typespec.io/
 languages:
   typescript: true

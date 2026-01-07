@@ -1,7 +1,7 @@
 ---
 name: Api-Fiddle
 description: |
-  Opinionated API design platform built for collaboration and exploration. Create API designs for technical documents, specifications, and reviews.
+  Opinionated API design platform built for collaboration and exploration. Create API designs for technical documents, governance, and reviews.
 categories:
   - ides
 link: https://www.api-fiddle.com/

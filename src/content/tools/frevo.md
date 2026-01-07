@@ -1,6 +1,6 @@
 ---
 name: Frevo
-description: Keep track of changes in your OpenAPI specifications & generate API references ⛱️
+description: Keep track of changes in your OpenAPI descriptions & generate API references ⛱️
 categories:
   - docs
   - misc

@@ -1,6 +1,6 @@
 ---
 name: HopFront
-description: HopFront automatically builds an user friendly UI from a collection of OpenAPI specifications. You can setup custom dashboard tailored to the way your interact with your APIs.
+description: HopFront automatically builds an user friendly UI from a collection of OpenAPI descriptions. You can setup custom dashboard tailored to the way your interact with your APIs.
 categories:
   - docs
   - misc

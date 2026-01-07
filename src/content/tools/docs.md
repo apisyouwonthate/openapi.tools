@@ -1,6 +1,6 @@
 ---
 name: docs
-description: A modern alternative to `go-swagger`. Offers generation and parsing of OpenAPI Specs, depending on the usage.
+description: A modern alternative to `go-swagger`. Offers generation and parsing of OpenAPI descriptions.
 categories:
   - parsers
   - converters

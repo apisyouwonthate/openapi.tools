@@ -1,6 +1,6 @@
 ---
 name: openapi-diff
-description: Utility for comparing two OpenAPI specifications.
+description: Utility for comparing two OpenAPI descriptions.
 categories:
   - misc
 languages:
