@@ -31,17 +31,19 @@ const Link: React.FC<LinkProps> = ({
   ...rest
 }) => {
   // Compute rel attribute for external links
-  // All external links get nofollow for SEO link equity preservation
-  // Sponsored links also get rel="sponsored" for FTC/Google compliance
+  // All external links get noopener/noreferrer for security
+  // Sponsored links also get rel="sponsored nofollow" for FTC/Google compliance
   const computedRel = React.useMemo(() => {
     if (rel) return rel; // Allow explicit override
 
     const isExternal = href?.startsWith('http') && !href?.startsWith(SITE_URL);
     if (!isExternal) return undefined;
 
-    const relParts = ['nofollow', 'noopener', 'noreferrer'];
+    const relParts = ['noopener', 'noreferrer'];
     if (isSponsored) {
+      // Sponsored links should not pass PageRank and must be labeled as sponsored
       relParts.unshift('sponsored');
+      relParts.push('nofollow');
     }
     return relParts.join(' ');
   }, [href, rel, isSponsored]);

@@ -83,16 +83,6 @@ export function createSoftwareApplicationSchema(tool: {
     applicationCategory: 'DeveloperApplication',
     url: tool.link || `${SITE_URL}/tools/${tool.slug}`,
     operatingSystem: 'Cross-platform',
-    author: {
-      '@type': 'Organization',
-      name: ORG_NAME,
-      url: ORG_URL,
-    },
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD',
-    },
   };
 
   // Add code repository if available
@@ -153,7 +143,11 @@ export function createFAQSchema(
 
 /**
  * Serialize structured data to JSON string for embedding in HTML
+ * Escapes characters that could break out of a script tag to prevent XSS
  */
 export function serializeSchema<T>(schema: T): string {
-  return JSON.stringify(schema);
+  return JSON.stringify(schema)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026');
 }

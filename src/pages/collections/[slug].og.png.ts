@@ -83,15 +83,15 @@ export const GET = async ({ params }: OgRouteParams) => {
     </div>
   </div>`);
 
-  const Roboto = await fetch(
+  const Inter = await fetch(
     'https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff'
   ).then((res) => res.arrayBuffer());
 
   const svg = await satori(markup as React.ReactNode, {
     fonts: [
       {
-        name: 'Roboto',
-        data: Roboto,
+        name: 'Inter',
+        data: Inter,
       },
     ],
     width: 1200,

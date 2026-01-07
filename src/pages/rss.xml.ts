@@ -19,7 +19,7 @@ export async function GET(context: APIContext) {
       title: tool.data.name,
       description: tool.data.description,
       link: `/tools/${tool.slug}`,
-      pubDate: new Date(), // Tools don't have dates, so use current
+      // Note: pubDate omitted as tools don't have creation dates
     })),
     customData: `<language>en-us</language>`,
   });
