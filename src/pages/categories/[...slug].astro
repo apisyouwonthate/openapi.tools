@@ -121,7 +121,14 @@ const toolsData = tools.map((tool) => ({
         createFAQSchema([
           {
             question: `What are the best ${category.data.name.toLowerCase()} for OpenAPI?`,
-            answer: `OpenAPI.tools lists ${tools.length} ${category.data.name.toLowerCase()}. ${tools.length > 0 ? `Popular options include ${tools.slice(0, 3).map((t) => t.data.name).join(', ')}.` : ''} Browse the full list to find the best fit for your needs.`,
+            answer: `OpenAPI.tools lists ${tools.length} ${category.data.name.toLowerCase()}. ${
+              tools.length > 0
+                ? `Popular options include ${tools
+                    .slice(0, 3)
+                    .map((t) => t.data.name)
+                    .join(', ')}.`
+                : ''
+            } Browse the full list to find the best fit for your needs.`,
           },
           {
             question: `Are there free ${category.data.name.toLowerCase()} for OpenAPI?`,
