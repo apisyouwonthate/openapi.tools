@@ -6,6 +6,11 @@ import { FilterableCollectionView } from '@/components/filters/FilterableCollect
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import {
+  createBreadcrumbSchema,
+  createCollectionPageSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
 import type { CollectionFilters } from '@/content/config';
 
 // Helper function to filter tools based on collection filters
@@ -113,7 +118,41 @@ const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
   <Layout
     title={collection.data.name}
     description={collection.data.description}
+    ogImage={`https://openapi.tools/collections/${slug}.og.png`}
   >
+    {/* Breadcrumb Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createBreadcrumbSchema([
+          { name: 'Home', url: 'https://openapi.tools/' },
+          { name: 'Collections', url: 'https://openapi.tools/' },
+          {
+            name: collection.data.name,
+            url: `https://openapi.tools/collections/${slug}`,
+          },
+        ])
+      )}
+    />
+    {/* CollectionPage Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createCollectionPageSchema({
+          name: collection.data.name,
+          description: collection.data.description,
+          url: `https://openapi.tools/collections/${slug}`,
+          tools: filteredTools.slice(0, 10).map((tool) => ({
+            name: tool.data.name,
+            url: `https://openapi.tools/tools/${tool.slug}`,
+          })),
+        })
+      )}
+    />
     <PageHeader
       title={collection.data.name}
       description={collection.data.description}

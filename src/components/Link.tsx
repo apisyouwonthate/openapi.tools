@@ -12,10 +12,12 @@ const SITE_URL = import.meta.env.PROD
  * The props for the Link component
  * @param {Category} category - The category of the tool
  * @param {string} linkPlacementDescription - The description of where the link is placed. This will be slugified and used as the utm_content parameter
+ * @param {boolean} isSponsored - Whether this is a sponsored link (adds rel="sponsored" for FTC/Google compliance)
  */
 type LinkProps = React.HTMLProps<HTMLAnchorElement> & {
   category?: Category;
   linkPlacementDescription?: string;
+  isSponsored?: boolean;
 };
 
 const Link: React.FC<LinkProps> = ({
@@ -25,8 +27,27 @@ const Link: React.FC<LinkProps> = ({
   children,
   category,
   linkPlacementDescription,
+  isSponsored,
   ...rest
 }) => {
+  // Compute rel attribute for external links
+  // All external links get noopener/noreferrer for security
+  // Sponsored links also get rel="sponsored nofollow" for FTC/Google compliance
+  const computedRel = React.useMemo(() => {
+    if (rel) return rel; // Allow explicit override
+
+    const isExternal = href?.startsWith('http') && !href?.startsWith(SITE_URL);
+    if (!isExternal) return undefined;
+
+    const relParts = ['noopener', 'noreferrer'];
+    if (isSponsored) {
+      // Sponsored links should not pass PageRank and must be labeled as sponsored
+      relParts.unshift('sponsored');
+      relParts.push('nofollow');
+    }
+    return relParts.join(' ');
+  }, [href, rel, isSponsored]);
+
   const handleClick = React.useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>) => {
       const href = e.currentTarget.href;
@@ -61,7 +82,7 @@ const Link: React.FC<LinkProps> = ({
     <a
       href={updatedUrl}
       target={target}
-      rel={rel}
+      rel={computedRel}
       {...rest}
       onClick={handleClick}
     >

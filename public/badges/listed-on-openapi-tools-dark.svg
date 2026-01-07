@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <rect width="200" height="40" rx="6" fill="#1e293b"/>
+  <rect x="1" y="1" width="198" height="38" rx="5" fill="none" stroke="#10b981" stroke-width="2"/>
+  <text x="100" y="16" text-anchor="middle" fill="#10b981" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500">LISTED ON</text>
+  <text x="100" y="30" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">OpenAPI.tools</text>
+</svg>

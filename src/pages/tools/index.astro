@@ -64,8 +64,11 @@ const description =
         createCollectionPageSchema({
           name: title,
           description: description,
-          slug: 'tools',
-          tools: tools.map((t) => ({ name: t.data.name, slug: t.slug })),
+          url: 'https://openapi.tools/tools',
+          tools: tools.map((t) => ({
+            name: t.data.name,
+            url: `https://openapi.tools/tools/${t.slug}`,
+          })),
         })
       )}
     />

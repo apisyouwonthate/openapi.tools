@@ -52,7 +52,7 @@ export const GET = async ({ params }: OgRouteParams) => {
     status: 200,
     headers: {
       'Content-Type': 'image/png',
-      'Cache-Control': 's-maxage=1, stale-while-revalidate=59',
+      'Cache-Control': 's-maxage=3600, stale-while-revalidate=86400',
     },
   });
 };

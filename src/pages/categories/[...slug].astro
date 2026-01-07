@@ -9,6 +9,7 @@ import PostHogLayout from '@/layouts/PostHogLayout.astro';
 import {
   createBreadcrumbSchema,
   createCollectionPageSchema,
+  createFAQSchema,
   serializeSchema,
 } from '@/utils/structuredData';
 
@@ -103,9 +104,41 @@ const toolsData = tools.map((tool) => ({
         createCollectionPageSchema({
           name: category.data.name,
           description: category.data.description,
-          slug: slug as string,
-          tools: tools.map((t) => ({ name: t.data.name, slug: t.slug })),
+          url: `https://openapi.tools/categories/${slug}`,
+          tools: tools.map((t) => ({
+            name: t.data.name,
+            url: `https://openapi.tools/tools/${t.slug}`,
+          })),
         })
+      )}
+    />
+    {/* FAQ Structured Data */}
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createFAQSchema([
+          {
+            question: `What are the best ${category.data.name.toLowerCase()} for OpenAPI?`,
+            answer: `OpenAPI.tools lists ${tools.length} ${category.data.name.toLowerCase()}. ${
+              tools.length > 0
+                ? `Popular options include ${tools
+                    .slice(0, 3)
+                    .map((t) => t.data.name)
+                    .join(', ')}.`
+                : ''
+            } Browse the full list to find the best fit for your needs.`,
+          },
+          {
+            question: `Are there free ${category.data.name.toLowerCase()} for OpenAPI?`,
+            answer: `Yes, many ${category.data.name.toLowerCase()} on OpenAPI.tools are free and open source. Look for tools with a repository link to find open source options.`,
+          },
+          {
+            question: `Which ${category.data.name.toLowerCase()} support OpenAPI 3.1?`,
+            answer: `OpenAPI.tools shows version support for each tool. Use the filters to find ${category.data.name.toLowerCase()} that support OpenAPI 3.1 or any other version you need.`,
+          },
+        ])
       )}
     />
 

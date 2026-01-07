@@ -58,6 +58,7 @@ export const createLinksColumn = (
   header: 'Links',
   cell: ({ row }) => {
     const { tool, category } = row.original;
+    const isSponsored = !!tool?.sponsorship;
     return (
       <div className="flex flex-row items-center space-x-2">
         {tool?.link && (
@@ -66,6 +67,7 @@ export const createLinksColumn = (
             className="text-emerald-600 dark:text-emerald-300"
             category={category}
             linkPlacementDescription={linkPlacementDescription}
+            isSponsored={isSponsored}
           >
             <WebsiteIcon className="inline-block h-4 w-4 fill-slate-800 dark:fill-white" />
           </Link>
@@ -77,6 +79,7 @@ export const createLinksColumn = (
             linkPlacementDescription={linkPlacementDescription}
             href={tool.repo}
             className="text-emerald-600 dark:text-emerald-300"
+            isSponsored={isSponsored}
           >
             <RepoIcon
               className="inline-block h-4 w-4 fill-slate-800 dark:fill-white"

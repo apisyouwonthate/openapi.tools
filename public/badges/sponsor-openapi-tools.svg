@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <defs>
+    <linearGradient id="sponsorbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="40" rx="6" fill="url(#sponsorbg)"/>
+  <text x="100" y="16" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="500">SPONSOR OF</text>
+  <text x="100" y="30" text-anchor="middle" fill="white" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">OpenAPI.tools</text>
+</svg>

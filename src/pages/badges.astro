@@ -1,0 +1,156 @@
+---
+import PageHeader from '@/components/PageHeader.astro';
+import Layout from '@/layouts/Layout.astro';
+import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import {
+  createBreadcrumbSchema,
+  serializeSchema,
+} from '@/utils/structuredData';
+
+const title = 'Sponsor Badges';
+const description =
+  'Embeddable badges for OpenAPI.tools sponsors to display on their websites';
+---
+
+<PostHogLayout>
+  <Layout title={title} description={description}>
+    <script
+      is:inline
+      slot="head"
+      type="application/ld+json"
+      set:html={serializeSchema(
+        createBreadcrumbSchema([
+          { name: 'Home', url: 'https://openapi.tools/' },
+          { name: 'Badges', url: 'https://openapi.tools/badges' },
+        ])
+      )}
+    />
+
+    <PageHeader title={title} description={description} />
+
+    <main class="prose prose-lg dark:prose-invert max-w-4xl">
+      <p>
+        As a sponsor of OpenAPI.tools, you can display one of these badges on
+        your website to show your support and link back to your tool listing.
+      </p>
+
+      <h2>Sponsor Badge</h2>
+      <p>For official sponsors of OpenAPI.tools:</p>
+
+      <div class="not-prose mb-6 flex flex-col gap-4">
+        <div
+          class="flex items-center gap-6 rounded-lg bg-slate-100 p-6 dark:bg-slate-800"
+        >
+          <img
+            src="/badges/sponsor-openapi-tools.svg"
+            alt="Sponsor of OpenAPI.tools"
+            width="200"
+            height="40"
+          />
+          <div class="flex-1">
+            <p
+              class="mb-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+            >
+              Purple gradient badge
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Embed Code</h3>
+      <p>
+        Copy this HTML and paste it into your website. Replace <code
+          >[your-tool-slug]</code
+        > with your tool's URL slug on OpenAPI.tools:
+      </p>
+
+      <pre
+        class="overflow-x-auto rounded-lg bg-slate-900 p-4 text-sm text-slate-100"><code>{`<a href="https://openapi.tools/tools/[your-tool-slug]" rel="sponsored">
+  <img
+    src="https://openapi.tools/badges/sponsor-openapi-tools.svg"
+    alt="Sponsor of OpenAPI.tools"
+    width="200"
+    height="40"
+  />
+</a>`}</code></pre>
+
+      <h2 class="mt-12">Listed Badge</h2>
+      <p>Alternative badge styles for sponsors:</p>
+
+      <div class="not-prose mb-6 flex flex-col gap-4">
+        <div
+          class="flex items-center gap-6 rounded-lg bg-slate-100 p-6 dark:bg-slate-800"
+        >
+          <img
+            src="/badges/listed-on-openapi-tools.svg"
+            alt="Listed on OpenAPI.tools"
+            width="200"
+            height="40"
+          />
+          <div class="flex-1">
+            <p
+              class="mb-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+            >
+              Green gradient (light backgrounds)
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center gap-6 rounded-lg bg-slate-800 p-6 dark:bg-slate-900"
+        >
+          <img
+            src="/badges/listed-on-openapi-tools-dark.svg"
+            alt="Listed on OpenAPI.tools"
+            width="200"
+            height="40"
+          />
+          <div class="flex-1">
+            <p class="mb-2 text-sm font-medium text-slate-400">
+              Dark variant (dark backgrounds)
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Embed Code</h3>
+      <pre
+        class="overflow-x-auto rounded-lg bg-slate-900 p-4 text-sm text-slate-100"><code>{`<!-- Light variant -->
+<a href="https://openapi.tools/tools/[your-tool-slug]" rel="sponsored">
+  <img
+    src="https://openapi.tools/badges/listed-on-openapi-tools.svg"
+    alt="Listed on OpenAPI.tools"
+    width="200"
+    height="40"
+  />
+</a>
+
+<!-- Dark variant -->
+<a href="https://openapi.tools/tools/[your-tool-slug]" rel="sponsored">
+  <img
+    src="https://openapi.tools/badges/listed-on-openapi-tools-dark.svg"
+    alt="Listed on OpenAPI.tools"
+    width="200"
+    height="40"
+  />
+</a>`}</code></pre>
+
+      <h2 class="mt-12">Become a Sponsor</h2>
+      <p>
+        Want to display these badges on your website? <a href="/sponsor"
+          >Become a sponsor</a
+        > to support OpenAPI.tools and get access to these badges, priority placement
+        in tool listings, and more.
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <a
+          href="/sponsor"
+          class="inline-flex items-center rounded-lg bg-emerald-600 px-6 py-3 text-white no-underline transition-colors hover:bg-emerald-700"
+        >
+          Learn About Sponsorship
+        </a>
+      </div>
+    </main>
+  </Layout>
+</PostHogLayout>
