@@ -5,6 +5,9 @@
 [build.environment]
   NODE_VERSION = "20"
 
+[build.processing.html]
+  pretty_urls = false
+
 # Cache static assets for 1 year
 [[headers]]
   for = "/_astro/*"
