@@ -37,7 +37,7 @@ export function Navigation({
         <ul className="space-y-9">
           {categories?.map((category) => (
             <li key={category.title}>
-              <h2 className="font-display font-medium text-slate-900">
+              <h2 className="font-display font-medium text-slate-900 dark:text-slate-100">
                 {category.title}
               </h2>
               <ul className="mt-2 space-y-2 border-l-2 border-slate-100 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800">
