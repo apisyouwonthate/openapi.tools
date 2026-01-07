@@ -1,0 +1,23 @@
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+_site/
+.astro/
+
+# Cache directories
+.netlify/
+.turbo/
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+
