@@ -5,6 +5,7 @@ import { html } from 'satori-html';
 import sharp from 'sharp';
 
 import type { CollectionFilters } from '@/content/config';
+import { isLegacy } from '@/utils/versionFilters';
 
 type OgRouteParams = {
   params: {
@@ -21,8 +22,7 @@ function filterTools(
 
   return tools.filter((tool) => {
     if (filters.legacy) {
-      const v = tool.data.oasVersions;
-      if (v?.v3_1 || v?.v3_2) return false;
+      if (!isLegacy(tool.data)) return false;
     }
     if (filters.languages?.length) {
       const hasLang = filters.languages.some((l) => tool.data.languages?.[l]);

@@ -12,6 +12,7 @@ import {
   serializeSchema,
 } from '@/utils/structuredData';
 import type { CollectionFilters } from '@/content/config';
+import { isModern, isLegacy } from '@/utils/versionFilters';
 
 // Helper function to filter tools based on collection filters
 function filterTools(
@@ -21,14 +22,12 @@ function filterTools(
   if (!filters) return tools;
 
   return tools.filter((tool) => {
-    // Legacy filter - excludes v3.1+ support
+    // Legacy filter - show only legacy tools
     if (filters.legacy) {
-      const v = tool.data.oasVersions;
-      if (v?.v3_1 || v?.v3_2) return false;
+      if (!isLegacy(tool.data)) return false;
     } else {
-      // For non-legacy collections, only show tools that support v3.1 or v3.2
-      const v = tool.data.oasVersions;
-      if (!v?.v3_1 && !v?.v3_2) return false;
+      // For non-legacy collections, only show modern tools
+      if (!isModern(tool.data)) return false;
     }
 
     // Language filter
