@@ -2,6 +2,7 @@ import { type ColumnDef } from '@tanstack/react-table';
 import type { Category, Tool } from 'src/content/config';
 
 import RepoIcon from '../icons/RepoIcon';
+import WebsiteIcon from '../icons/WebsiteIcon';
 import Link from '../Link';
 import SponsorBadge from '../SponsorBadge';
 
@@ -53,7 +54,7 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
     cell: ({ row }) => {
       const { tool, category } = row.original;
       return (
-        <div className="flex flex-col space-y-1">
+        <div className="flex flex-row items-center space-x-2">
           {tool?.link && (
             <Link
               href={tool.link}
@@ -61,7 +62,7 @@ export const ToolColumns: ColumnDef<ToolRowData>[] = [
               category={category}
               linkPlacementDescription="category-landing-page-table"
             >
-              Website
+              <WebsiteIcon className="inline-block h-4 w-4 fill-slate-800 dark:fill-white" />
             </Link>
           )}
 
