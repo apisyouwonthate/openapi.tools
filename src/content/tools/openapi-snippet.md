@@ -6,7 +6,7 @@ categories:
 languages:
   node: true
 repo: https://github.com/ErikWittern/openapi-snippet
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

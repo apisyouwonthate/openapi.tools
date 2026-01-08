@@ -11,7 +11,7 @@ languages:
   javascript: true
   dot-net: true
 repo: https://github.com/ignatandrei/BlocklyAutomation
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

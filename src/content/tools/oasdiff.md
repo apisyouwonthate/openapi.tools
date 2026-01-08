@@ -6,7 +6,7 @@ categories:
 languages:
   golang: true
 repo: https://github.com/tufin/oasdiff
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -6,7 +6,7 @@ categories:
 languages:
   kotlin: true
 repo: https://github.com/codecentric/hikaku
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

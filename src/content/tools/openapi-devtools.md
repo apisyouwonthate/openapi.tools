@@ -8,7 +8,7 @@ link: https://chrome.google.com/webstore/detail/openapi-devtools/jelghndoknklgab
 languages:
   typescript: true
 repo: https://github.com/AndrewWalsh/openapi-devtools
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

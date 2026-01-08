@@ -6,7 +6,7 @@ categories:
 languages:
   javascript: true
 repo: https://github.com/postmanlabs/openapi-to-postman
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -8,7 +8,7 @@ link: https://www.npmjs.com/package/@nll/api-codegen-ts
 languages:
   typescript: true
 repo: https://github.com/nullpub/api-codegen-ts
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

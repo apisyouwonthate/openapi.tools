@@ -7,7 +7,7 @@ link: https://readme.com
 languages:
   saas: true
 repo: https://github.com/readmeio
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

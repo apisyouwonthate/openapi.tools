@@ -8,7 +8,7 @@ languages:
   java: true
   cli: true
 repo: https://github.com/OpenAPITools/openapi-style-validator
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

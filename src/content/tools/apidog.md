@@ -8,7 +8,7 @@ categories:
 link: https://apidog.com/
 languages:
   saas: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: true

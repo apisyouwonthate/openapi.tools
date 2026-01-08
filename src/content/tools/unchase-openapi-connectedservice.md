@@ -8,7 +8,7 @@ link: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
 languages:
   dot-net: true
 repo: https://github.com/unchase/Unchase.OpenAPI.Connectedservice
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

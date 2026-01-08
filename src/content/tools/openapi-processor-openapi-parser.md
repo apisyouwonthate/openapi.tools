@@ -9,7 +9,7 @@ link: https://github.com/openapi-processor/openapi-parser
 languages:
   java: true
 repo: https://github.com/openapi-processor/openapi-parser
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

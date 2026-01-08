@@ -6,7 +6,7 @@ categories:
 languages:
   ruby: true
 repo: https://github.com/kevindew/openapi3_parser
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -10,7 +10,7 @@ link: https://www.wiremock.io/product
 languages:
   saas: true
 repo: https://www.wiremock.io/product
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

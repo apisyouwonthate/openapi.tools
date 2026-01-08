@@ -9,7 +9,7 @@ link: https://go-fuego.github.io/fuego/
 languages:
   golang: true
 repo: https://github.com/go-fuego/fuego
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

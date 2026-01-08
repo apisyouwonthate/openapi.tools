@@ -8,7 +8,7 @@ link: https://www.npmjs.com/package/@smartrecruiters/openapi-first
 languages:
   node: true
 repo: https://github.com/smartrecruiters/openapi-first
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

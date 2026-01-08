@@ -10,13 +10,11 @@ import {
   createCollectionPageSchema,
   serializeSchema,
 } from '@/utils/structuredData';
+import { isModern } from '@/utils/versionFilters';
 
 // Get all tools that support modern OpenAPI (v3.1+)
 const allTools = await getCollection('tools');
-const modernTools = allTools.filter((tool) => {
-  const v = tool.data.openApiVersions;
-  return v?.v3_1 || v?.v3_2;
-});
+const modernTools = allTools.filter((tool) => isModern(tool.data));
 
 // Sort: sponsored first, then alphabetically
 const sponsoredTools = modernTools

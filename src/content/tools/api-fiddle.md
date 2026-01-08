@@ -8,7 +8,7 @@ link: https://www.api-fiddle.com/
 languages:
   typescript: true
   saas: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: true

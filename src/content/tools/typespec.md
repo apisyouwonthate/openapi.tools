@@ -7,7 +7,7 @@ link: https://typespec.io/
 languages:
   typescript: true
 repo: https://github.com/microsoft/typespec
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

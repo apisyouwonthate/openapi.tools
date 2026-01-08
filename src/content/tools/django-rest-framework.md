@@ -8,7 +8,7 @@ link: https://www.django-rest-framework.org/api-guide/schemas/
 languages:
   python: true
 repo: https://github.com/encode/django-rest-framework
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

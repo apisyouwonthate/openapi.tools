@@ -6,7 +6,7 @@ categories:
 languages:
   typescript: true
 repo: https://github.com/airtasker/spot
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

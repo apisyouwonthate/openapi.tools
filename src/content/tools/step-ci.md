@@ -11,7 +11,7 @@ languages:
   cli: true
   node: true
 repo: https://github.com/stepci/stepci
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

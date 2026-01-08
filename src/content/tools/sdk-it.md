@@ -9,7 +9,7 @@ languages:
   typescript: true
   dart: true
 repo: https://github.com/januarylabs/sdk-it
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

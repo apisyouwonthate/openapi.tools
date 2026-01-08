@@ -7,7 +7,7 @@ link: https://useoptic.com
 languages:
   cli: true
 repo: https://github.com/opticdev/optic
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

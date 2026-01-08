@@ -7,7 +7,7 @@ link: https://www.npmjs.com/package/open-api-mocker
 languages:
   node: true
 repo: https://github.com/jormaechea/open-api-mocker
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

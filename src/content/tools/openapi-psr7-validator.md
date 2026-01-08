@@ -6,7 +6,7 @@ categories:
 languages:
   php: true
 repo: https://github.com/thephpleague/openapi-psr7-validator
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

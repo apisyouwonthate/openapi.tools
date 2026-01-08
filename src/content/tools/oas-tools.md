@@ -11,7 +11,7 @@ categories:
 languages:
   node: true
 repo: https://github.com/isa-group/oas-tools
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

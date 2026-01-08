@@ -6,7 +6,7 @@ categories:
 languages:
   dot-net: true
 repo: https://github.com/xuzhg/OData.OpenAPI
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

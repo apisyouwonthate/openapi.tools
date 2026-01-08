@@ -9,7 +9,7 @@ link: https://ratemyopenapi.com
 languages:
   golang: true
 repo: https://github.com/zuplo/rate-my-openapi
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

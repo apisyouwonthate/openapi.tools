@@ -7,7 +7,7 @@ categories:
 languages:
   typescript: true
 repo: https://github.com/udamir/allof-merge
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

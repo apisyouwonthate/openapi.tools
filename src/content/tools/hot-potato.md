@@ -10,7 +10,7 @@ link: https://github.com/davidmbillie/Hot-Potato
 languages:
   csharp: true
 repo: https://github.com/davidmbillie/Hot-Potato
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: false

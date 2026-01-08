@@ -7,7 +7,7 @@ link: https://marketplace.visualstudio.com/items?itemName=proohit.openapi-snippe
 languages:
   any: true
 repo: https://github.com/proohit/openapi-snippets
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -8,7 +8,7 @@ languages:
   node: true
   typescript: true
 repo: https://github.com/kogosoftwarellc/open-api/tree/master/packages/express-openapi
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

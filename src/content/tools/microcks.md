@@ -8,7 +8,7 @@ link: https://microcks.io
 languages:
   java: true
 repo: https://github.com/microcks/microcks
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

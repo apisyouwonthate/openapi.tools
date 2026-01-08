@@ -7,7 +7,7 @@ link: https://github.com/cdwv/oas3-api-snippet-enricher/
 languages:
   javascript: true
 repo: https://github.com/cdwv/oas3-api-snippet-enricher/
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

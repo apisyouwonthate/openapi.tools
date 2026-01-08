@@ -9,7 +9,7 @@ languages:
   node: true
   cli: true
 repo: https://github.com/bcoughlan/openapi-commander
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

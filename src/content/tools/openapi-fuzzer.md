@@ -6,7 +6,7 @@ categories:
 link: https://github.com/matusf/openapi-fuzzer
 languages:
   rust: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -7,7 +7,7 @@ categories:
 link: https://gofastmcp.com/integrations/openapi#openapi-fastmcp
 languages: {}
 repo: https://github.com/jlowin/fastmcp
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

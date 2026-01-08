@@ -8,7 +8,7 @@ link: https://xyd.dev
 languages:
   typescript: true
 repo: https://github.com/livesession/xyd
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

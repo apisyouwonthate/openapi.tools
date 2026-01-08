@@ -8,7 +8,7 @@ link: https://docs.nestjs.com/recipes/swagger
 languages:
   node: true
 repo: https://github.com/nestjs/swagger
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

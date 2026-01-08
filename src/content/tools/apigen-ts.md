@@ -7,7 +7,7 @@ link: https://www.npmjs.com/package/apigen-ts
 languages:
   typescript: true
 repo: https://github.com/vladkens/apigen-ts
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

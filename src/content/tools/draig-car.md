@@ -9,7 +9,7 @@ link: https://gitlab.com/robarago/draig-car
 languages:
   typescript: true
 repo: https://gitlab.com/robarago/draig-car
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

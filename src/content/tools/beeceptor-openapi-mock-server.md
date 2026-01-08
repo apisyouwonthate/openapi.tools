@@ -7,7 +7,7 @@ categories:
 link: https://beeceptor.com/openapi-mock-server/
 languages:
   saas: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

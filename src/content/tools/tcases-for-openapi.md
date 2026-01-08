@@ -6,7 +6,7 @@ categories:
 languages:
   java: true
 repo: https://github.com/Cornutum/tcases/blob/master/tcases-openapi/README.md
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

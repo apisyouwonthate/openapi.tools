@@ -7,7 +7,7 @@ categories:
 link: https://apiinsights.io/
 languages: {}
 repo: https://github.com/treblle
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -12,6 +12,7 @@ import {
   createFAQSchema,
   serializeSchema,
 } from '@/utils/structuredData';
+import { isModern } from '@/utils/versionFilters';
 
 // 1. Generate a new path for every collection entry
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -42,6 +43,10 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   }
   // Exclude tools where oaiSpecs.oas === false (non-OAS tools)
   if (tool.data.oaiSpecs?.oas === false) {
+    return false;
+  }
+  // Only show tools that support modern OpenAPI versions
+  if (!isModern(tool.data)) {
     return false;
   }
   const categories = tool.data.categories;

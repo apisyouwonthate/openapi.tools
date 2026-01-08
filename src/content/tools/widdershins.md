@@ -7,7 +7,7 @@ link: https://mermade.github.io/shins
 languages:
   node: true
 repo: https://github.com/mermade/widdershins
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

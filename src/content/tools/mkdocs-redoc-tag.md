@@ -7,7 +7,7 @@ link: https://blueswen.github.io/mkdocs-redoc-tag/
 languages:
   python: true
 repo: https://github.com/blueswen/mkdocs-redoc-tag
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

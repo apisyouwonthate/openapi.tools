@@ -8,7 +8,7 @@ link: https://hackolade.com
 languages:
   react: true
 repo: https://github.com/hackolade/OpenAPI
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

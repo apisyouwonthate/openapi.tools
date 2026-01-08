@@ -10,7 +10,7 @@ link: https://github.com/erosb/kappa
 languages:
   java: true
 repo: https://github.com/erosb/kappa
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: true

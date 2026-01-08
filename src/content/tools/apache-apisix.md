@@ -6,7 +6,7 @@ categories:
 link: https://github.com/apache/apisix
 languages:
   lua: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

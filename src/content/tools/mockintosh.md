@@ -8,7 +8,7 @@ link: https://mockintosh.io
 languages:
   cli: true
   docker: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

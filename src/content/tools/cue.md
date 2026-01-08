@@ -6,7 +6,7 @@ categories:
 link: https://cuelang.org/docs/integrations/openapi/
 languages:
   cue: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -10,7 +10,7 @@ languages:
   cli: true
   golang: true
 repo: https://github.com/danielgtaylor/restish
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

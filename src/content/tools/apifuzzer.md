@@ -7,7 +7,7 @@ link: https://github.com/KissPeter/APIFuzzer
 languages:
   python: true
 repo: https://github.com/KissPeter/APIFuzzer
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

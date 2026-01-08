@@ -12,18 +12,16 @@ import {
   createCollectionPageSchema,
   serializeSchema,
 } from '@/utils/structuredData';
+import { isLegacy } from '@/utils/versionFilters';
 
 // Get all tools
 const allTools = await getCollection('tools');
 
-// Filter for legacy tools: tools that support v2 or v3 but NOT v3_1 or v3_2
+// Filter for legacy tools: tools that support v2 or v3 but NOT v3.1 or v3.2
 // Also exclude tools where oaiSpecs.oas === false (non-OAS tools)
 const legacyTools = allTools.filter((tool) => {
-  const versions = tool.data.openApiVersions;
-  const hasLegacyVersion = versions.v2 || versions.v3;
-  const hasModernVersion = versions.v3_1 || versions.v3_2;
   const isOasTool = tool.data.oaiSpecs?.oas !== false;
-  return hasLegacyVersion && !hasModernVersion && isOasTool;
+  return isLegacy(tool.data) && isOasTool;
 });
 
 // Get all categories

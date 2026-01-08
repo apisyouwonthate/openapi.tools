@@ -8,7 +8,7 @@ link: https://doc.traefik.io/traefik-hub
 languages:
   golang: true
 repo: https://github.com/traefik/traefik-hub-helm-chart
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

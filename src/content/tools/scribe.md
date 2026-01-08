@@ -7,7 +7,7 @@ link: https://scribe.knuckles.wtf/
 languages:
   php: true
 repo: https://github.com/knuckleswtf/scribe/
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

@@ -12,7 +12,7 @@ repo: https://github.com/znsio/specmatic
 oaiSpecs:
   oas: true
   overlays: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

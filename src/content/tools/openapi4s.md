@@ -9,7 +9,7 @@ link: https://github.com/sake92/openapi4s
 languages:
   scala: true
 repo: https://github.com/sake92/openapi4s
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

@@ -9,7 +9,7 @@ languages:
   fastapi: true
   spring boot: true
 repo: https://github.com/fern-api/fern
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

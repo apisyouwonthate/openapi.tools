@@ -11,6 +11,7 @@ import {
   createCollectionPageSchema,
   serializeSchema,
 } from '@/utils/structuredData';
+import { isLegacy, isModern } from '@/utils/versionFilters';
 import type { CollectionFilters } from '@/content/config';
 
 // Helper function to filter tools based on collection filters
@@ -21,10 +22,12 @@ function filterTools(
   if (!filters) return tools;
 
   return tools.filter((tool) => {
-    // Legacy filter - excludes v3.1+ support
+    // Legacy filter - show only legacy tools
     if (filters.legacy) {
-      const v = tool.data.openApiVersions;
-      if (v?.v3_1 || v?.v3_2) return false;
+      if (!isLegacy(tool.data)) return false;
+    } else {
+      // For non-legacy collections, only show modern tools
+      if (!isModern(tool.data)) return false;
     }
 
     // Language filter
@@ -53,7 +56,7 @@ function filterTools(
     // Version requirements
     if (filters.requireVersions?.length) {
       const hasVersion = filters.requireVersions.some(
-        (v) => tool.data.openApiVersions?.[v]
+        (v) => tool.data.oasVersions?.[v]
       );
       if (!hasVersion) return false;
     }

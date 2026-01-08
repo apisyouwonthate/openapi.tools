@@ -7,7 +7,7 @@ link: https://stackhawk.com/
 languages:
   saas: true
 repo: https://github.com/stackhawk
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

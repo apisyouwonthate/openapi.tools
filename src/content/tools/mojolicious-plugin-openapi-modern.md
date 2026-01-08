@@ -7,7 +7,7 @@ link: https://metacpan.org/dist/Mojolicious-Plugin-OpenAPI-Modern
 languages:
   perl: true
 repo: https://github.com/karenetheridge/Mojolicious-Plugin-OpenAPI-Modern
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

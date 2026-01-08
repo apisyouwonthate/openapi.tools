@@ -11,7 +11,7 @@ link: https://pb33f.io/wiretap/
 languages:
   golang: true
 repo: https://github.com/pb33f/wiretap
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

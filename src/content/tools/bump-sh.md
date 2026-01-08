@@ -11,7 +11,7 @@ repo: https://github.com/bump-sh/cli
 oaiSpecs:
   oas: true
   overlays: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -7,7 +7,7 @@ categories:
 link: https://github.com/a-chacon/oas_rails
 languages:
   ruby: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: true

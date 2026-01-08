@@ -7,7 +7,7 @@ categories:
 languages:
   typescript: true
 repo: https://github.com/udamir/api-ref-bundler
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

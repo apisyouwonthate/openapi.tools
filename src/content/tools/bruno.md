@@ -9,7 +9,7 @@ categories:
   - text-editors-extensions
 link: https://usebruno.com
 languages: {}
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

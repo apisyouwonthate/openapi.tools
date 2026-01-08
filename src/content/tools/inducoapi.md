@@ -7,7 +7,7 @@ link: https://pypi.org/project/inducoapi
 languages:
   python: true
 repo: https://github.com/TheWall89/inducoapi
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

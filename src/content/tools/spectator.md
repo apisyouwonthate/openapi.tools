@@ -7,7 +7,7 @@ link: https://github.com/hotmeteor/spectator
 languages:
   php: true
 repo: https://github.com/hotmeteor/spectator
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

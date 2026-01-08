@@ -7,7 +7,7 @@ link: https://www.npmjs.com/package/@openapi-contrib/json-schema-to-openapi-sche
 languages:
   typescript: true
 repo: https://github.com/openapi-contrib/json-schema-to-openapi-schema
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

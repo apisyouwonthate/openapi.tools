@@ -35,7 +35,7 @@ const ToolSchema = z.object({
   languages: z.record(z.boolean()).optional(),
   link: z.string().url().optional(),
   repo: z.string().url().optional(),
-  openApiVersions: z.object({
+  oasVersions: z.object({
     v2: z.boolean().optional(),
     v3: z.boolean().optional(),
     v3_1: z.boolean().optional(),
@@ -120,6 +120,6 @@ const curatedCollectionsCollection = defineCollection({
 export const collections = {
   categories: categoriesCollection,
   tools: toolsCollection,
-  bannerSponsors: bannerSponsorsCollection,
+  'banner-sponsors': bannerSponsorsCollection,
   'curated-collections': curatedCollectionsCollection,
 };

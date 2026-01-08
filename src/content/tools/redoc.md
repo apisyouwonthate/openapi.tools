@@ -7,7 +7,7 @@ link: https://redocly.github.io/redoc/
 languages:
   react: true
 repo: https://github.com/Redocly/ReDoc/
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

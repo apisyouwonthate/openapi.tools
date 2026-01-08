@@ -7,7 +7,7 @@ link: https://connexion.readthedocs.io/en/latest/
 languages:
   python: true
 repo: https://github.com/spec-first/connexion
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

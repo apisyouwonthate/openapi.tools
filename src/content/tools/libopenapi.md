@@ -7,7 +7,7 @@ link: https://pb33f.io/libopenapi
 languages:
   golang: true
 repo: https://github.com/pb33f/libopenapi
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

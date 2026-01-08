@@ -10,7 +10,7 @@ link: https://apigit.com
 languages:
   saas: true
 repo: https://github.com/apigitlabs
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

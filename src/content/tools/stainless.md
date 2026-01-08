@@ -11,7 +11,7 @@ languages:
   java: true
   kotlin: true
 repo: https://github.com/stainless-api/stl-api
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

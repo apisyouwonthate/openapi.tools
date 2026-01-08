@@ -5,22 +5,12 @@ import {
   createLanguagesColumn,
   createLinksColumn,
   createNameColumn,
-} from './SharedColumns';
+  createVersionBadgesColumn,
+} from './Columns';
 
 export const ToolColumns: ColumnDef<ToolRowData>[] = [
   createNameColumn(),
   createLanguagesColumn(),
-  {
-    accessorKey: 'openApiVersions',
-    header: 'OpenAPI Versions',
-    cell: ({ row }) => {
-      const tool = row.original.tool;
-      const versions = Object.entries(tool?.openApiVersions || {})
-        .filter(([, value]) => value)
-        .map(([key]) => key.replace('_', '.'));
-
-      return versions.reverse().join(', ');
-    },
-  },
+  createVersionBadgesColumn(),
   createLinksColumn('category-landing-page-table'),
 ];

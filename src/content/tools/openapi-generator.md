@@ -8,7 +8,7 @@ link: https://openapi-generator.tech
 languages:
   java: true
 repo: https://github.com/OpenAPITools/openapi-generator
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

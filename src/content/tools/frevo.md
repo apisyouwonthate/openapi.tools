@@ -7,7 +7,7 @@ categories:
 link: https://frevo.dev?ref=openapitools
 languages:
   saas: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

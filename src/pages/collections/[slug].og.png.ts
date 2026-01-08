@@ -4,6 +4,7 @@ import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
 
+import { isLegacy } from '@/utils/versionFilters';
 import type { CollectionFilters } from '@/content/config';
 
 type OgRouteParams = {
@@ -21,8 +22,7 @@ function filterTools(
 
   return tools.filter((tool) => {
     if (filters.legacy) {
-      const v = tool.data.openApiVersions;
-      if (v?.v3_1 || v?.v3_2) return false;
+      if (!isLegacy(tool.data)) return false;
     }
     if (filters.languages?.length) {
       const hasLang = filters.languages.some((l) => tool.data.languages?.[l]);
@@ -32,7 +32,7 @@ function filterTools(
     if (filters.requireRepo && !tool.data.repo) return false;
     if (filters.requireVersions?.length) {
       const hasVersion = filters.requireVersions.some(
-        (v) => tool.data.openApiVersions?.[v]
+        (v) => tool.data.oasVersions?.[v]
       );
       if (!hasVersion) return false;
     }

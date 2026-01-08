@@ -9,7 +9,7 @@ link: https://pb33f.io/openapi-changes
 languages:
   golang: true
 repo: https://github.com/pb33f/openapi-changes
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

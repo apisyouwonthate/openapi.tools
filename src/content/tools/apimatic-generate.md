@@ -7,7 +7,7 @@ categories:
 link: https://www.apimatic.io/product/generate
 languages:
   saas: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -7,7 +7,7 @@ link: https://github.com/contiamo/restful-react
 languages:
   react: true
 repo: https://github.com/contiamo/restful-react
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

@@ -7,7 +7,7 @@ link: https://zudoku.dev?utm_source=openapitools&ref=openapitools
 languages:
   typesscript: true
 repo: https://github.com/zuplo/zudoku
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

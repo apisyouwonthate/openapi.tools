@@ -10,7 +10,7 @@ languages:
   typescript: true
   javascript: true
 repo: https://github.com/stoplightio/spectral
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

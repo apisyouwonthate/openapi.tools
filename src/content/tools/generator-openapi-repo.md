@@ -7,7 +7,7 @@ link: https://github.com/Rebilly/generator-openapi-repo
 languages:
   javascript: true
 repo: https://github.com/Rebilly/generator-openapi-repo
-openApiVersions:
+oasVersions:
   v2: true
   v3: false
   v3_1: false

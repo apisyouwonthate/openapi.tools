@@ -10,7 +10,7 @@ link: https://www.npmjs.com/package/openapi-enforcer
 languages:
   node: true
 repo: https://github.com/byu-oit/openapi-enforcer
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

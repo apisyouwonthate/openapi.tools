@@ -8,7 +8,7 @@ link: https://www.npmjs.com/package/openapi-enforcer-middleware
 languages:
   node: true
 repo: https://github.com/byu-oit/openapi-enforcer-middleware
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

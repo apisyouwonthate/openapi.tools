@@ -9,7 +9,7 @@ link: https://forallsecure.com/mayhem-for-api
 languages:
   any: true
 repo: https://github.com/ForAllSecure/mapi-action
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true
