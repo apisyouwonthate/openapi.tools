@@ -1,0 +1,73 @@
+name: Check Tool Links
+
+on:
+  schedule:
+    # Run every Monday at 9:00 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Check tool links
+        run: node scripts/check-tool-links.mjs
+
+      - name: Create Issue if Links are Broken
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            let body = '## Broken Tool Links Detected\n\n';
+            body += 'The weekly link checker has found broken links. Please review and update the affected tools.\n\n';
+
+            // Try to read the error output if it exists
+            try {
+              const errorLog = fs.readFileSync('link-check-errors.md', 'utf8');
+              body += errorLog;
+            } catch (e) {
+              body += 'Check the workflow logs for details.';
+            }
+
+            // Check if an issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['broken-links', 'automated']
+            });
+
+            if (issues.data.length === 0) {
+              // Create new issue
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `Broken Tool Links Detected - ${new Date().toISOString().split('T')[0]}`,
+                body: body,
+                labels: ['broken-links', 'automated', 'bug']
+              });
+            } else {
+              // Update existing issue
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues.data[0].number,
+                body: `## New Check Results - ${new Date().toISOString()}\n\n${body}`
+              });
+            }

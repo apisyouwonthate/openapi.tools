@@ -12,4 +12,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+featuredArticles:
+  - title: 'Contract Testing a Laravel API with OpenAPI'
+    url: 'https://apisyouwonthate.com/blog/contract-testing-apis-laravel-php-openapi/'
+    date: 2022-02-04
 ---

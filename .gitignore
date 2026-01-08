@@ -20,12 +20,13 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# test coverage
+coverage/
 
 # netlify
 .netlify/
 
-
 .turbo/
 
-# Jekyll legacy
-_site/
+# check errors
+.lint-check-errors.md

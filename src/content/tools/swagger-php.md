@@ -1,12 +1,12 @@
 ---
-name: rswag
-description: Rswag extends rspec-rails request specs with a Swagger-based DSL for describing and testing API operations.
+name: Swagger PHP
+description: Generate interactive OpenAPI documentation for your RESTful API using PHP attributes or doctrine annotations.
 categories:
-  - domain-specific-languages
-link: https://github.com/rswag/rswag
+  # - annotations
+  - auto-generators
 languages:
-  ruby: true
-repo: https://github.com/rswag/rswag
+  php: true
+repo: https://github.com/zircote/swagger-php
 oasVersions:
   v2: false
   v3: true
