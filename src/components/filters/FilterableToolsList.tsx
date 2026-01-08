@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { X } from 'lucide-react';
 
-import type { ToolRowData } from '@/components/table/SharedColumns';
+import type { ToolRowData } from '@/components/table/Columns';
 import { DataTable } from '@/components/table/DataTable';
 import { ToolColumns } from '@/components/table/ToolColumns';
 import { Badge } from '@/components/ui/badge';

@@ -1,11 +1,11 @@
 import { type ColumnDef } from '@tanstack/react-table';
 
-import type { ToolRowData } from './SharedColumns';
+import type { ToolRowData } from './Columns';
 import {
   createLinksColumn,
   createNameColumn,
   createVersionBadgesColumn,
-} from './SharedColumns';
+} from './Columns';
 
 export const CollectionToolColumns: ColumnDef<ToolRowData>[] = [
   createNameColumn(),
