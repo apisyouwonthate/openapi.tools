@@ -7,8 +7,10 @@ const query = Astro.url.searchParams.get('q') || '';
 ---
 
 <Layout title="Search">
-  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <Fragment slot="head">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  </Fragment>
 
   <div class="mx-auto max-w-4xl py-8">
     <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
