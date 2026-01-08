@@ -2,6 +2,7 @@ import netlify from '@astrojs/netlify';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
+import pagefind from 'astro-pagefind';
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
@@ -39,6 +40,7 @@ export default defineConfig({
     react({
       experimentalReactChildren: true,
     }),
+    pagefind(),
   ],
   // @see hosting with netlify https://docs.astro.build/en/guides/integrations-guide/netlify/
   output: 'static',

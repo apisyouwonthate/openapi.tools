@@ -35,7 +35,21 @@ OpenAPI.tools is maintained by [APIs You Won't Hate](https://apisyouwonthate.com
 - [Astro](https://astro.build) — Static site generator
 - [React](https://react.dev) — Interactive components
 - [Tailwind CSS](https://tailwindcss.com) — Styling
+- [Pagefind](https://pagefind.app) — Static search
 - [Netlify](https://netlify.com) — Hosting
+
+## Development
+
+```bash
+pnpm install
+pnpm dev
+```
+
+**Note:** Search is powered by Pagefind, which indexes the site at build time. Search won't work in dev mode. To test search locally:
+
+```bash
+pnpm build && cd dist && npx serve
+```
 
 ## License
 

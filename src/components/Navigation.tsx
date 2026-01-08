@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
+import { SearchForm } from './SearchForm';
 
 export type NavigationItem = {
   title: string;
@@ -34,6 +35,7 @@ export function Navigation({
   return (
     <>
       <nav className={clsx('text-base lg:text-sm', className)}>
+        <SearchForm className="mb-6" />
         <ul className="space-y-9">
           {categories?.map((category) => (
             <li key={category.title}>
