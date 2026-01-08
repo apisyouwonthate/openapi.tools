@@ -11,8 +11,8 @@ import {
   createCollectionPageSchema,
   serializeSchema,
 } from '@/utils/structuredData';
+import { isLegacy, isModern } from '@/utils/versionFilters';
 import type { CollectionFilters } from '@/content/config';
-import { isModern, isLegacy } from '@/utils/versionFilters';
 
 // Helper function to filter tools based on collection filters
 function filterTools(

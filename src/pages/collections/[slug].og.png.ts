@@ -4,8 +4,8 @@ import satori from 'satori';
 import { html } from 'satori-html';
 import sharp from 'sharp';
 
-import type { CollectionFilters } from '@/content/config';
 import { isLegacy } from '@/utils/versionFilters';
+import type { CollectionFilters } from '@/content/config';
 
 type OgRouteParams = {
   params: {
