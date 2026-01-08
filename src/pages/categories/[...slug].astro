@@ -6,6 +6,7 @@ import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import { isSponsorshipActive } from '@/utils/sponsorship';
 import {
   createBreadcrumbSchema,
   createCollectionPageSchema,
@@ -54,22 +55,19 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   return categories.some((cat) => cat.id === categoryIdWithoutExt);
 });
 
-// get all the sponsored tools
+// get all the actively sponsored tools
 const sponsoredTools = allTools
-  .filter((tool) => tool.data.sponsorship)
+  .filter((tool) => isSponsorshipActive(tool.data))
   .sort((a, b) => {
     // sort sponsored tools by start date
-    if (!a.data.sponsorship || !b.data.sponsorship) {
-      return 0;
-    }
-    const aDate = new Date(a.data.sponsorship.startDate);
-    const bDate = new Date(b.data.sponsorship.startDate);
+    const aDate = new Date(a.data.sponsorship![0].startDate);
+    const bDate = new Date(b.data.sponsorship![0].startDate);
     return aDate.getTime() - bDate.getTime();
   });
 
-// get all the tools that are not sponsored
+// get all the tools that are not actively sponsored
 const nonSponsoredTools = allTools
-  .filter((tool) => !tool.data.sponsorship)
+  .filter((tool) => !isSponsorshipActive(tool.data))
   .sort((a, b) => {
     return a.data.name.localeCompare(b.data.name);
   });

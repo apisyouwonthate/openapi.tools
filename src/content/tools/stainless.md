@@ -17,5 +17,5 @@ oasVersions:
   v3_1: true
   v3_2: false
 sponsorship:
-  startDate: 2024-01-01T06:00:00.000Z
+  - startDate: 2024-01-01T06:00:00.000Z
 ---

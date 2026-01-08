@@ -15,7 +15,8 @@ oasVersions:
   v3_1: true
   v3_2: false
 sponsorship:
-  startDate: 2023-11-01T06:00:00.000Z
-  testimonial: |
-    I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
+  - startDate: 2023-11-01T06:00:00.000Z
+    endDate: 2025-01-08T06:00:00.000Z
+    testimonial: |
+      I'm a huge fan of Fern. It's a force multiplier for API teams - <a href="https://apisyouwonthate.com">Mike Bifulco, APIs You Won't Hate cofounder</a>
 ---

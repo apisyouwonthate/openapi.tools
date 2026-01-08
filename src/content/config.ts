@@ -58,11 +58,14 @@ const ToolSchema = z.object({
     )
     .optional(),
   sponsorship: z
-    .object({
-      startDate: z.date(),
-      url: z.string().url().optional(), // optionally override default link while sponsored
-      testimonial: z.string().optional(), // optionally include a testimonial
-    })
+    .array(
+      z.object({
+        startDate: z.date(),
+        endDate: z.date().optional(), // when sponsorship period ended
+        url: z.string().url().optional(), // optionally override default link while sponsored
+        testimonial: z.string().optional(), // optionally include a testimonial
+      })
+    )
     .optional(),
 });
 

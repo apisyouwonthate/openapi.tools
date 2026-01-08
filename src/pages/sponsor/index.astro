@@ -1,0 +1,185 @@
+---
+import { getCollection } from 'astro:content';
+
+import Link from '@/components/Link';
+import Layout from '@/layouts/Layout.astro';
+import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import { isSponsorshipActive } from '@/utils/sponsorship';
+
+const title = 'Sponsor OpenAPI.tools';
+const description =
+  'Support the OpenAPI ecosystem and get your tool featured to thousands of developers.';
+
+// Get all tools with active sponsorship
+const allTools = await getCollection('tools');
+const activeSponsors = allTools
+  .filter((tool) => isSponsorshipActive(tool.data))
+  .sort((a, b) => {
+    const aDate = new Date(a.data.sponsorship![0].startDate);
+    const bDate = new Date(b.data.sponsorship![0].startDate);
+    return aDate.getTime() - bDate.getTime();
+  });
+
+// Deduplicate sponsors by link (some tools share the same company)
+const seenLinks = new Set<string>();
+const uniqueSponsors = activeSponsors.filter((tool) => {
+  const link = tool.data.link;
+  if (!link || seenLinks.has(link)) return false;
+  seenLinks.add(link);
+  return true;
+});
+---
+
+<PostHogLayout>
+  <Layout title={title} description={description}>
+    <div
+      class="prose dark:prose-invert md:prose-lg lg:prose-xl prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90 mx-auto"
+    >
+      <h1>{title}</h1>
+
+      <p>
+        OpenAPI.tools is a community-driven directory helping developers
+        discover the best tools for working with OpenAPI descriptions. With
+        thousands of monthly visitors searching for API tooling, sponsorship
+        gives your product prominent visibility in the OpenAPI ecosystem.
+      </p>
+
+      <h3>Why Sponsor?</h3>
+      <ul>
+        <li>
+          <strong>Reach your target audience</strong> - Developers actively looking
+          for API tools
+        </li>
+        <li>
+          <strong>Priority placement</strong> - Sponsored tools appear first in category
+          listings
+        </li>
+        <li>
+          <strong>"Sponsored" badge</strong> - Clear visual distinction that builds
+          trust
+        </li>
+        <li>
+          <strong>Backlink opportunity</strong> - Display our badge on your site linking
+          back to your listing
+        </li>
+        <li>
+          <strong>Support the community</strong> - Help us maintain and improve this
+          free resource
+        </li>
+      </ul>
+
+      <h3>Sponsorship Benefits</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Benefit</th>
+            <th>Included</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Priority listing in categories</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>"Sponsored" badge on your tool</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Embeddable badges for your website</td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>Banner rotation (limited spots)</td>
+            <td>Contact us</td>
+          </tr>
+          <tr>
+            <td>Featured testimonial</td>
+            <td>&#10003;</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Current Sponsors</h3>
+      <p>
+        We're proud to work with these companies building great OpenAPI tools:
+      </p>
+
+      {
+        uniqueSponsors.length > 0 ? (
+          <ul>
+            {uniqueSponsors.map((tool) => (
+              <li>
+                <Link href={`/tools/${tool.slug}`}>{tool.data.name}</Link>
+                {tool.data.description && ` - ${tool.data.description}`}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>
+            <em>
+              Interested in becoming a sponsor?{' '}
+              <a href="https://github.com/sponsors/apisyouwonthate">
+                Contact us
+              </a>
+              !
+            </em>
+          </p>
+        )
+      }
+
+      <h3>Sponsor Badges</h3>
+      <p>
+        As a sponsor, you can display our badges on your website to show your
+        partnership and link back to your tool listing. Visit our{' '}
+        <Link href="/badges">badges page</Link> for embed codes and badge options.
+      </p>
+
+      <div style="display: flex; gap: 1rem; margin: 1.5rem 0;">
+        <img
+          src="/badges/sponsor-openapi-tools.svg"
+          alt="Sponsor of OpenAPI.tools"
+          width="200"
+          height="40"
+        />
+        <img
+          src="/badges/listed-on-openapi-tools.svg"
+          alt="Listed on OpenAPI.tools"
+          width="200"
+          height="40"
+        />
+      </div>
+
+      <h3>How to Sponsor</h3>
+      <p>
+        <strong>Corporate Sponsors</strong>: Contact us through{' '}
+        <a href="https://github.com/sponsors/apisyouwonthate">GitHub Sponsors</a
+        > or reach out directly via{' '}
+        <a href="https://apisyouwonthate.com">apisyouwonthate.com</a>.
+      </p>
+      <p>
+        <strong>Individual Supporters</strong>: If you're not a corporation and
+        want to support us, consider{' '}
+        <a href="https://apisyouwonthate.com/#/portal/"
+          >becoming a paid member of APIs You Won't Hate</a
+        >.
+      </p>
+
+      <iframe
+        src="https://github.com/sponsors/apisyouwonthate/card"
+        title="Sponsor apisyouwonthate"
+        height="225"
+        width="100%"
+        class="max-w-xl border-0"></iframe>
+
+      <h3>About APIs You Won't Hate</h3>
+      <p>
+        OpenAPI.tools is maintained by the team behind{' '}
+        <a href="https://apisyouwonthate.com">APIs You Won't Hate</a>, a
+        community dedicated to helping developers build better APIs. Your
+        sponsorship supports both this directory and the broader API education
+        mission.
+      </p>
+    </div>
+  </Layout>
+</PostHogLayout>
