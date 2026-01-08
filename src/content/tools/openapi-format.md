@@ -8,7 +8,7 @@ categories:
   - converters
 link: https://www.npmjs.com/package/openapi-format
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/thim81/openapi-format
 
 oaiSpecs:

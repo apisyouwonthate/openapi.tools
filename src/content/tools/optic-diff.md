@@ -5,7 +5,7 @@ categories:
   - misc
 link: https://www.useoptic.com/docs/diff-openapi
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/opticdev/optic
 oasVersions:
   v2: false

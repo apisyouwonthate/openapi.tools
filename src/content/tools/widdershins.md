@@ -5,7 +5,7 @@ categories:
   - docs
 link: https://mermade.github.io/shins
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/mermade/widdershins
 oasVersions:
   v2: true

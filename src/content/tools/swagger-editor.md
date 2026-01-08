@@ -5,7 +5,7 @@ description: |
 categories:
   - text-editors-extensions
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/swagger-api/swagger-editor
 oasVersions:
   v2: true

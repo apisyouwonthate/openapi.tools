@@ -5,7 +5,7 @@ categories:
   - text-editors-extensions
 link: https://marketplace.visualstudio.com/items?itemName=Redocly.openapi-vs-code
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/Redocly/redocly-vs-code
 oasVersions:
   v2: true
