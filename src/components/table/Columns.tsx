@@ -1,5 +1,6 @@
 import { type ColumnDef } from '@tanstack/react-table';
 import type { Category, Tool } from 'src/content/config';
+import { isSponsorshipActive } from 'src/utils/sponsorship';
 
 import Badge from '../Badge';
 import RepoIcon from '../icons/RepoIcon';
@@ -43,7 +44,7 @@ export const createNameColumn = (): ColumnDef<ToolRowData> => ({
           href={`/tools/${slug}`}
           className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
         >
-          {tool?.sponsorship && <Badge variant="green">Sponsored</Badge>}
+          {isSponsorshipActive(tool) && <Badge variant="green">Sponsored</Badge>}
           <span className="font-bold whitespace-pre text-emerald-600 group-hover:underline dark:text-emerald-300">
             {tool.name}
           </span>
@@ -123,7 +124,7 @@ export const createLinksColumn = (
   header: 'Links',
   cell: ({ row }) => {
     const { tool, category } = row.original;
-    const isSponsored = !!tool?.sponsorship;
+    const isSponsored = isSponsorshipActive(tool);
     return (
       <div className="flex flex-row items-center space-x-2">
         {tool?.link && (

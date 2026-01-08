@@ -7,6 +7,7 @@ import { DataTable } from '@/components/table/DataTable';
 import { LegacyToolColumns } from '@/components/table/LegacyToolColumns';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import { isSponsorshipActive } from '@/utils/sponsorship';
 import {
   createBreadcrumbSchema,
   createCollectionPageSchema,
@@ -42,11 +43,13 @@ for (const category of sortedCategories) {
       const categories = tool.data.categories;
       return categories.some((cat) => cat.id === categoryIdWithoutExt);
     })
-    // Sort by sponsored first, then alphabetically
+    // Sort by active sponsors first, then alphabetically
     .sort((a, b) => {
-      // Sponsored tools first
-      if (a.data.sponsorship && !b.data.sponsorship) return -1;
-      if (!a.data.sponsorship && b.data.sponsorship) return 1;
+      // Active sponsored tools first
+      const aSponsored = isSponsorshipActive(a.data);
+      const bSponsored = isSponsorshipActive(b.data);
+      if (aSponsored && !bSponsored) return -1;
+      if (!aSponsored && bSponsored) return 1;
       // Then alphabetically
       return a.data.name.localeCompare(b.data.name);
     });

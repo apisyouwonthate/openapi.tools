@@ -5,6 +5,7 @@ import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
+import { isSponsorshipActive } from '@/utils/sponsorship';
 import {
   createBreadcrumbSchema,
   createCollectionPageSchema,
@@ -16,18 +17,17 @@ import { isModern } from '@/utils/versionFilters';
 const allTools = await getCollection('tools');
 const modernTools = allTools.filter((tool) => isModern(tool.data));
 
-// Sort: sponsored first, then alphabetically
+// Sort: active sponsors first (by earliest start date), then alphabetically
 const sponsoredTools = modernTools
-  .filter((tool) => tool.data.sponsorship)
+  .filter((tool) => isSponsorshipActive(tool.data))
   .sort((a, b) => {
-    if (!a.data.sponsorship || !b.data.sponsorship) return 0;
-    const aDate = new Date(a.data.sponsorship.startDate);
-    const bDate = new Date(b.data.sponsorship.startDate);
+    const aDate = new Date(a.data.sponsorship![0].startDate);
+    const bDate = new Date(b.data.sponsorship![0].startDate);
     return aDate.getTime() - bDate.getTime();
   });
 
 const nonSponsoredTools = modernTools
-  .filter((tool) => !tool.data.sponsorship)
+  .filter((tool) => !isSponsorshipActive(tool.data))
   .sort((a, b) => a.data.name.localeCompare(b.data.name));
 
 const tools = [...sponsoredTools, ...nonSponsoredTools];
