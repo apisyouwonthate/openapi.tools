@@ -8,7 +8,6 @@ categories:
   - domain-specific-languages
   - auto-generators
   - misc
-link: https://www.speakeasy.com/
 languages:
   golang: true
   cli: true

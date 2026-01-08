@@ -1,7 +1,8 @@
 ---
 name: // Speakeasy
-description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from your OpenAPI
+description: Generate & publish SDKs in 10+ languages, Terraform Providers, and docs from OpenAPI.
 categories:
+  - code-generators
   - sdk-generators
   - docs
   - misc
