@@ -65,11 +65,13 @@ const categories: NavigationItems = [
   },
   {
     title: 'OpenAPI Tool Categories',
-    links: allCategories.map((category) => ({
-      title: category.data.name,
-      href: `/categories/${category.slug}`,
-      description: category.data.description,
-    })),
+    links: allCategories
+      .sort((a, b) => a.data.name.localeCompare(b.data.name))
+      .map((category) => ({
+        title: category.data.name,
+        href: `/categories/${category.slug}`,
+        description: category.data.description,
+      })),
   },
 ];
 ---

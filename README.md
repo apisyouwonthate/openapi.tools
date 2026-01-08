@@ -20,7 +20,7 @@ Want to add a tool or improve the site? Please read [CONTRIBUTING.md](./CONTRIBU
 
 ## Sponsorship
 
-OpenAPI.tools is maintained by [APIs You Won't Hate](https://apisyouwonthate.com). Sponsorship helps cover hosting costs and supports continued development.
+OpenAPI.tools is maintained by [APIs You Won't Hate](https://apisyouwonthate.com). Sponsorship helps cover costs and enable continued development.
 
 **Benefits for sponsors:**
 

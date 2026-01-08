@@ -23,6 +23,7 @@ export default tseslint.config(
       '.vercel/**',
       '_site/**',
       'node_modules/**',
+      'scripts/**',
     ],
   },
 
