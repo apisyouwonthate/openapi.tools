@@ -82,17 +82,20 @@ const query = Astro.url.searchParams.get('q') || '';
   </style>
 
   <script is:inline>
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('load', () => {
       const pagefind = new PagefindUI({
         element: '#search',
         showSubResults: true,
       });
 
       // Get initial query from URL and trigger search
+      // Use requestAnimationFrame to ensure PagefindUI is fully initialized
       const params = new URLSearchParams(window.location.search);
       const initialQuery = params.get('q');
       if (initialQuery) {
-        pagefind.triggerSearch(initialQuery);
+        requestAnimationFrame(() => {
+          pagefind.triggerSearch(initialQuery);
+        });
       }
     });
   </script>
