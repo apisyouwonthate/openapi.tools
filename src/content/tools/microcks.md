@@ -2,7 +2,7 @@
 name: Microcks
 description: Open source Kubernetes-native tool for API Mocking and Testing. Turn your OpenAPI into ready-to-use mocks. Use examples to test and validate implementations according to OpenAPI (and similar) elements. Microcks is a Cloud Native Computing Sandbox project.
 categories:
-  - mocking-tools
+  - mocking
   - testing
 link: https://microcks.io
 languages:

@@ -3,7 +3,7 @@ name: APIGit
 description: the native Git based collaboration platform for API design, document, mock, testing and share.
 categories:
   - docs
-  - mocking-tools
+  - mocking
   - ides
   - testing
 link: https://apigit.com
