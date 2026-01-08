@@ -1,4 +1,4 @@
-import type { ToolRowData } from '@/components/table/Columns';
+import type { ToolRowData } from '@/components/table/SharedColumns';
 import type { LanguageOption } from '@/types/filters';
 
 // Items that are platforms/tools rather than programming languages

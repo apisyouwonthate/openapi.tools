@@ -1,10 +1,36 @@
 import { type ColumnDef } from '@tanstack/react-table';
+import type { Category, Tool } from 'src/content/config';
 
 import Badge from '../Badge';
 import RepoIcon from '../icons/RepoIcon';
 import WebsiteIcon from '../icons/WebsiteIcon';
 import Link from '../Link';
-import type { ToolRowData } from './Columns';
+
+// This type is used to define the shape of our data.
+export type ToolRowData = {
+  tool: Tool;
+  slug: string;
+  category?: Category;
+};
+
+// Reusable version badge component
+export const VersionBadge = ({
+  supported,
+  version,
+}: {
+  supported: boolean;
+  version: string;
+}) => (
+  <span
+    className={`inline-flex items-center rounded px-2 py-0.5 text-xs font-medium ${
+      supported
+        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
+        : 'bg-slate-100 text-slate-400 line-through dark:bg-slate-800 dark:text-slate-500'
+    }`}
+  >
+    {version}
+  </span>
+);
 
 export const createNameColumn = (): ColumnDef<ToolRowData> => ({
   accessorKey: 'name',
@@ -46,6 +72,60 @@ export const createLanguagesColumn = (): ColumnDef<ToolRowData> => ({
             title={language}
           />
         ))}
+      </div>
+    );
+  },
+});
+
+// Version column with badge format (for collections)
+export const createVersionBadgesColumn = (): ColumnDef<ToolRowData> => ({
+  accessorKey: 'oasVersions',
+  header: 'Version Support',
+  cell: ({ row }) => {
+    const tool = row.original.tool;
+    const versions = tool?.oasVersions || {};
+
+    return (
+      <div className="flex flex-wrap gap-1">
+        <VersionBadge supported={!!versions.v3_2} version="v3.2" />
+        <VersionBadge supported={!!versions.v3_1} version="v3.1" />
+        <VersionBadge supported={!!versions.v3} version="v3.0" />
+        <VersionBadge supported={!!versions.v2} version="v2.0" />
+      </div>
+    );
+  },
+});
+
+// Version column with text format (for category pages)
+export const createVersionTextColumn = (): ColumnDef<ToolRowData> => ({
+  accessorKey: 'oasVersions',
+  header: 'OpenAPI Versions',
+  cell: ({ row }) => {
+    const tool = row.original.tool;
+    const versions = Object.entries(tool?.oasVersions || {})
+      .filter(([, value]) => value)
+      .map(([key]) => key.replace('_', '.'));
+
+    return versions.reverse().join(', ');
+  },
+});
+
+// Individual version column (for legacy page)
+export const createIndividualVersionColumn = (
+  version: 'v3' | 'v2',
+  displayVersion: string
+): ColumnDef<ToolRowData> => ({
+  accessorKey: version,
+  header: displayVersion,
+  cell: ({ row }) => {
+    const tool = row.original.tool;
+    return (
+      <div className="text-center font-semibold">
+        {tool?.oasVersions?.[version] ? (
+          <span className="text-green-600 dark:text-green-400">Yes</span>
+        ) : (
+          <span className="text-red-600 dark:text-red-400">No</span>
+        )}
       </div>
     );
   },

@@ -19,7 +19,7 @@ const allTools = await getCollection('tools');
 // Filter for legacy tools: tools that support v2 or v3 but NOT v3_1 or v3_2
 // Also exclude tools where oaiSpecs.oas === false (non-OAS tools)
 const legacyTools = allTools.filter((tool) => {
-  const versions = tool.data.openApiVersions;
+  const versions = tool.data.oasVersions;
   const hasLegacyVersion = versions.v2 || versions.v3;
   const hasModernVersion = versions.v3_1 || versions.v3_2;
   const isOasTool = tool.data.oaiSpecs?.oas !== false;

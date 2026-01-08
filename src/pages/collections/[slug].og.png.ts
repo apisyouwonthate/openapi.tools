@@ -21,7 +21,7 @@ function filterTools(
 
   return tools.filter((tool) => {
     if (filters.legacy) {
-      const v = tool.data.openApiVersions;
+      const v = tool.data.oasVersions;
       if (v?.v3_1 || v?.v3_2) return false;
     }
     if (filters.languages?.length) {
@@ -32,7 +32,7 @@ function filterTools(
     if (filters.requireRepo && !tool.data.repo) return false;
     if (filters.requireVersions?.length) {
       const hasVersion = filters.requireVersions.some(
-        (v) => tool.data.openApiVersions?.[v]
+        (v) => tool.data.oasVersions?.[v]
       );
       if (!hasVersion) return false;
     }
