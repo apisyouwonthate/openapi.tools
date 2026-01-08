@@ -4,7 +4,7 @@ description: Simple Chai support for asserting that HTTP responses satisfy an Op
 categories:
   - testing
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/openapi-library/OpenAPIValidators/tree/master/packages/chai-openapi-response-validator
 oasVersions:
   v2: true

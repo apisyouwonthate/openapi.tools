@@ -9,7 +9,7 @@ categories:
 link: https://stepci.com
 languages:
   cli: true
-  node: true
+  nodejs: true
 repo: https://github.com/stepci/stepci
 oasVersions:
   v2: false

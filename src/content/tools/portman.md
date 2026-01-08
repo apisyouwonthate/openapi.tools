@@ -6,7 +6,7 @@ categories:
   - converters
 link: https://getportman.com/
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/apideck-libraries/portman
 oasVersions:
   v2: false

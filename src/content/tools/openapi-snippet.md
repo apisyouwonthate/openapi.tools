@@ -4,7 +4,7 @@ description: Generates code snippets in various languages & tools (cURL, Node, P
 categories:
   - parsers
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/ErikWittern/openapi-snippet
 oasVersions:
   v2: true

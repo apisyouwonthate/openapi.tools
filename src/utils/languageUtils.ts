@@ -3,19 +3,19 @@ import type { LanguageOption } from '@/types/filters';
 
 // Items that are platforms/tools rather than programming languages
 const PLATFORMS = new Set([
-  'saas',
   'cli',
-  'node',
-  'docker',
-  'kubernetes',
-  'terraform',
-  'web',
   'desktop',
-  'vscode extension',
-  'yaml',
-  'xslt',
+  'docker',
   'jekyll',
+  'kubernetes',
+  'nodejs',
+  'saas',
+  'terraform',
   'unity',
+  'vscode extension',
+  'web',
+  'xslt',
+  'yaml',
 ]);
 
 const LANGUAGE_NAME_MAP: Record<string, string> = {

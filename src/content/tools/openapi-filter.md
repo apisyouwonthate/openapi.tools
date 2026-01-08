@@ -4,7 +4,7 @@ description: OpenAPI 2.0 and 3.0 filter utility. A CLI/module to filter out inte
 categories:
   - parsers
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/Mermade/openapi-filter
 oasVersions:
   v2: true

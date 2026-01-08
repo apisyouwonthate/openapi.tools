@@ -4,7 +4,7 @@ description: Configurable and extensible validator/linter for OpenAPI documents
 categories:
   - schema-validators
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/IBM/openapi-validator
 oasVersions:
   v2: true

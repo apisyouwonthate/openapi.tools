@@ -7,7 +7,7 @@ categories:
 link: https://counterfact.dev
 languages:
   typescript: true
-  node: true
+  nodejs: true
 repo: https://github.com/pmcelhaney/counterfact
 oasVersions:
   v2: true

@@ -5,7 +5,7 @@ categories:
   - converters
 link: https://mulesoft.github.io/oas-raml-converter/
 languages:
-  node: true
+  nodejs: true
 repo: https://github.com/mulesoft/oas-raml-converter
 oasVersions:
   v2: true

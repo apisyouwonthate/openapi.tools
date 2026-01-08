@@ -6,7 +6,7 @@ categories:
   - data-validators
 link: https://github.com/lukeautry/tsoa
 languages:
-  node: true
+  nodejs: true
   typescript: true
 repo: https://github.com/lukeautry/tsoa
 oasVersions:
