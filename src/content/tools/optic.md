@@ -12,4 +12,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+featuredArticles:
+  - title: 'How to Capture Quite a Lot of API Traffic'
+    url: 'https://apisyouwonthate.com/blog/capture-api-traffic-using-optic/'
+    date: 2023-07-01
 ---

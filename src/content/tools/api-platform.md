@@ -12,4 +12,8 @@ oasVersions:
   v3: true
   v3_1: false
   v3_2: false
+featuredArticles:
+  - title: 'Code-First: How To Generate OpenAPI Files in 2024'
+    url: https://apisyouwonthate.com/blog/code-first-how-to-generate-openapi-files-in-2024/
+    date: 2024-01-01
 ---

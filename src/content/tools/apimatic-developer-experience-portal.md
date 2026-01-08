@@ -11,4 +11,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+featuredArticles:
+  - title: 'APIMatic Review: Developer Experience-as-a-Service'
+    url: 'https://apisyouwonthate.com/blog/apimatic-review-dx-as-a-service/'
+    date: 2023-05-07
 ---

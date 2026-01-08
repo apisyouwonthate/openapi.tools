@@ -15,4 +15,11 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+featuredArticles:
+  - title: 'Meet Redocly CLI: The Modern OpenAPI Sidekick'
+    url: 'https://apisyouwonthate.com/blog/redocly-cli/'
+    date: 2023-11-07
+  - title: 'Popular OpenAPI Bundling Tools Compared'
+    url: 'https://apisyouwonthate.com/blog/openapi-bundling-tools-compared-blog-post/'
+    date: 2023-11-13
 ---

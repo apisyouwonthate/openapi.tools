@@ -20,4 +20,9 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+
+featuredArticles:
+  - title: 'OpenAPI Format: A GUI for Overlays'
+    url: 'https://apisyouwonthate.com/blog/openapi-format-gui-for-overlays/'
+    date: 2025-10-10
 ---

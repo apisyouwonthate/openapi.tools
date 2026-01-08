@@ -6,7 +6,6 @@ categories:
   - converters
   - schema-validators
   - domain-specific-languages
-  - auto-generators
   - misc
 languages:
   golang: true
@@ -23,4 +22,9 @@ oasVersions:
   v3_2: true
 sponsorship:
   - startDate: 2024-02-09T06:00:00.000Z
+
+featuredArticles:
+  - title: 'Use OpenAPI Overlays Today'
+    url: 'https://apisyouwonthate.com/blog/use-openapi-overlays-today/'
+    date: 2024-08-08
 ---

@@ -1,6 +1,6 @@
 ---
 name: apigen-ts
-description: Typed HTTP client generator as single file without extra dependencies
+description: Typed HTTP client generator as single file without extra dependencies.
 categories:
   - sdk-generators
 link: https://www.npmjs.com/package/apigen-ts

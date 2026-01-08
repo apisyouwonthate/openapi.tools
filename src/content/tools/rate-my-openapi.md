@@ -14,4 +14,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+featuredArticles:
+  - title: 'Battle of the API Ratings: API Insights vs Rate my API'
+    url: 'https://apisyouwonthate.com/blog/api-insights-vs-rate-my-api/'
+    date: 2024-01-10
 ---

@@ -16,4 +16,15 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+
+featuredArticles:
+  - title: 'The 5 Best API Docs Tools in 2025'
+    url: 'https://apisyouwonthate.com/blog/top-5-best-api-docs-tools/'
+    date: 2025-07-30
+  - title: 'Use OpenAPI Overlays Today'
+    url: 'https://apisyouwonthate.com/blog/use-openapi-overlays-today/'
+    date: 2024-08-08
+  - title: 'How to use JSONPath with OpenAPI'
+    url: 'https://apisyouwonthate.com/blog/jsonpath-and-openapi/'
+    date: 2024-06-05
 ---
