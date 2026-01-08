@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Search } from 'lucide-react';
 
-import { cn } from '@/lib/utils';
 import { Input } from '@/components/ui/input';
+import { cn } from '@/lib/utils';
 
 type SearchFormProps = {
   defaultValue?: string;
@@ -55,9 +55,9 @@ export function SearchForm({
         onChange={(e) => setQuery(e.target.value)}
         autoFocus={autoFocus}
         autoComplete="off"
-        className="pl-8 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700"
+        className="border-slate-200 bg-white pl-8 dark:border-slate-700 dark:bg-slate-800"
       />
-      <Search className="pointer-events-none absolute left-2 top-1/2 size-4 -translate-y-1/2 text-slate-400 dark:text-slate-500" />
+      <Search className="pointer-events-none absolute top-1/2 left-2 size-4 -translate-y-1/2 text-slate-400 dark:text-slate-500" />
     </form>
   );
 }

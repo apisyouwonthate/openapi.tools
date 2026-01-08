@@ -1,6 +1,6 @@
 ---
-import Layout from '@/layouts/Layout.astro';
 import { SearchForm } from '@/components/SearchForm';
+import Layout from '@/layouts/Layout.astro';
 
 const isDev = import.meta.env.DEV;
 const query = Astro.url.searchParams.get('q') || '';
@@ -23,17 +23,19 @@ const query = Astro.url.searchParams.get('q') || '';
       autoFocus
     />
 
-    {isDev && (
-      <div class="mb-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-amber-800 dark:bg-amber-900/20 dark:text-amber-200">
-        <p class="font-medium">Search unavailable in dev mode</p>
-        <p class="mt-1 text-sm">
-          Pagefind indexes the site at build time. To test search, run:
-        </p>
-        <code class="mt-2 block rounded bg-amber-100 p-2 text-xs dark:bg-amber-900/40">
-          pnpm build && cd dist && npx serve
-        </code>
-      </div>
-    )}
+    {
+      isDev && (
+        <div class="mb-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-amber-800 dark:bg-amber-900/20 dark:text-amber-200">
+          <p class="font-medium">Search unavailable in dev mode</p>
+          <p class="mt-1 text-sm">
+            Pagefind indexes the site at build time. To test search, run:
+          </p>
+          <code class="mt-2 block rounded bg-amber-100 p-2 text-xs dark:bg-amber-900/40">
+            pnpm build && cd dist && npx serve
+          </code>
+        </div>
+      )
+    }
 
     <div id="search"></div>
   </div>

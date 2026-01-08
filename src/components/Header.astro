@@ -35,7 +35,9 @@ const { categories, currentUrl } = Astro.props;
       />
     </Link>
   </div>
-  <div class="relative flex basis-0 items-center justify-end gap-6 sm:gap-8 md:flex-grow">
+  <div
+    class="relative flex basis-0 items-center justify-end gap-6 sm:gap-8 md:flex-grow"
+  >
     <SearchForm className="hidden w-64 lg:block" client:load />
     <ThemeSelector className="relative z-50" client:only="react" />
     <Link
