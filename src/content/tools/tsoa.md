@@ -16,7 +16,7 @@ oasVersions:
   v3_1: true
   v3_2: false
 featuredArticles:
-  - title: 'Speakeasy\'s tsoa guide'
+  - title: 'The Speakeasy + tsoa guide'
     url: 'https://www.speakeasy.com/openapi/frameworks/tsoa'
     date: 2025-12-01
 ---
