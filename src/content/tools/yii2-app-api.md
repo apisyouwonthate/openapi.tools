@@ -4,7 +4,7 @@ description: |
   Generate Server side API code with routing, models, data validation and database schema from an OpenAPI description. Based on Yii Framework.
 categories:
   - servers
-  - mocking-tools
+  - mocking
 languages:
   php: true
 repo: https://github.com/php-openapi/yii2-app-api

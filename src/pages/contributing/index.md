@@ -35,7 +35,7 @@ categories:
   - sdk-generators
   - code-validators
   - servers
-  - mocking-tools
+  - mocking
 languages: { 'Language1': true, 'Language2': false }
 link: 'https://toolwebsite.com'
 repo: 'https://github.com/example/example.git'

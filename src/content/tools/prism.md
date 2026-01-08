@@ -2,7 +2,7 @@
 name: Prism
 description: Turn any OAI file into an API server with mocking, transformations, validations, and more.
 categories:
-  - mocking-tools
+  - mocking
 link: https://stoplight.io/open-source/prism
 languages:
   cli: true

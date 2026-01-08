@@ -3,7 +3,7 @@ name: Meeshkan
 description: Meeshkan is an automated testing and mocking tool. It offers first-class support for GraphQL APIs, but Meeshkan is also built to handle REST APIs and third-party dependencies.
 categories:
   - testing
-  - mocking-tools
+  - mocking
 link: https://meeshkan.com/
 languages:
   saas: true

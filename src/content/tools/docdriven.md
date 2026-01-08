@@ -3,7 +3,7 @@ name: DocDriven
 description: DocDriven is a user friendly GUI editor with collaboration features, cloud mock servers and AI code generation.
 categories:
   - ides
-  - mocking-tools
+  - mocking
   - servers
 link: https://docdriven.com
 languages: {}

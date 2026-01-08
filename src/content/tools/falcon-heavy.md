@@ -4,7 +4,7 @@ description: |
   The framework for building app backends and microservices via the API design-first workflow.
 categories:
   - servers
-  - mocking-tools
+  - mocking
 link: https://github.com/NotJustAToy/falcon-heavy
 languages:
   python: true

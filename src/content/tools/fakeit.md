@@ -2,7 +2,7 @@
 name: Fakeit
 description: Create mock server from OpenAPI 3 specification with random response generation and request validation.
 categories:
-  - mocking-tools
+  - mocking
 link: https://github.com/justinfeng/fakeit
 languages:
   cli: true
