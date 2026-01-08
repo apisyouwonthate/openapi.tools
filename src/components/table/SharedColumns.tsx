@@ -86,27 +86,12 @@ export const createVersionBadgesColumn = (): ColumnDef<ToolRowData> => ({
     const versions = tool?.oasVersions || {};
 
     return (
-      <div className="flex flex-wrap gap-1">
+      <div className="flex min-w-[140px] flex-wrap gap-1">
         <VersionBadge supported={!!versions.v3_2} version="v3.2" />
         <VersionBadge supported={!!versions.v3_1} version="v3.1" />
         <VersionBadge supported={!!versions.v3} version="v3.0" />
-        <VersionBadge supported={!!versions.v2} version="v2.0" />
       </div>
     );
-  },
-});
-
-// Version column with text format (for category pages)
-export const createVersionTextColumn = (): ColumnDef<ToolRowData> => ({
-  accessorKey: 'oasVersions',
-  header: 'OpenAPI Versions',
-  cell: ({ row }) => {
-    const tool = row.original.tool;
-    const versions = Object.entries(tool?.oasVersions || {})
-      .filter(([, value]) => value)
-      .map(([key]) => key.replace('_', '.'));
-
-    return versions.reverse().join(', ');
   },
 });
 

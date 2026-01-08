@@ -25,6 +25,10 @@ function filterTools(
     if (filters.legacy) {
       const v = tool.data.oasVersions;
       if (v?.v3_1 || v?.v3_2) return false;
+    } else {
+      // For non-legacy collections, only show tools that support v3.1 or v3.2
+      const v = tool.data.oasVersions;
+      if (!v?.v3_1 && !v?.v3_2) return false;
     }
 
     // Language filter

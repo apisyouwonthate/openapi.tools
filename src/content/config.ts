@@ -120,6 +120,6 @@ const curatedCollectionsCollection = defineCollection({
 export const collections = {
   categories: categoriesCollection,
   tools: toolsCollection,
-  bannerSponsors: bannerSponsorsCollection,
+  'banner-sponsors': bannerSponsorsCollection,
   'curated-collections': curatedCollectionsCollection,
 };

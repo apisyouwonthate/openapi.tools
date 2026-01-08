@@ -5,12 +5,12 @@ import {
   createLanguagesColumn,
   createLinksColumn,
   createNameColumn,
-  createVersionTextColumn,
+  createVersionBadgesColumn,
 } from './SharedColumns';
 
 export const ToolColumns: ColumnDef<ToolRowData>[] = [
   createNameColumn(),
   createLanguagesColumn(),
-  createVersionTextColumn(),
+  createVersionBadgesColumn(),
   createLinksColumn('category-landing-page-table'),
 ];
