@@ -1,6 +1,6 @@
 ---
 name: APIClarity
-description: Reconstruct Open API Specifications from real-time workload traffic seamlessly.
+description: Reconstruct OpenAPI descriptions from real-time workload traffic seamlessly.
 categories:
   - learning
 link: https://apiclarity.io/

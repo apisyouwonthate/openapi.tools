@@ -1,6 +1,6 @@
 ---
 name: VSCode OpenAPI Viewer
-description: Preview and edit JSON or YAML OpenAPI specifications in Visual Studio Code using RapiDoc.
+description: Preview and edit JSON or YAML OpenAPI descriptions in Visual Studio Code using RapiDoc.
 categories:
   - docs
   - text-editors-extensions

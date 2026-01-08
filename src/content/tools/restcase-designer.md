@@ -1,7 +1,7 @@
 ---
 name: RestCase Designer
 description: |
-  A design-first API managment platform with WYSIWYG API Designer for OpenAPI and AsyncAPI specifications.
+  A design-first API management platform with WYSIWYG API Designer for OpenAPI and AsyncAPI.
 categories:
   - ides
 link: https://www.restcase.com/platform/design

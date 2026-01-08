@@ -1,6 +1,6 @@
 ---
 name: SaaS Tools
-description: Commercial Software-as-a-Service tools for working with OpenAPI specifications.
+description: Commercial Software-as-a-Service tools for working with OpenAPI descriptions.
 filters:
   saas: true
 ---

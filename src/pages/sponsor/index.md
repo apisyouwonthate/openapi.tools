@@ -6,7 +6,7 @@ layout: '../../layouts/StaticPageLayout.astro'
 
 ## Sponsor OpenAPI.tools
 
-OpenAPI.tools is a community-driven directory helping developers discover the best tools for working with OpenAPI specifications. With thousands of monthly visitors searching for API tooling, sponsorship gives your product prominent visibility in the OpenAPI ecosystem.
+OpenAPI.tools is a community-driven directory helping developers discover the best tools for working with OpenAPI descriptions. With thousands of monthly visitors searching for API tooling, sponsorship gives your product prominent visibility in the OpenAPI ecosystem.
 
 ### Why Sponsor?
 

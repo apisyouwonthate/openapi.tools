@@ -41,6 +41,13 @@ const ToolSchema = z.object({
     v3_1: z.boolean().optional(),
     v3_2: z.boolean().optional(),
   }),
+  oaiSpecs: z
+    .object({
+      oas: z.boolean().optional(),
+      overlays: z.boolean().optional(),
+      arazzo: z.boolean().optional(),
+    })
+    .optional(),
   featuredArticles: z
     .array(
       z.object({
@@ -72,6 +79,10 @@ const CollectionFiltersSchema = z.object({
   requireRepo: z.boolean().optional(),
   // SaaS filter - tool.languages.saas === true
   saas: z.boolean().optional(),
+  // Overlays filter - tool.oaiSpecs.overlays === true
+  overlays: z.boolean().optional(),
+  // Arazzo filter - tool.oaiSpecs.arazzo === true
+  arazzo: z.boolean().optional(),
 });
 
 const CollectionSchema = z.object({

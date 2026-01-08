@@ -13,6 +13,10 @@ languages:
   golang: true
   cli: true
 repo: https://github.com/speakeasy-api/openapi
+oaiSpecs:
+  oas: true
+  overlays: true
+  arazzo: true
 openApiVersions:
   v2: false
   v3: true

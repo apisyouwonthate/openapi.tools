@@ -1,6 +1,6 @@
 ---
 name: vitepress-openapi
-description: Generate VitePress API Docs from OpenAPI specifications.
+description: Generate VitePress API Docs from OpenAPI descriptions.
 categories:
   - docs
 link: https://vitepress-openapi.vercel.app/

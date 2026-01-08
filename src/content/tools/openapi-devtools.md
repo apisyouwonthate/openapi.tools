@@ -1,6 +1,6 @@
 ---
 name: OpenAPI DevTools
-description: Browser extension that generates API specs for any app or website
+description: Browser extension that generates API descriptions for any app or website
 categories:
   - auto-generators
   - docs

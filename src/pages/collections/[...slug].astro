@@ -39,6 +39,17 @@ function filterTools(
     // Open source filter - must have repo URL
     if (filters.requireRepo && !tool.data.repo) return false;
 
+    // Overlays filter
+    if (filters.overlays && !tool.data.oaiSpecs?.overlays) return false;
+
+    // Arazzo filter
+    if (filters.arazzo && !tool.data.oaiSpecs?.arazzo) return false;
+
+    // For non-arazzo/overlays collections, exclude tools where oaiSpecs.oas === false
+    if (!filters.arazzo && !filters.overlays) {
+      if (tool.data.oaiSpecs?.oas === false) return false;
+    }
+
     // Version requirements
     if (filters.requireVersions?.length) {
       const hasVersion = filters.requireVersions.some(

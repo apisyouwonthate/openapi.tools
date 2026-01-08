@@ -1,6 +1,6 @@
 ---
 name: OAS RAML Converter
-description: Converts between OpenAPI and RAML API specifications
+description: Converts API descriptions between OpenAPI and RAML.
 categories:
   - converters
 link: https://mulesoft.github.io/oas-raml-converter/

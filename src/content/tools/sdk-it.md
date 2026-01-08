@@ -1,6 +1,6 @@
 ---
 name: // SDK-IT
-description: Generates type-safe client SDKs from OpenAPI specifications and creates OpenAPI specs from TypeScript code.
+description: Generates type-safe client SDKs from OpenAPI descriptions and creates OpenAPI descriptions from TypeScript code.
 categories:
   - sdk-generators
   - converters

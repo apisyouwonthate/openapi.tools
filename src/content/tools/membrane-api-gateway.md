@@ -1,6 +1,6 @@
 ---
 name: Membrane API Gateway
-description: Open source API gateway with built-in OpenAPI support. Turn OpenAPI specs into APIs and enforce request and response validation.
+description: Open source API gateway with built-in OpenAPI support. Turn OpenAPI descriptions into APIs and enforce request and response validation.
 categories:
   - gateways
   - data-validators
