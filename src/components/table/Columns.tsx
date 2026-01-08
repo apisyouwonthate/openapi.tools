@@ -44,7 +44,9 @@ export const createNameColumn = (): ColumnDef<ToolRowData> => ({
           href={`/tools/${slug}`}
           className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
         >
-          {isSponsorshipActive(tool) && <Badge variant="green">Sponsored</Badge>}
+          {isSponsorshipActive(tool) && (
+            <Badge variant="green">Sponsored</Badge>
+          )}
           <span className="font-bold whitespace-pre text-emerald-600 group-hover:underline dark:text-emerald-300">
             {tool.name}
           </span>
