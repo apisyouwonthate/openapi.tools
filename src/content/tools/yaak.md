@@ -26,9 +26,7 @@ featuredArticles:
     date: 2024-11-11
 ---
 
-## Overview
-
-Yaak is a local-first, open-source API client built by Greg Schier, the same developer who originally created Insomnia before it was sold to Kong. After watching the tools in this space change for the worse—particularly with the introduction of unnecessary AI features and cloud requirements—Greg started over to build something he's proud to put his name behind.
+Yaak is a local-first, open-source API client built by Greg Schier, the same developer who originally created Insomnia before it was sold to Kong. After watching the tools in this space change for the worse, Greg started over to build something he's proud to put his name behind.
 
 Yaak is purpose-built to be **the best API client, and nothing more**. It's a clean, focused desktop application that runs on Mac, Windows, and Linux, featuring a snappy, intuitive interface that stays out of your way. There's no signup required, no telemetry, and no cloud lock-in—just a fast, private tool that works offline and respects your workflow.
 

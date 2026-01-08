@@ -23,8 +23,6 @@ featuredArticles:
     date: 2024-10-11
 ---
 
-## Overview
-
 Bruno is a free, open-source API client designed for developers who want complete control over their API testing workflow. Unlike cloud-based alternatives, Bruno is a completely local, offline-first desktop application that stores your API collections directly on your filesystem using a plain text markup language called [Bru](https://docs.usebruno.com/bru-lang/overview).
 
 This local-first approach means your API collections, requests, responses, and test data never leave your computer. There are no accounts, no logins, and no cloud dependencies—you maintain complete ownership and control of all your data.
