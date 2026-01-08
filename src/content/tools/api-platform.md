@@ -7,7 +7,7 @@ link: https://api-platform.com
 languages:
   php: true
 repo: https://github.com/api-platform/api-platform
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

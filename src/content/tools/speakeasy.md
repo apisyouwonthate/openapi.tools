@@ -26,7 +26,7 @@ repo: https://github.com/speakeasy-api
 oaiSpecs:
   oas: true
   overlays: true
-openApiVersions:
+oasVersions:
   v3: true
   v3_1: true
   v3_2: true

@@ -7,7 +7,7 @@ link: https://docuo.spreading.ai/?via=ot
 languages:
   saas: true
 repo: https://github.com/spreadingai
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

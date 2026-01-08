@@ -12,7 +12,7 @@ languages:
   svelte: true
   angular: true
 repo: https://github.com/anymaniax/orval
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

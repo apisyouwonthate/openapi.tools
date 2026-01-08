@@ -8,7 +8,7 @@ languages:
   javascript: true
   typescript: true
 repo: https://github.com/nfroidure/openapi-ts-sdk-builder
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

@@ -8,7 +8,7 @@ link: https://github.com/hopfront/hopfront
 languages:
   typescript: true
 repo: https://github.com/hopfront/hopfront
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

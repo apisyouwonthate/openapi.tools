@@ -7,7 +7,7 @@ link: https://github.com/jonluca/har-to-openapi
 languages:
   typescript: true
 repo: https://github.com/jonluca/har-to-openapi
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

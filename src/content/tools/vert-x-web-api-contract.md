@@ -13,7 +13,7 @@ languages:
   ceylon: true
   scala: true
 repo: https://github.com/vert-x3/vertx-web/tree/master/vertx-web-api-contract
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -7,7 +7,7 @@ categories:
 link: https://smartbear.com/product/ready-api/overview/
 languages:
   java: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

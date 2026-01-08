@@ -8,7 +8,7 @@ categories:
 link: https://marketplace.visualstudio.com/items?itemName=apimatic-developers.apimatic-for-vscode
 languages:
   any: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

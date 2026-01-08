@@ -6,7 +6,7 @@ categories:
 languages:
   golang: true
 repo: https://github.com/googleapis/gnostic
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

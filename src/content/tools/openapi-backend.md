@@ -8,7 +8,7 @@ languages:
   node: true
   typescript: true
 repo: https://github.com/anttiviljami/openapi-backend
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

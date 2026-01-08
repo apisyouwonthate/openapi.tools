@@ -8,7 +8,7 @@ link: https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openap
 languages:
   any: true
 repo: https://github.com/42Crunch/vscode-openapi
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

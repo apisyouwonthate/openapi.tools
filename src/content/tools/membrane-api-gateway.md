@@ -8,7 +8,7 @@ link: https://www.membrane-api.io
 languages:
   java: true
 repo: https://github.com/membrane/api-gateway
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

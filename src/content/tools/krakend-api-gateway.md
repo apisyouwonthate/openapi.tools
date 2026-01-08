@@ -7,7 +7,7 @@ categories:
 link: https://www.krakend.io/enterprise/
 languages:
   golang: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

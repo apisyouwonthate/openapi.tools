@@ -9,7 +9,7 @@ link: https://github.com/mattpolzin/openapikit
 languages:
   swift: true
 repo: https://github.com/mattpolzin/openapikit
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

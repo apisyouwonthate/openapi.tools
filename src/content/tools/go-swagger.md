@@ -9,7 +9,7 @@ link: https://goswagger.io/
 languages:
   golang: true
 repo: https://github.com/go-swagger/go-swagger
-openApiVersions:
+oasVersions:
   v2: true
   v3: false
   v3_1: false

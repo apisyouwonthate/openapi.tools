@@ -10,7 +10,7 @@ link: https://the-codegen-project.org
 languages:
   typescript: true
 repo: https://github.com/the-codegen-project/cli/
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

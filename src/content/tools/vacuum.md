@@ -10,7 +10,7 @@ repo: https://github.com/daveshanley/vacuum
 oaiSpecs:
   oas: true
   overlays: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

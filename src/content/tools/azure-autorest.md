@@ -6,7 +6,7 @@ categories:
 languages:
   typescript: true
 repo: https://github.com/Azure/autorest/
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

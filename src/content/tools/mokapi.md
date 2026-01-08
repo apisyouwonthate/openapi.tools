@@ -6,7 +6,7 @@ categories:
 link: https://mokapi.io
 languages:
   golang: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

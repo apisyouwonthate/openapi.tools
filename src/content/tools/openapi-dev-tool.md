@@ -8,7 +8,7 @@ categories:
 languages:
   javascript: true
 repo: https://github.com/lyra/openapi-dev-tool
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -8,7 +8,7 @@ languages:
   javascript: true
   typescript: true
 repo: https://github.com/nfroidure/whook
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

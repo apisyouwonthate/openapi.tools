@@ -7,7 +7,7 @@ link: https://gitlab.com/robarago/draig
 languages:
   java: true
 repo: https://gitlab.com/robarago/draig
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

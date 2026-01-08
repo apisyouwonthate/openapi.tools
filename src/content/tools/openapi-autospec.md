@@ -8,7 +8,7 @@ link: https://www.portway.ai/
 languages:
   javascript: true
 repo: https://github.com/Adawg4/openapi-autospec
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

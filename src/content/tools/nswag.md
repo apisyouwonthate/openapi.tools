@@ -7,7 +7,7 @@ link: https://NSwag.org
 languages:
   dot-net: true
 repo: https://github.com/RicoSuter/NSwag
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

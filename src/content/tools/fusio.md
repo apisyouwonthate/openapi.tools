@@ -8,7 +8,7 @@ link: https://www.fusio-project.org/
 languages:
   php: true
 repo: https://github.com/apioo/fusio
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

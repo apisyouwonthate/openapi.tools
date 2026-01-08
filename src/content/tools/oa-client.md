@@ -8,7 +8,7 @@ link: https://github.com/ninofiliu/oa-client
 languages:
   typescript: true
 repo: https://github.com/ninofiliu/oa-client
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

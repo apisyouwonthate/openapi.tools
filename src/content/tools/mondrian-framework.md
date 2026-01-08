@@ -8,7 +8,7 @@ categories:
 link: https://github.com/mondrian-framework/mondrian-framework
 languages:
   typescript: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: true

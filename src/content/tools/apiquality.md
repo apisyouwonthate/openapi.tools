@@ -7,7 +7,7 @@ link: https://apiquality.io
 languages:
   saas: true
 repo: https://github.com/APIQuality-io
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

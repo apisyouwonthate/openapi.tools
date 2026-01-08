@@ -7,7 +7,7 @@ link: https://dredd.io/
 languages:
   javascript: true
 repo: https://github.com/apiaryio/dredd
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

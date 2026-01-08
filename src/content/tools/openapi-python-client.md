@@ -7,7 +7,7 @@ link: https://github.com/openapi-generators/openapi-python-client
 languages:
   python: true
 repo: https://github.com/openapi-generators/openapi-python-client
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

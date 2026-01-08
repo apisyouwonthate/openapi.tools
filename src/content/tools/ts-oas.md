@@ -9,7 +9,7 @@ link: https://github.com/ts-oas/ts-oas
 languages:
   typescript: true
 repo: https://github.com/ts-oas/ts-oas
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

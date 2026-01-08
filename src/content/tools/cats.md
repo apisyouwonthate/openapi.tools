@@ -6,7 +6,7 @@ categories:
 link: https://github.com/Endava/cats
 languages:
   java: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -8,7 +8,7 @@ languages:
   node: true
   javascript: true
 repo: https://github.com/Rhosys/openapi-data-validator.js
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

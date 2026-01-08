@@ -7,7 +7,7 @@ link: https://github.com/stefankoppier/openapi-validator
 languages:
   kotlin: true
 repo: https://github.com/stefankoppier/openapi-validator
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

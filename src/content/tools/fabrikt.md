@@ -8,7 +8,7 @@ link: https://github.com/cjbooms/fabrikt
 languages:
   kotlin: true
 repo: https://github.com/cjbooms/fabrikt
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

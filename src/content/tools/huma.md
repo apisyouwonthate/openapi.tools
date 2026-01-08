@@ -9,7 +9,7 @@ link: https://huma.rocks/
 languages:
   golang: true
 repo: https://github.com/danielgtaylor/huma
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

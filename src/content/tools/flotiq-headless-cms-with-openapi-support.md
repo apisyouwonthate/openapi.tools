@@ -9,7 +9,7 @@ link: https://flotiq.com
 languages:
   saas: true
 repo: https://github.com/flotiq
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -7,7 +7,7 @@ categories:
 link: https://github.com/marketplace/apimatic-openapi-linter
 languages:
   any: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

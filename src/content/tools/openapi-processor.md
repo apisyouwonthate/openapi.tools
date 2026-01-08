@@ -8,7 +8,7 @@ link: https://docs.openapiprocessor.io
 languages:
   java: true
 repo: https://github.com/openapi-processor
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

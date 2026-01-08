@@ -7,7 +7,7 @@ link: https://github.com/rswag/rswag
 languages:
   ruby: true
 repo: https://github.com/rswag/rswag
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

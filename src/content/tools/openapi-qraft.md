@@ -8,7 +8,7 @@ link: https://openapi-qraft.github.io/openapi-qraft/
 languages:
   typescript: true
 repo: https://github.com/OpenAPI-Qraft/openapi-qraft
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

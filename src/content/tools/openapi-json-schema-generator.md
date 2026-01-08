@@ -9,7 +9,7 @@ languages:
   python: true
   java: true
 repo: https://github.com/openapi-json-schema-tools/openapi-json-schema-generator
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

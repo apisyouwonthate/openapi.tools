@@ -7,7 +7,7 @@ link: https://github.com/sourcemeta/std
 languages:
   'on': true
 repo: https://github.com/sourcemeta/std
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: true

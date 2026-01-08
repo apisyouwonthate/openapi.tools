@@ -8,7 +8,7 @@ languages:
   vue: true
   typescript: true
 repo: https://github.com/enzonotario/vitepress-openapi
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

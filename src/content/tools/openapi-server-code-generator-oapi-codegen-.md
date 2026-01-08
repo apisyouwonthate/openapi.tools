@@ -8,7 +8,7 @@ link: https://github.com/deepmap/oapi-codegen
 languages:
   golang: true
 repo: https://github.com/deepmap/oapi-codegen
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

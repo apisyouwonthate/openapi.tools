@@ -7,7 +7,7 @@ link: https://github.com/dcarr178/har2openapi
 languages:
   typescript: true
 repo: https://github.com/dcarr178/har2openapi
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -8,7 +8,7 @@ categories:
 link: https://github.com/go-oas/docs
 languages: {}
 repo: https://github.com/go-oas/docs
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

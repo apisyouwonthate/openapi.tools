@@ -10,7 +10,7 @@ link: https://github.com/grantila/typeconv/
 languages:
   typescript: true
 repo: https://github.com/grantila/typeconv/
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

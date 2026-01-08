@@ -7,7 +7,7 @@ link: https://koumoul.com/openapi-viewer/
 languages:
   vue: true
 repo: https://github.com/koumoul-dev/openapi-viewer
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

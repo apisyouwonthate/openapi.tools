@@ -6,7 +6,7 @@ categories:
 languages:
   rust: true
 repo: https://github.com/adwhit/openapi3-rust
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

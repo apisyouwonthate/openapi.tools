@@ -6,7 +6,7 @@ categories:
 languages:
   python: true
 repo: https://github.com/Dorthu/openapi3
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

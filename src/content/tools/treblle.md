@@ -8,7 +8,7 @@ categories:
   - misc
 link: https://www.treblle.com/
 languages: {}
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

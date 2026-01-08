@@ -8,7 +8,7 @@ link: https://aka.ms/kiota/docs
 languages:
   csharp: true
 repo: https://github.com/microsoft/kiota
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -8,7 +8,7 @@ link: https://github.com/isa-group/RESTest
 languages:
   java: true
 repo: https://github.com/isa-group/RESTest
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

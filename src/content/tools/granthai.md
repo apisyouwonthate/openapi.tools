@@ -8,7 +8,7 @@ link: https://granthai.com
 languages:
   javascript: true
 repo: https://www.npmjs.com/package/granthai
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

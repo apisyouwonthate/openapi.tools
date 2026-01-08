@@ -7,7 +7,7 @@ link: https://rapidocweb.com/
 languages:
   web component: true
 repo: https://github.com/mrin9/RapiDoc
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

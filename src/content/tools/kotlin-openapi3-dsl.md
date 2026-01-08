@@ -6,7 +6,7 @@ categories:
 link: https://github.com/derveloper/kotlin-openapi3-dsl
 languages:
   kotlin: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

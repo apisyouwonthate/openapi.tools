@@ -8,7 +8,7 @@ link: https://getportman.com/
 languages:
   node: true
 repo: https://github.com/apideck-libraries/portman
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

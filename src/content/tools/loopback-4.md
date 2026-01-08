@@ -9,7 +9,7 @@ languages:
   node: true
   typescript: true
 repo: https://github.com/strongloop/loopback-next
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -6,7 +6,7 @@ categories:
 languages:
   python: true
 repo: https://github.com/maticardenas/django-contract-tester
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

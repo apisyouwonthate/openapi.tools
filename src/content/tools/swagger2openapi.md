@@ -8,7 +8,7 @@ languages:
   node: true
   cli: true
 repo: https://github.com/Mermade/swagger2openapi
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

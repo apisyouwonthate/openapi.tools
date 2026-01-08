@@ -8,7 +8,7 @@ link: https://plugins.jetbrains.com/plugin/14394-openapi-specifications
 languages:
   java: true
   python: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

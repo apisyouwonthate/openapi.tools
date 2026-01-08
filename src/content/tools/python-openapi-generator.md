@@ -7,7 +7,7 @@ link: https://github.com/wael34218/python_openapi_generator
 languages:
   python: true
 repo: https://github.com/wael34218/python_openapi_generator
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

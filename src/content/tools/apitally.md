@@ -7,7 +7,7 @@ link: https://apitally.io
 languages:
   saas: true
 repo: https://github.com/apitally
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

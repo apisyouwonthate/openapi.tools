@@ -7,7 +7,7 @@ link: https://stoplight.io/open-source/prism
 languages:
   cli: true
 repo: https://github.com/stoplightio/prism
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

@@ -7,7 +7,7 @@ link: https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/technical-
 languages:
   csharp: true
 repo: https://github.com/microsoft/dev-proxy
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

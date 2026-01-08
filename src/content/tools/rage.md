@@ -8,7 +8,7 @@ link: https://github.com/rage-rb/rage
 languages:
   ruby: true
 repo: https://github.com/rage-rb/rage
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

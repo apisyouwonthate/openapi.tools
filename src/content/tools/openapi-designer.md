@@ -6,7 +6,7 @@ categories:
 link: https://openapidesigner.com
 languages:
   saas: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

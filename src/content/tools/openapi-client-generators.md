@@ -8,7 +8,7 @@ link: https://github.com/zijianhuang/openapiclientgen
 languages:
   csharp: true
 repo: https://github.com/zijianhuang/openapiclientgen
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

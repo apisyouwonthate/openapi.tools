@@ -8,7 +8,7 @@ languages:
   web: true
   saas: true
 repo: https://github.com/GitbookIO/gitbook
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

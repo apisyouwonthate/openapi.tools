@@ -8,7 +8,7 @@ link: https://www.github.com/OAIE/oaie-sketch
 languages:
   vue: true
 repo: https://github.com/OAIE/oaie-sketch
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

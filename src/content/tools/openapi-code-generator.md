@@ -9,7 +9,7 @@ link: https://openapi-code-generator.nahkies.co.nz
 languages:
   typesscript: true
 repo: https://github.com/mnahkies/openapi-code-generator
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

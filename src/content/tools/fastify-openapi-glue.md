@@ -7,7 +7,7 @@ link: https://www.npmjs.com/package/fastify-openapi-glue
 languages:
   node: true
 repo: https://github.com/PayU/openapi-validator-middleware
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

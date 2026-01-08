@@ -7,7 +7,7 @@ link: https://plugins.jetbrains.com/plugin/19889-openapi-crud-wizard
 languages:
   yaml: true
 repo: https://github.com/inssch/openapicrudwizard
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true

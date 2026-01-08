@@ -8,7 +8,7 @@ link: https://evitadb.io/download/single-file-playground.html
 languages:
   typescript: true
 repo: https://github.com/ruzito/oas-aware-rest-lang-support
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

@@ -8,7 +8,7 @@ link: https://marketplace.visualstudio.com/items?itemName=AndrewButson.vscode-op
 languages:
   typescript: true
 repo: https://github.com/arbs-io/vscode-openapi-viewer
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

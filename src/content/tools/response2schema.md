@@ -6,7 +6,7 @@ categories:
 link: https://github.com/dsuurlant/response2schema
 languages:
   php: true
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

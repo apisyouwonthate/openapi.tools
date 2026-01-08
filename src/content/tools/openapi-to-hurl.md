@@ -6,7 +6,7 @@ categories:
 languages:
   cli: true
 repo: https://github.com/ethancarlsson/openapi-to-hurl
-openApiVersions:
+oasVersions:
   v2: false
   v3: false
   v3_1: true

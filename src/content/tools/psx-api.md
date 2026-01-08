@@ -7,7 +7,7 @@ link: https://phpsx.org
 languages:
   php: true
 repo: https://github.com/apioo/psx-api
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

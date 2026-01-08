@@ -6,7 +6,7 @@ categories:
 languages:
   java: true
 repo: https://github.com/RepreZen/KaiZen-OpenApi-Parser
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

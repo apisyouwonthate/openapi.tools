@@ -8,7 +8,7 @@ link: https://abap-openapi.github.io/web-openapi-client/
 languages:
   abap: true
 repo: https://github.com/abap-openapi/abap-openapi
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

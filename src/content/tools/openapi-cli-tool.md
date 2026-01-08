@@ -7,7 +7,7 @@ link: https://pypi.org/project/openapi-cli-tool/
 languages:
   python: true
 repo: https://github.com/hakopako/openapi-cli-tool
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

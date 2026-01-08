@@ -6,7 +6,7 @@ categories:
 languages:
   golang: true
 repo: https://gitlab.com/jamietanna/httptest-openapi/
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

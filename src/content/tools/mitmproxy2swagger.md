@@ -7,7 +7,7 @@ link: https://github.com/alufers/mitmproxy2swagger
 languages:
   python: true
 repo: https://github.com/alufers/mitmproxy2swagger
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

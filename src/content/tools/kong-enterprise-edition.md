@@ -7,7 +7,7 @@ categories:
 link: https://konghq.com/kong-enterprise-edition/
 languages:
   lua: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: true

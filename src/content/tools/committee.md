@@ -6,7 +6,7 @@ categories:
 languages:
   ruby: true
 repo: https://github.com/interagent/committee
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

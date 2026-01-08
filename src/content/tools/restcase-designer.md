@@ -8,7 +8,7 @@ link: https://www.restcase.com/platform/design
 languages:
   angular: true
   saas: true
-openApiVersions:
+oasVersions:
   v2: true
   v3: true
   v3_1: false

@@ -8,7 +8,7 @@ categories:
 languages:
   php: true
 repo: https://github.com/php-openapi/yii2-app-api
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: false

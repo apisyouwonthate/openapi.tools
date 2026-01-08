@@ -8,7 +8,7 @@ link: https://github.com/apple/swift-openapi-generator
 languages:
   swift: true
 repo: https://github.com/apple/swift-openapi-generator
-openApiVersions:
+oasVersions:
   v2: false
   v3: true
   v3_1: true
