@@ -1,14 +1,14 @@
 ---
-name: rswag
-description: Rswag extends rspec-rails request specs with a Swagger-based DSL for describing and testing API operations.
+name: Swashbuckle
+description: Swagger tools for documenting API's built on ASP.NET Core
 categories:
-  - domain-specific-languages
-link: https://github.com/rswag/rswag
+  # - annotations
+  - auto-generators
 languages:
-  ruby: true
-repo: https://github.com/rswag/rswag
+  dot-net: true
+repo: https://github.com/domaindrivendev/Swashbuckle.AspNetCore
 oasVersions:
-  v2: false
+  v2: true
   v3: true
   v3_1: true
   v3_2: false

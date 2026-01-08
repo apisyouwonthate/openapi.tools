@@ -8,6 +8,9 @@ import Layout from '../layouts/Layout.astro';
 import PostHogLayout from '../layouts/PostHogLayout.astro';
 
 const allCategories = await getCollection('categories');
+const sortedCategories = allCategories.sort((a, b) =>
+  a.data.name.localeCompare(b.data.name)
+);
 ---
 
 <PostHogLayout>
@@ -30,7 +33,7 @@ const allCategories = await getCollection('categories');
 
     <div class="not-prose my-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
       {
-        allCategories.map((category) => (
+        sortedCategories.map((category) => (
           <QuickLink
             href={`/categories/${category.slug}`}
             title={category.data.name}
