@@ -12,4 +12,11 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+oasSpecs:
+  oas: true
+
+featuredArticles:
+  - title: 'The 5 Best API Docs Tools in 2025'
+    url: 'https://apisyouwonthate.com/blog/top-5-best-api-docs-tools/'
+    date: 2025-07-30
 ---
