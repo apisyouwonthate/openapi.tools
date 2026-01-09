@@ -58,7 +58,7 @@ export function Hero() {
             <div className="relative">
               <p className="font-display inline bg-gradient-to-r from-green-200 via-green-400 to-green-200 bg-clip-text text-5xl font-bold tracking-tight text-transparent">
                 Tools for working with <br className="md:hidden" /> OpenAPI
-                specs
+                descriptions
               </p>
               <p className="mt-3 text-2xl tracking-tight text-gray-400">
                 A community-driven, open source project from <br />
