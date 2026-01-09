@@ -1,17 +1,13 @@
 ---
+import PagefindSearch from 'astro-pagefind/components/Search';
 import { SearchForm } from '@/components/SearchForm';
 import Layout from '@/layouts/Layout.astro';
 
 const isDev = import.meta.env.DEV;
-const query = Astro.url.searchParams.get('q') || '';
+const query = Astro.url.searchParams.get('q') || undefined;
 ---
 
 <Layout title="Search">
-  <Fragment slot="head">
-    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
-    <script is:inline src="/pagefind/pagefind-ui.js"></script>
-  </Fragment>
-
   <div class="mx-auto max-w-4xl py-8">
     <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
       Search OpenAPI Tools
@@ -39,13 +35,25 @@ const query = Astro.url.searchParams.get('q') || '';
       )
     }
 
-    <div id="search"></div>
+    <PagefindSearch
+      id="search"
+      query={query}
+      uiOptions={{ showSubResults: true }}
+    />
   </div>
 
   <style is:global>
-    /* Hide Pagefind's default input - we use our own */
+    /* Visually hide Pagefind's default input - we use our own */
     .pagefind-ui__form {
-      display: none !important;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
     }
 
     .pagefind-ui {
@@ -80,23 +88,4 @@ const query = Astro.url.searchParams.get('q') || '';
       padding: 1rem 0;
     }
   </style>
-
-  <script is:inline>
-    window.addEventListener('load', () => {
-      const pagefind = new PagefindUI({
-        element: '#search',
-        showSubResults: true,
-      });
-
-      // Get initial query from URL and trigger search
-      // Use requestAnimationFrame to ensure PagefindUI is fully initialized
-      const params = new URLSearchParams(window.location.search);
-      const initialQuery = params.get('q');
-      if (initialQuery) {
-        requestAnimationFrame(() => {
-          pagefind.triggerSearch(initialQuery);
-        });
-      }
-    });
-  </script>
 </Layout>
