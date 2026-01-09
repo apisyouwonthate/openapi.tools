@@ -2,8 +2,7 @@
 name: FastMCP
 description: FastMCP can automatically generate an MCP server from an OpenAPI specification. Users only need to provide an OpenAPI specification (3.0 or 3.1) and an API client.
 categories:
-  - servers
-  - auto-generators
+  - mcp
 link: https://gofastmcp.com/integrations/openapi#openapi-fastmcp
 languages: {}
 repo: https://github.com/jlowin/fastmcp

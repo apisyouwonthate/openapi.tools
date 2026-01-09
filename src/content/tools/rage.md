@@ -2,8 +2,7 @@
 name: Rage
 description: A Ruby web framework for building APIs with first-class OpenAPI support.
 categories:
-  - auto-generators
-  - servers
+  - openapi-aware-frameworks
 link: https://github.com/rage-rb/rage
 languages:
   ruby: true

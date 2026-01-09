@@ -1,10 +1,9 @@
 ---
 name: Fuego
-description: Golang Fuego - web & API framework generating OpenAPI 3 spec from source code
+description: Golang Fuego - web & API framework generating OpenAPI descriptions from source code.
 categories:
-  - auto-generators
+  - openapi-aware-frameworks
   - data-validators
-  - servers
 link: https://go-fuego.github.io/fuego/
 languages:
   golang: true

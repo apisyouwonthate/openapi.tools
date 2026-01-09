@@ -2,8 +2,7 @@
 name: mondrian-framework
 description: Framework for generating OpenAPI 3.1 documents and servers from formal TypeScript definitions of models and services. Includes built-in data validation.
 categories:
-  - servers
-  - auto-generators
+  - domain-specific-languages
   - data-validators
 link: https://github.com/mondrian-framework/mondrian-framework
 languages:

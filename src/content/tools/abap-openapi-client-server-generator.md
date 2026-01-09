@@ -3,7 +3,7 @@ name: ABAP OpenAPI Client & Server Generator
 description: ABAP OpenAPI Client & Server Generator written in ABAP. Code generation runs also in the Browser and on command line using NodeJS.
 categories:
   - sdk-generators
-  - servers
+  - code-generators
 link: https://abap-openapi.github.io/web-openapi-client/
 languages:
   abap: true

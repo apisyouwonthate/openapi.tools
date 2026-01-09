@@ -1,8 +1,8 @@
 ---
 name: drf-spectacular
-description: Sane and flexible OpenAPI 3 schema generation for Django REST framework.
+description: Flexible OpenAPI description generation for Django REST framework.
 categories:
-  - auto-generators
+  - openapi-aware-frameworks
 languages:
   python: true
 repo: https://github.com/tfranzel/drf-spectacular

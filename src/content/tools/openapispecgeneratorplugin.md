@@ -1,8 +1,8 @@
 ---
 name: OpenApiSpecGeneratorPlugin
-description: Built-in plugin for open-source DevProxy that automatically generates OpenAPI 3.0 Spec from captured network requests
+description: Built-in plugin for open-source DevProxy that automatically generates OpenAPI 3.0 Spec from captured network requests.
 categories:
-  - auto-generators
+  - learning
 link: https://learn.microsoft.com/en-us/microsoft-cloud/dev/dev-proxy/technical-reference/openapispecgeneratorplugin
 languages:
   csharp: true
