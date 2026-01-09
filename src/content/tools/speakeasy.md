@@ -7,7 +7,6 @@ categories:
   - docs
   - misc
   - testing
-  - mocking
   - ides
   - learning
 link: https://www.speakeasy.com/
