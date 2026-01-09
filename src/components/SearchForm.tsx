@@ -27,10 +27,14 @@ export function SearchForm({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
     if (onSearch) {
       onSearch(query);
-    } else if (!inline && query.trim()) {
-      // Navigate to search page
+      return;
+    }
+
+    if (!inline && query.trim()) {
+      // Navigate to search page - the Search component handles query from URL
       window.location.href = `/search?q=${encodeURIComponent(query.trim())}`;
     }
   };
@@ -40,8 +44,6 @@ export function SearchForm({
       onSubmit={handleSubmit}
       className={cn('relative', className)}
       role="search"
-      action="/search"
-      method="get"
     >
       <label htmlFor={inputId} className="sr-only">
         Search
