@@ -1,5 +1,5 @@
 ---
-name: 🌿 Fern Server
+name: Fern Server
 description: Generate server-side boilerplate code from OpenAPI and then implement your business logic.
 categories:
   - servers
