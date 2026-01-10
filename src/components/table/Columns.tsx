@@ -42,6 +42,7 @@ export const createNameColumn = (): ColumnDef<ToolRowData> => ({
       <>
         <Link
           href={`/tools/${slug}`}
+          data-astro-prefetch
           className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
         >
           {isSponsorshipActive(tool) && (

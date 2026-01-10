@@ -45,4 +45,5 @@ export default defineConfig({
   adapter: netlify(),
   site: 'https://openapi.tools',
   trailingSlash: 'never',
+  prefetch: true,
 });
