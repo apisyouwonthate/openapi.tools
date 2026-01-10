@@ -54,7 +54,10 @@ const SponsorBanner = ({ sponsors }: { sponsors: BannerSponsor[] }) => {
           </span>
         </div>
       </a>
-      <a className="flex items-center px-2 py-1 md:justify-end" href="/sponsor">
+      <a
+        className="flex items-center px-2 py-1 text-nowrap md:justify-end"
+        href="/sponsor"
+      >
         <span className="text-white">Sponsor openapi.tools</span>
       </a>
     </section>
