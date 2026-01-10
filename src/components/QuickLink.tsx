@@ -14,7 +14,7 @@ export function QuickLink({
       <div className="absolute -inset-px rounded-xl border-2 border-transparent opacity-0 [background:linear-gradient(var(--quick-links-hover-bg,theme(colors.green.50)),var(--quick-links-hover-bg,theme(colors.green.50)))_padding-box,linear-gradient(to_top,theme(colors.emerald.400),theme(colors.teal.400),theme(colors.green.500))_border-box] group-hover:opacity-100 dark:[--quick-links-hover-bg:theme(colors.slate.800)]" />
       <div className="relative overflow-hidden rounded-xl p-6">
         <h2 className="font-display mt-0 text-base text-slate-900 dark:text-white">
-          <Link href={href}>
+          <Link href={href} data-astro-prefetch>
             <span className="absolute -inset-px rounded-xl" />
             {title}
           </Link>
