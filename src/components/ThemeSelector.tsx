@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import {
   Label,
   Listbox,
@@ -8,25 +8,21 @@ import {
 } from '@headlessui/react';
 import clsx from 'clsx';
 
+import { useTheme } from '@/hooks/useTheme';
 import { DarkIcon } from './icons/DarkIcon';
 import { LightIcon } from './icons/LightIcon';
+import { SystemIcon } from './icons/SystemIcon';
 
 const themes = [
   { name: 'Light', value: 'light', icon: LightIcon },
   { name: 'Dark', value: 'dark', icon: DarkIcon },
+  { name: 'System', value: 'system', icon: SystemIcon },
 ];
 
 export function ThemeSelector(
   props: React.ComponentPropsWithoutRef<typeof Listbox<'div'>>
 ) {
-  const [theme, setTheme] = useState<string>(() => {
-    return localStorage?.getItem('theme') ?? 'light';
-  });
-
-  useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
-    localStorage?.setItem('theme', theme);
-  }, [theme]);
+  const [theme, setTheme] = useTheme();
 
   return (
     <Listbox as="div" value={theme} onChange={setTheme} {...props}>

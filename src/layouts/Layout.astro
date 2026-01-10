@@ -78,12 +78,17 @@ const categories: NavigationItems = [
 
 <script is:inline>
   const theme = (() => {
+    // Check for user override
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
       return localStorage.getItem('theme');
     }
+
+    // Check for system preference
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';
     }
+
+    // Default
     return 'light';
   })();
 
@@ -92,7 +97,6 @@ const categories: NavigationItems = [
   } else {
     document.documentElement.classList.add('dark');
   }
-  window.localStorage.setItem('theme', theme);
 </script>
 
 <html lang="en" class={clsx('h-full antialiased')}>
