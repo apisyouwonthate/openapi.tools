@@ -1,0 +1,92 @@
+---
+import PagefindSearch from 'astro-pagefind/components/Search';
+
+import { SearchForm } from '@/components/SearchForm';
+import Layout from '@/layouts/Layout.astro';
+
+const isDev = import.meta.env.DEV;
+const query = Astro.url.searchParams.get('q') || undefined;
+---
+
+<Layout title="Search">
+  <div class="mx-auto max-w-4xl py-8">
+    <h1 class="mb-6 text-3xl font-bold text-slate-900 dark:text-white">
+      Search OpenAPI Tools
+    </h1>
+
+    <SearchForm
+      client:load
+      className="mb-6"
+      placeholder="Search tools, categories, docs..."
+      defaultValue={query}
+      autoFocus
+    />
+
+    {
+      isDev && (
+        <div class="mb-6 rounded-lg border border-amber-200 bg-amber-50 p-4 text-amber-800 dark:border-amber-800 dark:bg-amber-900/20 dark:text-amber-200">
+          <p class="font-medium">Search unavailable in dev mode</p>
+          <p class="mt-1 text-sm">
+            Pagefind indexes the site at build time. To test search, run:
+          </p>
+          <code class="mt-2 block rounded bg-amber-100 p-2 text-xs dark:bg-amber-900/40">
+            pnpm build && cd dist && npx serve
+          </code>
+        </div>
+      )
+    }
+
+    <PagefindSearch
+      id="search"
+      query={query}
+      uiOptions={{ showSubResults: true }}
+    />
+  </div>
+
+  <style is:global>
+    /* Visually hide Pagefind's default input - we use our own */
+    .pagefind-ui__form {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .pagefind-ui {
+      --pagefind-ui-scale: 1;
+      --pagefind-ui-primary: #10b981;
+      --pagefind-ui-text: #1e293b;
+      --pagefind-ui-background: #ffffff;
+      --pagefind-ui-border: #e2e8f0;
+      --pagefind-ui-tag: #f1f5f9;
+      --pagefind-ui-border-width: 1px;
+      --pagefind-ui-border-radius: 6px;
+      --pagefind-ui-font: inherit;
+    }
+
+    .dark .pagefind-ui {
+      --pagefind-ui-primary: #10b981;
+      --pagefind-ui-text: #f1f5f9;
+      --pagefind-ui-background: #1e293b;
+      --pagefind-ui-border: #334155;
+      --pagefind-ui-tag: #334155;
+    }
+
+    .pagefind-ui__result-link {
+      color: #10b981 !important;
+    }
+
+    .pagefind-ui__result-link:hover {
+      text-decoration: underline !important;
+    }
+
+    .pagefind-ui__message {
+      padding: 1rem 0;
+    }
+  </style>
+</Layout>

@@ -2,6 +2,7 @@
 import clsx from 'clsx';
 
 import { GitHubIcon } from '@/components/icons/GitHubIcon';
+import { SearchForm } from '@/components/SearchForm';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
@@ -34,7 +35,10 @@ const { categories, currentUrl } = Astro.props;
       />
     </Link>
   </div>
-  <div class="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
+  <div
+    class="relative flex basis-0 items-center justify-end gap-6 sm:gap-8 md:flex-grow"
+  >
+    <SearchForm className="hidden w-64 lg:block" client:load />
     <ThemeSelector className="relative z-50" client:only="react" />
     <Link
       href="https://github.com/apisyouwonthate/openapi.tools"
