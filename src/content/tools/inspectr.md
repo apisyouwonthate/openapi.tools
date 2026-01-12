@@ -5,8 +5,9 @@ link: https://inspectr.dev
 repo: https://github.com/inspectr-hq/inspectr
 categories:
   - testing
-  - mock-servers
+  - mocking
   - learning
+  - misc
 oasVersions:
   v2: false
   v3: true
