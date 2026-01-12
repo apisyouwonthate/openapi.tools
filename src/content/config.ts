@@ -28,6 +28,16 @@ const CategorySchema = z.object({
 
 export type Category = z.infer<typeof CategorySchema>;
 
+const BadgeSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+  icon: z.string().optional(),
+  variant: z.enum(['gold', 'silver', 'bronze', 'blue']).optional(),
+});
+
+export type Badge = z.infer<typeof BadgeSchema>;
+
 const ToolSchema = z.object({
   name: z.string(),
   description: z.string(),
@@ -69,6 +79,7 @@ const ToolSchema = z.object({
       })
     )
     .optional(),
+  badges: z.array(reference('badges')).optional(),
 });
 
 export type Tool = z.infer<typeof ToolSchema>;
@@ -110,6 +121,11 @@ const categoriesCollection = defineCollection({
   schema: CategorySchema,
 });
 
+const badgesCollection = defineCollection({
+  type: 'content',
+  schema: BadgeSchema,
+});
+
 const toolsCollection = defineCollection({
   type: 'content',
   schema: ToolSchema,
@@ -124,6 +140,7 @@ const curatedCollectionsCollection = defineCollection({
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   categories: categoriesCollection,
+  badges: badgesCollection,
   tools: toolsCollection,
   'banner-sponsors': bannerSponsorsCollection,
   'curated-collections': curatedCollectionsCollection,

@@ -15,6 +15,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v3-2-early-adopter
 featuredArticles:
   - title: 'Meet Redocly CLI: The Modern OpenAPI Sidekick'
     url: 'https://apisyouwonthate.com/blog/redocly-cli/'

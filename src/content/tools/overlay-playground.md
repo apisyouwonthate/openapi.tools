@@ -11,6 +11,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v3-2-early-adopter
 featuredArticles:
   - title: 'Use OpenAPI Overlays Today'
     url: 'https://apisyouwonthate.com/blog/use-openapi-overlays-today/'

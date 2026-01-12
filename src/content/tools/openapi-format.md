@@ -22,6 +22,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v3-2-early-adopter
 
 featuredArticles:
   - title: 'OpenAPI Format: A GUI for Overlays'
