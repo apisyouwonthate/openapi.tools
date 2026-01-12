@@ -30,12 +30,11 @@ featuredArticles:
   - title: 'Automatically Upgrade to OpenAPI v3.2'
     url: 'https://apisyouwonthate.com/blog/automaticly-upgrade-to-openapi-v3-2/'
     date: 2025-10-13
-
 ---
 
 ## Overview
 
-**openapi-format** is a tool for formatting OpenAPI documents by *ordering*, *formatting*, *filtering*, *upgrading* and applying *overlays*. It helps teams standardize OpenAPI specifications by producing clean, predictable, and consistently structured JSON or YAML output.
+**openapi-format** is a tool for formatting OpenAPI documents by _ordering_, _formatting_, _filtering_, _upgrading_ and applying _overlays_. It helps teams standardize OpenAPI specifications by producing clean, predictable, and consistently structured JSON or YAML output.
 
 ## Key Features
 
