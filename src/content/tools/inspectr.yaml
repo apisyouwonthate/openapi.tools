@@ -13,8 +13,9 @@ oasVersions:
   - "3.0"
 oaiSpecs:
   oas: true
-  overlays: true
+  overlays: false
 ---
+
 ## Overview
 
 Inspectr is a real-time HTTP inspection and debugging tool for APIs and webhooks, built around OpenAPI documents. It helps developers observe live traffic, analyze integrations, and mock APIs during development and testing.
