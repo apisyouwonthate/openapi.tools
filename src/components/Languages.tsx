@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { clsxm } from '@/utils/clsxm';
+import { getDeviconClassName } from '@/utils/languageUtils';
 
 type LanguagesProps = {
   languages: Record<string, boolean>;
@@ -26,7 +27,7 @@ const Languages: React.FC<LanguagesProps> = ({ languages }) => {
             <i
               className={clsxm(
                 'text-xl text-white',
-                `devicon-${language.toLowerCase().trim()}-plain`
+                `devicon-${getDeviconClassName(language)}-plain`
               )}
             />
           </li>
