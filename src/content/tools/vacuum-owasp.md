@@ -15,7 +15,8 @@ oasVersions:
   v3_1: true
   v3_2: true
 badges:
-  - oas-v3-2-early-adopter
+  - oas-v32-early
+  - full-spectrum-support
 ---
 
 The vacuum OWASP ruleset brings enterprise-grade API security validation to OpenAPI descriptions by implementing [OWASP API Security](https://owasp.org/www-project-api-security/) rules. These comprehensive security rules were originally crafted by [Phil Sturgeon](https://philsturgeon.com/) and written by [Ricardo Graça](https://github.com/Ricagraca), and are now built directly into vacuum for out-of-the-box API security validation.

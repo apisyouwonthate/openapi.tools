@@ -21,7 +21,9 @@ oasVersions:
   v3_1: true
   v3_2: true
 badges:
-  - oas-v3-2-early-adopter
+  - oas-v32-early
+  - overlays-pioneer
+  - arazzo-support
 sponsorship:
   - startDate: 2024-02-09T06:00:00.000Z
 

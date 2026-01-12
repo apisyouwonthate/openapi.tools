@@ -11,6 +11,8 @@ repo: https://github.com/lornajane/openapi-overlays-js
 oaiSpecs:
   oas: false
   overlays: true
+badges:
+  - overlays-pioneer
 
 featuredArticles:
   - title: 'Use OpenAPI Overlays Today'

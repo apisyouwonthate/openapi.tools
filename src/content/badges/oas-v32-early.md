@@ -1,5 +1,5 @@
 ---
-id: oas-v3-2-early-adopter
+id: oas-v32-early
 name: OAS v3.2 Early Adopter
 description: One of the first tools to support OpenAPI 3.2
 icon: 🚀
