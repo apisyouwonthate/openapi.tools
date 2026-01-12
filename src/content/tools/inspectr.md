@@ -6,8 +6,12 @@ repo: https://github.com/inspectr-hq/inspectr
 categories:
   - testing
   - mocking
+  - mcp
   - learning
   - misc
+languages:
+  cli: true
+  web: true
 oasVersions:
   v2: false
   v3: true
