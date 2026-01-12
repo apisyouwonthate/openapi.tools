@@ -1,6 +1,6 @@
 ---
 name: Inspectr
-description: Inspectr - Observe, mock and test APIs using OpenAPI. Realtime visibility and mocking for your APIs.
+description: Observe, mock and test APIs using OpenAPI. Realtime visibility and mocking for your APIs.
 link: https://inspectr.dev
 repo: https://github.com/inspectr-dev/inspectr
 categories:
