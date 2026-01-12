@@ -38,8 +38,8 @@ function filterTools(
     }
     // Badge requirements
     if (filters.requireBadges?.length) {
-      const hasBadge = filters.requireBadges.some(
-        (badgeId) => tool.data.badges?.some((badge) => badge.id === badgeId)
+      const hasBadge = filters.requireBadges.some((badgeId) =>
+        tool.data.badges?.some((badge) => badge.id === badgeId)
       );
       if (!hasBadge) return false;
     }
