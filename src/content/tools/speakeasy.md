@@ -4,7 +4,6 @@ description: Generate & publish SDKs in 10+ languages, Terraform Providers, and 
 categories:
   - code-generators
   - sdk-generators
-  - docs
   - misc
   - testing
   - ides
