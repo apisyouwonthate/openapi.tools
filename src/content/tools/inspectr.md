@@ -8,9 +8,10 @@ categories:
   - mock-servers
   - learning
 oasVersions:
-  - '3.2'
-  - '3.1'
-  - '3.0'
+  v2: false
+  v3: true
+  v3_1: true
+  v3_2: true
 oaiSpecs:
   oas: true
   overlays: false
