@@ -99,6 +99,8 @@ const CollectionFiltersSchema = z.object({
   overlays: z.boolean().optional(),
   // Arazzo filter - tool.oaiSpecs.arazzo === true
   arazzo: z.boolean().optional(),
+  // Badge filter - requires specific badges
+  requireBadges: z.array(z.string()).optional(),
 });
 
 const CollectionSchema = z.object({
