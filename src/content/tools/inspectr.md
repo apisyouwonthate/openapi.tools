@@ -1,6 +1,6 @@
 ---
 name: Inspectr
-description: Observe, mock and test APIs using OpenAPI. Realtime visibility and mocking for your APIs.
+description: Observe, mock and test APIs using OpenAPI. Inspectr is a real-time HTTP inspection and debugging tool for APIs and webhooks, built around OpenAPI documents. It helps developers observe live traffic, mock backends, monitor MCP server activity, and debug integrations during development and testing.
 link: https://inspectr.dev
 repo: https://github.com/inspectr-hq/inspectr
 categories:
