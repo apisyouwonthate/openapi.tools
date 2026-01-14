@@ -11,4 +11,7 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v32-early
+  - full-spectrum-support
 ---

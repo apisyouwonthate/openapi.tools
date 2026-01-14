@@ -28,6 +28,9 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v32-early
+  - overlays-pioneer
 sponsorship:
   - startDate: 2024-02-09T06:00:00.000Z
 ---
