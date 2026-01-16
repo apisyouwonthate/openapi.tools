@@ -6,7 +6,7 @@ categories:
   - misc
   - parsers
   - converters
-link: https://www.npmjs.com/package/openapi-format
+link: https://openapi-format-playground.vercel.app/
 languages:
   nodejs: true
   cli: true
