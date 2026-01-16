@@ -6,7 +6,7 @@ categories:
   - misc
   - parsers
   - converters
-link: https://openapi-format-playground.vercel.app/
+link: https://openapi-format-playground.vercel.app
 languages:
   nodejs: true
   cli: true
