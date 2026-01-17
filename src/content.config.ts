@@ -1,5 +1,6 @@
 // 1. Import utilities from `astro:content`
 import { defineCollection, reference } from 'astro:content';
+import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 import { icons } from './components/Icon';
@@ -115,27 +116,27 @@ export type CollectionFilters = z.infer<typeof CollectionFiltersSchema>;
 
 // 2. Define your collection(s)
 const bannerSponsorsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/banner-sponsors' }),
   schema: BannerSponsorSchema,
 });
 
 const categoriesCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/categories' }),
   schema: CategorySchema,
 });
 
 const badgesCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/badges' }),
   schema: BadgeSchema,
 });
 
 const toolsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/tools' }),
   schema: ToolSchema,
 });
 
 const curatedCollectionsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/curated-collections' }),
   schema: CollectionSchema,
 });
 
