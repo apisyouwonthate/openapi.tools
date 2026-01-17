@@ -16,7 +16,7 @@ export const RepoIcon = ({
     case repoUrlAdjusted.includes('https://github.com'):
       return (
         <GitHubIcon
-          className={clsx('inline-block h-4 w-4 fill-white', props.className)}
+          className={clsx('inline-block h-4 w-4', props.className)}
           {...props}
         />
       );
@@ -24,7 +24,7 @@ export const RepoIcon = ({
     case repoUrlAdjusted.includes('https://gitlab.com'):
       return (
         <GitLabIcon
-          className={clsx('inline-block h-4 w-4 fill-white', props.className)}
+          className={clsx('inline-block h-4 w-4', props.className)}
           {...props}
         />
       );
@@ -33,7 +33,7 @@ export const RepoIcon = ({
       repoUrlAdjusted.includes('https://npmjs.com'):
       return (
         <NPMIcon
-          className={clsx('inline-block h-6 w-6 fill-white', props.className)}
+          className={clsx('inline-block h-6 w-6', props.className)}
           {...props}
         />
       );
@@ -41,7 +41,7 @@ export const RepoIcon = ({
     default:
       return (
         <GitIcon
-          className={clsx('inline-block h-4 w-4 fill-white', props.className)}
+          className={clsx('inline-block h-4 w-4', props.className)}
           {...props}
         />
       );
