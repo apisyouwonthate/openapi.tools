@@ -1,7 +1,8 @@
 // 1. Import utilities from `astro:content`
-import { defineCollection, reference, z } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
+import { z } from 'astro/zod';
 
-import { icons } from '../components/Icon';
+import { icons } from './components/Icon';
 
 const iconNames = Object.keys(icons);
 
@@ -9,7 +10,7 @@ const BannerSponsorSchema = z.object({
   name: z.string(),
   description: z.string(),
   ctaText: z.string().max(20), // 20 characters max
-  ctaUrl: z.string().url(),
+  ctaUrl: z.url(),
 });
 
 export type BannerSponsor = z.infer<typeof BannerSponsorSchema>;
@@ -42,9 +43,9 @@ const ToolSchema = z.object({
   name: z.string(),
   description: z.string(),
   categories: z.array(reference('categories')),
-  languages: z.record(z.boolean()).optional(),
-  link: z.string().url().optional(),
-  repo: z.string().url().optional(),
+  languages: z.record(z.string(), z.boolean()).optional(),
+  link: z.url().optional(),
+  repo: z.url().optional(),
   oasVersions: z
     .object({
       v2: z.boolean().optional(),
@@ -64,7 +65,7 @@ const ToolSchema = z.object({
     .array(
       z.object({
         title: z.string(),
-        url: z.string().url(),
+        url: z.url(),
         date: z.date(),
       })
     )
@@ -74,7 +75,7 @@ const ToolSchema = z.object({
       z.object({
         startDate: z.date(),
         endDate: z.date().optional(), // when sponsorship period ended
-        url: z.string().url().optional(), // optionally override default link while sponsored
+        url: z.url().optional(), // optionally override default link while sponsored
         testimonial: z.string().optional(), // optionally include a testimonial
       })
     )

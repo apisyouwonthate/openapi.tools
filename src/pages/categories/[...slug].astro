@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 
 import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
 import Link from '@/components/Link';
@@ -20,7 +20,7 @@ import { isModern } from '@/utils/versionFilters';
 export const getStaticPaths: GetStaticPaths = async () => {
   const categories = await getCollection('categories');
   return categories.map((category) => ({
-    params: { slug: category.slug },
+    params: { slug: category.id },
     props: { category },
   }));
 };
@@ -33,7 +33,7 @@ if (!category) {
   throw new Error(`No category found for slug ${slug}`);
 }
 
-const { Content } = await category.render();
+const { Content } = await render(category);
 
 // Note: category.id includes .md extension, but tool category references don't
 const categoryIdWithoutExt = category.id.replace(/\.md$/, '');
@@ -90,7 +90,7 @@ const tools = [...sponsoredTools, ...nonSponsoredTools];
 const toolsData = tools.map((tool) => ({
   category: category.data,
   tool: tool.data,
-  slug: tool.slug,
+  slug: tool.id,
 }));
 ---
 
@@ -128,7 +128,7 @@ const toolsData = tools.map((tool) => ({
           url: `https://openapi.tools/categories/${slug}`,
           tools: tools.map((t) => ({
             name: t.data.name,
-            url: `https://openapi.tools/tools/${t.slug}`,
+            url: `https://openapi.tools/tools/${t.id}`,
           })),
         })
       )}

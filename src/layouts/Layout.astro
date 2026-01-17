@@ -59,7 +59,7 @@ const categories: NavigationItems = [
     title: 'Collections',
     links: allCollections.map((collection) => ({
       title: collection.data.name,
-      href: `/collections/${collection.slug}`,
+      href: `/collections/${collection.id}`,
       description: collection.data.description,
     })),
   },
@@ -69,7 +69,7 @@ const categories: NavigationItems = [
       .sort((a, b) => a.data.name.localeCompare(b.data.name))
       .map((category) => ({
         title: category.data.name,
-        href: `/categories/${category.slug}`,
+        href: `/categories/${category.id}`,
         description: category.data.description,
       })),
   },
