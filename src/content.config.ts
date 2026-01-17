@@ -136,7 +136,10 @@ const toolsCollection = defineCollection({
 });
 
 const curatedCollectionsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/curated-collections' }),
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content/curated-collections',
+  }),
   schema: CollectionSchema,
 });
 
