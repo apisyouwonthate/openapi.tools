@@ -1,4 +1,4 @@
-import type { Tool } from 'src/content/config';
+import type { Tool } from 'src/content.config';
 
 /**
  * Check if a tool supports modern OpenAPI versions (v3.1 or v3.2)

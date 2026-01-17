@@ -1,4 +1,4 @@
-import type { Category } from 'src/content/config';
+import type { Category } from 'src/content.config';
 
 const slugify = (text?: string) => {
   if (!text) return '';

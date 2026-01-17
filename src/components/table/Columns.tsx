@@ -1,5 +1,5 @@
 import { type ColumnDef } from '@tanstack/react-table';
-import type { Category, Tool } from 'src/content/config';
+import type { Category, Tool } from 'src/content.config';
 import { isSponsorshipActive } from 'src/utils/sponsorship';
 
 import { getDeviconClassName } from '@/utils/languageUtils';

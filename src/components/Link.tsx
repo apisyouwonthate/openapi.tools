@@ -1,6 +1,6 @@
 import React from 'react';
 import posthog from 'posthog-js';
-import type { Category } from 'src/content/config';
+import type { Category } from 'src/content.config';
 
 import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
 

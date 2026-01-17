@@ -12,7 +12,7 @@ type OgRouteParams = {
 
 export async function getStaticPaths() {
   const categories = await getCollection('categories');
-  return categories.map((category) => ({ params: { slug: category.slug } }));
+  return categories.map((category) => ({ params: { slug: category.id } }));
 }
 
 export const GET = async ({ params }: OgRouteParams) => {
