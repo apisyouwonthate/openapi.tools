@@ -8,7 +8,13 @@ const SITE_URL = import.meta.env.PROD
   ? 'https://openapi.tools'
   : 'http://localhost';
 
-type LinkType = 'website' | 'repo' | 'sponsor_banner' | 'featured_article' | 'sponsor_link' | 'other';
+type LinkType =
+  | 'website'
+  | 'repo'
+  | 'sponsor_banner'
+  | 'featured_article'
+  | 'sponsor_link'
+  | 'other';
 
 /**
  * The props for the Link component

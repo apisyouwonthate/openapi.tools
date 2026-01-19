@@ -255,7 +255,7 @@ const toolBadges = tool.data.badges
     define:vars={{
       toolSlug: slug,
       toolName: tool.data.name,
-      categoryNames: categories.map(c => c?.data.name).filter(Boolean),
+      categoryNames: categories.map((c) => c?.data.name).filter(Boolean),
       isSponsored: isSponsorshipActive(tool.data),
       oasVersions: tool.data.oasVersions || {},
     }}

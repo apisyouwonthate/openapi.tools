@@ -31,13 +31,23 @@ type OutboundClickProps = {
   url: string;
   tool_slug?: string;
   tool_name?: string;
-  link_type: 'website' | 'repo' | 'sponsor_banner' | 'featured_article' | 'sponsor_link' | 'other';
+  link_type:
+    | 'website'
+    | 'repo'
+    | 'sponsor_banner'
+    | 'featured_article'
+    | 'sponsor_link'
+    | 'other';
   is_sponsored: boolean;
   placement: string;
 };
 
 type SponsorshipCTAProps = {
-  cta_type: 'banner_click' | 'sponsor_page_visit' | 'sponsor_page_link' | 'become_sponsor_link';
+  cta_type:
+    | 'banner_click'
+    | 'sponsor_page_visit'
+    | 'sponsor_page_link'
+    | 'become_sponsor_link';
   source_page: string;
   sponsor_name?: string;
 };
@@ -85,7 +95,9 @@ export function trackFilterApplied(props: FilterAppliedProps): void {
   capture('filter_applied', props);
 }
 
-export function trackFeaturedArticleClick(props: FeaturedArticleClickProps): void {
+export function trackFeaturedArticleClick(
+  props: FeaturedArticleClickProps
+): void {
   capture('featured_article_click', props);
 }
 

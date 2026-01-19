@@ -53,22 +53,26 @@ if (!sponsor) {
 </section>
 
 <script is:inline define:vars={{ sponsorName: sponsor.name }}>
-  document.getElementById('sponsor-banner-link')?.addEventListener('click', () => {
-    if (window.posthog) {
-      window.posthog.capture('sponsorship_cta_click', {
-        cta_type: 'banner_click',
-        source_page: window.location.pathname,
-        sponsor_name: sponsorName,
-      });
-    }
-  });
+  document
+    .getElementById('sponsor-banner-link')
+    ?.addEventListener('click', () => {
+      if (window.posthog) {
+        window.posthog.capture('sponsorship_cta_click', {
+          cta_type: 'banner_click',
+          source_page: window.location.pathname,
+          sponsor_name: sponsorName,
+        });
+      }
+    });
 
-  document.getElementById('become-sponsor-link')?.addEventListener('click', () => {
-    if (window.posthog) {
-      window.posthog.capture('sponsorship_cta_click', {
-        cta_type: 'become_sponsor_link',
-        source_page: window.location.pathname,
-      });
-    }
-  });
+  document
+    .getElementById('become-sponsor-link')
+    ?.addEventListener('click', () => {
+      if (window.posthog) {
+        window.posthog.capture('sponsorship_cta_click', {
+          cta_type: 'become_sponsor_link',
+          source_page: window.location.pathname,
+        });
+      }
+    });
 </script>
