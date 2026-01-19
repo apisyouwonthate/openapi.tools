@@ -8,16 +8,24 @@ const SITE_URL = import.meta.env.PROD
   ? 'https://openapi.tools'
   : 'http://localhost';
 
+type LinkType = 'website' | 'repo' | 'sponsor_banner' | 'featured_article' | 'sponsor_link' | 'other';
+
 /**
  * The props for the Link component
  * @param {Category} category - The category of the tool
  * @param {string} linkPlacementDescription - The description of where the link is placed. This will be slugified and used as the utm_content parameter
  * @param {boolean} isSponsored - Whether this is a sponsored link (adds rel="sponsored" for FTC/Google compliance)
+ * @param {string} toolSlug - The slug of the tool (for analytics)
+ * @param {string} toolName - The name of the tool (for analytics)
+ * @param {LinkType} linkType - The type of link (for analytics)
  */
 type LinkProps = React.HTMLProps<HTMLAnchorElement> & {
   category?: Category;
   linkPlacementDescription?: string;
   isSponsored?: boolean;
+  toolSlug?: string;
+  toolName?: string;
+  linkType?: LinkType;
 };
 
 const Link: React.FC<LinkProps> = ({
@@ -28,6 +36,9 @@ const Link: React.FC<LinkProps> = ({
   category,
   linkPlacementDescription,
   isSponsored,
+  toolSlug,
+  toolName,
+  linkType = 'other',
   ...rest
 }) => {
   // Compute rel attribute for external links
@@ -52,14 +63,19 @@ const Link: React.FC<LinkProps> = ({
     (e: React.MouseEvent<HTMLAnchorElement>) => {
       const href = e.currentTarget.href;
 
-      // If the link is an outbound link, track it
+      // If the link is an outbound link, track it with full context
       if (href.startsWith('http') && !href.startsWith(SITE_URL)) {
         posthog.capture('outbound_link_click', {
-          href,
+          url: href,
+          tool_slug: toolSlug,
+          tool_name: toolName,
+          link_type: linkType,
+          is_sponsored: isSponsored ?? false,
+          placement: linkPlacementDescription ?? 'unknown',
         });
       }
     },
-    []
+    [toolSlug, toolName, linkType, isSponsored, linkPlacementDescription]
   );
 
   const updatedUrl = React.useMemo(() => {

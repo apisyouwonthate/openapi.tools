@@ -1,5 +1,6 @@
-import { useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { X } from 'lucide-react';
+import posthog from 'posthog-js';
 
 import type { ToolRowData } from '@/components/table/Columns';
 import { DataTable } from '@/components/table/DataTable';
@@ -26,6 +27,51 @@ export function FilterableToolsList({ tools }: FilterableToolsListProps) {
   // Extract available languages and platforms from all tools
   const availableLanguages = useMemo(() => extractLanguages(tools), [tools]);
   const availablePlatforms = useMemo(() => extractPlatforms(tools), [tools]);
+
+  // Determine filter type (language vs platform)
+  const getFilterType = useCallback(
+    (value: string): 'language' | 'platform' => {
+      return availablePlatforms.some((p) => p.value === value)
+        ? 'platform'
+        : 'language';
+    },
+    [availablePlatforms]
+  );
+
+  // Track filter changes
+  const handleToggleLanguage = useCallback(
+    (value: string) => {
+      const isRemoving = selectedLanguages.includes(value);
+
+      // Calculate what the filtered count will be after this change
+      const newSelected = isRemoving
+        ? selectedLanguages.filter((l) => l !== value)
+        : [...selectedLanguages, value];
+      const newFilteredTools = filterToolsByLanguages(tools, newSelected);
+
+      posthog.capture('filter_applied', {
+        filter_type: getFilterType(value),
+        filter_value: value,
+        action: isRemoving ? 'removed' : 'added',
+        total_results: newFilteredTools.length,
+      });
+
+      toggleLanguage(value);
+    },
+    [selectedLanguages, toggleLanguage, tools, getFilterType]
+  );
+
+  const handleClearFilters = useCallback(() => {
+    if (selectedLanguages.length > 0) {
+      posthog.capture('filter_applied', {
+        filter_type: 'language',
+        filter_value: 'all',
+        action: 'cleared',
+        total_results: tools.length,
+      });
+    }
+    clearFilters();
+  }, [selectedLanguages.length, clearFilters, tools.length]);
 
   // Filter tools based on selected languages (includes both languages and platforms)
   const filteredTools = useMemo(
@@ -58,13 +104,13 @@ export function FilterableToolsList({ tools }: FilterableToolsListProps) {
           title="Languages"
           options={availableLanguages}
           selectedValues={selectedLanguages}
-          onToggle={toggleLanguage}
+          onToggle={handleToggleLanguage}
         />
         <FilterPopover
           title="Platforms"
           options={availablePlatforms}
           selectedValues={selectedLanguages}
-          onToggle={toggleLanguage}
+          onToggle={handleToggleLanguage}
         />
 
         {hasFilters && (
@@ -77,7 +123,7 @@ export function FilterableToolsList({ tools }: FilterableToolsListProps) {
                     key={value}
                     variant="secondary"
                     className="cursor-pointer bg-slate-200 text-slate-700 hover:bg-slate-300 dark:bg-slate-700 dark:text-slate-200 dark:hover:bg-slate-600"
-                    onClick={() => toggleLanguage(value)}
+                    onClick={() => handleToggleLanguage(value)}
                   >
                     {option?.label || value}
                     <X className="ml-1 h-3 w-3" />
@@ -88,7 +134,7 @@ export function FilterableToolsList({ tools }: FilterableToolsListProps) {
             <Button
               variant="ghost"
               size="sm"
-              onClick={clearFilters}
+              onClick={handleClearFilters}
               className="h-8 px-2 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200"
             >
               Clear all

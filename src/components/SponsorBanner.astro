@@ -21,6 +21,7 @@ if (!sponsor) {
   id="sponsor-banner"
 >
   <a
+    id="sponsor-banner-link"
     href={generateUrlWithUTM({
       url: sponsor.ctaUrl,
       linkPlacementDescription: 'rotating sponsor banner',
@@ -43,9 +44,31 @@ if (!sponsor) {
     </div>
   </a>
   <a
+    id="become-sponsor-link"
     class="flex items-center px-2 py-1 text-nowrap md:justify-end"
     href="/sponsor"
   >
     <span class="text-white">Sponsor openapi.tools</span>
   </a>
 </section>
+
+<script is:inline define:vars={{ sponsorName: sponsor.name }}>
+  document.getElementById('sponsor-banner-link')?.addEventListener('click', () => {
+    if (window.posthog) {
+      window.posthog.capture('sponsorship_cta_click', {
+        cta_type: 'banner_click',
+        source_page: window.location.pathname,
+        sponsor_name: sponsorName,
+      });
+    }
+  });
+
+  document.getElementById('become-sponsor-link')?.addEventListener('click', () => {
+    if (window.posthog) {
+      window.posthog.capture('sponsorship_cta_click', {
+        cta_type: 'become_sponsor_link',
+        source_page: window.location.pathname,
+      });
+    }
+  });
+</script>

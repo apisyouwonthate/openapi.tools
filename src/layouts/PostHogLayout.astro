@@ -9,5 +9,58 @@ import PostHog from '../components/PostHog.astro';
   </head>
   <body>
     <slot />
+
+    {/* Scroll Depth Tracking */}
+    <script is:inline>
+      (function() {
+        const thresholds = [25, 50, 75, 100];
+        const firedThresholds = new Set();
+
+        function getScrollPercent() {
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+          const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          if (scrollHeight === 0) return 100;
+          return Math.round((scrollTop / scrollHeight) * 100);
+        }
+
+        function getToolSlug() {
+          const match = window.location.pathname.match(/^\/tools\/([^/]+)/);
+          return match ? match[1] : undefined;
+        }
+
+        function trackScrollDepth() {
+          const percent = getScrollPercent();
+
+          for (const threshold of thresholds) {
+            if (percent >= threshold && !firedThresholds.has(threshold)) {
+              firedThresholds.add(threshold);
+
+              if (window.posthog) {
+                window.posthog.capture('scroll_depth', {
+                  page_path: window.location.pathname,
+                  max_depth_percent: threshold,
+                  tool_slug: getToolSlug(),
+                });
+              }
+            }
+          }
+        }
+
+        // Throttle scroll events
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+          if (!ticking) {
+            window.requestAnimationFrame(function() {
+              trackScrollDepth();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }, { passive: true });
+
+        // Check initial scroll position (for pages that load scrolled)
+        window.addEventListener('load', trackScrollDepth);
+      })();
+    </script>
   </body>
 </html>
