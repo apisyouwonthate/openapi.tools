@@ -103,6 +103,10 @@ const toolBadges = tool.data.badges
               variant="primary"
               isSponsored={isSponsorshipActive(tool.data)}
               className="inline-flex items-center gap-2"
+              toolSlug={slug as string}
+              toolName={tool.data.name}
+              linkType="website"
+              linkPlacementDescription="tool-detail-page-header"
             >
               <WebsiteIcon className="h-4 w-4" />
               Visit Website
@@ -118,6 +122,10 @@ const toolBadges = tool.data.badges
               variant="secondary"
               isSponsored={isSponsorshipActive(tool.data)}
               className="inline-flex items-center gap-2"
+              toolSlug={slug as string}
+              toolName={tool.data.name}
+              linkType="repo"
+              linkPlacementDescription="tool-detail-page-header"
             >
               <RepoIcon className="h-4 w-4" repo={tool.data.repo} />
               View Repository
@@ -232,7 +240,7 @@ const toolBadges = tool.data.badges
 
             <section class="md-grid-cols-2 grid gap-4 lg:grid-cols-3">
               {enrichedFeaturedArticles.map((article) => (
-                <ExternalArticle {...article.og} />
+                <ExternalArticle {...article.og} toolSlug={slug as string} />
               ))}
             </section>
           </>
@@ -240,4 +248,26 @@ const toolBadges = tool.data.badges
       }
     </main>
   </Layout>
+
+  {/* Tool Page View Tracking */}
+  <script
+    is:inline
+    define:vars={{
+      toolSlug: slug,
+      toolName: tool.data.name,
+      categoryNames: categories.map((c) => c?.data.name).filter(Boolean),
+      isSponsored: isSponsorshipActive(tool.data),
+      oasVersions: tool.data.oasVersions || {},
+    }}
+  >
+    if (typeof window !== 'undefined' && window.posthog) {
+      window.posthog.capture('tool_page_view', {
+        tool_slug: toolSlug,
+        tool_name: toolName,
+        categories: categoryNames,
+        is_sponsored: isSponsored,
+        oas_versions: oasVersions,
+      });
+    }
+  </script>
 </PostHogLayout>
