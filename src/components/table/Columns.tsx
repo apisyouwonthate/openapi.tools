@@ -2,6 +2,7 @@ import { type ColumnDef } from '@tanstack/react-table';
 import type { Category, Tool } from 'src/content/config';
 import { isSponsorshipActive } from 'src/utils/sponsorship';
 
+import { getDeviconClassName } from '@/utils/languageUtils';
 import Badge from '../Badge';
 import RepoIcon from '../icons/RepoIcon';
 import WebsiteIcon from '../icons/WebsiteIcon';
@@ -42,6 +43,7 @@ export const createNameColumn = (): ColumnDef<ToolRowData> => ({
       <>
         <Link
           href={`/tools/${slug}`}
+          data-astro-prefetch
           className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
         >
           {isSponsorshipActive(tool) && (
@@ -71,7 +73,7 @@ export const createLanguagesColumn = (): ColumnDef<ToolRowData> => ({
         {Object.keys(languages).map((language) => (
           <i
             key={language}
-            className={`devicon-${language.toLowerCase().trim()}-plain text-lg text-slate-700 dark:text-slate-300`}
+            className={`devicon-${getDeviconClassName(language)}-plain text-lg text-slate-700 dark:text-slate-300`}
             title={language}
           />
         ))}

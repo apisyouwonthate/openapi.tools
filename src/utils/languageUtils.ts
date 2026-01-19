@@ -58,6 +58,15 @@ const LANGUAGE_NAME_MAP: Record<string, string> = {
   desktop: 'Desktop',
 };
 
+const DEVICON_NAME_MAP: Record<string, string> = {
+  golang: 'go',
+};
+
+export function getDeviconClassName(lang: string): string {
+  const lowercased = lang.toLowerCase().trim();
+  return DEVICON_NAME_MAP[lowercased] || lowercased;
+}
+
 export function formatLanguageName(lang: string): string {
   const lowercased = lang.toLowerCase();
   if (LANGUAGE_NAME_MAP[lowercased]) {

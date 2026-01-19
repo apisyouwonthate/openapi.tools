@@ -2,7 +2,7 @@
 name: har-to-openapi
 description: Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files
 categories:
-  - auto-generators
+  - converters
 link: https://github.com/jonluca/har-to-openapi
 languages:
   typescript: true

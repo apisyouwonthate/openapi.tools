@@ -2,10 +2,9 @@
 name: Ballerina OpenAPI tool
 description: The Ballerina OpenAPI tool enables the generation of Ballerina client and service skeleton from provided OpenAPI descriptions and facilitates the creation of OpenAPI v3.x descriptions for given Ballerina services.
 categories:
-  - auto-generators
-  - converters
+  - code-generators
   - sdk-generators
-  - servers
+  - openapi-aware-frameworks
 link: https://ballerina.io/learn/openapi-tool/
 languages:
   java: true

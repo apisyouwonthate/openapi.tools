@@ -1,10 +1,8 @@
 ---
 name: api
-description: Magical SDK generation from an OpenAPI definition
+description: Create an SDK from an OpenAPI description use its codegen offering to create an opinionated SDK in TypeScript/JavaScript.
 categories:
-  - parsers
-  - schema-validators
-  - converters
+  - sdk-generators
 link: https://api.readme.dev
 languages:
   javascript: true

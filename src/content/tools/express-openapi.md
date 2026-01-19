@@ -2,7 +2,7 @@
 name: express-openapi
 description: An unopinionated OpenAPI framework for Express, which supports Promise based middleware, response handlers and Security Filtering.
 categories:
-  - servers
+  - data-validators
 link: https://www.npmjs.com/package/express-openapi
 languages:
   nodejs: true

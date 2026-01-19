@@ -4,10 +4,8 @@ description: Generate & publish SDKs in 10+ languages, Terraform Providers, and 
 categories:
   - code-generators
   - sdk-generators
-  - docs
   - misc
   - testing
-  - mocking
   - ides
   - learning
 link: https://www.speakeasy.com/
@@ -30,6 +28,9 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v32-early
+  - overlays-pioneer
 sponsorship:
   - startDate: 2024-02-09T06:00:00.000Z
 ---

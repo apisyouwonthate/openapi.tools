@@ -1,8 +1,8 @@
 ---
 name: har2openapi
-description: Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files
+description: Automatically generate OpenAPI 3.0 Spec by using network requests captured in one or more HAR files.
 categories:
-  - auto-generators
+  - converters
 link: https://github.com/dcarr178/har2openapi
 languages:
   typescript: true

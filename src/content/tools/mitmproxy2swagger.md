@@ -2,7 +2,7 @@
 name: mitmproxy2swagger
 description: A tool for automatically converting mitmproxy captures to OpenAPI 3.0 specifications. Automatically reverse-engineer REST APIs by just running the apps and capturing the traffic.
 categories:
-  - auto-generators
+  - learning
 link: https://github.com/alufers/mitmproxy2swagger
 languages:
   python: true

@@ -2,8 +2,7 @@
 name: Swagger PHP
 description: Generate interactive OpenAPI documentation for your RESTful API using PHP attributes or doctrine annotations.
 categories:
-  # - annotations
-  - auto-generators
+  - annotations
 languages:
   php: true
 repo: https://github.com/zircote/swagger-php

@@ -10,6 +10,7 @@ import WebsiteIcon from '@/components/icons/WebsiteIcon';
 import Languages from '@/components/Languages';
 import Link from '@/components/Link';
 import PageHeader from '@/components/PageHeader.astro';
+import ToolBadge from '@/components/ToolBadge';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
 import enrichFeaturedArticles from '@/utils/enrichFeaturedArticles';
@@ -46,6 +47,11 @@ const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
 const categories = await Promise.all(
   tool.data.categories.map((categoryRef) => getEntry(categoryRef))
 );
+
+// Fetch badge details for each badge reference
+const toolBadges = tool.data.badges
+  ? await Promise.all(tool.data.badges.map((badgeRef) => getEntry(badgeRef)))
+  : [];
 ---
 
 <PostHogLayout>
@@ -131,6 +137,22 @@ const categories = await Promise.all(
         </h2>
 
         <div class="space-y-4">
+          {/* Badges / Achievements */}
+          {
+            toolBadges.length > 0 && (
+              <div>
+                <h3 class="mb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Badges & Achievements
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  {toolBadges.map(
+                    (badge) => badge && <ToolBadge badge={badge.data} />
+                  )}
+                </div>
+              </div>
+            )
+          }
+
           {/* Categories */}
           {
             categories.length > 0 && (

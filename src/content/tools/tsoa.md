@@ -3,7 +3,6 @@ name: tsoa
 description: Build OpenAPI-compliant REST APIs using TypeScript and Node, and power runtime validation for Koa, Express, Hapi (and more) services. (v7.0.0 alpha supports OpenAPI v3.1)
 categories:
   - openapi-aware-frameworks
-  - servers
   - data-validators
 link: https://github.com/lukeautry/tsoa
 languages:

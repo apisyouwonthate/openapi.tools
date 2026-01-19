@@ -2,8 +2,7 @@
 name: Swagger Core
 description: Examples and server integrations for generating the Swagger API Specification, which enables easy access to your REST API.
 categories:
-  # - annotations
-  - auto-generators
+  - annotations
 languages:
   java: true
   scala: true

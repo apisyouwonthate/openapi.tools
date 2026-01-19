@@ -1,9 +1,8 @@
 ---
-name: OpenAPI DevTools
-description: Browser extension that generates API descriptions for any app or website
+name: Chrome OpenAPI DevTools
+description: Browser extension that generates API descriptions for any app or website.
 categories:
-  - auto-generators
-  - docs
+  - learning
 link: https://chrome.google.com/webstore/detail/openapi-devtools/jelghndoknklgabjgaeppjhommkkmdii
 languages:
   typescript: true

@@ -2,7 +2,6 @@
 name: ts-oas
 description: Automatically generate OpenAPI descriptions from lovely Typescript types.
 categories:
-  - auto-generators
   - converters
   - domain-specific-languages
 link: https://github.com/ts-oas/ts-oas

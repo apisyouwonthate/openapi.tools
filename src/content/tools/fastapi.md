@@ -3,7 +3,6 @@ name: FastAPI
 description: FastAPI framework, high performance, easy to learn, fast to code, ready for production. A modern, fast web framework for building APIs with OpenAPI as a first-class citizen.
 categories:
   - openapi-aware-frameworks
-  - servers
 link: https://fastapi.tiangolo.com
 languages:
   python: true

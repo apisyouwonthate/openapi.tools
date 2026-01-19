@@ -4,9 +4,6 @@ description: Bruno is a local, git-native, open source API client. Collections a
 categories:
   - http-clients
   - testing
-  - converters
-  - auto-generators
-  - text-editors-extensions
 link: https://usebruno.com
 # desktop:
 #   macos: true

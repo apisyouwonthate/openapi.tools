@@ -4,7 +4,6 @@ description: |
   Open-source framework for API Quality Assurance. Generate multi-step test-scenarios from OpenAPI. Validate responses against description documents and more.
 categories:
   - testing
-  - converters
   - data-validators
 link: https://stepci.com
 languages:

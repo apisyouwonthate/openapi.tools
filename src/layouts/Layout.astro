@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import Header from '@/components/Header.astro';
 import { Hero } from '@/components/Hero';
 import { Navigation, type NavigationItems } from '@/components/Navigation';
-import SponsorBanner from '@/components/SponsorBanner';
+import SponsorBanner from '@/components/SponsorBanner.astro';
 import {
   createOrganizationSchema,
   createWebSiteSchema,
@@ -78,12 +78,17 @@ const categories: NavigationItems = [
 
 <script is:inline>
   const theme = (() => {
+    // Check for user override
     if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
       return localStorage.getItem('theme');
     }
+
+    // Check for system preference
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       return 'dark';
     }
+
+    // Default
     return 'light';
   })();
 
@@ -92,7 +97,6 @@ const categories: NavigationItems = [
   } else {
     document.documentElement.classList.add('dark');
   }
-  window.localStorage.setItem('theme', theme);
 </script>
 
 <html lang="en" class={clsx('h-full antialiased')}>
@@ -238,7 +242,7 @@ const categories: NavigationItems = [
 
   <body class="flex min-h-full bg-white dark:bg-slate-900">
     <div class="flex w-full flex-col">
-      <SponsorBanner sponsors={bannerSponsors} client:only="react" />
+      <SponsorBanner sponsors={bannerSponsors} />
       <Header categories={categories} currentUrl={Astro.url} />
 
       {isHomePage && <Hero />}

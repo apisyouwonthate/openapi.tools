@@ -2,8 +2,7 @@
 name: swagger-jsdoc
 description: Generates OpenAPI descriptions based on jsDoc comments and YAML files.
 categories:
-  # - annotations
-  - auto-generators
+  - annotations
 languages:
   javascript: true
 repo: https://github.com/Surnet/swagger-jsdoc

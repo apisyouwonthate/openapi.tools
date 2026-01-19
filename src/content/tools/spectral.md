@@ -18,6 +18,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+badges:
+  - arazzo-support
 featuredArticles:
   - title: 'Securing APIs with the Spectral OWASP Ruleset'
     url: 'https://apisyouwonthate.com/blog/securing-apis-with-spectral-owasp-ruleset/'
