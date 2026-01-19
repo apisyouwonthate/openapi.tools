@@ -12,7 +12,7 @@ export const NPMIcon = (props: React.ComponentPropsWithoutRef<'svg'>) => (
     >
       <polygon
         id="npm-letters-background"
-        fill="#CB3837"
+        fill="currentColor"
         fillRule="nonzero"
         points="0 78 0 163.49807 71.1660232 163.49807 71.1660232 177.830116 128 177.830116 128 163.49807 256 163.49807 256 78"
       ></polygon>
