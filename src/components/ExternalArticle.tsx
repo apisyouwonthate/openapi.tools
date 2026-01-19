@@ -7,10 +7,11 @@ type FeaturedArticle = {
   title?: string;
   url?: string;
   date?: Date;
+  toolSlug?: string;
 } & Partial<OgObject>;
 
 const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
-  const { url, ogImage, ogDate } = props;
+  const { url, ogImage, ogDate, toolSlug } = props;
 
   const title = props.title ?? props.ogTitle ?? props.twitterTitle;
 
@@ -53,7 +54,13 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
         </div>
         <div className="group relative">
           <h3 className="mt-3 text-lg leading-6 font-semibold text-gray-900 group-hover:text-gray-600">
-            <Link href={url} className="font-medium no-underline">
+            <Link
+              href={url}
+              className="font-medium no-underline"
+              toolSlug={toolSlug}
+              linkType="featured_article"
+              linkPlacementDescription="featured-article-card"
+            >
               <span className="absolute inset-0" />
               {title}
             </Link>
