@@ -1,6 +1,4 @@
-import React from 'react';
-
-import type { Badge } from '@/content/config';
+import type { Badge } from '@/content.config';
 
 interface ToolBadgeProps {
   badge: Badge;

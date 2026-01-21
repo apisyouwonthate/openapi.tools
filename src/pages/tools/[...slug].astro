@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 
 import Badge from '@/components/Badge';
 import { Button } from '@/components/Button';
@@ -25,7 +25,7 @@ import {
 export const getStaticPaths: GetStaticPaths = async () => {
   const tools = await getCollection('tools');
   return tools.map((category) => ({
-    params: { slug: category.slug },
+    params: { slug: category.id },
   }));
 };
 
@@ -39,7 +39,7 @@ if (!tool) {
 
 const languages: Record<string, boolean> = tool.data?.languages || {};
 
-const { Content } = await tool.render();
+const { Content } = await render(tool);
 
 const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
 
@@ -173,7 +173,7 @@ const toolBadges = tool.data.badges
                     (category) =>
                       category && (
                         <Link
-                          href={`/categories/${category.slug}`}
+                          href={`/categories/${category.id}`}
                           className="no-underline"
                         >
                           <Badge variant="blue">{category.data.name}</Badge>

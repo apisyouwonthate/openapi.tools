@@ -1,5 +1,5 @@
 import ogs from 'open-graph-scraper';
-import type { Tool } from 'src/content/config';
+import type { Tool } from 'src/content.config';
 
 export const enrichFeaturedArticles = async (tool: Tool) => {
   const results = [];
