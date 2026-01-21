@@ -1,15 +1,15 @@
 ---
-name: Wiremock
-description: WireMock Cloud is a managed, hosted version of WireMock, developed by the same team who wrote the open-source project. It is built on the same technology that powers open source WireMock and is 100% compatible with the WireMock API, with additional features that make it quick and easy to mock any API you depend on. WireMock Cloud also introduces advanced capabilities such as chaos engineering, OpenAPI generation, validation and documentation as well as better collaboration and user management.
+name: Wiremock Cloud
+description: WireMock Cloud is a complete API simulation tool, built by the team behind the WireMock open source library. It provides a fully-managed mock server that can be deployed anywhere with broad protocol support including REST, GraphQL, SOAP, and gRPC. WireMock Cloud is a popular choice for larger teams thanks to advanced capabilities such as stateful mocking, chaos testing, OpenAPI generation, AI-native features via MCP, collaboration, and prototyping.
 categories:
   - mocking
   - testing
   - data-validators
   - docs
 link: https://www.wiremock.io/product
+repo: https://github.com/wiremock/wiremock
 languages:
   saas: true
-repo: https://www.wiremock.io/product
 oasVersions:
   v2: true
   v3: true
@@ -17,4 +17,9 @@ oasVersions:
   v3_2: false
 sponsorship:
   - startDate: 2026-01-09T09:00:00.000Z
+featuredArticles: 
+  - title: 'All about Mocking, with Wiremock's Tom Akehurst - APIs You Won't Hate Podcast'
+    url: 'https://apisyouwonthate.com/podcast/all-about-mocking-with-wiremocks-tom-akehurst/'
+    date: 2025-07-01
+
 ---
