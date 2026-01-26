@@ -1,5 +1,5 @@
 ---
-name: "@nest-openapi/validator"
+name: '@nest-openapi/validator'
 description: Automatic request/response validation for NestJS based on your OpenAPI spec using AJV.
 categories:
   - data-validators
@@ -32,14 +32,14 @@ oasVersions:
 Install the package and configure it in your NestJS module:
 
 ```typescript
-import { Module } from "@nestjs/common";
-import { OpenAPIValidatorModule } from "@nest-openapi/validator";
-import * as openApiSpec from "./openapi.json";
+import { Module } from '@nestjs/common';
+import { OpenAPIValidatorModule } from '@nest-openapi/validator';
+import * as openApiSpec from './openapi.json';
 
 @Module({
   imports: [
     OpenAPIValidatorModule.forRoot({
-      specSource: { type: "object", spec: openApiSpec },
+      specSource: { type: 'object', spec: openApiSpec },
     }),
   ],
 })
@@ -49,10 +49,10 @@ export class AppModule {}
 You can also use per-route decorators to customize validation behavior:
 
 ```typescript
-import { Controller, Post } from "@nestjs/common";
-import { Validate } from "@nest-openapi/validator";
+import { Controller, Post } from '@nestjs/common';
+import { Validate } from '@nest-openapi/validator';
 
-@Controller("books")
+@Controller('books')
 export class BooksController {
   @Post()
   @Validate({ request: { query: false }, response: true })

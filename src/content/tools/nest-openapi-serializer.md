@@ -1,5 +1,5 @@
 ---
-name: "@nest-openapi/serializer"
+name: '@nest-openapi/serializer'
 description: High-performance response serialization for NestJS based on your OpenAPI spec using fast-json-stringify.
 categories:
   - misc
@@ -32,17 +32,17 @@ oasVersions:
 Install the package and configure it in your NestJS module:
 
 ```typescript
-import { Module } from "@nestjs/common";
-import { OpenAPISerializerModule } from "@nest-openapi/serializer";
-import * as openApiSpec from "./openapi.json";
+import { Module } from '@nestjs/common';
+import { OpenAPISerializerModule } from '@nest-openapi/serializer';
+import * as openApiSpec from './openapi.json';
 
 @Module({
   imports: [
     OpenAPISerializerModule.forRoot({
-      specSource: { type: "object", spec: openApiSpec },
-      responseSerialization: { 
-        enable: true, 
-        skipErrorResponses: true 
+      specSource: { type: 'object', spec: openApiSpec },
+      responseSerialization: {
+        enable: true,
+        skipErrorResponses: true,
       },
     }),
   ],
@@ -53,10 +53,10 @@ export class AppModule {}
 You can disable serialization for specific routes using the `@Serialize` decorator:
 
 ```typescript
-import { Controller, Post } from "@nestjs/common";
-import { Serialize } from "@nest-openapi/serializer";
+import { Controller, Post } from '@nestjs/common';
+import { Serialize } from '@nest-openapi/serializer';
 
-@Controller("books")
+@Controller('books')
 export class BooksController {
   @Post()
   @Serialize({ disable: true })

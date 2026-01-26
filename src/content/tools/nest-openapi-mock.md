@@ -1,5 +1,5 @@
 ---
-name: "@nest-openapi/mock"
+name: '@nest-openapi/mock'
 description: Spec-driven mock server for NestJS that generates realistic mock responses from OpenAPI.
 categories:
   - mocking-tools
@@ -32,15 +32,15 @@ oasVersions:
 Install the package and configure it in your NestJS module:
 
 ```typescript
-import { Module } from "@nestjs/common";
-import { OpenAPIMockModule } from "@nest-openapi/mock";
-import * as openApiSpec from "./openapi.json";
+import { Module } from '@nestjs/common';
+import { OpenAPIMockModule } from '@nest-openapi/mock';
+import * as openApiSpec from './openapi.json';
 
 @Module({
   imports: [
     OpenAPIMockModule.forRoot({
-      specSource: { type: "object", spec: openApiSpec },
-      enable: process.env.NODE_ENV === "development",
+      specSource: { type: 'object', spec: openApiSpec },
+      enable: process.env.NODE_ENV === 'development',
       mockByDefault: true, // Mock all routes by default, like a mock server
     }),
   ],
