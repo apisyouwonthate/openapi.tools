@@ -18,7 +18,7 @@ export async function GET(context: APIContext) {
     items: sortedTools.map((tool) => ({
       title: tool.data.name,
       description: tool.data.description,
-      link: `/tools/${tool.slug}`,
+      link: `/tools/${tool.id}`,
       // Note: pubDate omitted as tools don't have creation dates
     })),
     customData: `<language>en-us</language>`,

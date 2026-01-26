@@ -5,7 +5,7 @@ import { html } from 'satori-html';
 import sharp from 'sharp';
 
 import { isLegacy } from '@/utils/versionFilters';
-import type { CollectionFilters } from '@/content/config';
+import type { CollectionFilters } from '@/content.config';
 
 type OgRouteParams = {
   params: {
@@ -36,6 +36,13 @@ function filterTools(
       );
       if (!hasVersion) return false;
     }
+    // Badge requirements
+    if (filters.requireBadges?.length) {
+      const hasBadge = filters.requireBadges.some((badgeId) =>
+        tool.data.badges?.some((badge) => badge.id === badgeId)
+      );
+      if (!hasBadge) return false;
+    }
     return true;
   });
 }
@@ -43,7 +50,7 @@ function filterTools(
 export async function getStaticPaths() {
   const collections = await getCollection('curated-collections');
   return collections.map((collection) => ({
-    params: { slug: collection.slug },
+    params: { slug: collection.id },
   }));
 }
 

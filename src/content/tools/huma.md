@@ -3,9 +3,7 @@ name: Huma
 description: A modern, simple, fast & flexible micro framework for building HTTP REST/RPC APIs in Go backed by OpenAPI 3 and JSON Schema.
 categories:
   - openapi-aware-frameworks
-  - auto-generators
   - data-validators
-  - servers
 link: https://huma.rocks/
 languages:
   golang: true

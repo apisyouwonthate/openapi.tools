@@ -1,8 +1,9 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 
 import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
+import Link from '@/components/Link';
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
@@ -19,7 +20,7 @@ import { isModern } from '@/utils/versionFilters';
 export const getStaticPaths: GetStaticPaths = async () => {
   const categories = await getCollection('categories');
   return categories.map((category) => ({
-    params: { slug: category.slug },
+    params: { slug: category.id },
     props: { category },
   }));
 };
@@ -32,11 +33,13 @@ if (!category) {
   throw new Error(`No category found for slug ${slug}`);
 }
 
-const { Content } = await category.render();
+const { Content } = await render(category);
 
-// 3 get entries for this category from the Tools collection
 // Note: category.id includes .md extension, but tool category references don't
 const categoryIdWithoutExt = category.id.replace(/\.md$/, '');
+
+// Track if there are legacy tools in this category
+let hasLegacyTools = false;
 
 const allTools = (await getCollection('tools')).filter((tool) => {
   if (!tool.data.categories) {
@@ -46,13 +49,24 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   if (tool.data.oaiSpecs?.oas === false) {
     return false;
   }
-  // Only show tools that support modern OpenAPI versions
-  if (!isModern(tool.data)) {
+  const categories = tool.data.categories;
+  // Check if tool belongs to this category
+  const isInCategory = categories.some(
+    (cat) => cat.id === categoryIdWithoutExt
+  );
+
+  if (!isInCategory) {
     return false;
   }
-  const categories = tool.data.categories;
-  // look through the categories list to see if any of the categories matches category id
-  return categories.some((cat) => cat.id === categoryIdWithoutExt);
+
+  // Only show tools that support modern OpenAPI versions
+  if (!isModern(tool.data)) {
+    // Yep we found some old stuff
+    hasLegacyTools = true;
+    return false;
+  }
+
+  return true;
 });
 
 // get all the actively sponsored tools
@@ -76,7 +90,7 @@ const tools = [...sponsoredTools, ...nonSponsoredTools];
 const toolsData = tools.map((tool) => ({
   category: category.data,
   tool: tool.data,
-  slug: tool.slug,
+  slug: tool.id,
 }));
 ---
 
@@ -114,7 +128,7 @@ const toolsData = tools.map((tool) => ({
           url: `https://openapi.tools/categories/${slug}`,
           tools: tools.map((t) => ({
             name: t.data.name,
-            url: `https://openapi.tools/tools/${t.slug}`,
+            url: `https://openapi.tools/tools/${t.id}`,
           })),
         })
       )}
@@ -170,6 +184,25 @@ const toolsData = tools.map((tool) => ({
       <section class="prose w-full max-w-none">
         <FilterableToolsList client:only="react" tools={toolsData} />
       </section>
+
+      {
+        hasLegacyTools && (
+          <div class="mt-8 rounded-lg border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800/50">
+            <p class="m-0 text-slate-700 dark:text-slate-300">
+              There are additional tools in this category, but they only support
+              legacy versions of OpenAPI. If you really need to work with some
+              old OpenAPI descriptions perhaps
+              <Link
+                href={`/legacy#${slug}`}
+                className="text-emerald-600 hover:text-emerald-700 dark:text-emerald-400 dark:hover:text-emerald-300 font-medium"
+              >
+                these legacy tools
+              </Link>
+              could be of use
+            </p>
+          </div>
+        )
+      }
     </main>
   </Layout>
 </PostHogLayout>

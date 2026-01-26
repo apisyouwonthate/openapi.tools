@@ -1,9 +1,8 @@
 ---
 name: Swashbuckle
-description: Swagger tools for documenting API's built on ASP.NET Core
+description: Documenting API's built on ASP.NET Core
 categories:
-  # - annotations
-  - auto-generators
+  - openapi-aware-frameworks
 languages:
   dot-net: true
 repo: https://github.com/domaindrivendev/Swashbuckle.AspNetCore

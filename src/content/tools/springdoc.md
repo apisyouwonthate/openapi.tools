@@ -2,7 +2,8 @@
 name: Springdoc
 description: A Java library that automates the generation of API documentation using Spring Boot projects. It works by examining an application at runtime to infer API semantics based on Spring configurations, class structure and various annotations.
 categories:
-  - auto-generators
+  - annotations
+  - openapi-aware-frameworks
 link: https://springdoc.org/
 languages:
   java: true

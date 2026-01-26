@@ -16,6 +16,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: false
+badges:
+  - overlays-pioneer
 
 featuredArticles:
   - title: 'The 5 Best API Docs Tools in 2025'

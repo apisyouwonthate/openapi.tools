@@ -1,7 +1,9 @@
 // 1. Import utilities from `astro:content`
-import { defineCollection, reference, z } from 'astro:content';
+import { defineCollection, reference } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
-import { icons } from '../components/Icon';
+import { icons } from './components/Icon';
 
 const iconNames = Object.keys(icons);
 
@@ -9,7 +11,7 @@ const BannerSponsorSchema = z.object({
   name: z.string(),
   description: z.string(),
   ctaText: z.string().max(20), // 20 characters max
-  ctaUrl: z.string().url(),
+  ctaUrl: z.url(),
 });
 
 export type BannerSponsor = z.infer<typeof BannerSponsorSchema>;
@@ -28,13 +30,23 @@ const CategorySchema = z.object({
 
 export type Category = z.infer<typeof CategorySchema>;
 
+const BadgeSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  description: z.string(),
+  icon: z.string().optional(),
+  variant: z.enum(['gold', 'silver', 'bronze', 'blue']).optional(),
+});
+
+export type Badge = z.infer<typeof BadgeSchema>;
+
 const ToolSchema = z.object({
   name: z.string(),
   description: z.string(),
   categories: z.array(reference('categories')),
-  languages: z.record(z.boolean()).optional(),
-  link: z.string().url().optional(),
-  repo: z.string().url().optional(),
+  languages: z.record(z.string(), z.boolean()).optional(),
+  link: z.url().optional(),
+  repo: z.url().optional(),
   oasVersions: z
     .object({
       v2: z.boolean().optional(),
@@ -54,7 +66,7 @@ const ToolSchema = z.object({
     .array(
       z.object({
         title: z.string(),
-        url: z.string().url(),
+        url: z.url(),
         date: z.date(),
       })
     )
@@ -64,11 +76,12 @@ const ToolSchema = z.object({
       z.object({
         startDate: z.date(),
         endDate: z.date().optional(), // when sponsorship period ended
-        url: z.string().url().optional(), // optionally override default link while sponsored
+        url: z.url().optional(), // optionally override default link while sponsored
         testimonial: z.string().optional(), // optionally include a testimonial
       })
     )
     .optional(),
+  badges: z.array(reference('badges')).optional(),
 });
 
 export type Tool = z.infer<typeof ToolSchema>;
@@ -88,6 +101,8 @@ const CollectionFiltersSchema = z.object({
   overlays: z.boolean().optional(),
   // Arazzo filter - tool.oaiSpecs.arazzo === true
   arazzo: z.boolean().optional(),
+  // Badge filter - requires specific badges
+  requireBadges: z.array(z.string()).optional(),
 });
 
 const CollectionSchema = z.object({
@@ -101,22 +116,30 @@ export type CollectionFilters = z.infer<typeof CollectionFiltersSchema>;
 
 // 2. Define your collection(s)
 const bannerSponsorsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/banner-sponsors' }),
   schema: BannerSponsorSchema,
 });
 
 const categoriesCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/categories' }),
   schema: CategorySchema,
 });
 
+const badgesCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/badges' }),
+  schema: BadgeSchema,
+});
+
 const toolsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/tools' }),
   schema: ToolSchema,
 });
 
 const curatedCollectionsCollection = defineCollection({
-  type: 'content',
+  loader: glob({
+    pattern: '**/*.md',
+    base: './src/content/curated-collections',
+  }),
   schema: CollectionSchema,
 });
 
@@ -124,6 +147,7 @@ const curatedCollectionsCollection = defineCollection({
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   categories: categoriesCollection,
+  badges: badgesCollection,
   tools: toolsCollection,
   'banner-sponsors': bannerSponsorsCollection,
   'curated-collections': curatedCollectionsCollection,

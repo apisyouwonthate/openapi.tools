@@ -1,11 +1,16 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 
 import Badge from '@/components/Badge';
+import { Button } from '@/components/Button';
 import ExternalArticle from '@/components/ExternalArticle';
+import RepoIcon from '@/components/icons/RepoIcon';
+import WebsiteIcon from '@/components/icons/WebsiteIcon';
 import Languages from '@/components/Languages';
+import Link from '@/components/Link';
 import PageHeader from '@/components/PageHeader.astro';
+import ToolBadge from '@/components/ToolBadge';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
 import enrichFeaturedArticles from '@/utils/enrichFeaturedArticles';
@@ -20,7 +25,7 @@ import {
 export const getStaticPaths: GetStaticPaths = async () => {
   const tools = await getCollection('tools');
   return tools.map((category) => ({
-    params: { slug: category.slug },
+    params: { slug: category.id },
   }));
 };
 
@@ -34,9 +39,19 @@ if (!tool) {
 
 const languages: Record<string, boolean> = tool.data?.languages || {};
 
-const { Content } = await tool.render();
+const { Content } = await render(tool);
 
 const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
+
+// Fetch category details for each category reference
+const categories = await Promise.all(
+  tool.data.categories.map((categoryRef) => getEntry(categoryRef))
+);
+
+// Fetch badge details for each badge reference
+const toolBadges = tool.data.badges
+  ? await Promise.all(tool.data.badges.map((badgeRef) => getEntry(badgeRef)))
+  : [];
 ---
 
 <PostHogLayout>
@@ -79,33 +94,180 @@ const enrichedFeaturedArticles = await enrichFeaturedArticles(tool.data);
       url={tool.data.link}
       isSponsor={isSponsorshipActive(tool.data)}
     >
-      {/* render the body of the markdown file for this category */}
+      {/* Display prominent links to website and repo */}
+      <div class="mt-4 flex flex-wrap gap-3">
+        {
+          tool.data.link ? (
+            <Button
+              href={tool.data.link}
+              variant="primary"
+              isSponsored={isSponsorshipActive(tool.data)}
+              className="inline-flex items-center gap-2"
+              toolSlug={slug as string}
+              toolName={tool.data.name}
+              linkType="website"
+              linkPlacementDescription="tool-detail-page-header"
+            >
+              <WebsiteIcon className="h-4 w-4" />
+              Visit Website
+            </Button>
+          ) : (
+            <p>No Website</p>
+          )
+        }
+        {
+          tool.data.repo && (
+            <Button
+              href={tool.data.repo}
+              variant="secondary"
+              isSponsored={isSponsorshipActive(tool.data)}
+              className="inline-flex items-center gap-2"
+              toolSlug={slug as string}
+              toolName={tool.data.name}
+              linkType="repo"
+              linkPlacementDescription="tool-detail-page-header"
+            >
+              <RepoIcon className="h-4 w-4" repo={tool.data.repo} />
+              View Repository
+            </Button>
+          )
+        }
+      </div>
+
+      {/* More Details Section */}
       <div
-        class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
+        class="mt-8 rounded-lg border border-slate-200 bg-slate-50 p-6 dark:border-slate-700 dark:bg-slate-800/50"
       >
-        <Languages languages={languages} />
+        <h2
+          class="mb-4 text-lg font-semibold text-slate-900 dark:text-slate-100"
+        >
+          More Details
+        </h2>
+
+        <div class="space-y-4">
+          {/* Badges / Achievements */}
+          {
+            toolBadges.length > 0 && (
+              <div>
+                <h3 class="mb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Badges & Achievements
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  {toolBadges.map(
+                    (badge) => badge && <ToolBadge badge={badge.data} />
+                  )}
+                </div>
+              </div>
+            )
+          }
+
+          {/* Categories */}
+          {
+            categories.length > 0 && (
+              <div>
+                <h3 class="mb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Categories
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  {categories.map(
+                    (category) =>
+                      category && (
+                        <Link
+                          href={`/categories/${category.id}`}
+                          className="no-underline"
+                        >
+                          <Badge variant="blue">{category.data.name}</Badge>
+                        </Link>
+                      )
+                  )}
+                </div>
+              </div>
+            )
+          }
+
+          {/* OpenAPI Versions */}
+          {
+            tool.data.oasVersions && (
+              <div>
+                <h3 class="mb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  OpenAPI Versions Supported
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                  {tool.data.oasVersions.v2 && (
+                    <Badge variant="green">v2.0</Badge>
+                  )}
+                  {tool.data.oasVersions.v3 && (
+                    <Badge variant="green">v3.0</Badge>
+                  )}
+                  {tool.data.oasVersions.v3_1 && (
+                    <Badge variant="green">v3.1</Badge>
+                  )}
+                  {tool.data.oasVersions.v3_2 && (
+                    <Badge variant="green">v3.2</Badge>
+                  )}
+                </div>
+              </div>
+            )
+          }
+
+          {/* Languages */}
+          {
+            Object.keys(languages).length > 0 && (
+              <div>
+                <h3 class="mb-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                  Languages
+                </h3>
+                <div class="not-prose">
+                  <Languages languages={languages} />
+                </div>
+              </div>
+            )
+          }
+        </div>
       </div>
     </PageHeader>
     <main
       class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300/90"
     >
+      <Content />
+
       <hr class="my-4" />
 
       {
-        enrichedFeaturedArticles && (
+        enrichedFeaturedArticles && enrichedFeaturedArticles.length > 0 && (
           <>
             <Badge>Featured Articles</Badge>
 
             <section class="md-grid-cols-2 grid gap-4 lg:grid-cols-3">
               {enrichedFeaturedArticles.map((article) => (
-                <ExternalArticle {...article.og} />
+                <ExternalArticle {...article.og} toolSlug={slug as string} />
               ))}
             </section>
           </>
         )
       }
-
-      <Content />
     </main>
   </Layout>
+
+  {/* Tool Page View Tracking */}
+  <script
+    is:inline
+    define:vars={{
+      toolSlug: slug,
+      toolName: tool.data.name,
+      categoryNames: categories.map((c) => c?.data.name).filter(Boolean),
+      isSponsored: isSponsorshipActive(tool.data),
+      oasVersions: tool.data.oasVersions || {},
+    }}
+  >
+    if (typeof window !== 'undefined' && window.posthog) {
+      window.posthog.capture('tool_page_view', {
+        tool_slug: toolSlug,
+        tool_name: toolName,
+        categories: categoryNames,
+        is_sponsored: isSponsored,
+        oas_versions: oasVersions,
+      });
+    }
+  </script>
 </PostHogLayout>

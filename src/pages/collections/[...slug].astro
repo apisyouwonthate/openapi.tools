@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from 'astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
 
 import { FilterableCollectionView } from '@/components/filters/FilterableCollectionView';
 import PageHeader from '@/components/PageHeader.astro';
@@ -12,7 +12,7 @@ import {
   serializeSchema,
 } from '@/utils/structuredData';
 import { isLegacy, isModern } from '@/utils/versionFilters';
-import type { CollectionFilters } from '@/content/config';
+import type { CollectionFilters } from '@/content.config';
 
 // Helper function to filter tools based on collection filters
 function filterTools(
@@ -61,6 +61,14 @@ function filterTools(
       if (!hasVersion) return false;
     }
 
+    // Badge requirements
+    if (filters.requireBadges?.length) {
+      const hasBadge = filters.requireBadges.some((badgeId) =>
+        tool.data.badges?.some((badge) => badge.id === badgeId)
+      );
+      if (!hasBadge) return false;
+    }
+
     return true;
   });
 }
@@ -69,7 +77,7 @@ function filterTools(
 export const getStaticPaths: GetStaticPaths = async () => {
   const curatedCollections = await getCollection('curated-collections');
   return curatedCollections.map((collection) => ({
-    params: { slug: collection.slug },
+    params: { slug: collection.id },
     props: { collection },
   }));
 };
@@ -82,7 +90,7 @@ if (!collection) {
   throw new Error(`No collection found for slug ${slug}`);
 }
 
-const { Content } = await collection.render();
+const { Content } = await render(collection);
 
 // 3. Get all tools and filter them based on collection filters
 const allTools = await getCollection('tools');
@@ -122,7 +130,7 @@ const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
   description: category.data.description,
   tools: tools.map((tool) => ({
     tool: tool.data,
-    slug: tool.slug,
+    slug: tool.id,
     category: category.data,
   })),
 }));
@@ -162,7 +170,7 @@ const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
           url: `https://openapi.tools/collections/${slug}`,
           tools: filteredTools.slice(0, 10).map((tool) => ({
             name: tool.data.name,
-            url: `https://openapi.tools/tools/${tool.slug}`,
+            url: `https://openapi.tools/tools/${tool.id}`,
           })),
         })
       )}

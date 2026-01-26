@@ -33,12 +33,15 @@ description: 'A brief description of the tool.'
 categories:
   - docs
   - sdk-generators
-  - code-validators
-  - servers
-  - mocking-tools
+  - code-generators
+  - mocking
 languages: { 'Language1': true, 'Language2': false }
 link: 'https://toolwebsite.com'
-repo: 'https://github.com/example/example.git'
+repo: 'https://github.com/tool'
+oaiSpecs:
+  oas: true # default: true
+  overlays: false # default: false
+  arazzo: false # default: false
 oasVersions:
   v2: false
   v3: true

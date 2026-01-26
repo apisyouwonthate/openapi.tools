@@ -2,7 +2,7 @@
 name: OpenAPI Mocker
 description: Standalone nodejs based OpenAPI 3 mock server, docker-friendly with request validation and autoreload.
 categories:
-  - mocking-tools
+  - mocking
 link: https://www.npmjs.com/package/open-api-mocker
 languages:
   nodejs: true

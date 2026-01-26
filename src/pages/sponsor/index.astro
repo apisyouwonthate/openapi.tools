@@ -110,7 +110,7 @@ const uniqueSponsors = activeSponsors.filter((tool) => {
           <ul>
             {uniqueSponsors.map((tool) => (
               <li>
-                <Link href={`/tools/${tool.slug}`}>{tool.data.name}</Link>
+                <Link href={`/tools/${tool.id}`}>{tool.data.name}</Link>
                 {tool.data.description && ` - ${tool.data.description}`}
               </li>
             ))}
@@ -182,4 +182,14 @@ const uniqueSponsors = activeSponsors.filter((tool) => {
       </p>
     </div>
   </Layout>
+
+  {/* Sponsor Page Visit Tracking */}
+  <script is:inline>
+    if (typeof window !== 'undefined' && window.posthog) {
+      window.posthog.capture('sponsorship_cta_click', {
+        cta_type: 'sponsor_page_visit',
+        source_page: document.referrer || 'direct',
+      });
+    }
+  </script>
 </PostHogLayout>

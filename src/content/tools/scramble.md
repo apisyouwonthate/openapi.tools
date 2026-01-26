@@ -2,7 +2,6 @@
 name: Scramble
 description: Modern Laravel OpenAPI documentation generator. No PHPDoc annotations required.
 categories:
-  - auto-generators
   - docs
 link: https://scramble.dedoc.co/
 languages:

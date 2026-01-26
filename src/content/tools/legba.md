@@ -16,4 +16,6 @@ oaiSpecs:
   oas: true
   overlays: true
   arazzo: false
+badges:
+  - overlays-pioneer
 ---

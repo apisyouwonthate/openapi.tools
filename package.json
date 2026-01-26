@@ -22,11 +22,11 @@
   },
   "dependencies": {
     "@algolia/autocomplete-core": "^1.19.4",
-    "@astrojs/check": "^0.9.6",
-    "@astrojs/netlify": "^6.6.3",
-    "@astrojs/react": "^4.4.2",
-    "@astrojs/rss": "^4.0.14",
-    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/check": "0.9.6-beta.1",
+    "@astrojs/netlify": "7.0.0-beta.5",
+    "@astrojs/react": "5.0.0-beta.1",
+    "@astrojs/rss": "4.0.15-beta.1",
+    "@astrojs/sitemap": "3.6.1-beta.2",
     "@astrojs/ts-plugin": "^1.10.6",
     "@headlessui/react": "^2.2.9",
     "@markdoc/markdoc": "^0.5.4",
@@ -37,8 +37,8 @@
     "@radix-ui/react-slot": "^1.2.4",
     "@sindresorhus/slugify": "^3.0.0",
     "@tanstack/react-table": "^8.21.3",
-    "astro": "^5.16.6",
-    "astro-seo": "^0.8.4",
+    "astro": "6.0.0-beta.1",
+    "astro-seo": "^1.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -57,7 +57,7 @@
     "sharp": "^0.34.0",
     "tailwind-merge": "^3.4.0",
     "tw-animate-css": "^1.3.0",
-    "zod": "^3.23.8"
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.0",

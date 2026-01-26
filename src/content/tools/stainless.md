@@ -3,6 +3,7 @@ name: ✨ Stainless
 description: Generate SDKs in popular languages and publish them to package managers (like npm).
 categories:
   - sdk-generators
+  - docs
 link: https://stainlessapi.com
 languages:
   typescript: true
@@ -10,6 +11,11 @@ languages:
   golang: true
   java: true
   kotlin: true
+  ruby: true
+  csharp: true
+  php: true
+  terraform: true
+  cli: true
 repo: https://github.com/stainless-api/stl-api
 oasVersions:
   v2: false

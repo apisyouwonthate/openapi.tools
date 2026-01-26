@@ -1,0 +1,78 @@
+---
+// SponsorBanner.astro
+import type { BannerSponsor } from 'src/content.config';
+
+import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
+
+interface Props {
+  sponsors: BannerSponsor[];
+}
+
+const { sponsors } = Astro.props;
+const sponsor = sponsors[0];
+
+if (!sponsor) {
+  return null;
+}
+---
+
+<section
+  class="z-20 flex w-full flex-col-reverse justify-between bg-slate-800 p-px py-2 text-xs font-medium text-slate-100/90 text-white md:flex-row md:gap-2"
+  id="sponsor-banner"
+>
+  <a
+    id="sponsor-banner-link"
+    href={generateUrlWithUTM({
+      url: sponsor.ctaUrl,
+      linkPlacementDescription: 'rotating sponsor banner',
+    })}
+    target="_blank"
+    rel="sponsored nofollow noopener noreferrer"
+    class="flex h-16 w-full rounded-xl"
+  >
+    <div class="flex w-full flex-row items-center gap-2 px-2 py-3 pr-4">
+      <span>
+        Sponsored by{' '}
+        <span class="text-pink-600 md:text-white">{sponsor.name}</span>
+        {' '}- {sponsor.description}
+        <span
+          class="ml-2 hidden break-inside-avoid rounded-full bg-pink-600 px-4 whitespace-pre text-white hover:bg-pink-600/80 active:bg-pink-600/90 md:inline-block md:py-2"
+        >
+          {sponsor.ctaText}
+        </span>
+      </span>
+    </div>
+  </a>
+  <a
+    id="become-sponsor-link"
+    class="flex items-center px-2 py-1 text-nowrap md:justify-end"
+    href="/sponsor"
+  >
+    <span class="text-white">Sponsor openapi.tools</span>
+  </a>
+</section>
+
+<script is:inline define:vars={{ sponsorName: sponsor.name }}>
+  document
+    .getElementById('sponsor-banner-link')
+    ?.addEventListener('click', () => {
+      if (window.posthog) {
+        window.posthog.capture('sponsorship_cta_click', {
+          cta_type: 'banner_click',
+          source_page: window.location.pathname,
+          sponsor_name: sponsorName,
+        });
+      }
+    });
+
+  document
+    .getElementById('become-sponsor-link')
+    ?.addEventListener('click', () => {
+      if (window.posthog) {
+        window.posthog.capture('sponsorship_cta_click', {
+          cta_type: 'become_sponsor_link',
+          source_page: window.location.pathname,
+        });
+      }
+    });
+</script>

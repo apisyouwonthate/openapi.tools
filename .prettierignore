@@ -21,3 +21,5 @@ _site/
 # OS files
 .DS_Store
 
+# Github files
+.github/CODEOWNERS
