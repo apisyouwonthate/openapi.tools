@@ -32,8 +32,9 @@ oasVersions:
 Install the package and configure it in your NestJS module:
 
 ```typescript
-import { Module } from '@nestjs/common';
 import { OpenAPIValidatorModule } from '@nest-openapi/validator';
+import { Module } from '@nestjs/common';
+
 import * as openApiSpec from './openapi.json';
 
 @Module({
@@ -49,8 +50,8 @@ export class AppModule {}
 You can also use per-route decorators to customize validation behavior:
 
 ```typescript
-import { Controller, Post } from '@nestjs/common';
 import { Validate } from '@nest-openapi/validator';
+import { Body, Controller, Post } from '@nestjs/common';
 
 @Controller('books')
 export class BooksController {

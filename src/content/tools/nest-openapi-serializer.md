@@ -32,8 +32,9 @@ oasVersions:
 Install the package and configure it in your NestJS module:
 
 ```typescript
-import { Module } from '@nestjs/common';
 import { OpenAPISerializerModule } from '@nest-openapi/serializer';
+import { Module } from '@nestjs/common';
+
 import * as openApiSpec from './openapi.json';
 
 @Module({
@@ -53,8 +54,8 @@ export class AppModule {}
 You can disable serialization for specific routes using the `@Serialize` decorator:
 
 ```typescript
-import { Controller, Post } from '@nestjs/common';
 import { Serialize } from '@nest-openapi/serializer';
+import { Body, Controller, Post } from '@nestjs/common';
 
 @Controller('books')
 export class BooksController {
