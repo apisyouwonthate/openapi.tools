@@ -8,7 +8,7 @@ languages:
   vue: true
 repo: https://github.com/scalar/scalar
 
-oasSpecs:
+oaiSpecs:
   oas: true
 
 oasVersions:

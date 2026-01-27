@@ -7,7 +7,7 @@ link: https://stoplight.io/api-documentation
 languages:
   saas: true
 
-oasSpecs:
+oaiSpecs:
   oas: true
 
 oasVersions:
