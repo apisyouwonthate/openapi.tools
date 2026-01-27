@@ -17,9 +17,8 @@ oasVersions:
   v3_2: false
 sponsorship:
   - startDate: 2026-01-09T09:00:00.000Z
-featuredArticles: 
-  - title: 'All about Mocking, with Wiremock's Tom Akehurst - APIs You Won't Hate Podcast'
+featuredArticles:
+  - title: "All about Mocking, with Wiremock's Tom Akehurst - APIs You Won't Hate Podcast"
     url: 'https://apisyouwonthate.com/podcast/all-about-mocking-with-wiremocks-tom-akehurst/'
     date: 2025-07-01
-
 ---
