@@ -2,7 +2,7 @@
 name: '@nest-openapi/mock'
 description: Spec-driven mock server for NestJS that generates realistic mock responses from OpenAPI.
 categories:
-  - mocking-tools
+  - mocking
 link: https://nest-openapi.github.io/mock/
 languages:
   typescript: true
