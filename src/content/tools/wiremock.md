@@ -21,5 +21,4 @@ featuredArticles:
   - title: "All about Mocking, with Wiremock's Tom Akehurst - APIs You Won't Hate Podcast"
     url: 'https://apisyouwonthate.com/podcast/all-about-mocking-with-wiremocks-tom-akehurst/'
     date: 2025-07-01
-
 ---
