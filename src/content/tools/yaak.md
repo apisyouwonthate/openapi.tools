@@ -12,7 +12,7 @@ repo: https://github.com/mountain-loop/yaak
 #   windows: true
 #   linux: true
 
-oasSpecs:
+oaiSpecs:
   oas: true
 
 oasVersions:
