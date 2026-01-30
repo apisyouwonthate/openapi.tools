@@ -1,5 +1,5 @@
 ---
-name: Kiota Api Client Generator
+name: Kiota
 description: Kiota is a cross platform API Client code generator that is small, fast, and optimized for API consumers to find APIs and generate client code for just the parts of the API that they need. One tool, for any OpenAPI described API, that delivers a consistent client experience in multiple languages.
 categories:
   - code-generators
@@ -7,6 +7,12 @@ categories:
 link: https://aka.ms/kiota/docs
 languages:
   csharp: true
+  dart: true
+  golang: true
+  java: true
+  php: true
+  python: true
+  typescript: true
 repo: https://github.com/microsoft/kiota
 oasVersions:
   v2: true
