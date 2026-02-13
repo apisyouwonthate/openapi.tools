@@ -19,5 +19,5 @@ oaiSpecs:
 badges:
   - oas-v32-early
   - overlays-pioneer
-repo: https://github.com/BinkyLabs/openapi-overlay-dotnet
+repo: https://github.com/BinkyLabs/openapi-overlays-dotnet
 ---
