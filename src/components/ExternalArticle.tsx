@@ -56,12 +56,11 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
           <h3 className="mt-3 text-lg leading-6 font-semibold text-gray-900 group-hover:text-gray-600">
             <Link
               href={url}
-              className="font-medium no-underline"
+              className="font-medium no-underline absolute inset-0"
               toolSlug={toolSlug}
               linkType="featured_article"
               linkPlacementDescription="featured-article-card"
             >
-              <span className="absolute inset-0" />
               {title}
             </Link>
           </h3>
