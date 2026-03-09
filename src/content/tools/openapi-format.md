@@ -6,7 +6,7 @@ categories:
   - misc
   - parsers
   - converters
-link: https://openapi-format-playground.vercel.app
+link: https://openapi-format.com
 languages:
   nodejs: true
   cli: true
@@ -49,6 +49,6 @@ featuredArticles:
 - **Generate elements**: Auto-generate `operationIds` using customizable templates based on method, path, and tags.
 - **Bundle and split**: Resolve all `$ref` references into a single file, or split large documents into modular multi-file structures for easier management.
 - **Strip unused components**: Automatically detect and remove schemas, parameters, examples, and other components that are no longer referenced.
-- **Online playground**: Experiment with formatting options interactively at https://openapi-format-playground.vercel.app.
+- **Online playground**: Experiment with formatting options interactively at https://playground.openapi-format.com.
 
 Built to simplify maintaining OpenAPI documents and keep specifications clean, consistent, and automation-ready.
