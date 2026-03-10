@@ -6,10 +6,18 @@ categories:
   - testing
 languages:
   any: true
+  python: true
+  java: true
+  kotlin: true
+  javascript: true
+  golang: true
 repo: https://github.com/TNO-S3/WuppieFuzz
 oasVersions:
   v2: true
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v32-early
+  - full-spectrum-support
 ---
