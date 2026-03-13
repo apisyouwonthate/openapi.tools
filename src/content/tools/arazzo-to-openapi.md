@@ -56,21 +56,25 @@ arazzo2openapi workflow.yaml \
 
 **CLI options:**
 
-| Option | Description |
-|--------|-------------|
-| `-o, --output <file>` | Output file path |
-| `-f, --format <format>` | Output format: `json` or `yaml` |
-| `--openapi-version <version>` | OpenAPI version: `3.0.0` or `3.1.0` |
-| `--title <title>` | Override API title |
-| `--version-override <version>` | Override API version |
-| `--description <description>` | Override API description |
-| `--server <url>` | Add server URL (repeatable) |
-| `--response-code <code>` | HTTP response code (default: `200`) |
+| Option                         | Description                         |
+| ------------------------------ | ----------------------------------- |
+| `-o, --output <file>`          | Output file path                    |
+| `-f, --format <format>`        | Output format: `json` or `yaml`     |
+| `--openapi-version <version>`  | OpenAPI version: `3.0.0` or `3.1.0` |
+| `--title <title>`              | Override API title                  |
+| `--version-override <version>` | Override API version                |
+| `--description <description>`  | Override API description            |
+| `--server <url>`               | Add server URL (repeatable)         |
+| `--response-code <code>`       | HTTP response code (default: `200`) |
 
 ## Programmatic API
 
 ```typescript
-import { ArazzoParser, WorkflowAnalyzer, OpenAPIGenerator } from 'arazzo2openapi';
+import {
+  ArazzoParser,
+  OpenAPIGenerator,
+  WorkflowAnalyzer,
+} from 'arazzo2openapi';
 
 // Parse Arazzo document
 const parser = new ArazzoParser();
@@ -101,24 +105,24 @@ Types and formats are inferred from the source OpenAPI documents referenced in t
 ```yaml
 # Input: Arazzo workflow output references
 outputs:
-  petId:   $steps.getPet.outputs.id
+  petId: $steps.getPet.outputs.id
   petName: $steps.getPet.outputs.name
 
 # Output: OpenAPI with inferred types
 schema:
   properties:
     petId:
-      type: integer     # inferred from source
+      type: integer # inferred from source
       format: int64
     petName:
-      type: string      # inferred from source
+      type: string # inferred from source
 ```
 
 Supports: primitive types, formats (uuid, email, date-time, int32, int64, float, etc.), enums, constraints (min/max, pattern), nested objects and arrays, and `$ref` resolution.
 
 ## Supported Versions
 
-| Spec    | Versions      |
-|---------|---------------|
-| Arazzo  | 1.0.x         |
-| OpenAPI | 3.0.0, 3.1.0  |
+| Spec    | Versions     |
+| ------- | ------------ |
+| Arazzo  | 1.0.x        |
+| OpenAPI | 3.0.0, 3.1.0 |
