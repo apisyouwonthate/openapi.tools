@@ -60,7 +60,7 @@
     "zod": "^4.3.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.0",
+    "@eslint/js": "^9.39.4",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.0",
