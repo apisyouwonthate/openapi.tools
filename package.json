@@ -18,7 +18,8 @@
     "lint-fix": "eslint --fix .",
     "prettier": "prettier --check .",
     "prettier-fix": "prettier --write .",
-    "check-links": "node scripts/check-tool-links.mjs"
+    "check-links": "node scripts/check-tool-links.mjs",
+    "depcheck": "knip"
   },
   "dependencies": {
     "@algolia/autocomplete-core": "^1.19.4",
@@ -73,6 +74,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
     "globals": "^17.4.0",
+    "knip": "^5.86.0",
     "open-graph-scraper": "^6.11.0",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
