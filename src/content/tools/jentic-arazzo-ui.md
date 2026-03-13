@@ -20,7 +20,6 @@ oasVersions:
   v3_2: false
 badges:
   - arazzo-support
-
 ---
 
 ## Overview
@@ -46,6 +45,7 @@ Visit https://arazzo-ui.jentic.com and upload a local Arazzo document or paste a
 https://arazzo-ui.jentic.com?document=https://your-domain.com/workflow.arazzo.yaml
 
 **Command line:**
+
 ```bash
 npx @jentic/arazzo-ui https://example.com/workflow.arazzo.yaml
 

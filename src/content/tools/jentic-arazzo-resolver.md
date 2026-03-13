@@ -40,6 +40,7 @@ npm install @jentic/arazzo-resolver
 ## Usage
 
 **Dereference from a file path or URL:**
+
 ```typescript
 import { dereferenceArazzo } from '@jentic/arazzo-resolver';
 
@@ -52,6 +53,7 @@ const parseResult = await dereferenceArazzo('https://example.com/arazzo.yaml');
 ```
 
 **Dereference an already-parsed element (with `@jentic/arazzo-parser`):**
+
 ```typescript
 import { parseArazzo } from '@jentic/arazzo-parser';
 import { dereferenceArazzoElement } from '@jentic/arazzo-resolver';
@@ -61,6 +63,7 @@ const dereferenced = await dereferenceArazzoElement(parseResult);
 ```
 
 **Dereference inline content — provide a `baseURI`:**
+
 ```typescript
 import { parseArazzo } from '@jentic/arazzo-parser';
 import { dereferenceArazzoElement } from '@jentic/arazzo-resolver';
@@ -72,6 +75,7 @@ const dereferenced = await dereferenceArazzoElement(parseResult, {
 ```
 
 **Dereference a specific child element (e.g. a single workflow):**
+
 ```typescript
 import { parseArazzo } from '@jentic/arazzo-parser';
 import { dereferenceArazzoElement } from '@jentic/arazzo-resolver';
@@ -85,6 +89,7 @@ const dereferencedWorkflow = await dereferenceArazzoElement(workflow, {
 ```
 
 **OpenAPI documents:**
+
 ```typescript
 import { dereferenceOpenAPI } from '@jentic/arazzo-resolver';
 
@@ -93,20 +98,22 @@ const parseResult = await dereferenceOpenAPI('/path/to/openapi.yaml');
 
 ## API
 
-| Function | Description |
-|----------|-------------|
-| `dereferenceArazzo(uri)` | Dereference an Arazzo document from a file path or URL |
-| `dereferenceArazzoElement(element, opts?)` | Dereference a SpecLynx ApiDOM Arazzo element |
-| `dereferenceOpenAPI(uri)` | Dereference an OpenAPI document from a file path or URL |
-| `dereferenceOpenAPIElement(element, opts?)` | Dereference a SpecLynx ApiDOM OpenAPI element |
+| Function                                    | Description                                             |
+| ------------------------------------------- | ------------------------------------------------------- |
+| `dereferenceArazzo(uri)`                    | Dereference an Arazzo document from a file path or URL  |
+| `dereferenceArazzoElement(element, opts?)`  | Dereference a SpecLynx ApiDOM Arazzo element            |
+| `dereferenceOpenAPI(uri)`                   | Dereference an OpenAPI document from a file path or URL |
+| `dereferenceOpenAPIElement(element, opts?)` | Dereference a SpecLynx ApiDOM OpenAPI element           |
 
 ## What Gets Resolved
 
 **In Arazzo documents:**
+
 - JSON Schema references
 - Reusable object references (`$components.*`)
 
 **In OpenAPI documents:**
+
 - Reference Objects (`$ref`) — components, external files, URLs
 - JSON Schema references
 - Path Item Objects
@@ -114,7 +121,7 @@ const parseResult = await dereferenceOpenAPI('/path/to/openapi.yaml');
 
 ## Supported Versions
 
-| Spec    | Versions           |
-|---------|--------------------|
-| Arazzo  | 1.0.0, 1.0.1       |
-| OpenAPI | 2.0, 3.0.x, 3.1.x  |
+| Spec    | Versions          |
+| ------- | ----------------- |
+| Arazzo  | 1.0.0, 1.0.1      |
+| OpenAPI | 2.0, 3.0.x, 3.1.x |

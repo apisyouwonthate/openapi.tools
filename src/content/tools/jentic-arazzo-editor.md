@@ -43,6 +43,7 @@ Think Stoplight Studio for APIs, but for multi-step workflow orchestration.
 **Web interface**: Visit https://jentic.com/arazzo-editor to start building workflows. Load existing Arazzo documents to evolve them, or create new workflows from scratch.
 
 **Building a workflow**:
+
 1. Add steps by selecting API operations from referenced OpenAPI specifications
 2. Configure parameters using runtime expressions like `$inputs.userId` or `$steps.auth.outputs.token`
 3. Define success criteria and failure handling (retry logic, goto actions, error paths)

@@ -44,41 +44,44 @@ import { parseArazzo } from '@jentic/arazzo-parser';
 // Parse from object, string, file path, or URL
 const parseResult = await parseArazzo(source);
 
-const arazzoSpec = parseResult.api;            // ArazzoSpecification1Element
-const hasErrors  = parseResult.errors.length > 0;
+const arazzoSpec = parseResult.api; // ArazzoSpecification1Element
+const hasErrors = parseResult.errors.length > 0;
 ```
 
 **Supported inputs:**
+
 - Plain JavaScript object
 - JSON or YAML string
 - Local file system path
 - HTTP(S) URL
 
 **Parse options:**
+
 ```typescript
 const parseResult = await parseArazzo(source, {
   parse: {
     parserOpts: {
-      strict: true,      // strict parsing mode (default: true)
-      sourceMap: false,  // include source maps (default: false)
+      strict: true, // strict parsing mode (default: true)
+      sourceMap: false, // include source maps (default: false)
     },
   },
 });
 ```
 
 **Error handling:**
+
 ```typescript
 try {
   await parseArazzo('invalid content');
 } catch (error) {
   console.error(error.message); // 'Failed to parse Arazzo Document'
-  console.error(error.cause);   // original underlying error
+  console.error(error.cause); // original underlying error
 }
 ```
 
 ## Supported Versions
 
-| Spec    | Versions           |
-|---------|--------------------|
-| Arazzo  | 1.0.0, 1.0.1       |
-| OpenAPI | 2.0, 3.0.x, 3.1.x  |
+| Spec    | Versions          |
+| ------- | ----------------- |
+| Arazzo  | 1.0.0, 1.0.1      |
+| OpenAPI | 2.0, 3.0.x, 3.1.x |
