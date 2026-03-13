@@ -1,8 +1,9 @@
-import React from 'react';
-import { getCollection, getEntry } from 'astro:content';
-import satori from 'satori';
+import { getEntry } from 'astro:content';
 import { html } from 'satori-html';
-import sharp from 'sharp';
+
+import { renderOgImage } from '@/utils/og';
+
+export const prerender = false;
 
 type OgRouteParams = {
   params: {
@@ -10,14 +11,8 @@ type OgRouteParams = {
   };
 };
 
-export async function getStaticPaths() {
-  const tools = await getCollection('tools');
-  return tools.map((tool) => ({ params: { slug: tool.id } }));
-}
-
 export const GET = async ({ params }: OgRouteParams) => {
   const { slug } = params;
-  /// One line to get the tool from our collection using slug
   const tool = await getEntry('tools', slug!);
   const title = tool?.data.name ?? 'Openapi.tools';
 
@@ -31,28 +26,5 @@ export const GET = async ({ params }: OgRouteParams) => {
     </div>
   </div>`);
 
-  const Roboto = await fetch(
-    'https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff'
-  ).then((res) => res.arrayBuffer());
-
-  const svg = await satori(markup as React.ReactNode, {
-    fonts: [
-      {
-        name: 'Roboto',
-        data: Roboto,
-      },
-    ],
-    width: 1200,
-    height: 630,
-  });
-  const png = sharp(Buffer.from(svg)).png();
-  const response = await png.toBuffer();
-
-  return new Response(new Uint8Array(response), {
-    status: 200,
-    headers: {
-      'Content-Type': 'image/png',
-      'Cache-Control': 's-maxage=3600, stale-while-revalidate=86400',
-    },
-  });
+  return renderOgImage(markup);
 };
