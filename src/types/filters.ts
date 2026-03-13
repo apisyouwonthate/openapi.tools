@@ -4,7 +4,3 @@ export type LanguageOption = {
   count: number;
 };
 
-export type LanguageFilterState = {
-  selectedLanguages: string[];
-  availableLanguages: LanguageOption[];
-};

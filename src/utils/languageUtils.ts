@@ -67,7 +67,7 @@ export function getDeviconClassName(lang: string): string {
   return DEVICON_NAME_MAP[lowercased] || lowercased;
 }
 
-export function formatLanguageName(lang: string): string {
+function formatLanguageName(lang: string): string {
   const lowercased = lang.toLowerCase();
   if (LANGUAGE_NAME_MAP[lowercased]) {
     return LANGUAGE_NAME_MAP[lowercased];

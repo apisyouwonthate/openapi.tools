@@ -59,12 +59,6 @@ type FilterAppliedProps = {
   total_results: number;
 };
 
-type FeaturedArticleClickProps = {
-  tool_slug: string;
-  article_title: string;
-  article_url: string;
-};
-
 type ScrollDepthProps = {
   page_path: string;
   max_depth_percent: 25 | 50 | 75 | 100;
@@ -95,22 +89,6 @@ export function trackFilterApplied(props: FilterAppliedProps): void {
   capture('filter_applied', props);
 }
 
-export function trackFeaturedArticleClick(
-  props: FeaturedArticleClickProps
-): void {
-  capture('featured_article_click', props);
-}
-
 export function trackScrollDepth(props: ScrollDepthProps): void {
   capture('scroll_depth', props);
 }
-
-// Export types for use in components
-export type {
-  ToolPageViewProps,
-  OutboundClickProps,
-  SponsorshipCTAProps,
-  FilterAppliedProps,
-  FeaturedArticleClickProps,
-  ScrollDepthProps,
-};

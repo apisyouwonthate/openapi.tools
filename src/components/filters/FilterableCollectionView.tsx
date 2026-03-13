@@ -97,7 +97,11 @@ export function FilterableCollectionView({
               <p className="mb-4 text-slate-600 dark:text-slate-400">
                 {category.description}
               </p>
-              <DataTable data={category.tools} columns={columns} />
+              <DataTable
+                data={category.tools}
+                columns={columns}
+                caption={`${category.name} — ${category.tools.length} tools`}
+              />
             </section>
           ))}
         </div>
@@ -172,7 +176,11 @@ export function FilterableCollectionView({
             <p className="mb-4 text-slate-600 dark:text-slate-400">
               {category.description}
             </p>
-            <DataTable data={category.tools} columns={columns} />
+            <DataTable
+              data={category.tools}
+              columns={columns}
+              caption={`${category.name} — ${category.tools.length} tools`}
+            />
           </section>
         ))}
 

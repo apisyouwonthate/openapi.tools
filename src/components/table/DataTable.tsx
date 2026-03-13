@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import {
   flexRender,
   getCoreRowModel,
@@ -8,20 +9,26 @@ import {
 import {
   Table,
   TableBody,
+  TableCaption,
   TableCell,
+  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from '@/components/table/Table';
 
-interface DataTableProps<TData, TValue> {
+type DataTableProps<TData, TValue> = {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
-}
+  caption?: string;
+  footer?: ReactNode;
+};
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  caption,
+  footer,
 }: DataTableProps<TData, TValue>) {
   const table = useReactTable({
     data,
@@ -32,6 +39,7 @@ export function DataTable<TData, TValue>({
   return (
     <div className="rounded-md border">
       <Table className="m-0 p-0">
+        {caption && <TableCaption>{caption}</TableCaption>}
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
@@ -72,6 +80,13 @@ export function DataTable<TData, TValue>({
             </TableRow>
           )}
         </TableBody>
+        {footer && (
+          <TableFooter>
+            <TableRow>
+              <TableCell colSpan={columns.length}>{footer}</TableCell>
+            </TableRow>
+          </TableFooter>
+        )}
       </Table>
     </div>
   );

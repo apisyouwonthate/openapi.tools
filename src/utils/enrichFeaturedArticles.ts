@@ -36,7 +36,7 @@ process.on('beforeExit', () => {
   }
 });
 
-export const enrichFeaturedArticles = async (tool: Tool) => {
+const enrichFeaturedArticles = async (tool: Tool) => {
   const results = [];
 
   for (const article of tool?.featuredArticles || []) {

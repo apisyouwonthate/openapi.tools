@@ -142,12 +142,16 @@ export function FilterableToolsList({ tools }: FilterableToolsListProps) {
         )}
       </div>
 
-      <div className="text-sm text-slate-600 dark:text-slate-400">
-        Showing {filteredTools.length} of {tools.length} tools
-        {hasFilters && <span> matching selected filters</span>}
-      </div>
-
-      <DataTable columns={columns} data={filteredTools} />
+      <DataTable
+        columns={columns}
+        data={filteredTools}
+        footer={
+          <span className="text-sm text-slate-600 dark:text-slate-400">
+            Showing {filteredTools.length} of {tools.length} tools
+            {hasFilters && <span> matching selected filters</span>}
+          </span>
+        }
+      />
     </div>
   );
 }
