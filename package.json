@@ -24,7 +24,7 @@
     "@algolia/autocomplete-core": "^1.19.4",
     "@astrojs/check": "0.9.6-beta.1",
     "@astrojs/netlify": "7.0.0-beta.5",
-    "@astrojs/react": "5.0.0-beta.1",
+    "@astrojs/react": "5.0.0",
     "@astrojs/rss": "4.0.15-beta.1",
     "@astrojs/sitemap": "3.6.1-beta.2",
     "@astrojs/ts-plugin": "^1.10.6",
