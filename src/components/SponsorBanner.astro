@@ -52,27 +52,30 @@ if (!sponsor) {
   </a>
 </section>
 
-<script is:inline define:vars={{ sponsorName: sponsor.name }}>
+<div id="sponsor-banner-data" data-sponsor-name={sponsor.name} hidden></div>
+
+<script>
+  import { trackSponsorshipCTA } from '@/utils/analytics';
+
+  const sponsorName =
+    document.getElementById('sponsor-banner-data')?.dataset.sponsorName;
+
   document
     .getElementById('sponsor-banner-link')
     ?.addEventListener('click', () => {
-      if (window.posthog) {
-        window.posthog.capture('sponsorship_cta_click', {
-          cta_type: 'banner_click',
-          source_page: window.location.pathname,
-          sponsor_name: sponsorName,
-        });
-      }
+      trackSponsorshipCTA({
+        cta_type: 'banner_click',
+        source_page: window.location.pathname,
+        sponsor_name: sponsorName,
+      });
     });
 
   document
     .getElementById('become-sponsor-link')
     ?.addEventListener('click', () => {
-      if (window.posthog) {
-        window.posthog.capture('sponsorship_cta_click', {
-          cta_type: 'become_sponsor_link',
-          source_page: window.location.pathname,
-        });
-      }
+      trackSponsorshipCTA({
+        cta_type: 'become_sponsor_link',
+        source_page: window.location.pathname,
+      });
     });
 </script>

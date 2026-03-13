@@ -1,8 +1,8 @@
 import React from 'react';
-import posthog from 'posthog-js';
 import type { Category } from 'src/content.config';
 
 import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
+import { trackOutboundClick } from '@/utils/analytics';
 
 const SITE_URL = import.meta.env.PROD
   ? 'https://openapi.tools'
@@ -71,7 +71,7 @@ const Link: React.FC<LinkProps> = ({
 
       // If the link is an outbound link, track it with full context
       if (href.startsWith('http') && !href.startsWith(SITE_URL)) {
-        posthog.capture('outbound_link_click', {
+        trackOutboundClick({
           url: href,
           tool_slug: toolSlug,
           tool_name: toolName,

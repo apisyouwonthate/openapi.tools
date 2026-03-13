@@ -184,12 +184,12 @@ const uniqueSponsors = activeSponsors.filter((tool) => {
   </Layout>
 
   {/* Sponsor Page Visit Tracking */}
-  <script is:inline>
-    if (typeof window !== 'undefined' && window.posthog) {
-      window.posthog.capture('sponsorship_cta_click', {
-        cta_type: 'sponsor_page_visit',
-        source_page: document.referrer || 'direct',
-      });
-    }
+  <script>
+    import { trackSponsorshipCTA } from '@/utils/analytics';
+
+    trackSponsorshipCTA({
+      cta_type: 'sponsor_page_visit',
+      source_page: document.referrer || 'direct',
+    });
   </script>
 </PostHogLayout>

@@ -250,23 +250,27 @@ const toolBadges = tool.data.badges
   </Layout>
 
   {/* Tool Page View Tracking */}
-  <script
-    is:inline
-    define:vars={{
-      toolSlug: slug,
-      toolName: tool.data.name,
-      categoryNames: categories.map((c) => c?.data.name).filter(Boolean),
-      isSponsored: isSponsorshipActive(tool.data),
-      oasVersions: tool.data.oasVersions || {},
-    }}
-  >
-    if (typeof window !== 'undefined' && window.posthog) {
-      window.posthog.capture('tool_page_view', {
-        tool_slug: toolSlug,
-        tool_name: toolName,
-        categories: categoryNames,
-        is_sponsored: isSponsored,
-        oas_versions: oasVersions,
+  <div
+    id="tool-tracking-data"
+    data-tool-slug={slug}
+    data-tool-name={tool.data.name}
+    data-categories={JSON.stringify(categories.map((c) => c?.data.name).filter(Boolean))}
+    data-is-sponsored={isSponsorshipActive(tool.data)}
+    data-oas-versions={JSON.stringify(tool.data.oasVersions || {})}
+    hidden
+  ></div>
+
+  <script>
+    import { trackToolPageView } from '@/utils/analytics';
+
+    const el = document.getElementById('tool-tracking-data');
+    if (el) {
+      trackToolPageView({
+        tool_slug: el.dataset.toolSlug!,
+        tool_name: el.dataset.toolName!,
+        categories: JSON.parse(el.dataset.categories!),
+        is_sponsored: el.dataset.isSponsored === 'true',
+        oas_versions: JSON.parse(el.dataset.oasVersions!),
       });
     }
   </script>

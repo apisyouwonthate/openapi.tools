@@ -1,7 +1,5 @@
 import { useCallback, useMemo } from 'react';
 import { X } from 'lucide-react';
-import posthog from 'posthog-js';
-
 import type { ToolRowData } from '@/components/table/Columns';
 import { DataTable } from '@/components/table/DataTable';
 import { ToolColumns } from '@/components/table/ToolColumns';
@@ -12,6 +10,7 @@ import {
   extractPlatforms,
   filterToolsByLanguages,
 } from '@/utils/languageUtils';
+import { trackFilterApplied } from '@/utils/analytics';
 import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import { FilterPopover } from './LanguageFilterPopover';
 
@@ -49,7 +48,7 @@ export function FilterableToolsList({ tools }: FilterableToolsListProps) {
         : [...selectedLanguages, value];
       const newFilteredTools = filterToolsByLanguages(tools, newSelected);
 
-      posthog.capture('filter_applied', {
+      trackFilterApplied({
         filter_type: getFilterType(value),
         filter_value: value,
         action: isRemoving ? 'removed' : 'added',
@@ -63,7 +62,7 @@ export function FilterableToolsList({ tools }: FilterableToolsListProps) {
 
   const handleClearFilters = useCallback(() => {
     if (selectedLanguages.length > 0) {
-      posthog.capture('filter_applied', {
+      trackFilterApplied({
         filter_type: 'language',
         filter_value: 'all',
         action: 'cleared',
