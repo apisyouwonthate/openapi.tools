@@ -1,16 +1,15 @@
 version: 2
 updates:
-  # Ruby dependencies
-  - package-ecosystem: 'bundler'
+  # npm dependencies (pnpm)
+  - package-ecosystem: 'npm'
     directory: '/'
     schedule:
       interval: 'weekly'
     open-pull-requests-limit: 10
     labels:
       - 'dependencies'
-      - 'ruby'
     groups:
-      dependencies:
+      minor-and-patch:
         applies-to: 'version-updates'
         update-types:
           - 'minor'
