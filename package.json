@@ -19,7 +19,8 @@
     "prettier": "prettier --check .",
     "prettier-fix": "prettier --write .",
     "check-links": "node scripts/check-tool-links.mjs",
-    "depcheck": "knip"
+    "depcheck": "knip",
+    "test": "vitest run"
   },
   "dependencies": {
     "@astrojs/check": "0.9.7",
@@ -75,6 +76,7 @@
     "prettier-plugin-tailwindcss": "^0.7.0",
     "tailwindcss": "^4.2.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "^8.57.0"
+    "typescript-eslint": "^8.57.0",
+    "vitest": "^4.1.0"
   }
 }
