@@ -1,11 +1,11 @@
-import React from 'react';
 import { getCollection, getEntry } from 'astro:content';
-import satori from 'satori';
 import { html } from 'satori-html';
-import sharp from 'sharp';
 
+import { renderOgImage } from '@/utils/og';
 import { isLegacy } from '@/utils/versionFilters';
 import type { CollectionFilters } from '@/content.config';
+
+export const prerender = false;
 
 type OgRouteParams = {
   params: {
@@ -36,7 +36,6 @@ function filterTools(
       );
       if (!hasVersion) return false;
     }
-    // Badge requirements
     if (filters.requireBadges?.length) {
       const hasBadge = filters.requireBadges.some((badgeId) =>
         tool.data.badges?.some((badge) => badge.id === badgeId)
@@ -45,13 +44,6 @@ function filterTools(
     }
     return true;
   });
-}
-
-export async function getStaticPaths() {
-  const collections = await getCollection('curated-collections');
-  return collections.map((collection) => ({
-    params: { slug: collection.id },
-  }));
 }
 
 export const GET = async ({ params }: OgRouteParams) => {
@@ -90,28 +82,5 @@ export const GET = async ({ params }: OgRouteParams) => {
     </div>
   </div>`);
 
-  const Inter = await fetch(
-    'https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff'
-  ).then((res) => res.arrayBuffer());
-
-  const svg = await satori(markup as React.ReactNode, {
-    fonts: [
-      {
-        name: 'Inter',
-        data: Inter,
-      },
-    ],
-    width: 1200,
-    height: 630,
-  });
-  const png = sharp(Buffer.from(svg)).png();
-  const response = await png.toBuffer();
-
-  return new Response(new Uint8Array(response), {
-    status: 200,
-    headers: {
-      'Content-Type': 'image/png',
-      'Cache-Control': 's-maxage=3600, stale-while-revalidate=86400',
-    },
-  });
+  return renderOgImage(markup);
 };

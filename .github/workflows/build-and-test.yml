@@ -39,6 +39,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      # Run tests
+      - name: Test
+        run: pnpm test
+
+      # Check for unused dependencies and exports
+      - name: Dependency check
+        run: pnpm depcheck
+
       # Run linting
       - name: Lint
         run: pnpm lint

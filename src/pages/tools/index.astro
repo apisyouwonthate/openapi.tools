@@ -5,7 +5,10 @@ import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
-import { isSponsorshipActive } from '@/utils/sponsorship';
+import {
+  getActiveSponsorshipPeriod,
+  isSponsorshipActive,
+} from '@/utils/sponsorship';
 import {
   createBreadcrumbSchema,
   createCollectionPageSchema,
@@ -21,8 +24,8 @@ const modernTools = allTools.filter((tool) => isModern(tool.data));
 const sponsoredTools = modernTools
   .filter((tool) => isSponsorshipActive(tool.data))
   .sort((a, b) => {
-    const aDate = new Date(a.data.sponsorship![0].startDate);
-    const bDate = new Date(b.data.sponsorship![0].startDate);
+    const aDate = new Date(getActiveSponsorshipPeriod(a.data)!.startDate);
+    const bDate = new Date(getActiveSponsorshipPeriod(b.data)!.startDate);
     return aDate.getTime() - bDate.getTime();
   });
 

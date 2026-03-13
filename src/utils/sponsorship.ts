@@ -13,6 +13,16 @@ type SponsorshipPeriod = {
  * Returns true if any sponsorship period has no endDate or endDate is in the future
  * Handles both Date objects (from Astro) and ISO strings (from serialized data)
  */
+const isActivePeriod = (period: SponsorshipPeriod): boolean => {
+  if (!period.endDate) return true;
+  return isAfter(new Date(period.endDate), new Date());
+};
+
+/**
+ * Check if a tool has any currently active sponsorship period
+ * Returns true if any sponsorship period has no endDate or endDate is in the future
+ * Handles both Date objects (from Astro) and ISO strings (from serialized data)
+ */
 export const isSponsorshipActive = (
   tool: Tool | { sponsorship?: SponsorshipPeriod[] }
 ): boolean => {
@@ -20,11 +30,7 @@ export const isSponsorshipActive = (
   if (!sponsorship || !Array.isArray(sponsorship) || sponsorship.length === 0) {
     return false;
   }
-  const now = new Date();
-  return sponsorship.some((period) => {
-    if (!period.endDate) return true;
-    return isAfter(new Date(period.endDate), now);
-  });
+  return sponsorship.some(isActivePeriod);
 };
 
 /**
@@ -38,12 +44,5 @@ export const getActiveSponsorshipPeriod = (
   if (!sponsorship || !Array.isArray(sponsorship) || sponsorship.length === 0) {
     return null;
   }
-  const now = new Date();
-  return sponsorship.find((period) => {
-    if (!period.endDate) return true;
-    return isAfter(new Date(period.endDate), now);
-  });
+  return sponsorship.find(isActivePeriod) ?? null;
 };
-
-/** Alias for isSponsorshipActive for semantic clarity */
-export const isCurrentSponsor = isSponsorshipActive;

@@ -7,7 +7,8 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+/** @type {import('eslint').Linter.Config[]} */
+export default [
   // Global ignores
   {
     ignores: [
@@ -93,5 +94,5 @@ export default tseslint.config(
   },
 
   // Prettier config (must be last to override other formatting rules)
-  prettierConfig
-);
+  prettierConfig,
+];

@@ -17,11 +17,3 @@ export function isLegacy(tool: Tool): boolean {
   const hasModernVersion = !!(v?.v3_2 || v?.v3_1);
   return hasLegacyVersion && !hasModernVersion;
 }
-
-/**
- * Check if a tool supports any OpenAPI version at all
- */
-export function supportsOpenAPI(tool: Tool): boolean {
-  const v = tool.oasVersions;
-  return !!(v?.v2 || v?.v3 || v?.v3_1 || v?.v3_2);
-}

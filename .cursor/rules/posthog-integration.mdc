@@ -4,11 +4,59 @@
 
 PostHog is already integrated into this Astro project. The configuration includes:
 
-- PostHog initialization in `src/components/posthog.astro`
+- PostHog initialization in `src/components/PostHog.astro`
 - Layout setup in `src/layouts/PostHogLayout.astro`
+- Typed analytics helpers in `src/utils/analytics.ts`
 - Environment variables for API key and host
 
 ## Key Guidelines
+
+### Analytics Helper (`src/utils/analytics.ts`)
+All PostHog event tracking MUST go through the typed helper functions in `src/utils/analytics.ts`. Do NOT call `window.posthog.capture()` or `posthog.capture()` directly.
+
+Available functions:
+- `trackToolPageView()` - Tool detail page loads
+- `trackOutboundClick()` - External link clicks
+- `trackSponsorshipCTA()` - Sponsor-related interactions
+- `trackFilterApplied()` - Language/platform filter changes
+- `trackFeaturedArticleClick()` - Featured article clicks
+- `trackScrollDepth()` - Scroll depth thresholds
+
+Each function has typed props and handles the `window.posthog` safety check internally.
+
+### Using in React/TSX Components
+Import and call the tracking functions directly:
+```tsx
+import { trackOutboundClick } from '@/utils/analytics';
+
+trackOutboundClick({ url, tool_slug, link_type: 'website', is_sponsored: false, placement: 'header' });
+```
+
+### Using in Astro Components
+Use bundled `<script>` tags (NOT `is:inline`) so imports work:
+```astro
+<script>
+  import { trackSponsorshipCTA } from '@/utils/analytics';
+
+  trackSponsorshipCTA({ cta_type: 'banner_click', source_page: window.location.pathname });
+</script>
+```
+
+If you need server-side data in the script, pass it via `data-*` attributes on an HTML element:
+```astro
+<div id="tracking-data" data-tool-slug={slug} hidden></div>
+
+<script>
+  import { trackToolPageView } from '@/utils/analytics';
+
+  const el = document.getElementById('tracking-data');
+  if (el) {
+    trackToolPageView({ tool_slug: el.dataset.toolSlug! });
+  }
+</script>
+```
+
+Do NOT use `<script is:inline>` with `define:vars` for analytics — this prevents bundling and bypasses the typed helpers.
 
 ### Component Structure
 - PostHog component uses `is:inline` directive to prevent Astro from processing the script
@@ -20,25 +68,21 @@ PostHog is already integrated into this Astro project. The configuration include
 - `PUBLIC_POSTHOG_KEY` - Your PostHog project API key
 - `PUBLIC_POSTHOG_HOST` - Your PostHog instance URL
 
-### Best Practices
-- Always use `posthog.identify()` when users sign in
-- Use `posthog.capture()` for custom events
-- Feature flags can be accessed with `posthog.isFeatureEnabled()`
-- Keep the PostHog script in the head section for accurate tracking
-
 ### File Structure
 ```
 src/
 ├── components/
-│   └── posthog.astro          # PostHog initialization
+│   └── PostHog.astro             # PostHog initialization
 ├── layouts/
-│   └── PostHogLayout.astro    # Layout with PostHog
+│   └── PostHogLayout.astro       # Layout with PostHog + scroll tracking
+├── utils/
+│   └── analytics.ts              # Typed tracking helpers (use these!)
 └── pages/
-    └── *.astro                # Your pages using PostHogLayout
+    └── *.astro                   # Your pages using PostHogLayout
 ```
 
 ### Common Patterns
 - Wrap pages with PostHogLayout for analytics
 - Use PostHog's autocapture for basic interaction tracking
-- Implement custom events for business-specific actions
+- Use the typed helpers in `analytics.ts` for all custom events
 - Use feature flags for A/B testing and gradual rollouts

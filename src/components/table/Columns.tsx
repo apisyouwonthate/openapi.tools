@@ -16,7 +16,7 @@ export type ToolRowData = {
 };
 
 // Reusable version badge component
-export const VersionBadge = ({
+const VersionBadge = ({
   supported,
   version,
 }: {

@@ -1,6 +1,6 @@
 import { useSyncExternalStore } from 'react';
 
-export type Theme = 'light' | 'dark' | 'system';
+type Theme = 'light' | 'dark' | 'system';
 
 const THEME_CHANGE_EVENT = 'theme-change';
 

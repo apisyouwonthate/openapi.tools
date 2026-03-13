@@ -28,7 +28,6 @@ const Languages: React.FC<LanguagesProps> = ({ languages }) => {
 
   return (
     <section>
-      <h2 className="m-0 text-sm uppercase">Languages supported</h2>
       <ul className="m-0 flex list-none flex-row gap-2 p-0">
         {Object.keys(languages).map((language) => {
           const lowerLanguage = language.toLowerCase();

@@ -4,7 +4,10 @@ import { getCollection } from 'astro:content';
 import Link from '@/components/Link';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
-import { isSponsorshipActive } from '@/utils/sponsorship';
+import {
+  getActiveSponsorshipPeriod,
+  isSponsorshipActive,
+} from '@/utils/sponsorship';
 
 const title = 'Sponsor OpenAPI.tools';
 const description =
@@ -15,8 +18,8 @@ const allTools = await getCollection('tools');
 const activeSponsors = allTools
   .filter((tool) => isSponsorshipActive(tool.data))
   .sort((a, b) => {
-    const aDate = new Date(a.data.sponsorship![0].startDate);
-    const bDate = new Date(b.data.sponsorship![0].startDate);
+    const aDate = new Date(getActiveSponsorshipPeriod(a.data)!.startDate);
+    const bDate = new Date(getActiveSponsorshipPeriod(b.data)!.startDate);
     return aDate.getTime() - bDate.getTime();
   });
 
@@ -184,12 +187,12 @@ const uniqueSponsors = activeSponsors.filter((tool) => {
   </Layout>
 
   {/* Sponsor Page Visit Tracking */}
-  <script is:inline>
-    if (typeof window !== 'undefined' && window.posthog) {
-      window.posthog.capture('sponsorship_cta_click', {
-        cta_type: 'sponsor_page_visit',
-        source_page: document.referrer || 'direct',
-      });
-    }
+  <script>
+    import { trackSponsorshipCTA } from '@/utils/analytics';
+
+    trackSponsorshipCTA({
+      cta_type: 'sponsor_page_visit',
+      source_page: document.referrer || 'direct',
+    });
   </script>
 </PostHogLayout>

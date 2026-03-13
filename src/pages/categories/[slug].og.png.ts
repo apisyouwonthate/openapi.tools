@@ -1,19 +1,15 @@
-import React from 'react';
 import { getCollection, getEntry } from 'astro:content';
-import satori from 'satori';
 import { html } from 'satori-html';
-import sharp from 'sharp';
+
+import { renderOgImage } from '@/utils/og';
+
+export const prerender = false;
 
 type OgRouteParams = {
   params: {
     slug: string;
   };
 };
-
-export async function getStaticPaths() {
-  const categories = await getCollection('categories');
-  return categories.map((category) => ({ params: { slug: category.id } }));
-}
 
 export const GET = async ({ params }: OgRouteParams) => {
   const { slug } = params;
@@ -54,28 +50,5 @@ export const GET = async ({ params }: OgRouteParams) => {
     </div>
   </div>`);
 
-  const Roboto = await fetch(
-    'https://fonts.cdnfonts.com/s/19795/Inter-Regular.woff'
-  ).then((res) => res.arrayBuffer());
-
-  const svg = await satori(markup as React.ReactNode, {
-    fonts: [
-      {
-        name: 'Roboto',
-        data: Roboto,
-      },
-    ],
-    width: 1200,
-    height: 630,
-  });
-  const png = sharp(Buffer.from(svg)).png();
-  const response = await png.toBuffer();
-
-  return new Response(new Uint8Array(response), {
-    status: 200,
-    headers: {
-      'Content-Type': 'image/png',
-      'Cache-Control': 's-maxage=3600, stale-while-revalidate=86400',
-    },
-  });
+  return renderOgImage(markup);
 };

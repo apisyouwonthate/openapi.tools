@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 
-export type NavigationItem = {
+type NavigationItem = {
   title: string;
   description?: string;
   href: string;

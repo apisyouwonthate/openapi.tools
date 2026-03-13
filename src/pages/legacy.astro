@@ -167,7 +167,11 @@ for (const category of sortedCategories) {
                 {category.data.description}
               </p>
               <div class="w-full max-w-none">
-                <DataTable data={toolsData} columns={LegacyToolColumns} />
+                <DataTable
+                  data={toolsData}
+                  columns={LegacyToolColumns}
+                  caption={`${category.data.name} — ${toolsData.length} tools`}
+                />
               </div>
             </section>
           );
