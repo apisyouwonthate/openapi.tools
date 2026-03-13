@@ -18,8 +18,7 @@ import PostHog from '../components/PostHog.astro';
       const firedThresholds = new Set<number>();
 
       function getScrollPercent() {
-        const scrollTop =
-          window.scrollY || document.documentElement.scrollTop;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
         const scrollHeight =
           document.documentElement.scrollHeight -
           document.documentElement.clientHeight;

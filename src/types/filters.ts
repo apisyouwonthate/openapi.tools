@@ -3,4 +3,3 @@ export type LanguageOption = {
   label: string;
   count: number;
 };
-

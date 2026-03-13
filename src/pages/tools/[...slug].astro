@@ -254,11 +254,14 @@ const toolBadges = tool.data.badges
     id="tool-tracking-data"
     data-tool-slug={slug}
     data-tool-name={tool.data.name}
-    data-categories={JSON.stringify(categories.map((c) => c?.data.name).filter(Boolean))}
+    data-categories={JSON.stringify(
+      categories.map((c) => c?.data.name).filter(Boolean)
+    )}
     data-is-sponsored={isSponsorshipActive(tool.data)}
     data-oas-versions={JSON.stringify(tool.data.oasVersions || {})}
     hidden
-  ></div>
+  >
+  </div>
 
   <script>
     import { trackToolPageView } from '@/utils/analytics';

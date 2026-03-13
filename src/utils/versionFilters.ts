@@ -17,4 +17,3 @@ export function isLegacy(tool: Tool): boolean {
   const hasModernVersion = !!(v?.v3_2 || v?.v3_1);
   return hasLegacyVersion && !hasModernVersion;
 }
-

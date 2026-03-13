@@ -4,7 +4,10 @@ import { getCollection } from 'astro:content';
 import Link from '@/components/Link';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
-import { getActiveSponsorshipPeriod, isSponsorshipActive } from '@/utils/sponsorship';
+import {
+  getActiveSponsorshipPeriod,
+  isSponsorshipActive,
+} from '@/utils/sponsorship';
 
 const title = 'Sponsor OpenAPI.tools';
 const description =

@@ -6,7 +6,10 @@ import type { Tool } from 'src/content.config';
 const CACHE_DIR = join(process.cwd(), '.cache');
 const CACHE_FILE = join(CACHE_DIR, 'og-metadata.json');
 
-type OgCache = Record<string, { result: Record<string, unknown>; fetchedAt: string }>;
+type OgCache = Record<
+  string,
+  { result: Record<string, unknown>; fetchedAt: string }
+>;
 
 function loadCache(): OgCache {
   try {

@@ -4,7 +4,6 @@ import clsx from 'clsx';
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 
-
 type NavigationItem = {
   title: string;
   description?: string;
@@ -13,7 +12,7 @@ type NavigationItem = {
 
 export type NavigationCategory = {
   title: string;
-    links: NavigationItem[];
+  links: NavigationItem[];
 };
 
 export type NavigationItems = NavigationCategory[];

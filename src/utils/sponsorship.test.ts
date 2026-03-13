@@ -1,8 +1,10 @@
-import { describe, expect, it, vi, afterEach } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+
 import { getActiveSponsorshipPeriod, isSponsorshipActive } from './sponsorship';
 
-const tool = (sponsorship?: Parameters<typeof isSponsorshipActive>[0]['sponsorship']) =>
-  ({ sponsorship }) as Parameters<typeof isSponsorshipActive>[0];
+const tool = (
+  sponsorship?: Parameters<typeof isSponsorshipActive>[0]['sponsorship']
+) => ({ sponsorship }) as Parameters<typeof isSponsorshipActive>[0];
 
 const past = '2020-01-01T00:00:00Z';
 const future = '2099-01-01T00:00:00Z';
@@ -21,9 +23,7 @@ describe('isSponsorshipActive', () => {
   });
 
   it('returns true when a period has no endDate (open-ended)', () => {
-    expect(
-      isSponsorshipActive(tool([{ startDate: past }]))
-    ).toBe(true);
+    expect(isSponsorshipActive(tool([{ startDate: past }]))).toBe(true);
   });
 
   it('returns true when endDate is in the future', () => {
@@ -80,26 +80,28 @@ describe('getActiveSponsorshipPeriod', () => {
 
   it('returns the open-ended period', () => {
     const openEnded = { startDate: past };
-    expect(
-      getActiveSponsorshipPeriod(tool([openEnded]))
-    ).toEqual(openEnded);
+    expect(getActiveSponsorshipPeriod(tool([openEnded]))).toEqual(openEnded);
   });
 
   it('returns the active period, not an expired one', () => {
     const expired = { startDate: '2019-01-01', endDate: past };
-    const active = { startDate: past, endDate: future, url: 'https://example.com' };
+    const active = {
+      startDate: past,
+      endDate: future,
+      url: 'https://example.com',
+    };
 
-    expect(
-      getActiveSponsorshipPeriod(tool([expired, active]))
-    ).toEqual(active);
+    expect(getActiveSponsorshipPeriod(tool([expired, active]))).toEqual(active);
   });
 
   it('returns the first active period when multiple are active', () => {
-    const first = { startDate: past, endDate: future, url: 'https://first.com' };
+    const first = {
+      startDate: past,
+      endDate: future,
+      url: 'https://first.com',
+    };
     const second = { startDate: past, url: 'https://second.com' };
 
-    expect(
-      getActiveSponsorshipPeriod(tool([first, second]))
-    ).toEqual(first);
+    expect(getActiveSponsorshipPeriod(tool([first, second]))).toEqual(first);
   });
 });

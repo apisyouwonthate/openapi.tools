@@ -46,4 +46,3 @@ export const getActiveSponsorshipPeriod = (
   }
   return sponsorship.find(isActivePeriod) ?? null;
 };
-

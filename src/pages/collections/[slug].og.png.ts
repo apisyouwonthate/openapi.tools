@@ -1,8 +1,8 @@
 import { getCollection, getEntry } from 'astro:content';
 import { html } from 'satori-html';
 
-import { isLegacy } from '@/utils/versionFilters';
 import { renderOgImage } from '@/utils/og';
+import { isLegacy } from '@/utils/versionFilters';
 import type { CollectionFilters } from '@/content.config';
 
 export const prerender = false;
