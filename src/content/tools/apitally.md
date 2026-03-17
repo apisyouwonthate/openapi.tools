@@ -1,6 +1,6 @@
 ---
 name: Apitally
-description: Simple REST API monitoring tool that helps engineering and product teams understand their APIs. Tracks usage, errors, response times and more using middleware for Python and Node.js frameworks. Also offers uptime monitoring and logging of individual requests.
+description: A simple API monitoring and analytics tool that helps engineering teams understand API usage, monitor performance, and troubleshoot issues. Offers opinionated dashboards, request logs with traces, uptime monitoring and alerts. Integrates via lightweight SDKs for 20+ frameworks across Python, Node.js, Go, .NET and Java.
 categories:
   - monitoring
 link: https://apitally.io
@@ -11,5 +11,5 @@ oasVersions:
   v2: true
   v3: true
   v3_1: true
-  v3_2: false
+  v3_2: true
 ---
