@@ -69,7 +69,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.0",
     "globals": "^17.4.0",
-    "knip": "^5.86.0",
+    "knip": "^6.0.1",
     "open-graph-scraper": "^6.11.0",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",

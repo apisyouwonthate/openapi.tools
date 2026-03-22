@@ -73,6 +73,7 @@ function capture(event: string, properties: Record<string, unknown>): void {
 }
 
 // Event tracking functions
+/** @public used in Astro <script> tags which knip can't trace */
 export function trackToolPageView(props: ToolPageViewProps): void {
   capture('tool_page_view', props);
 }
