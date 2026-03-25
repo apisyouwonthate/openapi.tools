@@ -28,8 +28,5 @@ coverage/
 
 .turbo/
 
-# build cache
-.cache/
-
 # check errors
 .lint-check-errors.md

@@ -1,6 +1,6 @@
 ---
 name: Fitting
-description: Library add improve test log for RSpec and WebMock, validate its according to API Blueprint and Open API, show the documentation coverage with log.
+description: Library add improve test log for RSpec and WebMock, validate it according to API Blueprint and OpenAPI, show the documentation coverage with log.
 categories:
   - testing
   - data-validators
