@@ -54,15 +54,19 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
         </div>
         <div className="group relative">
           <h3 className="mt-3 text-lg leading-6 font-semibold text-gray-900 group-hover:text-gray-600">
-            <Link
-              href={url}
-              className="absolute inset-0 font-medium no-underline"
-              toolSlug={toolSlug}
-              linkType="featured_article"
-              linkPlacementDescription="featured-article-card"
-            >
-              {title}
-            </Link>
+            {url ? (
+              <Link
+                href={url}
+                className="font-medium no-underline after:absolute after:inset-0"
+                toolSlug={toolSlug}
+                linkType="featured_article"
+                linkPlacementDescription="featured-article-card"
+              >
+                {title}
+              </Link>
+            ) : (
+              <span className="font-medium">{title}</span>
+            )}
           </h3>
           <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
             {description}

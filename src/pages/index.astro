@@ -35,7 +35,7 @@ const sortedCategories = allCategories.sort((a, b) =>
       {
         sortedCategories.map((category) => (
           <QuickLink
-            href={`/categories/${category.id}`}
+            href={`/categories/${category.id.replace(/\.md$/, '')}`}
             title={category.data.name}
             body={category.data.description}
           />

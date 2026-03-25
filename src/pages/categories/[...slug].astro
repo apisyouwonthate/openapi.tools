@@ -23,23 +23,22 @@ import { isModern } from '@/utils/versionFilters';
 export const getStaticPaths: GetStaticPaths = async () => {
   const categories = await getCollection('categories');
   return categories.map((category) => ({
-    params: { slug: category.id },
+    params: { slug: category.id.replace(/\.md$/, '') },
     props: { category },
   }));
 };
 
 // 2. For your template, you can get the entry directly from the prop
-const { slug } = Astro.params;
-const category = await getEntry('categories', slug as string);
+const { category } = Astro.props;
 
 if (!category) {
-  throw new Error(`No category found for slug ${slug}`);
+  throw new Error(`No category found for slug ${Astro.params.slug}`);
 }
 
 const { Content } = await render(category);
 
-// Note: category.id includes .md extension, but tool category references don't
-const categoryIdWithoutExt = category.id.replace(/\.md$/, '');
+const slug = category.id.replace(/\.md$/, '');
+const categorySlug = slug; // For comparing with tool category references
 
 // Track if there are legacy tools in this category
 let hasLegacyTools = false;
@@ -55,7 +54,7 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   const categories = tool.data.categories;
   // Check if tool belongs to this category
   const isInCategory = categories.some(
-    (cat) => cat.id === categoryIdWithoutExt
+    (cat) => cat.id === categorySlug
   );
 
   if (!isInCategory) {
@@ -92,7 +91,7 @@ const tools = [...sponsoredTools, ...nonSponsoredTools];
 const toolsData = tools.map((tool) => ({
   category: category.data,
   tool: tool.data,
-  slug: tool.id,
+  slug: tool.id.replace(/\.md$/, ''),
 }));
 ---
 
@@ -130,7 +129,7 @@ const toolsData = tools.map((tool) => ({
           url: `https://openapi.tools/categories/${slug}`,
           tools: tools.map((t) => ({
             name: t.data.name,
-            url: `https://openapi.tools/tools/${t.id}`,
+            url: `https://openapi.tools/tools/${t.id.replace(/\.md$/, '')}`,
           })),
         })
       )}

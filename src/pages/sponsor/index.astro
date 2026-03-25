@@ -113,7 +113,7 @@ const uniqueSponsors = activeSponsors.filter((tool) => {
           <ul>
             {uniqueSponsors.map((tool) => (
               <li>
-                <Link href={`/tools/${tool.id}`}>{tool.data.name}</Link>
+                <Link href={`/tools/${tool.id.replace(/\.md$/, '')}`}>{tool.data.name}</Link>
                 {tool.data.description && ` - ${tool.data.description}`}
               </li>
             ))}

@@ -77,20 +77,21 @@ function filterTools(
 export const getStaticPaths: GetStaticPaths = async () => {
   const curatedCollections = await getCollection('curated-collections');
   return curatedCollections.map((collection) => ({
-    params: { slug: collection.id },
+    params: { slug: collection.id.replace(/\.md$/, '') },
     props: { collection },
   }));
 };
 
 // 2. Get the collection from props
-const { slug } = Astro.params;
-const collection = await getEntry('curated-collections', slug as string);
+const { collection } = Astro.props;
 
 if (!collection) {
-  throw new Error(`No collection found for slug ${slug}`);
+  throw new Error(`No collection found for slug ${Astro.params.slug}`);
 }
 
 const { Content } = await render(collection);
+
+const slug = collection.id.replace(/\.md$/, '');
 
 // 3. Get all tools and filter them based on collection filters
 const allTools = await getCollection('tools');
@@ -107,9 +108,9 @@ type CategoryWithTools = {
 
 const categoriesWithTools: CategoryWithTools[] = allCategories
   .map((category) => {
-    const categoryIdWithoutExt = category.id.replace(/\.md$/, '');
+    const categorySlug = category.id.replace(/\.md$/, '');
     const toolsInCategory = filteredTools.filter((tool) =>
-      tool.data.categories?.some((cat) => cat.id === categoryIdWithoutExt)
+      tool.data.categories?.some((cat) => cat.id === categorySlug)
     );
     return {
       category,
@@ -130,7 +131,7 @@ const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
   description: category.data.description,
   tools: tools.map((tool) => ({
     tool: tool.data,
-    slug: tool.id,
+    slug: tool.id.replace(/\.md$/, ''),
     category: category.data,
   })),
 }));
@@ -170,7 +171,7 @@ const categoryGroups = categoriesWithTools.map(({ category, tools }) => ({
           url: `https://openapi.tools/collections/${slug}`,
           tools: filteredTools.slice(0, 10).map((tool) => ({
             name: tool.data.name,
-            url: `https://openapi.tools/tools/${tool.id}`,
+            url: `https://openapi.tools/tools/${tool.id.replace(/\.md$/, '')}`,
           })),
         })
       )}

@@ -37,11 +37,11 @@ const sortedCategories = allCategories.sort((a, b) =>
 const toolsByCategory = new Map<string, typeof legacyTools>();
 
 for (const category of sortedCategories) {
-  const categoryIdWithoutExt = category.id.replace(/\.md$/, '');
+  const categorySlug = category.id.replace(/\.md$/, '');
   const categoryTools = legacyTools
     .filter((tool) => {
       const categories = tool.data.categories;
-      return categories.some((cat) => cat.id === categoryIdWithoutExt);
+      return categories.some((cat) => cat.id === categorySlug);
     })
     // Sort by active sponsors first, then alphabetically
     .sort((a, b) => {
@@ -90,7 +90,7 @@ for (const category of sortedCategories) {
           url: 'https://openapi.tools/legacy',
           tools: legacyTools.slice(0, 10).map((t) => ({
             name: t.data.name,
-            url: `https://openapi.tools/tools/${t.id}`,
+            url: `https://openapi.tools/tools/${t.id.replace(/\.md$/, '')}`,
           })),
         })
       )}
@@ -150,7 +150,7 @@ for (const category of sortedCategories) {
           const toolsData = tools.map((tool) => ({
             category: category.data,
             tool: tool.data,
-            slug: tool.id,
+            slug: tool.id.replace(/\.md$/, ''),
           }));
 
           return (

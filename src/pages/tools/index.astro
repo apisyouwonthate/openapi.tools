@@ -36,7 +36,7 @@ const nonSponsoredTools = modernTools
 const tools = [...sponsoredTools, ...nonSponsoredTools];
 const toolsData = tools.map((tool) => ({
   tool: tool.data,
-  slug: tool.id,
+  slug: tool.id.replace(/\.md$/, ''),
 }));
 
 const title = 'All Tools';
@@ -67,7 +67,7 @@ const description = 'Browse all OpenAPI tools that support modern OpenAPI.';
           url: 'https://openapi.tools/tools',
           tools: tools.map((t) => ({
             name: t.data.name,
-            url: `https://openapi.tools/tools/${t.id}`,
+            url: `https://openapi.tools/tools/${t.id.replace(/\.md$/, '')}`,
           })),
         })
       )}
