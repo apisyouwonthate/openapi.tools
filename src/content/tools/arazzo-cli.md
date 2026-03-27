@@ -1,15 +1,15 @@
 ---
-name: 'arazzo-cli'
-description: 'Standalone Arazzo 1.0 workflow executor with runtime engine, debugger, and MCP server for AI agent integration.'
+name: arazzo-cli
+description: Standalone Arazzo 1.0 workflow executor with runtime engine, debugger, and MCP server for AI agent integration.
 categories:
   - testing
   - mcp
-languages: { 'Rust': true }
-link: 'https://github.com/strefethen/arazzo-cli'
-repo: 'https://github.com/strefethen/arazzo-cli'
+link: https://github.com/strefethen/arazzo-cli
+languages:
+  cli: true
+repo: https://github.com/strefethen/arazzo-cli
 oaiSpecs:
   oas: true
-  overlays: false
   arazzo: true
 oasVersions:
   v2: false
