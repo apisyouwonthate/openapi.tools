@@ -4,6 +4,7 @@ description: Standalone Arazzo 1.0 workflow executor with runtime engine, debugg
 categories:
   - testing
   - mcp
+  - data-validators
 link: https://github.com/strefethen/arazzo-cli
 languages:
   cli: true
