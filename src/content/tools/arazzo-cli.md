@@ -5,7 +5,7 @@ categories:
   - testing
   - mcp
   - data-validators
-link: https://github.com/strefethen/arazzo-cli
+link: https://strefethen.github.io/arazzo-cli/
 languages:
   cli: true
 repo: https://github.com/strefethen/arazzo-cli
