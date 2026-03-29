@@ -1,5 +1,5 @@
 ---
-import type { GetStaticPaths } from 'astro';
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
 import { getCollection, render } from 'astro:content';
 
 import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
@@ -20,13 +20,15 @@ import {
 import { isModern } from '@/utils/versionFilters';
 
 // 1. Generate a new path for every collection entry
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = (async () => {
   const categories = await getCollection('categories');
   return categories.map((category) => ({
     params: { slug: category.id.replace(/\.md$/, '') },
     props: { category },
   }));
-};
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 // 2. For your template, you can get the entry directly from the prop
 const { category } = Astro.props;
