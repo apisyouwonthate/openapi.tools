@@ -34,12 +34,16 @@ arazzo-cli executes Arazzo 1.0 API workflow specifications — chained, multi-st
 ## Usage
 
 \`\`\`bash
+
 # Validate a spec
+
 arazzo-cli validate my-workflow.arazzo.yaml
 
 # Run a workflow
+
 arazzo-cli run my-workflow.arazzo.yaml workflow-id -i key=value
 
 # Generate workflows from OpenAPI
+
 arazzo-cli generate --spec petstore.openapi.yaml
 \`\`\`
