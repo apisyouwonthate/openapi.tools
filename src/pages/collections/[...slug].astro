@@ -1,6 +1,6 @@
 ---
-import type { GetStaticPaths } from 'astro';
-import { getCollection, getEntry, render } from 'astro:content';
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
+import { getCollection, render } from 'astro:content';
 
 import { FilterableCollectionView } from '@/components/filters/FilterableCollectionView';
 import PageHeader from '@/components/PageHeader.astro';
@@ -74,13 +74,15 @@ function filterTools(
 }
 
 // 1. Generate a new path for every collection entry
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = (async () => {
   const curatedCollections = await getCollection('curated-collections');
   return curatedCollections.map((collection) => ({
     params: { slug: collection.id.replace(/\.md$/, '') },
     props: { collection },
   }));
-};
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 // 2. Get the collection from props
 const { collection } = Astro.props;

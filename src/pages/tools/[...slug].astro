@@ -1,5 +1,5 @@
 ---
-import type { GetStaticPaths } from 'astro';
+import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
 import { getCollection, getEntry, render } from 'astro:content';
 
 import Badge from '@/components/Badge';
@@ -22,13 +22,15 @@ import {
 } from '@/utils/structuredData';
 
 // 1. Generate a new path for every collection entry
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = (async () => {
   const tools = await getCollection('tools');
   return tools.map((tool) => ({
     params: { slug: tool.id.replace(/\.md$/, '') },
     props: { tool },
   }));
-};
+}) satisfies GetStaticPaths;
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 // 2. For your template, you can get the entry directly from the prop
 const { tool } = Astro.props;
