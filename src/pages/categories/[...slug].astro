@@ -53,9 +53,7 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   }
   const categories = tool.data.categories;
   // Check if tool belongs to this category
-  const isInCategory = categories.some(
-    (cat) => cat.id === categorySlug
-  );
+  const isInCategory = categories.some((cat) => cat.id === categorySlug);
 
   if (!isInCategory) {
     return false;
