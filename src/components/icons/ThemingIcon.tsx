@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { DarkMode } from './DarkMode';
 import { Gradient } from './Gradient';
 import { LightMode } from './LightMode';

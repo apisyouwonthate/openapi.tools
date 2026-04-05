@@ -1,6 +1,5 @@
-import React from 'react';
 import type { OgObject } from 'node_modules/open-graph-scraper/types/lib/types';
-
+import React from 'react';
 import Link from './Link';
 
 type FeaturedArticle = {

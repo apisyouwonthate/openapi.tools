@@ -1,7 +1,7 @@
+import type { Tool } from 'src/content.config';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import ogs from 'open-graph-scraper';
-import type { Tool } from 'src/content.config';
 
 const CACHE_DIR = join(process.cwd(), '.cache');
 const CACHE_FILE = join(CACHE_DIR, 'og-metadata.json');

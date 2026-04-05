@@ -7,7 +7,6 @@ import {
   ListboxOptions,
 } from '@headlessui/react';
 import clsx from 'clsx';
-
 import { useTheme } from '@/hooks/useTheme';
 import { DarkIcon } from './icons/DarkIcon';
 import { LightIcon } from './icons/LightIcon';

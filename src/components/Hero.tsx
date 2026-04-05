@@ -6,7 +6,6 @@ import {
   type RenderProps,
   type Token,
 } from 'prism-react-renderer';
-
 import { Button } from './Button';
 import { HeroBackground } from './HeroBackground';
 import { GitHubIcon } from './icons/GitHubIcon';
