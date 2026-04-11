@@ -1,5 +1,4 @@
 import React from 'react';
-
 import CLIIcon from '@/components/icons/CLIIcon';
 import SaaSIcon from '@/components/icons/SaaSIcon';
 import WebIcon from '@/components/icons/WebIcon';

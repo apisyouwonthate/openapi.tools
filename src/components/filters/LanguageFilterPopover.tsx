@@ -1,5 +1,5 @@
 import { Check, ChevronsUpDown } from 'lucide-react';
-
+import type { LanguageOption } from '@/types/filters';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -16,7 +16,6 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
-import type { LanguageOption } from '@/types/filters';
 
 type FilterPopoverProps = {
   title: string;

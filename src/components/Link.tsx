@@ -1,6 +1,5 @@
-import React from 'react';
 import type { Category } from 'src/content.config';
-
+import React from 'react';
 import { trackOutboundClick } from '@/utils/analytics';
 import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
 

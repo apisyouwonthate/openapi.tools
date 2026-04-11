@@ -51,9 +51,9 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      # Check formatting with Prettier
+      # Check formatting with Oxfmt
       - name: Check formatting
-        run: pnpm prettier
+        run: pnpm fmt:check
 
       # Check for type and other errors
       - name: Type and error check

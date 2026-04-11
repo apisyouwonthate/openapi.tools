@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 

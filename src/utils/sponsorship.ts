@@ -1,5 +1,5 @@
-import { isAfter } from 'date-fns';
 import type { Tool } from 'src/content.config';
+import { isAfter } from 'date-fns';
 
 type SponsorshipPeriod = {
   startDate: Date | string;
