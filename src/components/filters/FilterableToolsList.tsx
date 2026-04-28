@@ -1,18 +1,17 @@
 import { useCallback, useMemo } from 'react';
 import { X } from 'lucide-react';
-
 import type { ToolRowData } from '@/components/table/Columns';
 import { DataTable } from '@/components/table/DataTable';
 import { ToolColumns } from '@/components/table/ToolColumns';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import { trackFilterApplied } from '@/utils/analytics';
 import {
   extractLanguages,
   extractPlatforms,
   filterToolsByLanguages,
 } from '@/utils/languageUtils';
-import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import { FilterPopover } from './LanguageFilterPopover';
 
 type FilterableToolsListProps = {

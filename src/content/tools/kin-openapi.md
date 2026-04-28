@@ -1,6 +1,6 @@
 ---
 name: kin-openapi
-description: OpenAPI 3.0 (and Swagger v2) implementation for Go (parsing, converting, validation, and more)
+description: OpenAPI implementation for Go (parsing, converting, validation, and more.)
 categories:
   - parsers
   - data-validators
@@ -10,6 +10,6 @@ repo: https://github.com/getkin/kin-openapi
 oasVersions:
   v2: true
   v3: true
-  v3_1: false
+  v3_1: true
   v3_2: false
 ---

@@ -1,6 +1,5 @@
 import { getCollection, getEntry } from 'astro:content';
 import { html } from 'satori-html';
-
 import { renderOgImage } from '@/utils/og';
 
 export const prerender = false;

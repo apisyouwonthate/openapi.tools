@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import { clsxm } from '@/utils/clsxm';
 
 const Table = React.forwardRef<

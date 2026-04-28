@@ -15,6 +15,8 @@ const config: KnipConfig = {
     '@radix-ui/react-scroll-area',
     'framer-motion',
     'posthog-js',
+    'eslint-plugin-astro',
+    'globals',
   ],
 
   // Icon and UI components re-export named + default — this is intentional

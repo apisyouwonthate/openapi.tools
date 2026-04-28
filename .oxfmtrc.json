@@ -1,0 +1,50 @@
+{
+  "trailingComma": "es5",
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "tabWidth": 2,
+  "printWidth": 80,
+  "sortImports": {
+    "customGroups": [
+      {
+        "groupName": "react",
+        "elementNamePattern": [
+          "react",
+          "react-dom",
+          "react-native",
+          "next",
+          "expo",
+          "expo-*"
+        ]
+      }
+    ],
+    "groups": [
+      "type-import",
+      "react",
+      ["value-builtin", "value-external"],
+      "type-internal",
+      "value-internal",
+      ["type-parent", "type-sibling", "type-index"],
+      ["value-parent", "value-sibling", "value-index"],
+      "unknown"
+    ],
+    "newlinesBetween": false
+  },
+  "sortTailwindcss": {},
+  "sortPackageJson": false,
+  "ignorePatterns": [
+    "pnpm-lock.yaml",
+    "package-lock.json",
+    "yarn.lock",
+    "node_modules/",
+    "dist/",
+    "_site/",
+    ".astro/",
+    ".netlify/",
+    ".turbo/",
+    "*.log",
+    ".DS_Store",
+    ".github/CODEOWNERS"
+  ]
+}

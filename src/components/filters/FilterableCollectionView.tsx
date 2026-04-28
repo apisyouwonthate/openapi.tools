@@ -1,17 +1,16 @@
 import { useMemo } from 'react';
 import { X } from 'lucide-react';
-
-import { CollectionToolColumns } from '@/components/table/CollectionToolColumns';
 import type { ToolRowData } from '@/components/table/Columns';
+import { CollectionToolColumns } from '@/components/table/CollectionToolColumns';
 import { DataTable } from '@/components/table/DataTable';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import {
   extractLanguages,
   extractPlatforms,
   filterToolsByLanguages,
 } from '@/utils/languageUtils';
-import { useLanguageFilter } from '@/hooks/useLanguageFilter';
 import { FilterPopover } from './LanguageFilterPopover';
 
 type CategoryGroup = {

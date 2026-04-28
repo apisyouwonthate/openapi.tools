@@ -1,7 +1,6 @@
-import { type ColumnDef } from '@tanstack/react-table';
 import type { Category, Tool } from 'src/content.config';
+import { type ColumnDef } from '@tanstack/react-table';
 import { isSponsorshipActive } from 'src/utils/sponsorship';
-
 import { getDeviconClassName } from '@/utils/languageUtils';
 import Badge from '../Badge';
 import RepoIcon from '../icons/RepoIcon';

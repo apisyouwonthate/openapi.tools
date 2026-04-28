@@ -1,0 +1,58 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "react", "unicorn"],
+  "jsPlugins": ["eslint-plugin-astro"],
+  "env": {
+    "builtin": true,
+    "browser": true,
+    "node": true,
+    "es2024": true
+  },
+  "ignorePatterns": [
+    "**/*.config.js",
+    "**/*.config.cjs",
+    "**/*.config.mjs",
+    "eslint.config.mjs",
+    "pnpm-lock.yaml",
+    "**/*.d.ts",
+    "dist/**",
+    ".astro/**",
+    ".netlify/**",
+    ".vercel/**",
+    "_site/**",
+    "node_modules/**",
+    "scripts/**"
+  ],
+  "rules": {
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "warn",
+    "typescript/explicit-function-return-type": "off",
+    "typescript/no-explicit-any": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.astro"],
+      "env": {
+        "astro": true,
+        "browser": true,
+        "node": true
+      }
+    },
+    {
+      "files": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
+      "rules": {
+        "no-var": "error",
+        "prefer-const": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error"
+      }
+    }
+  ]
+}

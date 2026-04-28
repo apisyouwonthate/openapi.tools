@@ -24,7 +24,7 @@ jobs:
 
       # Install pnpm (version from package.json packageManager field)
       - name: Install pnpm
-        uses: pnpm/action-setup@v5
+        uses: pnpm/action-setup@v6
 
       # Cache pnpm modules
       - name: Cache pnpm modules
@@ -51,9 +51,9 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      # Check formatting with Prettier
+      # Check formatting with Oxfmt
       - name: Check formatting
-        run: pnpm prettier
+        run: pnpm fmt:check
 
       # Check for type and other errors
       - name: Type and error check

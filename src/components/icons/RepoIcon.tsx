@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-
 import GitHubIcon from './GitHubIcon';
 import GitIcon from './GitIcon';
 import GitLabIcon from './GitLabIcon';

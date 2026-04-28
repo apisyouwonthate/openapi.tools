@@ -1,6 +1,5 @@
 import React, { Suspense, useCallback, useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
-
 import type { NavigationProps } from '@/layouts/Layout.astro';
 import Link from './Link';
 import { Logomark } from './Logo';
