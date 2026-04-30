@@ -1,0 +1,15 @@
+---
+name: VSCode Simple OpenAPI Viewer
+description: Quick preview OpenAPI documents in Visual Studio Code & its forks.
+categories:
+  - docs
+link: https://marketplace.visualstudio.com/items?itemName=RahulDhole.simple-openapi-viewer
+languages:
+  yaml: true
+repo: https://github.com/rahuldhole/simple-openapi-viewer
+oasVersions:
+  v2: true
+  v3: true
+  v3_1: true
+  v3_2: true
+---
