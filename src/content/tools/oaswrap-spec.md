@@ -1,6 +1,6 @@
 ---
 name: oaswrap/spec
-description: A lightweight, framework-agnostic OpenAPI 3.x specification builder for Go that generates API docs programmatically using pure Go code without annotations.
+description: Code-first, framework-agnostic OpenAPI 3.x spec builder for Go. Generate docs from route registrations and Go structs — no annotations, no vendor lock-in.
 categories:
   - openapi-aware-frameworks
 link: https://oaswrap.github.io/docs/spec/introduction
@@ -11,5 +11,7 @@ oasVersions:
   v2: false
   v3: true
   v3_1: true
-  v3_2: false
+  v3_2: true
+badges:
+  - oas-v32-early
 ---
