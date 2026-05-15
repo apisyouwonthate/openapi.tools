@@ -26,8 +26,7 @@ Highlights:
 - Supports both Swagger 2.0 and OpenAPI 3.x
 - Prefix-scoped registration (`/swagger-tools:list-prefixes`, `/swagger-tools:remove-prefix`)
 - Auth helper for token endpoints (`/swagger-tools:auth`)
-- Install from npm:  
-
+- Install from npm:
 
 ```bash
 pi install npm:pi-openapi-tools
