@@ -14,19 +14,3 @@ oasVersions:
   v3_1: true
   v3_2: false
 ---
-
-## Overview
-
-pi-openapi-tools is a Pi extension that loads an OpenAPI/Swagger spec URL and dynamically registers executable tools for each operation.
-
-## Highlights:
-
-- Runtime generation of tools from API operations
-- Supports both Swagger 2.0 and OpenAPI 3.x
-- Prefix-scoped registration (`/swagger-tools:list-prefixes`, `/swagger-tools:remove-prefix`)
-- Auth helper for token endpoints (`/swagger-tools:auth`)
-- Install from npm:
-
-```bash
-pi install npm:pi-openapi-tools
-```
