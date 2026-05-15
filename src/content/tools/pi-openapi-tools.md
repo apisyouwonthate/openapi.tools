@@ -30,31 +30,3 @@ pi-openapi-tools is a Pi extension that loads an OpenAPI/Swagger spec URL and dy
 ```bash
 pi install npm:pi-openapi-tools
 ```
-
-```
-
-Repository: https://github.com/gtesei/pi-openapi-tools
-
-```
-
-Click **Commit changes**.
-
----
-
-## 4) Open Pull Request
-
-After commit, click **Contribute → Open pull request**.
-
-### PR title
-
-`Add pi-openapi-tools`
-
-### PR body (paste)
-
-```md
-Adds `pi-openapi-tools`, a TypeScript Pi extension that turns OpenAPI/Swagger operations into runtime LLM tools.
-
-- npm: https://www.npmjs.com/package/pi-openapi-tools
-- repo: https://github.com/gtesei/pi-openapi-tools
-- supports Swagger 2.0 and OpenAPI 3.x
-```
