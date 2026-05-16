@@ -5341,8 +5341,8 @@ packages:
     peerDependencies:
       postcss: ^8.2.9
 
-  postcss@8.5.9:
-    resolution: {integrity: sha512-7a70Nsot+EMX9fFU3064K/kdHWZqGVY+BADLyXc8Dfv+mTLLVl6JzJpPaCZ2kQL9gIJvKXSLMHhqdRRjwQeFtw==}
+  postcss@8.5.14:
+    resolution: {integrity: sha512-SoSL4+OSEtR99LHFZQiJLkT59C5B1amGO1NzTwj7TT1qCUgUO6hxOvzkOYxD+vMrXBM3XJIKzokoERdqQq/Zmg==}
     engines: {node: ^10 || ^12 || >=14}
 
   posthog-js@1.367.0:
@@ -9294,7 +9294,7 @@ snapshots:
       '@vue/shared': 3.5.32
       estree-walker: 2.0.2
       magic-string: 0.30.21
-      postcss: 8.5.9
+      postcss: 8.5.14
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.32':
@@ -10002,11 +10002,11 @@ snapshots:
     dependencies:
       node-source-walk: 7.0.1
 
-  detective-postcss@7.0.1(postcss@8.5.9):
+  detective-postcss@7.0.1(postcss@8.5.14):
     dependencies:
       is-url: 1.2.4
-      postcss: 8.5.9
-      postcss-values-parser: 6.0.2(postcss@8.5.9)
+      postcss: 8.5.14
+      postcss-values-parser: 6.0.2(postcss@8.5.14)
 
   detective-sass@6.0.1:
     dependencies:
@@ -10340,7 +10340,7 @@ snapshots:
       eslint: 10.1.0(jiti@2.6.1)
       eslint-compat-utils: 0.6.5(eslint@10.1.0(jiti@2.6.1))
       globals: 16.5.0
-      postcss: 8.5.9
+      postcss: 8.5.14
       postcss-selector-parser: 7.1.1
     transitivePeerDependencies:
       - supports-color
@@ -12148,14 +12148,14 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss-values-parser@6.0.2(postcss@8.5.9):
+  postcss-values-parser@6.0.2(postcss@8.5.14):
     dependencies:
       color-name: 1.1.4
       is-url-superb: 4.0.0
-      postcss: 8.5.9
+      postcss: 8.5.14
       quote-unquote: 1.0.0
 
-  postcss@8.5.9:
+  postcss@8.5.14:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -12186,7 +12186,7 @@ snapshots:
       detective-amd: 6.0.1
       detective-cjs: 6.1.0
       detective-es6: 5.0.1
-      detective-postcss: 7.0.1(postcss@8.5.9)
+      detective-postcss: 7.0.1(postcss@8.5.14)
       detective-sass: 6.0.1
       detective-scss: 5.0.1
       detective-stylus: 5.0.1
@@ -12194,7 +12194,7 @@ snapshots:
       detective-vue2: 2.2.0(typescript@5.9.3)
       module-definition: 6.0.1
       node-source-walk: 7.0.1
-      postcss: 8.5.9
+      postcss: 8.5.14
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
@@ -13208,7 +13208,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
-      postcss: 8.5.9
+      postcss: 8.5.14
       rollup: 4.59.1
       tinyglobby: 0.2.15
     optionalDependencies:
@@ -13223,7 +13223,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.9
+      postcss: 8.5.14
       rollup: 4.60.1
       tinyglobby: 0.2.16
     optionalDependencies:
