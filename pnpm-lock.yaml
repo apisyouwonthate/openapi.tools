@@ -5871,8 +5871,8 @@ packages:
   undici-types@7.19.2:
     resolution: {integrity: sha512-qYVnV5OEm2AW8cJMCpdV20CDyaN3g0AjDlOGf1OW4iaDEx8MwdtChUp4zu4H0VP3nDRF/8RKWH+IPp9uW0YGZg==}
 
-  undici@7.16.0:
-    resolution: {integrity: sha512-QEg3HPMll0o3t2ourKwOeUAZ159Kn9mx5pnzHRQO8+Wixmh88YdZRiIwat0iNzNNXn0yoEtXJqFpyW7eM8BV7g==}
+  undici@7.25.0:
+    resolution: {integrity: sha512-xXnp4kTyor2Zq+J1FfPI6Eq3ew5h6Vl0F/8d9XU5zZQf1tX9s2Su1/3PiMmUANFULpmksxkClamIZcaUqryHsQ==}
     engines: {node: '>=20.18.1'}
 
   unicode-trie@2.0.0:
@@ -9482,7 +9482,7 @@ snapshots:
       parse5: 7.3.0
       parse5-htmlparser2-tree-adapter: 7.1.0
       parse5-parser-stream: 7.1.2
-      undici: 7.16.0
+      undici: 7.25.0
       whatwg-mimetype: 4.0.0
 
   chokidar@4.0.3:
@@ -11599,7 +11599,7 @@ snapshots:
       chardet: 2.1.1
       cheerio: 1.1.2
       iconv-lite: 0.7.1
-      undici: 7.16.0
+      undici: 7.25.0
 
   optionator@0.9.4:
     dependencies:
@@ -12729,7 +12729,7 @@ snapshots:
 
   undici-types@7.19.2: {}
 
-  undici@7.16.0: {}
+  undici@7.25.0: {}
 
   unicode-trie@2.0.0:
     dependencies:
