@@ -1,0 +1,11 @@
+engineStrict: true
+
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: false
+  esbuild: true
+  protobufjs: false
+  sharp: true
+
+# 48 hours, in minutes.
+minimumReleaseAge: 2880

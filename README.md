@@ -37,6 +37,17 @@ OpenAPI.tools is maintained by [APIs You Won't Hate](https://apisyouwonthate.com
 - [Tailwind CSS](https://tailwindcss.com) — Styling
 - [Netlify](https://netlify.com) — Hosting
 
+## Development
+
+Run this first:
+
+```sh
+corepack enable
+pnpm install
+```
+
+Use Node.js 24 with this project. pnpm uses the package manager version pinned in `package.json`.
+
 ## License
 
 MIT

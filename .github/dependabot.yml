@@ -5,6 +5,8 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    cooldown:
+      default-days: 2
     open-pull-requests-limit: 10
     labels:
       - 'dependencies'
