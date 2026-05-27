@@ -10,7 +10,13 @@ link: https://counterfact.dev
 languages:
   typescript: true
   nodejs: true
-repo: https://github.com/@coutnerfact/api-simulator
+repo: https://github.com/counterfact/api-simulator
+oaiSpecs:
+  oas: true
+  overlays: true
+badges:
+  - oas-v32-early
+  - overlays-pioneer
 oasVersions:
   v2: true
   v3: true
