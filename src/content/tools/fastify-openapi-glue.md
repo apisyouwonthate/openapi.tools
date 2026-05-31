@@ -12,7 +12,7 @@ oasVersions:
   v3_1: true
   v3_2: false
 featuredArticles:
-  - title: 'Which of Fastify's many OpenAPI plugins are the best?'
+  - title: "Which of Fastify's many OpenAPI plugins are the best?"
     url: https://apisyouwonthate.com/blog/fastifys-openapi-plugins-which-are-best/
     date: 2026-05-15
 ---
