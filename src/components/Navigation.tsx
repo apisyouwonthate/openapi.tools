@@ -9,7 +9,7 @@ type NavigationItem = {
   href: string;
 };
 
-export type NavigationCategory = {
+type NavigationCategory = {
   title: string;
   links: NavigationItem[];
 };
