@@ -1,7 +1,7 @@
-import React from "react";
-import clsx from "clsx";
-import type { NavigationProps } from "@/layouts/Layout.astro";
-import Link from "./Link";
+import React from 'react';
+import clsx from 'clsx';
+import type { NavigationProps } from '@/layouts/Layout.astro';
+import Link from './Link';
 
 type NavigationItem = {
   title: string;
@@ -20,7 +20,7 @@ export function Navigation({
   className,
   onLinkClick,
   categories,
-  currentUrl = new URL("/"),
+  currentUrl = new URL('/'),
 }: NavigationProps & {
   className?: string;
   onLinkClick?: React.MouseEventHandler<HTMLAnchorElement>;
@@ -28,11 +28,11 @@ export function Navigation({
   const { pathname } = currentUrl;
 
   const linkStandardColors =
-    "text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300";
+    'text-slate-500 before:hidden before:bg-slate-300 hover:text-slate-600 hover:before:block dark:text-slate-400 dark:before:bg-slate-700 dark:hover:text-slate-300';
 
   return (
     <>
-      <nav className={clsx("text-base lg:text-sm", className)}>
+      <nav className={clsx('text-base lg:text-sm', className)}>
         <ul className="space-y-9">
           {categories?.map((category) => (
             <li key={category.title}>
@@ -51,10 +51,10 @@ export function Navigation({
                       onClick={onLinkClick}
                       data-astro-prefetch
                       className={clsx(
-                        "block w-full pl-3.5 before:pointer-events-none before:absolute before:top-1/2 before:-left-1 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full",
+                        'block w-full pl-3.5 before:pointer-events-none before:absolute before:top-1/2 before:-left-1 before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full',
                         link.href === pathname
-                          ? "font-semibold text-emerald-500 before:bg-emerald-500"
-                          : linkStandardColors,
+                          ? 'font-semibold text-emerald-500 before:bg-emerald-500'
+                          : linkStandardColors
                       )}
                     >
                       {link.title}
@@ -68,7 +68,7 @@ export function Navigation({
 
         <footer className="mt-6 flex flex-col gap-2 text-slate-500 dark:text-slate-400">
           <div>
-            &copy; {new Date().getFullYear()}{" "}
+            &copy; {new Date().getFullYear()}{' '}
             <Link
               className="font-semibold hover:text-green-700 hover:underline"
               href="https://apisyouwonthate.com"
@@ -79,7 +79,7 @@ export function Navigation({
           </div>
 
           <div>
-            Get in touch to{" "}
+            Get in touch to{' '}
             <Link
               className="font-medium text-emerald-600 hover:underline"
               href="/sponsor"
@@ -90,7 +90,7 @@ export function Navigation({
           </div>
 
           <div>
-            This site is{" "}
+            This site is{' '}
             <Link
               className="font-medium text-emerald-600 hover:underline"
               href="https://github.com/apisyouwonthate/openapi.tools"
@@ -98,14 +98,14 @@ export function Navigation({
             >
               community-driven and OSS
             </Link>
-            , built with{" "}
+            , built with{' '}
             <Link
               href="https://astro.build"
               className="font-medium text-emerald-600 hover:underline"
             >
               Astro
-            </Link>{" "}
-            and hosted on{" "}
+            </Link>{' '}
+            and hosted on{' '}
             <Link
               href="https://www.netlify.com"
               className="font-medium text-emerald-600 hover:underline"
