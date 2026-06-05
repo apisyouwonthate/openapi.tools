@@ -13,7 +13,7 @@ oasVersions:
   v3_1: false
   v3_2: false
 featuredArticles:
-  - title: "How to generate OpenAPI with Elysia"
+  - title: 'How to generate OpenAPI with Elysia'
     url: https://www.speakeasy.com/openapi/frameworks/elysia
     date: 2026-06-01
 ---
