@@ -8994,7 +8994,7 @@ snapshots:
       espree: 10.4.0
       fast-glob: 3.3.3
       is-glob: 4.0.3
-      semver: 7.8.4
+      semver: 7.8.5
     transitivePeerDependencies:
       - supports-color
 
@@ -9835,7 +9835,7 @@ snapshots:
   eslint-compat-utils@0.6.5(eslint@10.1.0(jiti@2.7.0)):
     dependencies:
       eslint: 10.1.0(jiti@2.7.0)
-      semver: 7.8.4
+      semver: 7.8.5
 
   eslint-plugin-astro@1.7.0(eslint@10.1.0(jiti@2.7.0)):
     dependencies:
