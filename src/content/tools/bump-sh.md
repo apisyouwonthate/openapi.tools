@@ -12,6 +12,7 @@ repo: https://github.com/bump-sh/cli
 oaiSpecs:
   oas: true
   overlays: true
+  arazzo: true
 oasVersions:
   v2: true
   v3: true
