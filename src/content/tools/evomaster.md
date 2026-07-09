@@ -12,7 +12,7 @@ languages:
 repo: https://github.com/WebFuzzing/EvoMaster
 oaiSpecs:
   oas: true
-  overlays: false
+  overlays: true
   arazzo: false
 oasVersions:
   v2: true
