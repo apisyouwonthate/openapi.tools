@@ -9,3 +9,7 @@ allowBuilds:
 
 # 48 hours, in minutes.
 minimumReleaseAge: 2880
+
+minimumReleaseAgeExclude:
+  - astro-eslint-parser@3.0.0
+  - eslint-plugin-astro@3.0.0
