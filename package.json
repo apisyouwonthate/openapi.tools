@@ -61,7 +61,7 @@
     "@tailwindcss/vite": "^4.3.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.0",
-    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-astro": "^2.1.1",
     "globals": "^17.7.0",
     "knip": "^6.25.0",
     "open-graph-scraper": "^6.12.0",
