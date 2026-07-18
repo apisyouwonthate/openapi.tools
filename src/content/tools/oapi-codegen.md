@@ -11,6 +11,6 @@ repo: https://github.com/deepmap/oapi-codegen
 oasVersions:
   v2: false
   v3: true
-  v3_1: false
+  v3_1: true
   v3_2: false
 ---
