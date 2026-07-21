@@ -1,9 +1,9 @@
 {
-  "name": "astro",
+  "name": "openapi.tools",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
-    "node": "24",
+    "node": "26",
     "pnpm": "^11.1.2"
   },
   "packageManager": "pnpm@11.1.2",

@@ -1,16 +1,12 @@
 ---
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro';
 import { getCollection, render } from 'astro:content';
-
+import { Category } from '@/content.config';
 import { FilterableToolsList } from '@/components/filters/FilterableToolsList';
 import Link from '@/components/Link';
 import PageHeader from '@/components/PageHeader.astro';
 import Layout from '@/layouts/Layout.astro';
 import PostHogLayout from '@/layouts/PostHogLayout.astro';
-import {
-  getActiveSponsorshipPeriod,
-  isSponsorshipActive,
-} from '@/utils/sponsorship';
 import {
   createBreadcrumbSchema,
   createCollectionPageSchema,
@@ -18,6 +14,7 @@ import {
   serializeSchema,
 } from '@/utils/structuredData';
 import { isModern } from '@/utils/versionFilters';
+import CategorySponsorBanner from '@/components/CategorySponsorBanner.astro';
 
 // 1. Generate a new path for every collection entry
 export const getStaticPaths = (async () => {
@@ -46,18 +43,13 @@ const categorySlug = slug; // For comparing with tool category references
 let hasLegacyTools = false;
 
 const allTools = (await getCollection('tools')).filter((tool) => {
-  if (!tool.data.categories) {
+  // Make sure it has a category, and its this one.
+  if (!tool.data.categories?.some((cat: Category) => cat.id === categorySlug)) {
     return false;
   }
+  
   // Exclude tools where oaiSpecs.oas === false (non-OAS tools)
   if (tool.data.oaiSpecs?.oas === false) {
-    return false;
-  }
-  const categories = tool.data.categories;
-  // Check if tool belongs to this category
-  const isInCategory = categories.some((cat) => cat.id === categorySlug);
-
-  if (!isInCategory) {
     return false;
   }
 
@@ -71,23 +63,12 @@ const allTools = (await getCollection('tools')).filter((tool) => {
   return true;
 });
 
-// get all the actively sponsored tools
-const sponsoredTools = allTools
-  .filter((tool) => isSponsorshipActive(tool.data))
-  .sort((a, b) => {
-    const aDate = new Date(getActiveSponsorshipPeriod(a.data)!.startDate);
-    const bDate = new Date(getActiveSponsorshipPeriod(b.data)!.startDate);
-    return aDate.getTime() - bDate.getTime();
-  });
-
 // get all the tools that are not actively sponsored
-const nonSponsoredTools = allTools
-  .filter((tool) => !isSponsorshipActive(tool.data))
+const tools = allTools
   .sort((a, b) => {
     return a.data.name.localeCompare(b.data.name);
   });
 
-const tools = [...sponsoredTools, ...nonSponsoredTools];
 const toolsData = tools.map((tool) => ({
   category: category.data,
   tool: tool.data,
@@ -168,6 +149,8 @@ const toolsData = tools.map((tool) => ({
       title={category.data.name}
       description={category.data.description}
     >
+      <CategorySponsorBanner categoryId={categorySlug} />
+
       {/* render the body of the markdown file for this category */}
       <div
         class="prose prose-lg dark:prose-invert prose-headings:text-slate-700/90 dark:prose-headings:text-slate-300"

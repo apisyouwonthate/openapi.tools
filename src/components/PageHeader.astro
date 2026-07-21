@@ -2,16 +2,14 @@
 import clsx from 'clsx';
 
 import Link from './Link';
-import SponsorBadge from './SponsorBadge';
 
 interface Props {
   title: string;
   description?: string;
   url?: string;
-  isSponsor?: boolean;
 }
 
-const { title, description, url, isSponsor = false } = Astro.props;
+const { title, description, url } = Astro.props;
 
 // if this url contains `/tools`, then we want to use a smaller heading size
 
@@ -26,15 +24,8 @@ if (Astro.url.pathname.includes('/tools/')) {
 
 <header class="prose my-9 space-y-1">
   {
-    isSponsor && (
-      <a class="text-xs" href="/sponsor">
-        <SponsorBadge />
-      </a>
-    )
-  }
-  {
     url && url?.length > 0 ? (
-      <Link href={url} className="no-underline" isSponsored={isSponsor}>
+      <Link href={url} className="no-underline">
         <h1
           class={clsx(
             'font-display font-medium text-emerald-500 hover:text-emerald-500/80',

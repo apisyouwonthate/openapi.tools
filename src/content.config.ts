@@ -1,8 +1,8 @@
-import { glob } from 'astro/loaders';
-import { z } from 'astro/zod';
+import { glob } from "astro/loaders";
+import { z } from "astro/zod";
 // 1. Import utilities from `astro:content`
-import { defineCollection, reference } from 'astro:content';
-import { icons } from './components/Icon';
+import { defineCollection, reference } from "astro:content";
+import { icons } from "./components/Icon";
 
 const iconNames = Object.keys(icons);
 
@@ -12,6 +12,8 @@ const BannerSponsorSchema = z
     description: z.string(),
     ctaText: z.string().max(20), // 20 characters max
     ctaUrl: z.url(),
+    position: z.enum(["site", "category"]),
+    categories: z.array(z.string()).optional(), // only required if position is "category"
   })
   .strict();
 
@@ -26,7 +28,7 @@ const CategorySchema = z
       .optional()
       .nullable()
       .refine((value) => !value || (value && iconNames.includes(value)), {
-        message: 'Invalid icon name. Must be one of: ' + iconNames.join(', '),
+        message: "Invalid icon name. Must be one of: " + iconNames.join(", "),
       }),
   })
   .strict();
@@ -39,7 +41,7 @@ const BadgeSchema = z
     name: z.string(),
     description: z.string(),
     icon: z.string().optional(),
-    variant: z.enum(['gold', 'silver', 'bronze', 'blue']).optional(),
+    variant: z.enum(["gold", "silver", "bronze", "blue"]).optional(),
   })
   .strict();
 
@@ -49,7 +51,7 @@ const ToolSchema = z
   .object({
     name: z.string(),
     description: z.string(),
-    categories: z.array(reference('categories')),
+    categories: z.array(reference("categories")),
     languages: z.record(z.string(), z.boolean()).optional(),
     link: z.url().optional(),
     repo: z.url().optional(),
@@ -93,7 +95,7 @@ const ToolSchema = z
           .strict()
       )
       .optional(),
-    badges: z.array(reference('badges')).optional(),
+    badges: z.array(reference("badges")).optional(),
   })
   .strict();
 
@@ -104,7 +106,7 @@ const CollectionFiltersSchema = z
     // Language filter - tool.languages[key] === true
     languages: z.array(z.string()).optional(),
     // Version filter - requires specific version support
-    requireVersions: z.array(z.enum(['v2', 'v3', 'v3_1', 'v3_2'])).optional(),
+    requireVersions: z.array(z.enum(["v2", "v3", "v3_1", "v3_2"])).optional(),
     // Legacy filter - excludes v3.1+ support
     legacy: z.boolean().optional(),
     // Open source filter - must have repo URL
@@ -133,29 +135,29 @@ export type CollectionFilters = z.infer<typeof CollectionFiltersSchema>;
 
 // 2. Define your collection(s)
 const bannerSponsorsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/banner-sponsors' }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/banner-sponsors" }),
   schema: BannerSponsorSchema,
 });
 
 const categoriesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/categories' }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/categories" }),
   schema: CategorySchema,
 });
 
 const badgesCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/badges' }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/badges" }),
   schema: BadgeSchema,
 });
 
 const toolsCollection = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/tools' }),
+  loader: glob({ pattern: "**/*.md", base: "./src/content/tools" }),
   schema: ToolSchema,
 });
 
 const curatedCollectionsCollection = defineCollection({
   loader: glob({
-    pattern: '**/*.md',
-    base: './src/content/curated-collections',
+    pattern: "**/*.md",
+    base: "./src/content/curated-collections",
   }),
   schema: CollectionSchema,
 });
@@ -166,6 +168,6 @@ export const collections = {
   categories: categoriesCollection,
   badges: badgesCollection,
   tools: toolsCollection,
-  'banner-sponsors': bannerSponsorsCollection,
-  'curated-collections': curatedCollectionsCollection,
+  "banner-sponsors": bannerSponsorsCollection,
+  "curated-collections": curatedCollectionsCollection,
 };

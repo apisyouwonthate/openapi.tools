@@ -1,4 +1,4 @@
-# Contributing to OpenAPI.Tools
+# Contributing to OpenAPI.tools
 
 We encourage all efforts in the OpenAPI ecosystem, and none of these tools are easy to create and maintain. That said, we don't want to be an exhaustive list of every single tool out there. OpenAPI.Tools is a curated list, which aims to help people find modern, reliable tooling, that's of as high quality as we can reasonably hope for.
 
@@ -19,16 +19,16 @@ To add a new tool to the project, you need to create a new markdown file in the 
 
 ```markdown
 ---
-name: 'Tool Name'
-description: 'A brief description of the tool.'
+name: "Tool Name"
+description: "A brief description of the tool."
 categories:
   - docs
   - sdk-generators
   - code-generators
   - mocking
-languages: { 'Language1': true, 'Language2': false }
-link: 'https://toolwebsite.com'
-repo: 'https://github.com/tool'
+languages: { "Language1": true, "Language2": false }
+link: "https://toolwebsite.com"
+repo: "https://github.com/tool"
 oaiSpecs:
   oas: true
   overlays: false

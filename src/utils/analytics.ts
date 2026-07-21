@@ -32,30 +32,31 @@ type OutboundClickProps = {
   tool_slug?: string;
   tool_name?: string;
   link_type:
-    | 'website'
-    | 'repo'
-    | 'sponsor_banner'
-    | 'featured_article'
-    | 'sponsor_link'
-    | 'other';
+    | "website"
+    | "repo"
+    | "sponsor_banner"
+    | "featured_article"
+    | "sponsor_link"
+    | "other";
   is_sponsored: boolean;
   placement: string;
 };
 
 type SponsorshipCTAProps = {
   cta_type:
-    | 'banner_click'
-    | 'sponsor_page_visit'
-    | 'sponsor_page_link'
-    | 'become_sponsor_link';
+    | "banner_click"
+    | "sponsor_page_visit"
+    | "sponsor_page_link"
+    | "become_sponsor_link"
+    | "become_category_sponsor_link";
   source_page: string;
   sponsor_name?: string;
 };
 
 type FilterAppliedProps = {
-  filter_type: 'language' | 'platform';
+  filter_type: "language" | "platform";
   filter_value: string;
-  action: 'added' | 'removed' | 'cleared';
+  action: "added" | "removed" | "cleared";
   total_results: number;
 };
 
@@ -67,7 +68,7 @@ type ScrollDepthProps = {
 
 // Helper to safely capture events
 function capture(event: string, properties: Record<string, unknown>): void {
-  if (typeof window !== 'undefined' && window.posthog) {
+  if (typeof window !== "undefined" && window.posthog) {
     window.posthog.capture(event, properties);
   }
 }
@@ -75,21 +76,21 @@ function capture(event: string, properties: Record<string, unknown>): void {
 // Event tracking functions
 /** @public used in Astro <script> tags which knip can't trace */
 export function trackToolPageView(props: ToolPageViewProps): void {
-  capture('tool_page_view', props);
+  capture("tool_page_view", props);
 }
 
 export function trackOutboundClick(props: OutboundClickProps): void {
-  capture('outbound_link_click', props);
+  capture("outbound_link_click", props);
 }
 
 export function trackSponsorshipCTA(props: SponsorshipCTAProps): void {
-  capture('sponsorship_cta_click', props);
+  capture("sponsorship_cta_click", props);
 }
 
 export function trackFilterApplied(props: FilterAppliedProps): void {
-  capture('filter_applied', props);
+  capture("filter_applied", props);
 }
 
 export function trackScrollDepth(props: ScrollDepthProps): void {
-  capture('scroll_depth', props);
+  capture("scroll_depth", props);
 }

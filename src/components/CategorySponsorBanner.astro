@@ -4,9 +4,25 @@ import type { BannerSponsor } from 'src/content.config';
 
 import generateUrlWithUTM from '@/utils/generateUrlWithUTM';
 
+/**
+ * The props for the CategorySponsorBanner component
+ * @param {string} categoryId - The category id this sponsorship should show in.
+ */
+type Props = {
+  categoryId: string;
+};
+
+const { categoryId } = Astro.props;
+
 const bannerSponsorsCollection = await getCollection('banner-sponsors');
 const sponsors = bannerSponsorsCollection.map((sponsor) => sponsor.data);
-const sponsor = sponsors.find((sponsor: BannerSponsor) => sponsor.position == 'site');
+
+// Find the first sponsor that matches the category and has position 'category'
+const sponsor = sponsors
+  .find((sponsor: BannerSponsor) => {
+    return sponsor.position == 'category' 
+      && sponsor.categories?.includes(categoryId);
+  });
 const hasSponsor = !!sponsor;
 
 ---
@@ -29,7 +45,7 @@ const hasSponsor = !!sponsor;
       >
         <div class="flex w-full flex-row items-center gap-2 px-2 py-3 pr-4">
           <span>
-            Sponsored by{' '}
+            Category sponsored by{' '}
             <span class="text-pink-600 md:text-white">{sponsor.name}</span>
             {' '}- {sponsor.description}
             <span
@@ -82,7 +98,7 @@ const hasSponsor = !!sponsor;
     .getElementById('become-sponsor-link')
     ?.addEventListener('click', () => {
       trackSponsorshipCTA({
-        cta_type: 'become_sponsor_link',
+        cta_type: 'become_category_sponsor_link',
         source_page: window.location.pathname,
       });
     });

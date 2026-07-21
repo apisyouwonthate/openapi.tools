@@ -39,8 +39,6 @@ const isHomePage = Astro.url.pathname === '/';
 
 const allCategories = await getCollection('categories');
 const allCollections = await getCollection('curated-collections');
-const bannerSponsorsCollection = await getCollection('banner-sponsors');
-const bannerSponsors = bannerSponsorsCollection.map((sponsor) => sponsor.data);
 
 const categories: NavigationItems = [
   {
@@ -242,7 +240,7 @@ const categories: NavigationItems = [
 
   <body class="flex min-h-full bg-white dark:bg-slate-900">
     <div class="flex w-full flex-col">
-      <SponsorBanner sponsors={bannerSponsors} />
+      <SponsorBanner />
       <Header categories={categories} currentUrl={Astro.url} />
 
       {isHomePage && <Hero />}

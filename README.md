@@ -1,4 +1,4 @@
-# OpenAPI.Tools
+# OpenAPI.tools
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1eca64b4-f28c-4250-b884-c30627ab65d8/deploy-status)](https://app.netlify.com/sites/openapi-tools/deploys)
 [![Buy us a tree](https://img.shields.io/badge/Buy%20us%20a%20tree-%F0%9F%8C%B3-lightgreen)](https://shop.protect.earth/products/tree)
@@ -24,9 +24,10 @@ OpenAPI.tools is maintained by [APIs You Won't Hate](https://apisyouwonthate.com
 
 **Benefits for sponsors:**
 
-- Priority placement in category listings
-- "Sponsored" badge on your tool
-- Embeddable badges for your website ([see options](https://openapi.tools/badges))
+- Site sponsors appear pride of place at the top of the website.
+- Category sponsors show a banner at the top of their category.
+- "Sponsored" badge on your tool.
+- Embeddable badges for your website ([see options](https://openapi.tools/badges)).
 
 [Become a sponsor →](https://openapi.tools/sponsor)
 

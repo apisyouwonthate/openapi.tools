@@ -1,11 +1,10 @@
-import type { Category, Tool } from 'src/content.config';
-import { type ColumnDef } from '@tanstack/react-table';
-import { isSponsorshipActive } from 'src/utils/sponsorship';
-import { getDeviconClassName } from '@/utils/languageUtils';
-import Badge from '../Badge';
-import RepoIcon from '../icons/RepoIcon';
-import WebsiteIcon from '../icons/WebsiteIcon';
-import Link from '../Link';
+import type { Category, Tool } from "src/content.config";
+import { type ColumnDef } from "@tanstack/react-table";
+import { isSponsorshipActive } from "src/utils/sponsorship";
+import { getDeviconClassName } from "@/utils/languageUtils";
+import RepoIcon from "../icons/RepoIcon";
+import WebsiteIcon from "../icons/WebsiteIcon";
+import Link from "../Link";
 
 // This type is used to define the shape of our data.
 export type ToolRowData = {
@@ -25,8 +24,8 @@ const VersionBadge = ({
   <span
     className={`inline-flex items-center rounded px-2 py-0.5 text-xs font-medium ${
       supported
-        ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
-        : 'bg-slate-100 text-slate-400 line-through dark:bg-slate-800 dark:text-slate-500'
+        ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+        : "bg-slate-100 text-slate-400 line-through dark:bg-slate-800 dark:text-slate-500"
     }`}
   >
     {version}
@@ -34,8 +33,8 @@ const VersionBadge = ({
 );
 
 export const createNameColumn = (): ColumnDef<ToolRowData> => ({
-  accessorKey: 'name',
-  header: 'Name',
+  accessorKey: "name",
+  header: "Name",
   cell: ({ row }) => {
     const { tool, slug } = row.original;
     return (
@@ -45,13 +44,10 @@ export const createNameColumn = (): ColumnDef<ToolRowData> => ({
           data-astro-prefetch
           className="group inline-flex flex-row items-center space-x-2 text-slate-800 no-underline hover:underline dark:text-slate-200"
         >
-          {isSponsorshipActive(tool) && (
-            <Badge variant="green">Sponsored</Badge>
-          )}
           <span className="font-bold whitespace-pre text-emerald-600 group-hover:underline dark:text-emerald-300">
             {tool.name}
           </span>
-        </Link>{' '}
+        </Link>{" "}
         <span className="font-normal">{tool?.description}</span>
       </>
     );
@@ -59,8 +55,8 @@ export const createNameColumn = (): ColumnDef<ToolRowData> => ({
 });
 
 export const createLanguagesColumn = (): ColumnDef<ToolRowData> => ({
-  accessorKey: 'languages',
-  header: 'Languages',
+  accessorKey: "languages",
+  header: "Languages",
   cell: ({ row }) => {
     const tool = row.original.tool;
     const languages = tool?.languages;
@@ -83,8 +79,8 @@ export const createLanguagesColumn = (): ColumnDef<ToolRowData> => ({
 
 // Version column with badge format (for collections)
 export const createVersionBadgesColumn = (): ColumnDef<ToolRowData> => ({
-  accessorKey: 'oasVersions',
-  header: 'Version Support',
+  accessorKey: "oasVersions",
+  header: "Version Support",
   cell: ({ row }) => {
     const tool = row.original.tool;
     const versions = tool?.oasVersions || {};
@@ -101,7 +97,7 @@ export const createVersionBadgesColumn = (): ColumnDef<ToolRowData> => ({
 
 // Individual version column (for legacy page)
 export const createIndividualVersionColumn = (
-  version: 'v3' | 'v2',
+  version: "v3" | "v2",
   displayVersion: string
 ): ColumnDef<ToolRowData> => ({
   accessorKey: version,
@@ -123,8 +119,8 @@ export const createIndividualVersionColumn = (
 export const createLinksColumn = (
   linkPlacementDescription: string
 ): ColumnDef<ToolRowData> => ({
-  accessorKey: 'urls',
-  header: 'Links',
+  accessorKey: "urls",
+  header: "Links",
   cell: ({ row }) => {
     const { tool, category } = row.original;
     const isSponsored = isSponsorshipActive(tool);

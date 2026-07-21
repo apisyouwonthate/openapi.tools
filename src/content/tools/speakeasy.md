@@ -33,4 +33,5 @@ badges:
   - overlays-pioneer
 sponsorship:
   - startDate: 2024-02-09T06:00:00.000Z
+    endDate: 2026-06-01T00:00:00.000Z
 ---
