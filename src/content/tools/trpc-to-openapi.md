@@ -10,7 +10,7 @@ oasVersions:
   v3_1: true
   v3_2: false
 featuredArticles:
-  - title: "How to generate OpenAPI with tRPC"
+  - title: 'How to generate OpenAPI with tRPC'
     url: https://www.speakeasy.com/openapi/frameworks/trpc
     date: 2026-07-21
 ---
