@@ -2,7 +2,7 @@
 name: apispec
 description: Generates an OpenAPI description from Go source by static analysis — type-checking the packages and walking the call graph from each route registration to the handler that serves it, with no annotations required.
 categories:
-  - annotations
+  - converters
 link: https://apispec.ehabterra.com
 languages:
   golang: true
