@@ -5,8 +5,9 @@ description: Contract compatibility testing for APIs. Compares two OpenAPI
   consumer contracts, and gates deployments in CI with can-i-deploy. Also provides
   governance rulesets, GitHub pull request checks, and an MCP server for AI agents.
 categories:
-  - misc
   - schema-validators
+  - security
+  - mcp
 link: https://specshield.io
 languages:
   any: true
