@@ -52,7 +52,7 @@
     "satori": "^0.31.0",
     "satori-html": "^0.3.2",
     "schema-dts": "^2.0.0",
-    "sharp": "^0.35.3",
+    "sharp": "^0.35.4",
     "tailwind-merge": "^3.6.0",
     "tw-animate-css": "^1.3.0"
   },
