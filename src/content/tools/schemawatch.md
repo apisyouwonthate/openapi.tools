@@ -2,6 +2,7 @@
 name: 'SchemaWatch'
 description: 'Monitor third-party API schemas for breaking changes. Get quality scores, track historical versions, and get alerted before production breaks.'
 categories:
+  - breaking-changes
   - monitoring
   - schema-validators
 languages: { 'Python': true }
