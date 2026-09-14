@@ -24,5 +24,4 @@ jobs:
         uses: MatteoGabriele/agentscan-action@8112fb79b33fafb8506159df20129a34209ac410
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          trusted-author-associations: 'member,owner'
-          honeypot: true
+          trusted-author-associations: "member,owner"
