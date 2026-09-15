@@ -1,10 +1,8 @@
 ---
 name: OpenAPI Breaking Change Checker
-description: Browser-based comparison of Swagger 2.0 and OpenAPI 3.0 or 3.1 descriptions that classifies likely client-breaking, review-needed, and compatible changes.
+description: Browser-based comparison of OpenAPI 3.1 to 2.0 descriptions that classifies likely client-breaking, review-needed, and compatible changes.
 categories:
   - breaking-changes
-  - data-validators
-  - testing
 languages:
   typescript: true
 link: https://martingruner.com/tools/openapi-breaking-change-checker
