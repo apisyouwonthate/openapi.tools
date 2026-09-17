@@ -21,6 +21,8 @@ oasVersions:
   v3: true
   v3_1: true
   v3_2: true
+badges:
+  - oas-v32-early
 featuredArticles:
   - title: 'Beyond configuration drift: how Barbacane reimagines the API gateway with Rust and WASM'
     url: https://barbacane.dev/blog/beyond-configuration-drift/
@@ -47,7 +49,8 @@ Barbacane is a spec-driven API gateway that compiles OpenAPI 3.x and AsyncAPI 3.
 - **MCP server** — every operation in the spec is automatically exposed as a Model Context Protocol tool at `POST /__barbacane/mcp`, behind the same auth, rate-limit and validation chain.
 - **Multi-spec compilation** — merge several OpenAPI / AsyncAPI files into one validated artifact for microservice gateways.
 - **Validation** — request and response validation against JSON Schema (body, path, query, headers) with strict mode and detailed RFC 9457 problem responses.
-- **Plugin system** — 33+ official middleware and dispatcher plugins (JWT/OIDC/API key/basic auth, CEL and OPA authorization, redirect, fire-and-forget, S3 dispatcher with SPA fallback, …); custom plugins in any language compiling to WebAssembly, sandboxed via Wasmtime.
+- **Plugin system** — 34 official middleware and dispatcher plugins (JWT/OIDC/API key/basic auth, CEL and OPA authorization, redirect, fire-and-forget, S3 dispatcher with SPA fallback, …); custom plugins in any language compiling to WebAssembly, sandboxed via Wasmtime.
+- **Web application firewall** — ModSecurity/CRS-compatible engine inspecting requests and responses inline, including the libinjection SQLi and XSS classifiers, enabled per operation from the spec.
 - **Edge-ready** — stateless data plane, separate control plane handling compilation, artifact distribution, and hot-reload; remote plugin loading over HTTPS.
 - **Local DX** — `barbacane dev` watches your spec and hot-reloads on save; `barbacane init` scaffolds a project.
 - **Observable** — Prometheus metrics, structured JSON logs, distributed tracing (W3C Trace Context, OTLP).
