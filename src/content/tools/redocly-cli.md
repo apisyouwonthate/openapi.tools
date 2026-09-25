@@ -5,6 +5,7 @@ description: |
 categories:
   - schema-validators
   - docs
+  - breaking-changes
 link: https://redocly.com/redocly-cli/
 languages:
   cli: true

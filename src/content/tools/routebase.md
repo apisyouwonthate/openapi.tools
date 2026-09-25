@@ -10,6 +10,8 @@ categories:
 link: https://routebase.dev/
 languages:
   saas: true
+badges:
+  - oas-v32-early
 oaiSpecs:
   oas: true
   overlays: false
@@ -18,7 +20,7 @@ oasVersions:
   v2: false
   v3: true
   v3_1: true
-  v3_2: false
+  v3_2: true
 ---
 
 ## Overview

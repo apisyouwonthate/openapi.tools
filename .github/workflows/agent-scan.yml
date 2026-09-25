@@ -25,4 +25,3 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           trusted-author-associations: 'member,owner'
-          honeypot: true

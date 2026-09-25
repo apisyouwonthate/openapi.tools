@@ -2,7 +2,7 @@
 name: oasdiff
 description: Golang module for deep comparison of two OpenAPI descriptions. Available also as a command-line.
 categories:
-  - misc
+  - breaking-changes
 languages:
   golang: true
 repo: https://github.com/tufin/oasdiff
