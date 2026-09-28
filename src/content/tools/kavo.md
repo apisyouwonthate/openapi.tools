@@ -38,12 +38,12 @@ npm install @kavo/core @kavo/nest @kavo/typeorm
 ```
 
 ```ts
-import { Kavo } from "@kavo/nest";
-import { Controller } from "@nestjs/common";
-import { Book } from "./book.entity";
+import { Kavo } from '@kavo/nest';
+import { Controller } from '@nestjs/common';
+import { Book } from './book.entity';
 
 @Kavo(Book)
-@Controller("books")
+@Controller('books')
 export class BooksController {}
 ```
 
