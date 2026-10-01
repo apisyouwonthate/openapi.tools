@@ -20,10 +20,10 @@ badges:
   - oas-v32-early
   - full-spectrum-support
 featuredArticles:
-  - title: "Meet Redocly CLI: The Modern OpenAPI Sidekick"
-    url: "https://apisyouwonthate.com/blog/redocly-cli/"
+  - title: 'Meet Redocly CLI: The Modern OpenAPI Sidekick'
+    url: 'https://apisyouwonthate.com/blog/redocly-cli/'
     date: 2023-11-07
-  - title: "Popular OpenAPI Bundling Tools Compared"
-    url: "https://apisyouwonthate.com/blog/openapi-bundling-tools-compared-blog-post/"
+  - title: 'Popular OpenAPI Bundling Tools Compared'
+    url: 'https://apisyouwonthate.com/blog/openapi-bundling-tools-compared-blog-post/'
     date: 2023-11-13
 ---

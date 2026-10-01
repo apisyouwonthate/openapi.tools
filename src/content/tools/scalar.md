@@ -1,11 +1,19 @@
 ---
 name: Scalar
-description: Beautiful Open-Source API references from Swagger/OAS files ✨
+description: Interactive API references, an open-source API client, generated SDKs and CLIs, and MCP servers from OpenAPI.
 categories:
   - docs
-link: https://docs.scalar.com/swagger-editor
+  - code-generators
+  - sdk-generators
+  - mcp
+  - misc
+link: https://scalar.com
 languages:
-  vue: true
+  typescript: true
+  python: true
+  golang: true
+  cli: true
+  saas: true
 repo: https://github.com/scalar/scalar
 
 oaiSpecs:
@@ -15,7 +23,11 @@ oasVersions:
   v2: true
   v3: true
   v3_1: true
-  v3_2: false
+  v3_2: true
+
+badges:
+  - oas-v32-early
+  - full-spectrum-support
 
 featuredArticles:
   - title: 'The 5 Best API Docs Tools in 2025'

@@ -1,14 +1,14 @@
 ---
-name: "SchemaWatch"
-description: "Monitor third-party API schemas for breaking changes. Get quality scores, track historical versions, and get alerted before production breaks."
+name: 'SchemaWatch'
+description: 'Monitor third-party API schemas for breaking changes. Get quality scores, track historical versions, and get alerted before production breaks.'
 categories:
   - breaking-changes
   - monitoring
   - schema-validators
 languages:
   python: true
-link: "https://pypi.org/project/schemawatch/"
-repo: "https://github.com/CemCelik79/schemawatch"
+link: 'https://pypi.org/project/schemawatch/'
+repo: 'https://github.com/CemCelik79/schemawatch'
 oaiSpecs:
   oas: true
   overlays: false
