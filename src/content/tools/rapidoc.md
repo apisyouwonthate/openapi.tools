@@ -3,7 +3,7 @@ name: RapiDoc
 description: Custom Element to view OpenAPI descriptions.
 categories:
   - docs
-link: https://rapidocweb.com/
+link: https://rapidocui.com/
 languages:
   web component: true
 repo: https://github.com/mrin9/RapiDoc
