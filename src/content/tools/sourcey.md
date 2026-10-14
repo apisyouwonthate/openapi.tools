@@ -4,7 +4,7 @@ description: Sourcey generates a static documentation site from OpenAPI descript
 categories:
   - docs
   - mcp
-link: https://sourcey.com/
+link: https://sourcey.com/docs
 repo: https://github.com/sourcey/sourcey
 languages:
   nodejs: true
@@ -18,7 +18,7 @@ oasVersions:
 
 ## Overview
 
-[Sourcey](https://sourcey.com/) is an open source static documentation generator. It reads an OpenAPI Description from a local YAML or JSON file, or from a URL, and produces a directory of HTML, CSS, JavaScript, search data, sitemap data, and plain text files. The output can be served by an ordinary web server or static host. No server-side rendering process is required after the build finishes.
+[Sourcey's documentation generator](https://sourcey.com/docs) is an open source static documentation generator. It reads an OpenAPI Description from a local YAML or JSON file, or from a URL, and produces a directory of HTML, CSS, JavaScript, search data, sitemap data, and plain text files. The output can be served by an ordinary web server or static host. No server-side rendering process is required after the build finishes.
 
 The OpenAPI adapter renders operations, parameters, request bodies, responses, security schemes, and component schemas. It also generates request examples in several programming languages. Sourcey can place the generated API reference beside Markdown guides in the same navigation structure, which is useful when a project needs task-oriented documentation as well as a reference.
 
@@ -26,10 +26,10 @@ Sourcey accepts OpenAPI 3.0, 3.1, and 3.2. Swagger 2.0 input is converted to Ope
 
 ## Installation and quick build
 
-Sourcey 3.6.5 requires Node.js 20 or newer. Install the CLI as a development dependency so the generator version can be pinned with the rest of the project:
+Sourcey 3.6.13 requires Node.js 22.19 or newer. Install the CLI as a development dependency so the generator version can be pinned with the rest of the project:
 
 ```bash
-pnpm add -D sourcey citty
+pnpm add -D sourcey
 ```
 
 Then build a static site directly from an OpenAPI Description:
@@ -40,7 +40,7 @@ pnpm exec sourcey build openapi.yaml -o dist
 
 The entry point is `dist/index.html`. Sourcey's standard output also includes a dedicated API page, a client-side search index, `sitemap.xml`, `llms.txt`, and `llms-full.txt`. The exact page set depends on the configured navigation and source adapters.
 
-The explicit `citty` package in the pnpm example reflects a packaging issue observed with Sourcey 3.6.5 and pnpm 11 in a clean project. `pnpm dlx sourcey@latest` did not resolve that dependency, while a local installation of `sourcey` and `citty` built the same OpenAPI file successfully. This extra dependency may no longer be necessary after the package metadata is corrected. Sourcey's documentation also describes a global npm installation that exposes the same `sourcey build` command.
+Sourcey 3.6.13 declares `citty` as its own dependency. A clean pnpm 11.28.5 project installed only `sourcey` directly and built the OpenAPI input below successfully. Sourcey's documentation also describes a global npm installation that exposes the same `sourcey build` command.
 
 ## Minimal input
 
@@ -60,7 +60,7 @@ paths:
           description: A list of tasks
 ```
 
-Running the build command creates a browsable page for the `GET /tasks` operation. During a local verification of version 3.6.5, the command reported one operation, completed successfully, and generated nine files. Serving `dist` with a local HTTP server returned status 200 and displayed the API title, operation summary, and path from the input file.
+Running the build command creates a browsable page for the `GET /tasks` operation. During a clean local verification of version 3.6.13, the command reported one operation, completed successfully, and generated ten files. Serving `dist` with a local HTTP server returned status 200 and displayed the API title, operation summary, and path from the input file.
 
 ## Project configuration
 
