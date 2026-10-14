@@ -7,6 +7,10 @@ categories:
   - mocking
   - mcp
 link: https://bowire.io/
+languages:
+  csharp: true
+  cli: true
+  docker: true
 repo: https://github.com/Kuestenlogik/Bowire
 
 oaiSpecs:
