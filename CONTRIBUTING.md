@@ -22,16 +22,16 @@ To add a new tool to the project, you need to create a new markdown file in the 
 
 ```markdown
 ---
-name: "Tool Name"
-description: "A brief description of the tool."
+name: 'Tool Name'
+description: 'A brief description of the tool.'
 categories:
   - docs
   - sdk-generators
   - code-generators
   - mocking
-languages: { "Language1": true, "Language2": false }
-link: "https://toolwebsite.com"
-repo: "https://github.com/tool"
+languages: { 'Language1': true, 'Language2': false }
+link: 'https://toolwebsite.com'
+repo: 'https://github.com/tool'
 oaiSpecs:
   oas: true
   overlays: false
