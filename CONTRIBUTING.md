@@ -8,6 +8,9 @@ Our focus on high-quality tooling means we cannot accept every tool that would l
 - **Testable**: submissions should be released, and there should be a way of testing it so we can validate it works
 - **Relevant**: all submissions must relate to the OpenAPI ecosystem and abide by its [Code of Conduct](https://github.com/OAI/OpenAPI-Specification/blob/main/CODE_OF_CONDUCT.md)
 - **Terminology**: descriptions and language should follow the [OpenAPI Glossary](https://github.com/openapi-contrib/glossary?tab=readme-ov-file#api-description)
+- **Usage**: all tools must be at least three months old before you can add them to the site. Exceptions can be made, but the tool would require broad community support or adoption
+- **Support**: tools need to be maintained and looked after. Abandoned tooling will get flagged and eventually removed
+- **Documentation**: tools must include documentation on how to use them in their repo, doc site, or some other accessible place
 
 ## 🛠 Adding New Tools
 
