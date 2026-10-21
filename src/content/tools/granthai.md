@@ -23,16 +23,13 @@ oasVersions:
 
 GranthAi turns an existing REST API into something AI agents can use, without touching its code. It watches the requests and responses the API actually serves, generates an OpenAPI 3.1 description from them, renders it as interactive API documentation, and exposes every operation as an MCP tool. It's useful for undocumented legacy APIs, for keeping docs in sync with what the API really does, and for giving Claude, Cursor or any MCP client access to an API.
 
-It comes in two forms:
-
-- [`granthai`](https://www.npmjs.com/package/granthai): Express middleware for Node.js apps
-- [`granthai-agent`](https://www.npmjs.com/package/granthai-agent): a reverse proxy that sits in front of an API written in any language (Python, Java, Go, Rust, PHP, ...)
+It runs as [`granthai-agent`](https://www.npmjs.com/package/granthai-agent), a reverse proxy that sits in front of an API written in any language (Python, Java, Go, Rust, PHP, Node.js, ...).
 
 ## Features
 
 - OpenAPI 3.1 descriptions with JSON Schema inferred from real request and response bodies, merged across calls so optional and nullable fields are captured
 - Path parameters detected automatically (numeric IDs, UUIDs, Mongo ObjectIds, hashes), with route templates for slug-style URLs
-- Interactive docs served next to the API; the agent also saves the description to disk so it survives restarts
+- Interactive docs served next to the API, with the description saved to disk so it survives restarts
 - An MCP server (Streamable HTTP) with one tool per operation; tool calls forward the caller's `Authorization`, cookie and CSRF headers, so the API's own auth still applies
 - Only schemas are stored, never request or response values
 
@@ -49,10 +46,3 @@ Send traffic to `http://localhost:4000` instead of `:8000`, then open:
 - `http://localhost:4000/_granthai/api-docs` for the docs
 - `http://localhost:4000/_granthai/openapi.json` for the OpenAPI description
 - `http://localhost:4000/_granthai/mcp` for the MCP server
-
-For Express apps, use the middleware instead:
-
-```js
-const GranthAi = require('granthai');
-app.use(GranthAi({ docTitle: 'My API', baseUrl: 'http://localhost:3000' }));
-```
