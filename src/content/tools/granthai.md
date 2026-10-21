@@ -1,6 +1,6 @@
 ---
 name: 'GranthAi'
-description: 'Make any legacy or new backend AI-ready with no code changes. GranthAi generates an OpenAPI 3.1 description, API documentation and an MCP server from live API traffic, using a language-agnostic proxy (granthai-agent) that works with REST APIs written in any language.'
+description: 'Make any legacy or new backend AI-ready with no code changes. GranthAi generates an OpenAPI 3.1 description, API documentation and an MCP server from live API traffic, using a language-agnostic proxy (granthai-agent) that works with REST APIs written in any language. Self-hosted, so API traffic and PII never leave your servers.'
 categories:
   - learning
   - docs
@@ -32,6 +32,16 @@ It runs as [`granthai-agent`](https://www.npmjs.com/package/granthai-agent), a r
 - Interactive docs served next to the API, with the description saved to disk so it survives restarts
 - An MCP server (Streamable HTTP) with one tool per operation; tool calls forward the caller's `Authorization`, cookie and CSRF headers, so the API's own auth still applies
 - Only schemas are stored, never request or response values
+
+## Security and privacy
+
+- **Runs on-prem.** The agent runs on your own servers, next to your API. There is no GranthAi cloud service, account or telemetry, so API traffic, payloads and PII are never sent to a third-party server.
+- **Keeps metadata, not data.** Only the inferred structure is kept (endpoints, parameter and field names, types). Request and response values, tokens and passwords are never stored.
+- **You own the files.** The OpenAPI description is a plain file on your server (`granthai.openapi.json`, or wherever `--out` points), so you decide where it lives, who can read it and whether it goes into version control.
+- **Your API's auth still applies.** MCP tool calls carry the caller's own credentials; the agent doesn't hold API keys or bypass auth.
+- **Local by default.** The agent listens on `127.0.0.1` unless told otherwise. Its docs and MCP endpoints have no login of their own, so only expose them on networks you trust.
+
+The docs page loads the Swagger UI scripts and styles from a public CDN in the viewer's browser; no API data is sent with those requests.
 
 ## Usage
 
