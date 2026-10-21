@@ -1,6 +1,6 @@
 ---
 name: 'GranthAi'
-description: 'Generates an OpenAPI description, rendered docs and an MCP server from the live traffic of any HTTP API, as Express middleware or a language-agnostic proxy, with no code changes.'
+description: 'Make any legacy or new backend AI-ready with no code changes. GranthAi generates an OpenAPI 3.1 description, API documentation and an MCP server from live API traffic, using a language-agnostic proxy (granthai-agent) that works with REST APIs written in any language.'
 categories:
   - learning
   - docs
@@ -21,7 +21,7 @@ oasVersions:
 
 ## Overview
 
-GranthAi learns an API from the requests and responses it actually serves and turns them into an OpenAPI 3.1 description. The description is rendered as interactive docs, and every operation in it is also exposed as an MCP tool, so AI agents can call the API too.
+GranthAi turns an existing REST API into something AI agents can use, without touching its code. It watches the requests and responses the API actually serves, generates an OpenAPI 3.1 description from them, renders it as interactive API documentation, and exposes every operation as an MCP tool. It's useful for undocumented legacy APIs, for keeping docs in sync with what the API really does, and for giving Claude, Cursor or any MCP client access to an API.
 
 It comes in two forms:
 
