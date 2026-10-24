@@ -43,7 +43,7 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "date-fns": "^4.4.0",
-    "framer-motion": "^13.2.0",
+    "framer-motion": "^14.6.0",
     "lucide-react": "^1.44.0",
     "posthog-js": "^1.429.2",
     "prism-react-renderer": "^2.4.1",
