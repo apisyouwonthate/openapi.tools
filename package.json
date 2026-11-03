@@ -49,7 +49,7 @@
     "prism-react-renderer": "^2.4.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
-    "satori": "^0.33.4",
+    "satori": "^0.33.5",
     "satori-html": "^0.3.2",
     "schema-dts": "^2.0.0",
     "sharp": "^0.35.4",
