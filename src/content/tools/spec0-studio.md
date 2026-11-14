@@ -26,25 +26,25 @@ oasVersions:
 
 ## Overview
 
-Most API clients treat the collection as the source of truth, and an OpenAPI description is something you import once to get started. Studio works the other way round. Requests come from the description, collections point at its operations rather than copying them, and when the description changes, a collection step that no longer matches it is marked.
+In Studio, the OpenAPI description is the starting point. You open it from a file or a URL, and each operation becomes a request you can send, with the parameters and body already filled in from the schema. Collections refer to those operations rather than keeping their own copies, so when the description changes, Studio marks any collection step that no longer matches it.
 
-It's young and does less than Postman or Bruno. There's no scripting, command-line runner or shared team workspace yet, and it only speaks HTTP. What it does well is keep your requests, mocks and checks tied to the description you already have.
+Studio is still young and does less than Postman or Bruno. It has no scripting, command-line runner or shared team workspace yet, and it only does HTTP. It's a good fit if you already keep an OpenAPI description and want your requests, mocks and response checks to follow it.
 
 ## Features
 
-- Requests built from the description, with allowed values offered as dropdowns and bodies started from the real field names
-- Every JSON response checked against the declared schema, including fields the schema doesn't mention
-- Collections that chain requests across several APIs, with a view of every value passed between steps and a log for each run
-- A schema graph showing which schemas refer to which, and which operations use them
-- One-click local mocks that answer from the description's examples, with no account or network needed
-- A local MCP server, so coding agents such as Claude Code or Cursor can send requests and start mocks through Studio. An agent's first request to each host waits for your approval
-- Postman collection import (scripts aren't run)
-- Swagger 2.0 descriptions are converted to OpenAPI 3.0 when opened
+- Requests built from the description. Enum values show up as dropdowns, and request bodies start with the real field names.
+- Each JSON response is checked against the schema declared for its status code, and fields the schema doesn't mention are flagged.
+- Collections can chain requests across several APIs. The Chain view shows every value passed from one step to the next, and each run has a log that says why a step failed.
+- The Graph tab shows which schemas refer to which, and which operations use them.
+- Local mocks start with one click and answer from the examples in the description. They don't need an account or a network connection.
+- A local MCP server lets coding agents such as Claude Code or Cursor send requests and start mocks through Studio. The first request an agent makes to each host waits for your approval.
+- Postman collections can be imported, although their scripts aren't run.
+- Swagger 2.0 descriptions are converted to OpenAPI 3.0 when you open them.
 
 ## Privacy
 
-Studio sends no telemetry and only talks to the servers you point it at. Secrets are kept in the operating system's credential store, and the MCP server and local mocks listen on `127.0.0.1` only.
+Studio doesn't send telemetry, and it only talks to the servers you point it at. Secrets are stored in your operating system's credential store. The MCP server and local mocks listen on `127.0.0.1` only.
 
 ## Usage
 
-Download the installer for macOS, Windows or Linux from the [latest release](https://github.com/spec-0/studio/releases/latest), open an OpenAPI description from a file or URL, and send a request. The [user guide](https://studio-docs.spec0.io/) covers collections, mocks and the MCP server.
+Download the installer for your platform from the [latest release](https://github.com/spec-0/studio/releases/latest), open an OpenAPI description, and send a request. The [user guide](https://studio-docs.spec0.io/) explains collections, mocks and the MCP server in more detail.
