@@ -9,4 +9,8 @@ languages:
   cli: true
 link: https://mockoon.com
 repo: https://github.com/mockoon/mockoon
+oasVersions:
+  v2: true
+  v3: true
+  v3_1: true
 ---

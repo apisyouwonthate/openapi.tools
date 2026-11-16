@@ -7,4 +7,8 @@ languages:
   javascript: true
   nodejs: true
 repo: https://github.com/Redocly/openapi-sampler
+oasVersions:
+  v3: true
+  v3_1: true
+  v3_2: true
 ---

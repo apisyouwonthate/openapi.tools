@@ -7,4 +7,6 @@ languages:
   scala: true
 link: https://endpoints4s.github.io
 repo: https://github.com/endpoints4s/endpoints4s
+oasVersion:
+  v3: true
 ---

@@ -7,4 +7,6 @@ languages:
   typescript: true
   cli: true
 repo: https://github.com/fabien0102/openapi-codegen
+oasVersions:
+  v3: true
 ---

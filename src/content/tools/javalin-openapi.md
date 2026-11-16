@@ -8,4 +8,7 @@ languages:
   java: true
 link: https://javalin.github.io/javalin-openapi
 repo: https://github.com/javalin/javalin-openapi
+oasVersions:
+  v3: true
+  v3_1: true
 ---

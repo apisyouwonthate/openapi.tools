@@ -7,4 +7,7 @@ languages:
   python: true
 link: https://apiflask.com
 repo: https://github.com/apiflask/apiflask
+oasVersions:
+  v3: true
+  v3_1: true
 ---
