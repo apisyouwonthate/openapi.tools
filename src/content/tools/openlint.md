@@ -21,7 +21,7 @@ oasVersions:
 badges:
   - arazzo-support
 featuredArticles:
-  - title: "OpenLint: picking up where Spectral left off"
-    url: "https://apisyouwonthate.com/blog/openlint-picking-up-where-spectral-left-off/"
+  - title: 'OpenLint: picking up where Spectral left off'
+    url: 'https://apisyouwonthate.com/blog/openlint-picking-up-where-spectral-left-off/'
     date: 2026-10-01
 ---

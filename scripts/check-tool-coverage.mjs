@@ -1,27 +1,27 @@
-import { readdir, readFile } from "node:fs/promises";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { readdir, readFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
-const repoDir = join(scriptDir, "..");
-const catalogPath = join(repoDir, "tools.openapis.org");
-const toolsDir = join(repoDir, "src", "content", "tools");
+const repoDir = join(scriptDir, '..');
+const catalogPath = join(repoDir, 'tools.openapis.org');
+const toolsDir = join(repoDir, 'src', 'content', 'tools');
 
 // Case-insensitive substrings; a project is ignored if its name, repository
 // or websites contain any of them.
-const BLOCKLIST = ["postman", "swagger"];
+const BLOCKLIST = ['postman', 'swagger'];
 
 function isBlocked(project) {
   const haystack = [project.name, project.repository, ...project.websites]
     .filter(Boolean)
-    .join("\n")
+    .join('\n')
     .toLocaleLowerCase();
   return BLOCKLIST.some((term) => haystack.includes(term.toLocaleLowerCase()));
 }
 
 function scalar(value) {
   const trimmed = value.trim();
-  if (trimmed === "null") return null;
+  if (trimmed === 'null') return null;
   if (
     (trimmed.startsWith("'") && trimmed.endsWith("'")) ||
     (trimmed.startsWith('"') && trimmed.endsWith('"'))
@@ -37,11 +37,11 @@ function normalizeName(value) {
 
 function normalizeUrl(value) {
   const url = new URL(value);
-  url.hostname = url.hostname.toLocaleLowerCase().replace(/^www\./, "");
-  url.pathname = url.pathname.replace(/\/+$/, "").replace(/\.git$/i, "");
-  url.search = "";
-  url.hash = "";
-  return url.toString().toLocaleLowerCase().replace(/\/$/, "");
+  url.hostname = url.hostname.toLocaleLowerCase().replace(/^www\./, '');
+  url.pathname = url.pathname.replace(/\/+$/, '').replace(/\.git$/i, '');
+  url.search = '';
+  url.hash = '';
+  return url.toString().toLocaleLowerCase().replace(/\/$/, '');
 }
 
 function parseCatalog(content) {
@@ -98,17 +98,17 @@ function parseFrontmatter(content) {
 
 async function main() {
   const [catalogContent, filenames] = await Promise.all([
-    readFile(catalogPath, "utf8"),
+    readFile(catalogPath, 'utf8'),
     readdir(toolsDir),
   ]);
   const allProjects = parseCatalog(catalogContent);
   const projects = allProjects.filter((project) => !isBlocked(project));
-  const toolFiles = filenames.filter((filename) => filename.endsWith(".md"));
+  const toolFiles = filenames.filter((filename) => filename.endsWith('.md'));
   const tools = await Promise.all(
     toolFiles.map(async (filename) => ({
       filename,
       fields: parseFrontmatter(
-        await readFile(join(toolsDir, filename), "utf8")
+        await readFile(join(toolsDir, filename), 'utf8')
       ),
     }))
   );
@@ -140,7 +140,7 @@ async function main() {
     });
   });
 
-  if (process.argv.includes("--json")) {
+  if (process.argv.includes('--json')) {
     console.log(JSON.stringify(missing, null, 2));
     process.exitCode = missing.length > 0 ? 1 : 0;
     return;
@@ -152,7 +152,7 @@ async function main() {
   console.log(`Tool definitions: ${tools.length}`);
 
   if (missing.length === 0) {
-    console.log("All catalog projects have a matching tool definition.");
+    console.log('All catalog projects have a matching tool definition.');
     return;
   }
 
@@ -166,6 +166,6 @@ async function main() {
 }
 
 main().catch((error) => {
-  console.error("Failed to check tool coverage:", error);
+  console.error('Failed to check tool coverage:', error);
   process.exitCode = 1;
 });

@@ -21,7 +21,7 @@ oasVersions:
 badges:
   - arazzo-support
 featuredArticles:
-  - title: "Securing APIs with the Spectral OWASP Ruleset"
-    url: "https://apisyouwonthate.com/blog/securing-apis-with-spectral-owasp-ruleset/"
+  - title: 'Securing APIs with the Spectral OWASP Ruleset'
+    url: 'https://apisyouwonthate.com/blog/securing-apis-with-spectral-owasp-ruleset/'
     date: 2023-03-10
 ---
