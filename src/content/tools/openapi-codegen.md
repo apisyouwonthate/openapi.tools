@@ -9,4 +9,5 @@ languages:
 repo: https://github.com/fabien0102/openapi-codegen
 oasVersions:
   v3: true
+  v3_1: true
 ---
