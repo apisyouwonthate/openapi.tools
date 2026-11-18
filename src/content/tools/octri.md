@@ -1,6 +1,6 @@
 ---
 name: Octri
-description: Generate SDKs in 10 languages, a hosted docs site and an MCP server from one OpenAPI description, with error monitoring built into every SDK.
+description: Generate API documentation, SDKs in ten languages, and a hosted MCP server from your OpenAPI spec, with monitoring that flags when an endpoint or SDK breaks.
 categories:
   - sdk-generators
   - docs
@@ -25,4 +25,5 @@ oasVersions:
   v2: true
   v3: true
   v3_1: true
+link: https://octri.dev
 ---
