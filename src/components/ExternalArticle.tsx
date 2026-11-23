@@ -46,7 +46,10 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
       <div className="max-w-xl">
         <div className="mt-2 flex items-center gap-x-2 text-xs">
           {postDate && (
-            <time dateTime={postDate.toISOString()} className="text-gray-500">
+            <time
+              dateTime={postDate.toISOString()}
+              className="text-gray-500 dark:text-gray-400"
+            >
               {postDate.toLocaleDateString()}
             </time>
           )}
@@ -67,14 +70,16 @@ const ExternalArticle: React.FC<FeaturedArticle> = (props) => {
               <span className="font-medium">{title}</span>
             )}
           </h3>
-          <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+          <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 dark:text-gray-400">
             {description}
           </p>
         </div>
         <div className="relative mt-8 flex items-center gap-x-4">
           {author && (
             <div className="text-sm leading-6">
-              <p className="font-semibold text-gray-900">{author}</p>
+              <p className="font-semibold text-gray-900 dark:text-gray-100">
+                {author}
+              </p>
             </div>
           )}
         </div>
