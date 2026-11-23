@@ -3,7 +3,7 @@ name: Delimit
 description: |
   Catch breaking API changes before merge. 27 detection types (17 breaking, 10 non-breaking), semver classification, migration guides, and policy enforcement for OpenAPI specs. Works as a GitHub Action, CLI, and MCP server for AI coding assistants.
 categories:
-  - linting
+  - breaking-changes
   - testing
 link: https://delimit.ai
 languages:

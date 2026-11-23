@@ -7,9 +7,9 @@ description: |
 categories:
   - converters
   - text-editors-extensions
-  - cli
 link: https://frankkilcommins.github.io/arazzo2openapi
 languages:
+  cli: true
   typescript: true
   javascript: true
 repo: https://github.com/frankkilcommins/arazzo2openapi
