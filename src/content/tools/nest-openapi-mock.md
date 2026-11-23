@@ -34,7 +34,6 @@ Install the package and configure it in your NestJS module:
 ```typescript
 import { OpenAPIMockModule } from '@nest-openapi/mock';
 import { Module } from '@nestjs/common';
-
 import * as openApiSpec from './openapi.json';
 
 @Module({
