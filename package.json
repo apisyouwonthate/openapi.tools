@@ -20,6 +20,7 @@
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "check-links": "node scripts/check-tool-links.mjs",
+    "check-tool-coverage": "node scripts/check-tool-coverage.mjs",
     "depcheck": "knip",
     "test": "vitest run"
   },
