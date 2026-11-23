@@ -2,7 +2,7 @@
 name: Fern Server
 description: Generate server-side boilerplate code from OpenAPI and then implement your business logic.
 categories:
-  - code-generation
+  - code-generators
 link: https://buildwithfern.com
 languages:
   express: true
