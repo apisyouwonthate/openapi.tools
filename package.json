@@ -45,12 +45,12 @@
     "cmdk": "^1.1.1",
     "date-fns": "^4.4.0",
     "framer-motion": "^13.2.0",
-    "lucide-react": "^1.77.0",
-    "posthog-js": "^1.453.2",
+    "lucide-react": "^1.81.0",
+    "posthog-js": "^1.455.4",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
-    "satori": "^0.33.4",
+    "satori": "^0.63.2",
     "satori-html": "^0.3.2",
     "schema-dts": "^2.1.0",
     "sharp": "^0.35.5",
@@ -60,16 +60,16 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.5",
-    "@types/react": "^19.3.0",
+    "@types/react": "^19.3.3",
     "@types/react-dom": "^19.3.0",
-    "eslint-plugin-astro": "^3.2.1",
+    "eslint-plugin-astro": "^3.2.2",
     "globals": "^17.14.0",
-    "knip": "^6.47.0",
+    "knip": "^6.48.0",
     "open-graph-scraper": "^6.13.0",
-    "oxfmt": "^0.79.0",
-    "oxlint": "^1.94.0",
+    "oxfmt": "^0.80.0",
+    "oxlint": "^1.95.0",
     "tailwindcss": "^4.3.5",
     "typescript": "6.0.3",
-    "vitest": "^5.1.1"
+    "vitest": "^5.1.2"
   }
 }
